@@ -1,2 +1,13 @@
 _site/
+_archive
 .sass-cache/
+*.swp
+*-ck.js
+.DS_Store
+.htaccess
+.htpasswd
+*.sublime-*
+npm-debug.log
+node_modules
+bower_components
+visual_design_assets

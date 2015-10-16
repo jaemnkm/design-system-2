@@ -1,0 +1,62 @@
+// JOA Summary
+
+@import 'lib/bourbon/bourbon';
+@import 'core/variables';
+
+.usajobs-joa_summary {
+  background-color: $color-primary-darker;
+  color: $color-white;
+}
+
+.usajobs-joa_summary-body {
+  padding: 3em 1em;
+
+  .intro {
+    margin: 0;
+  }
+
+  .detail {
+    margin: 0;
+
+    li:before {
+      content: '';
+      padding-right: 0;
+    }
+
+    li:after {
+      margin-bottom: 2px;
+    }
+
+  }
+}
+
+.usajobs-joa_summary.v0 .usajobs-joa_summary-body {
+  .attr a {
+    color: $color-white;
+    text-decoration: underline;
+  }
+
+  .name {
+    font-weight: bold;
+    padding-right: 5px;
+  }
+}
+
+.usajobs-joa_summary.v1 .usajobs-joa_summary-body {
+  padding-bottom: 1.5em;
+
+  .intro {
+    font-size: $small-font-size;
+  }
+
+  .job_title a {
+    font-size: $lead-font-size;
+    color: $color-white;
+    text-decoration: underline;
+  }
+
+  .joa-anchor {
+    color: $color-gray-lighter;
+    text-decoration: underline;
+  }
+}

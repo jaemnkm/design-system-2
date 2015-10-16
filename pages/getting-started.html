@@ -1,0 +1,63 @@
+---
+permalink: /getting-started/
+layout: styleguide
+title: Getting started
+lead: The USAJOBS Design System is the central source for the style and interaction guidelines for the next generation of USAJOBS.
+---
+
+<h3 class="usa-heading">For developers</h3>
+
+<p>The UI components are built on a solid <strong>HTML</strong> foundation, progressively enhanced to provide core experiences across browsers. All users get critical information and experiences. New browsers get the prettiest experiences, while older browsers get less pretty, but usable ones. If JavaScript fails, users will still get a robust HTML foundation.</p>
+
+<h4>CSS architecture</h4>
+
+<ol class="usa-content-list">
+  <li>The CSS foundation of this site is built with the <strong>Sass</strong> preprocessor language.</li>
+  <li>Uses <strong><a href="http://bourbon.io/">Bourbon</a></strong> for its simple and lightweight Sass mixin library, and the <strong><a href="http://neat.bourbon.io/">Neat</a></strong> library for the grid framework. Bourbon and Neat are open-source products from <strong><a href="https://thoughtbot.com/">thoughtbot</a></strong>.</li>
+  <!-- li>The CSS organization and naming conventions follow <strong><a href="https://pages.18f.gov/frontend/css-coding-styleguide/">18F's CSS Coding Styleguide</a></strong>.</li -->
+  <li>CSS selectors from the U.S. Web Design Standards are <strong>prefixed</strong> with <code>usa</code> (For example: <code>.usa-button</code>).</li>
+  <li>CSS selectors from this design systerm are <strong>prefixed</strong> with <code>usajobs</code> (For example: <code>.usajobs-button</code>).</li>
+  <li>Uses a <strong><a href="https://pages.18f.gov/frontend/css-coding-styleguide/naming/">modified BEM</a></strong> approach created by 18F for naming CSS selectors. Objects in CSS are separated by single dashes. Multi-word objects are separated by an underscore (For example: <code>.usajobs-button-cool_feature-active</code>).</li>
+  <li>Uses <strong>modular CSS</strong> for scalable, modular, and flexible code.</li>
+  <li>Uses <strong>nesting</strong> when appropriate. Nest minimally with up to three levels of nesting.</li>
+  <li><strong>Global variables</strong> are defined in the _variables.scss file. This is where custom theming can be done to change site-wide colors, fonts, etc.</li>
+  <li>Hard-coded magic numbers are avoided and, if necessary, defined in the <code>_variables.scss</code> file.</li>
+  <li>Media queries are built <strong>mobile first</strong>.</li>
+  <li><strong>Spacing units</strong> are as much as possible defined as rem or em units so they scale appropriately with text size. Pixels can be used for detail work and should not exceed 5px (For example: 3px borders).</li>
+</ol>
+
+<!-- p><strong>For more information, visit: <br><a href="https://pages.18f.gov/frontend/css-coding-styleguide/">https://pages.18f.gov/frontend/css-coding-styleguide/</a></strong></p -->
+
+<h4>Where things are:</h4>
+
+<ol class="usa-content-list">
+  <li><strong>HTML</strong> markup for the components are located in: <code>_visual, _elements, _components</code> in the site root.</li>
+  <li><strong>Sass</strong> styles are located in: <code>_scss (/base, /element, /component)</code>. <strong>Compiled CSS</strong> is located in: <code>_site/css/<wbr>usajobs-design-system-base.css</code>.</li>
+  <li><strong>JS</strong> is located in: <code>_js/*/.js</code>.</li>
+  <li><strong>Fonts</strong> are located in: <code>assets/fonts</code>.</li>
+  <li><strong>Images</strong> and icons are located in: <code>assets/img</code>.</li>
+</ol>
+
+<h4>Browser support:</h4>
+
+<p>The standards are designed to support both older and newer browsers through progressive enhancement, and officially support Internet Explorer 9 and up, and the latest versions of Chrome, Firefox, and Safari. Internet Explorer 8 and below generally see very low usage today, and most agency websites should be able to safely begin support at Internet Explorer 9.</p>
+
+<h3 class="usa-heading">For designers</h3>
+
+<p>All of the designs meet the <a href="http://www.w3.org/TR/WCAG20/">WCAG 2.0 AA accessibility guidelines</a> and are compliant with <a href="http://www.section508.gov/">Section 508 of the Americans with Disabilities Act</a>. <strong>If you choose to customize them, ensure they continue to meet the requirements listed in the “Accessibility” section of each design.</strong></p>
+
+<h3 class="usa-heading" id="maturity">Maturity Scale</h3>
+
+<p>Given that we have just started to formulate the Design System the system is not yet stable. Thus some design decisions are still being considered, documentation is sparse, and components are being rapidly added and removed. Thus maturity tags will be placed at the top of each page of the Design System to help explain what state the component or element is in within the design process.</p>
+
+<ol>
+  <li><strong>Incomplete</strong>: A new addition to the system that is still under work and is not yet ready for review.</li>
+  <li><strong>Proposed</strong>: A new addition to the system, proposed by a team member, that has not yet been reviewed by the entire Design team.</li>
+  <li><strong>Under Review</strong>: A component or element that is actively being reviewed by the Design team.</li>
+  <li><strong>Design Complete</strong>: The component or element has been reviewed by the Design team and guidelines need to be created.</li>
+  <li><strong>Guidelines Complete</strong>: The component or element has guidelines that have been created and reviewed by the Design team.</li>
+  <li><strong>Available</strong>: The component or element is complete and ready to be used.</li>
+  <li><strong>Deployed</strong>: The component or element has been deployed to production.</li>
+  <li><strong>Best Practice</strong>: The component or element has been deployed for some length of time and is now considered best practice.</li>
+  <li><strong>Unavailable</strong>: A previously available or deployed component or element is now considered lacking and should not be used.</li>
+</ol>

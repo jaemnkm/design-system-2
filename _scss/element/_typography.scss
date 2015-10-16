@@ -1,0 +1,19 @@
+// Typography
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $font-sans;
+}
+
+.main-content a {
+  text-decoration: underline;
+}
+
+.section-header {
+  margin: {
+    top: 3em;
+    bottom: 0.8em;
+  }
+  padding: 0.5em 0;
+  color: $color-primary-darkest;
+  border-bottom: 1px solid $color-primary-darkest;
+}

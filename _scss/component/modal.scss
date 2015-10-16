@@ -1,0 +1,75 @@
+// Modal
+
+@import 'base/variables';
+@import 'base/utilities';
+@import 'core/variables';
+
+.usajobs-modal {
+  position: fixed;
+  top: -9999em;
+  left: auto;
+  right: auto;
+  bottom: 0;
+  height: 100%;
+  z-index: 0;
+  background-color: rgba(0,0,0, 0.38); // this acts as the backdrop
+
+  &[data-state="is-open"] {
+    z-index: 1000000001;
+    top: 0;
+    right: 0;
+    left: 0;
+    animation: fadeIn 0.3s ease-out;
+  }
+
+  &__frame {
+    position: absolute;
+    top: 17px;
+    right: 0;
+    left: 0;
+    bottom: 17px;
+    margin: 17px;
+    width: auto;
+    min-height: 200px;
+    z-index: 999;
+    overflow: auto;
+    background-color: $color-white;
+    background-clip: padding-box;
+    border: 1px solid rgba(70,70,70,.14);
+    border-radius: 5px;
+    box-shadow: 0 3px 6px rgba(0,0,0, 0.29);
+
+  }
+
+  &[data-state="is-open"] &__frame {
+    animation: fadeInUp 0.3s ease-out;
+  }
+
+  &__body {
+    min-height: 500px;
+    overflow: auto;
+    padding: $size-default;
+    // -webkit-overflow-scrolling: touch;
+  }
+
+  &__header {
+    background-color: $color-gray-lightest;
+    border-bottom: 1px solid $color-gray;
+  }
+
+  &__title {
+    margin-top: 0;
+    padding: 50px 34px 34px;
+  }
+
+  &__close {
+    position: absolute;
+    top: $size-default;
+    right: $size-default;
+    padding: $size-default;
+  }
+
+  .hidden {
+    @include hide();
+  }
+}

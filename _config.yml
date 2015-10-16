@@ -1,0 +1,57 @@
+# Markdown config
+markdown: redcarpet
+highlighter: rouge
+name: USAJOBS Design System
+subtitle: The design system for the next generation of USAJOBS which describes the base visual language upon which the site can be built.
+exclude:
+- bower.json
+- bower_components
+- Gemfile
+- Gemfile.lock
+- Gruntfile.js
+- package.json
+- README.md
+- LICENSE.md
+- CONTRIBUTING.md
+- ".sass-cache"
+- ".ruby-version"
+- npm-debug.log
+- vendor
+- visual_design_assets
+- node_modules
+- library
+keep_files: ['_site/assets/css', '_site/assets/js']
+
+baseurl: '/design-system'
+
+permalink: pretty
+
+author:
+  name: USAJOBS
+  url: https://usajobs.github.io/
+
+repository:
+  name: Design System
+  url: https://github.com/USAJOBS/design-system
+
+# google_analytics_ua: UA-48605964-33
+
+sass:
+  sass_dir: assets/_scss
+  load_paths:
+    - assets/_scss
+    - library/assets/_scss
+
+collections:
+  components:
+    output: true
+    permalink: /:path/
+  elements:
+    output: true
+    permalink: /:path/
+  layout-system:
+    output: true
+    permalink: /:path/
+  visual:
+    output: true
+    permalink: /:path/

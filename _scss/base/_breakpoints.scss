@@ -1,0 +1,23 @@
+// Breakpoints
+
+$breakpoints: (
+  "(min-width: 48em)" "SM",       //  480px at 10px base font
+  "(min-width: 60em)" "M",        //  600px at 10px base font
+  "(min-width: 102.40)" "L",      // 1024px at 10px base font
+  "(min-width: 120em)" "XL",      // 1200px at 10px base font
+  "(min-width: 192em)" "XXL"      // 1920px at 10px base font
+);
+
+@mixin breakpoint($point, $direction: "up") {
+  @each $breakpoint in $breakpoints {
+    $query: nth($breakpoint, 1);
+    $name: nth($breakpoint, 2);
+
+    @if $direction == up {
+      @if ($name == $point) {
+        @media #{$query} { @content }
+      }
+    } @else {
+    }
+  }
+}
