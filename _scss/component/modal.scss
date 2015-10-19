@@ -1,8 +1,11 @@
 // Modal
 
+@import 'core/variables';
 @import 'base/variables';
 @import 'base/utilities';
-@import 'core/variables';
+@import 'base/accessibility';
+@import 'base/breakpoints';
+@import "font-awesome/font-awesome";
 
 .usajobs-modal {
   position: fixed;
@@ -24,11 +27,11 @@
 
   &__frame {
     position: absolute;
-    top: 17px;
+    top: $size-default;
     right: 0;
     left: 0;
-    bottom: 17px;
-    margin: 17px;
+    bottom: $size-default;
+    margin: $size-default;
     width: auto;
     min-height: 200px;
     z-index: 999;
@@ -39,6 +42,16 @@
     border-radius: 5px;
     box-shadow: 0 3px 6px rgba(0,0,0, 0.29);
 
+    @include breakpoint(M) {
+      top: $size-XL;
+      bottom: $size-XL;
+    }
+    @include breakpoint(L) {
+      left: 50%;
+      bottom: auto;
+      width: 700px;
+      margin-left: -350px;
+    }
   }
 
   &[data-state="is-open"] &__frame {
@@ -49,27 +62,51 @@
     min-height: 500px;
     overflow: auto;
     padding: $size-default;
-    // -webkit-overflow-scrolling: touch;
+
+    @include breakpoint(L) {
+      min-height: auto;
+    }
   }
 
   &__header {
+    padding: $size-L $size-M $size-M;
     background-color: $color-gray-lightest;
     border-bottom: 1px solid $color-gray;
   }
 
+  &__footer {
+    margin-top: $size-L;
+    padding: $size-M;
+    border-top: 1px solid $color-gray;
+  }
+
   &__title {
-    margin-top: 0;
-    padding: 50px 34px 34px;
+    margin: 0;
   }
 
   &__close {
     position: absolute;
     top: $size-default;
     right: $size-default;
-    padding: $size-default;
-  }
+    height: 36px;
+    width: 36px;
+    background: $color-gray-light;
+    text-decoration: none;
+    border-radius: 50%;
 
-  .hidden {
-    @include hide();
+    &:after {
+      position: absolute;
+      top: 10px;
+      left: 14px;
+      width: 10px;
+      height: 10px;
+      @include fa-icon();
+      content: $fa-var-times;
+      color: $color-white;
+    }
   }
+}
+
+.is-open-modal {
+  overflow: hidden; // Keeps the background from being scrollable
 }

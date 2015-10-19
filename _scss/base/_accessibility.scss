@@ -1,0 +1,8 @@
+// Accessibility
+
+@import 'base/utilities';
+
+.hidden,
+.usajobs-assistive-text {
+  @include hide();
+}

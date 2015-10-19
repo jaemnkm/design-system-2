@@ -1,11 +1,10 @@
 // Breakpoints
 
 $breakpoints: (
-  "(min-width: 48em)" "SM",       //  480px at 10px base font
-  "(min-width: 60em)" "M",        //  600px at 10px base font
-  "(min-width: 102.40)" "L",      // 1024px at 10px base font
-  "(min-width: 120em)" "XL",      // 1200px at 10px base font
-  "(min-width: 192em)" "XXL"      // 1920px at 10px base font
+  "(min-width: 30em)" "SM",       //  480px at 16px base font
+  "(min-width: 37.5em)" "M",      //  600px at 16px base font
+  "(min-width: 64em)" "L",        // 1024px at 16px base font
+  "(min-width: 75em)" "XL"        // 1200px at 16px base font
 );
 
 @mixin breakpoint($point, $direction: "up") {

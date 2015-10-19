@@ -6,7 +6,7 @@
 @import 'lib/bourbon/bourbon';
 @import 'lib/neat/neat';
 @import 'lib/normalize';
-
+@import "font-awesome/font-awesome";
 
 // Core -------------- //
 
@@ -49,11 +49,13 @@
 @import 'base/utilities';
 @import 'base/fonts';
 @import 'base/breakpoints';
+@import 'base/accessibility';
 
 // Elements -------------- //
 @import 'element/typography';
-@import 'element/buttons';
+@import 'element/link';
+@import 'element/button';
 
 // Shared Components -------------- //
-// Some components are universal enough that they are promoted into base
+// Universal components that are promoted into base
 @import 'component/alert';

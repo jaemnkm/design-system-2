@@ -49,7 +49,7 @@ $modal.on('modal.open', function(event, opts) {
   $(document).on('keyup', function (e) {
     if (e.keyCode === 27) {
       // Close the modal when ESC is pressed
-      opts.object.trigger('modal.close', { el: $el, object: $this_modal, state: state });
+      opts.object.trigger('modal.close', { el: opts.el, object: opts.object, state: opts.state });
     }
   });
 
