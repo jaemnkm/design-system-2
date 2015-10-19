@@ -1,4 +1,8 @@
-_site/
+_site/*
+!_site/assets/
+_site/assets/*
+!_site/assets/css/
+!_site/assets/js/
 _archive
 .sass-cache/
 *.swp
