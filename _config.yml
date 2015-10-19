@@ -22,6 +22,8 @@ exclude:
 - library
 keep_files: ['_site/assets/css', '_site/assets/js']
 
+destination: ./_site
+layouts: ./_layouts
 baseurl: '/design-system'
 
 permalink: pretty
