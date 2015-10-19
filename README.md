@@ -30,11 +30,10 @@ help ensure that Ruby version upgrades don't mean all your
 Now that you have verified that you have Ruby and Node installed, run the following commands to install the packages that the design system depends upon:
 
 ```shell
-$ npm install -g bower
 $ npm install
 ```
 
-The post-install step should run bundle install and bower install.
+The post-install step should run bundle install.
 
 ### Development
 
