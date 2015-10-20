@@ -4969,16 +4969,16 @@ fieldset {
   font-family: 'Source Sans Pro';
   font-style: normal;
   font-weight: 400;
-  src: url("../fonts/sourcesanspro-regular-webfont.eot");
-  src: url("../fonts/sourcesanspro-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/sourcesanspro-regular-webfont.woff2") format("woff2"), url("../fonts/sourcesanspro-regular-webfont.woff") format("woff"), url("../fonts/sourcesanspro-regular-webfont.ttf") format("truetype"), url("../fonts/sourcesanspro-regular-webfont.svg#source_sans_proregular") format("svg");
+  src: url("/fonts/sourcesanspro-regular-webfont.eot");
+  src: url("/fonts/sourcesanspro-regular-webfont.eot?#iefix") format("embedded-opentype"), url("/fonts/sourcesanspro-regular-webfont.woff2") format("woff2"), url("/fonts/sourcesanspro-regular-webfont.woff") format("woff"), url("/fonts/sourcesanspro-regular-webfont.ttf") format("truetype"), url("/fonts/sourcesanspro-regular-webfont.svg#source_sans_proregular") format("svg");
 }
 
 @font-face {
   font-family: 'Merriweather';
   font-style: normal;
   font-weight: 400;
-  src: url("../fonts/merriweather-regular-webfont.eot");
-  src: url("../fonts/merriweather-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/merriweather-regular-webfont.woff2") format("woff2"), url("../fonts/merriweather-regular-webfont.woff") format("woff"), url("../fonts/merriweather-regular-webfont.ttf") format("truetype"), url("../fonts/merriweather-regular-webfont.svg#source_sans_proitalic") format("svg");
+  src: url("/fonts/merriweather-regular-webfont.eot");
+  src: url("/fonts/merriweather-regular-webfont.eot?#iefix") format("embedded-opentype"), url("/fonts/merriweather-regular-webfont.woff2") format("woff2"), url("/fonts/merriweather-regular-webfont.woff") format("woff"), url("/fonts/merriweather-regular-webfont.ttf") format("truetype"), url("/fonts/merriweather-regular-webfont.svg#source_sans_proitalic") format("svg");
 }
 
 .hidden,
@@ -5007,6 +5007,12 @@ h1, h2, h3, h4, h5, h6 {
 
 .main-content a {
   text-decoration: underline;
+}
+
+.main-content a.usa-button,
+.main-content a.usa-button-big,
+.main-content a.usajobs-button {
+  text-decoration: none;
 }
 
 .usajobs-button-secondary-alert {
