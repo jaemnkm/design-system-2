@@ -14,10 +14,10 @@ module.exports = function(grunt) {
     // shell commands for use in Grunt tasks
     shell: {
       jekyllBuild: {
-          command: 'bundle exec jekyll build'
+          command: "bundle exec jekyll build --baseurl ''"
       },
       jekyllServe: {
-          command: 'bundle exec jekyll serve'
+          command: "bundle exec jekyll serve --baseurl ''"
       }
     },
     sass: {
@@ -36,17 +36,17 @@ module.exports = function(grunt) {
         files: [
           {
             src: '_scss/all.scss',
-            dest: '_site/assets/css/usajobs-design-system-base.css'
+            dest: 'css/usajobs-design-system-base.css'
           },
           {
             src: '_scss/components.scss',
-            dest: '_site/assets/css/usajobs-design-system-components.css'
+            dest: 'css/usajobs-design-system-components.css'
           },
           {
             expand: true,
             cwd: '_scss/layouts/',
             src: '*.scss',
-            dest: '_site/assets/css/layouts/',
+            dest: 'css/layouts/',
             ext: '.css'
           }
         ]
@@ -60,61 +60,61 @@ module.exports = function(grunt) {
       project_css: {
         expand: true,
         flatten: true,
-        src: '_site/assets/css/*.css',
-        dest: '_site/assets/css/'
+        src: 'css/*.css',
+        dest: 'css/'
       },
       layouts_css: {
         expand: true,
         flatten: true,
-        src: '_site/assets/css/layouts/*.css',
-        dest: '_site/assets/css/layouts/'
+        src: 'css/layouts/*.css',
+        dest: 'css/layouts/'
       }
     },
     concat: {
       js_base: {
         src: [
-          '_js/vendor/modernizr.js',
+          'js/vendor/modernizr.js',
           'library/assets/js/vendor/jquery-1.11.3.min.js'
         ],
-        dest: '_site/assets/js/usajobs-design-system-base.js'
+        dest: 'js/usajobs-design-system-base.js'
       },
       js_ltie9: {
         src: [
           'library/assets/js/vendor/rem.min.js',
           'node_modules/lt-ie-9/lt-ie-9.min.js'
         ],
-        dest: '_site/assets/js/usajobs-design-system-lt-ie9.js'
+        dest: 'js/usajobs-design-system-lt-ie9.js'
       },
       js_components: {
         src: [
           'library/assets/js/components.js',
-          '_js/components/*.js'
+          'js/components/*.js'
         ],
-        dest: '_site/assets/js/usajobs-design-system-components.js'
+        dest: 'js/usajobs-design-system-components.js'
       },
       js_docs: {
         src: [
           'library/assets-styleguide/js/vendor/prism.js',
           'library/assets-styleguide/js/styleguide.js'
         ],
-        dest: '_site/assets/js/usajobs-design-system-documentation.js'
+        dest: 'js/usajobs-design-system-documentation.js'
       }
     },
     cssmin: {
       minify: {
         src: [
-          '_site/assets/css/usajobs-design-system-base.css',
-          '_site/assets/css/usajobs-design-system-components.css',
-          '_site/assets/css/layouts/*.css'
+          'css/usajobs-design-system-base.css',
+          'css/usajobs-design-system-components.css',
+          'css/layouts/*.css'
         ],
-        dest: '_site/assets/css/usajobs-design-system.min.css'
+        dest: 'css/usajobs-design-system.min.css'
       }
     },
     jshint: {
       jshintrc: true,
       all: [
         'Gruntfile.js',
-        '_js/components/*.js'
+        'js/components/*.js'
       ],
       gruntfile: 'Gruntfile.js'
     },
@@ -138,7 +138,7 @@ module.exports = function(grunt) {
       },
       scripts: {
         files: [
-          '_js/**/*.js'
+          'js/**/*.js'
         ],
         tasks: ['jshint:all', 'concat:js_components'],
         options: {
