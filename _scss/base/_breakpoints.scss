@@ -1,22 +1,17 @@
 // Breakpoints
 
-$breakpoints: (
-  "(min-width: 30em)" "SM",       //  480px at 16px base font
-  "(min-width: 37.5em)" "M",      //  600px at 16px base font
-  "(min-width: 64em)" "L",        // 1024px at 16px base font
-  "(min-width: 75em)" "XL"        // 1200px at 16px base font
-);
+$SM-screen:    30em;    //  480px at 16px base font - Future BP, USDS standard
+$M-screen:     37.5em;  //  600px at 16px base font - Future BP, USDS standard
+$ML-screen:    48em;    //  768px at 16px base font - Temporary to align with current BP
+$MLL-screen:   62em;    //  992px at 16px base font - Temporary to align with current BP
+$L-screen:     64em;    // 1024px at 16px base font - Future BP, USAJOBS proposed
+$XL-screen:    75em;    // 1200px at 16px base font - USDS standard, aligns with current BP
+$XXL-screen:  120em;    // 1920px at 16px base font - Future BP, USAJOBS proposed
 
-@mixin breakpoint($point, $direction: "up") {
-  @each $breakpoint in $breakpoints {
-    $query: nth($breakpoint, 1);
-    $name: nth($breakpoint, 2);
-
-    @if $direction == up {
-      @if ($name == $point) {
-        @media #{$query} { @content }
-      }
-    } @else {
-    }
-  }
-}
+$SM:  new-breakpoint(min-width $SM-screen 2);
+$M:   new-breakpoint(min-width $M-screen 6);
+$ML:  new-breakpoint(min-width $ML-screen 8);
+$MLL: new-breakpoint(min-width $MLL-screen 12);
+$L:   new-breakpoint(min-width $L-screen 12);
+$XL:  new-breakpoint(min-width $XL-screen 12);
+$XXL: new-breakpoint(min-width $XL-screen 12);

@@ -1,0 +1,24 @@
+// Shell
+
+@import 'lib/bourbon/bourbon';
+@import 'lib/neat/neat';
+
+.usajobs-site-body {
+  max-width: $site-max-width;
+  height: 100%;
+  margin: 0 auto;
+  background: $color-white;
+  z-index: 1;
+}
+
+.usajobs-content-well {
+  @include media($MLL) {
+    @include span-columns(8);
+  }
+}
+
+.usajobs-rightrail {
+  @include media($MLL) {
+    @include span-columns(4);
+  }
+}

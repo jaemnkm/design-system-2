@@ -1,5 +1,7 @@
 // Modal
 
+@import 'lib/bourbon/bourbon';
+@import 'lib/neat/neat';
 @import 'core/variables';
 @import 'base/variables';
 @import 'base/utilities';
@@ -42,11 +44,11 @@
     border-radius: 5px;
     box-shadow: 0 3px 6px rgba(0,0,0, 0.29);
 
-    @include breakpoint(M) {
+    @include media($ML) {
       top: $size-XL;
       bottom: $size-XL;
     }
-    @include breakpoint(L) {
+    @include media($MLL) {
       left: 50%;
       bottom: auto;
       width: 700px;
@@ -63,7 +65,7 @@
     overflow: auto;
     padding: $size-default;
 
-    @include breakpoint(L) {
+    @include media($MLL) {
       min-height: auto;
     }
   }

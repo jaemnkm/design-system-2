@@ -434,7 +434,7 @@ html {
 
 .styleguide-content {
   margin-bottom: 5em;
-  max-width: 1040px;
+  max-width: 75em;
   padding-left: 2em;
   padding-right: 2em;
   position: relative;
@@ -466,6 +466,16 @@ html {
 
 .styleguide-content .maturity.under_review {
   background-color: #fdb81e;
+  color: #212121;
+}
+
+.styleguide-content .maturity.design_complete {
+  background-color: #8ba6ca;
+  color: #212121;
+}
+
+.styleguide-content .maturity.available {
+  background-color: #94bfa2;
   color: #212121;
 }
 
@@ -1043,6 +1053,17 @@ code[class*="language-"], pre[class*="language-"] {
 
 .modals.is-open-modal .usa-site-header {
   display: none;
+}
+
+.usajobs-site-body {
+  margin-top: 81px;
+  padding-top: 2rem;
+}
+
+@media screen and (min-width: min-width 850px) {
+  .usajobs-site-body {
+    margin-top: 128px;
+  }
 }
 
 /*# sourceMappingURL=documentation.css.map */
