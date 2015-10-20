@@ -327,9 +327,7 @@ html {
     height: 100%;
     width: 220px;
     -webkit-transform: translateX(-220px);
-    -moz-transform: translateX(-220px);
     -ms-transform: translateX(-220px);
-    -o-transform: translateX(-220px);
     transform: translateX(-220px);
     background: #fff;
     -webkit-overflow-scrolling: touch;
@@ -337,13 +335,9 @@ html {
     z-index: 999999;
   }
   #menu-content.is-visible {
-    -webkit-transition: all 0.25s linear;
-    -moz-transition: all 0.25s linear;
     transition: all 0.25s linear;
     -webkit-transform: translateX(0);
-    -moz-transform: translateX(0);
     -ms-transform: translateX(0);
-    -o-transform: translateX(0);
     transform: translateX(0);
   }
 }
@@ -354,8 +348,6 @@ html {
   right: 0;
   bottom: 0;
   left: 0;
-  -webkit-transition: all 0.15s ease-out 0s;
-  -moz-transition: all 0.15s ease-out 0s;
   transition: all 0.15s ease-out 0s;
   background: #000;
   opacity: 0;
@@ -1028,6 +1020,10 @@ code[class*="language-"], pre[class*="language-"] {
   line-height: 1.5;
 }
 
+.usa-accordion-docs {
+  margin-bottom: 6rem;
+}
+
 .serif-sans-minor h6 {
   font-family: "Source Sans Pro", "Helvetica", "Arial", sans-serif;
 }
@@ -1065,5 +1061,4 @@ code[class*="language-"], pre[class*="language-"] {
     margin-top: 128px;
   }
 }
-
 /*# sourceMappingURL=documentation.css.map */

@@ -10,7 +10,7 @@ $XXL-screen:  120em;    // 1920px at 16px base font - Future BP, USAJOBS propose
 
 $SM:  new-breakpoint(min-width $SM-screen 2);
 $M:   new-breakpoint(min-width $M-screen 6);
-$ML:  new-breakpoint(min-width $ML-screen 8);
+$ML:  new-breakpoint(min-width $ML-screen 6);
 $MLL: new-breakpoint(min-width $MLL-screen 12);
 $L:   new-breakpoint(min-width $L-screen 12);
 $XL:  new-breakpoint(min-width $XL-screen 12);

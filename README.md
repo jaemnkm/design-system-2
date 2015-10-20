@@ -23,12 +23,29 @@ You may consider using a Ruby version manager such as
 help ensure that Ruby version upgrades don't mean all your
 [gems](https://rubygems.org/) will need to be rebuilt.
 
+On OS X, you can also use [Homebrew](http://brew.sh/) to install Ruby in
+`/usr/local/bin`, which may require you to update your `$PATH` environment
+variable. Here are the commands to follow to install via homebrew:
+
+```shell
+$ brew update
+$ brew install ruby
+$ brew install node
+```
+
+If you do use rbenv it is important to set your global Ruby version to 2.2.3 or higher so that you can install gems properly:
+
+```shell
+$ rbenv global
+```
+
 ### Installation
 
 Now that you have verified that you have Ruby and Node installed, run the following commands to install the packages that the design system depends upon:
 
 ```shell
 $ npm install
+$ npm run build
 ```
 
 The post-install step should run bundle install.

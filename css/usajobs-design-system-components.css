@@ -183,7 +183,8 @@ html {
 :root .fa-rotate-270,
 :root .fa-flip-horizontal,
 :root .fa-flip-vertical {
-  filter: none;
+  -webkit-filter: none;
+          filter: none;
 }
 
 .fa-stack {
@@ -2218,7 +2219,8 @@ html {
   top: 0;
   right: 0;
   left: 0;
-  animation: fadeIn 0.3s ease-out;
+  -webkit-animation: fadeIn 0.3s ease-out;
+          animation: fadeIn 0.3s ease-out;
 }
 
 .usajobs-modal__frame {
@@ -2256,7 +2258,8 @@ html {
 }
 
 .usajobs-modal[data-state="is-open"] .usajobs-modal__frame {
-  animation: fadeInUp 0.3s ease-out;
+  -webkit-animation: fadeInUp 0.3s ease-out;
+          animation: fadeInUp 0.3s ease-out;
 }
 
 .usajobs-modal__body {
@@ -2372,5 +2375,4 @@ html {
   color: #d6d7d9;
   text-decoration: underline;
 }
-
 /*# sourceMappingURL=usajobs-design-system-components.css.map */

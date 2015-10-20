@@ -1,6 +1,10 @@
 // Colors
-$color-green-dark:           #2d8700;
-$color-green-darker:         darken($color-green-dark, 10%);
+$color-green-dark:     #2d8700;
+$color-green-darker:   darken($color-green-dark, 10%);
 
-$color-black:                #000000; // If there is $color-white...
+// Only used for the active state of the alert/destructive button
+// See https://github.com/USAJOBS/design-system/issues/1
+$color-red-darkest:    #7B0608;
+
+$color-black:          #000000; // If there is $color-white...
 
