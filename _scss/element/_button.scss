@@ -11,26 +11,6 @@
 
   &:active,
   &.usa-button-active {
-    background-color: $color-secondary-darkest;
+    background-color: $color-red-darkest;
   }
-}
-
-// TODO: The hover color isn't light enough, but
-// any lighter and we won't make the AA contrast level
-.usajobs-button-secondary-start {
-  background-color: $color-green-dark;
-
-  &:hover,
-  &.usa-button-hover {
-    background-color: $color-green;
-  }
-
-  &:active,
-  &.usa-button-active {
-    background-color: $color-green-darker;
-  }
-}
-
-a.usajobs-button {
-  text-decoration: none;
 }

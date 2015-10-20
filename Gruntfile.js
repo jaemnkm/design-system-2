@@ -14,7 +14,7 @@ module.exports = function(grunt) {
     // shell commands for use in Grunt tasks
     shell: {
       jekyllBuild: {
-          command: "bundle exec jekyll build --baseurl ''"
+          command: "bundle exec jekyll build"
       },
       jekyllServe: {
           command: "bundle exec jekyll serve --baseurl ''"
