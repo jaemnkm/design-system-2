@@ -5,10 +5,12 @@ title: JOA Summary
 lead: Summary of the Job Offer Announcement (JOA)
 ---
 
-<a href="{{ site.baseurl }}/getting-started/#maturity" class="usa-label maturity under_review">Under Review</a>
+<a href="{{ site.baseurl }}/getting-started/#maturity" class="usa-label maturity design_complete">
+  Design Complete
+</a>
 
 <div class="preview">
-  <h6 class="usa-heading-alt">Default (v0)</h6>
+  <!-- h6 class="usa-heading-alt">Default (v0)</h6>
   <div class="usajobs-joa_summary v0">
     <div class="usajobs-joa_summary-body">
       <ul class="detail">
@@ -17,8 +19,7 @@ lead: Summary of the Job Offer Announcement (JOA)
         <li class="attr"><span class="name">Agency:</span> Smithsonian</li>
       </ul>
     </div>
-  </div>
-
+  </div-->
 
   <h6 class="usa-heading-alt">Variation (v1)</h6>
   <div class="usajobs-joa_summary v1">
@@ -27,13 +28,12 @@ lead: Summary of the Job Offer Announcement (JOA)
       <ul class="detail">
         <li class="job_title"><a href="#joa">Animal Caretaker</a></li>
         <li class="attr">Department of Veteran Affairs</li>
-        <li class="attr">Closes October 15, 2015</li>
+        <li class="attr">Closes 10/15/2015</li>
       </ul>
       <!-- a class="joa-save">Save Job</a -->
       <a class="joa-anchor">Who may apply</a>
     </div>
   </div>
-
 </div>
 
 <div class="usa-accordion-bordered usa-accordion-docs">
@@ -42,6 +42,13 @@ lead: Summary of the Job Offer Announcement (JOA)
     Documentation
   </button>
   <div id="collapsible-0" aria-hilien="false" class="usa-accordion-content">
+    <h4 class="usa-heading">Guidelines</h4>
+    <ul class="usa-content-list">
+      <li>The job title opens the JOA in a new tab.</li>
+      <li>The "Who may apply" link opens the JOA in a new tab and anchors to the Who May Apply section within the JOA.</li>
+      <li>The level one agency should be the agency listed.</li>
+    </ul>
+
     <h4 class="usa-heading">Usability</h4>
     <h5>When to use</h5>
     <ul class="usa-content-list">

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<!--[if lt IE 9]><html class="lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!--><html lang="en"><!--<![endif]-->
+
+  <head>
+    {% include head.html %}
+  </head>
+
+  <body class="{{ page.title | slugify }}">
+
+  	{% include navbar.html %}
+
+    <main class="usajobs-site-body" id="main-content" role="main">
+      <div class="usajobs-grid">
+        <div class="usajobs-width-one-whole">
+          <h1 id="{{ page.title | slugify }}">{{ page.title }}</h1>
+          <p class="usa-font-lead">{{ page.lead }}</p>
+        </div>
+      </div>
+
+      {{ content }}
+
+      <footer class="usa-styleguide-footer">
+        {% include footer.html %}
+      </footer>
+    </main>
+    {% include scripts.html %}
+  </body>
+</html>

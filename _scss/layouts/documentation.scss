@@ -448,6 +448,16 @@ $section-padding:   7.2rem;
       background-color: $color-gold;
       color: $color-base;
     }
+
+    &.design_complete {
+      background-color: $color-cool-blue-lighter;
+      color: $color-base;
+    }
+
+    &.available {
+      background-color: $color-green-lighter;
+      color: $color-base;
+    }
   }
 }
 
@@ -1043,4 +1053,14 @@ $font-light: 300;
 // Odd one, but the design system header is fixed and thus conflicts with our modal
 .modals.is-open-modal .usa-site-header {
   display: none;
+}
+
+// For the shell demonstration we need to account for the fixed header of the site
+.usajobs-site-body {
+  margin-top: 81px;
+  padding-top: 2rem;
+
+  @include media(min-width 850px) {
+    margin-top: 128px;
+  }
 }

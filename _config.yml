@@ -54,6 +54,9 @@ collections:
   layout-system:
     output: true
     permalink: /:path/
+  shell:
+    output: true
+    permalink: /:path/
   visual:
     output: true
     permalink: /:path/
