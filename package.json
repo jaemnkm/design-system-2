@@ -31,6 +31,6 @@
     "build": "grunt build",
     "open:repo": "opener http://github.com/USAJOBS/design-system",
     "start": "grunt serve",
-    "postinstall": "bundle install && bower install && grunt serve"
+    "postinstall": "bundle install && grunt serve"
   }
 }

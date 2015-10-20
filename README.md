@@ -10,8 +10,6 @@ The USAJOBS design system starts with the The [U.S. Web Design Standards](https:
 
 3. Design new components or elements that are not yet a part of the U.S. Web Design Standards. These components or elements may or may not be appropriate to contribute back to the standards given their potential for reuse elsewhere.
 
-The structural setup of this repo is based off of [https://github.com/18F/pages](https://github.com/18F/pages)
-
 ## Setup for your local environment
 
 ### Requirements
