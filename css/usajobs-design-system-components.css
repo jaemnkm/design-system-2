@@ -21,6 +21,206 @@ html {
   clip: rect(0 0 0 0) !important;
 }
 
+.usajobs-nav {
+  background-color: #ffffff;
+}
+
+.usajobs-nav__body {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 75em;
+  padding: 1rem 0;
+}
+
+.usajobs-nav__body::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+@media screen and (min-width: 48em) {
+  .usajobs-nav__body {
+    padding: 0;
+  }
+}
+
+@media screen and (min-width: 48em) {
+  .usajobs-nav__header {
+    float: left;
+    display: block;
+    margin-right: 4.8291579146%;
+    width: 12.6423684045%;
+  }
+  .usajobs-nav__header:last-child {
+    margin-right: 0;
+  }
+}
+
+.usajobs-nav__brand {
+  float: left;
+  display: block;
+  margin-right: 7.4229703521%;
+  width: 46.288514824%;
+  width: 60%;
+  padding-left: 1.5rem;
+}
+
+.usajobs-nav__brand:last-child {
+  margin-right: 0;
+}
+
+@media screen and (min-width: 30em) {
+  .usajobs-nav__brand {
+    padding-left: 3rem;
+  }
+}
+
+@media screen and (min-width: 48em) {
+  .usajobs-nav__brand {
+    width: 100%;
+    float: none;
+    margin-right: auto;
+    padding-top: 1rem;
+  }
+}
+
+@media screen and (min-width: 62em) {
+  .usajobs-nav__brand {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+}
+
+.usajobs-nav__brand .logo {
+  max-height: 50px;
+}
+
+@media screen and (min-width: 48em) {
+  .usajobs-nav__brand .logo {
+    max-height: inherit;
+  }
+}
+
+.usajobs-nav__toggle {
+  position: relative;
+  float: left;
+  display: block;
+  margin-right: 7.4229703521%;
+  width: 46.288514824%;
+  float: right;
+  top: 0;
+  right: 10px;
+  width: 8rem;
+  margin-top: 0;
+}
+
+.usajobs-nav__toggle:last-child {
+  margin-right: 0;
+}
+
+@media screen and (min-width: 48em) {
+  .usajobs-nav__toggle {
+    display: none;
+  }
+}
+
+.usajobs-nav__extended-menu {
+  display: none;
+}
+
+@media screen and (min-width: 48em) {
+  .usajobs-nav__extended-menu {
+    display: block;
+    float: left;
+    display: block;
+    margin-right: 4.8291579146%;
+    width: 82.5284736809%;
+  }
+  .usajobs-nav__extended-menu:last-child {
+    margin-right: 0;
+  }
+}
+
+.usajobs-nav__menu,
+.usajobs-nav__account {
+  display: block;
+  margin: 0;
+}
+
+.usajobs-nav__menu li,
+.usajobs-nav__account li {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+
+.usajobs-nav__menu li:before,
+.usajobs-nav__menu li:after,
+.usajobs-nav__account li:before,
+.usajobs-nav__account li:after {
+  content: none;
+}
+
+.usajobs-nav__menu li a,
+.usajobs-nav__account li a {
+  display: block;
+  padding: 1rem;
+  color: #212121;
+  font-size: 1.4rem;
+}
+
+@media screen and (min-width: 62em) {
+  .usajobs-nav__menu li a,
+  .usajobs-nav__account li a {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    font-size: 1.7rem;
+  }
+}
+
+@media screen and (min-width: 48em) {
+  .usajobs-nav__menu {
+    float: left;
+  }
+}
+
+.usajobs-nav__menu .dropdown-menu {
+  display: none;
+}
+
+@media screen and (min-width: 48em) {
+  .usajobs-nav__account {
+    float: right;
+  }
+}
+
+.usajobs-nav__account .pipe {
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+.hidden,
+.usajobs-assistive-text {
+  position: absolute !important;
+  margin: -1px !important;
+  border: 0 !important;
+  padding: 0 !important;
+  width: 1px !important;
+  height: 1px !important;
+  overflow: hidden !important;
+  clip: rect(0 0 0 0) !important;
+}
+
 /*!
  *  Font Awesome 4.2.0 by @davegandy - http://fontawesome.io - @fontawesome
  *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
@@ -2272,15 +2472,15 @@ html {
 }
 
 .usajobs-modal__header {
-  padding: 4.5rem 3rem 3rem;
+  padding: 4.5rem 1.5rem 3rem;
   background-color: #f1f1f1;
-  border-bottom: 1px solid #5b616b;
+  border-bottom: 1px solid #aeb0b5;
 }
 
 .usajobs-modal__footer {
   margin-top: 4.5rem;
   padding: 3rem;
-  border-top: 1px solid #5b616b;
+  border-top: 1px solid #aeb0b5;
 }
 
 .usajobs-modal__title {
@@ -2324,7 +2524,7 @@ html {
 }
 
 .usajobs-joa_summary-body {
-  padding: 3em 1em;
+  padding: 3rem 1rem 3rem 3rem;
 }
 
 .usajobs-joa_summary-body .intro {
@@ -2387,6 +2587,38 @@ html {
 
 .usajobs-progress_indicator {
   background-color: #5b616b;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+.hidden,
+.usajobs-assistive-text {
+  position: absolute !important;
+  margin: -1px !important;
+  border: 0 !important;
+  padding: 0 !important;
+  width: 1px !important;
+  height: 1px !important;
+  overflow: hidden !important;
+  clip: rect(0 0 0 0) !important;
+}
+
+.usajobs-required_documents__trigger {
+  width: 100%;
+}
+
+@media screen and (min-width: 62em) {
+  .usajobs-required_documents__trigger {
+    max-width: 37.5rem;
+  }
 }
 
 /*# sourceMappingURL=usajobs-design-system-components.css.map */

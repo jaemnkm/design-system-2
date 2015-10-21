@@ -5,19 +5,28 @@ title: Application Guide
 ---
   {% include components/nav.html %}
   <div class="usajobs-app_guide-banner">
-    {% include components/joa_summary.html %}
-    {% include components/progress_indicator.html %}
+    <!-- Banner is full bleed -->
+    <div class="usajobs-app_guide-banner-container">
+      <div class="usajobs-app_guide-joa_summary-container">
+        {% include components/joa_summary.html %}
+      </div>
+      <div class="usajobs-app_guide-progress_indicator-container">
+        {% include components/progress_indicator.html %}
+      </div>
+    </div>
   </div>
-  <main class="usajobs-content-well" id="main-content" role="main">
-    <div class="usajobs-content-gutter">
-      <h1>Select Documents</h1>
-      {% include components/app_guide-content.html %}
-    </div>
-  </main>
-  <aside class="usajobs-rightrail">
-    <div class="usajobs-content-gutter">
-      {% include components/required_documents.html %}
-      {% include components/acceptable_formats.html %}
-    </div>
-  </aside>
+  <div class="usajobs-app_guide__body">
+    <main class="usajobs-content-well" id="main-content" role="main">
+      <div class="usajobs-content-gutter">
+        <h1>Select Documents</h1>
+        {% include components/app_guide-content.html %}
+      </div>
+    </main>
+    <aside class="usajobs-rightrail">
+      <div class="usajobs-content-gutter">
+        {% include components/required_documents.html %}
+        {% include components/acceptable_formats.html %}
+      </div>
+    </aside>
+  </div>
 </div>

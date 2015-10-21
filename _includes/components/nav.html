@@ -1,5 +1,64 @@
-<nav class="usajobs-nav v1">
-  <div class="usajobs-nav-body">
-    <p>Top Level Navigation Placeholder</p>
+<nav class="usajobs-nav v1" role="navigation">
+  <div class="usajobs-nav__body">
+    <div class="container">
+      <div class="usajobs-nav__header">
+        <a class="usajobs-nav__brand" href="/">
+          <img src="{{ site.baseurl }}/img/usajobs-sm2.png" alt="USAJOBS Logo" class="logo">
+        </a>
+        <button type="button" class="usa-button-gray usajobs-nav__toggle navbar-toggle toggle-switch" data-toggle="collapse" data-target="#USAJobsMenu">
+          Menu
+        </button>
+      </div>
+      <div class="usajobs-nav__extended-menu collapse navbar-collapse" id="USAJobsMenu">
+        <ul class="usajobs-nav__menu">
+          <li class="dropdown">
+            <a accesskey="S" data-toggle="dropdown" aria-haspopup="true" class="dropdown-toggle clearcriteria" href="/" title="Search Jobs">
+              Search Jobs
+            </a>
+            <ul class="dropdown-menu" aria-expanded="false" role="menu">
+              <li><a class="clearcriteria" href="/">Basic Search</a></li>
+              <li><a class="clearcriteria" href="/Search/AdvancedSearch">Advanced Search</a></li>
+              <li><a class="clearcriteria hidden-xs" href="/Search/GeoSearch">Map Search (BETA)</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a accesskey="S" data-toggle="dropdown" aria-haspopup="true" class="dropdown-toggle" href="" title="My Account">
+              My Account
+            </a>
+            <ul class="dropdown-menu" aria-expanded="false" role="menu">
+              <li><a href="/Applicant/MyAccount/Home">My Account - Main Page</a></li>
+              <li><a href="/Applicant/Profile/PersonalInformation">Profile</a></li>
+              <li><a href="/Applicant/Resume/ListResumes">Resumes</a></li>
+              <li><a href="/Applicant/SavedSearches/ListSavedSearches">Saved Searches</a></li>
+              <li><a href="/Applicant/MyAccount/Inbox">Inbox</a></li>
+              <li><a href="/Applicant/SavedJobs/ListSavedJobs">Saved Jobs</a></li>
+              <li><a href="/Applicant/Document/ListDocuments">Saved Documents</a></li>
+              <li><a href="/Applicant/Application/ListApplications">Application Status</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="http://help.sqa.usajobs.gov/index.php/Main_Page" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" accesskey="I" title="Resource Center">
+              Resource Center
+            </a>
+            <ul class="dropdown-menu" aria-expanded="false" role="menu">
+              <li><a href="http://help.sqa.usajobs.gov/index.php/Main_Page">Resource Center - Main Page</a></li>
+              <li><a href="http://help.sqa.usajobs.gov/index.php/Forms">Supplemental Forms</a></li>
+              <li><a href="http://help.sqa.usajobs.gov/index.php/Individuals_with_Disabilities">Individuals with Disabilities</a></li>
+              <li><a href="/Veterans">Veterans</a></li>
+              <li><a href="/StudentsAndGrads">Students and Recent Graduates</a></li>
+              <li><a href="/SeniorExecutives">Senior Executives</a></li>
+              <li><a href="/ResourceCenter/SpotlightsAll">Spotlights</a></li>
+              <li><a href="http://help.sqa.usajobs.gov/index.php/Top_Ten_FAQ" onblur="timedMenuClose();" target="_blank">FAQs</a></li>
+            </ul>
+          </li>
+          <li><a href="/Home/Support">Support</a></li>
+        </ul>
+        <ul class="usajobs-nav__account">
+          <li><a class="sign_in" href="/Applicant/MyAccount/Home">Sign In</a></li>
+          <li class="pipe">|</li>
+          <li><a class="create_account" href="https://login.sqa.usajobs.gov/Account/Create">Create an Account</a></li>
+        </ul>
+      </div>
+    </div>
   </div>
 </nav>

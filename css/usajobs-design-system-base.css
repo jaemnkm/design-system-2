@@ -5045,6 +5045,12 @@ html {
   }
 }
 
+@media screen and (min-width: 62em) {
+  .usajobs-rightrail .usajobs-content-gutter {
+    padding-left: 0;
+  }
+}
+
 .usajobs-grid,
 .usajobs-grid-full {
   max-width: 68em;
@@ -5335,8 +5341,27 @@ html {
   padding: 0;
 }
 
+p img {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  width: auto;
+}
+
+.img--2x {
+  background-size: 50%;
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-family: "Source Sans Pro", "Helvetica", "Arial", sans-serif;
+}
+
+h1,
+h2 {
+  color: #112e51;
 }
 
 .section-header {

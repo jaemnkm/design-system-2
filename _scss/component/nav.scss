@@ -1,0 +1,133 @@
+// Navigation
+
+@import 'lib/bourbon/bourbon';
+@import 'lib/neat/neat';
+@import 'core/variables';
+@import 'base/variables';
+@import 'base/utilities';
+@import 'base/accessibility';
+@import 'base/breakpoints';
+
+.usajobs-nav {
+  background-color: $color-white;
+
+  &__body {
+    @include outer-container();
+    max-width: $site-max-width;
+    padding: $size-S 0;
+
+    @include media($ML) {
+      padding: 0;
+    }
+  }
+
+  &__header {
+    @include media($ML) {
+      @include span-columns(1);
+    }
+  }
+
+  &__brand {
+    @include span-columns(2 of 4);
+    width: 60%;
+    padding-left: $size-default;
+
+    @include media($SM) {
+      padding-left: $size-M;
+    }
+
+    @include media($ML) {
+      width: 100%;
+      float: none;
+      margin-right: auto;
+      padding-top: $size-S;
+    }
+
+    @include media($MLL) {
+      padding-top: $size-default;
+      padding-bottom: $size-default;
+    }
+
+    .logo {
+      max-height: 50px;
+
+      @include media($ML) {
+        max-height: inherit;
+      }
+    }
+  }
+
+  &__toggle {
+    position: relative;
+    @include span-columns(2 of 4);
+    float: right;
+    top: 0;
+    right: 10px;
+    width: rem(80px);
+    margin-top: 0;
+
+    @include media($ML) {
+      display: none;
+    }
+  }
+
+  &__extended-menu {
+    display: none;
+
+    @include media($ML) {
+      display: block;
+      @include span-columns(5);
+    }
+  }
+}
+
+.usajobs-nav__menu,
+.usajobs-nav__account {
+  display: block;
+  margin: 0;
+
+  li {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+
+    &:before,
+    &:after {
+      content: none;
+    }
+
+    a {
+      display: block;
+      padding: $size-S;
+      color: $color-base;
+      font-size: $small-font-size;
+
+      @include media($MLL) {
+        padding-top: $size-default;
+        padding-bottom: $size-default;
+        font-size: $base-font-size;
+      }
+    }
+  }
+}
+
+.usajobs-nav__menu {
+  @include media($ML) {
+    float: left;
+  }
+
+  .dropdown-menu {
+    display: none;
+  }
+}
+
+.usajobs-nav__account {
+  @include media($ML) {
+    float: right;
+  }
+
+  .pipe {
+    padding: 0;
+  }
+}
+

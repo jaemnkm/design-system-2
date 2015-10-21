@@ -23,4 +23,10 @@
   @include media($MLL) {
     @include span-columns(4);
   }
+
+  .usajobs-content-gutter {
+    @include media($MLL) {
+      padding-left: 0;
+    }
+  }
 }
