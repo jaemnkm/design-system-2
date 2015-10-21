@@ -200,6 +200,7 @@ figure {
  * Address differences between Firefox and other browsers.
  */
 hr {
+  -moz-box-sizing: content-box;
   box-sizing: content-box;
   height: 0;
 }
@@ -339,6 +340,8 @@ input[type="number"]::-webkit-outer-spin-button {
 input[type="search"] {
   -webkit-appearance: textfield;
   /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
   /* 2 */
   box-sizing: content-box;
 }
@@ -565,8 +568,7 @@ th {
 :root .fa-rotate-270,
 :root .fa-flip-horizontal,
 :root .fa-flip-vertical {
-  -webkit-filter: none;
-          filter: none;
+  filter: none;
 }
 
 .fa-stack {
@@ -2599,8 +2601,7 @@ body {
 }
 
 .lt-ie9 * {
-  -webkit-filter: none !important;
-          filter: none !important;
+  filter: none !important;
 }
 
 [aria-hidden=true] {
@@ -3188,9 +3189,7 @@ select {
   width: 100%;
   outline: none;
   padding: 1rem 0.7em;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  appearance: none;
 }
 
 input:focus,
@@ -3530,9 +3529,7 @@ button,
 [type="submit"],
 [type="reset"],
 [type="image"] {
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  appearance: none;
   background-color: #0071bc;
   border: 0;
   border-radius: 0.3rem;
@@ -4076,6 +4073,8 @@ a.usa-label:hover, a.usa-label-big:hover {
 }
 
 .skipnav {
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   background: transparent;
   color: #212121;
@@ -4090,6 +4089,8 @@ a.usa-label:hover, a.usa-label-big:hover {
 }
 
 .skipnav:focus {
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   background: #ffffff;
   left: 0;
@@ -4303,11 +4304,7 @@ a.usa-label:hover, a.usa-label-big:hover {
 
 @media screen and (min-width: 600px) {
   .usa-footer-medium .usa-footer-nav ul {
-    -webkit-align-items: center;
-        -ms-flex-align: center;
-            align-items: center;
-    display: -webkit-flex;
-    display: -ms-flexbox;
+    align-items: center;
     display: flex;
   }
 }
@@ -4326,11 +4323,7 @@ a.usa-label:hover, a.usa-label-big:hover {
     padding-top: 1rem;
   }
   .usa-footer-slim .usa-footer-primary-section .usa-grid-full {
-    -webkit-align-items: center;
-        -ms-flex-align: center;
-            align-items: center;
-    display: -webkit-flex;
-    display: -ms-flexbox;
+    align-items: center;
     display: flex;
   }
 }
@@ -5024,6 +5017,10 @@ html {
   display: table;
 }
 
+.usajobs-content-gutter {
+  padding: 0 3rem;
+}
+
 @media screen and (min-width: 62em) {
   .usajobs-content-well {
     float: left;
@@ -5343,7 +5340,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .section-header {
-  margin-top: 3em;
+  margin-top: 7.5rem;
   margin-bottom: 0.8em;
   padding: 0.5em 0;
   color: #112e51;
@@ -5380,4 +5377,5 @@ h1, h2, h3, h4, h5, h6 {
   background-size: 3rem;
   background-position: 1.5rem 2rem;
 }
+
 /*# sourceMappingURL=usajobs-design-system-base.css.map */

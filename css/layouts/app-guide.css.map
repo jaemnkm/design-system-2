@@ -1,0 +1,16 @@
+{
+	"version": 3,
+	"file": "app-guide.css",
+	"sources": [
+		"../../_scss/layouts/app-guide.scss",
+		"../../library/assets/_scss/core/_variables.scss",
+		"../../_scss/base/_variables.scss",
+		"../../_scss/base/_utilities.scss",
+		"../../_scss/base/var/_colors.scss",
+		"../../_scss/base/var/_spacing.scss",
+		"../../_scss/base/var/_layout.scss"
+	],
+	"sourcesContent": [],
+	"mappings": "AAMA,uBAAuB,CAAC;EACtB,gBAAgB,ECwCW,OAAO;CDzCX;;AAGvB,uBAAuB,CAAC,kBAAkB,CAAvB;EACjB,OAAO,EKLW,MAAU;ELM5B,gBAAgB,ECmCS,OAAO;CDrCd",
+	"names": []
+}

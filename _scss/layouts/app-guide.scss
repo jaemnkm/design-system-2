@@ -1,0 +1,14 @@
+// App Guide Layout
+
+@import 'core/variables';
+@import 'base/variables';
+@import 'base/utilities';
+
+.usajobs-app_guide-body {
+  background-color: $color-gray-lightest;
+
+  .usajobs-panel-box {
+    padding: $size-default;
+    background-color: $color-gray-lighter;
+  }
+}
