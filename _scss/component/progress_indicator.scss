@@ -1,0 +1,19 @@
+// Progress Indicator
+
+@import 'lib/bourbon/bourbon';
+@import 'lib/neat/neat';
+@import 'core/variables';
+@import 'base/variables';
+@import 'base/utilities';
+@import 'base/accessibility';
+@import 'base/breakpoints';
+
+.usajobs-progress_indicator {
+  background-color: $color-gray;
+}
+
+.usajobs-progress_indicator-body {
+}
+
+.usajobs-progress_indicator.v1 {
+}
