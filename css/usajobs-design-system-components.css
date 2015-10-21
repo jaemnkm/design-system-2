@@ -2344,16 +2344,6 @@ html {
   margin-bottom: 2px;
 }
 
-.usajobs-joa_summary.v0 .usajobs-joa_summary-body .attr a {
-  color: #ffffff;
-  text-decoration: underline;
-}
-
-.usajobs-joa_summary.v0 .usajobs-joa_summary-body .name {
-  font-weight: bold;
-  padding-right: 5px;
-}
-
 .usajobs-joa_summary.v1 .usajobs-joa_summary-body {
   padding-bottom: 1.5em;
 }
@@ -2371,6 +2361,32 @@ html {
 .usajobs-joa_summary.v1 .usajobs-joa_summary-body .joa-anchor {
   color: #d6d7d9;
   text-decoration: underline;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+.hidden,
+.usajobs-assistive-text {
+  position: absolute !important;
+  margin: -1px !important;
+  border: 0 !important;
+  padding: 0 !important;
+  width: 1px !important;
+  height: 1px !important;
+  overflow: hidden !important;
+  clip: rect(0 0 0 0) !important;
+}
+
+.usajobs-progress_indicator {
+  background-color: #5b616b;
 }
 
 /*# sourceMappingURL=usajobs-design-system-components.css.map */
