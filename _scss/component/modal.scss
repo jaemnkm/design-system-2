@@ -71,15 +71,15 @@
   }
 
   &__header {
-    padding: $size-L $size-M $size-M;
+    padding: $size-L $size-default $size-M;
     background-color: $color-gray-lightest;
-    border-bottom: 1px solid $color-gray;
+    border-bottom: 1px solid $color-gray-light;
   }
 
   &__footer {
     margin-top: $size-L;
     padding: $size-M;
-    border-top: 1px solid $color-gray;
+    border-top: 1px solid $color-gray-light;
   }
 
   &__title {

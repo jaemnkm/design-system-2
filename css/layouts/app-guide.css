@@ -1,10 +1,133 @@
-.usajobs-app_guide-body {
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+.usajobs-app_guide {
   background-color: #f1f1f1;
 }
 
-.usajobs-app_guide-body .usajobs-panel-box {
+.usajobs-app_guide__body {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 75em;
+  background-color: #f1f1f1;
+}
+
+.usajobs-app_guide__body::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.usajobs-app_guide .usajobs-panel-box {
   padding: 1.5rem;
   background-color: #d6d7d9;
+}
+
+.usajobs-app_guide-banner {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: none;
+  background-color: #205493;
+}
+
+.usajobs-app_guide-banner::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.usajobs-app_guide-banner-container {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 75em;
+}
+
+.usajobs-app_guide-banner-container::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+@media screen and (min-width: 37.5em) {
+  .usajobs-app_guide-joa_summary-container {
+    float: left;
+    display: block;
+    margin-right: 4.8291579146%;
+    width: 47.5854210427%;
+  }
+  .usajobs-app_guide-joa_summary-container:last-child {
+    margin-right: 0;
+  }
+}
+
+@media screen and (min-width: 48em) {
+  .usajobs-app_guide-joa_summary-container {
+    float: left;
+    display: block;
+    margin-right: 4.8291579146%;
+    width: 30.1138947236%;
+  }
+  .usajobs-app_guide-joa_summary-container:last-child {
+    margin-right: 0;
+  }
+}
+
+@media screen and (min-width: 62em) {
+  .usajobs-app_guide-joa_summary-container {
+    float: left;
+    display: block;
+    margin-right: 2.3576515979%;
+    width: 23.2317613015%;
+  }
+  .usajobs-app_guide-joa_summary-container:last-child {
+    margin-right: 0;
+  }
+}
+
+@media screen and (min-width: 37.5em) {
+  .usajobs-app_guide-progress_indicator-container {
+    float: left;
+    display: block;
+    margin-right: 4.8291579146%;
+    width: 47.5854210427%;
+  }
+  .usajobs-app_guide-progress_indicator-container:last-child {
+    margin-right: 0;
+  }
+}
+
+@media screen and (min-width: 48em) {
+  .usajobs-app_guide-progress_indicator-container {
+    float: left;
+    display: block;
+    margin-right: 4.8291579146%;
+    width: 65.0569473618%;
+  }
+  .usajobs-app_guide-progress_indicator-container:last-child {
+    margin-right: 0;
+  }
+}
+
+@media screen and (min-width: 62em) {
+  .usajobs-app_guide-progress_indicator-container {
+    float: left;
+    display: block;
+    margin-right: 2.3576515979%;
+    width: 74.4105871005%;
+  }
+  .usajobs-app_guide-progress_indicator-container:last-child {
+    margin-right: 0;
+  }
 }
 
 /*# sourceMappingURL=app-guide.css.map */

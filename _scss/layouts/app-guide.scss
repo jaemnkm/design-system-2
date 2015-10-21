@@ -1,14 +1,58 @@
 // App Guide Layout
 
+@import 'lib/bourbon/bourbon';
+@import 'lib/neat/neat';
 @import 'core/variables';
 @import 'base/variables';
 @import 'base/utilities';
+@import 'base/breakpoints';
 
-.usajobs-app_guide-body {
+.usajobs-app_guide {
   background-color: $color-gray-lightest;
+
+  &__body {
+    @include outer-container();
+    max-width: $site-max-width;
+    background-color: $color-gray-lightest;
+  }
 
   .usajobs-panel-box {
     padding: $size-default;
     background-color: $color-gray-lighter;
+  }
+}
+
+.usajobs-app_guide-banner {
+  @include outer-container();
+  max-width: none;
+  background-color: $color-primary-darker;
+}
+
+.usajobs-app_guide-banner-container {
+  @include outer-container();
+  max-width: $site-max-width;
+}
+
+.usajobs-app_guide-joa_summary-container {
+  @include media($M) {
+    @include span-columns(3);
+  }
+  @include media($ML) {
+    @include span-columns(2);
+  }
+  @include media($MLL) {
+    @include span-columns(3);
+  }
+}
+
+.usajobs-app_guide-progress_indicator-container {
+  @include media($M) {
+    @include span-columns(3);
+  }
+  @include media($ML) {
+    @include span-columns(4);
+  }
+  @include media($MLL) {
+    @include span-columns(9);
   }
 }
