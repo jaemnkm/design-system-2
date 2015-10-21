@@ -9,6 +9,10 @@
   background: $color-white;
 }
 
+.usajobs-content-gutter {
+  padding: 0 $size-M;
+}
+
 .usajobs-content-well {
   @include media($MLL) {
     @include span-columns(8);

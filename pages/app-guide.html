@@ -1,0 +1,45 @@
+---
+permalink: /app-guide/
+layout: app-guide
+title: Application Guide
+---
+  {% include components/nav.html %}
+  <div class="usajobs-app_guide-banner">
+    {% include components/joa_summary.html %}
+    {% include components/progress_indicator.html %}
+  </div>
+  <main class="usajobs-content-well" id="main-content" role="main">
+    <div class="usajobs-content-gutter">
+      <h1>Select Documents</h1>
+      <h3>Instructions:</h3>
+      <p>
+        Select the resume you want to submit as part of your application package.
+      </p>
+      <p>
+        If the resume you want to sumbit is not available below, either upload a new resume or use the Resume Builder to create a new one. USAJOBS stores up to five resumes, so you may need to delete old versions to upload new ones. Your profile will update with any changes made here to your resumes.
+      </p>
+    </div>
+  </main>
+  <aside class="usajobs-rightrail">
+    <div class="usajobs-content-gutter">
+      {% include components/required_documents.html %}
+      <div class="usajobs-panel-box">
+        <h3>Acceptable formats:</h3>
+        <p>
+          Uploaded resumes must be less than 3MB and can be in one of the following formats:
+        </p>
+        <ul>
+          <li>GIF</li>
+          <li>JPG/JPEG</li>
+          <li>PNG</li>
+          <li>RTF</li>
+          <li>PDF</li>
+          <li>Word (DOC or DOCX)</li>
+        </ul>
+        <p>
+          Only text-based RTF, PDF, and Word documents will be searchable by recruiters.
+        </p>
+      </div>
+    </div>
+  </aside>
+</div>

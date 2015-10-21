@@ -29,6 +29,8 @@
   },
   "scripts": {
     "build": "grunt build",
+    "css": "grunt css",
+    "js": "grunt js",
     "open:repo": "opener http://github.com/USAJOBS/design-system",
     "start": "grunt serve",
     "postinstall": "bundle install && grunt serve"
