@@ -7,7 +7,7 @@ h1, h2, h3, h4, h5, h6 {
 .section-header {
   margin: {
     top: $size-XXL;
-    bottom: 0.8em;
+    bottom: $size-S;
   }
   padding: 0.5em 0;
   color: $color-primary-darkest;
