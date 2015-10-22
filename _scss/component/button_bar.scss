@@ -1,0 +1,28 @@
+// Button Bar
+
+@import 'lib/bourbon/bourbon';
+@import 'lib/neat/neat';
+@import 'core/variables';
+@import 'base/variables';
+@import 'base/utilities';
+@import 'base/accessibility';
+@import 'base/breakpoints';
+
+.usajobs-button_bar {
+  @include outer-container();
+  max-width: none;
+  margin: $size-XL 0 $size-XXL;
+  background-color: $color-gray-lighter;
+
+  &__body {
+    @include clearfix();
+    max-width: $site-max-width;
+    margin: 0 auto;
+    padding: $size-M;
+  }
+
+  &__save {
+    float: right;
+    margin: 0;
+  }
+}
