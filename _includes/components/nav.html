@@ -2,9 +2,11 @@
   <div class="usajobs-nav__body">
     <div class="container">
       <div class="usajobs-nav__header">
-        <a class="usajobs-nav__brand" href="/">
-          <img src="{{ site.baseurl }}/img/usajobs-sm2.png" alt="USAJOBS Logo" class="logo">
-        </a>
+        <div class="usajobs-nav__brand-container">
+          <a class="usajobs-nav__brand" href="/">
+            <img src="{{ site.baseurl }}/img/usajobs-sm2.png" alt="USAJOBS Logo" class="logo">
+          </a>
+        </div>
         <div class="usajobs-nav__extended-menu collapse navbar-collapse" id="USAJobsMenu">
           <ul class="usajobs-nav__menu">
             <li class="dropdown">
@@ -50,10 +52,12 @@
             <li><a href="/Home/Support">Support</a></li>
           </ul>
         </div>
-        <button type="button" class="usa-button-gray usajobs-nav__toggle navbar-toggle toggle-switch" data-toggle="collapse" data-target="#USAJobsMenu">
-          Menu
-        </button>
         <ul class="usajobs-nav__account">
+          <li class="usajobs-nav__menu-toggle">
+            <button type="button" class="usa-button-gray usajobs-nav__menu-toggle-button navbar-toggle toggle-switch" data-toggle="collapse" data-target="#USAJobsMenu">
+              Menu
+            </button>
+          </li>
           <li><a class="sign_in" href="/Applicant/MyAccount/Home">Sign In</a></li>
           <li class="pipe">|</li>
           <li>
