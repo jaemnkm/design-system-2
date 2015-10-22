@@ -16,6 +16,7 @@
 
     @include media($MLL) {
       max-width: rem(375px);
+      margin-top: 0;
     }
   }
 

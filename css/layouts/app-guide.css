@@ -17,6 +17,7 @@ html {
   margin-left: auto;
   margin-right: auto;
   max-width: 75em;
+  margin-top: 4.5rem;
   background-color: #f1f1f1;
 }
 
@@ -24,6 +25,10 @@ html {
   clear: both;
   content: "";
   display: table;
+}
+
+.usajobs-app_guide__body h1 {
+  margin-top: 0;
 }
 
 .usajobs-app_guide .usajobs-panel-box {
