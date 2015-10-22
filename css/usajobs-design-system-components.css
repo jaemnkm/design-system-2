@@ -63,17 +63,11 @@ html {
   margin-right: 7.4229703521%;
   width: 46.288514824%;
   width: 60%;
-  padding-left: 1.5rem;
+  padding-left: 3rem;
 }
 
 .usajobs-nav__brand:last-child {
   margin-right: 0;
-}
-
-@media screen and (min-width: 30em) {
-  .usajobs-nav__brand {
-    padding-left: 3rem;
-  }
 }
 
 @media screen and (min-width: 48em) {
@@ -2624,6 +2618,7 @@ html {
 @media screen and (min-width: 62em) {
   .usajobs-required_documents__trigger {
     max-width: 37.5rem;
+    margin-top: 0;
   }
 }
 

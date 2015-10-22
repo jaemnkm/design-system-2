@@ -30,11 +30,7 @@
   &__brand {
     @include span-columns(2 of 4);
     width: 60%;
-    padding-left: $size-default;
-
-    @include media($SM) {
-      padding-left: $size-M;
-    }
+    padding-left: $size-M;
 
     @include media($ML) {
       width: 100%;

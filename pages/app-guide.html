@@ -15,18 +15,14 @@ title: Application Guide
       </div>
     </div>
   </div>
-  <div class="usajobs-app_guide__body">
+  <div class="usajobs-app_guide__body usajobs-content-gutter">
     <main class="usajobs-content-well" id="main-content" role="main">
-      <div class="usajobs-content-gutter">
-        <h1>Select Documents</h1>
-        {% include components/app_guide-content.html %}
-      </div>
+      <h1>Select Documents</h1>
+      {% include components/app_guide-content.html %}
     </main>
     <aside class="usajobs-rightrail">
-      <div class="usajobs-content-gutter">
-        {% include components/required_documents.html %}
-        {% include components/acceptable_formats.html %}
-      </div>
+      {% include components/required_documents.html %}
+      {% include components/acceptable_formats.html %}
     </aside>
   </div>
 </div>
