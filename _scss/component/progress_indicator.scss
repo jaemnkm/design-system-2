@@ -17,3 +17,108 @@
 
 .usajobs-progress_indicator.v1 {
 }
+
+
+.progress-heading {
+	background: #112e51;
+	margin-top: 0;
+}
+
+.progress-desc {
+	background: #205493;
+	color: #fff;
+	padding-top: 1.5rem;
+	padding-bottom: 2.5rem;
+}
+
+.progress-container {
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+}
+
+
+.circle{
+	display:block;
+	width:45px;
+	height:45px;
+	border-radius:22.5px;
+	font-size:20px;
+	color:#fff;
+	line-height:45px;
+	text-align:center;
+	text-decoration:none;
+	background:#2d8700;
+	margin-bottom:0.5em;
+	margin-top: -1em;
+}
+
+.circle:hover{
+	cursor: pointer;
+
+}
+
+.circle-outline{
+	display:block;
+	width:45px;
+	height:45px;
+	border-radius:22.5px;
+	font-size:20px;
+	color:#fff;
+	line-height:45px;
+	text-align:center;
+	text-decoration:none;
+	margin-bottom:0.5em;
+	margin-top: -1em;
+	box-shadow: inset 0 0 0 2px #6d7f95;
+}
+
+
+.progress-text {
+	margin-top: 0;
+	color: #fff;
+}
+
+.progress-small-text {
+	margin-top: 1em;
+	color:#fff;
+}
+
+.progress-step {
+	padding-top: 3rem;
+}
+
+
+@include media($XL){
+	.horizontal-line {
+		border-top: 1px solid white;
+		margin-bottom: 0;
+		margin-top: 3em;
+	}
+}
+
+
+@media (max-width: 991px){
+	.circle, .circle-outline {
+		width:25px;
+		height:25px;
+		border-radius:15px;
+		font-size:17px;
+		line-height:25px;
+		margin-bottom:0.2em;
+		margin-top: 0.5em;
+	}
+	.progress-step {
+		padding-top: 0em;
+	}
+	.progress-small-text {
+		margin-top: 0em;
+	}
+	.progress-small-text h5 {
+		font-size: 0.8em;
+		font-weight: normal;
+		margin-top: 0.7em;
+		margin-bottom: 0.7em;
+	}
+}
+
+
