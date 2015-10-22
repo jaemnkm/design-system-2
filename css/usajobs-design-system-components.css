@@ -195,6 +195,12 @@ html {
   }
 }
 
+@media screen and (min-width: 62em) {
+  .usajobs-nav__account .create_account {
+    padding-right: 3rem;
+  }
+}
+
 .usajobs-nav__account .pipe {
   padding: 0;
 }
@@ -2617,9 +2623,63 @@ html {
 
 @media screen and (min-width: 62em) {
   .usajobs-required_documents__trigger {
-    max-width: 37.5rem;
+    max-width: 38.5rem;
     margin-top: 0;
   }
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+.hidden,
+.usajobs-assistive-text {
+  position: absolute !important;
+  margin: -1px !important;
+  border: 0 !important;
+  padding: 0 !important;
+  width: 1px !important;
+  height: 1px !important;
+  overflow: hidden !important;
+  clip: rect(0 0 0 0) !important;
+}
+
+.usajobs-button_bar {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: none;
+  margin: 6rem 0 7.5rem;
+  background-color: #d6d7d9;
+}
+
+.usajobs-button_bar::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.usajobs-button_bar__body {
+  max-width: 75em;
+  margin: 0 auto;
+  padding: 3rem;
+}
+
+.usajobs-button_bar__body::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.usajobs-button_bar__save {
+  float: right;
+  margin: 0;
 }
 
 /*# sourceMappingURL=usajobs-design-system-components.css.map */
