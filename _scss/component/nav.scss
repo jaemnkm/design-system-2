@@ -23,7 +23,7 @@
 
   &__header {
     @include media($ML) {
-      @include span-columns(1);
+      @include span-columns(3 of 12);
     }
   }
 
@@ -40,19 +40,16 @@
       width: 100%;
       float: none;
       margin-right: auto;
-      padding-top: $size-S;
-    }
-
-    @include media($MLL) {
       padding-top: $size-default;
       padding-bottom: $size-default;
+      max-width: rem(180px + 30px);
     }
 
     .logo {
-      max-height: 50px;
+      max-width: rem(160px);
 
-      @include media($ML) {
-        max-height: inherit;
+      @include media($MLL) {
+        max-width: rem(180px);
       }
     }
   }
@@ -76,7 +73,7 @@
 
     @include media($ML) {
       display: block;
-      @include span-columns(5);
+      @include span-columns(9 of 12);
     }
   }
 }
@@ -96,17 +93,26 @@
       content: none;
     }
 
+    &.pipe {
+      width: 1px;
+    }
+
     a {
       display: block;
       padding: $size-S;
+      padding-top: rem(24px);
+      padding-bottom: $size-M;
       color: $color-base;
       font-size: $small-font-size;
 
       @include media($MLL) {
-        padding-top: $size-default;
-        padding-bottom: $size-default;
-        font-size: $base-font-size;
+        font-size: $lead-font-size;
       }
+    }
+
+    a:hover {
+      color: $color-primary-darker;
+      text-decoration: none;
     }
   }
 }
