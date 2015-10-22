@@ -14,28 +14,22 @@
   &__body {
     @include outer-container();
     max-width: $site-max-width;
-    padding: $size-S 0;
-
-    @include media($ML) {
-      padding: 0;
-    }
   }
 
   &__header {
-    @include media($ML) {
-      @include span-columns(3 of 12);
-    }
+    display: block;
   }
 
   &__brand {
     @include span-columns(2 of 4);
-    width: 60%;
-    padding-left: $size-M;
+    padding: $size-default 0 $size-default $size-M;
 
     @include media($ML) {
-      width: 100%;
-      float: none;
-      margin-right: auto;
+      @include span-columns(6 of 12);
+      width: 53%;
+    }
+
+    @include media($MLL) {
       padding-top: $size-default;
       padding-bottom: $size-default;
       max-width: rem(180px + 30px);
@@ -57,9 +51,15 @@
     top: 0;
     right: 10px;
     width: rem(80px);
-    margin-top: 0;
+    margin: $size-default 0 0;
 
     @include media($ML) {
+      right: auto;
+      @include span-columns(2 of 12);
+      width: rem(80px);
+    }
+
+    @include media($MLL) {
       display: none;
     }
   }
@@ -67,16 +67,17 @@
   &__extended-menu {
     display: none;
 
-    @include media($ML) {
-      display: block;
-      @include span-columns(9 of 12);
+    @include media($MLL) {
+      @include span-columns(6 of 12);
+      margin-right: 0;
+      width: 52%;
     }
   }
 }
 
 .usajobs-nav__menu,
 .usajobs-nav__account {
-  display: block;
+  display: none;
   margin: 0;
 
   li {
@@ -95,15 +96,8 @@
 
     a {
       display: block;
-      padding: $size-S;
-      padding-top: rem(24px);
-      padding-bottom: $size-M;
+      padding: rem(21px) $size-default $size-M;
       color: $color-base;
-      font-size: $small-font-size;
-
-      @include media($MLL) {
-        font-size: $lead-font-size;
-      }
     }
 
     a:hover {
@@ -114,8 +108,17 @@
 }
 
 .usajobs-nav__menu {
-  @include media($ML) {
+  @include media($MLL) {
+    display: block;
     float: left;
+  }
+
+  li a {
+    font-size: $base-font-size;
+
+    @include media($MLL) {
+      font-size: $lead-font-size;
+    }
   }
 
   .dropdown-menu {
@@ -125,11 +128,29 @@
 
 .usajobs-nav__account {
   @include media($ML) {
+    display: block;
     float: right;
   }
 
+  li {
+    a {
+      @include media($MLL) {
+        padding-top: rem(24px);
+        padding-bottom: rem(32px);
+        font-size: $base-font-size;
+      }
+    }
+  }
+
+  .sign_in {
+    @include media($ML) {
+      padding-right: $size-S;
+    }
+  }
+
   .create_account {
-    @include media($MLL) {
+    @include media($ML) {
+      padding-left: $size-S;
       padding-right: $size-M;
     }
   }
