@@ -22,15 +22,22 @@
   }
 
   .usajobs-panel-box {
-    padding: $size-default;
+    padding: $size-M;
     background-color: $color-gray-lighter;
+
+    h2:first-child,
+    h3:first-child,
+    h4:first-child {
+      margin-top: 0;
+    }
   }
 }
 
 .usajobs-app_guide-banner {
   @include outer-container();
   max-width: none;
-  background-color: $color-primary-darker;
+  // background-color: $color-primary-darker;
+  @include linear-gradient(to right, $color-primary-darker 0%, $color-primary-darker 50%, $color-primary-darkest 60%, $color-primary-darkest 100%);
 }
 
 .usajobs-app_guide-banner-container {
@@ -53,5 +60,34 @@
   }
   @include media($MLL) {
     @include span-columns(9);
+  }
+}
+
+.usajobs-app_guide-document_container {
+  float: left;
+  width: 31.7615656014%;
+  margin-right: 2.3576515979%;
+  min-width: 195px;
+
+  @include media($ML) {
+    @include span-columns(2);
+  }
+
+  @include media($MLL) {
+    @include span-columns(4);
+  }
+
+  @include media($XL) {
+    @include span-columns(4);
+  }
+}
+
+.usajobs-app_guide-resumes {
+  padding: 0;
+
+  // This is just here to demo the resume grid
+  .thumbnail {
+    display: block;
+    min-width: 195px;
   }
 }

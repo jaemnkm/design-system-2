@@ -2,7 +2,6 @@
 .usajobs-grid-full {
   @include outer-container();
   max-width: $site-max-width;
-  background: $color-white;
 
   @include media($M) {
     .usa-width-one-whole {

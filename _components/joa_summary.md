@@ -10,17 +10,6 @@ lead: Summary of the Job Offer Announcement (JOA)
 </a>
 
 <div class="preview">
-  <!-- h6 class="usa-heading-alt">Default (v0)</h6>
-  <div class="usajobs-joa_summary v0">
-    <div class="usajobs-joa_summary-body">
-      <ul class="detail">
-        <li class="attr"><span class="name">Job:</span> <a href="#joa">Animal Caretaker</a></li>
-        <li class="attr"><span class="name">Job Number:</span> ANS-16-CMC-1524181-BU-ORD</li>
-        <li class="attr"><span class="name">Agency:</span> Smithsonian</li>
-      </ul>
-    </div>
-  </div-->
-
   <h6 class="usa-heading-alt">Variation (v1)</h6>
   <div class="usajobs-joa_summary v1">
     <div class="usajobs-joa_summary-body">
@@ -47,6 +36,7 @@ lead: Summary of the Job Offer Announcement (JOA)
       <li>The job title opens the JOA in a new tab.</li>
       <li>The "Who may apply" link opens the JOA in a new tab and anchors to the Who May Apply section within the JOA.</li>
       <li>The level one agency should be the agency listed.</li>
+      <li>The date should be in the format MM/DD/YYYY.</li>
     </ul>
 
     <h4 class="usa-heading">Usability</h4>
