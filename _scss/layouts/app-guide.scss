@@ -39,9 +39,6 @@
 }
 
 .usajobs-app_guide-joa_summary-container {
-  @include media($M) {
-    @include span-columns(3);
-  }
   @include media($ML) {
     @include span-columns(2);
   }
@@ -51,9 +48,6 @@
 }
 
 .usajobs-app_guide-progress_indicator-container {
-  @include media($M) {
-    @include span-columns(3);
-  }
   @include media($ML) {
     @include span-columns(4);
   }
