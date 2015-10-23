@@ -8,117 +8,173 @@
 @import 'base/accessibility';
 @import 'base/breakpoints';
 
+@mixin makeCircle($size, $radius) {
+	width: $size;
+	height: $size;
+	line-height: $size;
+	border-radius: $radius;
+}
+
 .usajobs-progress_indicator {
-  background-color: $color-gray;
-}
+  background-color: $color-primary-darkest;
 
-.usajobs-progress_indicator-body {
-}
+  @include media($MLL) {
+  	display: table;
+  	width: 100%;
+		padding: 0 $size-M;
+  }
 
-.usajobs-progress_indicator.v1 {
-}
+  &__body {
+		padding: 0 $size-M;
 
+  	@include media($ML-to-MLL) {
+  		padding-top: $size-default;
+  		padding-bottom: $size-default;
+  	}
 
-.progress-heading {
-	background: #112e51;
-	margin-top: 0;
-}
+	  @include media($MLL) {
+	  	display: table-row;
+	  	width: 100%;
+	  	padding: 0;
+	  }
+  }
 
-.progress-desc {
-	background: #205493;
-	color: #fff;
-	padding-top: 1.5rem;
-	padding-bottom: 2.5rem;
-}
+  &__step {
+  	display: inline-block;
+  	width: 18%;
+  	height: 100%;
+  	padding: $size-default 0;
 
-.progress-container {
-	padding-top: 0.5em;
-	padding-bottom: 0.5em;
-}
+  	&:hover {
+  		text-decoration: none;
+  	}
 
+  	@include media($ML-to-MLL) {
+  		@include clearfix();
+  		display: block;
+  		width: 100%;
+  		padding: $size-XS;
+  	}
 
-.circle{
-	display:block;
-	width:45px;
-	height:45px;
-	border-radius:22.5px;
-	font-size:20px;
-	color:#fff;
-	line-height:45px;
-	text-align:center;
-	text-decoration:none;
-	background:#2d8700;
-	margin-bottom:0.5em;
-	margin-top: -1em;
-}
+  	@include media($MLL) {
+  		position: relative;
+  		display: table-cell;
+  		width: auto;
+  		padding: $size-XL $size-default;
+  	}
 
-.circle:hover{
-	cursor: pointer;
+  	&:after {
+  		@include media($XL) {
+	  		content: ' ';
+	  		position: absolute;
+	  		top: 36%;
+	  		left: 58%;
+	  		border-bottom: 1px solid $color-white;
+	  		width: 50px;
+	  	}
+  	}
 
-}
+  	&:last-child:after {
+  		border-bottom: 0;
+  	}
+  }
 
-.circle-outline{
-	display:block;
-	width:45px;
-	height:45px;
-	border-radius:22.5px;
-	font-size:20px;
-	color:#fff;
-	line-height:45px;
-	text-align:center;
-	text-decoration:none;
-	margin-bottom:0.5em;
-	margin-top: -1em;
-	box-shadow: inset 0 0 0 2px #6d7f95;
-}
+  &__number {
+  	text-align: center;
 
+  	@include media($ML-to-MLL) {
+  		@include span-columns(1 of 4);
+  		margin-right: 0;
+  	}
 
-.progress-text {
-	margin-top: 0;
-	color: #fff;
-}
+  	@include media($ML) {
+  		text-align: left;
+			font-weight: $font-bold;
+  	}
 
-.progress-small-text {
-	margin-top: 1em;
-	color:#fff;
-}
+  	@include media($MLL) {
+  		display: table-row;
+  		height: 50%;
+  		width: 100%;
+  	}
+  }
 
-.progress-step {
-	padding-top: 3rem;
-}
+  &__step-desc {
+  	@include media($ML-to-MLL) {
+  		@include span-columns(3 of 4);
+  	}
 
+		h5 {
+			color: $color-white;
+			font-size: $small-font-size;
+			font-weight: $font-normal;
+			text-align: center;
+			margin-top: $size-base;
 
-@include media($XL){
-	.horizontal-line {
-		border-top: 1px solid white;
-		margin-bottom: 0;
-		margin-top: 3em;
+  		@include media($ML) {
+				margin-top: $size-S;
+				margin-bottom: $size-S;
+				font-size: $base-font-size;
+  			text-align: left;
+  		}
+
+  		@include media($ML) {
+				font-weight: $font-bold;
+			}
+		}
+
+		.short-desc {
+			@include media($ML) {
+				display: none;
+			}
+		}
+
+		.long-desc {
+			display: none;
+
+			@include media($ML) {
+				display: inherit;
+			}
+		}
+  }
+
+	.circle {
+		@include makeCircle(35px, 20px);
+		display: block;
+		margin: $size-base auto $size-XS;
+		text-align: center;
+		color: $color-white;
+		box-shadow: inset 0 0 0 2px $color-gray-light;
+
+		@include media($MLL) {
+			@include makeCircle(45px, 22.5px);
+			font-size: $lead-font-size;
+			text-decoration: none;
+			margin-bottom: $size-base;
+		}
+
+		&:hover {
+			cursor: pointer;
+		}
+
+		&--current {
+			background-color: $color-green-dark;
+			box-shadow: none;
+		}
 	}
 }
 
+.usajobs-progress_indicator__step-connector {
+	display: none;
 
-@media (max-width: 991px){
-	.circle, .circle-outline {
-		width:25px;
-		height:25px;
-		border-radius:15px;
-		font-size:17px;
-		line-height:25px;
-		margin-bottom:0.2em;
-		margin-top: 0.5em;
+	@include media($XL) {
+		display: table-cell;
+		width: $size-M;
 	}
-	.progress-step {
-		padding-top: 0em;
-	}
-	.progress-small-text {
-		margin-top: 0em;
-	}
-	.progress-small-text h5 {
-		font-size: 0.8em;
-		font-weight: normal;
-		margin-top: 0.7em;
-		margin-bottom: 0.7em;
+
+	.dash {
+		display: table-row;
+		background-color: $color-white;
+		height: 1px;
 	}
 }
-
-

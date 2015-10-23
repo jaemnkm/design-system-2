@@ -63,18 +63,6 @@ html {
   display: table;
 }
 
-@media screen and (min-width: 37.5em) {
-  .usajobs-app_guide-joa_summary-container {
-    float: left;
-    display: block;
-    margin-right: 4.8291579146%;
-    width: 47.5854210427%;
-  }
-  .usajobs-app_guide-joa_summary-container:last-child {
-    margin-right: 0;
-  }
-}
-
 @media screen and (min-width: 48em) {
   .usajobs-app_guide-joa_summary-container {
     float: left;
@@ -95,18 +83,6 @@ html {
     width: 23.2317613015%;
   }
   .usajobs-app_guide-joa_summary-container:last-child {
-    margin-right: 0;
-  }
-}
-
-@media screen and (min-width: 37.5em) {
-  .usajobs-app_guide-progress_indicator-container {
-    float: left;
-    display: block;
-    margin-right: 4.8291579146%;
-    width: 47.5854210427%;
-  }
-  .usajobs-app_guide-progress_indicator-container:last-child {
     margin-right: 0;
   }
 }
