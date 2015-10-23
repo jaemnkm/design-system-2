@@ -25,6 +25,8 @@
 }
 
 .usajobs-content-well {
+  margin-bottom: $size-XL;
+
   @include media($MLL) {
     @include span-columns(8);
   }

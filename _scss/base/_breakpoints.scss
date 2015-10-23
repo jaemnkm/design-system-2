@@ -17,4 +17,4 @@ $XL:  new-breakpoint(min-width $XL-screen 12);
 $XXL: new-breakpoint(min-width $XL-screen 12);
 
 // In between points
-$ML-to-MLL:  new-breakpoint(min-width $ML-screen max-width $MLL-screen, 6);
+$ML-to-MLL:  new-breakpoint(min-width $ML-screen max-width ($MLL-screen - .001em), 6);

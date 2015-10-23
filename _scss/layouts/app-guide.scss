@@ -11,6 +11,7 @@
   background-color: $color-gray-lightest;
 
   &__body {
+    position: relative;
     @include outer-container();
     max-width: $site-max-width;
     margin-top: $size-L;
@@ -89,5 +90,21 @@
   .thumbnail {
     display: block;
     min-width: 195px;
+  }
+}
+
+.usa-accordion-bordered {
+  .usajobs-accordion {
+    background-color: $color-gray-lightest;
+
+    button {
+      border-radius: 0;
+      background-color: $color-gray-lighter;
+    }
+
+    .usa-accordion-content {
+      background-color: $color-gray-lightest;
+      border-color: $color-gray-lighter;
+    }
   }
 }
