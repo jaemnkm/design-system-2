@@ -3,7 +3,8 @@
 @import 'lib/bourbon/bourbon';
 @import 'lib/neat/neat';
 
-.usajobs-site-body {
+.usajobs-shell {
+  position: relative;
   @include outer-container();
   max-width: $site-max-width;
   background: $color-white;
@@ -11,6 +12,16 @@
 
 .usajobs-content-gutter {
   padding: 0 $size-M;
+}
+
+.usajobs-canvas {
+  position: relative;
+  display: block;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
 }
 
 .usajobs-content-well {

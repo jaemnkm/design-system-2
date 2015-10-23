@@ -2,7 +2,8 @@
 
 var $modal = $('[data-object="modal"]'),
   $modal_trigger = $('[data-object-trigger="modal"]'),
-  $body = $('body');
+  $body = $('body'),
+  $backdrop = $('<div class="usajobs-modal__canvas-blackout" tabindex="-1" />');
 
 $modal_trigger.on('click', function (event) {
   var $el = $(this),
@@ -37,19 +38,32 @@ $modal.on('click', '[data-behavior]', function (event) {
 });
 
 $modal.on('modal.open', function(event, opts) {
+  var closeModal = function () {
+    opts.object.trigger('modal.close', {
+      el: opts.el,
+      object: opts.object,
+      state: opts.state
+    });
+  };
+
   event.preventDefault();
 
   $body.addClass('is-open-modal');
+  $backdrop
+    .appendTo($body)
+    .attr('aria-hidden', 'true');
 
-  opts.object.data('trigger', opts.el);
+  // Store the element on the page that had focus
+  // so we can return focus to that element
+  opts.object.data('previous_focus', $(':focus'));
 
   opts.object.attr('data-state', 'is-open');
   opts.object.attr('aria-hidden', 'false');
 
   $(document).on('keyup', function (e) {
+    // Close the modal when ESC is pressed
     if (e.keyCode === 27) {
-      // Close the modal when ESC is pressed
-      opts.object.trigger('modal.close', { el: opts.el, object: opts.object, state: opts.state });
+      closeModal();
     }
   });
 
@@ -57,10 +71,11 @@ $modal.on('modal.open', function(event, opts) {
 
 $modal.on('modal.close', function(event, opts) {
   $body.removeClass('is-open-modal');
+  $backdrop.remove();
+
   $(document).off('keyup');
 
   opts.object.attr('data-state', 'is-closed');
   opts.object.attr('aria-hidden', 'true');
-  opts.object.data('trigger').focus();
+  opts.object.data('previous_focus').focus();
 });
-
