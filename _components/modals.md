@@ -1,5 +1,5 @@
 ---
-layout: styleguide
+layout: styleguide 
 type: component
 title: Modals
 lead: USAJOBS uses the modal component to draw attention to actions that require user input.
@@ -8,31 +8,31 @@ lead: USAJOBS uses the modal component to draw attention to actions that require
 <a href="{{ site.baseurl }}/getting-started/#maturity" class="usa-label maturity under_review">Under Review</a>
 
 <div class="preview">
-  <a href="#modal-trigger" class="usa-button usajobs-button" data-object-trigger="modal" data-target="#modal-default">Open Modal</a>
+  <a href="#modal-trigger" class="usa-button usajobs-button" data-object-trigger="modal" data-target="#modal-demo">Open Modal</a>
 
-  <div class="usajobs-modal" data-object="modal" data-state="is-closed" id="modal-default" aria-hidden="true" role="dialog" aria-labelledby="#modal-default-heading">
-    <div class="usajobs-modal__frame">
-      <span class="hidden">Top of Modal Window</span><!-- for accessibility -->
-      <div class="usajobs-modal__header">
-        <h2 id="modal-default-heading" class="usajobs-modal__title">[Modal Header]</h2>
-      </div>
-      <div class="usajobs-modal__body">
-        [modal body content Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.]
-      </div>
-      <div class="usajobs-modal__footer">
-        <button class="usa-button-big usa-button-primary">Go</button>
-        <a href="#cancel" class="">Cancel</button>
-      </div>
-      <div class="usajobs-modal__actions">
-        <button class="usajobs-modal__close" data-behavior="modal.close" >
-          <span class="usajobs-assistive-text">Close</span>
-        </button>
-      </div>
-      <span class="hidden">Bottom of Modal Window</span><!-- for accessiblity -->
+  <div class="usajobs-modal" data-object="modal" data-state="is-closed" id="modal-default" aria-hidden="true" role="dialog" aria-labelledby="usajobs-modal-heading" aria-describedby="usajobs-modal-description">
+    <div id="usajobs-modal-description" class="usajobs-assistive-text">
+      Beginning of a dialog window for the contact form. It begins with a heading 2 
+      called &quot;[Modal Header]&quot;. Escape will cancel and close the window.
+    </div> 
+    <div class="usajobs-modal__header">
+      <h2 id="usajobs-modal-heading" class="usajobs-modal__title">[Modal Header]</h2>
+    </div>
+    <div class="usajobs-modal__body">
+      [modal body content Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.]
+    </div>
+    <div class="usajobs-modal__footer">
+      <button class="usa-button-big usa-button-primary" data-behavior="modal.close">Go</button>
+      <a href="#cancel" class="" data-behavior="modal.close">Cancel</a>
+    </div>
+    <div class="usajobs-modal__actions">
+      <button class="usajobs-modal__close" data-behavior="modal.close" >
+        <span class="usajobs-assistive-text">Close</span>
+      </button>
     </div>
   </div>
 </div>
@@ -47,7 +47,8 @@ lead: USAJOBS uses the modal component to draw attention to actions that require
     <ul class="usa-content-list">
       <li>Modal should have the <code>role="dialog"</code> attribute.</li>
       <li>Content behind the modal should not scroll while the modal is open.</li>
-      <li>Modal should have an <code>aria-labelledby</code> attribute where the value is the ID of the modal title.</li>
+      <li>Modal should have an <code>aria-labelledby</code> attribute where the value is the ID of the modal title (you don't need or want the #).</li>
+      <li>Modal should have an <code>aria-describedby</code> attribute where the value is the ID of a div that contains a description of the modal (you don't need or want the #).</li>
       <li>Pressing the ESC key should close the modal and return the focus to the element that triggered the modal.</li>
       <li>If the modal contains a form, pressing the Enter key should submit that form.</li>
     </ul>

@@ -2431,25 +2431,6 @@ html {
 
 .usajobs-modal {
   position: fixed;
-  top: -9999em;
-  left: auto;
-  right: auto;
-  bottom: 0;
-  height: 100%;
-  z-index: 0;
-  background-color: rgba(0, 0, 0, 0.38);
-}
-
-.usajobs-modal[data-state="is-open"] {
-  z-index: 1000000001;
-  top: 0;
-  right: 0;
-  left: 0;
-  animation: fadeIn 0.3s ease-out;
-}
-
-.usajobs-modal__frame {
-  position: absolute;
   top: 1.5rem;
   right: 0;
   left: 0;
@@ -2457,37 +2438,54 @@ html {
   margin: 1.5rem;
   width: auto;
   min-height: 200px;
-  z-index: 999;
+  z-index: 400;
   overflow: auto;
   background-color: #ffffff;
   background-clip: padding-box;
   border: 1px solid rgba(70, 70, 70, 0.14);
-  border-radius: 5px;
+  border-radius: 0.5rem;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.29);
+  opacity: 0;
+  transition: 0.4s opacity ease-in-out;
 }
 
 @media screen and (min-width: 48em) {
-  .usajobs-modal__frame {
+  .usajobs-modal {
     top: 6rem;
     bottom: 6rem;
   }
 }
 
 @media screen and (min-width: 62em) {
-  .usajobs-modal__frame {
+  .usajobs-modal {
     left: 50%;
     bottom: auto;
-    width: 700px;
-    margin-left: -350px;
+    width: 70rem;
+    margin-left: -35rem;
   }
 }
 
-.usajobs-modal[data-state="is-open"] .usajobs-modal__frame {
-  animation: fadeInUp 0.3s ease-out;
+.usajobs-modal[data-state="is-open"] {
+  opacity: 1;
+}
+
+.usajobs-modal__canvas-blackout[aria-hidden="true"] {
+  display: block !important;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  z-index: 150;
+  background-color: rgba(0, 0, 0, 0.38);
+  animation: fadeIn 0.3s ease-out;
 }
 
 .usajobs-modal__body {
-  min-height: 500px;
+  min-height: 50rem;
   overflow: auto;
   padding: 1.5rem;
 }
@@ -2518,17 +2516,21 @@ html {
   position: absolute;
   top: 1.5rem;
   right: 1.5rem;
-  height: 36px;
-  width: 36px;
-  background: #aeb0b5;
+  margin: 0;
+  padding: 0;
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  border-radius: 17.5px;
+  color: #ffffff;
+  background-color: #aeb0b5;
   text-decoration: none;
-  border-radius: 50%;
 }
 
 .usajobs-modal__close:after {
   position: absolute;
-  top: 10px;
-  left: 14px;
+  top: 25%;
+  left: 33%;
   width: 10px;
   height: 10px;
   display: inline-block;
@@ -2778,11 +2780,11 @@ html {
   width: 35px;
   height: 35px;
   line-height: 35px;
-  border-radius: 20px;
+  border-radius: 17.5px;
+  color: #ffffff;
   display: block;
   margin: 0.5rem auto 0.25rem;
   text-align: center;
-  color: #ffffff;
   box-shadow: inset 0 0 0 2px #aeb0b5;
 }
 
@@ -2792,6 +2794,7 @@ html {
     height: 45px;
     line-height: 45px;
     border-radius: 22.5px;
+    color: #ffffff;
     font-size: 2rem;
     text-decoration: none;
     margin-bottom: 0.5rem;

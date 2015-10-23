@@ -5,7 +5,9 @@
 @import 'lib/neat/neat';
 @import 'core/variables';
 @import 'core/utilities';
+@import 'base/utilities';
 @import 'base/variables';
+@import 'base/breakpoints';
 
 // Variables -------------- //
 $width-nav-sidebar: 250px;
@@ -191,7 +193,7 @@ $section-padding:   7.2rem;
   left: 0;
   top: 0;
   width: 100%;
-  z-index: 1;
+  z-index: 201;
 
   a {
     border-bottom: none;
@@ -1060,11 +1062,10 @@ $font-light: 300;
 }
 
 // For the shell demonstration we need to account for the fixed header of the site
-.usajobs-site-body {
-  margin-top: 81px;
-  padding-top: 2rem;
+.shell .usajobs-shell {
+  padding-top: 3rem;
 
-  @include media(min-width 850px) {
-    margin-top: 128px;
+  @include media(850px) {
+    padding-top: 8rem;
   }
 }

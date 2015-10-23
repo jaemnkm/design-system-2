@@ -175,7 +175,7 @@ html {
   left: 0;
   top: 0;
   width: 100%;
-  z-index: 1;
+  z-index: 201;
 }
 
 .usa-site-header a {
@@ -1059,14 +1059,13 @@ code[class*="language-"], pre[class*="language-"] {
   display: none;
 }
 
-.usajobs-site-body {
-  margin-top: 81px;
-  padding-top: 2rem;
+.shell .usajobs-shell {
+  padding-top: 3rem;
 }
 
-@media screen and (min-width: min-width 850px) {
-  .usajobs-site-body {
-    margin-top: 128px;
+@media screen and (min-width: 850px) {
+  .shell .usajobs-shell {
+    padding-top: 8rem;
   }
 }
 

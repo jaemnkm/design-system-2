@@ -1,68 +1,16 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <!-- Basic Page Needs
-================================================== -->
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+---
+permalink: /
+layout: homepage
+title: USAJOBS Design System
+---
 
-<!-- Mobile Specific Metas
-================================================== -->
-  <meta name="HandheldFriendly" content="True">
-  <meta name="MobileOptimized" content="320">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<!-- Title and meta description
-================================================== -->
-
-  <title>USAJOBS Design System | USAJOBS Design System</title>
-  <meta property="og:title" content="USAJOBS Design System | USAJOBS Design System" />
-
-
-
-  <meta name="description" content="">
-  <meta property="og:description" content="" />
-
-
-  <link rel="canonical" href="/" />
-
-<!-- Favicons
-================================================== -->
-  <!-- 128x128 -->
-  <link rel="shortcut icon" type="image/ico" href="img/favicons/favicon.ico" />
-  <link rel="icon" type="image/png" href="img/favicons/favicon.png" />
-
-  <!-- 192x192, as recommended for Android
-  http://updates.html5rocks.com/2014/11/Support-for-theme-color-in-Chrome-39-for-Android
-  -->
-  <link rel="icon" type="image/png" sizes="192x192" href="img/favicons/favicon-192.png" />
-
-  <!-- 57x57 (precomposed) for iPhone 3GS, pre-2011 iPod Touch and older Android devices -->
-  <link rel="apple-touch-icon-precomposed" href="img/favicons/favicon-57.png">
-  <!-- 72x72 (precomposed) for 1st generation iPad, iPad 2 and iPad mini -->
-  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/favicons/favicon-72.png">
-  <!-- 114x114 (precomposed) for iPhone 4, 4S, 5 and post-2011 iPod Touch -->
-  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/favicons/favicon-114.png">
-  <!-- 144x144 (precomposed) for iPad 3rd and 4th generation -->
-  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/favicons/favicon-144.png">
-
-
-<!-- CSS
-================================================== -->
-  <link rel="stylesheet" href="css/usajobs-design-system-base.css">
-  <link rel="stylesheet" href="css/usajobs-design-system-components.css">
-  <link rel="stylesheet" href="css/layouts/documentation.css">
-
-  </head>
-  <body>
-    <div id="main" class="main-content l-homepage" role="main">
-      <a class="skipnav" href="#main-content">Skip main navigation</a>
+<a class="skipnav" href="#main-content">Skip main navigation</a>
 
 <header role="banner">
   <div class="usa-disclaimer">
     <div class="usa-grid">
       <span class="usa-disclaimer-official">
-        <img class="usa-flag_icon" alt="U.S. flag signifying that this is a United States federal government website" src="img/us_flag_small.png">
+        <img class="usa-flag_icon" alt="U.S. flag signifying that this is a United States federal government website" src="{{ site.baseurl }}/img/us_flag_small.png">
         An official website of the United States government
       </span>
       <span class="usa-disclaimer-stage">This site is currently in alpha.</span>
@@ -71,17 +19,14 @@
 
   <section class="usa-banner">
     <div class="usa-grid">
-      <!-- nav>
-        <a class="usa-banner-link-top" href="">View on GitHub</a>
-      </nav -->
       <div class="usa-banner-content" id="main-content">
-        <img class="usajobs-logo" alt="USAJOBS logo" src="img/usajobs-sso-logo.png" />
+        <img class="usajobs-logo" alt="USAJOBS logo" src="{{ site.baseurl }}/img/usajobs-sso-logo.png" />
         <h1>USAJOBS Design System</h1>
         <h2 class="usa-font-lead">
           Setting the base visual language, components, and guidelines that help define the next generation of USAJOBS.
         </h2>
 
-        <a class="usa-button usa-button-big" href="/design-system/getting-started">
+        <a class="usa-button usa-button-big" href="{{ site.baseurl}}/getting-started">
           View the system
         </a>
       </div>
@@ -110,18 +55,7 @@
 <section class="usa-section">
   <div class="usa-grid">
     <div class="usa-cta">
-      <a class="usa-button usa-button-gray" href="https://github.com/USAJOBS/design-system">View on GitHub</a>
+      <a class="usa-button usa-button-gray" href="{{ site.repository.url }}">View on GitHub</a>
     </div>
   </div>
 </section>
-
-    </div>
-      <script src="js/usajobs-design-system-base.js"></script>
-  <!--[if lt IE 9]>
-    <script src="js/usajobs-design-system-lt-ie9.js"></script>
-  <![endif]-->
-  <script src="js/usajobs-design-system-components.js"></script>
-  <script src="js/usajobs-design-system-documentation.js"></script>
-
-  </body>
-</html>

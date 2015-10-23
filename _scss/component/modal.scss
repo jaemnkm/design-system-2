@@ -11,57 +11,57 @@
 
 .usajobs-modal {
   position: fixed;
-  top: -9999em;
-  left: auto;
-  right: auto;
-  bottom: 0;
-  height: 100%;
-  z-index: 0;
-  background-color: rgba(0,0,0, 0.38); // this acts as the backdrop
+  top: $size-default;
+  right: 0;
+  left: 0;
+  bottom: $size-default;
+  margin: $size-default;
+  width: auto;
+  min-height: 200px;
+  z-index: 400;
+  overflow: auto;
+  background-color: $color-white;
+  background-clip: padding-box;
+  border: 1px solid rgba(70,70,70, .14);
+  border-radius: $size-base;
+  box-shadow: 0 3px 6px rgba(0,0,0, 0.29);
+  opacity: 0;
+  transition: 0.4s opacity ease-in-out;
+
+  @include media($ML) {
+    top: $size-XL;
+    bottom: $size-XL;
+  }
+
+  @include media($MLL) {
+    left: 50%;
+    bottom: auto;
+    width: rem(700px);
+    margin-left: rem(-350px);
+  }
 
   &[data-state="is-open"] {
-    z-index: 1000000001;
+    opacity: 1;
+  }
+
+  &__canvas-blackout[aria-hidden="true"] {
+    display: block !important;
+    position: fixed;
     top: 0;
-    right: 0;
     left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    z-index: 150;
+    background-color: rgba(0,0,0, 0.38); // this acts as the backdrop
     animation: fadeIn 0.3s ease-out;
   }
 
-  &__frame {
-    position: absolute;
-    top: $size-default;
-    right: 0;
-    left: 0;
-    bottom: $size-default;
-    margin: $size-default;
-    width: auto;
-    min-height: 200px;
-    z-index: 999;
-    overflow: auto;
-    background-color: $color-white;
-    background-clip: padding-box;
-    border: 1px solid rgba(70,70,70,.14);
-    border-radius: 5px;
-    box-shadow: 0 3px 6px rgba(0,0,0, 0.29);
-
-    @include media($ML) {
-      top: $size-XL;
-      bottom: $size-XL;
-    }
-    @include media($MLL) {
-      left: 50%;
-      bottom: auto;
-      width: 700px;
-      margin-left: -350px;
-    }
-  }
-
-  &[data-state="is-open"] &__frame {
-    animation: fadeInUp 0.3s ease-out;
-  }
 
   &__body {
-    min-height: 500px;
+    min-height: rem(500px);
     overflow: auto;
     padding: $size-default;
 
@@ -90,16 +90,16 @@
     position: absolute;
     top: $size-default;
     right: $size-default;
-    height: 36px;
-    width: 36px;
-    background: $color-gray-light;
+    margin: 0;
+    padding: 0;
+    @include makeCircle(35px);
+    background-color: $color-gray-light;
     text-decoration: none;
-    border-radius: 50%;
 
     &:after {
       position: absolute;
-      top: 10px;
-      left: 14px;
+      top: 25%;
+      left: 33%;
       width: 10px;
       height: 10px;
       @include fa-icon();

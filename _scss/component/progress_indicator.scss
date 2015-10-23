@@ -8,13 +8,6 @@
 @import 'base/accessibility';
 @import 'base/breakpoints';
 
-@mixin makeCircle($size, $radius) {
-	width: $size;
-	height: $size;
-	line-height: $size;
-	border-radius: $radius;
-}
-
 .usajobs-progress_indicator {
   background-color: $color-primary-darkest;
 
@@ -139,15 +132,14 @@
   }
 
 	.circle {
-		@include makeCircle(35px, 20px);
+		@include makeCircle(35px);
 		display: block;
 		margin: $size-base auto $size-XS;
 		text-align: center;
-		color: $color-white;
 		box-shadow: inset 0 0 0 2px $color-gray-light;
 
 		@include media($MLL) {
-			@include makeCircle(45px, 22.5px);
+			@include makeCircle(45px);
 			font-size: $lead-font-size;
 			text-decoration: none;
 			margin-bottom: $size-base;

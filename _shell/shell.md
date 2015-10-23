@@ -51,7 +51,7 @@ lead:  The outer container of the grid along with common page layouts.
       <div id="collapsible-0" aria-hidden="false" class="usa-accordion-content">
         <h4 class="usa-heading">Implementation</h4>
         <ul class="usa-content-list">
-          <li>The <code>.usajobs-site-body</code> element is the outer container that acts as the shell of the page.</li>
+          <li>The <code>.usajobs-shell</code> element is the outer container that acts as the shell of the page.</li>
           <li>The page shell locks at 1200px/75em wide.</li>
           <li>The <code>.usajobs-grid</code> should be used within the page shell.</li>
         </ul>
