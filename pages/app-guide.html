@@ -21,8 +21,11 @@ title: Application Guide
       {% include components/app_guide-content.html %}
     </main>
     <aside class="usajobs-rightrail">
-      {% include components/required_documents.html %}
-      {% include components/acceptable_formats.html %}
+      <div class="usa-accordion-bordered">
+        <ul class="usa-unstyled-list">
+          <li>{% include components/required_documents.html %}</li>
+          <li>{% include components/acceptable_formats.html %}</li>
+        </ul>
     </aside>
   </div>
   <div class="usajobs-button_bar-container">

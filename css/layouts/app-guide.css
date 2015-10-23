@@ -13,6 +13,7 @@ html {
 }
 
 .usajobs-app_guide__body {
+  position: relative;
   max-width: 68em;
   margin-left: auto;
   margin-right: auto;
@@ -169,6 +170,20 @@ html {
 .usajobs-app_guide-resumes .thumbnail {
   display: block;
   min-width: 195px;
+}
+
+.usa-accordion-bordered .usajobs-accordion {
+  background-color: #f1f1f1;
+}
+
+.usa-accordion-bordered .usajobs-accordion button {
+  border-radius: 0;
+  background-color: #d6d7d9;
+}
+
+.usa-accordion-bordered .usajobs-accordion .usa-accordion-content {
+  background-color: #f1f1f1;
+  border-color: #d6d7d9;
 }
 
 /*# sourceMappingURL=app-guide.css.map */

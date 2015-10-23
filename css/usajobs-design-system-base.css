@@ -5032,6 +5032,10 @@ html {
   width: 100%;
 }
 
+.usajobs-content-well {
+  margin-bottom: 6rem;
+}
+
 @media screen and (min-width: 62em) {
   .usajobs-content-well {
     float: left;

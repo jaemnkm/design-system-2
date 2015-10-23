@@ -10,14 +10,30 @@
 
 
 .usajobs-required_documents {
+  margin-bottom: $size-L;
+
+  @include media($MLL) {
+    max-height: 800px;
+    overflow-y: auto;
+  }
 
   &__trigger {
-    width: 100%;
-
     @include media($MLL) {
       max-width: rem(385px);
       margin-top: 0;
     }
   }
 
+  .usa-accordion-content {
+    background-color: $color-white;
+  }
 }
+
+.usa-accordion-bordered .usajobs-accordion button.usajobs-required_documents__trigger {
+    width: 100%;
+
+    @include media($MLL) {
+      border-radius: inherit;
+      background-color: $color-primary-alt;
+    }
+  }
