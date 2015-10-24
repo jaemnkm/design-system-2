@@ -148,6 +148,35 @@
   .pipe {
     padding: 0;
   }
+
+  .account-logged_in {
+    display: block;
+    margin-right: 1rem;
+
+    @include media($MLL) {
+      padding-top: rem(22px);
+      padding-bottom: rem(34px);
+    }
+
+    &:hover {
+      .fa {
+        color: $color-primary-darker;
+      }
+    }
+  }
+
+  .account-icon {
+    @include makeCircle(27px, $color-gray-light, $color-gray-light);
+
+    .fa {
+      padding-left: 7px;
+    }
+  }
+
+  .account-name {
+    padding: 0 $size-base 0 $size-XS;
+    font-size: $small-font-size;
+  }
 }
 
 .usajobs-nav__menu {

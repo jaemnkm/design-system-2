@@ -132,11 +132,9 @@
   }
 
 	.circle {
-		@include makeCircle(35px);
-		display: block;
+		@include makeCircle(35px, $color-gray-light);
 		margin: $size-base auto $size-XS;
 		text-align: center;
-		box-shadow: inset 0 0 0 2px $color-gray-light;
 
 		@include media($MLL) {
 			@include makeCircle(45px);

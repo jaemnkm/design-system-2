@@ -10,8 +10,6 @@
 
 
 .usajobs-required_documents {
-  margin-bottom: $size-L;
-
   @include media($MLL) {
     max-height: 800px;
     overflow-y: auto;
@@ -29,7 +27,6 @@
 .usa-accordion-bordered {
   .usajobs-accordion.usajobs-required_documents {
     .usa-accordion-content {
-      background-color: $color-white;
     }
 
     button.usajobs-required_documents__trigger {
