@@ -2867,16 +2867,16 @@ html {
   }
 }
 
-.usajobs-required_documents .usa-accordion-content {
+.usa-accordion-bordered .usajobs-accordion.usajobs-required_documents .usa-accordion-content {
   background-color: #ffffff;
 }
 
-.usa-accordion-bordered .usajobs-accordion button.usajobs-required_documents__trigger {
+.usa-accordion-bordered .usajobs-accordion.usajobs-required_documents button.usajobs-required_documents__trigger {
   width: 100%;
 }
 
 @media screen and (min-width: 62em) {
-  .usa-accordion-bordered .usajobs-accordion button.usajobs-required_documents__trigger {
+  .usa-accordion-bordered .usajobs-accordion.usajobs-required_documents button.usajobs-required_documents__trigger {
     border-radius: inherit;
     background-color: #02bfe7;
   }

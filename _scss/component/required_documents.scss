@@ -23,17 +23,21 @@
       margin-top: 0;
     }
   }
-
-  .usa-accordion-content {
-    background-color: $color-white;
-  }
 }
 
-.usa-accordion-bordered .usajobs-accordion button.usajobs-required_documents__trigger {
-    width: 100%;
+.usa-accordion-bordered {
+  .usajobs-accordion.usajobs-required_documents {
+    .usa-accordion-content {
+      background-color: $color-white;
+    }
 
-    @include media($MLL) {
-      border-radius: inherit;
-      background-color: $color-primary-alt;
+    button.usajobs-required_documents__trigger {
+      width: 100%;
+
+      @include media($MLL) {
+        border-radius: inherit;
+        background-color: $color-primary-alt;
+      }
     }
   }
+}
