@@ -2857,6 +2857,7 @@ html {
   .usajobs-required_documents {
     max-height: 800px;
     overflow-y: auto;
+    margin-bottom: 0;
   }
 }
 

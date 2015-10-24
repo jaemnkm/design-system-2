@@ -15,6 +15,7 @@
   @include media($MLL) {
     max-height: 800px;
     overflow-y: auto;
+    margin-bottom: 0;
   }
 
   &__trigger {
