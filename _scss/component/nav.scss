@@ -176,6 +176,10 @@
   .account-name {
     padding: 0 $size-base 0 $size-XS;
     font-size: $small-font-size;
+
+    @include media($MLL) {
+      font-size: $base-font-size;
+    }
   }
 }
 

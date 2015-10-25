@@ -237,6 +237,12 @@ html {
   font-size: 1.4rem;
 }
 
+@media screen and (min-width: 62em) {
+  .usajobs-nav__account .account-name {
+    font-size: 1.7rem;
+  }
+}
+
 .usajobs-nav__menu {
   display: none;
 }
