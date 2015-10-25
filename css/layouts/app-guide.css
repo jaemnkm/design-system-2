@@ -186,4 +186,14 @@ html {
   border-color: #d6d7d9;
 }
 
+.usajobs-required--section {
+  position: relative;
+  display: inline-block;
+  top: -1rem;
+  padding-left: 0.5rem;
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: #cd2026;
+}
+
 /*# sourceMappingURL=app-guide.css.map */

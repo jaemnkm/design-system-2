@@ -62,8 +62,8 @@
 	  		position: absolute;
 	  		top: 36%;
 	  		left: 58%;
-	  		border-bottom: 1px solid $color-white;
-	  		width: 50px;
+	  		border-bottom: 1px solid $color-gray-light;
+	  		width: rem(50px);
 	  	}
   	}
 
@@ -98,7 +98,7 @@
   	}
 
 		h5 {
-			color: $color-white;
+			color: $color-gray-light;
 			font-size: $small-font-size;
 			font-weight: $font-normal;
 			text-align: center;
@@ -132,12 +132,12 @@
   }
 
 	.circle {
-		@include makeCircle(35px, $color-gray-light);
+		@include makeCircle(35px, $color-gray-light, none, $color-gray-light);
 		margin: $size-base auto $size-XS;
 		text-align: center;
 
 		@include media($MLL) {
-			@include makeCircle(45px);
+			@include makeCircle(45px, $color-gray-light, none, $color-gray-light);
 			font-size: $lead-font-size;
 			text-decoration: none;
 			margin-bottom: $size-base;
@@ -146,25 +146,30 @@
 		&:hover {
 			cursor: pointer;
 		}
-
-		&--current {
-			background-color: $color-green-dark;
-			box-shadow: none;
-		}
 	}
 }
 
-.usajobs-progress_indicator__step-connector {
-	display: none;
+.usajobs-progress_indicator {
+  &__step.is-current {
+    .circle {
+      color: $color-white;
+      box-shadow: inset 0 0 0 2px $color-green-dark;
+    }
 
-	@include media($XL) {
-		display: table-cell;
-		width: $size-M;
-	}
+    .usajobs-progress_indicator__step-desc h5 {
+      color: $color-white;
+    }
+  }
 
-	.dash {
-		display: table-row;
-		background-color: $color-white;
-		height: 1px;
-	}
+  &__step.has-visit {
+    .circle {
+      color: $color-white;
+      background-color: $color-green-dark;
+      box-shadow: none;
+    }
+
+    .usajobs-progress_indicator__step-desc h5 {
+      color: $color-white;
+    }
+  }
 }
