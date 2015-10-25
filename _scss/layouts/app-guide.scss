@@ -108,3 +108,13 @@
     }
   }
 }
+
+.usajobs-required--section {
+  position: relative;
+  display: inline-block;
+  top: -#{$size-S};
+  padding-left: $size-base;
+  font-size: $small-font-size;
+  font-weight: $font-normal;
+  color: $color-secondary-dark;
+}

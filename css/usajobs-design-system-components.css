@@ -2723,8 +2723,8 @@ html {
     position: absolute;
     top: 36%;
     left: 58%;
-    border-bottom: 1px solid #ffffff;
-    width: 50px;
+    border-bottom: 1px solid #aeb0b5;
+    width: 5rem;
   }
 }
 
@@ -2777,7 +2777,7 @@ html {
 }
 
 .usajobs-progress_indicator__step-desc h5 {
-  color: #ffffff;
+  color: #aeb0b5;
   font-size: 1.4rem;
   font-weight: 400;
   text-align: center;
@@ -2821,7 +2821,7 @@ html {
   height: 35px;
   line-height: 35px;
   border-radius: 17.5px;
-  color: #ffffff;
+  color: #aeb0b5;
   background-color: none;
   box-shadow: inset 0 0 0 2px #aeb0b5;
   margin: 0.5rem auto 0.25rem;
@@ -2835,9 +2835,9 @@ html {
     height: 45px;
     line-height: 45px;
     border-radius: 22.5px;
-    color: #ffffff;
+    color: #aeb0b5;
     background-color: none;
-    box-shadow: inset 0 0 0 2px none;
+    box-shadow: inset 0 0 0 2px #aeb0b5;
     font-size: 2rem;
     text-decoration: none;
     margin-bottom: 0.5rem;
@@ -2848,26 +2848,23 @@ html {
   cursor: pointer;
 }
 
-.usajobs-progress_indicator .circle--current {
+.usajobs-progress_indicator__step.is-current .circle {
+  color: #ffffff;
+  box-shadow: inset 0 0 0 2px #2d8700;
+}
+
+.usajobs-progress_indicator__step.is-current .usajobs-progress_indicator__step-desc h5 {
+  color: #ffffff;
+}
+
+.usajobs-progress_indicator__step.has-visit .circle {
+  color: #ffffff;
   background-color: #2d8700;
   box-shadow: none;
 }
 
-.usajobs-progress_indicator__step-connector {
-  display: none;
-}
-
-@media screen and (min-width: 75em) {
-  .usajobs-progress_indicator__step-connector {
-    display: table-cell;
-    width: 3rem;
-  }
-}
-
-.usajobs-progress_indicator__step-connector .dash {
-  display: table-row;
-  background-color: #ffffff;
-  height: 1px;
+.usajobs-progress_indicator__step.has-visit .usajobs-progress_indicator__step-desc h5 {
+  color: #ffffff;
 }
 
 html {
@@ -2970,6 +2967,30 @@ html {
 .usajobs-button_bar__save {
   float: right;
   margin: 0;
+}
+
+.usajobs-app_guide .usajobs-button_bar [type="submit"]:disabled,
+.usajobs-app_guide .usajobs-button_bar .usa-button-disabled {
+  background-color: #aeb0b5;
+  color: #323a45;
+  cursor: default;
+  opacity: 0.7;
+}
+
+.usajobs-app_guide .usajobs-button_bar [type="submit"]:disabled:hover,
+.usajobs-app_guide .usajobs-button_bar [type="submit"]:disabled.usa-button-hover,
+.usajobs-app_guide .usajobs-button_bar [type="submit"]:disabled:active,
+.usajobs-app_guide .usajobs-button_bar [type="submit"]:disabled.usa-button-active,
+.usajobs-app_guide .usajobs-button_bar [type="submit"]:disabled:focus,
+.usajobs-app_guide .usajobs-button_bar .usa-button-disabled:hover,
+.usajobs-app_guide .usajobs-button_bar .usa-button-disabled.usa-button-hover,
+.usajobs-app_guide .usajobs-button_bar .usa-button-disabled:active,
+.usajobs-app_guide .usajobs-button_bar .usa-button-disabled.usa-button-active,
+.usajobs-app_guide .usajobs-button_bar .usa-button-disabled:focus {
+  background-color: #aeb0b5;
+  border: 0;
+  box-shadow: none;
+  color: #323a45;
 }
 
 /*# sourceMappingURL=usajobs-design-system-components.css.map */
