@@ -156,6 +156,8 @@
     @include media($MLL) {
       padding-top: rem(22px);
       padding-bottom: rem(34px);
+      padding-right: 3rem;
+      margin-right: 0;
     }
 
     &:hover {
