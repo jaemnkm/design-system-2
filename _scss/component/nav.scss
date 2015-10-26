@@ -248,7 +248,7 @@
       @include fa-icon();
       content: $fa-var-angle-right;
 
-      @include breakpoint($MLL) {
+      @include media($MLL) {
         content: '';
       }
     }

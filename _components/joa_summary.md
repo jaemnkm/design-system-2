@@ -23,6 +23,20 @@ lead: Summary of the Job Offer Announcement (JOA)
       <a class="joa-anchor">Who may apply</a>
     </div>
   </div>
+
+  <h6 class="usa-heading-alt">Text wrap demonstration</h6>
+  <div class="usajobs-joa_summary v1">
+    <div class="usajobs-joa_summary-body">
+      <p class="intro">Applying to:</p>
+      <ul class="detail">
+        <li class="job_title"><a href="#joa">[Job Title that might be quite long and wrap onto a second line]</a></li>
+        <li class="attr">[Agency name that can be up to one hundred characters. Agency name that can be one hundred characters.] </li>
+        <li class="attr">Closes 10/15/2015</li>
+      </ul>
+      <!-- a class="joa-save">Save Job</a -->
+      <a class="joa-anchor">Who may apply</a>
+    </div>
+  </div>
 </div>
 
 <div class="usa-accordion-bordered usa-accordion-docs">
