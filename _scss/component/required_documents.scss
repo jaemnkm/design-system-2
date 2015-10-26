@@ -31,11 +31,7 @@
 
     button.usajobs-required_documents__trigger {
       width: 100%;
-
-      @include media($MLL) {
-        border-radius: inherit;
-        background-color: $color-primary-alt;
-      }
+      background-color: $color-primary-alt;
     }
   }
 }

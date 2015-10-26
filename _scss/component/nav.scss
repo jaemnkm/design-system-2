@@ -2,6 +2,7 @@
 
 @import 'lib/bourbon/bourbon';
 @import 'lib/neat/neat';
+@import "font-awesome/font-awesome";
 @import 'core/variables';
 @import 'base/variables';
 @import 'base/utilities';
@@ -54,11 +55,18 @@
 
   &__extended-menu {
     display: none;
+    width: 100%;
 
     @include media($MLL) {
       @include span-columns(6 of 12);
-      margin-right: 0;
+      height: auto;
       width: 52%;
+      margin-right: 0;
+    }
+  }
+
+  &[data-state="is-open"] {
+    .usajobs-nav__extended-menu {
     }
   }
 }
@@ -68,7 +76,6 @@
   margin: 0;
 
   li {
-    display: inline-block;
     margin: 0;
     padding: 0;
 
@@ -123,12 +130,16 @@
   }
 
   .usajobs-nav__menu-toggle-button {
-    position: relative;
-    float: right;
+    position: absolute;
     top: 13px;
     right: 10px;
     margin: 0;
     width: rem(80px);
+
+    @include media($ML) {
+      position: relative;
+      top: 0;
+    }
   }
 
   .sign_in {
@@ -186,18 +197,60 @@
 }
 
 .usajobs-nav__menu {
-  display: none;
+  display: block;
+  @include clearfix();
+  clear: both;
+  width: 100%;
+  margin: 0;
+  background-color: $color-gray-lightest;
 
   @include media($MLL) {
     display: block;
     float: left;
+    background-color: $color-white;
   }
 
-  li a {
-    font-size: $base-font-size;
+  li {
+    display: block;
+    width: 100%;
+    border-bottom: 1px solid $color-gray-light;
+
+    &:first-child {
+      border-top: 1px solid $color-gray-light;
+
+      @include media($MLL) {
+        border-top: 0;
+      }
+    }
 
     @include media($MLL) {
-      font-size: $lead-font-size;
+      display: inline-block;
+      width: auto;
+      border-bottom: 0;
+    }
+
+    a {
+      position: relative;
+      font-size: $base-font-size;
+      padding: $size-default $size-default $size-default $size-M;
+
+      @include media($MLL) {
+        font-size: $lead-font-size;
+        padding: rem(21px) $size-default $size-M;
+      }
+    }
+  }
+
+  li.dropdown {
+    a:after {
+      position: absolute;
+      right: 1rem;
+      @include fa-icon();
+      content: $fa-var-angle-right;
+
+      @include breakpoint($MLL) {
+        content: '';
+      }
     }
   }
 
