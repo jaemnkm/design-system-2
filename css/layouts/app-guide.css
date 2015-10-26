@@ -17,7 +17,7 @@ html {
   max-width: 68em;
   margin-left: auto;
   margin-right: auto;
-  max-width: 75em;
+  max-width: 120rem;
   margin-top: 4.5rem;
   background-color: #f1f1f1;
 }
@@ -63,7 +63,7 @@ html {
   max-width: 68em;
   margin-left: auto;
   margin-right: auto;
-  max-width: 75em;
+  max-width: 120rem;
 }
 
 .usajobs-app_guide-banner-container::after {

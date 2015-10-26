@@ -29,7 +29,7 @@ html {
   max-width: 68em;
   margin-left: auto;
   margin-right: auto;
-  max-width: 75em;
+  max-width: 120rem;
 }
 
 .usajobs-nav__body::after {
@@ -210,6 +210,8 @@ html {
   .usajobs-nav__account .account-logged_in {
     padding-top: 2.2rem;
     padding-bottom: 3.4rem;
+    padding-right: 3rem;
+    margin-right: 0;
   }
 }
 
@@ -2959,7 +2961,7 @@ html {
 }
 
 .usajobs-button_bar__body {
-  max-width: 75em;
+  max-width: 120rem;
   margin: 0 auto;
   padding: 3rem;
 }
