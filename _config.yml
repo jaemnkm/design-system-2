@@ -51,10 +51,13 @@ collections:
   elements:
     output: true
     permalink: /:path/
-  layout-system:
+  grid:
     output: true
     permalink: /:path/
   shell:
+    output: true
+    permalink: /:path/
+  page-layouts:
     output: true
     permalink: /:path/
   visual:

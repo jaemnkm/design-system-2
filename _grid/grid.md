@@ -1,6 +1,6 @@
 ---
 layout: styleguide
-title: Layout
+title: Grid
 lead:  A responsive grid, with a sensible number of breakpoints, provides structure for site content.
 ---
 
@@ -9,7 +9,6 @@ lead:  A responsive grid, with a sensible number of breakpoints, provides struct
 </a>
 
 <div class="preview preview-no_border">
-  <h2 class="usa-heading">Grid</h2>
   <div class="usajobs-grid usa-grid-example usa-grid-example-blank">
     <div class="usa-width-one-whole">1/1</div>
   </div>
