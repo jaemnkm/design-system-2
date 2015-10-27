@@ -114,7 +114,16 @@ module.exports = function(grunt) {
       jshintrc: true,
       all: [
         'Gruntfile.js',
-        'js/components/*.js'
+        'js/**/*.js',
+        '!js/vendor/*.js',
+        '!js/usajobs-design-system-base.js',
+        '!js/usajobs-design-system-components.js',
+        '!js/usajobs-design-system-documentation.js',
+        '!js/usajobs-design-system-lt-ie9.js'
+      ],
+      components: [
+        'js/components/*.js',
+        '!js/usajobs-design-system-components.js',
       ],
       gruntfile: 'Gruntfile.js'
     },
@@ -136,15 +145,29 @@ module.exports = function(grunt) {
         ],
         tasks: ['sass']
       },
-      scripts: {
+      base: {
         files: [
-          'js/**/*.js'
+          'js/*.js',
+          '!js/vendor/*.js',
+          '!js/usajobs-design-system-base.js',
+          '!js/usajobs-design-system-components.js',
+          '!js/usajobs-design-system-documentation.js',
+          '!js/usajobs-design-system-lt-ie9.js'
         ],
-        tasks: ['jshint:all', 'concat:js_components'],
+        tasks: ['jshint:all', 'concat'],
         options: {
           debounceDelay: 250
         }
       },
+      components: {
+        files: [
+          'js/components/*.js'
+        ],
+        tasks: ['jshint:components', 'concat:js_components'],
+        options: {
+          debounceDelay: 250
+        }
+      }
     },
     // run tasks in parallel
     concurrent: {
