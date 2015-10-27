@@ -12,6 +12,11 @@
 .usajobs-nav {
   background-color: $color-white;
 
+  ul {
+    // The default is a table which ruins animating the height
+    display: block;
+  }
+
   &__body {
     @include outer-container();
     max-width: $site-max-width;
@@ -102,8 +107,9 @@
 }
 
 .usajobs-nav__account {
-  display: block;
-  float: right;
+  position: absolute;
+  top: 0;
+  right: 10px;
 
   li {
     display: none;
@@ -130,16 +136,8 @@
   }
 
   .usajobs-nav__menu-toggle-button {
-    position: absolute;
-    top: 13px;
-    right: 10px;
-    margin: 0;
+    margin: $size-default 0 0;
     width: rem(80px);
-
-    @include media($ML) {
-      position: relative;
-      top: 0;
-    }
   }
 
   .sign_in {
@@ -211,7 +209,6 @@
   }
 
   li {
-    display: block;
     width: 100%;
     border-bottom: 1px solid $color-gray-light;
 
@@ -241,21 +238,76 @@
     }
   }
 
-  li.dropdown {
-    a:after {
-      position: absolute;
-      right: 1rem;
-      @include fa-icon();
-      content: $fa-var-angle-right;
+  .menu-toggle:after {
+    position: absolute;
+    right: 1rem;
+    @include fa-icon();
+    content: $fa-var-angle-up;
+    font-size: $lead-font-size;
 
-      @include media($MLL) {
-        content: '';
-      }
+    @include media($MLL) {
+      content: '';
     }
-  }
-
-  .dropdown-menu {
-    display: none;
   }
 }
 
+.usajobs-nav__secondary-menu-container {
+  position: relative;
+  display: block;
+  float: left;
+
+  &[data-state="is-open"] {
+    .menu-toggle {
+      @include media($MLL) {
+        background-color: $color-gray-warm-light;
+      }
+
+      &:after {
+        @include transform(rotate(180deg));
+        transition: all 0.3s;
+      }
+    }
+
+    .usajobs-nav__secondary-menu {
+      display: block;
+    }
+  }
+}
+
+ul.usajobs-nav__secondary-menu {
+  display: none;
+  position: static;
+  width: 100%;
+  margin: 0;
+  background-color: $color-gray-warm-light;
+  box-shadow: inset 0 8px 6px -6px rgba(0,0,0, 0.2);
+
+  @include media($MLL) {
+    float: left;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 99999;
+    min-width: rem(160px);
+    padding: $size-base 0;
+  }
+
+  li {
+    @include media($MLL) {
+      display: block;
+      width: 100%;
+    }
+
+    a {
+      padding: $size-S $size-default $size-S $size-L;
+
+      @include media($MLL) {
+        display: block;
+        width: 100%;
+        clear: both;
+        padding-left: $size-M;
+        white-space: nowrap;
+      }
+    }
+  }
+}
