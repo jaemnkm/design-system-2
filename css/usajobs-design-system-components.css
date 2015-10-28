@@ -2221,6 +2221,10 @@ html {
   display: table;
 }
 
+.usajobs-nav__body a {
+  text-decoration: none;
+}
+
 .usajobs-nav__header {
   display: block;
 }
@@ -2254,6 +2258,7 @@ html {
   display: block;
   padding: 1.5rem 0 1.5rem 1.5rem;
   max-width: 19rem;
+  line-height: 1;
 }
 
 @media screen and (min-width: 48em) {
@@ -2320,7 +2325,8 @@ html {
 .usajobs-nav__menu li a,
 .usajobs-nav__account li a {
   display: block;
-  padding: 2.1rem 1.5rem 3rem;
+  padding: 2.8rem 1.5rem;
+  line-height: 1;
   color: #212121;
 }
 
@@ -2348,8 +2354,8 @@ html {
 
 @media screen and (min-width: 62em) {
   .usajobs-nav__account li a {
-    padding-top: 2.4rem;
-    padding-bottom: 3.2rem;
+    padding-top: 3.05rem;
+    padding-bottom: 3.05rem;
     font-size: 1.7rem;
   }
 }
@@ -2390,12 +2396,14 @@ html {
 .usajobs-nav__account .account-logged_in {
   display: block;
   margin-right: 1rem;
+  padding-top: 2.3rem;
+  padding-bottom: 2.3rem;
 }
 
 @media screen and (min-width: 62em) {
   .usajobs-nav__account .account-logged_in {
-    padding-top: 2.2rem;
-    padding-bottom: 3.4rem;
+    padding-top: 2.55rem;
+    padding-bottom: 2.55rem;
     padding-right: 3rem;
     margin-right: 0;
   }
@@ -2485,7 +2493,7 @@ html {
 @media screen and (min-width: 62em) {
   .usajobs-nav__menu li a {
     font-size: 2rem;
-    padding: 2.1rem 1.5rem 3rem;
+    padding: 2.9rem 1.5rem;
   }
 }
 
@@ -2552,6 +2560,10 @@ ul.usajobs-nav__secondary-menu {
     min-width: 16rem;
     padding: 0.5rem 0;
   }
+}
+
+ul.usajobs-nav__secondary-menu li {
+  display: inline-block;
 }
 
 @media screen and (min-width: 62em) {

@@ -1069,3 +1069,16 @@ $font-light: 300;
     padding-top: 8rem;
   }
 }
+
+// For some components, like navigation we need more width to allow
+// the component to behave properly
+.navigation {
+  .preview {
+    position: relative;
+    padding: 0;
+
+    @include media(992px) {
+      min-width: rem(992px);
+    }
+  }
+}

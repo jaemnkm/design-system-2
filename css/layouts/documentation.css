@@ -1067,4 +1067,15 @@ code[class*="language-"], pre[class*="language-"] {
   }
 }
 
+.navigation .preview {
+  position: relative;
+  padding: 0;
+}
+
+@media screen and (min-width: 992px) {
+  .navigation .preview {
+    min-width: 99.2rem;
+  }
+}
+
 /*# sourceMappingURL=documentation.css.map */
