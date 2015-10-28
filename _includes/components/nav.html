@@ -6,23 +6,23 @@
           <img src="{{ site.baseurl }}/img/usajobs-sm2.png" alt="USAJOBS Logo" class="logo">
         </a>
       </div>
-      <div class="usajobs-nav__extended-menu collapse navbar-collapse" id="usajobs-menu">
+      <div class="usajobs-nav__extended-menu" id="usajobs-menu">
         <ul class="usajobs-nav__menu">
-          <li class="dropdown">
-            <a accesskey="S" data-toggle="dropdown" aria-haspopup="true" class="dropdown-toggle clearcriteria" href="/" title="Search Jobs">
+          <li class="usajobs-nav__secondary-menu-container" data-state="is-closed">
+            <a accesskey="S" data-behavior="nav.menu.toggle" aria-haspopup="true" class="menu-toggle" href="/" title="Job Search">
               Job Search
             </a>
-            <ul class="dropdown-menu" aria-expanded="false" role="menu">
-              <li><a class="clearcriteria" href="/">Basic Search</a></li>
-              <li><a class="clearcriteria" href="/Search/AdvancedSearch">Advanced Search</a></li>
-              <li><a class="clearcriteria hidden-xs" href="/Search/GeoSearch">Map Search (BETA)</a></li>
+            <ul class="usajobs-nav__secondary-menu" aria-expanded="false" role="menu">
+              <li><a ref="/">Basic Search</a></li>
+              <li><a href="/Search/AdvancedSearch">Advanced Search</a></li>
+              <li><a href="/Search/GeoSearch">Map Search (BETA)</a></li>
             </ul>
           </li>
-          <li class="dropdown">
+          <li class="usajobs-nav__secondary-menu-container" data-state="is-closed">
             <a accesskey="A" data-behavior="nav.menu.toggle" aria-haspopup="true" class="menu-toggle" href="" title="My Account">
               My Account
             </a>
-            <ul class="dropdown-menu" aria-expanded="false" role="menu">
+            <ul class="usajobs-nav__secondary-menu" aria-expanded="false" role="menu">
               <li><a href="/Applicant/MyAccount/Home">My Account - Main Page</a></li>
               <li><a href="/Applicant/Profile/PersonalInformation">Profile</a></li>
               <li><a href="/Applicant/Resume/ListResumes">Resumes</a></li>
@@ -33,11 +33,11 @@
               <li><a href="/Applicant/Application/ListApplications">Application Status</a></li>
             </ul>
           </li>
-          <li class="dropdown">
+          <li class="usajobs-nav__secondary-menu-container" data-state="is-closed">
             <a accesskey="R" href="http://help.sqa.usajobs.gov/index.php/Main_Page" class="menu-toggle" data-behavior="nav.menu.toggle" aria-haspopup="true" title="Job Resources">
               Job Resources
             </a>
-            <ul class="dropdown-menu" aria-expanded="false" role="menu">
+            <ul class="usajobs-nav__secondary-menu" aria-expanded="false" role="menu">
               <li><a href="http://help.sqa.usajobs.gov/index.php/Main_Page">Resource Center - Main Page</a></li>
               <li><a href="http://help.sqa.usajobs.gov/index.php/Forms">Supplemental Forms</a></li>
               <li><a href="http://help.sqa.usajobs.gov/index.php/Individuals_with_Disabilities">Individuals with Disabilities</a></li>
@@ -60,7 +60,7 @@
           </a>
         </li>
         <li class="usajobs-nav__menu-toggle">
-          <button type="button" class="usa-button-gray usajobs-nav__menu-toggle-button navbar-toggle toggle-switch" data-action="nav.toggle">
+          <button type="button" class="usa-button-gray usajobs-nav__menu-toggle-button navbar-toggle toggle-switch" data-behavior="nav.toggle" aria-expanded="false" aria-controls="#usajobs-menu">
             Menu
           </button>
         </li>

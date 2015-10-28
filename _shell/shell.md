@@ -53,6 +53,7 @@ lead:  The outer container of the grid along with common page layouts.
         <ul class="usa-content-list">
           <li>The <code>.usajobs-shell</code> element is a container that acts as the shell of the page, locking the page content at a particular width.</li>
           <li>The page shell locks at 1200px/75em wide.</li>
+          <li>The page gutter size is 1.5rem/15px below the ML breakpoint (768px) and grows to 3rem(30px from that breakpoint on.</li>
           <li>The <code>.usajobs-grid</code> should be used within the page shell.</li>
         </ul>
       </div>

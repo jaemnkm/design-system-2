@@ -1,5 +1,5 @@
 ---
-layout: styleguide 
+layout: modals
 type: component
 title: Modals
 lead: USAJOBS uses the modal component to draw attention to actions that require user input.
@@ -12,9 +12,9 @@ lead: USAJOBS uses the modal component to draw attention to actions that require
 
   <div class="usajobs-modal" data-object="modal" data-state="is-closed" id="modal-default" aria-hidden="true" role="dialog" aria-labelledby="usajobs-modal-heading" aria-describedby="usajobs-modal-description">
     <div id="usajobs-modal-description" class="usajobs-assistive-text">
-      Beginning of a dialog window for the contact form. It begins with a heading 2 
+      Beginning of a dialog window for the contact form. It begins with a heading 2
       called &quot;[Modal Header]&quot;. Escape will cancel and close the window.
-    </div> 
+    </div>
     <div class="usajobs-modal__header">
       <h2 id="usajobs-modal-heading" class="usajobs-modal__title">[Modal Header]</h2>
     </div>
