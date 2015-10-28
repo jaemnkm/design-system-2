@@ -131,17 +131,42 @@ lead:  A responsive grid, with a sensible number of breakpoints, provides struct
       To use the grid, wrap each grid row in a <code>&lt;div&gt;</code> with the <code>usajobs-grid</code> class. To use a grid without padding on the right and left, use the <code>usajobs-grid-full</code> class instead.
     </p>
     <p>
-      In order to migrate from the Bootstrap system currently in use we are temporarily relying on the breakpoints of that system. Future designs will add the U.S. Web Design Standard breakpoints. We use t-shirt sizes to track and discuss each breakpoint. Full list:
+      In order to migrate from the Bootstrap system currently in use we are temporarily relying on the breakpoints of that system. Future designs will add the U.S. Web Design Standard breakpoints. We use t-shirt sizes to track and discuss each breakpoint. At certain breakpoints the grid changes the overall number of columns giving us more finite control as the viewport expands.
     </p>
-    <ul>
-      <li>SM:    30em/480px - Future BP, USDS standard</li>
-      <li>M:     37.5em/600px - Future BP, USDS standard</li>
-      <li>ML:    48em/768px - Temporary to align with current BP</li>
-      <li>MLL:   62em/992px - Temporary to align with current BP</li>
-      <li>L:     64em/1024px - Future BP, USAJOBS proposed</li>
-      <li>XL:    75em/1200px - USDS standard, aligns with current BP</li>
-      <li>XXL:  120em/1920px - Future BP, USAJOBS proposed</li>
-    </ul>
+    <table>
+      <caption>Breakpoints</caption>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Size</th>
+          <th>Columns</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>SM</td><td>30em/480px</td><td>2</td><td>Future BP, USDS standard</td>
+        </tr>
+        <tr>
+          <td>M</td><td>37.5em/600px</td><td>6</td><td>Future BP, USDS standard</td>
+        </tr>
+        <tr>
+          <td>ML</td><td>48em/768px</td><td>6</td><td>Temporary to atdgn with current BP</td>
+        </tr>
+        <tr>
+          <td>MLL</td><td>62em/992px</td><td>12</td><td>Temporary to atdgn with current BP</td>
+        </tr>
+        <tr>
+          <td>L</td><td>64em/1024px</td><td>12</td><td>Future BP, USAJOBS proposed</td>
+        </tr>
+        <tr>
+          <td>XL</td><td>75em/1200px</td><td>12</td><td>USDS standard, atdgns with current BP</td>
+        </tr>
+        <tr>
+          <td>XXL</td><td>120em/1920px</td><td>12</td><td>Future BP, USAJOBS proposed</td>
+        </tr>
+      </tbody>
+    </table>
 
     <h4 class="usa-heading">Accessibility</h4>
     <h5>When to use</h5>

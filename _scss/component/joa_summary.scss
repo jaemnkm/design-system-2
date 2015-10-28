@@ -2,6 +2,9 @@
 
 @import 'lib/bourbon/bourbon';
 @import 'core/variables';
+@import 'base/variables';
+@import 'base/utilities';
+@import 'base/breakpoints';
 
 .usajobs-joa_summary {
   background-color: $color-primary-darker;
@@ -9,7 +12,11 @@
 }
 
 .usajobs-joa_summary-body {
-  padding: 3rem 1rem 3rem 3rem;
+  padding: $size-M $size-default;
+
+  @include media($ML) {
+    padding: $size-M $size-S $size-M $size-M;
+  }
 
   .intro {
     margin: 0;

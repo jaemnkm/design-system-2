@@ -18,12 +18,11 @@
   }
 
   &__body {
-		padding: 0 $size-M;
+		padding: 0 $size-default;
 
-  	@include media($ML-to-MLL) {
-  		padding-top: $size-default;
-  		padding-bottom: $size-default;
-  	}
+    @include media($ML) {
+      padding: $size-default $size-M;
+    }
 
 	  @include media($MLL) {
 	  	display: table-row;

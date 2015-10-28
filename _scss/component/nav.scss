@@ -43,8 +43,12 @@
 
   &__brand {
     display: block;
-    padding: $size-default 0 $size-default $size-M;
+    padding: $size-default 0 $size-default $size-default;
     max-width: rem(160px + 30px); // logo width + the left padding
+
+    @include media($ML) {
+      padding-left: $size-M;
+    }
 
     @include media($MLL) {
       padding-top: $size-default;
@@ -109,7 +113,7 @@
 .usajobs-nav__account {
   position: absolute;
   top: 0;
-  right: 10px;
+  right: 15px;
 
   li {
     display: none;

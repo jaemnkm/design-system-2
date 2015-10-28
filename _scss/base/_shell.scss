@@ -11,7 +11,12 @@
 }
 
 .usajobs-content-gutter {
-  padding: 0 $size-M;
+  padding: 0 $size-default;
+
+  @include media($ML) {
+    padding-left: $size-M;
+    padding-right: $size-M;
+  }
 }
 
 .usajobs-canvas {
