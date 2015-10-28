@@ -1,8 +1,103 @@
 // Alerts
 
-.usajobs-alert-success {
-  background-color: $color-green-dark;
-  color: $color-white;
-  background-size: 3rem;
-  background-position: 1.5rem 2rem;
+$icon-width: rem(40px);
+$icon-padding: $size-default;
+$body-padding: $size-default;
+
+@mixin alert($color, $icon) {
+  border-color: $color;
+
+  .usajobs-alert__figure {
+    background-color: $color;
+  }
+
+  .usajobs-alert__icon:after {
+    content: $icon;
+    color: $color;
+  }
+}
+
+.usajobs-alert {
+  padding: 0;
+  background-color: $color-white;
+  border: 1px solid;
+  border-radius: rem(3px);
+
+  &__figure {
+    padding: $size-default;
+  }
+
+  &__body {
+    padding: $size-S $body-padding;
+  }
+
+  &__icon {
+    position: relative;
+    @include makeCircle($icon-width);
+    background-color: $color-white;
+    width: $icon-width;
+    height: $icon-width;
+
+    &:after {
+      position: absolute;
+      top: 15%;
+      left: 50%;
+      margin-left: rem(-5px);
+      @include fa-icon();
+      font-size: rem(30px);
+    }
+  }
+}
+
+.no-flexbox .usajobs-alert {
+  @include clearfix();
+
+  &__figure,
+  &__body {
+    display: block;
+  }
+
+  &__figure {
+    float: left;
+  }
+
+  &__body {
+    float: right;
+    @include calc(width, "100% - " ($icon-width + $icon-padding + $body-padding));
+  }
+}
+
+.flexbox .usajobs-alert {
+  @include display(flex);
+  @include align-items(center);
+
+  &__figure {
+    @include flex-shrink(0);
+    margin-right: $size-default;
+  }
+
+  &__body {
+    @include flex(1);
+    min-width: 0;
+  }
+}
+
+.usajobs-alert--success {
+  @include alert($color-green-dark, $fa-var-check);
+
+  .usajobs-alert__icon:after {
+    margin-left: -#{$size-default)};
+  }
+}
+
+.usajobs-alert--info {
+  @include alert($color-primary-darker, $fa-var-info);
+}
+
+.usajobs-alert--warning {
+  @include alert($color-gold, $fa-var-exclamation);
+}
+
+.usajobs-alert--error {
+  @include alert($color-secondary-dark, $fa-var-exclamation);
 }

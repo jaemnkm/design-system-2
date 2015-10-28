@@ -22,6 +22,9 @@ exclude:
 - library
 keep_files: ['css', 'js']
 
+# Creative Cloud uses port 4000? Setting a unique port number
+port: 4001
+
 # destination: ./_site
 # layouts: ./_layouts
 baseurl: '/design-system'
