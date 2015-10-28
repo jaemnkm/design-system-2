@@ -2,9 +2,7 @@ html {
   box-sizing: border-box;
 }
 
-*,
-*::after,
-*::before {
+*, *::after, *::before {
   box-sizing: inherit;
 }
 
@@ -50,7 +48,7 @@ html {
   max-width: none;
   background-color: #205493;
   background-image: -webkit-linear-gradient(left, #205493 0%, #205493 50%, #112e51 60%, #112e51 100%);
-  background-image: linear-gradient(to right,#205493 0%, #205493 50%, #112e51 60%, #112e51 100%, , , , , , );
+  background-image: linear-gradient(to right,#205493 0%, #205493 50%, #112e51 60%, #112e51 100%);
 }
 
 .usajobs-app_guide-banner::after {
