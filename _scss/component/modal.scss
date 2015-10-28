@@ -19,7 +19,6 @@
   width: auto;
   min-height: 200px;
   z-index: 400;
-  overflow: auto;
   background-color: $color-white;
   background-clip: padding-box;
   border: 1px solid rgba(70,70,70, .14);
@@ -31,6 +30,7 @@
   @include media($ML) {
     top: $size-XL;
     bottom: $size-XL;
+    margin: $size-M;
   }
 
   @include media($MLL) {
@@ -61,9 +61,13 @@
 
 
   &__body {
-    min-height: rem(500px);
+    min-height: rem(480px);
     overflow: auto;
     padding: $size-default;
+
+    @include media($ML) {
+      padding: $size-M;
+    }
 
     @include media($MLL) {
       min-height: auto;
@@ -74,12 +78,23 @@
     padding: $size-L $size-default $size-M;
     background-color: $color-gray-lightest;
     border-bottom: 1px solid $color-gray-light;
+    border-top-left-radius: $size-base;
+    border-top-right-radius: $size-base;
+
+    @include media($ML) {
+      padding: $size-L $size-M $size-M;
+    }
   }
 
   &__footer {
     margin-top: $size-L;
-    padding: $size-M;
+    padding: $size-M $size-default;
     border-top: 1px solid $color-gray-light;
+    text-align: right;
+
+    @include media($ML) {
+      padding: $size-M;
+    }
   }
 
   &__title {
@@ -88,8 +103,8 @@
 
   &__close {
     position: absolute;
-    top: $size-default;
-    right: $size-default;
+    top: -#{$size-default};
+    right: -#{$size-default};
     margin: 0;
     padding: 0;
     @include makeCircle(35px);

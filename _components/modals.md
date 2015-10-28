@@ -26,8 +26,8 @@ lead: USAJOBS uses the modal component to draw attention to actions that require
       proident, sunt in culpa qui officia deserunt mollit anim id est laborum.]
     </div>
     <div class="usajobs-modal__footer">
+      <button class="usa-button-big usa-button-outline" data-behavior="modal.close">Cancel</button>
       <button class="usa-button-big usa-button-primary" data-behavior="modal.close">Go</button>
-      <a href="#cancel" class="" data-behavior="modal.close">Cancel</a>
     </div>
     <div class="usajobs-modal__actions">
       <button class="usajobs-modal__close" data-behavior="modal.close" >
