@@ -5,7 +5,9 @@ title: Alerts
 lead: USAJOBS has a few alerts that deviate from the U.S. Web Design Standards and introduces a new alert with a specific placement.
 ---
 
-<a href="{{ site.baseurl }}/getting-started/#maturity" class="usa-label maturity under_review">Under Review</a>
+<a href="{{ site.baseurl }}/getting-started/#maturity" class="usa-label maturity design_complete">
+  Design Complete
+</a>
 
 <div class="preview">
   <h6 class="usa-heading-alt">Success</h6>
