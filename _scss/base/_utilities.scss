@@ -16,9 +16,31 @@
   width: $size;
   height: $size;
   line-height: $size;
-  border-radius: $size / 2;
+  border-radius: 50%;
   color: $color;
   background-color: $bg-color;
   box-shadow: inset 0 0 0 2px $border;
+}
+
+@mixin makeCloseButton($size: 35px) {
+  position: absolute;
+  top: -#{$size-default};
+  right: -#{$size-default};
+  margin: 0;
+  padding: 0;
+  @include makeCircle($size);
+  background-color: $color-gray-light;
+  text-decoration: none;
+
+  &:after {
+    position: relative;
+    width: rem(10px);
+    height: rem(10px);
+    margin-left: -#{rem(2px)};
+    @include fa-icon();
+    content: $fa-var-times;
+    color: $color-white;
+    line-height: $size;
+  }
 }
 

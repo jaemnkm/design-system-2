@@ -22,6 +22,9 @@ lead: USAJOBS has a few alerts that deviate from the U.S. Web Design Standards a
         Your application progress has been saved to My Account > <a href="#app_status">Application Status</a>.
       </p>
     </div>
+    <button class="usajobs-alert__close" data-behavior="alert.close" >
+      <span class="usajobs-assistive-text">Close</span>
+    </button>
   </div>
 
   <h6 class="usa-heading-alt">Information</h6>
@@ -32,7 +35,7 @@ lead: USAJOBS has a few alerts that deviate from the U.S. Web Design Standards a
     </div>
     <div class="usajobs-alert__body">
       <p class="usa-alert-text">
-        Your demographic information will not be sent to the hiring manager responsible for this position. It is used solely for statistical purposes to assist the agency in the development of recruiting plans to ensure the agency is reaching all segments of the population.
+        Your demographic information will not be sent to the hiring manager responsible for this position. It is used solely for statistical purposes to assist the agency in the development of recruiting plans and to ensure the agency is reaching all segments of the population.
       </p>
     </div>
   </div>

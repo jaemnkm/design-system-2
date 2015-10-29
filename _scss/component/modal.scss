@@ -102,25 +102,7 @@
   }
 
   &__close {
-    position: absolute;
-    top: -#{$size-default};
-    right: -#{$size-default};
-    margin: 0;
-    padding: 0;
-    @include makeCircle(35px);
-    background-color: $color-gray-light;
-    text-decoration: none;
-
-    &:after {
-      position: absolute;
-      top: 25%;
-      left: 33%;
-      width: 10px;
-      height: 10px;
-      @include fa-icon();
-      content: $fa-var-times;
-      color: $color-white;
-    }
+    @include makeCloseButton();
   }
 }
 

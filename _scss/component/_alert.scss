@@ -5,11 +5,8 @@ $icon-padding: $size-default;
 $body-padding: $size-default;
 
 @mixin alert($color, $icon) {
+  background-color: $color;
   border-color: $color;
-
-  .usajobs-alert__figure {
-    background-color: $color;
-  }
 
   .usajobs-alert__icon:after {
     content: $icon;
@@ -18,6 +15,7 @@ $body-padding: $size-default;
 }
 
 .usajobs-alert {
+  position: relative;
   padding: 0;
   background-color: $color-white;
   border: 1px solid;
@@ -29,6 +27,7 @@ $body-padding: $size-default;
 
   &__body {
     padding: $size-S $body-padding;
+    background-color: $color-white;
   }
 
   &__icon {
@@ -47,22 +46,25 @@ $body-padding: $size-default;
       font-size: rem(30px);
     }
   }
+
+  &__close {
+    @include makeCloseButton(30px);
+  }
 }
 
 .no-flexbox .usajobs-alert {
   @include clearfix();
+  display: table;
 
   &__figure,
   &__body {
-    display: block;
+    display: table-cell;
   }
 
   &__figure {
-    float: left;
   }
 
   &__body {
-    float: right;
     @include calc(width, "100% - " ($icon-width + $icon-padding + $body-padding));
   }
 }
@@ -73,7 +75,6 @@ $body-padding: $size-default;
 
   &__figure {
     @include flex-shrink(0);
-    margin-right: $size-default;
   }
 
   &__body {
