@@ -26,26 +26,3 @@
     margin: 0;
   }
 }
-
-.usajobs-app_guide .usajobs-button_bar {
-  // Our button bar background matches the disabled state of a button
-  // Thus we make the button darker
-  [type="submit"]:disabled,
-  .usa-button-disabled {
-    background-color: $color-gray-light;
-    color: $color-gray-dark;
-    cursor: default;
-    opacity: 0.7;
-
-    &:hover,
-    &.usa-button-hover,
-    &:active,
-    &.usa-button-active,
-    &:focus  {
-      background-color: $color-gray-light;
-      border: 0;
-      box-shadow: none;
-      color: $color-gray-dark;
-    }
-  }
-}
