@@ -5,8 +5,8 @@ title: Navigation
 lead: USAJOBS features a consistent header for top-level navigation across the site.
 ---
 
-<a href="{{ site.baseurl }}/getting-started/#maturity" class="usa-label maturity under_review">
-  Under Review
+<a href="{{ site.baseurl }}/getting-started/#maturity" class="usa-label maturity design_complete">
+  Design Complete
 </a>
 
 <h6 class="usa-heading-alt">Unauthenticated (v1)</h6>
