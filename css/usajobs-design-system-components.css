@@ -5306,24 +5306,4 @@ html {
   margin: 0;
 }
 
-.usajobs-app_guide .usajobs-button_bar [type="submit"]:disabled,
-.usajobs-app_guide .usajobs-button_bar .usa-button-disabled {
-  background-color: #aeb0b5;
-  color: #323a45;
-  cursor: default;
-  opacity: 0.7;
-}
-
-.usajobs-app_guide .usajobs-button_bar [type="submit"]:disabled:hover, .usajobs-app_guide .usajobs-button_bar [type="submit"]:disabled.usa-button-hover, .usajobs-app_guide .usajobs-button_bar [type="submit"]:disabled:active, .usajobs-app_guide .usajobs-button_bar [type="submit"]:disabled.usa-button-active, .usajobs-app_guide .usajobs-button_bar [type="submit"]:disabled:focus,
-.usajobs-app_guide .usajobs-button_bar .usa-button-disabled:hover,
-.usajobs-app_guide .usajobs-button_bar .usa-button-disabled.usa-button-hover,
-.usajobs-app_guide .usajobs-button_bar .usa-button-disabled:active,
-.usajobs-app_guide .usajobs-button_bar .usa-button-disabled.usa-button-active,
-.usajobs-app_guide .usajobs-button_bar .usa-button-disabled:focus {
-  background-color: #aeb0b5;
-  border: 0;
-  box-shadow: none;
-  color: #323a45;
-}
-
 /*# sourceMappingURL=usajobs-design-system-components.css.map */
