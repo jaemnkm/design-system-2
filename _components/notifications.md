@@ -38,6 +38,11 @@ lead: Notifications
     Documentation
   </button>
   <div id="collapsible-0" aria-hidden="false" class="usa-accordion-content">
+    <h4 class="usa-heading">Implementation</h4>
+    <ul class="usa-content-list">
+      <li>The notification animates in from the left and is anchored to the left edge of the page shell.</li>
+    </ul>
+
     <h4 class="usa-heading">Usability</h4>
     <h5>When to use</h5>
     <ul class="usa-content-list">

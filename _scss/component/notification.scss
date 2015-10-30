@@ -31,7 +31,7 @@ $body-padding: $size-default;
   }
 
   to {
-    left: -#{$size-default};
+    left: 0;
     opacity: 1;
     transform: none;
   }
@@ -40,25 +40,20 @@ $body-padding: $size-default;
 .usajobs-notification {
   position: absolute;
   bottom: 20%;
-  width: auto;
   z-index: 400;
-  background-clip: padding-box;
   padding: 0;
+  margin-right: $size-M;
+  background-clip: padding-box;
   border: 1px solid;
   opacity: 0;
-  -webkit-animation-duration: $duration-slow;
   animation-duration: $duration-slow;
-  -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
-  -webkit-animation-name: fadeOutLeft;
-  animation-name: fadeOutLeft;
 
   &[data-state="is-closed"] {
     transition: $duration-fast opacity ease-in;
   }
 
   &[data-state="is-open"] {
-    -webkit-animation-name: fadeInLeft;
     animation-name: fadeInLeft;
   }
 
