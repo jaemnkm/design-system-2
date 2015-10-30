@@ -63,9 +63,6 @@ $body-padding: $size-default;
     display: table-cell;
   }
 
-  &__figure {
-  }
-
   &__body {
     @include calc(width, "100% - " ($icon-width + $icon-padding + $body-padding));
   }

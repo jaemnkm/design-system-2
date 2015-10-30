@@ -42,5 +42,9 @@
     color: $color-white;
     line-height: $size;
   }
+
+  &:hover {
+    background-color: $color-gray-dark;
+  }
 }
 
