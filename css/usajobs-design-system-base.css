@@ -5516,6 +5516,10 @@ h2 {
   line-height: 30px;
 }
 
+.usajobs-alert__close:hover {
+  background-color: #323a45;
+}
+
 .no-flexbox .usajobs-alert {
   display: table;
 }
