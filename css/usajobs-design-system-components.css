@@ -7142,7 +7142,7 @@ html {
     transform: translate3d(-100%, 0, 0);
   }
   to {
-    left: -1.5rem;
+    left: 0;
     opacity: 1;
     transform: none;
   }
@@ -7151,18 +7151,14 @@ html {
 .usajobs-notification {
   position: absolute;
   bottom: 20%;
-  width: auto;
   z-index: 400;
-  background-clip: padding-box;
   padding: 0;
+  margin-right: 3rem;
+  background-clip: padding-box;
   border: 1px solid;
   opacity: 0;
-  -webkit-animation-duration: 0.8s;
   animation-duration: 0.8s;
-  -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
-  -webkit-animation-name: fadeOutLeft;
-  animation-name: fadeOutLeft;
 }
 
 .usajobs-notification[data-state="is-closed"] {
@@ -7170,7 +7166,6 @@ html {
 }
 
 .usajobs-notification[data-state="is-open"] {
-  -webkit-animation-name: fadeInLeft;
   animation-name: fadeInLeft;
 }
 
