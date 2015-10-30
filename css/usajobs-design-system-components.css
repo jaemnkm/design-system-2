@@ -7149,7 +7149,7 @@ html {
 }
 
 .usajobs-notification {
-  position: absolute;
+  position: fixed;
   bottom: 20%;
   z-index: 400;
   padding: 0;

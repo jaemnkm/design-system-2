@@ -40,7 +40,7 @@ lead: Notifications
   <div id="collapsible-0" aria-hidden="false" class="usa-accordion-content">
     <h4 class="usa-heading">Implementation</h4>
     <ul class="usa-content-list">
-      <li>The notification animates in from the left and is anchored to the left edge of the page shell.</li>
+      <li>The notification animates in from the left and is anchored to the left edge of the viewport.</li>
     </ul>
 
     <h4 class="usa-heading">Usability</h4>
@@ -55,6 +55,10 @@ lead: Notifications
       <li>Use a <a href="{{ site.baseurl }}/modals/">Modal</a> when the message demands that the user take action.</li>
     </ul>
 
+    <h4 class="usa-heading">Guidance</h4>
+    <p>
+      Contents of notification messages, like all messaging, should be brief and concise. 
+    </p>
   </div>
 </div>
 
