@@ -2,7 +2,7 @@
 layout: styleguide
 type: component
 title: Alerts
-lead: USAJOBS has a few alerts that deviate from the U.S. Web Design Standards and introduces a new alert with a specific placement.
+lead: USAJOBS has adopted a different visual style to our alerts that deviate from the U.S. Web Design Standards.
 ---
 
 <a href="{{ site.baseurl }}/getting-started/#maturity" class="usa-label maturity design_complete">
@@ -11,7 +11,7 @@ lead: USAJOBS has a few alerts that deviate from the U.S. Web Design Standards a
 
 <div class="preview">
   <h6 class="usa-heading-alt">Success</h6>
-  <div class="usa-alert usajobs-alert usajobs-alert--success">
+  <div class="usa-alert usajobs-alert usajobs-alert--success" role="alert">
     <div class="usajobs-alert__figure">
       <div class="usajobs-alert__icon">
       </div>
@@ -30,7 +30,7 @@ lead: USAJOBS has a few alerts that deviate from the U.S. Web Design Standards a
   </div>
 
   <h6 class="usa-heading-alt">Information</h6>
-  <div class="usa-alert usajobs-alert usajobs-alert--info">
+  <div class="usa-alert usajobs-alert usajobs-alert--info" role="alert">
     <div class="usajobs-alert__figure">
       <div class="usajobs-alert__icon">
       </div>
@@ -43,7 +43,7 @@ lead: USAJOBS has a few alerts that deviate from the U.S. Web Design Standards a
   </div>
 
   <h6 class="usa-heading-alt">Warning</h6>
-  <div class="usa-alert usajobs-alert usajobs-alert--warning">
+  <div class="usa-alert usajobs-alert usajobs-alert--warning" role="alert">
     <div class="usajobs-alert__figure">
       <div class="usajobs-alert__icon">
       </div>
@@ -61,7 +61,7 @@ lead: USAJOBS has a few alerts that deviate from the U.S. Web Design Standards a
   </div>
 
   <h6 class="usa-heading-alt">Error</h6>
-  <div class="usa-alert usajobs-alert usajobs-alert--error">
+  <div class="usa-alert usajobs-alert usajobs-alert--error" role="alert">
     <div class="usajobs-alert__figure">
       <div class="usajobs-alert__icon">
       </div>
@@ -85,10 +85,7 @@ lead: USAJOBS has a few alerts that deviate from the U.S. Web Design Standards a
     Documentation
   </button>
   <div id="collapsible-0" aria-hidden="false" class="usa-accordion-content">
-    <h4 class="usa-heading">Usability</h4>
-    <h5>When to use</h5>
-    <ul class="usa-content-list">
-    </ul>
+    <p>Refer to the <a href="https://playbook.cio.gov/designstandards/alerts/">U.S. Web Design Standards on alerts</a>.
   </div>
 </div>
 
