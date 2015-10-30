@@ -37,7 +37,6 @@
 .usajobs-app_guide-banner {
   @include outer-container();
   max-width: none;
-  // background-color: $color-primary-darker;
   @include linear-gradient(to right, $color-primary-darker 0%, $color-primary-darker 50%, $color-primary-darkest 60%, $color-primary-darkest 100%);
 }
 
