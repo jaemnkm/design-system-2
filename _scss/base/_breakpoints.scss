@@ -1,12 +1,12 @@
 // Breakpoints
 
-$SM-screen:    30em;    //  480px at 16px base font - Future BP, USDS standard
-$M-screen:     37.5em;  //  600px at 16px base font - Future BP, USDS standard
-$ML-screen:    48em;    //  768px at 16px base font - Temporary to align with current BP
-$MLL-screen:   62em;    //  992px at 16px base font - Temporary to align with current BP
-$L-screen:     64em;    // 1024px at 16px base font - Future BP, USAJOBS proposed
-$XL-screen:    75em;    // 1200px at 16px base font - USDS standard, aligns with current BP
-$XXL-screen:  120em;    // 1920px at 16px base font - Future BP, USAJOBS proposed
+$SM-screen:    30rem;    //  480px at 16px base font - Future BP, USDS standard
+$M-screen:     37.5rem;  //  600px at 16px base font - Future BP, USDS standard
+$ML-screen:    48rem;    //  768px at 16px base font - Temporary to align with current BP
+$MLL-screen:   62rem;    //  992px at 16px base font - Temporary to align with current BP
+$L-screen:     64rem;    // 1024px at 16px base font - Future BP, USAJOBS proposed
+$XL-screen:    75rem;    // 1200px at 16px base font - USDS standard, aligns with current BP
+$XXL-screen:  120rem;    // 1920px at 16px base font - Future BP, USAJOBS proposed
 
 $SM:  new-breakpoint(min-width $SM-screen 2);
 $M:   new-breakpoint(min-width $M-screen 6);
@@ -17,4 +17,4 @@ $XL:  new-breakpoint(min-width $XL-screen 12);
 $XXL: new-breakpoint(min-width $XL-screen 12);
 
 // In between points
-$ML-to-MLL:  new-breakpoint(min-width $ML-screen max-width ($MLL-screen - .001em), 6);
+$ML-to-MLL:  new-breakpoint(min-width $ML-screen max-width ($MLL-screen - .001rem), 6);

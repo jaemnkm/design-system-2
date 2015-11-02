@@ -24,10 +24,11 @@ $body-padding: $size-default;
   border-bottom-right-radius: 0;
 
   &__figure {
-    padding: $size-default;
+    padding: $size-default $size-M;
   }
 
   &__body {
+    min-height: rem(77px);
     padding: $size-S $body-padding;
     background-color: $color-white;
   }
