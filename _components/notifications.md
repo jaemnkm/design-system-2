@@ -2,7 +2,7 @@
 layout: notifications
 type: component
 title: Notifications
-lead: Notifications
+lead: A distinct messaging style intended for helpful confirmations.
 ---
 
 <a href="{{ site.baseurl }}/getting-started/#maturity" class="usa-label maturity under_review">
@@ -40,13 +40,15 @@ lead: Notifications
   <div id="collapsible-0" aria-hidden="false" class="usa-accordion-content">
     <h4 class="usa-heading">Implementation</h4>
     <ul class="usa-content-list">
-      <li>The notification animates in from the left and is anchored to the left edge of the viewport.</li>
+      <li>The notification animates in from the left and automatically fades out.</li>
+      <li>The notification is anchored to the left edge and towards the bottom of the viewport.</li>
     </ul>
 
     <h4 class="usa-heading">Usability</h4>
     <h5>When to use</h5>
     <ul class="usa-content-list">
       <li>Notifications are ideally used for brief, temporary messaging around a specific microinteraction within a page.</li>
+      <li>Notifications are intended to build trust in the system by increasing the level of feedback coming from the system without being overwhelming or intrusive.</li>
     </ul>
 
     <h5>When to consider something else</h5>
