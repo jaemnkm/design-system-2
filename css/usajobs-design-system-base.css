@@ -5450,7 +5450,7 @@ h2 {
 
 .usajobs-alert__body {
   min-height: 7.7rem;
-  padding: 1rem 1.5rem;
+  padding: 1.5rem 3rem;
   background-color: #ffffff;
 }
 
@@ -5481,6 +5481,10 @@ h2 {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-size: 3rem;
+}
+
+.usajobs-alert .usa-alert-text {
+  max-width: inherit;
 }
 
 .usajobs-alert__close {
@@ -5514,7 +5518,6 @@ h2 {
   -moz-osx-font-smoothing: grayscale;
   content: "";
   color: #ffffff;
-  line-height: 30px;
 }
 
 .usajobs-alert__close:hover {
@@ -5536,8 +5539,8 @@ h2 {
 }
 
 .no-flexbox .usajobs-alert__body {
-  width: -webkit-calc(100% -  7rem);
-  width: calc(100% -  7rem);
+  width: -webkit-calc(100% -  8.5rem);
+  width: calc(100% -  8.5rem);
 }
 
 .flexbox .usajobs-alert {

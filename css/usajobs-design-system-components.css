@@ -4923,7 +4923,6 @@ html {
   -moz-osx-font-smoothing: grayscale;
   content: "";
   color: #ffffff;
-  line-height: 35px;
 }
 
 .usajobs-modal__close:hover {
@@ -4946,7 +4945,7 @@ html {
 }
 
 .usajobs-modal--info .usajobs-modal__header .usajobs-alert__body {
-  padding: 1.5rem;
+  padding: 1.5rem 3rem;
 }
 
 html {
@@ -7150,6 +7149,32 @@ html {
   content: "";
 }
 
+@-webkit-keyframes fadeInLeft {
+  from {
+    left: -20%;
+    opacity: 0;
+    transform: translate3d(-100%, 0, 0);
+  }
+  to {
+    left: 0;
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@-moz-keyframes fadeInLeft {
+  from {
+    left: -20%;
+    opacity: 0;
+    transform: translate3d(-100%, 0, 0);
+  }
+  to {
+    left: 0;
+    opacity: 1;
+    transform: none;
+  }
+}
+
 @keyframes fadeInLeft {
   from {
     left: -20%;
@@ -7165,15 +7190,25 @@ html {
 
 .usajobs-notification {
   position: fixed;
-  bottom: 20%;
+  bottom: 0;
   z-index: 400;
   padding: 0;
   margin-right: 3rem;
   background-clip: padding-box;
   border: 1px solid;
   opacity: 0;
+  -webkit-animation-duration: 0.8s;
+  -moz-animation-duration: 0.8s;
   animation-duration: 0.8s;
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
   animation-fill-mode: both;
+}
+
+@media screen and (min-width: 62rem) {
+  .usajobs-notification {
+    position: absolute;
+  }
 }
 
 .usajobs-notification[data-state="is-closed"] {
@@ -7181,6 +7216,8 @@ html {
 }
 
 .usajobs-notification[data-state="is-open"] {
+  -webkit-animation-name: fadeInLeft;
+  -moz-animation-name: fadeInLeft;
   animation-name: fadeInLeft;
 }
 
@@ -7189,7 +7226,7 @@ html {
 }
 
 .usajobs-notification__body {
-  padding: 1rem 1.5rem;
+  padding: 1rem 3rem;
   color: #ffffff;
 }
 
@@ -7253,7 +7290,6 @@ html {
   -moz-osx-font-smoothing: grayscale;
   content: "";
   color: #ffffff;
-  line-height: 30px;
 }
 
 .usajobs-notification__close:hover {
@@ -7275,8 +7311,8 @@ html {
 }
 
 .no-flexbox .usajobs-notification__body {
-  width: -webkit-calc(100% -  7rem);
-  width: calc(100% -  7rem);
+  width: -webkit-calc(100% -  8.5rem);
+  width: calc(100% -  8.5rem);
 }
 
 .flexbox .usajobs-notification {
@@ -7642,6 +7678,98 @@ html {
 
 .usajobs-progress_indicator__step.has-visit .usajobs-progress_indicator__step-desc h5 {
   color: #ffffff;
+}
+
+.usajobs-document {
+  position: relative;
+}
+
+.usajobs-document__body {
+  padding: 3rem 1.5rem;
+}
+
+.usajobs-document__details {
+  padding: 1.5rem;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.usajobs-document__title, .usajobs-document__date {
+  margin: 0;
+}
+
+.usajobs-document__controls {
+  display: block;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.usajobs-document__controls li {
+  display: list-item;
+  margin: 0;
+}
+
+.usajobs-document__controls li:before {
+  display: none;
+}
+
+.usajobs-document__controls li:after {
+  display: none;
+}
+
+.usajobs-document__controls .ctrl,
+.usajobs-document__controls .pipe {
+  display: inline-block;
+}
+
+.usajobs-document__controls .view,
+.usajobs-document__controls .delete {
+  display: block;
+  padding: 1.5rem;
+}
+
+.usajobs-document__controls .delete {
+  color: #e31c3d;
+}
+
+.usajobs-document__controls .pipe {
+  width: 1px;
+  padding: 0;
+}
+
+.usajobs-document__toggle {
+  position: absolute;
+  top: -1.5rem;
+  right: -1.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+.usajobs-document__selector {
+  margin: 0;
+}
+
+.usajobs-document--placeholder .usajobs-document__figure {
+  background-color: #205493;
+  text-align: center;
+  vertical-align: center;
+}
+
+.usajobs-document--placeholder .usajobs-document__placeholder {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #ffffff;
+  font-size: 8rem;
+  line-height: 285px;
+}
+
+.usajobs-document--placeholder .usajobs-document__placeholder:before {
+  content: "";
 }
 
 html {

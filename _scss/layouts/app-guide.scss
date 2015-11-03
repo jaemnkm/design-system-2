@@ -82,9 +82,12 @@
   }
 }
 
-.usajobs-app_guide-resumes {
+.usajobs-app_guide-resumes_container {
+  position: relative; // allows notifications to arrive in this area
   padding: 0;
+}
 
+.usajobs-app_guide-resumes {
   // This is just here to demo the resume grid
   .thumbnail {
     display: block;

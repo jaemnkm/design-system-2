@@ -40,11 +40,33 @@
     @include fa-icon();
     content: $fa-var-times;
     color: $color-white;
-    line-height: $size;
+    // Safari puts the icon slightly too low, Chrome slightly too high
+    // line-height corrects the issue in Chrome but makes it way too low in Safari
+    // line-height: $size;
   }
 
   &:hover {
     background-color: $color-gray-dark;
+  }
+}
+
+@mixin unstyledList() {
+  display: block;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+
+  li {
+    display: list-item;
+    margin: 0;
+
+    &:before {
+      display: none;
+    }
+
+    &:after {
+      display: none;
+    }
   }
 }
 

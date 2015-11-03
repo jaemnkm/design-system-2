@@ -10,21 +10,22 @@
   Your Resumes <span class="usajobs-required--section">(<i class="fa fa-asterisk"></i> Required)</span>
 </h2>
 
-<div class="usajobs-grid usajobs-app_guide-resumes">
-  <div class="usajobs-app_guide-document_container">
-		<a href="#" class="thumbnail">
-			<img src="{{ site.baseurl }}/img/sample_resume1.png" alt="...">
-		</a>
-	</div>
-  <div class="usajobs-app_guide-document_container">
-		<a href="#" class="thumbnail">
-			<img src="{{ site.baseurl }}/img/sample_resume2.png" alt="...">
-		</a>
-	</div>
-  <div class="usajobs-app_guide-document_container">
-		<a href="#" class="thumbnail">
-      <img src="{{ site.baseurl }}/img/sample_resume3.png" alt="...">
-		</a>
-	</div>
+<div class="usajobs-grid usajobs-app_guide-resumes_container">
+  <div class="usajobs-app_guide-resumes">
+    <div class="usajobs-app_guide-document_container">
+      {% include components/document-placeholder.html %}
+    </div>
+    <div class="usajobs-app_guide-document_container">
+  		<a href="#" class="thumbnail">
+  			<img src="{{ site.baseurl }}/img/sample_resume2.png" alt="...">
+  		</a>
+  	</div>
+    <div class="usajobs-app_guide-document_container">
+  		<a href="#" class="thumbnail">
+        <img src="{{ site.baseurl }}/img/sample_resume3.png" alt="...">
+  		</a>
+  	</div>
+  </div>
+  {% include components/notification.html %}
 </div>
 

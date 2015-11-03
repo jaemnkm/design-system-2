@@ -1,0 +1,83 @@
+// Document
+
+@import 'lib/bourbon/bourbon';
+@import 'core/variables';
+@import 'base/variables';
+@import 'base/utilities';
+@import 'base/breakpoints';
+
+$thumbnail-img-height: 285px;
+
+.usajobs-document {
+  position: relative;
+
+  &__body {
+    padding: $size-M $size-default;
+  }
+
+  &__details {
+    padding: $size-default;
+    background-color: $color-white;
+    text-align: center;
+  }
+
+  &__title,
+  &__date {
+    margin: 0;
+  }
+
+  &__controls {
+    @include unstyledList();
+
+    .ctrl,
+    .pipe {
+      display: inline-block;
+    }
+
+    .view,
+    .delete {
+      display: block;
+      padding: $size-default;
+    }
+
+    .delete {
+      color: $color-secondary;
+    }
+
+    .pipe {
+      width: 1px;
+      padding: 0;
+    }
+  }
+
+  &__toggle {
+    position: absolute;
+    top: -#{$size-default};
+    right: -#{$size-default};
+    margin: 0;
+    padding: 0;
+  }
+
+  &__selector {
+    margin: 0;
+  }
+}
+
+.usajobs-document--placeholder {
+  .usajobs-document__figure {
+    background-color: $color-primary-darker;
+    text-align: center;
+    vertical-align: center;
+  }
+
+  .usajobs-document__placeholder {
+    @include fa-icon();
+    color: $color-white;
+    font-size: 8rem;
+    line-height: $thumbnail-img-height;
+
+    &:before {
+      content: $fa-var-file;
+    }
+  }
+}

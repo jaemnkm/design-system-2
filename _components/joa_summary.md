@@ -44,7 +44,7 @@ lead: Summary of the Job Offer Announcement (JOA)
       aria-expanded="true" aria-controls="collapsible-0">
     Documentation
   </button>
-  <div id="collapsible-0" aria-hilien="false" class="usa-accordion-content">
+  <div id="collapsible-0" aria-hidden="false" class="usa-accordion-content">
     <h4 class="usa-heading">Guidelines</h4>
     <ul class="usa-content-list">
       <li>The job title opens the JOA in a new tab.</li>
