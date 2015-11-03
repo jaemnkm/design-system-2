@@ -14,10 +14,10 @@ module.exports = function(grunt) {
     // shell commands for use in Grunt tasks
     shell: {
       jekyllBuild: {
-          command: "bundle exec jekyll build"
+        command: "bundle exec jekyll build"
       },
       jekyllServe: {
-          command: "bundle exec jekyll serve --baseurl ''"
+        command: "bundle exec jekyll serve --baseurl ''"
       }
     },
     sass: {
@@ -55,7 +55,7 @@ module.exports = function(grunt) {
     autoprefixer: {
       options: {
         map: true, // Use and update the sourcemap
-        browsers: ["last 3 versions", "> 5% in US"]
+        browsers: ["last 3 versions", "> 2% in US"]
       },
       project_css: {
         expand: true,

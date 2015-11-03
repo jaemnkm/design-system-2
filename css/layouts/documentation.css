@@ -6,11 +6,6 @@ html {
   box-sizing: inherit;
 }
 
-.usa-sr-only {
-  position: absolute;
-  left: -999em;
-}
-
 .l-homepage p {
   font-family: "Source Sans Pro", "Helvetica", "Arial", sans-serif;
   font-size: 1.7rem;
@@ -20,7 +15,7 @@ html {
   max-width: 660px;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 37.5rem) {
   .l-homepage .usa-section-examples .usa-width-five-sixths {
     margin-left: 8.5298042998%;
   }
@@ -37,7 +32,7 @@ html {
   width: 100%;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 37.5rem) {
   .l-homepage .usa-button-block {
     width: auto;
   }
@@ -57,7 +52,7 @@ html {
   padding-top: 1.5rem;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 37.5rem) {
   .l-homepage .usa-banner h1 {
     font-size: 5.6rem;
     padding-top: 4.5rem;
@@ -91,7 +86,7 @@ html {
   color: #ffffff;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 37.5rem) {
   .l-homepage .usa-section-dark .usa-width-one-half-top {
     margin-bottom: 7rem;
   }
@@ -109,7 +104,7 @@ html {
   width: 124px;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 37.5rem) {
   .l-homepage .usa-img-circle {
     float: left;
     margin-right: 3rem;
@@ -411,18 +406,13 @@ html {
   z-index: -1;
 }
 
-@media screen and (min-width: 600px) {
-  .l-doc.main-content {
-    top: 124px;
-  }
-}
-
 .lt-ie9 .l-doc.main-content {
   width: 75%;
 }
 
 @media screen and (min-width: 850px) {
   .l-doc.main-content {
+    top: 124px;
     width: calc(100% - 250px);
   }
   .lt-ie9 .l-doc.main-content {
@@ -431,11 +421,16 @@ html {
 }
 
 .styleguide-content {
-  margin-bottom: 5em;
-  max-width: 120rem;
-  padding-left: 2em;
-  padding-right: 2em;
   position: relative;
+  max-width: 120rem;
+  margin-bottom: 5em;
+  padding: 1.5rem;
+}
+
+@media screen and (min-width: 37.5rem) {
+  .styleguide-content {
+    padding: 3rem;
+  }
 }
 
 .styleguide-content > h1 {
@@ -444,13 +439,6 @@ html {
 
 .styleguide-content > h1:not(:first-child) {
   margin-top: 1.5em;
-}
-
-@media (min-width: 850px) {
-  .styleguide-content {
-    padding-left: 3em;
-    padding-right: 3em;
-  }
 }
 
 .styleguide-content .maturity {
@@ -504,12 +492,10 @@ html {
   border: 1px solid #eeeeee;
 }
 
-.preview:after {
-  content: ".";
-  display: block;
-  height: 0;
+.preview::after {
   clear: both;
-  visibility: hidden;
+  content: "";
+  display: table;
 }
 
 .preview .is-peripheral {

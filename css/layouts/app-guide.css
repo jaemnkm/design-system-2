@@ -161,7 +161,8 @@ html {
   }
 }
 
-.usajobs-app_guide-resumes {
+.usajobs-app_guide-resumes_container {
+  position: relative;
   padding: 0;
 }
 

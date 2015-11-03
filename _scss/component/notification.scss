@@ -11,7 +11,7 @@
 
 $icon-width: rem(40px);
 $icon-padding: $size-default;
-$body-padding: $size-default;
+$body-padding: $size-M;
 
 @mixin notification($color, $icon) {
   background-color: $color;
@@ -23,7 +23,7 @@ $body-padding: $size-default;
   }
 }
 
-@keyframes fadeInLeft {
+@include keyframes(fadeInLeft) {
   from {
     left: -20%;
     opacity: 0;
@@ -39,22 +39,26 @@ $body-padding: $size-default;
 
 .usajobs-notification {
   position: fixed;
-  bottom: 20%;
+  bottom: 0;
   z-index: 400;
   padding: 0;
   margin-right: $size-M;
   background-clip: padding-box;
   border: 1px solid;
   opacity: 0;
-  animation-duration: $duration-slow;
-  animation-fill-mode: both;
+  @include animation-duration($duration-slow);
+  @include animation-fill-mode(both);
+
+  @include media($MLL) {
+    position: absolute;
+  }
 
   &[data-state="is-closed"] {
     transition: $duration-fast opacity ease-in;
   }
 
   &[data-state="is-open"] {
-    animation-name: fadeInLeft;
+    @include animation-name(fadeInLeft);
   }
 
   &__figure {

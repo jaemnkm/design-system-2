@@ -2,7 +2,7 @@
 
 $icon-width: rem(40px);
 $icon-padding: $size-default;
-$body-padding: $size-default;
+$body-padding: $size-M;
 
 @mixin alert($color, $icon) {
   background-color: $color;
@@ -29,7 +29,7 @@ $body-padding: $size-default;
 
   &__body {
     min-height: rem(77px);
-    padding: $size-S $body-padding;
+    padding: $size-default $body-padding;
     background-color: $color-white;
   }
 
@@ -48,6 +48,10 @@ $body-padding: $size-default;
       @include fa-icon();
       font-size: rem(30px);
     }
+  }
+
+  .usa-alert-text {
+    max-width: inherit;
   }
 
   &__close {
