@@ -66,8 +66,8 @@
 .usajobs-app_guide-document_container {
   float: left;
   width: 31.7615656014%;
-  margin-right: 2.3576515979%;
-  min-width: 195px;
+  margin-right: 4.8291579146%;
+  min-width: rem(208px);
 
   @include media($ML) {
     @include span-columns(2);
@@ -91,7 +91,7 @@
   // This is just here to demo the resume grid
   .thumbnail {
     display: block;
-    min-width: 195px;
+    width: 195px;
   }
 }
 

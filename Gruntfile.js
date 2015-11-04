@@ -143,7 +143,10 @@ module.exports = function(grunt) {
         files: [
           '_scss/**/*.scss'
         ],
-        tasks: ['sass']
+        tasks: ['sass'],
+        options: {
+          livereload: true
+        }
       },
       base: {
         files: [
@@ -156,7 +159,8 @@ module.exports = function(grunt) {
         ],
         tasks: ['jshint:all', 'concat'],
         options: {
-          debounceDelay: 250
+          debounceDelay: 250,
+          livereload: true
         }
       },
       components: {
@@ -165,7 +169,8 @@ module.exports = function(grunt) {
         ],
         tasks: ['jshint:components', 'concat:js_components'],
         options: {
-          debounceDelay: 250
+          debounceDelay: 250,
+          livereload: true
         }
       }
     },

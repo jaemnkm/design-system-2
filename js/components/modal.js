@@ -28,13 +28,13 @@ $modal.on('click', '[data-behavior]', function (event) {
     state = $object.attr('data-state'),
     behavior = $el.attr('data-behavior');
 
-    event.preventDefault();
-    $el.blur(); // Removes focus
+  event.preventDefault();
+  $el.blur(); // Removes focus
 
-    // Each behavior attached to the element should be triggered
-    $.each(behavior.split(' '), function (idx, action) {
-        $el.trigger(action, { el: $el, object: $object, state: state });
-    });
+  // Each behavior attached to the element should be triggered
+  $.each(behavior.split(' '), function (idx, action) {
+    $el.trigger(action, { el: $el, object: $object, state: state });
+  });
 });
 
 $modal.on('modal.open', function(event, opts) {

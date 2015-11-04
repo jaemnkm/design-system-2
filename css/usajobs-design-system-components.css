@@ -7682,16 +7682,29 @@ html {
 
 .usajobs-document {
   position: relative;
+  width: 20.8rem;
+  margin-bottom: 3rem;
 }
 
 .usajobs-document__body {
   padding: 3rem 1.5rem;
 }
 
+.usajobs-document__figure {
+  position: relative;
+  background-color: #ffffff;
+}
+
+.usajobs-document__figure:hover {
+  cursor: pointer;
+}
+
 .usajobs-document__details {
-  padding: 1.5rem;
+  padding: 1.5rem 1.5rem 1rem;
   background-color: #ffffff;
   text-align: center;
+  border-top: 1px solid #d6d7d9;
+  box-shadow: 0px 0px 8px 2px rgba(0, 0, 0, 0.07);
 }
 
 .usajobs-document__title, .usajobs-document__date {
@@ -7740,20 +7753,44 @@ html {
 
 .usajobs-document__toggle {
   position: absolute;
-  top: -1.5rem;
+  top: -1rem;
   right: -1.5rem;
   margin: 0;
   padding: 0;
 }
 
-.usajobs-document__selector {
+.usajobs-document input[type="checkbox"].usajobs-document__input + label.usajobs-document__selector {
   margin: 0;
+}
+
+.usajobs-document input[type="checkbox"].usajobs-document__input + label.usajobs-document__selector:before {
+  background-image: none;
+  box-shadow: 0 0 0 2px #ffffff, 0 0 0 3px #205493;
+  height: 2rem;
+  width: 2rem;
+  border-radius: 100%;
+}
+
+.usajobs-document input[type="checkbox"].usajobs-document__input:checked + label::before {
+  background-color: #2d8700;
+  box-shadow: 0 0 0 4px #2d8700;
+  background-image: url("../img/correct8.png");
+  background-image: url("../img/correct8.svg");
+}
+
+.usajobs-document input[type="checkbox"].usajobs-document__input:disabled + label::before {
+  background: #d6d7d9;
+  box-shadow: 0 0 0 1px #aeb0b5;
+  cursor: not-allowed;
 }
 
 .usajobs-document--placeholder .usajobs-document__figure {
   background-color: #205493;
   text-align: center;
-  vertical-align: center;
+}
+
+.usajobs-document--placeholder .usajobs-document__figure:hover {
+  background-color: #0e243f;
 }
 
 .usajobs-document--placeholder .usajobs-document__placeholder {
@@ -7770,6 +7807,26 @@ html {
 
 .usajobs-document--placeholder .usajobs-document__placeholder:before {
   content: "";
+}
+
+.usajobs-document--thumbnail .usajobs-document__figure {
+  position: relative;
+}
+
+.usajobs-document--thumbnail .usajobs-document__figure-overlay:after {
+  content: '\A';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: all 0.3s;
+}
+
+.usajobs-document--thumbnail .usajobs-document__figure-overlay:hover:after {
+  opacity: 1;
 }
 
 html {

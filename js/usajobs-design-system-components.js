@@ -375,6 +375,34 @@ $(function() {
 
 });
 
+// Document - Object for uploading, viewing, and editing documents
+
+var $doc = $('[data-object="document"]');
+
+$doc.on('click', '[data-behavior]', function (event) {
+  var $el = $(this),
+    $object = $el.closest('[data-object="document"]'),
+    behavior = $el.attr('data-behavior'),
+    $target = $object.find($el.attr('data-target'));
+
+  event.preventDefault();
+  $el.blur(); // Removes focus
+
+  // Each behavior attached to the element should be triggered
+  $.each(behavior.split(' '), function (idx, action) {
+    $el.trigger(action, { el: $el, object: $object, target: $target });
+  });
+});
+
+$doc.on('document.toggle', function(event, opts) {
+  event.preventDefault();
+
+  // This event is fired by the figure and simply clicks the checkbox
+  // which we're leveraging for state
+
+  opts.target.trigger('click');
+});
+
 // Modal
 
 var $modal = $('[data-object="modal"]'),
@@ -405,13 +433,13 @@ $modal.on('click', '[data-behavior]', function (event) {
     state = $object.attr('data-state'),
     behavior = $el.attr('data-behavior');
 
-    event.preventDefault();
-    $el.blur(); // Removes focus
+  event.preventDefault();
+  $el.blur(); // Removes focus
 
-    // Each behavior attached to the element should be triggered
-    $.each(behavior.split(' '), function (idx, action) {
-        $el.trigger(action, { el: $el, object: $object, state: state });
-    });
+  // Each behavior attached to the element should be triggered
+  $.each(behavior.split(' '), function (idx, action) {
+    $el.trigger(action, { el: $el, object: $object, state: state });
+  });
 });
 
 $modal.on('modal.open', function(event, opts) {
@@ -468,13 +496,13 @@ $nav.on('click', '[data-behavior]', function (event) {
     behavior = $el.attr('data-behavior'),
     $target = $object.find($object.attr('data-target'));
 
-    event.preventDefault();
-    $el.blur(); // Removes focus
+  event.preventDefault();
+  $el.blur(); // Removes focus
 
-    // Each behavior attached to the element should be triggered
-    $.each(behavior.split(' '), function (idx, action) {
-        $el.trigger(action, { el: $el, object: $object, state: state, target: $target });
-    });
+  // Each behavior attached to the element should be triggered
+  $.each(behavior.split(' '), function (idx, action) {
+    $el.trigger(action, { el: $el, object: $object, state: state, target: $target });
+  });
 });
 
 $nav.on('nav.toggle', function(event, opts) {
@@ -488,7 +516,7 @@ $nav.on('nav.toggle', function(event, opts) {
 });
 
 $nav.on('nav.open', function(event, opts) {
-  opts.target.slideToggle("fast", function () {
+  opts.target.slideToggle('fast', function () {
     opts.object.attr('data-state', 'is-open');
     opts.el.attr('aria-expanded', 'true');
     opts.target.attr('aria-expanded', 'true');
@@ -496,7 +524,7 @@ $nav.on('nav.open', function(event, opts) {
 });
 
 $nav.on('nav.close', function(event, opts) {
-  opts.target.slideToggle("fast", function () {
+  opts.target.slideToggle('fast', function () {
     opts.object.attr('data-state', 'is-closed');
     opts.el.attr('aria-expanded', 'false');
     opts.target.attr('aria-expanded', 'false');
@@ -521,14 +549,14 @@ $nav.on('nav.menu.toggle', function(event, opts) {
 });
 
 $nav.on('nav.menu.slide-open', function(event, opts) {
-  opts.menu.slideDown("fast", function () {
+  opts.menu.slideDown('fast', function () {
     opts.parent.attr('data-state', 'is-open');
     opts.menu.attr('aria-expanded', 'true');
   });
 });
 
 $nav.on('nav.menu.slide-close', function(event, opts) {
-  opts.menu.slideUp("fast", function () {
+  opts.menu.slideUp('fast', function () {
     opts.parent.attr('data-state', 'is-closed');
     opts.menu.attr('aria-expanded', 'false');
   });
