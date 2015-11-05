@@ -489,8 +489,9 @@ $section-padding:   7.2rem;
     top: 2em;
     bottom: 2em;
   }
-  padding: 1em $site-margins;
-  border: 1px solid #eeeeee;
+  padding: $size-default $site-margins;
+  border: 1px solid $color-gray-lightest;
+
   .is-peripheral {
     opacity: .2;
   }

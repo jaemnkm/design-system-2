@@ -6,12 +6,23 @@
 @import 'base/utilities';
 @import 'base/breakpoints';
 
-$thumbnail-img-height: 285px;
+// Desired aspect ratio is 2:3
+// Retina dimensions: 380x482
+// Dimensions: 190x246
+$thumbnail-img-width: rem(190px);
+$thumbnail-img-height: rem(246px);
+$doc-width: $thumbnail-img-width + rem(2px) + 2rem; // 1px border + 1 rem padding on either side
+$figure-height: $thumbnail-img-height + rem(2px) + 2rem; // 1px border + 1 rem padding top & bottom
 
 .usajobs-document {
   position: relative;
-  width: rem(208px); // max-width of 1 column of the grid at ML
-  margin-bottom: $size-M;
+  width: $doc-width;
+  margin: $size-default 0 $size-M;
+  border: 1px solid $color-gray-lighter;
+
+  &[data-state="is-selected"] {
+    border-color: $color-green-dark;
+  }
 
   &__body {
     padding: $size-M $size-default;
@@ -19,6 +30,9 @@ $thumbnail-img-height: 285px;
 
   &__figure {
     position: relative;
+    padding: $size-S;
+    max-height: $figure-height;
+    overflow: hidden;
     background-color: $color-white;
 
     &:hover {
@@ -48,13 +62,23 @@ $thumbnail-img-height: 285px;
     }
 
     .view,
+    .edit,
     .delete {
       display: block;
-      padding: $size-default;
+
+      &:visited {
+        color: $color-primary;
+      }
+    }
+
+    .view,
+    .edit {
+      padding: $size-default $size-S $size-default $size-default;
     }
 
     .delete {
       color: $color-secondary;
+      padding: $size-default $size-default $size-default $size-S;
     }
 
     .pipe {
