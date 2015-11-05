@@ -7682,8 +7682,13 @@ html {
 
 .usajobs-document {
   position: relative;
-  width: 20.8rem;
-  margin-bottom: 3rem;
+  width: 21.2rem;
+  margin: 1.5rem 0 3rem;
+  border: 1px solid #d6d7d9;
+}
+
+.usajobs-document[data-state="is-selected"] {
+  border-color: #2d8700;
 }
 
 .usajobs-document__body {
@@ -7692,6 +7697,9 @@ html {
 
 .usajobs-document__figure {
   position: relative;
+  padding: 1rem;
+  max-height: 26.8rem;
+  overflow: hidden;
   background-color: #ffffff;
 }
 
@@ -7737,13 +7745,25 @@ html {
 }
 
 .usajobs-document__controls .view,
+.usajobs-document__controls .edit,
 .usajobs-document__controls .delete {
   display: block;
-  padding: 1.5rem;
+}
+
+.usajobs-document__controls .view:visited,
+.usajobs-document__controls .edit:visited,
+.usajobs-document__controls .delete:visited {
+  color: #0071bc;
+}
+
+.usajobs-document__controls .view,
+.usajobs-document__controls .edit {
+  padding: 1.5rem 1rem 1.5rem 1.5rem;
 }
 
 .usajobs-document__controls .delete {
   color: #e31c3d;
+  padding: 1.5rem 1.5rem 1.5rem 1rem;
 }
 
 .usajobs-document__controls .pipe {
@@ -7802,7 +7822,7 @@ html {
   -moz-osx-font-smoothing: grayscale;
   color: #ffffff;
   font-size: 8rem;
-  line-height: 285px;
+  line-height: 24.6rem;
 }
 
 .usajobs-document--placeholder .usajobs-document__placeholder:before {

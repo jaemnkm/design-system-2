@@ -488,8 +488,8 @@ html {
   background-color: #fff;
   margin-top: 2em;
   margin-bottom: 2em;
-  padding: 1em 3rem;
-  border: 1px solid #eeeeee;
+  padding: 1.5rem 3rem;
+  border: 1px solid #f1f1f1;
 }
 
 .preview::after {
