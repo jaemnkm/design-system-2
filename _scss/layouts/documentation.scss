@@ -354,15 +354,15 @@ $section-padding:   7.2rem;
 // Sidebar Nav --------- //
 
 .sidenav {
+  display: none;
   position: fixed;
   top: $site-top;
   bottom: 0;
   left: 0;
   width: $width-nav-sidebar;
-  border-right: 1px solid $color-gray-light;
   padding: 5rem 3rem 3rem 3rem;
-  overflow: scroll;
-  display: none;
+  border-right: 1px solid $color-gray-light;
+  overflow: auto;
   z-index: -1;
 
   .lt-ie9 & {

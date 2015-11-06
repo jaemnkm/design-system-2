@@ -361,15 +361,15 @@ html {
 }
 
 .sidenav {
+  display: none;
   position: fixed;
   top: 124px;
   bottom: 0;
   left: 0;
   width: 250px;
-  border-right: 1px solid #aeb0b5;
   padding: 5rem 3rem 3rem 3rem;
-  overflow: scroll;
-  display: none;
+  border-right: 1px solid #aeb0b5;
+  overflow: auto;
   z-index: -1;
 }
 

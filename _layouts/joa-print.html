@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<!--[if lt IE 9]><html class="lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!--><html lang="en"><!--<![endif]-->
+  <head>
+    {% include prod-head.html %}
+    {% include joa-print-styles.html %}
+  </head>
+  <body class="{{ page.title | slugify }} usajobs-joa">
+    <section class="usajobs-canvas">
+      {{ content }}
+    </section>
+    {% include scripts.html %}
+  </body>
+</html>
