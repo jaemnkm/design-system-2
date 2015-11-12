@@ -286,7 +286,7 @@ $logo_height-L: 78px;
     }
 
     .usajobs-nav__secondary-menu {
-      display: block;
+      display: block !important;
     }
   }
 }
@@ -305,7 +305,7 @@ ul.usajobs-nav__secondary-menu {
     top: 100%;
     left: 0;
     z-index: 99999;
-    min-width: rem(160px);
+    min-width: rem(330px);
     padding: $size-base 0;
   }
 
@@ -315,6 +315,10 @@ ul.usajobs-nav__secondary-menu {
     @include media($MLL) {
       display: block;
       width: 100%;
+    }
+
+    &:last-child {
+      border-bottom: 0;
     }
 
     a {

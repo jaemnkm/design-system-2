@@ -2538,7 +2538,7 @@ html {
 }
 
 .usajobs-nav__secondary-menu-container[data-state="is-open"] .usajobs-nav__secondary-menu {
-  display: block;
+  display: block !important;
 }
 
 ul.usajobs-nav__secondary-menu {
@@ -2557,7 +2557,7 @@ ul.usajobs-nav__secondary-menu {
     top: 100%;
     left: 0;
     z-index: 99999;
-    min-width: 16rem;
+    min-width: 33rem;
     padding: 0.5rem 0;
   }
 }
@@ -2571,6 +2571,10 @@ ul.usajobs-nav__secondary-menu li {
     display: block;
     width: 100%;
   }
+}
+
+ul.usajobs-nav__secondary-menu li:last-child {
+  border-bottom: 0;
 }
 
 ul.usajobs-nav__secondary-menu li a {
