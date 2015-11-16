@@ -20,7 +20,7 @@ lead: Summary of the Job Offer Announcement (JOA)
         <li class="attr">Closes 10/15/2015</li>
       </ul>
       <!-- a class="joa-save">Save Job</a -->
-      <a class="joa-anchor">Who may apply</a>
+      <a class="joa-anchor" href="#joa-who_may_apply">Who may apply</a>
     </div>
   </div>
 
@@ -34,7 +34,7 @@ lead: Summary of the Job Offer Announcement (JOA)
         <li class="attr">Closes 10/15/2015</li>
       </ul>
       <!-- a class="joa-save">Save Job</a -->
-      <a class="joa-anchor">Who may apply</a>
+      <a class="joa-anchor" href="#joa-who_may_apply">Who may apply</a>
     </div>
   </div>
 </div>
