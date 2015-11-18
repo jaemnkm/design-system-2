@@ -7611,12 +7611,6 @@ html {
 }
 
 @media screen and (min-width: 48rem) {
-  .usajobs-progress_indicator__step-desc h5 {
-    font-weight: 700;
-  }
-}
-
-@media screen and (min-width: 48rem) {
   .usajobs-progress_indicator__step-desc .short-desc {
     display: none;
   }
@@ -7672,6 +7666,7 @@ html {
 
 .usajobs-progress_indicator__step.is-current .usajobs-progress_indicator__step-desc h5 {
   color: #ffffff;
+  font-weight: 700;
 }
 
 .usajobs-progress_indicator__step.has-visit .circle {
