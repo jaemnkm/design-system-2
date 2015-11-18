@@ -109,10 +109,6 @@
 				font-size: $base-font-size;
   			text-align: left;
   		}
-
-  		@include media($ML) {
-				font-weight: $font-bold;
-			}
 		}
 
 		.short-desc {
@@ -157,6 +153,7 @@
 
     .usajobs-progress_indicator__step-desc h5 {
       color: $color-white;
+      font-weight: $font-bold;
     }
   }
 
