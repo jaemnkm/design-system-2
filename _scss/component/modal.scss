@@ -129,3 +129,16 @@
     }
   }
 }
+
+.usajobs-modal--wide {
+  .usajobs-modal__body {
+    max-height: rem(630px);
+    overflow-y: auto;
+  }
+
+  @include media($MLL) {
+    $modal-width-wide: 930px;
+    width: rem($modal-width-wide);
+    margin-left: rem(- ($modal-width-wide / 2));
+  }
+}

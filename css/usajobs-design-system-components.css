@@ -4952,6 +4952,18 @@ html {
   padding: 1.5rem 3rem;
 }
 
+.usajobs-modal--wide .usajobs-modal__body {
+  max-height: 63rem;
+  overflow-y: auto;
+}
+
+@media screen and (min-width: 62rem) {
+  .usajobs-modal--wide {
+    width: 93rem;
+    margin-left: -46.5rem;
+  }
+}
+
 html {
   box-sizing: border-box;
 }
@@ -7938,6 +7950,22 @@ html {
 .usajobs-button_bar__save {
   float: right;
   margin: 0;
+}
+
+.usajobs-button_bar--slim {
+  margin: 3rem 0 6rem;
+  background-color: inherit;
+  border-top: 1px solid #d6d7d9;
+}
+
+.usajobs-button_bar--slim .usajobs-button_bar__body {
+  padding: 0;
+  text-align: right;
+}
+
+.usajobs-button_bar--slim .usajobs-button_bar__save {
+  display: inline-block;
+  float: none;
 }
 
 /*# sourceMappingURL=usajobs-design-system-components.css.map */

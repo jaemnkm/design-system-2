@@ -14,6 +14,10 @@ lead: USAJOBS uses the modal component to draw attention to actions that require
   <h6 class="usa-heading-alt">Modal - Info variation (v1)</h6>
   <a href="#modal-trigger" class="usa-button usajobs-button" data-object-trigger="modal" data-target="#modal-info-demo">Open</a>
 
+  <h6 class="usa-heading-alt">Modal - Wide variation (v2)</h6>
+  <a href="#modal-trigger" class="usa-button usajobs-button" data-object-trigger="modal" data-target="#modal-wide-demo">Open</a>
+
+
   <div class="usajobs-modal" data-object="modal" data-state="is-closed" id="modal-default" aria-hidden="true" role="dialog" aria-labelledby="usajobs-modal-heading" aria-describedby="usajobs-modal-description">
     <div id="usajobs-modal-description" class="usajobs-assistive-text">
       Beginning of a dialog window for the contact form. It begins with a heading 2
