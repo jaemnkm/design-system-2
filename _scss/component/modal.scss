@@ -9,39 +9,35 @@
 @import 'base/breakpoints';
 @import "font-awesome/font-awesome";
 
+$modal-width-medium: 600px;
+$modal-width-large: 930px;
+
 .usajobs-modal {
+  opacity: 0;
+  visibility: hidden;
+  transition: transform $duration-fast linear,
+                opacity $duration-fast linear;
+  overflow: hidden;
   position: fixed;
-  top: $size-default;
+  top: 0;
   right: 0;
+  bottom: 0;
   left: 0;
-  bottom: $size-default;
-  margin: $size-default;
+  z-index: $layer-modal;
   width: auto;
   min-height: 200px;
-  z-index: 400;
-  background-color: $color-white;
-  background-clip: padding-box;
-  border: 1px solid rgba(70,70,70, .14);
-  border-radius: $size-base;
-  box-shadow: 0 3px 6px rgba(0,0,0, 0.29);
-  opacity: 0;
-  transition: 0.4s opacity ease-in-out;
+  -webkit-overflow-scrolling: touch;
 
-  @include media($ML) {
-    top: $size-XL;
-    bottom: $size-XL;
-    margin: $size-M;
-  }
-
-  @include media($MLL) {
-    left: 50%;
-    bottom: auto;
-    width: rem(700px);
-    margin-left: rem(-350px);
-  }
+  // Prevent Chrome on Windows from adding a focus outline. For details, see
+  // https://github.com/twbs/bootstrap/pull/10951.
+  outline: 0;
 
   &[data-state="is-open"] {
     opacity: 1;
+    visibility: visible;
+    transition: opacity $duration-slow linear;
+    overflow-x: hidden;
+    overflow-y: auto;
   }
 
   &__canvas-blackout[aria-hidden="true"] {
@@ -54,15 +50,39 @@
     height: 100%;
     width: 100%;
     margin: 0;
-    z-index: 150;
+    z-index: $layer-modal-backdrop;
     background-color: rgba(0,0,0, 0.38); // this acts as the backdrop
-    animation: fadeIn 0.3s ease-out;
+    // animation: fadeIn 0.3s ease-out;
+    transition: opacity $duration-slow linear;
   }
 
+  &__dialog {
+    position: relative;
+    width: auto;
+    margin: $size-M $size-default;
+
+    @include media($ML) {
+      width: rem($modal-width-medium);
+      margin: $size-M auto;
+    }
+
+    @include media($MLL) {
+      width: rem($modal-width-large);
+    }
+  }
+
+  &__content {
+    position: relative;
+    background-color: $color-white;
+    border: 1px solid rgba(70,70,70, .14);
+    border-radius: $size-base;
+    box-shadow: 0 3px 6px rgba(0,0,0, 0.29);
+    background-clip: padding-box;
+    outline: 0;
+  }
 
   &__body {
     min-height: rem(480px);
-    overflow: auto;
     padding: $size-default;
 
     @include media($ML) {
@@ -127,18 +147,5 @@
     .usajobs-alert__body {
       padding: $size-default $size-M;
     }
-  }
-}
-
-.usajobs-modal--wide {
-  .usajobs-modal__body {
-    max-height: rem(630px);
-    overflow-y: auto;
-  }
-
-  @include media($MLL) {
-    $modal-width-wide: 930px;
-    width: rem($modal-width-wide);
-    margin-left: rem(- ($modal-width-wide / 2));
   }
 }
