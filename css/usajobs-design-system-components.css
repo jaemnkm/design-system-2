@@ -4793,43 +4793,28 @@ html {
 }
 
 .usajobs-modal {
+  opacity: 0;
+  visibility: hidden;
+  transition: transform 0.3s linear, opacity 0.3s linear;
+  overflow: hidden;
   position: fixed;
-  top: 1.5rem;
+  top: 0;
   right: 0;
+  bottom: 0;
   left: 0;
-  bottom: 1.5rem;
-  margin: 1.5rem;
+  z-index: 1061;
   width: auto;
   min-height: 200px;
-  z-index: 400;
-  background-color: #ffffff;
-  background-clip: padding-box;
-  border: 1px solid rgba(70, 70, 70, 0.14);
-  border-radius: 0.5rem;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.29);
-  opacity: 0;
-  transition: 0.4s opacity ease-in-out;
-}
-
-@media screen and (min-width: 48rem) {
-  .usajobs-modal {
-    top: 6rem;
-    bottom: 6rem;
-    margin: 3rem;
-  }
-}
-
-@media screen and (min-width: 62rem) {
-  .usajobs-modal {
-    left: 50%;
-    bottom: auto;
-    width: 70rem;
-    margin-left: -35rem;
-  }
+  -webkit-overflow-scrolling: touch;
+  outline: 0;
 }
 
 .usajobs-modal[data-state="is-open"] {
   opacity: 1;
+  visibility: visible;
+  transition: opacity 0.8s linear;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
 .usajobs-modal__canvas-blackout[aria-hidden="true"] {
@@ -4842,14 +4827,42 @@ html {
   height: 100%;
   width: 100%;
   margin: 0;
-  z-index: 150;
+  z-index: 1060;
   background-color: rgba(0, 0, 0, 0.38);
-  animation: fadeIn 0.3s ease-out;
+  transition: opacity 0.8s linear;
+}
+
+.usajobs-modal__dialog {
+  position: relative;
+  width: auto;
+  margin: 3rem 1.5rem;
+}
+
+@media screen and (min-width: 48rem) {
+  .usajobs-modal__dialog {
+    width: 60rem;
+    margin: 3rem auto;
+  }
+}
+
+@media screen and (min-width: 62rem) {
+  .usajobs-modal__dialog {
+    width: 93rem;
+  }
+}
+
+.usajobs-modal__content {
+  position: relative;
+  background-color: #ffffff;
+  border: 1px solid rgba(70, 70, 70, 0.14);
+  border-radius: 0.5rem;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.29);
+  background-clip: padding-box;
+  outline: 0;
 }
 
 .usajobs-modal__body {
   min-height: 48rem;
-  overflow: auto;
   padding: 1.5rem;
 }
 
@@ -4950,18 +4963,6 @@ html {
 
 .usajobs-modal--info .usajobs-modal__header .usajobs-alert__body {
   padding: 1.5rem 3rem;
-}
-
-.usajobs-modal--wide .usajobs-modal__body {
-  max-height: 63rem;
-  overflow-y: auto;
-}
-
-@media screen and (min-width: 62rem) {
-  .usajobs-modal--wide {
-    width: 93rem;
-    margin-left: -46.5rem;
-  }
 }
 
 html {

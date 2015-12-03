@@ -19,28 +19,31 @@ lead: USAJOBS uses the modal component to draw attention to actions that require
 
 
   <div class="usajobs-modal" data-object="modal" data-state="is-closed" id="modal-default" aria-hidden="true" role="dialog" aria-labelledby="usajobs-modal-heading" aria-describedby="usajobs-modal-description">
-    <div id="usajobs-modal-description" class="usajobs-assistive-text">
-      Beginning of a dialog window for the contact form. It begins with a heading 2
-      called &quot;[Modal Header]&quot;. Escape will cancel and close the window.
-    </div>
-    <div class="usajobs-modal__header">
-      <h2 id="usajobs-modal-heading" class="usajobs-modal__title">[Modal Header]</h2>
-    </div>
-    <div class="usajobs-modal__body">
-      [modal body content Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.]
-    </div>
-    <div class="usajobs-modal__footer">
-      <button class="usa-button-big usa-button-outline" data-behavior="modal.close">Cancel</button>
-      <button class="usa-button-big usa-button-primary" data-behavior="modal.close">Go</button>
-    </div>
-    <div class="usajobs-modal__actions">
-      <button class="usajobs-modal__close" data-behavior="modal.close" >
-        <span class="usajobs-assistive-text">Close</span>
-      </button>
+  <div class="usajobs-modal__dialog">
+    <div class="usajobs-modal__content">
+      <div id="usajobs-modal-description" class="usajobs-assistive-text">
+        Beginning of a dialog window for the contact form. It begins with a heading 2
+        called &quot;[Modal Header]&quot;. Escape will cancel and close the window.
+      </div>
+      <div class="usajobs-modal__header">
+        <h2 id="usajobs-modal-heading" class="usajobs-modal__title">[Modal Header]</h2>
+      </div>
+      <div class="usajobs-modal__body">
+        [modal body content Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.]
+      </div>
+      <div class="usajobs-modal__footer">
+        <button class="usa-button-big usa-button-outline" data-behavior="modal.close">Cancel</button>
+        <button class="usa-button-big usa-button-primary" data-behavior="modal.close">Go</button>
+      </div>
+      <div class="usajobs-modal__actions">
+        <button class="usajobs-modal__close" data-behavior="modal.close" >
+          <span class="usajobs-assistive-text">Close</span>
+        </button>
+      </div>
     </div>
   </div>
 </div>

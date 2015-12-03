@@ -108,6 +108,7 @@
 		"../../_scss/base/var/_typography.scss",
 		"../../_scss/base/var/_spacing.scss",
 		"../../_scss/base/var/_layout.scss",
+		"../../_scss/base/var/_layers.scss",
 		"../../_scss/base/var/_animation.scss",
 		"../../_scss/base/_utilities.scss",
 		"../../_scss/base/_breakpoints.scss"
