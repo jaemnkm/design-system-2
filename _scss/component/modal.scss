@@ -145,7 +145,11 @@ $modal-width-large: 930px;
     }
 
     .usajobs-alert__body {
-      padding: $size-default $size-M;
+      padding: $size-default $size-S;
+
+      @include media($ML) {
+        padding: $size-default $size-M;
+      }
     }
   }
 }

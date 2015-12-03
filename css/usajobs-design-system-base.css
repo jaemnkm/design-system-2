@@ -5473,6 +5473,65 @@ img {
   background-size: 50%;
 }
 
+@media screen and (min-width: 62rem) {
+  .usajobs-form {
+    max-width: inherit;
+  }
+}
+
+.usajobs-form-grid {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.usajobs-form-grid::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+@media screen and (min-width: 62rem) {
+  .usajobs-form-grid__col {
+    float: left;
+    display: block;
+    margin-right: 2.3576515979%;
+    width: 48.821174201%;
+  }
+  .usajobs-form-grid__col:last-child {
+    margin-right: 0;
+  }
+}
+
+.usajobs-form-grid__col:nth-child(2n) {
+  margin-right: 0;
+}
+
+.usajobs-form-grid__full-col {
+  float: left;
+  display: block;
+  margin-right: 2.3576515979%;
+  width: 100%;
+}
+
+.usajobs-form-grid__full-col:last-child {
+  margin-right: 0;
+}
+
+.usajobs-date-group::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.usajobs-date-group__title {
+  margin-bottom: 0;
+}
+
+.usajobs-date-group label {
+  margin-top: 0;
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-family: "Source Sans Pro", "Helvetica", "Arial", sans-serif;
 }

@@ -1,0 +1,37 @@
+// Forms
+
+.usajobs-form {
+  @include media($MLL) {
+    max-width: inherit;
+  }
+}
+
+.usajobs-form-grid {
+  @include outer-container();
+
+  &__col {
+    @include media($MLL) {
+      @include span-columns(6);
+    }
+
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
+  }
+
+  &__full-col {
+    @include span-columns(12);
+  }
+}
+
+.usajobs-date-group {
+  @include clearfix();
+
+  &__title {
+    margin-bottom: 0;
+  }
+
+  label {
+    margin-top: 0;
+  }
+}

@@ -4962,7 +4962,13 @@ html {
 }
 
 .usajobs-modal--info .usajobs-modal__header .usajobs-alert__body {
-  padding: 1.5rem 3rem;
+  padding: 1.5rem 1rem;
+}
+
+@media screen and (min-width: 48rem) {
+  .usajobs-modal--info .usajobs-modal__header .usajobs-alert__body {
+    padding: 1.5rem 3rem;
+  }
 }
 
 html {
