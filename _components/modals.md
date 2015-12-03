@@ -14,7 +14,7 @@ lead: USAJOBS uses the modal component to draw attention to actions that require
   <h6 class="usa-heading-alt">Modal - Info variation (v1)</h6>
   <a href="#modal-trigger" class="usa-button usajobs-button" data-object-trigger="modal" data-target="#modal-info-demo">Open</a>
 
-  <h6 class="usa-heading-alt">Modal - Wide variation (v2)</h6>
+  <h6 class="usa-heading-alt">Modal - Default with full form</h6>
   <a href="#modal-trigger" class="usa-button usajobs-button" data-object-trigger="modal" data-target="#modal-wide-demo">Open</a>
 
 
