@@ -82,15 +82,10 @@ $modal-width-large: 930px;
   }
 
   &__body {
-    min-height: rem(480px);
     padding: $size-default;
 
     @include media($ML) {
       padding: $size-M;
-    }
-
-    @include media($MLL) {
-      min-height: auto;
     }
   }
 
