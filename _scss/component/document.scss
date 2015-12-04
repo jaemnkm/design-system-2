@@ -168,3 +168,37 @@ $figure-height: $thumbnail-img-height + rem(2px) + 2rem; // 1px border + 1 rem p
     opacity: 1;
   }
 }
+
+.usajobs-document[data-state="is-loading"] {
+  background-color: $color-gray-light;
+
+  .usajobs-document__figure {
+    background-color: $color-gray-light;
+
+    &:before {
+      content: 'Your file is loading';
+      position: absolute;
+      top: 80%;
+      left: 20%;
+    }
+
+    &:after {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin-left: rem(-25px);
+      @include fa-icon();
+      font-size: rem(50px);
+      content: $fa-var-circle-o-notch;
+      color: $color-green;
+      -webkit-animation: fa-spin 2s infinite linear;
+      animation: fa-spin 2s infinite linear;
+    }
+  }
+
+  .usajobs-document__figure-overlay,
+  .usajobs-document__details,
+  .usajobs-document__toggle {
+    visibility: hidden;
+  }
+}
