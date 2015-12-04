@@ -15,7 +15,7 @@ html {
   max-width: 660px;
 }
 
-@media screen and (min-width: 37.5rem) {
+@media screen and (min-width: 37.5em) {
   .l-homepage .usa-section-examples .usa-width-five-sixths {
     margin-left: 8.5298042998%;
   }
@@ -32,7 +32,7 @@ html {
   width: 100%;
 }
 
-@media screen and (min-width: 37.5rem) {
+@media screen and (min-width: 37.5em) {
   .l-homepage .usa-button-block {
     width: auto;
   }
@@ -52,7 +52,7 @@ html {
   padding-top: 1.5rem;
 }
 
-@media screen and (min-width: 37.5rem) {
+@media screen and (min-width: 37.5em) {
   .l-homepage .usa-banner h1 {
     font-size: 5.6rem;
     padding-top: 4.5rem;
@@ -86,7 +86,7 @@ html {
   color: #ffffff;
 }
 
-@media screen and (min-width: 37.5rem) {
+@media screen and (min-width: 37.5em) {
   .l-homepage .usa-section-dark .usa-width-one-half-top {
     margin-bottom: 7rem;
   }
@@ -104,7 +104,7 @@ html {
   width: 124px;
 }
 
-@media screen and (min-width: 37.5rem) {
+@media screen and (min-width: 37.5em) {
   .l-homepage .usa-img-circle {
     float: left;
     margin-right: 3rem;
@@ -427,7 +427,7 @@ html {
   padding: 1.5rem;
 }
 
-@media screen and (min-width: 37.5rem) {
+@media screen and (min-width: 37.5em) {
   .styleguide-content {
     padding: 3rem;
   }

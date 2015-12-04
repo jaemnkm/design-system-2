@@ -2235,7 +2235,7 @@ html {
   width: 50%;
 }
 
-@media screen and (min-width: 48rem) {
+@media screen and (min-width: 48em) {
   .usajobs-nav__brand-container {
     float: left;
     display: block;
@@ -2248,7 +2248,7 @@ html {
   }
 }
 
-@media screen and (min-width: 62rem) {
+@media screen and (min-width: 62em) {
   .usajobs-nav__brand-container {
     max-width: 21rem;
   }
@@ -2261,20 +2261,20 @@ html {
   line-height: 1;
 }
 
-@media screen and (min-width: 48rem) {
+@media screen and (min-width: 48em) {
   .usajobs-nav__brand {
     padding-left: 3rem;
   }
 }
 
-@media screen and (min-width: 62rem) {
+@media screen and (min-width: 62em) {
   .usajobs-nav__brand {
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
   }
 }
 
-@media screen and (min-width: 62rem) {
+@media screen and (min-width: 62em) {
   .usajobs-nav__brand .logo {
     max-width: 18rem;
   }
@@ -2285,7 +2285,7 @@ html {
   width: 100%;
 }
 
-@media screen and (min-width: 62rem) {
+@media screen and (min-width: 62em) {
   .usajobs-nav__extended-menu {
     float: left;
     display: block;
@@ -2346,13 +2346,13 @@ html {
   display: none;
 }
 
-@media screen and (min-width: 48rem) {
+@media screen and (min-width: 48em) {
   .usajobs-nav__account li {
     display: inline-block;
   }
 }
 
-@media screen and (min-width: 62rem) {
+@media screen and (min-width: 62em) {
   .usajobs-nav__account li a {
     padding-top: 3.05rem;
     padding-bottom: 3.05rem;
@@ -2364,7 +2364,7 @@ html {
   display: inline-block;
 }
 
-@media screen and (min-width: 62rem) {
+@media screen and (min-width: 62em) {
   .usajobs-nav__account .usajobs-nav__menu-toggle {
     display: none;
   }
@@ -2375,14 +2375,14 @@ html {
   width: 8rem;
 }
 
-@media screen and (min-width: 48rem) {
+@media screen and (min-width: 48em) {
   .usajobs-nav__account .sign_in {
     display: block;
     padding-right: 1rem;
   }
 }
 
-@media screen and (min-width: 48rem) {
+@media screen and (min-width: 48em) {
   .usajobs-nav__account .create_account {
     padding-left: 1rem;
     padding-right: 3rem;
@@ -2400,7 +2400,7 @@ html {
   padding-bottom: 2.3rem;
 }
 
-@media screen and (min-width: 62rem) {
+@media screen and (min-width: 62em) {
   .usajobs-nav__account .account-logged_in {
     padding-top: 2.55rem;
     padding-bottom: 2.55rem;
@@ -2433,7 +2433,7 @@ html {
   font-size: 1.4rem;
 }
 
-@media screen and (min-width: 62rem) {
+@media screen and (min-width: 62em) {
   .usajobs-nav__account .account-name {
     font-size: 1.7rem;
   }
@@ -2453,7 +2453,7 @@ html {
   display: table;
 }
 
-@media screen and (min-width: 62rem) {
+@media screen and (min-width: 62em) {
   .usajobs-nav__menu {
     display: block;
     float: left;
@@ -2470,13 +2470,13 @@ html {
   border-top: 1px solid #aeb0b5;
 }
 
-@media screen and (min-width: 62rem) {
+@media screen and (min-width: 62em) {
   .usajobs-nav__menu li:first-child {
     border-top: 0;
   }
 }
 
-@media screen and (min-width: 62rem) {
+@media screen and (min-width: 62em) {
   .usajobs-nav__menu li {
     display: inline-block;
     width: auto;
@@ -2490,7 +2490,7 @@ html {
   padding: 1.5rem 1.5rem 1.5rem 3rem;
 }
 
-@media screen and (min-width: 62rem) {
+@media screen and (min-width: 62em) {
   .usajobs-nav__menu li a {
     font-size: 2rem;
     padding: 2.9rem 1.5rem;
@@ -2510,7 +2510,7 @@ html {
   font-size: 2rem;
 }
 
-@media screen and (min-width: 62rem) {
+@media screen and (min-width: 62em) {
   .usajobs-nav__menu .menu-toggle:after {
     content: '';
   }
@@ -2522,7 +2522,7 @@ html {
   float: left;
 }
 
-@media screen and (min-width: 62rem) {
+@media screen and (min-width: 62em) {
   .usajobs-nav__secondary-menu-container[data-state="is-open"] .menu-toggle {
     background-color: #e4e2e0;
   }
@@ -2550,7 +2550,7 @@ ul.usajobs-nav__secondary-menu {
   box-shadow: inset 0 8px 6px -6px rgba(0, 0, 0, 0.2);
 }
 
-@media screen and (min-width: 62rem) {
+@media screen and (min-width: 62em) {
   ul.usajobs-nav__secondary-menu {
     float: left;
     position: absolute;
@@ -2566,7 +2566,7 @@ ul.usajobs-nav__secondary-menu li {
   display: inline-block;
 }
 
-@media screen and (min-width: 62rem) {
+@media screen and (min-width: 62em) {
   ul.usajobs-nav__secondary-menu li {
     display: block;
     width: 100%;
@@ -2581,7 +2581,7 @@ ul.usajobs-nav__secondary-menu li a {
   padding: 1rem 1.5rem 1rem 4.5rem;
 }
 
-@media screen and (min-width: 62rem) {
+@media screen and (min-width: 62em) {
   ul.usajobs-nav__secondary-menu li a {
     display: block;
     width: 100%;
@@ -4838,14 +4838,14 @@ html {
   margin: 3rem 1.5rem;
 }
 
-@media screen and (min-width: 48rem) {
+@media screen and (min-width: 48em) {
   .usajobs-modal__dialog {
     width: 60rem;
     margin: 3rem auto;
   }
 }
 
-@media screen and (min-width: 62rem) {
+@media screen and (min-width: 62em) {
   .usajobs-modal__dialog {
     width: 93rem;
   }
@@ -4866,13 +4866,13 @@ html {
   padding: 1.5rem;
 }
 
-@media screen and (min-width: 48rem) {
+@media screen and (min-width: 48em) {
   .usajobs-modal__body {
     padding: 3rem;
   }
 }
 
-@media screen and (min-width: 62rem) {
+@media screen and (min-width: 62em) {
   .usajobs-modal__body {
     min-height: auto;
   }
@@ -4886,7 +4886,7 @@ html {
   border-top-right-radius: 0.5rem;
 }
 
-@media screen and (min-width: 48rem) {
+@media screen and (min-width: 48em) {
   .usajobs-modal__header {
     padding: 4.5rem 3rem 3rem;
   }
@@ -4899,7 +4899,7 @@ html {
   text-align: right;
 }
 
-@media screen and (min-width: 48rem) {
+@media screen and (min-width: 48em) {
   .usajobs-modal__footer {
     padding: 3rem;
   }
@@ -4965,7 +4965,7 @@ html {
   padding: 1.5rem 1rem;
 }
 
-@media screen and (min-width: 48rem) {
+@media screen and (min-width: 48em) {
   .usajobs-modal--info .usajobs-modal__header .usajobs-alert__body {
     padding: 1.5rem 3rem;
   }
@@ -7228,7 +7228,7 @@ html {
   animation-fill-mode: both;
 }
 
-@media screen and (min-width: 62rem) {
+@media screen and (min-width: 62em) {
   .usajobs-notification {
     position: absolute;
   }
@@ -7428,7 +7428,7 @@ html {
   padding: 3rem 1.5rem;
 }
 
-@media screen and (min-width: 48rem) {
+@media screen and (min-width: 48em) {
   .usajobs-joa_summary-body {
     padding: 3rem 1rem 3rem 3rem;
   }
@@ -7494,7 +7494,7 @@ html {
   background-color: #112e51;
 }
 
-@media screen and (min-width: 62rem) {
+@media screen and (min-width: 62em) {
   .usajobs-progress_indicator {
     display: table;
     width: 100%;
@@ -7506,13 +7506,13 @@ html {
   padding: 0 1.5rem;
 }
 
-@media screen and (min-width: 48rem) {
+@media screen and (min-width: 48em) {
   .usajobs-progress_indicator__body {
     padding: 1.5rem 3rem;
   }
 }
 
-@media screen and (min-width: 62rem) {
+@media screen and (min-width: 62em) {
   .usajobs-progress_indicator__body {
     display: table-row;
     width: 100%;
@@ -7531,7 +7531,7 @@ html {
   text-decoration: none;
 }
 
-@media screen and (min-width: 48rem) and (max-width: 61.999rem) {
+@media screen and (min-width: 48em) and (max-width: 61.999em) {
   .usajobs-progress_indicator__step {
     display: block;
     width: 100%;
@@ -7544,7 +7544,7 @@ html {
   }
 }
 
-@media screen and (min-width: 62rem) {
+@media screen and (min-width: 62em) {
   .usajobs-progress_indicator__step {
     position: relative;
     display: table-cell;
@@ -7553,7 +7553,7 @@ html {
   }
 }
 
-@media screen and (min-width: 75rem) {
+@media screen and (min-width: 75em) {
   .usajobs-progress_indicator__step:after {
     content: ' ';
     position: absolute;
@@ -7572,7 +7572,7 @@ html {
   text-align: center;
 }
 
-@media screen and (min-width: 48rem) and (max-width: 61.999rem) {
+@media screen and (min-width: 48em) and (max-width: 61.999em) {
   .usajobs-progress_indicator__number {
     float: left;
     display: block;
@@ -7585,14 +7585,14 @@ html {
   }
 }
 
-@media screen and (min-width: 48rem) {
+@media screen and (min-width: 48em) {
   .usajobs-progress_indicator__number {
     text-align: left;
     font-weight: 700;
   }
 }
 
-@media screen and (min-width: 62rem) {
+@media screen and (min-width: 62em) {
   .usajobs-progress_indicator__number {
     display: table-row;
     height: 50%;
@@ -7600,7 +7600,7 @@ html {
   }
 }
 
-@media screen and (min-width: 48rem) and (max-width: 61.999rem) {
+@media screen and (min-width: 48em) and (max-width: 61.999em) {
   .usajobs-progress_indicator__step-desc {
     float: left;
     display: block;
@@ -7620,7 +7620,7 @@ html {
   margin-top: 0.5rem;
 }
 
-@media screen and (min-width: 48rem) {
+@media screen and (min-width: 48em) {
   .usajobs-progress_indicator__step-desc h5 {
     margin-top: 1rem;
     margin-bottom: 1rem;
@@ -7629,7 +7629,7 @@ html {
   }
 }
 
-@media screen and (min-width: 48rem) {
+@media screen and (min-width: 48em) {
   .usajobs-progress_indicator__step-desc .short-desc {
     display: none;
   }
@@ -7639,7 +7639,7 @@ html {
   display: none;
 }
 
-@media screen and (min-width: 48rem) {
+@media screen and (min-width: 48em) {
   .usajobs-progress_indicator__step-desc .long-desc {
     display: inherit;
   }
@@ -7658,7 +7658,7 @@ html {
   text-align: center;
 }
 
-@media screen and (min-width: 62rem) {
+@media screen and (min-width: 62em) {
   .usajobs-progress_indicator .circle {
     display: inline-block;
     width: 45px;
@@ -7887,7 +7887,7 @@ html {
   clip: rect(0 0 0 0) !important;
 }
 
-@media screen and (min-width: 62rem) {
+@media screen and (min-width: 62em) {
   .usajobs-required_documents {
     max-height: 800px;
     overflow-y: auto;
@@ -7895,7 +7895,7 @@ html {
   }
 }
 
-@media screen and (min-width: 62rem) {
+@media screen and (min-width: 62em) {
   .usajobs-required_documents__trigger {
     max-width: 38.5rem;
     margin-top: 0;

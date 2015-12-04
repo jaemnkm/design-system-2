@@ -4997,7 +4997,7 @@ html {
   padding: 0 1.5rem;
 }
 
-@media screen and (min-width: 48rem) {
+@media screen and (min-width: 48em) {
   .usajobs-content-gutter {
     padding-left: 3rem;
     padding-right: 3rem;
@@ -5018,7 +5018,7 @@ html {
   margin-bottom: 6rem;
 }
 
-@media screen and (min-width: 62rem) {
+@media screen and (min-width: 62em) {
   .usajobs-content-well {
     float: left;
     display: block;
@@ -5030,7 +5030,7 @@ html {
   }
 }
 
-@media screen and (min-width: 75rem) {
+@media screen and (min-width: 75em) {
   .usajobs-content-well {
     float: left;
     display: block;
@@ -5042,7 +5042,7 @@ html {
   }
 }
 
-@media screen and (min-width: 62rem) {
+@media screen and (min-width: 62em) {
   .usajobs-rightrail {
     float: left;
     display: block;
@@ -5054,7 +5054,7 @@ html {
   }
 }
 
-@media screen and (min-width: 75rem) {
+@media screen and (min-width: 75em) {
   .usajobs-rightrail {
     float: left;
     display: block;
@@ -5066,7 +5066,7 @@ html {
   }
 }
 
-@media screen and (min-width: 62rem) {
+@media screen and (min-width: 62em) {
   .usajobs-rightrail .usajobs-content-gutter {
     padding-left: 0;
   }
@@ -5087,7 +5087,7 @@ html {
   display: table;
 }
 
-@media screen and (min-width: 37.5rem) {
+@media screen and (min-width: 37.5em) {
   .usajobs-grid .usa-width-one-whole,
   .usajobs-grid .usajobs-width-one-whole,
   .usajobs-grid-full .usa-width-one-whole,
@@ -5243,7 +5243,7 @@ html {
   }
 }
 
-@media screen and (min-width: 62rem) {
+@media screen and (min-width: 62em) {
   .usajobs-grid .usa-width-one-whole,
   .usajobs-grid .usajobs-width-one-whole,
   .usajobs-grid-full .usa-width-one-whole,
@@ -5473,7 +5473,7 @@ img {
   background-size: 50%;
 }
 
-@media screen and (min-width: 62rem) {
+@media screen and (min-width: 62em) {
   .usajobs-form {
     max-width: inherit;
   }
@@ -5491,7 +5491,7 @@ img {
   display: table;
 }
 
-@media screen and (min-width: 62rem) {
+@media screen and (min-width: 62em) {
   .usajobs-form-grid__col {
     float: left;
     display: block;
