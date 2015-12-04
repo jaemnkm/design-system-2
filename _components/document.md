@@ -43,6 +43,40 @@ lead: A way to upload and view documents.
       </label>
     </div>
   </div>
+  
+  <h6 class="usa-heading-alt">Loading</h6>
+  <div class="usajobs-document usajobs-document--thumbnail" data-object="document" data-state="is-loading">
+    <div class="usajobs-document__figure" data-behavior="document.toggle" data-target="#toggle-document-1">
+      <div class="usajobs-document__figure-overlay">
+        <img src="{{ site.baseurl }}/img/document-thumbnails/resume-thumbnail-01-2x.png" class="img-2x" />
+      </div>
+    </div>
+    <div class="usajobs-document__details">
+      <p class="usajobs-document__title">
+        Director-resume.pdf
+      </p>
+      <p class="usajobs-document__date">
+        Uploaded 02/14/15
+      </p>
+      <ul class="usajobs-document__controls">
+        <li class="ctrl">
+          <a class="view" href="#view">View</a>
+        </li>
+        <li class="pipe">|</li>
+        <li class="ctrl">
+          <a class="delete" href="#delete">Delete</a>
+        </li>
+      </ul>
+    </div>
+    <div class="usajobs-document__toggle">
+      <input id="select-document-1" type="checkbox" name="doc-1" value="doc-1" class="usajobs-document__input">
+      <label id="toggle-document-1" for="select-document-1" class="usajobs-document__selector">
+        <span class="usajobs-assistive-text">
+          Select Document 1
+        </span>
+      </label>
+    </div>
+  </div>
 </div>
 
 <div class="usa-accordion-bordered usa-accordion-docs">

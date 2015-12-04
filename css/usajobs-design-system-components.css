@@ -7867,6 +7867,45 @@ html {
   opacity: 1;
 }
 
+.usajobs-document[data-state="is-loading"] {
+  background-color: #aeb0b5;
+}
+
+.usajobs-document[data-state="is-loading"] .usajobs-document__figure {
+  background-color: #aeb0b5;
+}
+
+.usajobs-document[data-state="is-loading"] .usajobs-document__figure:before {
+  content: 'Your file is loading';
+  position: absolute;
+  top: 80%;
+  left: 20%;
+}
+
+.usajobs-document[data-state="is-loading"] .usajobs-document__figure:after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -2.5rem;
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 5rem;
+  content: "";
+  color: #2e8540;
+  -webkit-animation: fa-spin 2s infinite linear;
+  animation: fa-spin 2s infinite linear;
+}
+
+.usajobs-document[data-state="is-loading"] .usajobs-document__figure-overlay,
+.usajobs-document[data-state="is-loading"] .usajobs-document__details,
+.usajobs-document[data-state="is-loading"] .usajobs-document__toggle {
+  visibility: hidden;
+}
+
 html {
   box-sizing: border-box;
 }
