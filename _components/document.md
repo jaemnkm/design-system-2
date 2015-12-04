@@ -43,7 +43,7 @@ lead: A way to upload and view documents.
       </label>
     </div>
   </div>
-  
+
   <h6 class="usa-heading-alt">Loading</h6>
   <div class="usajobs-document usajobs-document--thumbnail" data-object="document" data-state="is-loading">
     <div class="usajobs-document__figure" data-behavior="document.toggle" data-target="#toggle-document-1">
@@ -96,6 +96,7 @@ lead: A way to upload and view documents.
     <h5>When to use</h5>
     <ul class="usa-content-list">
       <li>Whenever a document has been uploaded to USAJOBS use this component to reflect the document back to the user.</li>
+      <li>Use the loading animation when the document has been uploaded and the thumbnail is loading into this component.</li>
     </ul>
 
     <h5>Do not use when</h5>
