@@ -4862,19 +4862,12 @@ html {
 }
 
 .usajobs-modal__body {
-  min-height: 48rem;
   padding: 1.5rem;
 }
 
 @media screen and (min-width: 48em) {
   .usajobs-modal__body {
     padding: 3rem;
-  }
-}
-
-@media screen and (min-width: 62em) {
-  .usajobs-modal__body {
-    min-height: auto;
   }
 }
 
