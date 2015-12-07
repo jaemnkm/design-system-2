@@ -119,6 +119,14 @@ lead: A way to upload and view documents.
     </form>
   </div>
 
+  <h6 class="usa-heading-alt">Add</h6>
+  <div class="usajobs-document usajobs-document--add" data-object="document" data-state="is-selectable">
+    <button class="usa-button-gray usajobs-document__trigger" data-object-trigger="modal" data-target="#modal-addResume">
+      <div class="usajobs-document__add-icon fa fa-plus-circle"></div>
+      Add a resume
+    </button>
+  </div>
+
   <h6 class="usa-heading-alt">Loading</h6>
   <div class="usajobs-document usajobs-document--thumbnail" data-object="document" data-state="is-loading">
     <div class="usajobs-document__figure" data-behavior="document.select" data-target="#toggle-document-1">
@@ -188,10 +196,6 @@ lead: A way to upload and view documents.
   <div class="usajobs-document usajobs-document--placeholder" data-object="document" data-state="is-selectable">
     <div class="usajobs-document__figure" data-behavior="document.toggle" data-target="#toggle-document-2">
       <span class="usajobs-document__placeholder fa fa-file"></span>
-      <div class="usajobs-document__attached">
-        <h5 class="usajobs-document__attached-msg">Attached</h5>
-        <i class="fa fa-check-circle"></i>
-      </div>
     </div>
     <div class="usajobs-document__details">
       <p class="usajobs-document__title">
