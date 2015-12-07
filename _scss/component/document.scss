@@ -62,18 +62,20 @@ $figure-height: $thumbnail-img-height + rem(2px) + 2rem; // 1px border + 1 rem p
     }
 
     .view,
+    .reupload,
     .edit,
     .delete {
       display: block;
+    }
+
+    .view,
+    .reupload,
+    .edit {
+      padding: $size-default $size-S $size-default $size-default;
 
       &:visited {
         color: $color-primary;
       }
-    }
-
-    .view,
-    .edit {
-      padding: $size-default $size-S $size-default $size-default;
     }
 
     .delete {
@@ -120,6 +122,10 @@ $figure-height: $thumbnail-img-height + rem(2px) + 2rem; // 1px border + 1 rem p
       box-shadow: 0 0 0 1px $color-gray-light;
       cursor: not-allowed;
     }
+
+    &:focus + label::before {
+      box-shadow: $focus-shadow;
+    }
   }
 
   &__attached {
@@ -159,7 +165,8 @@ $figure-height: $thumbnail-img-height + rem(2px) + 2rem; // 1px border + 1 rem p
     color: $color-primary;
 
     &:hover {
-      background-color: $color-white;
+      background-color: rgba(0,0,0, 0.2);
+      transition: all $duration-fast;
     }
   }
 
@@ -245,6 +252,92 @@ $figure-height: $thumbnail-img-height + rem(2px) + 2rem; // 1px border + 1 rem p
   .usajobs-document__details,
   .usajobs-document__toggle {
     visibility: hidden;
+  }
+}
+
+.usajobs-document[data-state="is-corrupt"] {
+  background-color: $color-gray-light;
+  border-color: $color-secondary;
+
+  .usajobs-document__figure {
+    background-color: $color-gray-light;
+
+    &:before {
+      content: 'This file is corrupt. Please re-upload.';
+      position: absolute;
+      top: 60%;
+      left: 20%;
+    }
+
+    &:after {
+      position: absolute;
+      top: 35%;
+      left: 50%;
+      margin-left: rem(-25px);
+      @include fa-icon();
+      font-size: rem(50px);
+      content: $fa-var-chain-broken;
+      color: $color-secondary;
+    }
+
+    &:hover {
+      cursor: inherit;
+    }
+  }
+
+  .usajobs-document__figure-overlay {
+    visibility: hidden;
+  }
+}
+
+.usajobs-document[data-state="is-disabled"] {
+  opacity: $layer-disabled;
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: $color-gray-lightest;
+    opacity: $layer-disabled;
+  }
+
+  .usajobs-document__figure {
+    &:hover {
+      cursor: inherit;
+    }
+  }
+
+  .usajobs-document__figure-overlay img {
+    opacity: 0.4;
+  }
+
+  .usajobs-document__figure-overlay:hover:after {
+    opacity: 0;
+  }
+
+  .usajobs-document__controls {
+    visibility: hidden;
+  }
+}
+
+.usajobs-document[data-state="is-incomplete"] {
+  .usajobs-document__error {
+    font-size: $lead-font-size;
+    color: $color-secondary;
+    margin: 0;
+  }
+
+  .usajobs-document__figure {
+    &:hover {
+      cursor: inherit;
+    }
+  }
+
+  .usajobs-document__figure-overlay:hover:after {
+    opacity: 0;
   }
 }
 

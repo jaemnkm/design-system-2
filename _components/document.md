@@ -160,6 +160,105 @@ lead: A way to upload and view documents.
       </label>
     </div>
   </div>
+
+  <h6 class="usa-heading-alt">Disabled</h6>
+  <div class="usajobs-document usajobs-document--thumbnail" data-object="document" data-state="is-disabled">
+    <div class="usajobs-document__figure" data-behavior="document.select" data-target="#toggle-document-4">
+      <div class="usajobs-document__figure-overlay">
+        <img src="{{ site.baseurl }}/img/document-thumbnails/resume-thumbnail-01-2x.png" class="img-2x" />
+      </div>
+    </div>
+    <div class="usajobs-document__details">
+      <p class="usajobs-document__title">
+        Director-resume.pdf
+      </p>
+      <p class="usajobs-document__date">
+        Uploaded 02/14/15
+      </p>
+      <ul class="usajobs-document__controls">
+        <li class="ctrl">
+          <a class="view" href="#view">View</a>
+        </li>
+        <li class="pipe">|</li>
+        <li class="ctrl">
+          <a class="delete" href="#delete">Delete</a>
+        </li>
+      </ul>
+    </div>
+    <div class="usajobs-document__toggle">
+      <input id="select-document-4" type="radio" name="doc-4" value="doc-4" class="usajobs-document__input" data-behavior="document.select-radio" disabled>
+      <label id="toggle-document-4" for="select-document-4" class="usajobs-document__selector">
+        <span class="usajobs-assistive-text">
+          Select Document 4
+        </span>
+      </label>
+    </div>
+  </div>
+
+  <h6 class="usa-heading-alt">Corrupt</h6>
+  <div class="usajobs-document usajobs-document--thumbnail" data-object="document" data-state="is-corrupt">
+    <div class="usajobs-document__figure" data-behavior="document.select" data-target="#toggle-document-5">
+      <div class="usajobs-document__figure-overlay">
+        <img src="{{ site.baseurl }}/img/document-thumbnails/resume-thumbnail-01-2x.png" class="img-2x" />
+      </div>
+    </div>
+    <div class="usajobs-document__details">
+      <p class="usajobs-document__title">
+        Director-resume.pdf
+      </p>
+      <p class="usajobs-document__date">
+        Uploaded 02/14/15
+      </p>
+      <ul class="usajobs-document__controls">
+        <li class="ctrl">
+          <a class="reupload" href="#reupload">Re-Upload</a>
+        </li>
+        <li class="pipe">|</li>
+        <li class="ctrl">
+          <a class="delete" href="#delete">Delete</a>
+        </li>
+      </ul>
+    </div>
+    <div class="usajobs-document__toggle">
+      <input id="select-document-5" type="radio" name="doc-5" value="doc-5" class="usajobs-document__input" data-behavior="document.select-radio" disabled>
+      <label id="toggle-document-5" for="select-document-5" class="usajobs-document__selector">
+        <span class="usajobs-assistive-text">
+          Select Document 5
+        </span>
+      </label>
+    </div>
+  </div>
+
+  <h6 class="usa-heading-alt">Incomplete</h6>
+  <div class="usajobs-document usajobs-document--thumbnail" data-object="document" data-state="is-incomplete">
+    <div class="usajobs-document__figure" data-behavior="document.select" data-target="#toggle-document-6">
+      <div class="usajobs-document__figure-overlay">
+        <img src="{{ site.baseurl }}/img/document-thumbnails/resume-thumbnail-01-2x.png" class="img-2x" />
+      </div>
+    </div>
+    <div class="usajobs-document__details">
+      <p class="usajobs-document__error">Incomplete</p>
+      <p class="usajobs-document__title">Director-resume.pdf</p>
+      <p class="usajobs-document__date">Built 03/18/10</p>
+      <ul class="usajobs-document__controls">
+        <li class="ctrl">
+          <a class="edit" href="#edit">Edit</a>
+        </li>
+        <li class="pipe">|</li>
+        <li class="ctrl">
+          <a class="delete" href="#delete">Delete</a>
+        </li>
+      </ul>
+    </div>
+    <div class="usajobs-document__toggle">
+      <input id="select-document-6" type="radio" name="doc-6" value="doc-6" class="usajobs-document__input" data-behavior="document.select-radio" disabled>
+      <label id="toggle-document-6" for="select-document-6" class="usajobs-document__selector">
+        <span class="usajobs-assistive-text">
+          Select Document 6
+        </span>
+      </label>
+    </div>
+  </div>
 </div>
 
 <div class="usa-accordion-bordered usa-accordion-docs">
