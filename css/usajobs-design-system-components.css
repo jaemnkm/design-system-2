@@ -2497,6 +2497,11 @@ html {
   }
 }
 
+.usajobs-nav__menu li a.is-active {
+  color: #205493;
+  border-bottom: 3px solid #205493;
+}
+
 .usajobs-nav__menu .menu-toggle:after {
   position: absolute;
   right: 1rem;
