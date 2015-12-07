@@ -253,6 +253,11 @@ $logo_height-L: 78px;
         padding: rem(($logo_height-L - 20px) /2) $size-default;
       }
     }
+
+    a.is-active {
+      color: $color-primary-darker;
+      border-bottom: 3px solid $color-primary-darker;
+    }
   }
 
   .menu-toggle:after {
