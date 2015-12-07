@@ -9,44 +9,119 @@ lead: A way to upload and view documents.
   Under Review
 </a>
 
-<h4 class="usa-heading-alt">Thumbnail variation</h4>
+<h4 class="usa-heading-alt">Thumbnail</h4>
 <div class="preview">
-  <div class="usajobs-document usajobs-document--thumbnail" data-object="document" data-state="is-selectable">
-    <div class="usajobs-document__figure" data-behavior="document.toggle" data-target="#toggle-document-1">
-      <div class="usajobs-document__figure-overlay">
-        <img src="{{ site.baseurl }}/img/document-thumbnails/resume-thumbnail-01-2x.png" class="img-2x" />
+  <h6 class="usa-heading-alt">Single-Select</h6>
+  <div class="usajobs-grid">
+    <div class="usajobs-width-one-half">
+      <div class="usajobs-document usajobs-document--thumbnail" data-object="document" data-state="is-selectable">
+        <div class="usajobs-document__figure" data-behavior="document.select" data-target="#toggle-resume-1">
+          <div class="usajobs-document__figure-overlay">
+            <img src="{{ site.baseurl }}/img/document-thumbnails/resume-thumbnail-01-2x.png" class="img-2x" />
+          </div>
+        </div>
+        <div class="usajobs-document__details">
+          <p class="usajobs-document__title">
+            Director-resume.pdf
+          </p>
+          <p class="usajobs-document__date">
+            Uploaded 02/14/15
+          </p>
+          <ul class="usajobs-document__controls">
+            <li class="ctrl">
+              <a class="view" href="#view">View</a>
+            </li>
+            <li class="pipe">|</li>
+            <li class="ctrl">
+              <a class="delete" href="#delete">Delete</a>
+            </li>
+          </ul>
+        </div>
+        <div class="usajobs-document__toggle">
+          <input id="select-resume-1" type="radio" name="resume" value="resume-1" class="usajobs-document__input" data-behavior="document.select-radio">
+          <label id="toggle-resume-1" for="select-resume-1" class="usajobs-document__selector">
+            <span class="usajobs-assistive-text">
+              Select Resume 1
+            </span>
+          </label>
+        </div>
       </div>
     </div>
-    <div class="usajobs-document__details">
-      <p class="usajobs-document__title">
-        Director-resume.pdf
-      </p>
-      <p class="usajobs-document__date">
-        Uploaded 02/14/15
-      </p>
-      <ul class="usajobs-document__controls">
-        <li class="ctrl">
-          <a class="view" href="#view">View</a>
-        </li>
-        <li class="pipe">|</li>
-        <li class="ctrl">
-          <a class="delete" href="#delete">Delete</a>
-        </li>
-      </ul>
+    <div class="usajobs-width-one-half">
+      <div class="usajobs-document usajobs-document--thumbnail" data-object="document" data-state="is-selectable">
+        <div class="usajobs-document__figure" data-behavior="document.select" data-target="#toggle-resume-2">
+          <div class="usajobs-document__figure-overlay">
+            <img src="{{ site.baseurl }}/img/document-thumbnails/resume-thumbnail-01-2x.png" class="img-2x" />
+          </div>
+        </div>
+        <div class="usajobs-document__details">
+          <p class="usajobs-document__title">
+            Director-resume.pdf
+          </p>
+          <p class="usajobs-document__date">
+            Uploaded 02/14/15
+          </p>
+          <ul class="usajobs-document__controls">
+            <li class="ctrl">
+              <a class="view" href="#view">View</a>
+            </li>
+            <li class="pipe">|</li>
+            <li class="ctrl">
+              <a class="delete" href="#delete">Delete</a>
+            </li>
+          </ul>
+        </div>
+        <div class="usajobs-document__toggle">
+          <input id="select-resume-2" type="radio" name="resume" value="resume-2" class="usajobs-document__input" data-behavior="document.select-radio">
+          <label id="toggle-resume-2" for="select-resume-2" class="usajobs-document__selector">
+            <span class="usajobs-assistive-text">
+              Select Resume 2
+            </span>
+          </label>
+        </div>
+      </div>
     </div>
-    <div class="usajobs-document__toggle">
-      <input id="select-document-1" type="checkbox" name="doc-1" value="doc-1" class="usajobs-document__input">
-      <label id="toggle-document-1" for="select-document-1" class="usajobs-document__selector">
-        <span class="usajobs-assistive-text">
-          Select Document 1
-        </span>
-      </label>
-    </div>
+  </div>
+
+  <h6 class="usa-heading-alt">Multi-Select</h6>
+  <form name="multi-select">
+    <div class="usajobs-document usajobs-document--thumbnail" data-object="document" data-state="is-selectable">
+      <div class="usajobs-document__figure" data-behavior="document.toggle" data-target="#toggle-document-3">
+        <div class="usajobs-document__figure-overlay">
+          <img src="{{ site.baseurl }}/img/document-thumbnails/resume-thumbnail-01-2x.png" class="img-2x" />
+        </div>
+      </div>
+      <div class="usajobs-document__details">
+        <p class="usajobs-document__title">
+          Director-resume.pdf
+        </p>
+        <p class="usajobs-document__date">
+          Uploaded 02/14/15
+        </p>
+        <ul class="usajobs-document__controls">
+          <li class="ctrl">
+            <a class="view" href="#view">View</a>
+          </li>
+          <li class="pipe">|</li>
+          <li class="ctrl">
+            <a class="delete" href="#delete">Delete</a>
+          </li>
+        </ul>
+      </div>
+      <div class="usajobs-document__toggle">
+        <input id="document-3" type="checkbox" name="document-3" value="doc-3" class="usajobs-document__input"> 
+        <label id="toggle-document-3" for="document-3" class="usajobs-document__selector" data-behavior="document.toggle-checkbox">
+          <span class="usajobs-assistive-text">
+            Select Document 3
+          </span>
+        </label>
+      </div>
+    </form>
   </div>
 
   <h6 class="usa-heading-alt">Loading</h6>
   <div class="usajobs-document usajobs-document--thumbnail" data-object="document" data-state="is-loading">
-    <div class="usajobs-document__figure" data-behavior="document.toggle" data-target="#toggle-document-1">
+    <div class="usajobs-document__figure" data-behavior="document.select" data-target="#toggle-document-1">
       <div class="usajobs-document__figure-overlay">
         <img src="{{ site.baseurl }}/img/document-thumbnails/resume-thumbnail-01-2x.png" class="img-2x" />
       </div>
@@ -69,7 +144,7 @@ lead: A way to upload and view documents.
       </ul>
     </div>
     <div class="usajobs-document__toggle">
-      <input id="select-document-1" type="checkbox" name="doc-1" value="doc-1" class="usajobs-document__input">
+      <input id="select-document-1" type="radio" name="doc-1" value="doc-1" class="usajobs-document__input" data-behavior="document.select-radio">
       <label id="toggle-document-1" for="select-document-1" class="usajobs-document__selector">
         <span class="usajobs-assistive-text">
           Select Document 1
@@ -96,6 +171,8 @@ lead: A way to upload and view documents.
     <h5>When to use</h5>
     <ul class="usa-content-list">
       <li>Whenever a document has been uploaded to USAJOBS use this component to reflect the document back to the user.</li>
+      <li>Use the single-select version, which contains a radio button input, when only a single document can be selected from a series of documents (i.e. resume).</li>
+      <li>Use the multi-select version, which contains a checkobx input, when multiple documents can be selected from a series of documents.</li>
       <li>Use the loading animation when the document has been uploaded and the thumbnail is loading into this component.</li>
     </ul>
 
@@ -111,6 +188,10 @@ lead: A way to upload and view documents.
   <div class="usajobs-document usajobs-document--placeholder" data-object="document" data-state="is-selectable">
     <div class="usajobs-document__figure" data-behavior="document.toggle" data-target="#toggle-document-2">
       <span class="usajobs-document__placeholder fa fa-file"></span>
+      <div class="usajobs-document__attached">
+        <h5 class="usajobs-document__attached-msg">Attached</h5>
+        <i class="fa fa-check-circle"></i>
+      </div>
     </div>
     <div class="usajobs-document__details">
       <p class="usajobs-document__title">
