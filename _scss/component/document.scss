@@ -95,18 +95,16 @@ $figure-height: $thumbnail-img-height + rem(2px) + 2rem; // 1px border + 1 rem p
     padding: 0;
   }
 
+  input[type="radio"].usajobs-document__input,
   input[type="checkbox"].usajobs-document__input {
     + label.usajobs-document__selector {
       margin: 0;
 
       &:before {
-        // mimicking the radio button style even though it is a checkbox
-        // which is a little daffy, but in this context it is okay
         background-image: none;
         box-shadow: 0 0 0 2px $color-white, 0 0 0 3px $color-primary-darker;
         height: 2rem;
         width: 2rem;
-        border-radius: 100%;
       }
     }
 
@@ -122,6 +120,23 @@ $figure-height: $thumbnail-img-height + rem(2px) + 2rem; // 1px border + 1 rem p
       box-shadow: 0 0 0 1px $color-gray-light;
       cursor: not-allowed;
     }
+  }
+
+  &__attached {
+    display: none;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: $thumbnail-img-height / 6;
+    background-color: $color-green-dark;
+    color: $color-white;
+  }
+
+  &__attached-msg {
+    margin: 0;
+    padding: $size-S $size-base;
+    color: $color-white;
   }
 }
 
@@ -202,3 +217,4 @@ $figure-height: $thumbnail-img-height + rem(2px) + 2rem; // 1px border + 1 rem p
     visibility: hidden;
   }
 }
+
