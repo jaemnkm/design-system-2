@@ -5532,6 +5532,16 @@ img {
   margin-top: 0;
 }
 
+body {
+  font-size: 17px;
+  font-size: 1.7rem;
+}
+
+.lt-ie9 p,
+.lt-ie9 li {
+  font-size: 17px !important;
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-family: "Source Sans Pro", "Helvetica", "Arial", sans-serif;
 }
@@ -5736,6 +5746,10 @@ h6 {
 .no-flexbox .usajobs-alert__body {
   width: -webkit-calc(100% -  8.5rem);
   width: calc(100% -  8.5rem);
+}
+
+.lt-ie9 .no-flexbox .usajobs-alert__body {
+  width: 75%;
 }
 
 .flexbox .usajobs-alert {

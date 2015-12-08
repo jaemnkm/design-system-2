@@ -78,13 +78,6 @@ module.exports = function(grunt) {
         ],
         dest: 'js/usajobs-design-system-base.js'
       },
-      js_ltie9: {
-        src: [
-          'library/assets/js/vendor/rem.min.js',
-          'node_modules/lt-ie-9/lt-ie-9.min.js'
-        ],
-        dest: 'js/usajobs-design-system-lt-ie9.js'
-      },
       js_components: {
         src: [
           'library/assets/js/components.js',
@@ -118,8 +111,7 @@ module.exports = function(grunt) {
         '!js/vendor/*.js',
         '!js/usajobs-design-system-base.js',
         '!js/usajobs-design-system-components.js',
-        '!js/usajobs-design-system-documentation.js',
-        '!js/usajobs-design-system-lt-ie9.js'
+        '!js/usajobs-design-system-documentation.js'
       ],
       components: [
         'js/components/*.js',
@@ -154,8 +146,7 @@ module.exports = function(grunt) {
           '!js/vendor/*.js',
           '!js/usajobs-design-system-base.js',
           '!js/usajobs-design-system-components.js',
-          '!js/usajobs-design-system-documentation.js',
-          '!js/usajobs-design-system-lt-ie9.js'
+          '!js/usajobs-design-system-documentation.js'
         ],
         tasks: ['jshint:all', 'concat'],
         options: {
