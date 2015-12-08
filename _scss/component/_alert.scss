@@ -70,6 +70,10 @@ $body-padding: $size-M;
 
   &__body {
     @include calc(width, "100% - " ($icon-width + $icon-padding + $body-padding));
+
+    .lt-ie9 & {
+      width: 75%;
+    }
   }
 }
 

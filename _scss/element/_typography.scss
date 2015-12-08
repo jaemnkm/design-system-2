@@ -1,6 +1,19 @@
 // Typography
 // We are using the Source Sans Pro headers and body pairing
 
+body {
+  // Reiterating with a fallback
+  font-size: $base-font-size-px;
+  font-size: $base-font-size;
+}
+
+.lt-ie9 p,
+.lt-ie9 li {
+  // Reiterating this here to fix a problem where respond.js is
+  // adding an inline style on the body to 100% which borks our lt-ie9 world
+  font-size: 17px !important;
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-family: $font-sans;
 }
