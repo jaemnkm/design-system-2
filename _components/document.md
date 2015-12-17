@@ -198,7 +198,7 @@ lead: A way to upload and view documents.
       </div>
     </div>
     <div class="usajobs-width-one-half">
-      <div class="usajobs-document usajobs-document--add" data-object="document" data-state="is-disabled">
+      <div class="usajobs-document usajobs-document--add" data-object="document" data-state="is-disabled" title="You have reached your document limit. You cannot add a new document until you delete an existing document from your account.">
         <button class="usa-button-gray usajobs-document__trigger" data-object-trigger="modal" data-target="#modal-addResume" disabled>
           <div class="usajobs-document__add-icon fa fa-plus-circle"></div>
           Add a resume
