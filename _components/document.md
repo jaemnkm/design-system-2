@@ -162,36 +162,48 @@ lead: A way to upload and view documents.
   </div>
 
   <h6 class="usa-heading-alt">Disabled</h6>
-  <div class="usajobs-document usajobs-document--thumbnail" data-object="document" data-state="is-disabled">
-    <div class="usajobs-document__figure" data-behavior="document.select" data-target="#toggle-document-4">
-      <div class="usajobs-document__figure-overlay">
-        <img src="{{ site.baseurl }}/img/document-thumbnails/resume-thumbnail-01-2x.png" class="img-2x" />
+  <div class="usajobs-grid">
+    <div class="usajobs-width-one-half">
+      <div class="usajobs-document usajobs-document--thumbnail" data-object="document" data-state="is-disabled">
+        <div class="usajobs-document__figure" data-behavior="document.select" data-target="#toggle-document-4">
+          <div class="usajobs-document__figure-overlay">
+            <img src="{{ site.baseurl }}/img/document-thumbnails/resume-thumbnail-01-2x.png" class="img-2x" />
+          </div>
+        </div>
+        <div class="usajobs-document__details">
+          <p class="usajobs-document__title">
+            Director-resume.pdf
+          </p>
+          <p class="usajobs-document__date">
+            Uploaded 02/14/15
+          </p>
+          <ul class="usajobs-document__controls">
+            <li class="ctrl">
+              <a class="view" href="#view">View</a>
+            </li>
+            <li class="pipe">|</li>
+            <li class="ctrl">
+              <a class="delete" href="#delete">Delete</a>
+            </li>
+          </ul>
+        </div>
+        <div class="usajobs-document__toggle">
+          <input id="select-document-4" type="radio" name="doc-4" value="doc-4" class="usajobs-document__input" data-behavior="document.select-radio" disabled>
+          <label id="toggle-document-4" for="select-document-4" class="usajobs-document__selector">
+            <span class="usajobs-assistive-text">
+              Select Document 4
+            </span>
+          </label>
+        </div>
       </div>
     </div>
-    <div class="usajobs-document__details">
-      <p class="usajobs-document__title">
-        Director-resume.pdf
-      </p>
-      <p class="usajobs-document__date">
-        Uploaded 02/14/15
-      </p>
-      <ul class="usajobs-document__controls">
-        <li class="ctrl">
-          <a class="view" href="#view">View</a>
-        </li>
-        <li class="pipe">|</li>
-        <li class="ctrl">
-          <a class="delete" href="#delete">Delete</a>
-        </li>
-      </ul>
-    </div>
-    <div class="usajobs-document__toggle">
-      <input id="select-document-4" type="radio" name="doc-4" value="doc-4" class="usajobs-document__input" data-behavior="document.select-radio" disabled>
-      <label id="toggle-document-4" for="select-document-4" class="usajobs-document__selector">
-        <span class="usajobs-assistive-text">
-          Select Document 4
-        </span>
-      </label>
+    <div class="usajobs-width-one-half">
+      <div class="usajobs-document usajobs-document--add" data-object="document" data-state="is-disabled">
+        <button class="usa-button-gray usajobs-document__trigger" data-object-trigger="modal" data-target="#modal-addResume" disabled>
+          <div class="usajobs-document__add-icon fa fa-plus-circle"></div>
+          Add a resume
+        </button>
+      </div>
     </div>
   </div>
 
