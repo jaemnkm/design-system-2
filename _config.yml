@@ -4,8 +4,6 @@ highlighter: pygments
 name: USAJOBS Design System
 subtitle: The design system for the next generation of USAJOBS which describes the base visual language upon which the site can be built.
 exclude:
-- bower.json
-- bower_components
 - Gemfile
 - Gemfile.lock
 - Gruntfile.js
@@ -16,8 +14,6 @@ exclude:
 - ".sass-cache"
 - ".ruby-version"
 - npm-debug.log
-- vendor
-- visual_design_assets
 - node_modules
 - library
 keep_files: ['css', 'js']

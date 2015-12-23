@@ -44,6 +44,7 @@ $ rbenv global
 Now that you have verified that you have Ruby and Node installed, run the following commands to install the packages that the design system depends upon:
 
 ```shell
+$ npm install -g grunt-cli
 $ npm install
 $ npm run build
 ```
