@@ -124,7 +124,7 @@ $figure-height: $thumbnail-img-height + rem(2px) + 2rem; // 1px border + 1 rem p
     }
 
     &:focus + label::before {
-      box-shadow: $focus-shadow;
+      box-shadow: 0 0 0 4px $color-green-dark, 0 0 3px 4px $color-focus, 0 0 7px 4px $color-focus;
     }
   }
 

@@ -5379,7 +5379,7 @@ html {
 
 .usajobs-document input[type="radio"].usajobs-document__input:focus + label::before,
 .usajobs-document input[type="checkbox"].usajobs-document__input:focus + label::before {
-  box-shadow: 0 0 3px #3e94cf, 0 0 7px #3e94cf;
+  box-shadow: 0 0 0 4px #2d8700, 0 0 3px 4px #3e94cf, 0 0 7px 4px #3e94cf;
 }
 
 .usajobs-document__attached {
