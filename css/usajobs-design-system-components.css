@@ -9,6 +9,36 @@ html {
   box-sizing: inherit;
 }
 
+.hidden,
+.usajobs-assistive-text {
+  position: absolute !important;
+  margin: -1px !important;
+  border: 0 !important;
+  padding: 0 !important;
+  width: 1px !important;
+  height: 1px !important;
+  overflow: hidden !important;
+  clip: rect(0 0 0 0) !important;
+}
+
+.usajobs-site-header .usajobs-disclaimer-official {
+  padding-left: 1.5rem;
+}
+
+@media screen and (min-width: 48em) {
+  .usajobs-site-header .usajobs-disclaimer-official {
+    padding-left: 3rem;
+  }
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *::after, *::before {
+  box-sizing: inherit;
+}
+
 /*!
  *  Font Awesome 4.2.0 by @davegandy - http://fontawesome.io - @fontawesome
  *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
@@ -2203,6 +2233,7 @@ html {
 }
 
 .usajobs-nav {
+  position: relative;
   background-color: #ffffff;
 }
 
@@ -2502,7 +2533,12 @@ html {
 
 .usajobs-nav__menu li a.is-active {
   color: #205493;
-  border-bottom: 3px solid #205493;
+}
+
+@media screen and (min-width: 62em) {
+  .usajobs-nav__menu li a.is-active {
+    border-bottom: 3px solid #205493;
+  }
 }
 
 .usajobs-nav__menu .menu-toggle:after {

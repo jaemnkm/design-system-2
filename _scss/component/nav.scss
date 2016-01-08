@@ -13,6 +13,7 @@ $logo_height-S: 73px;
 $logo_height-L: 78px;
 
 .usajobs-nav {
+  position: relative;
   background-color: $color-white;
 
   ul {
@@ -256,7 +257,10 @@ $logo_height-L: 78px;
 
     a.is-active {
       color: $color-primary-darker;
-      border-bottom: 3px solid $color-primary-darker;
+
+      @include media($MLL) {
+        border-bottom: 3px solid $color-primary-darker;
+      }
     }
   }
 
