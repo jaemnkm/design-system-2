@@ -1,4 +1,4 @@
-// Buttons
+// Button
 
 .usajobs-button-secondary-alert {
   background-color: $color-secondary-darkest;
@@ -14,6 +14,15 @@
   }
 }
 
+// The U.S. Standards disabled button is a little light on the "disabled"
+button:disabled,
+[type="button"]:disabled,
+[type="submit"]:disabled,
+.usa-button-disabled {
+  opacity: $layer-disabled;
+}
+
+
 // In Application Guide, our button bar background matches the disabled state of a button
 // Thus we make the button darker
 
@@ -23,7 +32,6 @@
     background-color: $color-gray-light;
     color: $color-gray-dark;
     cursor: default;
-    opacity: $layer-disabled;
 
     &:hover,
     &.usa-button-hover,

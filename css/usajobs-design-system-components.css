@@ -3,7 +3,9 @@ html {
   box-sizing: border-box;
 }
 
-*, *::after, *::before {
+*,
+*::after,
+*::before {
   box-sizing: inherit;
 }
 
@@ -81,7 +83,7 @@ html {
 }
 
 .fa-border {
-  padding: .2em .25em .15em;
+  padding: 0.2em 0.25em 0.15em;
   border: solid 0.08em #eee;
   border-radius: .1em;
 }
@@ -2311,7 +2313,8 @@ html {
   padding: 0;
 }
 
-.usajobs-nav__menu li:before, .usajobs-nav__menu li:after,
+.usajobs-nav__menu li:before,
+.usajobs-nav__menu li:after,
 .usajobs-nav__account li:before,
 .usajobs-nav__account li:after {
   content: none;
@@ -2600,7 +2603,9 @@ html {
   box-sizing: border-box;
 }
 
-*, *::after, *::before {
+*,
+*::after,
+*::before {
   box-sizing: inherit;
 }
 
@@ -2690,7 +2695,7 @@ html {
 }
 
 .fa-border {
-  padding: .2em .25em .15em;
+  padding: 0.2em 0.25em 0.15em;
   border: solid 0.08em #eee;
   border-radius: .1em;
 }
@@ -5055,7 +5060,8 @@ html {
   box-shadow: 0px 0px 8px 2px rgba(0, 0, 0, 0.07);
 }
 
-.usajobs-document__title, .usajobs-document__date {
+.usajobs-document__title,
+.usajobs-document__date {
   margin: 0;
 }
 
@@ -5145,7 +5151,7 @@ html {
 .usajobs-document input[type="radio"].usajobs-document__input:disabled + label::before,
 .usajobs-document input[type="checkbox"].usajobs-document__input:disabled + label::before {
   background: #d6d7d9;
-  box-shadow: 0 0 0 1px #aeb0b5;
+  box-shadow: 0 0 0 2px #ffffff, 0 0 0 3px #aeb0b5;
   cursor: not-allowed;
 }
 
@@ -5326,11 +5332,7 @@ html {
   visibility: hidden;
 }
 
-.usajobs-document[data-state="is-disabled"] {
-  opacity: 0.7;
-}
-
-.usajobs-document[data-state="is-disabled"]:before {
+.usajobs-document[data-state="is-disabled"] .usajobs-document__figure:before {
   content: '';
   position: absolute;
   top: 0;
@@ -5338,7 +5340,7 @@ html {
   bottom: 0;
   left: 0;
   background-color: #f1f1f1;
-  opacity: 0.7;
+  opacity: 0.4;
 }
 
 .usajobs-document[data-state="is-disabled"] .usajobs-document__figure:hover {
@@ -5351,10 +5353,6 @@ html {
 
 .usajobs-document[data-state="is-disabled"] .usajobs-document__figure-overlay:hover:after {
   opacity: 0;
-}
-
-.usajobs-document[data-state="is-disabled"] .usajobs-document__controls {
-  visibility: hidden;
 }
 
 .usajobs-document[data-state="is-incomplete"] .usajobs-document__error {
@@ -5375,7 +5373,9 @@ html {
   box-sizing: border-box;
 }
 
-*, *::after, *::before {
+*,
+*::after,
+*::before {
   box-sizing: inherit;
 }
 

@@ -119,7 +119,7 @@ $figure-height: $thumbnail-img-height + rem(2px) + 2rem; // 1px border + 1 rem p
 
     &:disabled + label::before {
       background: $color-gray-lighter;
-      box-shadow: 0 0 0 1px $color-gray-light;
+      box-shadow: 0 0 0 2px $color-white, 0 0 0 3px $color-gray-light;
       cursor: not-allowed;
     }
 
@@ -291,20 +291,20 @@ $figure-height: $thumbnail-img-height + rem(2px) + 2rem; // 1px border + 1 rem p
 }
 
 .usajobs-document[data-state="is-disabled"] {
-  opacity: $layer-disabled;
-
-  &:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background-color: $color-gray-lightest;
-    opacity: $layer-disabled;
-  }
+  // opacity: $layer-disabled;
 
   .usajobs-document__figure {
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-color: $color-gray-lightest;
+      opacity: $layer-disabled;
+    }
+
     &:hover {
       cursor: inherit;
     }
@@ -318,9 +318,8 @@ $figure-height: $thumbnail-img-height + rem(2px) + 2rem; // 1px border + 1 rem p
     opacity: 0;
   }
 
-  .usajobs-document__controls {
-    visibility: hidden;
-  }
+  // Controls are visible in case the user needs to be able
+  // to delete a doc
 }
 
 .usajobs-document[data-state="is-incomplete"] {
