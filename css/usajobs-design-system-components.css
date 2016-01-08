@@ -199,7 +199,8 @@ html {
 :root .fa-rotate-270,
 :root .fa-flip-horizontal,
 :root .fa-flip-vertical {
-  filter: none;
+  -webkit-filter: none;
+          filter: none;
 }
 
 .fa-stack {
@@ -2571,9 +2572,7 @@ html {
 
 .usajobs-nav__secondary-menu-container[data-state="is-open"] .menu-toggle:after {
   -webkit-transform: rotate(180deg);
-  -moz-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
-  -o-transform: rotate(180deg);
   transform: rotate(180deg);
   transition: all 0.3s;
 }
@@ -2814,7 +2813,8 @@ html {
 :root .fa-rotate-270,
 :root .fa-flip-horizontal,
 :root .fa-flip-vertical {
-  filter: none;
+  -webkit-filter: none;
+          filter: none;
 }
 
 .fa-stack {
@@ -4836,6 +4836,7 @@ html {
 .usajobs-modal {
   opacity: 0;
   visibility: hidden;
+  transition: -webkit-transform 0.3s linear, opacity 0.3s linear;
   transition: transform 0.3s linear, opacity 0.3s linear;
   overflow: hidden;
   position: fixed;
@@ -5181,7 +5182,7 @@ html {
 .usajobs-document input[type="radio"].usajobs-document__input:disabled + label::before,
 .usajobs-document input[type="checkbox"].usajobs-document__input:disabled + label::before {
   background: #d6d7d9;
-  box-shadow: 0 0 0 1px #aeb0b5;
+  box-shadow: 0 0 0 2px #ffffff, 0 0 0 3px #aeb0b5;
   cursor: not-allowed;
 }
 
@@ -5362,11 +5363,7 @@ html {
   visibility: hidden;
 }
 
-.usajobs-document[data-state="is-disabled"] {
-  opacity: 0.7;
-}
-
-.usajobs-document[data-state="is-disabled"]:before {
+.usajobs-document[data-state="is-disabled"] .usajobs-document__figure:before {
   content: '';
   position: absolute;
   top: 0;
@@ -5374,7 +5371,7 @@ html {
   bottom: 0;
   left: 0;
   background-color: #f1f1f1;
-  opacity: 0.7;
+  opacity: 0.4;
 }
 
 .usajobs-document[data-state="is-disabled"] .usajobs-document__figure:hover {
@@ -5387,10 +5384,6 @@ html {
 
 .usajobs-document[data-state="is-disabled"] .usajobs-document__figure-overlay:hover:after {
   opacity: 0;
-}
-
-.usajobs-document[data-state="is-disabled"] .usajobs-document__controls {
-  visibility: hidden;
 }
 
 .usajobs-document[data-state="is-incomplete"] .usajobs-document__error {
@@ -5474,5 +5467,4 @@ html {
   display: inline-block;
   float: none;
 }
-
 /*# sourceMappingURL=usajobs-design-system-components.css.map */
