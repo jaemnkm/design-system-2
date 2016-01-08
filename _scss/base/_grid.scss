@@ -127,7 +127,12 @@
 }
 
 .usajobs-grid {
-  padding: 0 $grid-margins;
+  padding: 0 $size-default;
+
+  @include media($ML) {
+    padding-left: $size-M;
+    padding-right: $size-M;
+  }
 }
 
 .usajobs-grid-full {
