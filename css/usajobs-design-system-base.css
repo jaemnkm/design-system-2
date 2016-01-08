@@ -3,7 +3,9 @@ html {
   box-sizing: border-box;
 }
 
-*, *::after, *::before {
+*,
+*::after,
+*::before {
   box-sizing: inherit;
 }
 
@@ -272,8 +274,7 @@ select {
  *    `input` and others.
  */
 button,
-html input[type="button"],
-input[type="reset"],
+html input[type="button"], input[type="reset"],
 input[type="submit"] {
   -webkit-appearance: button;
   /* 2 */
@@ -479,7 +480,7 @@ th {
 }
 
 .fa-border {
-  padding: .2em .25em .15em;
+  padding: 0.2em 0.25em 0.15em;
   border: solid 0.08em #eee;
   border-radius: .1em;
 }
@@ -2921,7 +2922,8 @@ a {
   text-decoration: none;
 }
 
-a:hover, a:active {
+a:hover,
+a:active {
   color: #205493;
   text-decoration: underline;
 }
@@ -3186,11 +3188,12 @@ select {
   max-width: 46rem;
   width: 100%;
   outline: none;
-  padding: 1rem .7em;
+  padding: 1rem 0.7em;
   appearance: none;
 }
 
-input:focus, input.usa-input-focus,
+input:focus,
+input.usa-input-focus,
 input[type="text"]:focus,
 input[type="text"].usa-input-focus,
 input[type="email"]:focus,
@@ -3323,11 +3326,11 @@ input[type="radio"] {
   left: -999em;
 }
 
-.lt-ie9 input[type="checkbox"], .lt-ie9
-input[type="radio"] {
+.lt-ie9 input[type="checkbox"],
+.lt-ie9 input[type="radio"] {
   border: 0;
   float: left;
-  margin: .4em .4em 0 0;
+  margin: 0.4em 0.4em 0 0;
   position: static;
   width: auto;
 }
@@ -3548,7 +3551,8 @@ button,
   -webkit-font-smoothing: antialiased;
 }
 
-.usa-button:hover, .usa-button.usa-button-hover,
+.usa-button:hover,
+.usa-button.usa-button-hover,
 .usa-button-primary:hover,
 .usa-button-primary.usa-button-hover,
 .usa-button:visited:hover,
@@ -3571,7 +3575,8 @@ button.usa-button-hover,
   text-decoration: none;
 }
 
-.usa-button:focus, .usa-button.usa-button-focus,
+.usa-button:focus,
+.usa-button.usa-button-focus,
 .usa-button-primary:focus,
 .usa-button-primary.usa-button-focus,
 .usa-button:visited:focus,
@@ -3591,7 +3596,8 @@ button.usa-button-focus,
   box-shadow: 0 0 3px #3e94cf, 0 0 7px #3e94cf;
 }
 
-.usa-button:active, .usa-button.usa-button-active,
+.usa-button:active,
+.usa-button.usa-button-active,
 .usa-button-primary:active,
 .usa-button-primary.usa-button-active,
 .usa-button:visited:active,
@@ -3638,7 +3644,8 @@ button.usa-button-primary-alt,
   color: #212121;
 }
 
-.usa-button.usa-button-primary-alt:hover, .usa-button.usa-button-primary-alt.usa-button-hover,
+.usa-button.usa-button-primary-alt:hover,
+.usa-button.usa-button-primary-alt.usa-button-hover,
 .usa-button-primary.usa-button-primary-alt:hover,
 .usa-button-primary.usa-button-primary-alt.usa-button-hover,
 .usa-button:visited.usa-button-primary-alt:hover,
@@ -3658,7 +3665,8 @@ button.usa-button-primary-alt.usa-button-hover,
   background-color: #00a6d2;
 }
 
-.usa-button.usa-button-primary-alt:active, .usa-button.usa-button-primary-alt.usa-button-active,
+.usa-button.usa-button-primary-alt:active,
+.usa-button.usa-button-primary-alt.usa-button-active,
 .usa-button-primary.usa-button-primary-alt:active,
 .usa-button-primary.usa-button-primary-alt.usa-button-active,
 .usa-button:visited.usa-button-primary-alt:active,
@@ -3691,7 +3699,8 @@ button.usa-button-secondary,
   background-color: #e31c3d;
 }
 
-.usa-button.usa-button-secondary:hover, .usa-button.usa-button-secondary.usa-button-hover,
+.usa-button.usa-button-secondary:hover,
+.usa-button.usa-button-secondary.usa-button-hover,
 .usa-button-primary.usa-button-secondary:hover,
 .usa-button-primary.usa-button-secondary.usa-button-hover,
 .usa-button:visited.usa-button-secondary:hover,
@@ -3711,7 +3720,8 @@ button.usa-button-secondary.usa-button-hover,
   background-color: #cd2026;
 }
 
-.usa-button.usa-button-secondary:active, .usa-button.usa-button-secondary.usa-button-active,
+.usa-button.usa-button-secondary:active,
+.usa-button.usa-button-secondary.usa-button-active,
 .usa-button-primary.usa-button-secondary:active,
 .usa-button-primary.usa-button-secondary.usa-button-active,
 .usa-button:visited.usa-button-secondary:active,
@@ -3743,7 +3753,8 @@ button.usa-button-gray,
   background-color: #5b616b;
 }
 
-.usa-button.usa-button-gray:hover, .usa-button.usa-button-gray.usa-button-hover,
+.usa-button.usa-button-gray:hover,
+.usa-button.usa-button-gray.usa-button-hover,
 .usa-button-primary.usa-button-gray:hover,
 .usa-button-primary.usa-button-gray.usa-button-hover,
 .usa-button:visited.usa-button-gray:hover,
@@ -3763,7 +3774,8 @@ button.usa-button-gray.usa-button-hover,
   background-color: #323a45;
 }
 
-.usa-button.usa-button-gray:active, .usa-button.usa-button-gray.usa-button-active,
+.usa-button.usa-button-gray:active,
+.usa-button.usa-button-gray.usa-button-active,
 .usa-button-primary.usa-button-gray:active,
 .usa-button-primary.usa-button-gray.usa-button-active,
 .usa-button:visited.usa-button-gray:active,
@@ -3797,7 +3809,8 @@ button.usa-button-outline,
   color: #0071bc;
 }
 
-.usa-button.usa-button-outline:hover, .usa-button.usa-button-outline.usa-button-hover,
+.usa-button.usa-button-outline:hover,
+.usa-button.usa-button-outline.usa-button-hover,
 .usa-button-primary.usa-button-outline:hover,
 .usa-button-primary.usa-button-outline.usa-button-hover,
 .usa-button:visited.usa-button-outline:hover,
@@ -3818,7 +3831,8 @@ button.usa-button-outline.usa-button-hover,
   color: #205493;
 }
 
-.usa-button.usa-button-outline:active, .usa-button.usa-button-outline.usa-button-active,
+.usa-button.usa-button-outline:active,
+.usa-button.usa-button-outline.usa-button-active,
 .usa-button-primary.usa-button-outline:active,
 .usa-button-primary.usa-button-outline.usa-button-active,
 .usa-button:visited.usa-button-outline:active,
@@ -3839,7 +3853,8 @@ button.usa-button-outline.usa-button-active,
   color: #112e51;
 }
 
-.usa-button.usa-button-outline:focus, .usa-button.usa-button-outline.usa-button-focus,
+.usa-button.usa-button-outline:focus,
+.usa-button.usa-button-outline.usa-button-focus,
 .usa-button-primary.usa-button-outline:focus,
 .usa-button-primary.usa-button-outline.usa-button-focus,
 .usa-button:visited.usa-button-outline:focus,
@@ -3873,7 +3888,8 @@ button.usa-button-outline-inverse,
   color: #ffffff;
 }
 
-.usa-button.usa-button-outline-inverse:hover, .usa-button.usa-button-outline-inverse.usa-button-hover,
+.usa-button.usa-button-outline-inverse:hover,
+.usa-button.usa-button-outline-inverse.usa-button-hover,
 .usa-button-primary.usa-button-outline-inverse:hover,
 .usa-button-primary.usa-button-outline-inverse.usa-button-hover,
 .usa-button:visited.usa-button-outline-inverse:hover,
@@ -3894,7 +3910,8 @@ button.usa-button-outline-inverse.usa-button-hover,
   color: #d6d7d9;
 }
 
-.usa-button.usa-button-outline-inverse:active, .usa-button.usa-button-outline-inverse.usa-button-active,
+.usa-button.usa-button-outline-inverse:active,
+.usa-button.usa-button-outline-inverse.usa-button-active,
 .usa-button-primary.usa-button-outline-inverse:active,
 .usa-button-primary.usa-button-outline-inverse.usa-button-active,
 .usa-button:visited.usa-button-outline-inverse:active,
@@ -3915,7 +3932,8 @@ button.usa-button-outline-inverse.usa-button-active,
   color: #d6d7d9;
 }
 
-.usa-button.usa-button-outline-inverse:focus, .usa-button.usa-button-outline-inverse.usa-button-focus,
+.usa-button.usa-button-outline-inverse:focus,
+.usa-button.usa-button-outline-inverse.usa-button-focus,
 .usa-button-primary.usa-button-outline-inverse:focus,
 .usa-button-primary.usa-button-outline-inverse.usa-button-focus,
 .usa-button:visited.usa-button-outline-inverse:focus,
@@ -3955,7 +3973,11 @@ button.usa-button-big,
   cursor: default;
 }
 
-[type="submit"]:disabled:hover, [type="submit"]:disabled.usa-button-hover, [type="submit"]:disabled:active, [type="submit"]:disabled.usa-button-active, [type="submit"]:disabled:focus,
+[type="submit"]:disabled:hover,
+[type="submit"]:disabled.usa-button-hover,
+[type="submit"]:disabled:active,
+[type="submit"]:disabled.usa-button-active,
+[type="submit"]:disabled:focus,
 .usa-button-disabled:hover,
 .usa-button-disabled.usa-button-hover,
 .usa-button-disabled:active,
@@ -3976,7 +3998,8 @@ button.usa-button-big,
   text-align: left;
 }
 
-.usa-button-unstyled:focus, .usa-button-unstyled:hover {
+.usa-button-unstyled:focus,
+.usa-button-unstyled:hover {
   box-shadow: initial;
 }
 
@@ -4911,13 +4934,13 @@ fieldset {
   color: #212121;
 }
 
-.usa-accordion button h1, .usa-accordion button h2, .usa-accordion button h3, .usa-accordion button h4, .usa-accordion button h5, .usa-accordion button h6,
-.usa-accordion-bordered button h1,
-.usa-accordion-bordered button h2,
-.usa-accordion-bordered button h3,
-.usa-accordion-bordered button h4,
-.usa-accordion-bordered button h5,
-.usa-accordion-bordered button h6 {
+.usa-accordion button h1,
+.usa-accordion button h2,
+.usa-accordion button h3,
+.usa-accordion button h4,
+.usa-accordion button h5,
+.usa-accordion button h6,
+.usa-accordion-bordered button h1, .usa-accordion-bordered button h2, .usa-accordion-bordered button h3, .usa-accordion-bordered button h4, .usa-accordion-bordered button h5, .usa-accordion-bordered button h6 {
   margin: 0;
 }
 
@@ -4974,7 +4997,9 @@ html {
   box-sizing: border-box;
 }
 
-*, *::after, *::before {
+*,
+*::after,
+*::before {
   box-sizing: inherit;
 }
 
@@ -5611,12 +5636,21 @@ h6 {
   background-color: #981b1e;
 }
 
-.usajobs-button-secondary-alert:hover, .usajobs-button-secondary-alert.usa-button-hover {
+.usajobs-button-secondary-alert:hover,
+.usajobs-button-secondary-alert.usa-button-hover {
   background-color: #cd2026;
 }
 
-.usajobs-button-secondary-alert:active, .usajobs-button-secondary-alert.usa-button-active {
+.usajobs-button-secondary-alert:active,
+.usajobs-button-secondary-alert.usa-button-active {
   background-color: #7B0608;
+}
+
+button:disabled,
+[type="button"]:disabled,
+[type="submit"]:disabled,
+.usa-button-disabled {
+  opacity: 0.4;
 }
 
 .usajobs-button_bar [type="submit"]:disabled,
@@ -5624,10 +5658,13 @@ h6 {
   background-color: #aeb0b5;
   color: #323a45;
   cursor: default;
-  opacity: 0.7;
 }
 
-.usajobs-button_bar [type="submit"]:disabled:hover, .usajobs-button_bar [type="submit"]:disabled.usa-button-hover, .usajobs-button_bar [type="submit"]:disabled:active, .usajobs-button_bar [type="submit"]:disabled.usa-button-active, .usajobs-button_bar [type="submit"]:disabled:focus,
+.usajobs-button_bar [type="submit"]:disabled:hover,
+.usajobs-button_bar [type="submit"]:disabled.usa-button-hover,
+.usajobs-button_bar [type="submit"]:disabled:active,
+.usajobs-button_bar [type="submit"]:disabled.usa-button-active,
+.usajobs-button_bar [type="submit"]:disabled:focus,
 .usajobs-button_bar .usa-button-disabled:hover,
 .usajobs-button_bar .usa-button-disabled.usa-button-hover,
 .usajobs-button_bar .usa-button-disabled:active,
@@ -5739,7 +5776,8 @@ h6 {
   display: table;
 }
 
-.no-flexbox .usajobs-alert__figure, .no-flexbox .usajobs-alert__body {
+.no-flexbox .usajobs-alert__figure,
+.no-flexbox .usajobs-alert__body {
   display: table-cell;
 }
 

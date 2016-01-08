@@ -2,7 +2,9 @@ html {
   box-sizing: border-box;
 }
 
-*, *::after, *::before {
+*,
+*::after,
+*::before {
   box-sizing: inherit;
 }
 
@@ -248,7 +250,7 @@ html {
 }
 
 .usa-site-header .disclaimer {
-  padding: .5rem 2rem;
+  padding: 0.5rem 2rem;
   color: white;
   text-align: center;
   font-size: 1.36rem;
