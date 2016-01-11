@@ -5,6 +5,14 @@ lead:  The outer container of the grid along with common page layouts.
 ---
 
 <div class="usajobs-grid">
+  <div class="usa-width-one-whole">
+    <p>
+      <a href="{{ site.baseurl }}/getting-started/#maturity" class="usa-label maturity design_complete">Design Complete</a>
+    </p>
+  </div>
+</div>
+
+<div class="usajobs-grid">
   <div class="usajobs-width-one-whole">
     <h2 class="usa-heading">1 main content well with 1 right rail</h2>
   </div>
@@ -51,10 +59,9 @@ lead:  The outer container of the grid along with common page layouts.
       <div id="collapsible-0" aria-hidden="false" class="usa-accordion-content">
         <h4 class="usa-heading">Implementation</h4>
         <ul class="usa-content-list">
-          <li>The <code>.usajobs-shell</code> element is a container that acts as the shell of the page, locking the page content at a particular width.</li>
-          <li>The page shell locks at 1200px/75em wide.</li>
-          <li>The page gutter size is 1.5rem/15px below the ML breakpoint (768px) and grows to 3rem(30px from that breakpoint on.</li>
-          <li>The <code>.usajobs-grid</code> should be used within the page shell.</li>
+          <li>The <code>.usajobs-shell</code> element is a container that acts as the shell of the page, locking the page content at 1200px/75em wide.</li>
+          <li>The page gutter size is 1.5rem/15px below the ML breakpoint (768px) and grows to 3rem(30px from that breakpoint on. Note however that it is set on the <code>.usajobs-grid</code> and not the <code>.usajobs-shell</code> class to make it easier to include full-bleed components.</li>
+          <li>The <code>.usajobs-grid</code> should be used within the page shell and should always wrap content that is not in a component.</li>
         </ul>
       </div>
     </div>

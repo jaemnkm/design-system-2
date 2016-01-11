@@ -88,16 +88,13 @@ lead: A way to upload and view documents.
     <div class="usajobs-document usajobs-document--thumbnail" data-object="document" data-state="is-selectable">
       <div class="usajobs-document__figure" data-behavior="document.toggle" data-target="#toggle-document-3">
         <div class="usajobs-document__figure-overlay">
-          <img src="{{ site.baseurl }}/img/document-thumbnails/resume-thumbnail-01-2x.png" class="img-2x" />
+          <img src="{{ site.baseurl }}/img/document-thumbnails/doc-thumbnail-01-2x.jpeg" class="img-2x" />
         </div>
       </div>
       <div class="usajobs-document__details">
-        <p class="usajobs-document__title">
-          Director-resume.pdf
-        </p>
-        <p class="usajobs-document__date">
-          Uploaded 02/14/15
-        </p>
+        <p class="usajobs-document__title">My-Federal-Form.jpg</p>
+        <p class="usajobs-document__type">SF-50</p>
+        <p class="usajobs-document__date">Uploaded 02/14/15</p>
         <ul class="usajobs-document__controls">
           <li class="ctrl">
             <a class="view" href="#view">View</a>
@@ -245,12 +242,12 @@ lead: A way to upload and view documents.
   <div class="usajobs-document usajobs-document--thumbnail" data-object="document" data-state="is-incomplete">
     <div class="usajobs-document__figure" data-behavior="document.select" data-target="#toggle-document-6">
       <div class="usajobs-document__figure-overlay">
-        <img src="{{ site.baseurl }}/img/document-thumbnails/resume-thumbnail-01-2x.png" class="img-2x" />
+        <img src="{{ site.baseurl }}/img/document-thumbnails/resume-thumbnail-02-2x.png" class="img-2x" />
       </div>
     </div>
     <div class="usajobs-document__details">
       <p class="usajobs-document__error">Incomplete</p>
-      <p class="usajobs-document__title">Director-resume.pdf</p>
+      <p class="usajobs-document__title">My-resume.pdf</p>
       <p class="usajobs-document__date">Built 03/18/10</p>
       <ul class="usajobs-document__controls">
         <li class="ctrl">
@@ -281,6 +278,22 @@ lead: A way to upload and view documents.
   <div id="collapsible-0" aria-hidden="false" class="usa-accordion-content">
     <h4 class="usa-heading">Guidance</h4>
     <ul class="usa-content-list">
+      <li>The first line of the document details is the user-provided title of the document.</li>
+      <li>The second line of a document, NOT a resume, is the document type which is one of:
+        <ul>
+          <li>Cover Letter</li>
+          <li>DD-214</li>
+          <li>ECQ</li>
+          <li>OF-306</li>
+          <li>Other</li>
+          <li>SF-15</li>
+          <li>SF-50</li>
+          <li>Transcript</li>
+          <li>Veteran Other</li>
+        </ul>
+      </li>
+      <li>Resumes either uploaded or created by the resume builder do not get a document type in Application Guide.</li> 
+      <li>The third line of a document is the date the document was uploaded. This line of text is in the format "Uploaded [date]". Resumes created by Resume Builder are in the format "Built [date]".</li>
       <li>The <strong>View</strong> link opens the full document in a <a href="{{ site.baseurl}}/modals/">modal</a>.</li>
       <li> The <strong>Delete</strong> link will open a dialog in a <a href="{{ site.baseurl}}/modals/">modal</a> asking the user to confirm removal of the document.</li>
       <li>For resume documents that are built with Resume Builder the View link is replaced by an <strong>Edit</strong> link. Clicking that link will open the Resume Builder in a <a href="{{ site.baseurl }}/modals/">modal</a>.</li>
@@ -309,9 +322,8 @@ lead: A way to upload and view documents.
       <span class="usajobs-document__placeholder fa fa-file"></span>
     </div>
     <div class="usajobs-document__details">
-      <p class="usajobs-document__title">
-        Animal-Handler-resume.pdf
-      </p>
+      <p class="usajobs-document__title">Exec-Core</p>
+      <p class="usajobs-document__type">ECQ</p>
       <p class="usajobs-document__date">
         Uploaded 03/22/25
       </p>
