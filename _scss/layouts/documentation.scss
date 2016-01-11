@@ -431,29 +431,29 @@ $section-padding:   7.2rem;
       margin-top: 1.5em;
     }
   }
+}
 
-  .maturity {
-    text-decoration: none;
-    color: $color-white;
+.maturity {
+  text-decoration: none;
+  color: $color-white;
 
-    &.incomplete {
-      background-color: $color-secondary-dark;
-    }
+  &.incomplete {
+    background-color: $color-secondary-dark;
+  }
 
-    &.under_review {
-      background-color: $color-gold;
-      color: $color-base;
-    }
+  &.under_review {
+    background-color: $color-gold;
+    color: $color-base;
+  }
 
-    &.design_complete {
-      background-color: $color-cool-blue-lighter;
-      color: $color-base;
-    }
+  &.design_complete {
+    background-color: $color-cool-blue-lighter;
+    color: $color-base;
+  }
 
-    &.available {
-      background-color: $color-green-lighter;
-      color: $color-base;
-    }
+  &.available {
+    background-color: $color-green-lighter;
+    color: $color-base;
   }
 }
 
@@ -1057,8 +1057,9 @@ $font-light: 300;
 }
 
 // For the shell demonstration we need to account for the fixed header of the site
-.shell .usajobs-shell {
-  padding-top: 3rem;
+.shell .usajobs-shell,
+.grid .usajobs-shell {
+  padding-top: 2.3rem;
 
   @include media(850px) {
     padding-top: 8rem;

@@ -31,7 +31,7 @@ $figure-height: $thumbnail-img-height + rem(2px) + 2rem; // 1px border + 1 rem p
   &__figure {
     position: relative;
     padding: $size-S;
-    max-height: $figure-height;
+    height: $figure-height;
     overflow: hidden;
     background-color: $color-white;
 
@@ -49,6 +49,7 @@ $figure-height: $thumbnail-img-height + rem(2px) + 2rem; // 1px border + 1 rem p
   }
 
   &__title,
+  &__type,
   &__date {
     margin: 0;
   }

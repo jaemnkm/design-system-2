@@ -441,26 +441,26 @@ html {
   margin-top: 1.5em;
 }
 
-.styleguide-content .maturity {
+.maturity {
   text-decoration: none;
   color: #ffffff;
 }
 
-.styleguide-content .maturity.incomplete {
+.maturity.incomplete {
   background-color: #cd2026;
 }
 
-.styleguide-content .maturity.under_review {
+.maturity.under_review {
   background-color: #fdb81e;
   color: #212121;
 }
 
-.styleguide-content .maturity.design_complete {
+.maturity.design_complete {
   background-color: #8ba6ca;
   color: #212121;
 }
 
-.styleguide-content .maturity.available {
+.maturity.available {
   background-color: #94bfa2;
   color: #212121;
 }
@@ -1043,12 +1043,14 @@ code[class*="language-"], pre[class*="language-"] {
   display: none;
 }
 
-.shell .usajobs-shell {
-  padding-top: 3rem;
+.shell .usajobs-shell,
+.grid .usajobs-shell {
+  padding-top: 2.3rem;
 }
 
 @media screen and (min-width: 850px) {
-  .shell .usajobs-shell {
+  .shell .usajobs-shell,
+  .grid .usajobs-shell {
     padding-top: 8rem;
   }
 }

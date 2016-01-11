@@ -1,12 +1,16 @@
 ---
-layout: styleguide
+layout: shell
 title: Grid
 lead:  A responsive grid, with a sensible number of breakpoints, provides structure for site content.
 ---
 
-<a href="{{ site.baseurl }}/getting-started/#maturity" class="usa-label maturity design_complete">
-  Design Complete
-</a>
+<div class="usajobs-grid">
+  <div class="usa-width-one-whole">
+    <p>
+      <a href="{{ site.baseurl }}/getting-started/#maturity" class="usa-label maturity design_complete">Design Complete</a>
+    </p>
+  </div>
+</div>
 
 <div class="preview preview-no_border">
   <div class="usajobs-grid usa-grid-example usa-grid-example-blank">
@@ -50,7 +54,11 @@ lead:  A responsive grid, with a sensible number of breakpoints, provides struct
     <div class="usa-width-one-twelfth">1/12</div>
   </div>
 
-  <h2 class="usa-heading">Grid Examples</h2>
+  <div class="usajobs-grid">
+    <div class="usa-width-one-whole">
+      <h2 class="usa-heading">Grid Examples</h2>
+    </div>
+  </div>
   <div class="usajobs-grid usa-grid-example usajobs-grid-text">
     <div class="usa-width-one-half">
       <h3>One Half</h3>
@@ -117,72 +125,75 @@ lead:  A responsive grid, with a sensible number of breakpoints, provides struct
       <p>Washington, D.C. is the capital of the United States, bordered by the states of Maryland and Virginia. Formally known as the District of Columbia, it is also commonly referred to as "Washington", "the District", or simply "D.C."</p>
     </div>
   </div>
-
 </div>
 
-<div class="usa-accordion-bordered usa-accordion-docs">
-  <button class="usa-button-unstyled usa-accordion-button"
-      aria-expanded="true" aria-controls="collapsible-0">
-    Documentation
-  </button>
-  <div id="collapsible-0" aria-hidden="false" class="usa-accordion-content">
-    <h4 class="usa-heading">Implementation</h4>
-    <p>
-      To use the grid, wrap each grid row in a <code>&lt;div&gt;</code> with the <code>usajobs-grid</code> class. To use a grid without padding on the right and left, use the <code>usajobs-grid-full</code> class instead.
-    </p>
-    <p>
-      In order to migrate from the Bootstrap system currently in use we are temporarily relying on the breakpoints of that system. Future designs will add the U.S. Web Design Standard breakpoints. We use t-shirt sizes to track and discuss each breakpoint. At certain breakpoints the grid changes the overall number of columns giving us more finite control as the viewport expands.
-    </p>
-    <table>
-      <caption>Breakpoints</caption>
-      <thead>
-        <tr>
-          <th>Name</th>
-          <th>Size</th>
-          <th>Columns</th>
-          <th>Description</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>SM</td><td>30em/480px</td><td>2</td><td>Future BP, USDS standard</td>
-        </tr>
-        <tr>
-          <td>M</td><td>37.5em/600px</td><td>6</td><td>Future BP, USDS standard</td>
-        </tr>
-        <tr>
-          <td>ML</td><td>48em/768px</td><td>6</td><td>Temporary to atdgn with current BP</td>
-        </tr>
-        <tr>
-          <td>MLL</td><td>62em/992px</td><td>12</td><td>Temporary to atdgn with current BP</td>
-        </tr>
-        <tr>
-          <td>L</td><td>64em/1024px</td><td>12</td><td>Future BP, USAJOBS proposed</td>
-        </tr>
-        <tr>
-          <td>XL</td><td>75em/1200px</td><td>12</td><td>USDS standard, atdgns with current BP</td>
-        </tr>
-        <tr>
-          <td>XXL</td><td>120em/1920px</td><td>12</td><td>Future BP, USAJOBS proposed</td>
-        </tr>
-      </tbody>
-    </table>
+<div class="usajobs-grid">
+  <div class="usa-width-one-whole">
+    <div class="usa-accordion-bordered usa-accordion-docs">
+      <button class="usa-button-unstyled usa-accordion-button"
+          aria-expanded="true" aria-controls="collapsible-0">
+        Documentation
+      </button>
+      <div id="collapsible-0" aria-hidden="false" class="usa-accordion-content">
+        <h4 class="usa-heading">Implementation</h4>
+        <p>
+          To use the grid, wrap each grid row in a <code>&lt;div&gt;</code> with the <code>usajobs-grid</code> class. To use a grid without padding on the right and left, use the <code>usajobs-grid-full</code> class instead.
+        </p>
+        <p>
+          In order to migrate from the Bootstrap system currently in use we are temporarily relying on the breakpoints of that system. Future designs will add the U.S. Web Design Standard breakpoints. We use t-shirt sizes to track and discuss each breakpoint. At certain breakpoints the grid changes the overall number of columns giving us more finite control as the viewport expands.
+        </p>
+        <table>
+          <caption>Breakpoints</caption>
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Size</th>
+              <th>Columns</th>
+              <th>Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>SM</td><td>30em/480px</td><td>2</td><td>Future BP, USDS standard</td>
+            </tr>
+            <tr>
+              <td>M</td><td>37.5em/600px</td><td>6</td><td>Future BP, USDS standard</td>
+            </tr>
+            <tr>
+              <td>ML</td><td>48em/768px</td><td>6</td><td>Temporary to align with current BP</td>
+            </tr>
+            <tr>
+              <td>MLL</td><td>62em/992px</td><td>12</td><td>Temporary to align with current BP</td>
+            </tr>
+            <tr>
+              <td>L</td><td>64em/1024px</td><td>12</td><td>Future BP, USAJOBS proposed</td>
+            </tr>
+            <tr>
+              <td>XL</td><td>75em/1200px</td><td>12</td><td>USDS standard, align with current BP</td>
+            </tr>
+            <tr>
+              <td>XXL</td><td>120em/1920px</td><td>12</td><td>Future BP, USAJOBS proposed</td>
+            </tr>
+          </tbody>
+        </table>
 
-    <h4 class="usa-heading">Accessibility</h4>
-    <h5>When to use</h5>
-    <ul class="usa-content-list">
-      <li>The U.S. Web Design Standards call for the ability to increase the text size of the page by up to 200 percent without breaking the layout. We add that the layout must also not break with a reduction in size to 75% of the base layout.</li>
-    </ul>
+        <h4 class="usa-heading">Accessibility</h4>
+        <h5>When to use</h5>
+        <ul class="usa-content-list">
+          <li>The U.S. Web Design Standards call for the ability to increase the text size of the page by up to 200 percent without breaking the layout. We add that the layout must also not break with a reduction in size to 75% of the base layout.</li>
+        </ul>
 
-    <h4 class="usa-heading">Usability</h4>
-    <h5>When to use</h5>
-    <ul class="usa-content-list">
-      <li>Use the grid as much as possible. When deviating from the grid, have a clear reason for doing so and document that reason in the appropriate places (in code).</li>
-    </ul>
+        <h4 class="usa-heading">Usability</h4>
+        <h5>When to use</h5>
+        <ul class="usa-content-list">
+          <li>Use the grid as much as possible. When deviating from the grid, have a clear reason for doing so and document that reason in the appropriate places (in code).</li>
+        </ul>
 
-    <h5>When to consider something else</h5>
-    <ul class="usa-content-list">
-      <li>Avoid mixing this grid with other grid systems on the same page.</li>
-    </ul>
+        <h5>When to consider something else</h5>
+        <ul class="usa-content-list">
+          <li>Avoid mixing this grid with other grid systems on the same page.</li>
+        </ul>
+      </div>
+    </div>
   </div>
 </div>
