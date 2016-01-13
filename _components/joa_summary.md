@@ -2,7 +2,7 @@
 layout: styleguide
 type: component
 title: JOA Summary
-lead: Summary of the Job Offer Announcement (JOA)
+lead: Summary of the Job Opportunity Announcement (JOA)
 ---
 
 <a href="{{ site.baseurl }}/getting-started/#maturity" class="usa-label maturity design_complete">
