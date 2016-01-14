@@ -113,8 +113,8 @@ lead: A way to upload and view documents.
           </span>
         </label>
       </div>
-    </form>
-  </div>
+    </div>
+  </form>
 
   <h6 class="usa-heading-alt">Add</h6>
   <div class="usajobs-document usajobs-document--add" data-object="document" data-state="is-selectable">
