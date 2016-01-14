@@ -197,3 +197,55 @@ lead:  A responsive grid, with a sensible number of breakpoints, provides struct
     </div>
   </div>
 </div>
+
+<div class="usajobs-grid">
+  <div class="usa-width-one-whole">
+    <h2>Transitional Grid</h2>
+    <p>
+      In order to transition from Bootstrap to our new grid system we've included classes that will map Bootstrap's grid to the Neat grid.
+    </p>
+  </div>
+</div>
+
+<div class="preview preview-no_border">
+  <div class="container">
+    <div class="row usa-grid-example usa-grid-example-blank">
+      <div class="col-md-1">.col-md-1</div>
+      <div class="col-md-1">.col-md-1</div>
+      <div class="col-md-1">.col-md-1</div>
+      <div class="col-md-1">.col-md-1</div>
+      <div class="col-md-1">.col-md-1</div>
+      <div class="col-md-1">.col-md-1</div>
+      <div class="col-md-1">.col-md-1</div>
+      <div class="col-md-1">.col-md-1</div>
+      <div class="col-md-1">.col-md-1</div>
+      <div class="col-md-1">.col-md-1</div>
+      <div class="col-md-1">.col-md-1</div>
+      <div class="col-md-1">.col-md-1</div>
+    </div>
+    <div class="row usa-grid-example usa-grid-example-blank">
+      <div class="col-md-8">.col-md-8</div>
+      <div class="col-md-4">.col-md-4</div>
+    </div>
+    <div class="row usa-grid-example usa-grid-example-blank">
+      <div class="col-md-4">.col-md-4</div>
+      <div class="col-md-4">.col-md-4</div>
+      <div class="col-md-4">.col-md-4</div>
+    </div>
+    <div class="row usa-grid-example usa-grid-example-blank">
+      <div class="col-md-6">.col-md-6</div>
+      <div class="col-md-6">.col-md-6</div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row usa-grid-example usa-grid-example-blank">
+      <div class="col-xs-12 col-sm-6 col-md-8">.col-xs-12 .col-sm-6 .col-md-8</div>
+      <div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
+    </div>
+    <div class="row usa-grid-example usa-grid-example-blank">
+      <div class="col-xs-6 col-sm-4">.col-xs-6 .col-sm-4</div>
+      <div class="col-xs-6 col-sm-4">.col-xs-6 .col-sm-4</div>
+      <div class="col-xs-6 col-sm-4">.col-xs-6 .col-sm-4</div>
+    </div>
+  </div>
+</div>

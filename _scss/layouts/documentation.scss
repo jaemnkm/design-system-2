@@ -433,7 +433,8 @@ $section-padding:   7.2rem;
   }
 }
 
-.main-content .maturity {
+.main-content .maturity,
+.usajobs-content .maturity {
   text-decoration: none;
   color: $color-white;
 
