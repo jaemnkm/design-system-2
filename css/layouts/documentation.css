@@ -441,26 +441,26 @@ html {
   margin-top: 1.5em;
 }
 
-.maturity {
+.main-content .maturity {
   text-decoration: none;
   color: #ffffff;
 }
 
-.maturity.incomplete {
+.main-content .maturity.incomplete {
   background-color: #cd2026;
 }
 
-.maturity.under_review {
+.main-content .maturity.under_review {
   background-color: #fdb81e;
   color: #212121;
 }
 
-.maturity.design_complete {
+.main-content .maturity.design_complete {
   background-color: #8ba6ca;
   color: #212121;
 }
 
-.maturity.available {
+.main-content .maturity.available {
   background-color: #94bfa2;
   color: #212121;
 }
