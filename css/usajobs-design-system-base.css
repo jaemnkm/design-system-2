@@ -4958,7 +4958,6 @@ fieldset {
   src: url("../fonts/merriweather-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/merriweather-regular-webfont.woff2") format("woff2"), url("../fonts/merriweather-regular-webfont.woff") format("woff"), url("../fonts/merriweather-regular-webfont.ttf") format("truetype"), url("../fonts/merriweather-regular-webfont.svg#source_sans_proitalic") format("svg");
 }
 
-.hidden,
 .usajobs-assistive-text {
   position: absolute !important;
   margin: -1px !important;

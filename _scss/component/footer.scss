@@ -1,0 +1,25 @@
+// Footer
+
+@import 'lib/bourbon/bourbon';
+@import 'lib/neat/neat';
+@import "font-awesome/font-awesome";
+@import 'core/variables';
+@import 'base/variables';
+@import 'base/utilities';
+@import 'base/breakpoints';
+
+.usajobs-footer {
+  a {
+    text-decoration: none;
+  }
+
+  &__note {
+    font-size: $small-font-size;
+  }
+
+  &__subsection {
+    margin-left: $size-S;
+    font-size: $small-font-size;
+  }
+
+}
