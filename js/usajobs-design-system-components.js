@@ -598,6 +598,21 @@ $nav.on('nav.menu.slide-close', function(event, opts) {
   });
 });
 
+$nav.on('nav.menu.search-toggle', function(event, opts) {
+  var $parent = opts.el.parent(),
+    parent_state = $parent.attr('data-state'),
+    $menu = $nav.find($parent.attr('data-target'));
+
+  event.preventDefault();
+
+  if (parent_state === 'is-closed') {
+    $nav.trigger('nav.menu.slide-open', { parent: $parent, menu: $menu });
+  } else if (parent_state === 'is-open') {
+    $nav.trigger('nav.menu.slide-close', { parent: $parent, menu: $menu });
+  }
+});
+
+
 // Notification
 
 var $notification = $('[data-object="notification"]'),
