@@ -46,8 +46,8 @@ lead: USAJOBS uses a large footer that incorporates navigation.
           <ul class="usa-unstyled-list usa-width-one-fourth usa-footer-primary-content">
             <h4 class="usa-footer-primary-link">Working for the Government</h4>
             <li><a href="https://help.usajobs.gov/index.php/Pay_and_Benefits">Benefits</a></li>
-            <li><a href="#unique-hiring-paths">Unique Hiring Paths</a></li>
             <li><a href="https://help.usajobs.gov/index.php/Pay_and_Benefits">Salary</a></li>
+            <li><a href="#unique-hiring-paths">Unique Hiring Paths</a></li>
             <!-- ul class="usa-unstyled-list usajobs-footer__subsection">
               <li><a href="#federal_employees">Federal Employees</a></li>
               <li><a href="#former_overseas_employees">Former overseas employees</a></li>
