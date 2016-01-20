@@ -66,7 +66,7 @@ lead: USAJOBS uses a large footer that incorporates navigation.
     <div class="usa-footer-secondary_section usa-footer-big-secondary-section">
       <div class="usa-grid">
         <div class="usa-footer-logo usa-width-one-half">
-          <img class="usa-footer-logo-img" src="/img/USAJOBS_logo.png" alt="USAJOBS logo image">
+          <img class="usa-footer-logo-img" src="{{site.baseurl}}/img/USAJOBS_logo.png" alt="USAJOBS logo image">
           <!-- h3 class="usa-footer-logo-heading">USAJOBS</h3 -->
           <p class="usajobs-footer__note">
             USAJOBS is a <a href="https://www.opm.gov">United States Office of Personnel Management website</a>.
@@ -78,13 +78,13 @@ lead: USAJOBS uses a large footer that incorporates navigation.
             <a href="https://www.facebook.com/USAJOBS" class="usajobs-social-link">
               <svg width="26" height="39" role="img" aria-label="Facebook">
                 <title>Facebook</title>
-                <image xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/social-icons/svg/facebook25.svg" src="/img/social-icons/png/facebook25.png" width="26" height="39"></image>
+                <image xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{{site.baseurl}}/img/social-icons/svg/facebook25.svg" src="{{site.baseurl}}/img/social-icons/png/facebook25.png" width="26" height="39"></image>
               </svg>
             </a>
             <a href="https://twitter.com/USAJOBS" class="usajobs-social-link">            
               <svg width="26" height="39" role="img" aria-label="Twitter">
                 <title>Twitter</title>
-                <image xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/social-icons/svg/twitter16.svg" src="/img/social-icons/png/twitter16.png" width="26" height="39"></image>
+                <image xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{{site.baseurl}}/img/social-icons/svg/twitter16.svg" src="{{site.baseurl}}/img/social-icons/png/twitter16.png" width="26" height="39"></image>
               </svg>
             </a>
             <a href="https://www.youtube.com/user/usajobsapp" class="usajobs-social-link">
