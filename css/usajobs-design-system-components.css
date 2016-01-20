@@ -2677,21 +2677,9 @@ ul.usajobs-nav__secondary-menu li a {
   margin-right: 0;
 }
 
-@media screen and (min-width: 48em) {
-  .usajobs-nav--v2__brand-container {
-    float: left;
-    display: block;
-    margin-right: 2.3576515979%;
-    width: 48.821174201%;
-  }
-  .usajobs-nav--v2__brand-container:last-child {
-    margin-right: 0;
-  }
-}
-
 .usajobs-nav--v2__brand {
   display: block;
-  padding: 1.5rem 0 0 1.5rem;
+  padding: 1.5rem 0 1rem 1.5rem;
   line-height: 1;
 }
 
@@ -2704,7 +2692,7 @@ ul.usajobs-nav__secondary-menu li a {
 @media screen and (min-width: 62em) {
   .usajobs-nav--v2__brand {
     padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
+    padding-bottom: 1rem;
   }
 }
 
@@ -2714,6 +2702,7 @@ ul.usajobs-nav__secondary-menu li a {
 
 @media screen and (min-width: 62em) {
   .usajobs-nav--v2__brand .logo {
+    max-height: inherit;
     max-width: 18rem;
   }
 }
@@ -2732,14 +2721,7 @@ ul.usajobs-nav__secondary-menu li a {
 
 @media screen and (min-width: 62em) {
   .usajobs-nav--v2__menu {
-    float: left;
-    display: block;
-    margin-right: 2.3576515979%;
-    width: 48.821174201%;
     height: auto;
-    margin-right: 0;
-  }
-  .usajobs-nav--v2__menu:last-child {
     margin-right: 0;
   }
 }
@@ -2761,7 +2743,7 @@ ul.usajobs-nav__secondary-menu li a {
 
 .usajobs-nav--v2__menu-container a {
   display: block;
-  padding: 0.75rem 1rem;
+  padding: 1.275rem 1rem;
   line-height: 1;
 }
 
@@ -2774,8 +2756,7 @@ ul.usajobs-nav__secondary-menu li a {
 
 @media screen and (min-width: 62em) {
   .usajobs-nav--v2__menu-container a {
-    padding-left: 3rem;
-    padding-right: 3rem;
+    padding: 1.625rem 3rem;
   }
 }
 
@@ -2809,7 +2790,7 @@ ul.usajobs-nav__secondary-menu li a {
 }
 
 .usajobs-nav--v2__menu-search[data-state="is-open"] {
-  background-color: #205493;
+  background-color: #112e51;
 }
 
 .usajobs-nav--v2__menu-search[data-state="is-open"] .usajobs-nav--v2__section-link,
@@ -2822,7 +2803,7 @@ ul.usajobs-nav__secondary-menu li a {
   margin-left: auto;
   margin-right: auto;
   padding: 0 1.5rem 3rem;
-  background-color: #205493;
+  background-color: #112e51;
 }
 
 .usajobs-nav--v2__search::after {

@@ -340,8 +340,9 @@ ul.usajobs-nav__secondary-menu {
 }
 
 .usajobs-nav--v2 {
-  $logo_height-S: 32px;
-  $logo_height-L: 78px;
+  $logo_height-S: 64px;
+  $logo_height-L: 71px;
+  $nav_item_height: 38.5px;
 
   position: relative;
   background-color: $color-white;
@@ -370,15 +371,11 @@ ul.usajobs-nav__secondary-menu {
   &__brand-container {
     display: block;
     @include span-columns(2 of 4);
-
-    @include media($ML) {
-      @include span-columns(6 of 12);
-    }
   }
 
   &__brand {
     display: block;
-    padding: $size-default 0 0 $size-default;
+    padding: $size-default 0 $size-S $size-default;
     line-height: 1;
 
     @include media($ML) {
@@ -387,13 +384,14 @@ ul.usajobs-nav__secondary-menu {
 
     @include media($MLL) {
       padding-top: $size-default;
-      padding-bottom: $size-default;
+      padding-bottom: $size-S;
     }
 
     .logo {
       max-height: 35px;
 
       @include media($MLL) {
+        max-height: inherit;
         max-width: rem(180px);
       }
     }
@@ -404,7 +402,6 @@ ul.usajobs-nav__secondary-menu {
     @include omega();
 
     @include media($MLL) {
-      @include span-columns(6 of 12);
       height: auto;
       margin-right: 0;
     }
@@ -427,16 +424,16 @@ ul.usajobs-nav__secondary-menu {
 
     a {
       display: block;
-      padding: rem(($logo_height-S - 17px) /2) $size-S;
+      padding: rem(($logo_height-S - $nav_item_height) /2) $size-S;
       line-height: 1;
 
       @include media($SM) {
         padding-left: $size-default;
         padding-right: $size-default;
       }
+
       @include media($MLL) {
-        padding-left: $size-M;
-        padding-right: $size-M;
+        padding: rem(($logo_height-L - $nav_item_height) /2) $size-M;
       }
     }
 
@@ -470,7 +467,7 @@ ul.usajobs-nav__secondary-menu {
 
   &__menu-search {
     &[data-state="is-open"] {
-      background-color: $color-primary-darker;
+      background-color: $color-primary-darkest;
 
       .usajobs-nav--v2__section-link,
       .usajobs-nav--v2__section-link:visited {
@@ -482,7 +479,7 @@ ul.usajobs-nav__secondary-menu {
   &__search {
     @include outer-container();
     padding: 0 $size-default $size-M;
-    background-color: $color-primary-darker;
+    background-color: $color-primary-darkest;
 
     @include media($M) {
       padding-bottom: $size-S;
