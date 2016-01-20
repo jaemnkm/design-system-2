@@ -90,7 +90,7 @@ lead: USAJOBS uses a large footer that incorporates navigation.
             <a href="https://www.youtube.com/user/usajobsapp" class="usajobs-social-link">
               <svg width="26" height="39" role="img" aria-label="YouTube">
                 <title>YouTube</title>
-                <image xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/social-icons/svg/youtube15.svg" src="{{site.baseurl}}/img/social-icons/png/youtube15.png" width="26" height="39"></image>
+                <image xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{{site.baseurl}}/img/social-icons/svg/youtube15.svg" src="{{site.baseurl}}/img/social-icons/png/youtube15.png" width="26" height="39"></image>
               </svg>
             </a>
           </div>
