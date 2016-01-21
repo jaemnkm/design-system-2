@@ -24,6 +24,7 @@ $logo_height-L: 78px;
   &__body {
     @include outer-container();
     max-width: $site-max-width;
+    border-bottom: 1px solid $color-gray-lighter;
 
     a {
       // Another override of the base styles just to be certain we don't have
@@ -355,6 +356,7 @@ ul.usajobs-nav__secondary-menu {
   &__body {
     @include outer-container();
     max-width: $site-max-width;
+    border-bottom: 1px solid $color-gray-lighter;
 
     a {
       // Another override of the base styles just to be certain we don't have
@@ -533,6 +535,5 @@ ul.usajobs-nav__secondary-menu {
       margin-top: $size-S;
     }
   }
-
 }
 
