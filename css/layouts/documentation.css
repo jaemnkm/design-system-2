@@ -1067,10 +1067,15 @@ code[class*="language-"], pre[class*="language-"] {
   padding: 0;
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 62em) {
   .navigation .preview {
     min-width: 99.2rem;
   }
+}
+
+.navigation .preview .usajobs-nav,
+.navigation .preview .usajobs-nav--v2 {
+  margin-bottom: 1rem;
 }
 
 /*# sourceMappingURL=documentation.css.map */
