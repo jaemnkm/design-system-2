@@ -188,23 +188,20 @@ lead: USAJOBS uses a large footer that incorporates navigation.
 
         <div class="usa-footer-contact-links usa-width-one-half">
           <div class="usa-social-links">
+            <a href="https://plus.google.com/+usajobs" class="usajobs-social-link">
+              <span class="fa fa-google-plus" aria-label="Google Plus"></span>
+            </a>
             <a href="https://www.facebook.com/USAJOBS" class="usajobs-social-link">
-              <svg width="26" height="39" role="img" aria-label="Facebook">
-                <title>Facebook</title>
-                <image xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{{site.baseurl}}/img/social-icons/svg/facebook25.svg" src="{{site.baseurl}}/img/social-icons/png/facebook25.png" width="26" height="39"></image>
-              </svg>
+              <span class="fa fa-facebook" aria-label="Facebook"></span>
+            </a>
+            <a href="https://www.linkedin.com/company/usajobs" class="usajobs-social-link">
+              <span class="fa fa-linkedin" aria-label="LinkedIn"></span>
             </a>
             <a href="https://twitter.com/USAJOBS" class="usajobs-social-link">            
-              <svg width="26" height="39" role="img" aria-label="Twitter">
-                <title>Twitter</title>
-                <image xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{{site.baseurl}}/img/social-icons/svg/twitter16.svg" src="{{site.baseurl}}/img/social-icons/png/twitter16.png" width="26" height="39"></image>
-              </svg>
+              <span class="fa fa-twitter" aria-label="Twitter"></span>
             </a>
             <a href="https://www.youtube.com/user/usajobsapp" class="usajobs-social-link">
-              <svg width="26" height="39" role="img" aria-label="YouTube">
-                <title>YouTube</title>
-                <image xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{{site.baseurl}}/img/social-icons/svg/youtube15.svg" src="{{site.baseurl}}/img/social-icons/png/youtube15.png" width="26" height="39"></image>
-              </svg>
+              <span class="fa fa-youtube" aria-label="You Tube"></span>
             </a>
           </div>
 

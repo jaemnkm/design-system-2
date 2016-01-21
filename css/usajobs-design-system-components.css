@@ -5094,8 +5094,8 @@ html {
   margin-bottom: 1.5rem;
 }
 
-/*
 .usajobs-footer--v2 {
+  /*
   .usa-grid-full,
   .usa-footer-primary-section {
     background-color: $color-gray-light;
@@ -5110,10 +5110,8 @@ html {
     text-decoration: none;
     color: $color-primary;
   }
-
-  .usajobs-social-link {
-    text-decoration: none;
-  }
+  */
+  /*
 
   &__note {
     font-size: $small-font-size;
@@ -5137,8 +5135,20 @@ html {
     font-size: $small-font-size;
     margin-bottom: $size-default;
   }
+  */
 }
-*/
+
+.usajobs-footer--v2 .usajobs-social-links {
+  vertical-align: top;
+}
+
+.usajobs-footer--v2 .usajobs-social-link,
+.usajobs-footer--v2 .usajobs-social-link:visited {
+  padding: 0.5rem 0.5rem 1rem;
+  color: #212121;
+  text-decoration: none;
+}
+
 html {
   box-sizing: border-box;
 }
