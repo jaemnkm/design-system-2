@@ -37,6 +37,7 @@
     width: rem(10px);
     height: rem(10px);
     margin-left: -#{rem(2px)};
+    margin-top: rem(6px);
     @include fa-icon();
     content: $fa-var-times;
     color: $color-white;

@@ -40,6 +40,9 @@ lead: USAJOBS has adopted a different visual style to our alerts that deviate fr
         Your demographic information will not be sent to the hiring manager responsible for this position. It is used solely for statistical purposes to assist the agency in the development of recruiting plans and to ensure the agency is reaching all segments of the population.
       </p>
     </div>
+    <button class="usajobs-alert__close" data-behavior="alert.close" >
+      <span class="usajobs-assistive-text">Close</span>
+    </button>
   </div>
 
   <h6 class="usa-heading-alt">Warning</h6>
@@ -58,6 +61,9 @@ lead: USAJOBS has adopted a different visual style to our alerts that deviate fr
         proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
       </p>
     </div>
+    <button class="usajobs-alert__close" data-behavior="alert.close" >
+      <span class="usajobs-assistive-text">Close</span>
+    </button>
   </div>
 
   <h6 class="usa-heading-alt">Error</h6>
@@ -76,6 +82,9 @@ lead: USAJOBS has adopted a different visual style to our alerts that deviate fr
         proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
       </p>
     </div>
+    <button class="usajobs-alert__close" data-behavior="alert.close" >
+      <span class="usajobs-assistive-text">Close</span>
+    </button>
   </div>
 </div>
 
