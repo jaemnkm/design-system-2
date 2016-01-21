@@ -9,7 +9,8 @@
 @import 'base/breakpoints';
 
 .usajobs-footer--v1,
-.usajobs-footer--v2 {
+.usajobs-footer--v2,
+.usajobs-footer--v3 {
   a {
     text-decoration: none;
 
@@ -28,27 +29,52 @@
 
   &__subsection {
     font-size: $small-font-size;
-    margin-bottom: $size-default;
+    margin-bottom: 0;
+
+    @include media($M) {
+      margin-bottom: $size-default;
+    }
   }
 }
 
-.usajobs-footer--v2 {
-  /*
-  .usa-grid-full,
-  .usa-footer-primary-section {
-    background-color: $color-gray-light;
+.usajobs-footer--v2,
+.usajobs-footer--v3 {
+  // Correcting for oddball borders
+  ul:last-child {
+    border-bottom: 0;
   }
 
   .usa-footer-secondary_section {
-    background-color: $color-primary-darkest;
+    border-top: 1px solid $color-base;
   }
 
-  a,
-  a:visited {
-    text-decoration: none;
-    color: $color-primary;
+  &__content-container {
+    @include media($M) {
+      @include span-columns(3);
+    }
+
+    @include media($MLL) {
+      float: none;
+      width: auto;
+      margin: 0;
+    }
   }
-  */
+
+  .usa-footer-primary-content {
+    @include media($MLL) {
+      @include span-columns(3, 12);
+    }
+  }
+
+  .usa-footer-primary-content:last-child.usajobs-footer--v2__account,
+  .usa-footer-primary-content:last-child.usajobs-footer--v3__account {
+    @include media($MLL) {
+      // grrr, the Neat grid automatically sets the last child to margin-right: 0
+      // given the way we have split the grid into 2 then 4 columns the work around
+      // is to hard code the margin-right
+      margin-right: 2.3576515979%;
+    }
+  }
 
   .usajobs-social-links {
     vertical-align: top;
@@ -60,30 +86,39 @@
     color: $color-base;
     text-decoration: none;
   }
+}
 
-  /*
+.usajobs-footer--v3 {
+  ul.usajobs-footer--v3__subsection-horizontal {
+    margin-top: $size-S;
+    margin-bottom: 0;
+    padding-bottom: 0;
 
-  &__note {
-    font-size: $small-font-size;
+    @include media($M) {
+      margin-bottom: $size-default;
+    }
 
-    a,
-    a:visited {
-      color: $color-white;
+    li {
+      @include media($M) {
+        display: inline-block;
+      }
+      line-height: 1;
+    }
+
+    li a {
+      display: block;
+      padding: $size-S $size-S $size-S 0;
+      font-size: $xsmall-font-size;
+
+      @include media($M) {
+        padding-left: $size-S;
+      }
+    }
+
+    li:first-child a {
+      @include media($M) {
+        padding-left: 0;
+      }
     }
   }
-
-  .usa-footer-primary-link {
-    // color: $color-white;
-  }
-
-  &__subsection-title {
-    // color: $color-white;
-    margin-top: $size-S;
-  }
-
-  &__subsection {
-    font-size: $small-font-size;
-    margin-bottom: $size-default;
-  }
-  */
 }
