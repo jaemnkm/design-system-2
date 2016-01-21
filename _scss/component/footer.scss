@@ -32,8 +32,8 @@
   }
 }
 
-/*
 .usajobs-footer--v2 {
+  /*
   .usa-grid-full,
   .usa-footer-primary-section {
     background-color: $color-gray-light;
@@ -48,10 +48,20 @@
     text-decoration: none;
     color: $color-primary;
   }
+  */
 
-  .usajobs-social-link {
+  .usajobs-social-links {
+    vertical-align: top;
+  }
+
+  .usajobs-social-link,
+  .usajobs-social-link:visited {
+    padding: $size-base $size-base $size-S;
+    color: $color-base;
     text-decoration: none;
   }
+
+  /*
 
   &__note {
     font-size: $small-font-size;
@@ -75,5 +85,5 @@
     font-size: $small-font-size;
     margin-bottom: $size-default;
   }
+  */
 }
-*/
