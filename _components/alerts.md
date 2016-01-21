@@ -82,9 +82,6 @@ lead: USAJOBS has adopted a different visual style to our alerts that deviate fr
         proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
       </p>
     </div>
-    <button class="usajobs-alert__close" data-behavior="alert.close" >
-      <span class="usajobs-assistive-text">Close</span>
-    </button>
   </div>
 </div>
 
@@ -94,7 +91,12 @@ lead: USAJOBS has adopted a different visual style to our alerts that deviate fr
     Documentation
   </button>
   <div id="collapsible-0" aria-hidden="false" class="usa-accordion-content">
-    <p>Refer to the <a href="https://playbook.cio.gov/designstandards/alerts/">U.S. Web Design Standards on alerts</a>.
+    <p>Refer to the <a href="https://playbook.cio.gov/designstandards/alerts/">U.S. Web Design Standards on alerts</a> for accessibility and usability guidelines. We have one addendum:</p>
+
+    <h4 class="usa-heading">Usability</h4>
+    <ul class="usa-content-list">
+      <li>The Standards state: "Allow a user to dismiss a notification wherever appropriate." We believe it is appropriate to globally state that all alerts below the level of error should be dismissible. Errors should not be dismissible because they should only be present when the user cannot continue and/or is required to take action.</li>
+    </ul>
   </div>
 </div>
 
