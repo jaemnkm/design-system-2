@@ -2,7 +2,7 @@
 layout: styleguide
 type: component
 title: Form controls
-lead: USAJOBS adds or claifies design for contextual help, required/optional field handling, and legend.
+lead: USAJOBS adds or clarifies design for contextual help, required/optional field handling, and legend.
 ---
 
 <a href="{{ site.baseurl }}/getting-started/#maturity" class="usa-label maturity under_review">
