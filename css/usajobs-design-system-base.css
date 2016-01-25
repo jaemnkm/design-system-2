@@ -6665,6 +6665,28 @@ button:disabled,
   color: #cd2026;
 }
 
+.usajobs-form {
+  max-width: inherit;
+}
+
+.usajobs-form__legend {
+  display: block;
+  font-style: italic;
+  font-size: 1.7rem;
+  font-weight: normal;
+  color: #212121;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+@media screen and (min-width: 37.5em) {
+  .usajobs-form__legend {
+    display: inline-block;
+    float: right;
+  }
+}
+
 .usajobs-form__help-brief {
   margin-top: 0.5rem;
   font-size: 1.4rem;
