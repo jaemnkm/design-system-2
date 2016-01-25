@@ -1,0 +1,21 @@
+// Form
+
+.usajobs-form {
+  &__help-brief {
+    margin-top: $size-base;
+    font-size: $small-font-size;
+  }
+
+  &__help-detailed {
+    margin-top: $size-default;
+    max-width: $input-max-width;
+
+    .usajobs-form__help-detailed-trigger {
+      background-color: $color-primary-alt;
+
+      &:hover {
+        background-color: $color-primary-alt-dark;
+      }
+    }
+  }
+}

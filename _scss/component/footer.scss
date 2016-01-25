@@ -10,7 +10,8 @@
 
 .usajobs-footer--v1,
 .usajobs-footer--v2,
-.usajobs-footer--v3 {
+.usajobs-footer--v3,
+.usajobs-footer--v4 {
   a {
     text-decoration: none;
 
@@ -38,7 +39,8 @@
 }
 
 .usajobs-footer--v2,
-.usajobs-footer--v3 {
+.usajobs-footer--v3,
+.usajobs-footer--v4 {
   // Correcting for oddball borders
   ul:last-child {
     border-bottom: 0;
@@ -88,7 +90,8 @@
   }
 }
 
-.usajobs-footer--v3 {
+.usajobs-footer--v3,
+.usajobs-footer--v4 {
   ul.usajobs-footer--v3__subsection-horizontal {
     margin-top: $size-S;
     margin-bottom: 0;
@@ -119,6 +122,19 @@
       @include media($M) {
         padding-left: 0;
       }
+    }
+  }
+}
+
+.usajobs-footer--v4 {
+  &__subsection-title {
+    a {
+      color: $color-base;
+      font-weight: bold;
+    }
+
+    a:hover {
+      text-decoration: underline;
     }
   }
 }
