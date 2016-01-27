@@ -5074,16 +5074,14 @@ html {
 }
 
 .usajobs-footer--v1 a,
-.usajobs-footer--v2 a,
-.usajobs-footer--v3 a,
-.usajobs-footer--v4 a {
-  text-decoration: none;
-}
-
 .usajobs-footer--v1 a:visited,
+.usajobs-footer--v2 a,
 .usajobs-footer--v2 a:visited,
+.usajobs-footer--v3 a,
 .usajobs-footer--v3 a:visited,
+.usajobs-footer--v4 a,
 .usajobs-footer--v4 a:visited {
+  text-decoration: none;
   color: #0071bc;
 }
 
