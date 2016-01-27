@@ -71,7 +71,7 @@ lead: USAJOBS uses a large footer that incorporates navigation.
           <img class="usa-footer-logo-img" src="{{site.baseurl}}/img/USAJOBS_logo.png" alt="USAJOBS logo image">
           <!-- h3 class="usa-footer-logo-heading">USAJOBS</h3 -->
           <p class="usajobs-footer__note">
-            USAJOBS is a <a href="https://www.opm.gov">United States Office of Personnel Management website</a>.
+            USAJOBS is a <a href="https://www.opm.gov">United States Office of Personnel Management</a> website.
           </p>
         </div>
 
@@ -194,7 +194,7 @@ lead: USAJOBS uses a large footer that incorporates navigation.
         <div class="usa-footer-logo usa-width-one-half">
           <img class="usa-footer-logo-img" src="{{site.baseurl}}/img/USAJOBS_logo.png" alt="USAJOBS logo image">
           <p class="usajobs-footer--v2__note">
-            USAJOBS is a <a href="https://www.opm.gov">United States Office of Personnel Management website</a>.
+            USAJOBS is a <a href="https://www.opm.gov">United States Office of Personnel Management</a> website.
           </p>
         </div>
 
@@ -306,7 +306,7 @@ lead: USAJOBS uses a large footer that incorporates navigation.
         <div class="usa-footer-logo usa-width-one-half">
           <img class="usa-footer-logo-img" src="{{site.baseurl}}/img/USAJOBS_logo.png" alt="USAJOBS logo image">
           <p class="usajobs-footer--v3__note">
-            USAJOBS is a <a href="https://www.opm.gov">United States Office of Personnel Management website</a>.
+            USAJOBS is a <a href="https://www.opm.gov">United States Office of Personnel Management</a> website.
           </p>
         </div>
 
@@ -439,7 +439,7 @@ lead: USAJOBS uses a large footer that incorporates navigation.
         <div class="usa-footer-logo usa-width-one-half">
           <img class="usa-footer-logo-img" src="{{site.baseurl}}/img/USAJOBS_logo.png" alt="USAJOBS logo image">
           <p class="usajobs-footer--v3__note">
-            USAJOBS is a <a href="https://www.opm.gov">United States Office of Personnel Management website</a>.
+            USAJOBS is a <a href="https://www.opm.gov">United States Office of Personnel Management</a> website.
           </p>
         </div>
 

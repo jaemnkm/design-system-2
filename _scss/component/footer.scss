@@ -12,12 +12,10 @@
 .usajobs-footer--v2,
 .usajobs-footer--v3,
 .usajobs-footer--v4 {
-  a {
+  a,
+  a:visited {
     text-decoration: none;
-
-    &:visited {
-      color: $color-primary;
-    }
+    color: $color-primary;
   }
 
   &__note {
