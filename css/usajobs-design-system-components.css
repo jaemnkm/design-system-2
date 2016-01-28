@@ -5083,47 +5083,64 @@ body {
   font-size: 17px !important;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1 {
   font-family: "Source Sans Pro", "Helvetica", "Arial", sans-serif;
-}
-
-h1,
-h2 {
+  font-weight: 700;
+  line-height: 1.3;
+  margin-bottom: 0.5rem;
+  margin-top: 1.5rem;
+  font-size: 44px;
+  font-size: 4.4rem;
   color: #112e51;
 }
 
-h1 {
-  font-size: 44px;
-  font-size: 4.4rem;
-  font-weight: 700;
-}
-
 h2 {
+  font-family: "Source Sans Pro", "Helvetica", "Arial", sans-serif;
+  font-weight: 700;
+  line-height: 1.3;
+  margin-bottom: 0.5rem;
+  margin-top: 1.5rem;
   font-size: 34px;
   font-size: 3.4rem;
-  font-weight: 700;
+  color: #112e51;
 }
 
 h3 {
+  font-family: "Source Sans Pro", "Helvetica", "Arial", sans-serif;
+  font-weight: 700;
+  line-height: 1.3;
+  margin-bottom: 0.5rem;
+  margin-top: 1.5rem;
   font-size: 24px;
   font-size: 2.4rem;
-  font-weight: 700;
 }
 
 h4 {
+  font-family: "Source Sans Pro", "Helvetica", "Arial", sans-serif;
+  font-weight: 700;
+  line-height: 1.3;
+  margin-bottom: 0.5rem;
+  margin-top: 1.5rem;
   font-size: 19px;
   font-size: 1.9rem;
-  font-weight: 700;
 }
 
 h5 {
+  font-family: "Source Sans Pro", "Helvetica", "Arial", sans-serif;
+  font-weight: 700;
+  line-height: 1.3;
+  margin-bottom: 0.5rem;
+  margin-top: 1.5rem;
   font-size: 16px;
   font-size: 1.6rem;
-  font-weight: 700;
 }
 
 h6 {
   font-family: "Source Sans Pro", "Helvetica", "Arial", sans-serif;
+  font-weight: 700;
+  line-height: 1.3;
+  margin-bottom: 0.5rem;
+  margin-top: 1.5rem;
   font-size: 13px;
   font-size: 1.3rem;
   font-weight: 400;
@@ -5142,7 +5159,13 @@ h6 {
 .usajobs-footer--v1 a:visited,
 .usajobs-footer--v2 a,
 .usajobs-footer--v2 a:visited {
+  display: block;
   text-decoration: none;
+}
+
+.usajobs-footer--v1 a:hover,
+.usajobs-footer--v2 a:hover {
+  text-decoration: underline;
 }
 
 .usajobs-footer--v1 .usa-footer-return-to-top a,
@@ -5157,9 +5180,13 @@ h6 {
 
 .usajobs-footer--v1 .usa-footer-primary-section .usa-footer-primary-content .usa-footer-primary-link,
 .usajobs-footer--v2 .usa-footer-primary-section .usa-footer-primary-content .usa-footer-primary-link {
+  font-family: "Source Sans Pro", "Helvetica", "Arial", sans-serif;
+  font-weight: 700;
+  line-height: 1.3;
+  margin-bottom: 0.5rem;
+  margin-top: 1.5rem;
   font-size: 19px;
   font-size: 1.9rem;
-  font-weight: 700;
   margin-left: 0;
 }
 
@@ -5198,14 +5225,17 @@ h6 {
   padding-bottom: 1.5rem;
 }
 
-.usajobs-footer--v1 .usa-footer-primary-content .usajobs-footer--v1__subsection-title,
-.usajobs-footer--v1 .usa-footer-primary-content .usajobs-footer--v2__subsection-title,
-.usajobs-footer--v2 .usa-footer-primary-content .usajobs-footer--v1__subsection-title,
-.usajobs-footer--v2 .usa-footer-primary-content .usajobs-footer--v2__subsection-title {
-  margin-top: 1rem;
+.usajobs-footer--v1 .usa-footer-primary-content .usajobs-footer--v1__subsection-title a,
+.usajobs-footer--v1 .usa-footer-primary-content .usajobs-footer--v2__subsection-title a,
+.usajobs-footer--v2 .usa-footer-primary-content .usajobs-footer--v1__subsection-title a,
+.usajobs-footer--v2 .usa-footer-primary-content .usajobs-footer--v2__subsection-title a {
+  font-family: "Source Sans Pro", "Helvetica", "Arial", sans-serif;
+  font-weight: 700;
+  line-height: 1.3;
+  margin-bottom: 0.5rem;
+  margin-top: 1.5rem;
   font-size: 16px;
   font-size: 1.6rem;
-  font-weight: 700;
 }
 
 @media screen and (min-width: 62em) {
@@ -5223,11 +5253,16 @@ h6 {
   margin-bottom: 0;
 }
 
-@media screen and (min-width: 37.5em) {
-  .usajobs-footer--v1__subsection,
-  .usajobs-footer--v2__subsection {
-    margin-bottom: 1.5rem;
-  }
+.usajobs-footer--v1__subsection-title a,
+.usajobs-footer--v1__subsection-title a:visited,
+.usajobs-footer--v2__subsection-title a,
+.usajobs-footer--v2__subsection-title a:visited {
+  font-weight: bold;
+}
+
+.usajobs-footer--v1__subsection-title a:hover,
+.usajobs-footer--v2__subsection-title a:hover {
+  text-decoration: underline;
 }
 
 .usajobs-footer--v1 .usa-footer-secondary_section,
@@ -5241,14 +5276,14 @@ h6 {
 .usajobs-footer--v2 .usa-footer-secondary_section a,
 .usajobs-footer--v2 .usa-footer-secondary_section a:visited {
   color: #ffffff;
-  text-decoration: underline;
 }
 
 .usajobs-footer--v1 .usa-footer-secondary_section .usajobs-social-link,
 .usajobs-footer--v1 .usa-footer-secondary_section .usajobs-social-link:visited,
 .usajobs-footer--v2 .usa-footer-secondary_section .usajobs-social-link,
 .usajobs-footer--v2 .usa-footer-secondary_section .usajobs-social-link:visited {
-  padding: 1rem 0.5rem 1rem;
+  display: inline-block;
+  padding: 0 0.5rem 1rem;
   color: #ffffff;
   text-decoration: none;
   font-size: 24px;
@@ -5258,6 +5293,11 @@ h6 {
 .usajobs-footer--v2__note {
   color: #ffffff;
   font-size: 1.4rem;
+}
+
+.usajobs-footer--v1__note a,
+.usajobs-footer--v2__note a {
+  display: inline;
 }
 
 .usajobs-footer--v1 ul:last-child,
@@ -5389,11 +5429,6 @@ h6 {
 .usajobs-footer--v2__subsection-title a,
 .usajobs-footer--v2__subsection-title a:visited {
   color: #212121;
-  font-weight: bold;
-}
-
-.usajobs-footer--v2__subsection-title a:hover {
-  text-decoration: underline;
 }
 
 html {

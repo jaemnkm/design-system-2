@@ -14,47 +14,48 @@ body {
   font-size: 17px !important;
 }
 
-h1, h2, h3, h4, h5, h6 {
+@mixin header {
   font-family: $font-sans;
-}
-
-h1,
-h2 {
-  color: $color-primary-darkest;
+  font-weight: $font-bold;
+  line-height: $heading-line-height;
+  margin-bottom: $size-base;
+  margin-top: $size-default;
 }
 
 @mixin h1 {
+  @include header();
   font-size: $h1-font-size;
   font-size: rem($h1-font-size);
-  font-weight: $font-bold;
+  color: $color-primary-darkest;
 }
 
 @mixin h2 {
+  @include header();
   font-size: $h2-font-size;
   font-size: rem($h2-font-size);
-  font-weight: $font-bold;
+  color: $color-primary-darkest;
 }
 
 @mixin h3 {
+  @include header();
   font-size: $h3-font-size;
   font-size: rem($h3-font-size);
-  font-weight: $font-bold;
 }
 
 @mixin h4 {
+  @include header();
   font-size: $h4-font-size;
   font-size: rem($h4-font-size);
-  font-weight: $font-bold;
 }
 
 @mixin h5 {
+  @include header();
   font-size: $h5-font-size;
   font-size: rem($h5-font-size);
-  font-weight: $font-bold;
 }
 
 @mixin h6 {
-  font-family: $font-sans;
+  @include header();
   font-size: $h6-font-size;
   font-size: rem($h6-font-size);
   font-weight: $font-normal;
