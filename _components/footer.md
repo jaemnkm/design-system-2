@@ -26,17 +26,21 @@ lead: USAJOBS uses a large footer that incorporates navigation.
             </ul>
             <ul class="usa-unstyled-list usa-footer-primary-content usajobs-footer--v1__account">
               <li class="usa-footer-primary-link">Account</li>
-              <li class="usajobs-footer--v1__subsection-title">Profile</li>
+              <li class="usajobs-footer--v1__subsection-title">
+                <a href="/Applicant/Profile/">Profile</a>
+              </li>
               <ul class="usa-unstyled-list usajobs-footer--v1__subsection">
                 <li><a href="#profile-background">Background</a></li>
                 <li><a href="#profile-education">Education</a></li>
                 <li><a href="#profile-experience">Experience</a></li>
               </ul>
-              <li class="usajobs-footer--v1__subsection-title">Documents</li>
+              <li class="usajobs-footer--v1__subsection-title">
+                <a href="/Applicant/Document/ListDocuments">Documents</a>
+              </li>
               <ul class="usa-unstyled-list usajobs-footer--v1__subsection">
-                <li><a href="#profile-documents">Cover Letter</a></li>
-                <li><a href="#profile-documents">Forms</a></li>
-                <li><a href="#profile-documents">Resume</a></li>
+                <li><a href="/Applicant/Document/ListDocuments#cover-letters">Cover Letters</a></li>
+                <li><a href="/Applicant/Document/ListDocuments#forms">Forms</a></li>
+                <li><a href="/Applicant/Document/ListDocuments#resumes">Resumes</a></li>
               </ul>
               <li><a href="/Applicant/SavedJobs/ListSavedJobs">Saved Jobs</a></li>
               <li><a href="/Applicant/SavedSearches/ListSavedSearches">Saved Searches</a></li>
@@ -51,7 +55,9 @@ lead: USAJOBS uses a large footer that incorporates navigation.
               <li><a href="/Support">Contact Us</a></li>
               <li><a href="https://help.usajobs.gov/index.php/Getting_Started">Get Started</a></li>
               <li><a href="https://help.usajobs.gov/">Help Center</a></li>
-              <li class="usajobs-footer--v1__subsection-title">How to&hellip;</li>
+              <li class="usajobs-footer--v1__subsection-title">
+                <a href="https://help.usajobs.gov/How_To">How to&hellip;</a>
+              </li>
               <ul class="usa-unstyled-list usajobs-footer--v1__subsection">
                 <li><a href="#how-to">Apply for a job</a></li>
                 <li><a href="#how-to">Save a questionnaire</a></li>
@@ -65,7 +71,11 @@ lead: USAJOBS uses a large footer that incorporates navigation.
               <li class="usa-footer-primary-link">Working for the Government</li>
               <li><a href="https://help.usajobs.gov/index.php/Pay_and_Benefits">Benefits</a></li>
               <li><a href="https://help.usajobs.gov/index.php/Pay_and_Benefits">Salary</a></li>
-              <li class="usajobs-footer--v1__subsection-title">Unique Hiring Paths</li>
+              <li class="usajobs-footer--v1__subsection-title">
+                <a href="#unique-hiring-paths">
+                  Unique Hiring Paths
+                </a>
+              </li>
               <ul class="usa-unstyled-list usajobs-footer--v1__subsection">
                 <li><a href="#federal_employees">Federal Employees</a></li>
                 <li><a href="#former_overseas_employees">Former overseas employees</a></li>
@@ -165,9 +175,9 @@ lead: USAJOBS uses a large footer that incorporates navigation.
                   </a>
                 </h5>
                 <ul class="usa-unstyled-list usajobs-footer--v2__subsection">
-                  <li><a href="#profile-documents">Cover Letter</a></li>
+                  <li><a href="#profile-documents">Cover Letters</a></li>
                   <li><a href="#profile-documents">Forms</a></li>
-                  <li><a href="#profile-documents">Resume</a></li>
+                  <li><a href="#profile-documents">Resumes</a></li>
                 </ul>
               </li>
             </ul>

@@ -13,7 +13,12 @@
 .usajobs-footer--v2 {
   a,
   a:visited {
+    display: block;
     text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
   }
 
   .usa-footer-return-to-top a {
@@ -54,9 +59,8 @@
     }
 
     // combating .usa-unstyled-list li
-    .usajobs-footer--v1__subsection-title,
-    .usajobs-footer--v2__subsection-title {
-      margin-top: $size-S;
+    .usajobs-footer--v1__subsection-title a,
+    .usajobs-footer--v2__subsection-title a {
       @include h5();
     }
   }
@@ -74,9 +78,16 @@
   &__subsection {
     font-size: $small-font-size;
     margin-bottom: 0;
+  }
 
-    @include media($M) {
-      margin-bottom: $size-default;
+  &__subsection-title {
+    a,
+    a:visited {
+      font-weight: bold;
+    }
+
+    a:hover {
+      text-decoration: underline;
     }
   }
 
@@ -87,12 +98,12 @@
     a,
     a:visited {
       color: $color-white;
-      text-decoration: underline;
     }
 
     .usajobs-social-link,
     .usajobs-social-link:visited {
-      padding: $size-S $size-base $size-S;
+      display: inline-block;
+      padding: 0 $size-base $size-S;
       color: $color-white;
       text-decoration: none;
       font-size: $h3-font-size;
@@ -102,6 +113,10 @@
   &__note {
     color: $color-white;
     font-size: $small-font-size;
+
+    a {
+      display: inline;
+    }
   }
 
   // Correcting for oddball borders
@@ -187,11 +202,6 @@
     a,
     a:visited {
       color: $color-base;
-      font-weight: bold;
-    }
-
-    a:hover {
-      text-decoration: underline;
     }
   }
 }
