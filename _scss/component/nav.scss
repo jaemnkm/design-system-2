@@ -469,19 +469,14 @@ ul.usajobs-nav__secondary-menu {
 
   &__menu-search {
     &[data-state="is-open"] {
-      background-color: $color-primary-darkest;
-
-      .usajobs-nav--v2__section-link,
-      .usajobs-nav--v2__section-link:visited {
-        color: $color-white;
-      }
+      background-color: $color-gray-lightest;
     }
   }
 
   &__search {
     @include outer-container();
     padding: 0 $size-default $size-M;
-    background-color: $color-primary-darkest;
+    background-color: $color-gray-lightest;
 
     @include media($M) {
       padding-bottom: $size-S;
@@ -496,21 +491,28 @@ ul.usajobs-nav__secondary-menu {
     }
 
     label {
-      color: $color-white;
       max-width: inherit;
     }
   }
 
-  &__search-keywords-container,
-  &__search-location-container {
+  &__search-keywords-container {
     @include media($M) {
       @include span-columns(3, 6);
+    }
+
+    @include media($MLL) {
+      @include span-columns(6, 12);
     }
   }
 
   &__search-location-container {
     @include media($M) {
+      @include span-columns(3, 6);
       @include omega();
+    }
+
+    @include media($MLL) {
+      @include span-columns(4, 12);
     }
   }
 
@@ -519,6 +521,11 @@ ul.usajobs-nav__secondary-menu {
 
     @include media($M) {
       @include span-columns(6, 6);
+    }
+    @include media($MLL) {
+      @include span-columns(2, 12);
+      @include omega();
+      margin-top: $size-L;
     }
   }
 
