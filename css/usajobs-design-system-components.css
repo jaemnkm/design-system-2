@@ -2670,13 +2670,7 @@ ul.usajobs-nav__secondary-menu li a {
 .usajobs-nav--v2__brand-container {
   display: block;
   float: left;
-  display: block;
-  margin-right: 7.4229703521%;
-  width: 46.288514824%;
-}
-
-.usajobs-nav--v2__brand-container:last-child {
-  margin-right: 0;
+  margin-right: 3rem;
 }
 
 .usajobs-nav--v2__brand {
@@ -2710,21 +2704,14 @@ ul.usajobs-nav__secondary-menu li a {
 }
 
 .usajobs-nav--v2__menu {
-  float: left;
   display: block;
-  margin-right: 7.4229703521%;
-  width: 46.288514824%;
-  margin-right: 0;
-}
-
-.usajobs-nav--v2__menu:last-child {
-  margin-right: 0;
+  float: right;
+  height: 6.4rem;
 }
 
 @media screen and (min-width: 62em) {
   .usajobs-nav--v2__menu {
-    height: auto;
-    margin-right: 0;
+    height: 7.1rem;
   }
 }
 
@@ -2733,14 +2720,36 @@ ul.usajobs-nav__secondary-menu li a {
   text-align: right;
 }
 
+.usajobs-nav--v2__first_name {
+  display: none;
+}
+
+@media screen and (min-width: 30em) {
+  .usajobs-nav--v2__first_name {
+    display: inherit;
+    max-width: 14rem;
+  }
+}
+
+@media screen and (min-width: 30em) {
+  .usajobs-nav--v2__account_name {
+    display: none;
+  }
+}
+
 .usajobs-nav--v2__menu-container {
   display: inline-block;
   margin: 0;
   padding: 0;
+  overflow: hidden;
 }
 
 .usajobs-nav--v2__menu-container:before, .usajobs-nav--v2__menu-container:after {
   content: none;
+}
+
+.usajobs-nav--v2__menu-container[data-state="is-open"] {
+  overflow-y: visible;
 }
 
 .usajobs-nav--v2__menu-container a {

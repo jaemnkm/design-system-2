@@ -33,6 +33,7 @@ lead: USAJOBS uses a large footer that incorporates navigation.
                 <li><a href="#profile-background">Background</a></li>
                 <li><a href="#profile-education">Education</a></li>
                 <li><a href="#profile-experience">Experience</a></li>
+                <li><a href="#profile-contact_info">Contact Info</a></li>
               </ul>
               <li class="usajobs-footer--v1__subsection-title">
                 <a href="/Applicant/Document/ListDocuments">Documents</a>
@@ -52,7 +53,7 @@ lead: USAJOBS uses a large footer that incorporates navigation.
             <ul class="usa-unstyled-list usa-footer-primary-content">
               <li class="usa-footer-primary-link">Help</li>
               <li><a href="https://help.usajobs.gov/index.php/About_Us">About USAJOBS</a></li>
-              <li><a href="/Support">Contact Us</a></li>
+              <li><a href="https://help.usajobs/gov/Support#Miscellaneous-Other">Contact Us</a></li>
               <li><a href="https://help.usajobs.gov/index.php/Getting_Started">Get Started</a></li>
               <li><a href="https://help.usajobs.gov/">Help Center</a></li>
               <li class="usajobs-footer--v1__subsection-title">
@@ -168,6 +169,7 @@ lead: USAJOBS uses a large footer that incorporates navigation.
               <li><a href="#profile-background">Background</a></li>
               <li><a href="#profile-education">Education</a></li>
               <li><a href="#profile-experience">Experience</a></li>
+              <li><a href="#profile-contact_info">Contact Info</a></li>
               <li>
                 <h5 class="usajobs-footer--v2__subsection-title">
                   <a href="/Applicant/Document/ListDocuments">
@@ -186,7 +188,7 @@ lead: USAJOBS uses a large footer that incorporates navigation.
             <ul class="usa-unstyled-list usa-footer-primary-content">
               <h4 class="usa-footer-primary-link">Help</h4>
               <li><a href="https://help.usajobs.gov/index.php/About_Us">About USAJOBS</a></li>
-              <li><a href="/Support">Contact Us</a></li>
+              <li><a href="https://help.usajobs/gov/Support#Miscellaneous-Other">Contact Us</a></li>
               <li><a href="https://help.usajobs.gov/index.php/Getting_Started">Get Started</a></li>
               <li><a href="https://help.usajobs.gov/">Help Center</a></li>
               <li><h5 class="usajobs-footer--v2__subsection-title">How to&hellip;</h5></li>

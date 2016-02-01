@@ -372,7 +372,8 @@ ul.usajobs-nav__secondary-menu {
 
   &__brand-container {
     display: block;
-    @include span-columns(2 of 4);
+    float: left;
+    margin-right: $size-M;
   }
 
   &__brand {
@@ -400,12 +401,12 @@ ul.usajobs-nav__secondary-menu {
   }
 
   &__menu {
-    @include span-columns(2 of 4);
-    @include omega();
+    display: block;
+    float: right;
+    height: rem($logo_height-S);
 
     @include media($MLL) {
-      height: auto;
-      margin-right: 0;
+      height: rem($logo_height-L);
     }
 
     ul {
@@ -414,14 +415,34 @@ ul.usajobs-nav__secondary-menu {
     }
   }
 
+  &__first_name {
+    display: none;
+
+    @include media($SM) {
+      display: inherit;
+      max-width: rem(140px);
+    }
+  }
+
+  &__account_name {
+    @include media($SM) {
+      display: none;
+    }
+  }
+
   &__menu-container {
     display: inline-block;
     margin: 0;
     padding: 0;
+    overflow: hidden;
 
     &:before,
     &:after {
       content: none;
+    }
+
+    &[data-state="is-open"] {
+      overflow-y: visible;
     }
 
     a {
