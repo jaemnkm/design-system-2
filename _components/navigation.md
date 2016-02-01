@@ -276,7 +276,8 @@ lead: USAJOBS features a consistent header for top-level navigation across the s
                 <li class="usajobs-nav--v2__menu-container usajobs-nav--v2__account">
                   <a accesskey="A" class="usajobs-nav--v2__section-link" href="/Applicant/MyAccount/Home" title="Account">
                     <span class="fa fa-user"></span>
-                    Peter
+                    <span class="usajobs-nav--v2__first_name">Quadrina</span>
+                    <span class="usajobs-nav--v2__account_name">Profile</span>
                   </a>
                 </li>
                 <li class="usajobs-nav--v2__menu-container usajobs-nav--v2__help"> 
@@ -327,6 +328,7 @@ lead: USAJOBS features a consistent header for top-level navigation across the s
   <div id="collapsible-0" aria-hidden="false" class="usa-accordion-content">
     <h4 class="usa-heading">Implementation</h4>
     <ul class="usa-content-list">
+      <li>The word "Profile" is visible until the SM breakpoint at which time the user's first name is shown. The first name can comfortably accommodate 17 characters before the overflow is hidden.</li>
       <li>Padding should be applied to the anchor element (<code>a</code>) to increase the tappable target size. The padding should also reach to the top and bottom of the navigation element.</li>
       <li>Padding around the first element (logo) should reach to the left edge of the page to enlarge the tappable target.</li>
       <li>Padding around the last element (Create Account or User name) should reach to the right edge of the page to enlarge the tappable target.</li>
