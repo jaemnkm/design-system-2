@@ -301,9 +301,88 @@ lead: USAJOBS features a consistent header for top-level navigation across the s
                 <div class="usajobs-nav--v2__search-keywords-container">
                   <label for="search-keyword">Keywords</label>
                   <input id="search-keyword" name="search-keyword" class="usajobs-nav--v2__search-keywords-input" placeholder="Job title, Skills, Agency" type="text" value="" autocomplete="false">
+                  <!-- i class="usajobs-nav--v2__search-keywords-icon fa fa-search"></i -->
                 </div>
                 <div class="usajobs-nav--v2__search-location-container">
                   <label for="search-location">Location</label>
+                  <input id="search-location" name="search-location" type="text" class="usajobs-nav--v2__search-location-input" placeholder="City, State, ZIP, or Country">
+                  <!-- i class="usajobs-nav--v2__search-location-icon fa fa-map-marker"></i -->
+                </div>
+                <div class="usajobs-nav--v2__search-button-container">
+                  <button class="usa-button-big usa-button-primary-alt usajobs-nav--v2__search-button">
+                    Search
+                  </button>
+                </div>
+              </fieldset>
+            </form>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+</div>
+
+<h6 class="usa-heading-alt">Version 2 Authenticated - Alternate</h6>
+<div class="preview">
+  <header class="usajobs-site-header" role="banner">
+    <div class="usa-disclaimer">
+      <span class="usajobs-disclaimer-official">
+        <img class="usa-flag_icon" alt="U.S. flag signifying that this is a United States federal government website" src="{{ site.baseurl }}/img/us_flag_small.png">
+        An official website of the United States Government
+      </span>
+    </div>
+    <nav class="usajobs-nav--v2" role="navigation" data-object="nav">
+      <div class="usajobs-nav--v2__body">
+        <div class="usajobs-nav--v2__header-container">
+          <div class="usajobs-nav--v2__header">
+            <div class="usajobs-nav--v2__brand-container">
+              <a class="usajobs-nav--v2__brand" href="/">
+                <img src="{{ site.baseurl }}/img/USAJOBS_logo.png" alt="USAJOBS Logo" class="logo">
+              </a>
+            </div>
+            <div class="usajobs-nav--v2__menu" id="usajobs-menu">
+              <ul>
+                <li class="usajobs-nav--v2__menu-container usajobs-nav--v2__account" data-state="is-closed">
+                  <a accesskey="A" class="usajobs-nav--v2__section-link menu-toggle" data-behavior="nav.menu.toggle" aria-haspopup="true" href="#profile" title="Profile">
+                    <span class="fa fa-user"></span>
+                    <span class="usajobs-nav--v2__account_name">Profile</span>
+                    <span class="usajobs-nav--v2__first_name">Quadrina</span>
+                  </a>
+                  <ul class="usajobs-nav--v2__secondary-menu" aria-expanded="false" role="menu">
+                    <li><a href="/Applicant/MyAccount/Home">Profile</a></li>
+                    <li><a href="/Applicant/Profile/">Sign Out</a></li>
+                  </ul>
+                </li>
+                <li class="usajobs-nav--v2__menu-container usajobs-nav--v2__help"> 
+                  <a accesskey="A" class="usajobs-nav--v2__section-link" href="http://help.sqa.usajobs.gov/index.php/Main_Page" title="Help">
+                    <span class="fa fa-question-circle"></span>
+                    Help
+                  </a>
+                </li>
+                <li class="usajobs-nav--v2__menu-container usajobs-nav--v2__menu-search" data-state="is-closed" data-target="#usajobs-search-form">
+                  <a accesskey="S" data-behavior="nav.menu.search-toggle" aria-haspopup="true" class="usajobs-nav--v2__section-link" href="/" title="Job Search">
+                    <span class="fa fa-search"></span>
+                    Search
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div id="usajobs-search-form" class="usajobs-nav--v2__search" aria-expanded="false" role="menu">
+            <form action="/Search" method="get" novalidate="novalidate">
+              <fieldset>
+                <div class="usajobs-nav--v2__search-keywords-container">
+                  <label for="search-keyword">
+                    <i class="usajobs-nav--v2__search-keywords-icon fa fa-search"></i>
+                    Keywords
+                  </label>
+                  <input id="search-keyword" name="search-keyword" class="usajobs-nav--v2__search-keywords-input" placeholder="Job title, Skills, Agency" type="text" value="" autocomplete="false">
+                </div>
+                <div class="usajobs-nav--v2__search-location-container">
+                  <label for="search-location">
+                    <i class="usajobs-nav--v2__search-location-icon fa fa-map-marker"></i>
+                    Location
+                  </label>
                   <input id="search-location" name="search-location" type="text" class="usajobs-nav--v2__search-location-input" placeholder="City, State, ZIP, or Country">
                 </div>
                 <div class="usajobs-nav--v2__search-button-container">
@@ -319,6 +398,7 @@ lead: USAJOBS features a consistent header for top-level navigation across the s
     </nav>
   </header>
 </div>
+
 
 <div class="usa-accordion-bordered usa-accordion-docs">
   <button class="usa-button-unstyled usa-accordion-button"
