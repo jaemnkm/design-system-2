@@ -534,14 +534,14 @@ ul.usajobs-nav__secondary-menu {
 
   &__menu-search {
     &[data-state="is-open"] {
-      background-color: $color-gray-lightest;
+      background-color: $color-gray-warm-light;
     }
   }
 
   &__search {
     @include outer-container();
     padding: 0 $size-default $size-M;
-    background-color: $color-gray-lightest;
+    background-color: $color-gray-warm-light;
 
     @include media($M) {
       padding-bottom: $size-S;

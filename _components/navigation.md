@@ -277,7 +277,7 @@ lead: USAJOBS features a consistent header for top-level navigation across the s
                   <a accesskey="A" class="usajobs-nav--v2__section-link" href="/Applicant/MyAccount/Home" title="Account">
                     <span class="fa fa-user"></span>
                     <span class="usajobs-nav--v2__first_name">Quadrina</span>
-                    <span class="usajobs-nav--v2__account_name">Profile</span>
+                    <span class="usajobs-nav--v2__account_name">Account</span>
                   </a>
                 </li>
                 <li class="usajobs-nav--v2__menu-container usajobs-nav--v2__help"> 
@@ -343,13 +343,16 @@ lead: USAJOBS features a consistent header for top-level navigation across the s
             <div class="usajobs-nav--v2__menu" id="usajobs-menu">
               <ul>
                 <li class="usajobs-nav--v2__menu-container usajobs-nav--v2__account" data-state="is-closed">
-                  <a accesskey="A" class="usajobs-nav--v2__section-link menu-toggle" data-behavior="nav.menu.toggle" aria-haspopup="true" href="#profile" title="Profile">
+                  <a accesskey="A" class="usajobs-nav--v2__section-link menu-toggle" data-behavior="nav.menu.toggle" aria-haspopup="true" href="#account" title="Account">
                     <span class="fa fa-user"></span>
-                    <span class="usajobs-nav--v2__account_name">Profile</span>
+                    <span class="usajobs-nav--v2__account_name">Account</span>
                     <span class="usajobs-nav--v2__first_name">Quadrina</span>
                   </a>
                   <ul class="usajobs-nav--v2__secondary-menu" aria-expanded="false" role="menu">
-                    <li><a href="/Applicant/MyAccount/Home">Profile</a></li>
+                    <li><a href="/Applicant/MyAccount/Home">Home</a></li>
+                    <li><a href="/Applicant/MyAccount/Profile">Profile</a></li>
+                    <li><a href="/Applicant/MyAccount/Documents">Documents</a></li>
+                    <li><a href="/Applicant/MyAccount/Account">Username &amp; Password</a></li>
                     <li><a href="/Applicant/Profile/">Sign Out</a></li>
                   </ul>
                 </li>

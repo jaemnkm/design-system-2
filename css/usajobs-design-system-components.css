@@ -2840,7 +2840,7 @@ ul.usajobs-nav__secondary-menu li a {
 }
 
 .usajobs-nav--v2__menu-search[data-state="is-open"] {
-  background-color: #f1f1f1;
+  background-color: #e4e2e0;
 }
 
 .usajobs-nav--v2__search {
@@ -2848,7 +2848,7 @@ ul.usajobs-nav__secondary-menu li a {
   margin-left: auto;
   margin-right: auto;
   padding: 0 1.5rem 3rem;
-  background-color: #f1f1f1;
+  background-color: #e4e2e0;
 }
 
 .usajobs-nav--v2__search::after {
@@ -5294,20 +5294,6 @@ h6 {
   display: none;
 }
 
-@media screen and (min-width: 62em) {
-  .usajobs-footer--v1 .usa-footer-primary-content,
-  .usajobs-footer--v2 .usa-footer-primary-content {
-    float: left;
-    display: block;
-    margin-right: 2.3576515979%;
-    width: 23.2317613015%;
-  }
-  .usajobs-footer--v1 .usa-footer-primary-content:last-child,
-  .usajobs-footer--v2 .usa-footer-primary-content:last-child {
-    margin-right: 0;
-  }
-}
-
 .usajobs-footer--v1 .usa-footer-primary-content .usajobs-footer--v1__subsection,
 .usajobs-footer--v1 .usa-footer-primary-content .usajobs-footer--v2__subsection,
 .usajobs-footer--v2 .usa-footer-primary-content .usajobs-footer--v1__subsection,
@@ -5315,10 +5301,14 @@ h6 {
   padding-bottom: 1.5rem;
 }
 
-.usajobs-footer--v1 .usa-footer-primary-content .usajobs-footer--v1__subsection-title a,
-.usajobs-footer--v1 .usa-footer-primary-content .usajobs-footer--v2__subsection-title a,
-.usajobs-footer--v2 .usa-footer-primary-content .usajobs-footer--v1__subsection-title a,
-.usajobs-footer--v2 .usa-footer-primary-content .usajobs-footer--v2__subsection-title a {
+.usajobs-footer--v1 .usa-footer-primary-content .usajobs-footer--v1__subsection-title,
+.usajobs-footer--v1 .usa-footer-primary-content .usajobs-footer--v1__subsection-title:visited,
+.usajobs-footer--v1 .usa-footer-primary-content .usajobs-footer--v2__subsection-title,
+.usajobs-footer--v1 .usa-footer-primary-content .usajobs-footer--v2__subsection-title:visited,
+.usajobs-footer--v2 .usa-footer-primary-content .usajobs-footer--v1__subsection-title,
+.usajobs-footer--v2 .usa-footer-primary-content .usajobs-footer--v1__subsection-title:visited,
+.usajobs-footer--v2 .usa-footer-primary-content .usajobs-footer--v2__subsection-title,
+.usajobs-footer--v2 .usa-footer-primary-content .usajobs-footer--v2__subsection-title:visited {
   font-family: "Source Sans Pro", "Helvetica", "Arial", sans-serif;
   font-weight: 700;
   line-height: 1.3;
@@ -5326,6 +5316,7 @@ h6 {
   margin-top: 1.5rem;
   font-size: 16px;
   font-size: 1.6rem;
+  color: #212121;
 }
 
 @media screen and (min-width: 62em) {
@@ -5393,29 +5384,6 @@ h6 {
 .usajobs-footer--v1 ul:last-child,
 .usajobs-footer--v2 ul:last-child {
   border-bottom: 0;
-}
-
-@media screen and (min-width: 37.5em) {
-  .usajobs-footer--v1__content-container,
-  .usajobs-footer--v2__content-container {
-    float: left;
-    display: block;
-    margin-right: 4.8291579146%;
-    width: 47.5854210427%;
-  }
-  .usajobs-footer--v1__content-container:last-child,
-  .usajobs-footer--v2__content-container:last-child {
-    margin-right: 0;
-  }
-}
-
-@media screen and (min-width: 62em) {
-  .usajobs-footer--v1__content-container,
-  .usajobs-footer--v2__content-container {
-    float: none;
-    width: auto;
-    margin: 0;
-  }
 }
 
 .usajobs-footer--v1 ul.usajobs-footer--v1__subsection-horizontal,
@@ -5510,15 +5478,121 @@ h6 {
   color: #ffffff;
 }
 
+@media screen and (min-width: 62em) {
+  .usajobs-footer--v1 .usa-footer-primary-content {
+    float: left;
+    display: block;
+    margin-right: 2.3576515979%;
+    width: 23.2317613015%;
+  }
+  .usajobs-footer--v1 .usa-footer-primary-content:last-child {
+    margin-right: 0;
+  }
+}
+
+@media screen and (min-width: 37.5em) {
+  .usajobs-footer--v1__content-container {
+    float: left;
+    display: block;
+    margin-right: 4.8291579146%;
+    width: 47.5854210427%;
+  }
+  .usajobs-footer--v1__content-container:last-child {
+    margin-right: 0;
+  }
+}
+
+@media screen and (min-width: 62em) {
+  .usajobs-footer--v1__content-container {
+    float: none;
+    width: auto;
+    margin: 0;
+  }
+}
+
 .usajobs-footer--v2 a,
 .usajobs-footer--v2 a:visited {
   color: #0071bc;
   text-decoration: none;
 }
 
-.usajobs-footer--v2__subsection-title a,
-.usajobs-footer--v2__subsection-title a:visited {
+.usajobs-footer--v2 .usa-footer-primary-section .usa-footer-primary-content .usa-footer-primary-link a,
+.usajobs-footer--v2 .usa-footer-primary-section .usa-footer-primary-content .usa-footer-primary-link a:visited {
   color: #212121;
+  font-weight: bold;
+}
+
+@media screen and (min-width: 37.5em) {
+  .usajobs-footer--v2 .usa-footer-primary-content {
+    float: left;
+    display: block;
+    margin-right: 4.8291579146%;
+    width: 47.5854210427%;
+  }
+  .usajobs-footer--v2 .usa-footer-primary-content:last-child {
+    margin-right: 0;
+  }
+}
+
+@media screen and (min-width: 62em) {
+  .usajobs-footer--v2 .usa-footer-primary-content {
+    float: left;
+    display: block;
+    margin-right: 2.3576515979%;
+    width: 23.2317613015%;
+  }
+  .usajobs-footer--v2 .usa-footer-primary-content:last-child {
+    margin-right: 0;
+  }
+}
+
+@media screen and (min-width: 37.5em) {
+  .usajobs-footer--v2 .usa-footer-primary-content:nth-child(2n) {
+    margin-right: 0;
+  }
+}
+
+@media screen and (min-width: 62em) {
+  .usajobs-footer--v2 .usa-footer-primary-content:nth-child(4n) {
+    margin-right: 0;
+  }
+}
+
+.usajobs-footer--v2__content-container {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto;
+  clear: both;
+}
+
+.usajobs-footer--v2__content-container::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+@media screen and (min-width: 37.5em) {
+  .usajobs-footer--v2__help.usa-footer-primary-content, .usajobs-footer--v2__working_for_the_government.usa-footer-primary-content {
+    float: left;
+    display: block;
+    margin-right: 4.8291579146%;
+    width: 47.5854210427%;
+  }
+  .usajobs-footer--v2__help.usa-footer-primary-content:last-child, .usajobs-footer--v2__working_for_the_government.usa-footer-primary-content:last-child {
+    margin-right: 0;
+  }
+}
+
+@media screen and (min-width: 62em) {
+  .usajobs-footer--v2__help.usa-footer-primary-content, .usajobs-footer--v2__working_for_the_government.usa-footer-primary-content {
+    float: left;
+    display: block;
+    margin-right: 2.3576515979%;
+    width: 48.821174201%;
+  }
+  .usajobs-footer--v2__help.usa-footer-primary-content:last-child, .usajobs-footer--v2__working_for_the_government.usa-footer-primary-content:last-child {
+    margin-right: 0;
+  }
 }
 
 html {
