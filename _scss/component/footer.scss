@@ -49,19 +49,18 @@
   }
 
   .usa-footer-primary-content {
-    @include media($MLL) {
-      @include span-columns(3, 12);
-    }
-
     .usajobs-footer--v1__subsection,
     .usajobs-footer--v2__subsection {
       padding-bottom: $size-default;
     }
 
     // combating .usa-unstyled-list li
-    .usajobs-footer--v1__subsection-title a,
-    .usajobs-footer--v2__subsection-title a {
+    .usajobs-footer--v1__subsection-title,
+    .usajobs-footer--v1__subsection-title:visited,
+    .usajobs-footer--v2__subsection-title,
+    .usajobs-footer--v2__subsection-title:visited {
       @include h5();
+      color: $color-base;
     }
   }
 
@@ -124,18 +123,6 @@
     border-bottom: 0;
   }
 
-  &__content-container {
-    @include media($M) {
-      @include span-columns(3);
-    }
-
-    @include media($MLL) {
-      float: none;
-      width: auto;
-      margin: 0;
-    }
-  }
-
   ul.usajobs-footer--v1__subsection-horizontal,
   ul.usajobs-footer--v2__subsection-horizontal {
     margin-top: $size-S;
@@ -189,6 +176,24 @@
     margin-top: 0;
     color: $color-white;
   }
+
+  .usa-footer-primary-content {
+    @include media($MLL) {
+      @include span-columns(3, 12);
+    }
+  }
+
+  &__content-container {
+    @include media($M) {
+      @include span-columns(3);
+    }
+
+    @include media($MLL) {
+      float: none;
+      width: auto;
+      margin: 0;
+    }
+  }
 }
 
 .usajobs-footer--v2 {
@@ -198,10 +203,45 @@
     text-decoration: none;
   }
 
-  &__subsection-title {
-    a,
-    a:visited {
-      color: $color-base;
+  .usa-footer-primary-section .usa-footer-primary-content .usa-footer-primary-link a,
+  .usa-footer-primary-section .usa-footer-primary-content .usa-footer-primary-link a:visited {
+    color: $color-base;
+    font-weight: bold;
+  }
+
+  .usa-footer-primary-content {
+    @include media($M) {
+      @include span-columns(3, 6);
+    }
+    @include media($MLL) {
+      @include span-columns(3, 12);
+    }
+  }
+
+  .usa-footer-primary-content:nth-child(2n) {
+    @include media($M) {
+      @include omega();
+    }
+  }
+
+  .usa-footer-primary-content:nth-child(4n) {
+    @include media($MLL) {
+      @include omega();
+    }
+  }
+
+  &__content-container {
+    @include outer-container();
+    clear: both;
+  }
+
+  &__help.usa-footer-primary-content,
+  &__working_for_the_government.usa-footer-primary-content {
+    @include media($M) {
+      @include span-columns(3, 6);
+    }
+    @include media($MLL) {
+      @include span-columns(6, 12);
     }
   }
 }
