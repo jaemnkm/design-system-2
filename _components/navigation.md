@@ -276,8 +276,8 @@ lead: USAJOBS features a consistent header for top-level navigation across the s
                 <li class="usajobs-nav--v2__menu-container usajobs-nav--v2__account">
                   <a accesskey="A" class="usajobs-nav--v2__section-link" href="/Applicant/MyAccount/Home" title="Account">
                     <span class="fa fa-user"></span>
+                    <span class="usajobs-nav--v2__account_name">QQ</span>
                     <span class="usajobs-nav--v2__first_name">Quadrina</span>
-                    <span class="usajobs-nav--v2__account_name">Account</span>
                   </a>
                 </li>
                 <li class="usajobs-nav--v2__menu-container usajobs-nav--v2__help"> 
@@ -299,14 +299,18 @@ lead: USAJOBS features a consistent header for top-level navigation across the s
             <form action="/Search" method="get" novalidate="novalidate">
               <fieldset>
                 <div class="usajobs-nav--v2__search-keywords-container">
-                  <label for="search-keyword">Keywords</label>
+                  <label for="search-keyword">
+                    <i class="usajobs-nav--v2__search-keywords-icon fa fa-search"></i>
+                    Keywords
+                  </label>
                   <input id="search-keyword" name="search-keyword" class="usajobs-nav--v2__search-keywords-input" placeholder="Job title, Skills, Agency" type="text" value="" autocomplete="false">
-                  <!-- i class="usajobs-nav--v2__search-keywords-icon fa fa-search"></i -->
                 </div>
                 <div class="usajobs-nav--v2__search-location-container">
-                  <label for="search-location">Location</label>
+                  <label for="search-location">
+                    <i class="usajobs-nav--v2__search-location-icon fa fa-map-marker"></i>
+                    Location
+                  </label>
                   <input id="search-location" name="search-location" type="text" class="usajobs-nav--v2__search-location-input" placeholder="City, State, ZIP, or Country">
-                  <!-- i class="usajobs-nav--v2__search-location-icon fa fa-map-marker"></i -->
                 </div>
                 <div class="usajobs-nav--v2__search-button-container">
                   <button class="usa-button-big usa-button-primary-alt usajobs-nav--v2__search-button">
@@ -345,7 +349,7 @@ lead: USAJOBS features a consistent header for top-level navigation across the s
                 <li class="usajobs-nav--v2__menu-container usajobs-nav--v2__account" data-state="is-closed">
                   <a accesskey="A" class="usajobs-nav--v2__section-link menu-toggle" data-behavior="nav.menu.toggle" aria-haspopup="true" href="#account" title="Account">
                     <span class="fa fa-user"></span>
-                    <span class="usajobs-nav--v2__account_name">Account</span>
+                    <span class="usajobs-nav--v2__account_name">QQ</span>
                     <span class="usajobs-nav--v2__first_name">Quadrina</span>
                   </a>
                   <ul class="usajobs-nav--v2__secondary-menu" aria-expanded="false" role="menu">

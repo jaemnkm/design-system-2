@@ -373,7 +373,11 @@ ul.usajobs-nav__secondary-menu {
   &__brand-container {
     display: block;
     float: left;
-    margin-right: $size-M;
+    margin-right: $size-S;
+
+    @include media($M) {
+      margin-right: $size-M;
+    }
   }
 
   &__brand {
@@ -479,12 +483,19 @@ ul.usajobs-nav__secondary-menu {
   ul.usajobs-nav--v2__secondary-menu {
     display: none;
     position: absolute;
+    left: 0;
+    right:0;
     margin: 0;
     padding: $size-base 0;
     background-color: $color-gray-warm-light;
     box-shadow: inset 0 8px 6px -6px rgba(0,0,0, 0.2);
     z-index: 99999;
     text-align: left;
+
+    @include media($ML) {
+      left: auto;
+      right: auto;
+    }
 
     li {
       display: block;
@@ -504,7 +515,7 @@ ul.usajobs-nav__secondary-menu {
         display: block;
         width: 100%;
         clear: both;
-        padding: $size-S $size-default $size-S 2.1rem;
+        padding: $size-S $size-M $size-S $size-M;
         white-space: nowrap;
       }
     }

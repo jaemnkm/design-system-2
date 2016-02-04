@@ -21,34 +21,71 @@
     text-decoration: underline;
   }
 
+  &__menu-item:last-child {
+    padding-bottom: $size-M;
+  }
+
+  &__menu-item.is-hidden {
+    display: none;
+
+    @include media($M) {
+      display: list-item;
+    }
+
+    &.overview-link {
+      @include media($M) {
+        // display: none;
+      }
+    }
+  }
+
   .usa-footer-return-to-top a {
     color: $color-primary;
   }
 
   // Fix headers inside of unordered lists
-  ul.hidden .usa-footer-primary-link {
-    display: inherit;
-  }
-
   .usa-footer-primary-section .usa-footer-primary-content .usa-footer-primary-link {
     @include h4();
     margin-left: 0;
+    padding-left: $size-S;
+    background: none;
+
+    @include media($M) {
+      padding-left: 0;
+    }
+
+    &:before {
+      @include fa-icon();
+      content: $fa-var-chevron-down;
+
+      @include media($M) {
+        display: none;
+      }
+    }
+
+    &:hover {
+      cursor: pointer;
+
+      @include media($M) {
+        cursor: inherit;
+      }
+    }
   }
 
-  // Fix hiding of sub-lists
-  .usajobs-footer--v1__subsection.hidden li,
-  .usajobs-footer--v2__subsection.hidden li {
-    display: inherit;
-  }
+  .usa-footer-primary-section .usa-footer-primary-content .usa-footer-primary-link[data-state="is-closed"] {
+    &:before {
+      @include fa-icon();
+      content: $fa-var-chevron-right;
 
-  .usa-footer-primary-content.hidden  {
-    .usajobs-footer--v1__subsection.hidden,
-    .usajobs-footer--v2__subsection.hidden {
-      display: none;
+      @include media($M) {
+        display: none;
+      }
     }
   }
 
   .usa-footer-primary-content {
+    padding-bottom: 0;
+
     .usajobs-footer--v1__subsection,
     .usajobs-footer--v2__subsection {
       padding-bottom: $size-default;
@@ -221,6 +258,12 @@
   .usa-footer-primary-content:nth-child(2n) {
     @include media($M) {
       @include omega();
+    }
+    @include media($MLL) {
+      // grrr, the Neat grid automatically sets the last child to margin-right: 0
+      // given the way we have split the grid into 2 then 4 columns the work around
+      // is to hard code the margin-right
+      margin-right: 2.3576515979%;
     }
   }
 
