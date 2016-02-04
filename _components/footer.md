@@ -11,7 +11,7 @@ lead: USAJOBS uses a large footer that incorporates navigation.
 
 <h6 class="usa-heading-alt">Version 1</h6>
 <div class="preview">
-  <footer class="usa-footer usa-footer-big usajobs-footer--v1" role="contentinfo">
+  <footer class="usa-footer usa-footer-big usajobs-footer--v1" role="contentinfo" data-object="footer">
     <div class="usa-grid usa-footer-return-to-top">
       <a href="#">Return to top</a>
     </div>
@@ -20,52 +20,78 @@ lead: USAJOBS uses a large footer that incorporates navigation.
         <nav class="usa-footer-nav usa-width-one-whole">
           <div class="usajobs-footer--v1__content-container">
             <ul class="usa-unstyled-list usa-footer-primary-content">
-              <li class="usa-footer-primary-link">Job Applications</li>
-              <li><a href="/Applicant/Application/ListApplications#advancing">Advancing</a></li>
-              <li><a href="/Applicant/Application/ListApplications#paused">Paused</a></li>
-              <li><a href="/Applicant/Application/ListApplications#stopped">Stopped</a></li>
+              <li class="usa-footer-primary-link" data-behavior="footer.toggle" data-state="is-closed" data-target=".home-menu">
+                Job Applications
+              </li>
+              <li class="usajobs-footer--v1__menu-item home-menu is-hidden">
+                <a href="/Applicant/Application/ListApplications#advancing">Advancing</a>
+              </li>
+              <li class="usajobs-footer--v1__menu-item home-menu is-hidden">
+                <a href="/Applicant/Application/ListApplications#paused">Paused</a>
+              </li>
+              <li class="usajobs-footer--v1__menu-item home-menu is-hidden">
+                <a href="/Applicant/Application/ListApplications#stopped">Stopped</a>
+              </li>
             </ul>
             <ul class="usa-unstyled-list usa-footer-primary-content usajobs-footer--v1__account">
-              <li class="usa-footer-primary-link">Account</li>
-              <li class="usajobs-footer--v1__subsection-title">
-                <a href="/Applicant/Profile/">Profile</a>
+              <li class="usa-footer-primary-link" data-behavior="footer.toggle" data-state="is-closed" data-target=".account-menu">Account</li>
+              <li class="usajobs-footer--v1__menu-item account-menu is-hidden">
+                <a class="usajobs-footer--v1__subsection-title" href="/Applicant/Profile/">
+                  Profile
+                </a>
+                <ul class="usa-unstyled-list usajobs-footer--v1__subsection">
+                  <li><a href="#profile-background">Background</a></li>
+                  <li><a href="#profile-education">Education</a></li>
+                  <li><a href="#profile-experience">Experience</a></li>
+                  <li><a href="#profile-contact_info">Contact Info</a></li>
+                </ul>
               </li>
-              <ul class="usa-unstyled-list usajobs-footer--v1__subsection">
-                <li><a href="#profile-background">Background</a></li>
-                <li><a href="#profile-education">Education</a></li>
-                <li><a href="#profile-experience">Experience</a></li>
-                <li><a href="#profile-contact_info">Contact Info</a></li>
-              </ul>
-              <li class="usajobs-footer--v1__subsection-title">
-                <a href="/Applicant/Document/ListDocuments">Documents</a>
+              <li class="usajobs-footer--v1__menu-item account-menu is-hidden">
+                <a class="usajobs-footer--v1__subsection-title" href="/Applicant/Document/ListDocuments">Documents</a>
+                <ul class="usa-unstyled-list usajobs-footer--v1__subsection">
+                  <li><a href="/Applicant/Document/ListDocuments#cover-letters">Cover Letters</a></li>
+                  <li><a href="/Applicant/Document/ListDocuments#forms">Forms</a></li>
+                  <li><a href="/Applicant/Document/ListDocuments#resumes">Resumes</a></li>
+                </ul>
               </li>
-              <ul class="usa-unstyled-list usajobs-footer--v1__subsection">
-                <li><a href="/Applicant/Document/ListDocuments#cover-letters">Cover Letters</a></li>
-                <li><a href="/Applicant/Document/ListDocuments#forms">Forms</a></li>
-                <li><a href="/Applicant/Document/ListDocuments#resumes">Resumes</a></li>
-              </ul>
-              <li><a href="/Applicant/SavedJobs/ListSavedJobs">Saved Jobs</a></li>
-              <li><a href="/Applicant/SavedSearches/ListSavedSearches">Saved Searches</a></li>
-              <li><a href="/Applicant/Profile/PersonalInformation">Username &amp; Password</a></li>
-              <li><a href="/Account/LogOff">Sign Out</a></li>
+              <li class="usajobs-footer--v1__menu-item account-menu is-hidden">
+                <a href="/Applicant/SavedJobs/ListSavedJobs">Saved Jobs</a>
+              </li>
+              <li class="usajobs-footer--v1__menu-item account-menu is-hidden">
+                <a href="/Applicant/SavedSearches/ListSavedSearches">Saved Searches</a>
+              </li>
+              <li class="usajobs-footer--v1__menu-item account-menu is-hidden">
+                <a href="/Applicant/Profile/PersonalInformation">Username &amp; Password</a>
+              </li>
+              <li class="usajobs-footer--v1__menu-item account-menu is-hidden">
+                <a href="/Account/LogOff">Sign Out</a>
+              </li>
             </ul>
           </div>
           <div class="usajobs-footer--v1__content-container">
             <ul class="usa-unstyled-list usa-footer-primary-content">
-              <li class="usa-footer-primary-link">Help</li>
-              <li><a href="https://help.usajobs.gov/index.php/About_Us">About USAJOBS</a></li>
-              <li><a href="https://help.usajobs/gov/Support#Miscellaneous-Other">Contact Us</a></li>
-              <li><a href="https://help.usajobs.gov/index.php/Getting_Started">Get Started</a></li>
-              <li><a href="https://help.usajobs.gov/">Help Center</a></li>
-              <li> 
+              <li class="usa-footer-primary-link" data-behavior="footer.toggle" data-state="is-closed" data-target=".help-menu">Help</li>
+              <li class="usajobs-footer--v1__menu-item help-menu is-hidden">
+                <a href="https://help.usajobs.gov/index.php/About_Us">About USAJOBS</a>
+              </li>
+              <li class="usajobs-footer--v1__menu-item help-menu is-hidden">
+                <a href="https://help.usajobs/gov/Support#Miscellaneous-Other">Contact Us</a>
+              </li>
+              <li class="usajobs-footer--v1__menu-item help-menu is-hidden">
+                <a href="https://help.usajobs.gov/index.php/Getting_Started">Get Started</a>
+              </li>
+              <li class="usajobs-footer--v1__menu-item help-menu is-hidden">
+                <a href="https://help.usajobs.gov/">Help Center</a>
+              </li>
+              <li class="usajobs-footer--v1__menu-item help-menu is-hidden">
                 <a class="usajobs-footer--v2__subsection-title" href="https://help.usajobs.gov/index.php/FAQs">FAQs</a>
                 <ul class="usa-unstyled-list usajobs-footer--v2__subsection">
-                  <li><a href="#how-to">I'm not a Veteran, can I get a Federal job?</a></li>
                   <li><a href="#how-to">Can my resume exceed two pages?</a></li>
+                  <li><a href="#how-to">Do I need security clearance for a Federal job?</a></li>
                   <li><a href="#how-to">Is my resume scanned for keywords?</a></li>
                 </ul>
               </li>
-              <li>
+              <li class="usajobs-footer--v1__menu-item help-menu is-hidden">
                 <a class="usajobs-footer--v2__subsection-title" href="https://help.usajobs.gov/index.php/How_To">How to&hellip;</a>
                 <ul class="usa-unstyled-list usajobs-footer--v2__subsection">
                   <li><a href="#how-to">Apply for a job</a></li>
@@ -73,27 +99,33 @@ lead: USAJOBS uses a large footer that incorporates navigation.
                   <li><a href="#how-to">Search for Jobs</a></li>
                 </ul>
               </li>
-              <li><a href="#">Reference</a></li>
+              <li class="usajobs-footer--v1__menu-item help-menu is-hidden">
+                <a href="#">Reference</a>
+              </li>
             </ul>
             <ul class="usa-unstyled-list usa-footer-primary-content">
-              <li class="usa-footer-primary-link">Working for the Government</li>
-              <li><a href="https://help.usajobs.gov/index.php/Pay_and_Benefits">Benefits</a></li>
-              <li><a href="https://help.usajobs.gov/index.php/Pay_and_Benefits">Salary</a></li>
-              <li class="usajobs-footer--v1__subsection-title">
-                <a href="#unique-hiring-paths">
+              <li class="usa-footer-primary-link" data-behavior="footer.toggle" data-state="is-closed" data-target=".gov-menu">Working for the Government</li>
+              <li class="usajobs-footer--v1__menu-item gov-menu is-hidden">
+                <a href="https://help.usajobs.gov/index.php/Pay_and_Benefits">Benefits</a>
+              </li>
+              <li class="usajobs-footer--v1__menu-item gov-menu is-hidden">
+                <a href="https://help.usajobs.gov/index.php/Pay_and_Benefits">Salary</a>
+              </li>
+              <li class="usajobs-footer--v1__menu-item gov-menu is-hidden"> 
+                <a class="usajobs-footer--v1__subsection-title" href="#unique-hiring-paths">
                   Unique Hiring Paths
                 </a>
+                <ul class="usa-unstyled-list usajobs-footer--v1__subsection">
+                  <li><a href="#federal_employees">Federal Employees</a></li>
+                  <li><a href="#former_overseas_employees">Former overseas employees</a></li>
+                  <li><a href="#individuals_with_disabilities">Individuals with Disabilities</a></li>
+                  <li><a href="#military_spouses">Military Spouses</a></li>
+                  <li><a href="#peace_corps">Peace Corps / VISTA</a></li>
+                  <li><a href="#senior_executives">Senior Executives</a></li>
+                  <li><a href="#students">Students</a></li>
+                  <li><a href="#veterans">Veterans</a></li>
+                </ul>
               </li>
-              <ul class="usa-unstyled-list usajobs-footer--v1__subsection">
-                <li><a href="#federal_employees">Federal Employees</a></li>
-                <li><a href="#former_overseas_employees">Former overseas employees</a></li>
-                <li><a href="#individuals_with_disabilities">Individuals with Disabilities</a></li>
-                <li><a href="#military_spouses">Military Spouses</a></li>
-                <li><a href="#peace_corps">Peace Corps / VISTA</a></li>
-                <li><a href="#senior_executives">Senior Executives</a></li>
-                <li><a href="#students">Students</a></li>
-                <li><a href="#veterans">Veterans</a></li>
-              </ul>
             </ul>
           </div>
         </nav>
@@ -147,7 +179,7 @@ lead: USAJOBS uses a large footer that incorporates navigation.
 
 <h6 class="usa-heading-alt">Version 2</h6>
 <div class="preview">
-  <footer class="usa-footer usa-footer-big usajobs-footer--v2" role="contentinfo">
+  <footer class="usa-footer usa-footer-big usajobs-footer--v2" role="contentinfo" data-object="footer">
     <div class="usa-grid usa-footer-return-to-top">
       <a href="#">Return to top</a>
     </div>
@@ -155,10 +187,12 @@ lead: USAJOBS uses a large footer that incorporates navigation.
       <div class="usa-grid-full">
         <nav class="usa-footer-nav usa-width-one-whole">
           <ul class="usa-unstyled-list usa-footer-primary-content">
-            <h4 class="usa-footer-primary-link">
-              <a href="/Applicant/Application/ListApplications">Home</a>
-            </h4>
-            <li>
+            <li class="usa-footer-primary-link" data-behavior="footer.toggle" data-state="is-closed" data-target=".home-menu">Home</li>
+            </li>
+            <li class="usajobs-footer--v2__menu-item overview-link home-menu is-hidden">
+              <a href="/Applicant/">Account</a>
+            </li>
+            <li class="usajobs-footer--v2__menu-item home-menu is-hidden">
               <a class="usajobs-footer--v2__subsection-title" href="/Applicant/Application/ListApplications">Job Applications</a>
               <ul class="usa-unstyled-list usajobs-footer--v2__subsection">
                 <li><a href="/Applicant/Application/ListApplications#advancing">Advancing</a></li>
@@ -166,51 +200,79 @@ lead: USAJOBS uses a large footer that incorporates navigation.
                 <li><a href="/Applicant/Application/ListApplications#stopped">Stopped</a></li>
               </ul>
             </li>
-            <li><a href="/Applicant/SavedJobs/ListSavedJobs">Saved Jobs</a></li>
-            <li><a href="/Applicant/SavedSearches/ListSavedSearches">Saved Searches</a></li>
-          </ul>
-          <ul class="usa-unstyled-list usa-footer-primary-content">
-            <h4 class="usa-footer-primary-link">
-              <a href="/Applicant/Profile">Profile</a>
-            </h4>
-            <li><a href="#profile-background">Background</a></li>
-            <li><a href="#profile-education">Education</a></li>
-            <li><a href="#profile-experience">Experience</a></li>
-            <li><a href="#profile-contact_info">Contact Info</a></li>
-          </ul>
-          <ul class="usa-unstyled-list usa-footer-primary-content">
-            <li>
-              <h4 class="usa-footer-primary-link"><a href="/Applicant/Documents">Documents</a></h4>
+            <li class="usajobs-footer--v2__menu-item home-menu is-hidden">
+              <a href="/Applicant/SavedJobs/ListSavedJobs">Saved Jobs</a>
             </li>
-            <li><a href="#profile-documents">Cover Letters</a></li>
-            <li><a href="#profile-documents">Forms</a></li>
-            <li><a href="#profile-documents">Resumes</a></li>
+            <li class="usajobs-footer--v2__menu-item home-menu is-hidden">
+              <a href="/Applicant/SavedSearches/ListSavedSearches">Saved Searches</a>
+            </li>
           </ul>
           <ul class="usa-unstyled-list usa-footer-primary-content">
-            <li>
-              <h4 class="usa-footer-primary-link">
-                <a href="/Applicant/Profile/PersonalInformation">Username &amp; Password</a>
-              </h4>
+            <li class="usa-footer-primary-link" data-behavior="footer.toggle" data-state="is-closed" data-target=".profile-menu">Profile</li>
+            <li class="usajobs-footer--v2__menu-item overview-link profile-menu is-hidden">
+              <a href="#profile">Overview</a>
             </li>
-            <li><a href="/Account/LogOff">Sign Out</a></li>
+            <li class="usajobs-footer--v2__menu-item profile-menu is-hidden">
+              <a href="#profile-background">Background</a>
+            </li>
+            <li class="usajobs-footer--v2__menu-item profile-menu is-hidden">
+              <a href="#profile-education">Education</a>
+            </li>
+            <li class="usajobs-footer--v2__menu-item profile-menu is-hidden">
+              <a href="#profile-experience">Experience</a>
+            </li>
+            <li class="usajobs-footer--v2__menu-item profile-menu is-hidden">
+              <a href="#profile-contact_info">Contact Info</a>
+            </li>
+          </ul>
+          <ul class="usa-unstyled-list usa-footer-primary-content">
+            <li class="usa-footer-primary-link" data-behavior="footer.toggle" data-state="is-closed" data-target=".documents-menu">Documents</li>
+            <li class="usajobs-footer--v2__menu-item overview-link documents-menu is-hidden">
+              <a href="#profile-documents">All</a>
+            </li>
+            <li class="usajobs-footer--v2__menu-item documents-menu is-hidden">
+              <a href="#profile-documents">Cover Letters</a>
+            </li>
+            <li class="usajobs-footer--v2__menu-item documents-menu is-hidden">
+              <a href="#profile-documents">Forms</a>
+            </li>
+            <li class="usajobs-footer--v2__menu-item documents-menu is-hidden">
+              <a href="#profile-documents">Resumes</a>
+            </li>
+          </ul>
+          <ul class="usa-unstyled-list usa-footer-primary-content">
+            <li class="usa-footer-primary-link" data-behavior="footer.toggle" data-state="is-closed" data-target=".username-menu">Username &amp; Password</li>
+            <li class="usajobs-footer--v2__menu-item overview-link username-menu is-hidden">
+              <a href="#/Account/Username">Overview</a>
+            </li>
+            <li class="usajobs-footer--v2__menu-item username-menu is-hidden">
+              <a href="/Account/LogOff">Sign Out</a>
+            </li>
           </ul>
           <div class="usajobs-footer--v2__content-container">
             <ul class="usa-unstyled-list usa-footer-primary-content usajobs-footer--v2__help">
-              <h4 class="usa-footer-primary-link">
-                <a href="https://help.usajobs.gov/">Help</a>
-              </h4>
-              <li><a href="https://help.usajobs.gov/index.php/About_Us">About USAJOBS</a></li>
-              <li><a href="https://help.usajobs/gov/Support#Miscellaneous-Other">Contact Us</a></li>
-              <li><a href="https://help.usajobs.gov/index.php/Getting_Started">Get Started</a></li>
-              <li> 
+              <li class="usa-footer-primary-link" data-behavior="footer.toggle" data-state="is-closed" data-target=".help-menu">Help</li>
+              <li class="usajobs-footer--v2__menu-item overview-link help-menu is-hidden">
+                <a href="https://help.usajobs.gov/">Overview</a>
+              </li>
+              <li class="usajobs-footer--v2__menu-item help-menu is-hidden">
+                <a href="https://help.usajobs.gov/index.php/About_Us">About USAJOBS</a>
+              </li>
+              <li class="usajobs-footer--v2__menu-item help-menu is-hidden">
+                <a href="https://help.usajobs/gov/Support#Miscellaneous-Other">Contact Us</a>
+              </li>
+              <li class="usajobs-footer--v2__menu-item help-menu is-hidden">
+                <a href="https://help.usajobs.gov/index.php/Getting_Started">Get Started</a>
+              </li>
+              <li class="usajobs-footer--v2__menu-item help-menu is-hidden">
                 <a class="usajobs-footer--v2__subsection-title" href="https://help.usajobs.gov/index.php/FAQs">FAQs</a>
                 <ul class="usa-unstyled-list usajobs-footer--v2__subsection">
-                  <li><a href="#how-to">I'm not a Veteran, can I get a Federal job?</a></li>
                   <li><a href="#how-to">Can my resume exceed two pages?</a></li>
+                  <li><a href="#how-to">Do I need security clearance for a Federal job?</a></li>
                   <li><a href="#how-to">Is my resume scanned for keywords?</a></li>
                 </ul>
               </li>
-              <li>
+              <li class="usajobs-footer--v2__menu-item help-menu is-hidden">
                 <a class="usajobs-footer--v2__subsection-title" href="https://help.usajobs.gov/index.php/How_To">How to&hellip;</a>
                 <ul class="usa-unstyled-list usajobs-footer--v2__subsection">
                   <li><a href="#how-to">Apply for a job</a></li>
@@ -218,14 +280,27 @@ lead: USAJOBS uses a large footer that incorporates navigation.
                   <li><a href="#how-to">Search for Jobs</a></li>
                 </ul>
               </li>
-              <li><a href="https://help.usajobs/gov/index.php/Reference">Reference</a></li>
+              <li class="usajobs-footer--v2__menu-item help-menu is-hidden">
+                <a href="https://help.usajobs/gov/index.php/Reference">Reference</a>
+              </li>
             </ul>
             <ul class="usa-unstyled-list usa-footer-primary-content usajobs-footer--v2__working_for_the_government">
-              <h4 class="usa-footer-primary-link">Working for the Government</h4>
-              <li><a href="https://help.usajobs.gov/index.php/Pay_and_Benefits">Benefits</a></li>
-              <li><a href="https://help.usajobs.gov/index.php/Pay_and_Benefits">Salary</a></li>
-              <li>
-                <a class="usajobs-footer--v2__subsection-title" href="#unique_hiring_paths">Unique Hiring Paths</a>
+              <li class="usa-footer-primary-link" data-behavior="footer.toggle" data-state="is-closed" data-target=".gov-menu">Working for the Government</li>
+              <li class="usajobs-footer--v2__menu-item overview-link gov-menu is-hidden">
+                <a href="https://help.usajobs.gov/index.php/Working_for_the_government">
+                  Overview
+                </a>
+              </li>
+              <li class="usajobs-footer--v2__menu-item gov-menu is-hidden">
+                <a href="https://help.usajobs.gov/index.php/Pay_and_Benefits">Benefits</a>
+              </li>
+              <li class="usajobs-footer--v2__menu-item gov-menu is-hidden">
+                <a href="https://help.usajobs.gov/index.php/Pay_and_Benefits">Salary</a>
+              </li>
+              <li class="usajobs-footer--v2__menu-item gov-menu is-hidden">
+                <a class="usajobs-footer--v2__subsection-title" href="#unique_hiring_paths">
+                  Unique Hiring Paths
+                </a>
                 <ul class="usa-unstyled-list usajobs-footer--v2__subsection">
                   <li><a href="#federal_employees">Federal Employees</a></li>
                   <li><a href="#former_overseas_employees">Former overseas employees</a></li>

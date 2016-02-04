@@ -80,7 +80,6 @@ module.exports = function(grunt) {
       },
       js_components: {
         src: [
-          'library/assets/js/components.js',
           'js/components/*.js'
         ],
         dest: 'js/usajobs-design-system-components.js'

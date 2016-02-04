@@ -22,9 +22,9 @@ $nav.on('nav.toggle', function(event, opts) {
   event.preventDefault();
 
   if (opts.state === 'is-closed') {
-    $nav.trigger('nav.open', opts);
+    opts.object.trigger('nav.open', opts);
   } else if (opts.state === 'is-open') {
-    $nav.trigger('nav.close', opts);
+    opts.object.trigger('nav.close', opts);
   }
 });
 
