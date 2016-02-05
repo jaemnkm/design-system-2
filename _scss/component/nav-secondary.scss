@@ -85,6 +85,10 @@
     }
   }
 
+  &__more-toggle {
+    border-left: 1px solid $color-gray-lighter;
+  }
+
   &__more-container {
     display: none;
     position: absolute;

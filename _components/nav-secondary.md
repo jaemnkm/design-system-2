@@ -16,12 +16,12 @@ lead: Secondary navigation allows for movement within a section or page.
       <ul class="usajobs-nav-secondary__menu">
         <li class="usajobs-nav-secondary__container"> 
           <a class="usajobs-nav-secondary__item is-active" href="#contact">
-            Contact <i class="fa fa-check"></i>
+            Contact
           </a>
         </li>
         <li class="usajobs-nav-secondary__container"> 
           <a class="usajobs-nav-secondary__item" href="#eligibility">
-            Eligibility <i class="fa fa-check"></i>
+            Eligibility
           </a>
         </li>
         <li class="usajobs-nav-secondary__container"> 
@@ -40,13 +40,18 @@ lead: Secondary navigation allows for movement within a section or page.
           </a>
         </li>
         <li class="usajobs-nav-secondary__container more is-hidden"> 
-          <a class="usajobs-nav-secondary__more-toggle" href="#more" data-behavior="nav-secondary.toggle" data-target="#usajobs-nav-secondary-menu--profile">More &hellip;</a>
+          <a class="usajobs-nav-secondary__more-toggle" href="#more" data-behavior="nav-secondary.toggle" data-target="#usajobs-nav-secondary-menu--profile"><i class="fa fa-plus"></i></a>
           <ul class="usajobs-nav-secondary__more-container" id="usajobs-nav-secondary-menu--profile" data-state="is-closed">
           </ul>
         </li>
       </ul>
     </div>
   </nav>
+  <div class="content">
+    <h1>Profile</h1>
+    <h2>Contact Information</h2>
+    <p><span class="fa fa-check-circle"></span> Completed</p>
+  </div>
 </div>
 
 <div class="usa-accordion-bordered usa-accordion-docs">
