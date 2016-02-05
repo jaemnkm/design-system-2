@@ -5276,6 +5276,10 @@ html {
   color: #2e8540;
 }
 
+.usajobs-nav-secondary__more-toggle {
+  border-left: 1px solid #d6d7d9;
+}
+
 .usajobs-nav-secondary__more-container {
   display: none;
   position: absolute;
