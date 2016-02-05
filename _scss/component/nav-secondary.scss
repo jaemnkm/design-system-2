@@ -79,6 +79,10 @@
       color: $color-primary-darkest;
       border-bottom: 3px solid $color-primary-alt-darkest;
     }
+
+    .fa-check {
+      color: $color-green;
+    }
   }
 
   &__more-container {

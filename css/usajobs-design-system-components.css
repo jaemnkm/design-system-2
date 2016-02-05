@@ -5272,6 +5272,10 @@ html {
   border-bottom: 3px solid #046b99;
 }
 
+.usajobs-nav-secondary__item .fa-check, .usajobs-nav-secondary__more-toggle .fa-check {
+  color: #2e8540;
+}
+
 .usajobs-nav-secondary__more-container {
   display: none;
   position: absolute;

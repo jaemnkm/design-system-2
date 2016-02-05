@@ -153,11 +153,13 @@ lead: USAJOBS adds or clarifies design for contextual help, required/optional fi
     <h4 class="usa-heading">Usability</h4>
     <h5>When to use</h5>
     <ul class="usa-content-list">
-      <li>When all fields for a form are required.</li>
+      <li>When all fields for a form are required use the text "All fields are required".</li>
+      <li>When most of the form fields are required use the text "All fields are required unless otherwise noted".</li>
     </ul>
     <h5>When not to use</h5>
     <ul class="usa-content-list">
-      <li>For forms where the majority of fields are required or optional use the <a href="#usajobs-form-field-indicator-documentation">Required/Optional Field Indicator</a> to label the state of the fields in the minority.</li>
+      <li>The form legend may be omitted in cases where the form is extremely short or the fields are obviously required. For example, a form that consists of one checkbox or a sign in form.</li>
+      <li>When most of the form fields are optional omit the legend and use the <a href="#usajobs-form-field-indicator-documentation">Required Field Indicator</a> to indicate the required fields.</li>
     </ul>
   </div>
 </div>
