@@ -16,12 +16,12 @@ lead: Secondary navigation allows for movement within a section or page.
       <ul class="usajobs-nav-secondary__menu">
         <li class="usajobs-nav-secondary__container"> 
           <a class="usajobs-nav-secondary__item is-active" href="#contact">
-            Contact
+            Contact <i class="fa fa-check"></i>
           </a>
         </li>
         <li class="usajobs-nav-secondary__container"> 
           <a class="usajobs-nav-secondary__item" href="#eligibility">
-            Eligibility
+            Eligibility <i class="fa fa-check"></i>
           </a>
         </li>
         <li class="usajobs-nav-secondary__container"> 
