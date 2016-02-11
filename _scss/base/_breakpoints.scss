@@ -3,14 +3,15 @@
 $SM-screen:    30em;    //  480px at 16px base font - Future BP, USDS standard
 $M-screen:     37.5em;  //  600px at 16px base font - Future BP, USDS standard
 $ML-screen:    48em;    //  768px at 16px base font - Temporary to align with current BP
-$MLL-screen:   62em;    //  992px at 16px base font - Temporary to align with current BP
-$L-screen:     64em;    // 1024px at 16px base font - Future BP, USAJOBS proposed
+$MLL-screen:   62em;    //  Alias for L (backward compatibility)
+$L-screen:     62em;    //  992px at 16px base font - Temporary to align with current BP
 $XL-screen:    75em;    // 1200px at 16px base font - USDS standard, aligns with current BP
 $XXL-screen:  120em;    // 1920px at 16px base font - Future BP, USAJOBS proposed
 
 $SM:  new-breakpoint(min-width $SM-screen 2);
 $M:   new-breakpoint(min-width $M-screen 6);
 $ML:  new-breakpoint(min-width $ML-screen 6);
+// $MLL is replaced as of 02/2016 by $L
 $MLL: new-breakpoint(min-width $MLL-screen 12);
 $L:   new-breakpoint(min-width $L-screen 12);
 $XL:  new-breakpoint(min-width $XL-screen 12);
