@@ -154,25 +154,22 @@ lead:  A responsive grid, with a sensible number of breakpoints, provides struct
           </thead>
           <tbody>
             <tr>
-              <td>SM</td><td>30em/480px</td><td>2</td><td>Future BP, USDS standard</td>
+              <td>SM</td><td>30em/480px</td><td>2</td><td>USDS standard</td>
             </tr>
             <tr>
-              <td>M</td><td>37.5em/600px</td><td>6</td><td>Future BP, USDS standard</td>
+              <td>M</td><td>37.5em/600px</td><td>6</td><td>USDS standard</td>
             </tr>
             <tr>
-              <td>ML</td><td>48em/768px</td><td>6</td><td>Temporary to align with current BP</td>
+              <td>ML</td><td>48em/768px</td><td>6</td><td>USAJOBS specific.</td>
             </tr>
             <tr>
-              <td>MLL</td><td>62em/992px</td><td>12</td><td>Temporary to align with current BP</td>
+              <td>L</td><td>62em/992px</td><td>12</td><td>Formerly MLL. USAJOBS specific.</td>
             </tr>
             <tr>
-              <td>L</td><td>64em/1024px</td><td>12</td><td>Future BP, USAJOBS proposed</td>
+              <td>XL</td><td>75em/1200px</td><td>12</td><td>USDS standard</td>
             </tr>
             <tr>
-              <td>XL</td><td>75em/1200px</td><td>12</td><td>USDS standard, align with current BP</td>
-            </tr>
-            <tr>
-              <td>XXL</td><td>120em/1920px</td><td>12</td><td>Future BP, USAJOBS proposed</td>
+              <td>XXL</td><td>120em/1920px</td><td>12</td><td>USAJOBS specific. Most common viewport width of visitors to USAJOBS.</td>
             </tr>
           </tbody>
         </table>
