@@ -2756,8 +2756,8 @@ ul.usajobs-nav__secondary-menu li a {
 }
 
 .usajobs-nav--v2__menu-container[data-state="is-open"] .usajobs-nav--v2__section-link {
-  color: #205493;
-  background-color: #e4e2e0;
+  color: #ffffff;
+  background-color: #205493;
 }
 
 .usajobs-nav--v2__menu-container[data-state="is-open"] ul.usajobs-nav--v2__secondary-menu {
@@ -2855,21 +2855,12 @@ ul.usajobs-nav__secondary-menu li a {
 }
 
 .usajobs-nav--v2__menu-search[data-state="is-open"] {
-  background-color: #e4e2e0;
+  background-color: #205493;
 }
 
 .usajobs-nav--v2__search {
-  max-width: 68em;
-  margin-left: auto;
-  margin-right: auto;
   padding: 0 1.5rem 3rem;
-  background-color: #e4e2e0;
-}
-
-.usajobs-nav--v2__search::after {
-  clear: both;
-  content: "";
-  display: table;
+  background-color: #205493;
 }
 
 @media screen and (min-width: 37.5em) {
@@ -2888,6 +2879,7 @@ ul.usajobs-nav__secondary-menu li a {
 
 .usajobs-nav--v2__search label {
   max-width: inherit;
+  color: #ffffff;
 }
 
 @media screen and (min-width: 37.5em) {
@@ -2975,7 +2967,7 @@ ul.usajobs-nav__secondary-menu li a {
 }
 
 .usajobs-nav--v2__search-keywords-icon, .usajobs-nav--v2__search-location-icon {
-  color: #0071bc;
+  color: #00a6d2;
 }
 
 .usajobs-nav--v2__search-button {

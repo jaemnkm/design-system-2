@@ -449,8 +449,8 @@ ul.usajobs-nav__secondary-menu {
       overflow-y: visible;
 
       .usajobs-nav--v2__section-link {
-        color: $color-primary-darker;
-        background-color: $color-gray-warm-light;
+        color: $color-white;
+        background-color: $color-primary-darker;
         // border-bottom: 3px solid $color-primary-darker;
       }
 
@@ -545,14 +545,13 @@ ul.usajobs-nav__secondary-menu {
 
   &__menu-search {
     &[data-state="is-open"] {
-      background-color: $color-gray-warm-light;
+      background-color: $color-primary-darker;
     }
   }
 
   &__search {
-    @include outer-container();
     padding: 0 $size-default $size-M;
-    background-color: $color-gray-warm-light;
+    background-color: $color-primary-darker;
 
     @include media($M) {
       padding-bottom: $size-S;
@@ -568,6 +567,7 @@ ul.usajobs-nav__secondary-menu {
 
     label {
       max-width: inherit;
+      color: $color-white;
     }
   }
 
@@ -613,7 +613,7 @@ ul.usajobs-nav__secondary-menu {
 
   &__search-keywords-icon,
   &__search-location-icon {
-    color: $color-primary;
+    color: $color-primary-alt-dark;
   }
 
   &__search-button {
