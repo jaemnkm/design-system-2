@@ -64,6 +64,7 @@ lead: USAJOBS adds or clarifies design for contextual help, required/optional fi
               <p>[Detailed help explaining the intent of the data request.]</p>
           </div>
         </li>
+      </ul>
     </div>
   </form>
 
