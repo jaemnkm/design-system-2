@@ -14,13 +14,15 @@ lead: USAJOBS adds or clarifies design for contextual help, required/optional fi
   Contextual help provides assistance in clarifying the intent of a question or form input.
 </p>
 
-<h6 class="usa-heading-alt">Brief help</h6>
 <div class="preview">
-  <label for="input-type-text">Text input label</label>
-  <input id="input-type-text" name="input-type-text" type="text">
-  <p class="usajobs-form__help-brief">
-    Some concise help text that explains the intent of the form input.
-  </p>
+  <h6 class="usa-heading-alt">Brief help</h6>
+  <form class="usajobs-form">
+    <label for="input-type-text">Text input label</label>
+    <input id="input-type-text" name="input-type-text" type="text">
+    <p class="usajobs-form__help-brief">
+      Some concise help text that explains the intent of the form input.
+    </p>
+  </form>
 </div>
 <div class="usa-accordion-bordered usa-accordion-docs">
   <button class="usa-button-unstyled usa-accordion-button"
@@ -46,22 +48,30 @@ lead: USAJOBS adds or clarifies design for contextual help, required/optional fi
   </div>
 </div>
 
-<h6 class="usa-heading-alt">Detailed Help</h6>
 <div class="preview">
-  <label for="input-type-text">Text input label</label>
-  <input id="input-type-text" name="input-type-text" type="text">
-  <div class="usa-accordion-bordered usajobs-form__help-detailed">
-    <ul class="usa-unstyled-list">
-      <li>
-        <div class="usajobs-accordion"> 
-          <button class="usa-accordion-button usajobs-form__help-detailed-trigger" aria-expanded="false" aria-controls="collapsible-0">
-            <span class="fa fa-question-circle"></span> Help me answer
-          </button>
-          <div id="collapsible-0" aria-hidden="true" class="usa-accordion-content">
-            <p>[Detailed help explaining the intent of the data request.]</p>
-        </div>
-      </li>
-  </div>
+  <h6 class="usa-heading-alt">Detailed Help</h6>
+  <form class="usajobs-form">
+    <label for="input-type-text">Text input label</label>
+    <input id="input-type-text" name="input-type-text" type="text">
+    <div class="usa-accordion-bordered usajobs-form__help-detailed">
+      <ul class="usa-unstyled-list">
+        <li>
+          <div class="usajobs-accordion"> 
+            <button class="usa-accordion-button usajobs-form__help-detailed-trigger" aria-expanded="false" aria-controls="collapsible-0">
+              <span class="fa fa-question-circle"></span> Help me answer
+            </button>
+            <div id="collapsible-0" aria-hidden="true" class="usa-accordion-content">
+              <p>[Detailed help explaining the intent of the data request.]</p>
+          </div>
+        </li>
+    </div>
+  </form>
+
+  <h6 class="usa-heading-alt is-deprecated">Outside help - DEPRECATED</h6>
+  <form class="usajobs-form">
+    <label for="input-type-text">Text input label <i class="help-icon fa fa-question-circle"></i></label>
+    <input id="input-type-text" name="input-type-text" type="text">
+  </form>
 </div>
 <div class="usa-accordion-bordered usa-accordion-docs">
   <button class="usa-button-unstyled usa-accordion-button"

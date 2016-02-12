@@ -818,6 +818,10 @@ h3 + .button_wrapper {
 .usa-heading-alt {
   border-bottom: 1px solid $color-gray;
   padding-bottom: .8rem;
+
+  &.is-deprecated {
+    color: $color-gray;
+  }
 }
 
 h6.usa-heading-alt {

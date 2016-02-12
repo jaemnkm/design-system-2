@@ -835,6 +835,10 @@ h3 + .button_wrapper {
   padding-bottom: .8rem;
 }
 
+.usa-heading-alt.is-deprecated {
+  color: #5b616b;
+}
+
 h6.usa-heading-alt {
   margin-top: 4rem;
 }
