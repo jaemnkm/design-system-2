@@ -68,6 +68,17 @@
       </li>
       <li>
         <a {% if current[1] == 'document' %}class="usa-current"{% endif %} href="{{ site.baseurl }}/document/">Document</a>
+        <ul class="usa-sidenav-sub_list document-sublist">
+          <li><a href="{{ site.baseurl }}/document/#thumbnail">Thumbnail</a></li>
+          <li><a href="{{ site.baseurl }}/document/#placeholder">Placeholder</a></li>
+        </ul>
+      </li>
+      <li>
+        <a {% if current[1] == 'search' %}class="usa-current"{% endif %} href="{{ site.baseurl }}/search/">Search</a>
+        <ul class="usa-sidenav-sub_list search-sublist">
+          <li><a href="{{ site.baseurl }}/search/#controls">Controls</a></li>
+          <li><a href="{{ site.baseurl }}/search/#pagination">Pagination</a></li>
+        </ul>
       </li>
     </ul>
   </nav>

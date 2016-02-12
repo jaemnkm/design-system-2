@@ -9,7 +9,7 @@ lead: A way to upload and view documents.
   Design Complete
 </a>
 
-<h4 class="usa-heading-alt">Thumbnail</h4>
+<h4 class="usa-heading-alt" id="thumbnail">Thumbnail</h4>
 <div class="preview">
   <h6 class="usa-heading-alt">Single-Select</h6>
   <div class="usajobs-grid">
@@ -315,7 +315,7 @@ lead: A way to upload and view documents.
   </div>
 </div>
 
-<h4 class="usa-heading-alt">Placeholder variation</h4>
+<h4 class="usa-heading-alt" id="placeholder">Placeholder variation</h4>
 <div class="preview">
   <div class="usajobs-document usajobs-document--placeholder" data-object="document" data-state="is-selectable">
     <div class="usajobs-document__figure" data-behavior="document.toggle" data-target="#toggle-document-2">

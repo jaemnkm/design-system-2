@@ -1,0 +1,101 @@
+// Search - Pagination
+
+@import 'lib/bourbon/bourbon';
+@import 'lib/neat/neat';
+@import "font-awesome/font-awesome";
+@import 'core/variables';
+@import 'base/variables';
+@import 'base/utilities';
+@import 'base/breakpoints';
+
+.usajobs-search-pagination {
+  width: 100%;
+  margin: $size-M 0;
+  padding: 0;
+  text-align: center;
+
+  &__page {
+    display: none;
+
+    @include media($ML) {
+      display: inline-block;
+    }
+
+    &:before {
+      content: '';
+    }
+
+    a,
+    &.is-active span {
+      display: block;
+      padding: $size-base $size-default;
+
+      @include media($ML) {
+        padding: $size-S $size-M;
+      }
+    }
+
+    &.is-active span {
+      color: $color-base;
+      font-weight: bold;
+      background-color: $color-white;
+    }
+
+    a {
+      text-decoration: none;
+      line-height: 1;
+
+      &:hover {
+        border-radius: $border-radius;
+        box-shadow: inset 0 0 0 2px $color-primary-darker;
+        color: $color-primary-darker;
+        text-decoration: none;
+      }
+    }
+  }
+
+  &__next-page-container {
+    display: block;
+    width: 100%;
+
+    @include media($M) {
+      width: 60%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    @include media($ML) {
+      display: inline-block;
+      width: auto;
+      margin-left: $size-base;
+    }
+
+    &:before {
+      content: '';
+    }
+
+    a {
+      display: block;
+      padding: $size-S $size-M;
+      line-height: 1;
+      border-radius: $border-radius;
+      background-color: $color-white;
+      box-shadow: inset 0 0 0 2px $color-primary;
+      color: $color-primary;
+      text-decoration: none;
+
+      &:hover {
+        box-shadow: inset 0 0 0 2px $color-primary-darker;
+        color: $color-primary-darker;
+        text-decoration: none;
+      }
+    }
+  }
+
+  &__next-page:after {
+    @include fa-icon();
+    content: $fa-var-chevron-right;
+    padding-left: $size-base;
+  }
+}
+
