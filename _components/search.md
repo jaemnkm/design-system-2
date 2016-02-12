@@ -39,7 +39,7 @@ lead: A main function of USAJOBS is to provide a clear and effective search. Our
       <h4>Search Suggestions</h4>
       <ul>
         <li>Check your spelling.</li>
-        <li>Try using more general keywords.</li>
+        <li>Try using more general <a href="https://help.usajobs.gov/index.php/Keyword_Tips">keywords</a>.</li>
         <li>For a more specific search try applying <a href="https://www.usajobs.gov/Search/AdvancedSearch">advanced search filters</a>.</li>
         <li>For guidance on our job categories and occupation titles please visit <a href="https://help.usajobs.gov/index.php/What_occupations_are_available_in_the_federal_government">Federal government occupation titles</a>. We may just be using a different name or description for the job you are looking for.</li>
 
