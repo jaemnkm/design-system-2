@@ -5,8 +5,8 @@ title: Secondary Navigation
 lead: Secondary navigation allows for movement within a section or page.
 ---
 
-<a href="{{ site.baseurl }}/getting-started/#maturity" class="usa-label maturity under_review">
-  Under Review
+<a href="{{ site.baseurl }}/getting-started/#maturity" class="usa-label maturity design_complete">
+  Design Complete
 </a>
 
 <h6 class="usa-heading-alt">Profile v1</h6>
