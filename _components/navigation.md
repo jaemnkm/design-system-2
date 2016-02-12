@@ -313,7 +313,7 @@ lead: USAJOBS features a consistent header for top-level navigation across the s
                   <input id="search-location" name="search-location" type="text" class="usajobs-nav--v2__search-location-input" placeholder="City, State, ZIP, or Country">
                 </div>
                 <div class="usajobs-nav--v2__search-button-container">
-                  <button class="usa-button-big usa-button-primary-alt usajobs-nav--v2__search-button">
+                  <button class="usa-button usa-button-primary-alt usajobs-nav--v2__search-button">
                     Search
                   </button>
                 </div>
@@ -393,7 +393,7 @@ lead: USAJOBS features a consistent header for top-level navigation across the s
                   <input id="search-location" name="search-location" type="text" class="usajobs-nav--v2__search-location-input" placeholder="City, State, ZIP, or Country">
                 </div>
                 <div class="usajobs-nav--v2__search-button-container">
-                  <button class="usa-button-big usa-button-primary-alt usajobs-nav--v2__search-button">
+                  <button class="usa-button usa-button-primary-alt usajobs-nav--v2__search-button">
                     Search
                   </button>
                 </div>

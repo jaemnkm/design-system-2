@@ -555,6 +555,10 @@ ul.usajobs-nav__secondary-menu {
     @include media($M) {
       padding-bottom: $size-S;
     }
+    @include media($ML) {
+      padding-left: $size-M;
+      padding-right: $size-M;
+    }
 
     &[aria-expanded="false"] {
       display: none;
@@ -618,6 +622,8 @@ ul.usajobs-nav__secondary-menu {
   &__search-button {
     margin-top: $size-M;
     margin-right: 0;
+    padding: ($size-default - 0.2rem) $size-M;
+    font-size: $h4-font-size;
 
     @include media($M) {
       margin-top: $size-S;

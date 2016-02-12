@@ -2872,6 +2872,13 @@ ul.usajobs-nav__secondary-menu li a {
   }
 }
 
+@media screen and (min-width: 48em) {
+  .usajobs-nav--v2__search {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}
+
 .usajobs-nav--v2__search[aria-expanded="false"] {
   display: none;
 }
@@ -2976,6 +2983,8 @@ ul.usajobs-nav__secondary-menu li a {
 .usajobs-nav--v2__search-button {
   margin-top: 3rem;
   margin-right: 0;
+  padding: 1.3rem 3rem;
+  font-size: 19px;
 }
 
 @media screen and (min-width: 37.5em) {
