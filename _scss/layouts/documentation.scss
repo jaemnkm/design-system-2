@@ -378,7 +378,9 @@ $section-padding:   7.2rem;
   }
 }
 
-.visual-style .sidenav .visual-style-sublist {
+.visual-style .sidenav .visual-style-sublist,
+.document .sidenav .document-sublist,
+.search .sidenav .search-sublist {
   display: block;
 
   ul {
@@ -492,6 +494,13 @@ $section-padding:   7.2rem;
   }
   padding: $size-default $site-margins;
   border: 1px solid $color-gray-lightest;
+
+  &.compact {
+    padding: 1rem 0;
+  }
+  &.super-compact {
+    padding: 0;
+  }
 
   .is-peripheral {
     opacity: .2;

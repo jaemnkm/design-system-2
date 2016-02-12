@@ -221,11 +221,7 @@ var $nav_secondary = $('[data-object="nav-secondary"]'),
       nav_width += $(this).outerWidth( true );
     });
 
-    window.console.log('Nav width: ' + nav_width);
-
     available_space = $nav_secondary.outerWidth(true) - more_width;
-
-    window.console.log('Available space: ' + available_space);
 
     if (nav_width > available_space) {
       last_item = $menu.find('> li:not(.more)').last();
@@ -248,11 +244,15 @@ var $nav_secondary = $('[data-object="nav-secondary"]'),
   };
 
 // Toggle Secondary Nav items on load
-navSecondaryToggleMenuItems();
+if ($nav_secondary !== undefined && $nav_secondary.length > 0) {
+  navSecondaryToggleMenuItems();
+}
 
 // Toggle Secondary Nav items on resize
 $(window).resize( $.throttle( 250, function() {
-  navSecondaryToggleMenuItems();
+  if ($nav_secondary !== undefined && $nav_secondary.length > 0) {
+    navSecondaryToggleMenuItems();
+  }
 }));
 
 $nav_secondary.on('click', '[data-behavior]', function (event) {

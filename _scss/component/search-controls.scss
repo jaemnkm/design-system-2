@@ -1,0 +1,41 @@
+// Search - Controls
+
+@import 'lib/bourbon/bourbon';
+@import 'lib/neat/neat';
+@import "font-awesome/font-awesome";
+@import 'core/variables';
+@import 'base/variables';
+@import 'base/utilities';
+@import 'base/breakpoints';
+
+.usajobs-search-controls {
+  &__results-count {
+    @include media($M) {
+      @include span-columns(3);
+    }
+
+    p {
+      margin-top: 1.3rem; // an odd-ball amount to align with the sort control
+    }
+  }
+
+  &__sort-container {
+    @include media($M) {
+      @include span-columns(3);
+      @include omega();
+      text-align: right;
+    }
+  }
+
+  &__sort-label {
+    display: inline-block;
+    margin-top: 0;
+    padding-right: $size-base;
+  }
+
+  &__sort-control {
+    display: inline-block;
+    width: auto;
+  }
+}
+
