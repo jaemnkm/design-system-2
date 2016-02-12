@@ -9,6 +9,8 @@
 @import 'base/breakpoints';
 
 .usajobs-search-controls {
+  padding: 0;
+
   &__results-count {
     @include media($M) {
       @include span-columns(3);

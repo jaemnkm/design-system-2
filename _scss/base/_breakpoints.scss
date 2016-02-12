@@ -8,14 +8,23 @@ $L-screen:     62em;    //  992px at 16px base font - Temporary to align with cu
 $XL-screen:    75em;    // 1200px at 16px base font - USDS standard, aligns with current BP
 $XXL-screen:  120em;    // 1920px at 16px base font - Future BP, USAJOBS proposed
 
+// min-width
 $SM:  new-breakpoint(min-width $SM-screen 2);
 $M:   new-breakpoint(min-width $M-screen 6);
 $ML:  new-breakpoint(min-width $ML-screen 6);
-// $MLL is replaced as of 02/2016 by $L
+// $MLL is replaced by $L as of 02/2016
 $MLL: new-breakpoint(min-width $MLL-screen 12);
 $L:   new-breakpoint(min-width $L-screen 12);
 $XL:  new-breakpoint(min-width $XL-screen 12);
-$XXL: new-breakpoint(min-width $XL-screen 12);
+$XXL: new-breakpoint(min-width $XXL-screen 12);
+
+// max-width
+$SM-down:  new-breakpoint(max-width $SM-screen 2);
+$M-down:   new-breakpoint(max-width $M-screen 6);
+$ML-down:  new-breakpoint(max-width $ML-screen 6);
+$L-down:   new-breakpoint(max-width $L-screen 12);
+$XL-down:  new-breakpoint(max-width $XL-screen 12);
+$XXL-down: new-breakpoint(max-width $XXL-screen 12);
 
 // In between points
 $SM-only:  new-breakpoint(min-width $SM-screen max-width ($M-screen - .001em));
