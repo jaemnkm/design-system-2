@@ -96,6 +96,7 @@
     right: 0;
     margin: 0.4rem 0 0;
     background-color: $color-gray-warm-light;
+    z-index: 1;
 
     &[data-state="is-open"] {
       display: block;

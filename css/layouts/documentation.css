@@ -511,8 +511,18 @@ html {
   padding: 1rem 0;
 }
 
+.preview.compact .usa-heading-alt {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
 .preview.super-compact {
   padding: 0;
+}
+
+.preview.super-compact .usa-heading-alt {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
 }
 
 .preview .is-peripheral {
