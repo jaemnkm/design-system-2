@@ -35,12 +35,14 @@ lead: A main function of USAJOBS is to provide a clear and effective search. Our
   <h6 class="usa-heading-alt">No results found</h6>
   <div class="usajobs-grid usajobs-search-controls">
     <div class="usajobs-search-controls__results-count">
-      <p>Sorry, no job annoucements were found.</p>
+      <p>Sorry, no job announcements were found.</p>
       <h4>Search Suggestions</h4>
       <ul>
         <li>Check your spelling.</li>
-        <li>Try using a broader search (more general words, no location) combined with the filters in <a href="https://www.usajobs.gov/Search/AdvancedSearch">advanced search</a>.</li>
-        <li>Check our list of <a href="https://help.usajobs.gov/index.php/What_occupations_are_available_in_the_federal_government">Federal government occupation titles</a>. We may just be using a different name or description for the job you are looking for.</li>
+        <li>Try using more general keywords.</li>
+        <li>For a more specific search try applying <a href="https://www.usajobs.gov/Search/AdvancedSearch">advanced search filters</a>.</li>
+        <li>For guidance on our job categories and occupation titles please visit <a href="https://help.usajobs.gov/index.php/What_occupations_are_available_in_the_federal_government">Federal government occupation titles</a>. We may just be using a different name or description for the job you are looking for.</li>
+
       </ul>
     </div>
   </div>
