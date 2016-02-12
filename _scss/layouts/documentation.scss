@@ -497,9 +497,20 @@ $section-padding:   7.2rem;
 
   &.compact {
     padding: 1rem 0;
+
+    .usa-heading-alt {
+      margin-left: $size-default;
+      margin-right: $size-default;
+    }
   }
+
   &.super-compact {
     padding: 0;
+
+    .usa-heading-alt {
+      margin-left: $size-default;
+      margin-right: $size-default;
+    }
   }
 
   .is-peripheral {

@@ -19,12 +19,12 @@ $XL:  new-breakpoint(min-width $XL-screen 12);
 $XXL: new-breakpoint(min-width $XXL-screen 12);
 
 // max-width
-$SM-down:  new-breakpoint(max-width $SM-screen 2);
-$M-down:   new-breakpoint(max-width $M-screen 6);
-$ML-down:  new-breakpoint(max-width $ML-screen 6);
-$L-down:   new-breakpoint(max-width $L-screen 12);
-$XL-down:  new-breakpoint(max-width $XL-screen 12);
-$XXL-down: new-breakpoint(max-width $XXL-screen 12);
+$SM-down:  new-breakpoint(max-width ($SM-screen - .001em) 2);
+$M-down:   new-breakpoint(max-width ($M-screen - .001em) 6);
+$ML-down:  new-breakpoint(max-width ($ML-screen - .001em) 6);
+$L-down:   new-breakpoint(max-width ($L-screen - .001em) 12);
+$XL-down:  new-breakpoint(max-width ($XL-screen - .001em) 12);
+$XXL-down: new-breakpoint(max-width ($XXL-screen - .001em) 12);
 
 // In between points
 $SM-only:  new-breakpoint(min-width $SM-screen max-width ($M-screen - .001em));
