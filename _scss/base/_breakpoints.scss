@@ -18,4 +18,8 @@ $XL:  new-breakpoint(min-width $XL-screen 12);
 $XXL: new-breakpoint(min-width $XL-screen 12);
 
 // In between points
-$ML-to-MLL:  new-breakpoint(min-width $ML-screen max-width ($MLL-screen - .001em), 6);
+$SM-only:  new-breakpoint(min-width $SM-screen max-width ($M-screen - .001em));
+$M-only:   new-breakpoint(min-width $M-screen max-width ($ML-screen - .001em));
+$ML-only:  new-breakpoint(min-width $ML-screen max-width ($L-screen - .001em));
+$L-only:   new-breakpoint(min-width $L-screen max-width ($XL-screen - .001em));
+$XL-only:  new-breakpoint(min-width $XL-screen max-width ($XXL-screen - .001em));
