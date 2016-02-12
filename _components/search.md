@@ -10,7 +10,7 @@ lead: A main function of USAJOBS is to provide a clear and effective search. Our
 </a>
 
 <h6 class="usa-heading-alt" id="controls">Controls</h6>
-<div class="preview compact">
+<div class="preview">
   <div class="usajobs-grid usajobs-search-controls">
     <div class="usajobs-search-controls__results-count">
       <p>Found 1,562 job annoucements</p>
