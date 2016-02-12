@@ -5,8 +5,8 @@ title: Form controls
 lead: USAJOBS adds or clarifies design for contextual help, required/optional field handling, and legend.
 ---
 
-<a href="{{ site.baseurl }}/getting-started/#maturity" class="usa-label maturity under_review">
-  Under Review
+<a href="{{ site.baseurl }}/getting-started/#maturity" class="usa-label maturity design_complete">
+  Design Complete
 </a>
 
 <h2 class="usa-heading" id="text-inputs">Contextual Help</h2>
@@ -155,6 +155,7 @@ lead: USAJOBS adds or clarifies design for contextual help, required/optional fi
     <ul class="usa-content-list">
       <li>When all fields for a form are required use the text "All fields are required".</li>
       <li>When most of the form fields are required use the text "All fields are required unless otherwise noted".</li>
+      <li>When an entire sub-section of a section is required use the text "This section is required".</li>
     </ul>
     <h5>When not to use</h5>
     <ul class="usa-content-list">
