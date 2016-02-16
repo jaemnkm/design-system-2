@@ -31,6 +31,9 @@
       padding: $size-base $size-default;
 
       @include media($ML) {
+        padding: $size-S $size-SM;
+      }
+      @include media($L) {
         padding: $size-S $size-M;
       }
     }
@@ -83,6 +86,13 @@
       @include media($ML-down) {
         border-radius: $border-radius;
         box-shadow: inset 0 0 0 2px $color-primary;
+      }
+
+      @include media($ML) {
+        padding: $size-S $size-SM;
+      }
+      @include media($L) {
+        padding: $size-S $size-M;
       }
 
       &:hover {
