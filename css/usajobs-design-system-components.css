@@ -15278,6 +15278,13 @@ html {
 @media screen and (min-width: 48em) {
   .usajobs-search-pagination__page a,
   .usajobs-search-pagination__page.is-active span {
+    padding: 1rem 2rem;
+  }
+}
+
+@media screen and (min-width: 62em) {
+  .usajobs-search-pagination__page a,
+  .usajobs-search-pagination__page.is-active span {
     padding: 1rem 3rem;
   }
 }
@@ -15341,6 +15348,18 @@ html {
   .usajobs-search-pagination__previous-page-container a, .usajobs-search-pagination__next-page-container a {
     border-radius: 0.3rem;
     box-shadow: inset 0 0 0 2px #0071bc;
+  }
+}
+
+@media screen and (min-width: 48em) {
+  .usajobs-search-pagination__previous-page-container a, .usajobs-search-pagination__next-page-container a {
+    padding: 1rem 2rem;
+  }
+}
+
+@media screen and (min-width: 62em) {
+  .usajobs-search-pagination__previous-page-container a, .usajobs-search-pagination__next-page-container a {
+    padding: 1rem 3rem;
   }
 }
 
