@@ -382,6 +382,11 @@ lead: USAJOBS uses a large footer that incorporates navigation.
       Please refer to the <a href="https://playbook.cio.gov/designstandards/footers/">U.S. Web Design Standards</a> for accessibility and usability guidance.
     </p>
 
+    <h4 class="usa-heading">Implementation</h4>
+    <ul class="usa-content-list">
+      <li>The "Return to top" link should be an anchor link to the page title (h1) of the current page.</li>
+    </ul>
+
     <h4 class="usa-heading">Usability</h4>
     <h5>When to use</h5>
     <ul class="usa-content-list">
