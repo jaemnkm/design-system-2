@@ -1,14 +1,13 @@
 ---
 layout: styleguide
 title: Page Layouts
-lead:  Example page layouts utilizing the page shell and grid system.
+lead:  Example page layouts utilizing the design system.
 ---
 
-<h2>Application Guide</h2>
-<p>The Application Guide is the first project that will use some portion of the USAJOBS Design System.</p>
+<h2>Job Announcement</h2>
+<p>The Job Announcement is a critical page of USAJOBS. It is the main conduit used by agencies to communicate with job seekers. The Job Announcement page includes a number of design system components.</p>
 
 <ul class="usa-unstyled-list">
-  <li><a href="{{ site.baseurl }}/app-guide/">Responsive prototype: Step 1 - Select Resume</a></li>
-  <li><a href="{{ site.basurl }}/resources/redlines.pdf">Redlines (PDF)</a></li>
+  <li><a href="{{ site.baseurl }}/job_announcement/">Job Announcement - 02/2016</a></li>
 </ul>
 

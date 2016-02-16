@@ -1,0 +1,42 @@
+---
+permalink: /job_announcement/
+layout: joa
+title: Job Announcement
+---
+  {% include components/nav-logged_in.html %}
+  {% include components/joa-header.html %}
+  <section class="usajobs-shell">
+    <section class="usajobs-canvas">
+      <div class="usajobs-content-gutter">
+        <main class="usajobs-content-well--full-width" id="main-content" role="main">
+          {% include components/joa-nav_secondary.html %}
+
+          <div xmlns:soap-env="http://schemas.xmlsoap.org/soap/envelope/"
+                     xmlns:hr="http://www.hr-xml.org/3"
+                     xmlns:oa="http://www.openapplications.org/oagis/9">
+            <div itemscope="" itemtype="http://schema.org/JobPosting">
+              {% include components/joa-summary-card.html %}
+              {% include components/joa-summary-details.html %}
+
+              <div class="usa-accordion">
+                <ul class="usa-unstyled-list">
+                  <li>
+                    {% include components/joa-summary.html %}
+                  </li>
+                  <li>
+                    {% include components/joa-requirements.html %}
+                  </li>
+                  <li>
+                    {% include components/joa-how_to_apply.html %}
+                  </li>
+                  <li>
+                    {% include components/joa-additional_information.html %}
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+    </section>
+  </section>

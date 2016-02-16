@@ -6298,6 +6298,28 @@ img {
   background-size: 50%;
 }
 
+.usajobs-list-bullets {
+  list-style: none;
+  padding-left: 0;
+  display: table;
+}
+
+.usajobs-list-bullets > li {
+  display: table-row;
+}
+
+.usajobs-list-bullets > li:before {
+  content: "•";
+  display: table-cell;
+  padding-right: 0.4em;
+}
+
+.usajobs-list-bullets > li:after {
+  content: "";
+  display: block;
+  margin-bottom: 0.5em;
+}
+
 .usajobs-form {
   max-width: inherit;
 }
