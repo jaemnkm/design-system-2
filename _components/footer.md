@@ -376,16 +376,21 @@ lead: USAJOBS uses a large footer that incorporates navigation.
     Documentation
   </button>
   <div id="collapsible-0" aria-hidden="false" class="usa-accordion-content">
+    <p>Our "fat footer" provides secondary navigation for the site. It reflects the new structure of the site and provides a quick and easy way for users to jump to a specific sub-section. It also sensitizes users to the new structure by exposing sub-sections that help explain what can be found in each area of the site.</p>
     <h4 class="usa-heading">Accessibility</h4>
-    <ul class="usa-content-list">
-    </ul>
+    <p>
+      Please refer to the <a href="https://playbook.cio.gov/designstandards/footers/">U.S. Web Design Standards</a> for accessibility and usability guidance.
+    </p>
 
     <h4 class="usa-heading">Usability</h4>
     <h5>When to use</h5>
     <ul class="usa-content-list">
+      <li>The footer should appear on all pages excluding the Application Guide.</li>
     </ul>
+
     <h5>Do not use when</h5>
     <ul class="usa-content-list">
+      <li>Do NOT add the footer to the Application Guide path. When users are focused on applying to a job we do not want to distract them.</li>
     </ul>
   </div>
 </div>
