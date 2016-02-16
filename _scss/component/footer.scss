@@ -89,6 +89,10 @@
     .usajobs-footer--v1__subsection,
     .usajobs-footer--v2__subsection {
       padding-bottom: $size-default;
+
+      li {
+        margin-left: 0;
+      }
     }
 
     // combating .usa-unstyled-list li
@@ -166,15 +170,15 @@
     margin-bottom: 0;
     padding-bottom: 0;
 
-    @include media($M) {
+    @include media($SM) {
       margin-bottom: $size-default;
     }
 
     li {
       line-height: 1;
 
-      @include media($M) {
-        @include span-columns(3);
+      @include media($SM) {
+        @include span-columns(1);
         display: inline-block;
       }
 
@@ -186,7 +190,7 @@
     }
 
     li:nth-child(2n) {
-      @include media($M) {
+      @include media($SM) {
         @include omega();
       }
     }
@@ -196,7 +200,7 @@
       padding: $size-S $size-S $size-S 0;
       font-size: $xsmall-font-size;
 
-      @include media($M) {
+      @include media($SM) {
         padding-left: 0;
       }
     }

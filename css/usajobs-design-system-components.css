@@ -7696,6 +7696,13 @@ h6 {
   padding-bottom: 1.5rem;
 }
 
+.usajobs-footer--v1 .usa-footer-primary-content .usajobs-footer--v1__subsection li,
+.usajobs-footer--v1 .usa-footer-primary-content .usajobs-footer--v2__subsection li,
+.usajobs-footer--v2 .usa-footer-primary-content .usajobs-footer--v1__subsection li,
+.usajobs-footer--v2 .usa-footer-primary-content .usajobs-footer--v2__subsection li {
+  margin-left: 0;
+}
+
 .usajobs-footer--v1 .usa-footer-primary-content .usajobs-footer--v1__subsection-title,
 .usajobs-footer--v1 .usa-footer-primary-content .usajobs-footer--v1__subsection-title:visited,
 .usajobs-footer--v1 .usa-footer-primary-content .usajobs-footer--v2__subsection-title,
@@ -7790,7 +7797,7 @@ h6 {
   padding-bottom: 0;
 }
 
-@media screen and (min-width: 37.5em) {
+@media screen and (min-width: 30em) {
   .usajobs-footer--v1 ul.usajobs-footer--v1__subsection-horizontal,
   .usajobs-footer--v1 ul.usajobs-footer--v2__subsection-horizontal,
   .usajobs-footer--v2 ul.usajobs-footer--v1__subsection-horizontal,
@@ -7806,15 +7813,15 @@ h6 {
   line-height: 1;
 }
 
-@media screen and (min-width: 37.5em) {
+@media screen and (min-width: 30em) {
   .usajobs-footer--v1 ul.usajobs-footer--v1__subsection-horizontal li,
   .usajobs-footer--v1 ul.usajobs-footer--v2__subsection-horizontal li,
   .usajobs-footer--v2 ul.usajobs-footer--v1__subsection-horizontal li,
   .usajobs-footer--v2 ul.usajobs-footer--v2__subsection-horizontal li {
     float: left;
     display: block;
-    margin-right: 4.8291579146%;
-    width: 47.5854210427%;
+    margin-right: 16.0363113405%;
+    width: 41.9818443298%;
     display: inline-block;
   }
   .usajobs-footer--v1 ul.usajobs-footer--v1__subsection-horizontal li:last-child,
@@ -7836,7 +7843,7 @@ h6 {
   }
 }
 
-@media screen and (min-width: 37.5em) {
+@media screen and (min-width: 30em) {
   .usajobs-footer--v1 ul.usajobs-footer--v1__subsection-horizontal li:nth-child(2n),
   .usajobs-footer--v1 ul.usajobs-footer--v2__subsection-horizontal li:nth-child(2n),
   .usajobs-footer--v2 ul.usajobs-footer--v1__subsection-horizontal li:nth-child(2n),
@@ -7854,7 +7861,7 @@ h6 {
   font-size: 1.2rem;
 }
 
-@media screen and (min-width: 37.5em) {
+@media screen and (min-width: 30em) {
   .usajobs-footer--v1 ul.usajobs-footer--v1__subsection-horizontal li a,
   .usajobs-footer--v1 ul.usajobs-footer--v2__subsection-horizontal li a,
   .usajobs-footer--v2 ul.usajobs-footer--v1__subsection-horizontal li a,

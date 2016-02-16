@@ -170,6 +170,7 @@ lead: USAJOBS uses a large footer that incorporates navigation.
             <li><a href="https://www.opm.gov/our-inspector-general/">Inspector General</a></li>
             <li><a href="https://www.opm.gov/information-management/no-fear-act/">No Fear Act Data</a></li>
             <li><a href="https://help.usajobs.gov/index.php/USAJobsHelp:Privacy_policy">Privacy Policy</a></li>
+            <li><a href="http://www.usa.gov/">USA.gov</a></li>
           </ul>
         </div>
       </div>
@@ -361,6 +362,7 @@ lead: USAJOBS uses a large footer that incorporates navigation.
             <li><a href="https://www.opm.gov/our-inspector-general/">Inspector General</a></li>
             <li><a href="https://www.opm.gov/information-management/no-fear-act/">No Fear Act Data</a></li>
             <li><a href="https://help.usajobs.gov/index.php/USAJobsHelp:Privacy_policy">Privacy Policy</a></li>
+            <li><a href="http://www.usa.gov/">USA.gov</a></li>
           </ul>
         </div>
       </div>
