@@ -1,0 +1,48 @@
+// JOA - Actions (Apply, print, share, save)
+
+@import 'lib/bourbon/bourbon';
+@import 'lib/neat/neat';
+@import "font-awesome/font-awesome";
+@import 'core/variables';
+@import 'base/variables';
+@import 'base/utilities';
+@import 'base/breakpoints';
+
+.usajobs-joa-actions {
+  padding: $size-default;
+  text-align: center;
+
+  &__container {
+    @include row();
+  }
+
+  &__apply {
+    @include media($SM) {
+      width: 80%;
+    }
+  }
+
+  &__container &__print,
+  &__container &__share,
+  &__container &__save {
+    @include span-columns(4, 12);
+    text-align: center;
+    color: $color-base;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  &__save:before {
+    @include fa-icon();
+    content: $fa-var-star-o;
+    color: $color-gold;
+    font-size: $h3-font-size;
+    vertical-align: middle;
+  }
+
+  &__save.is-saved:before {
+    content: $fa-var-star;
+  }
+}

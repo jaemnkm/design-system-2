@@ -6,6 +6,29 @@ html {
   box-sizing: inherit;
 }
 
+.usajobs-joa .usajobs-joa-summary-title {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 1.5rem 1.5rem 0;
+  background-color: #dce4ef;
+}
+
+.usajobs-joa .usajobs-joa-actions-container {
+  padding-bottom: 70rem;
+}
+
+@media screen and (min-width: 37.5em) {
+  .usajobs-joa .usajobs-joa-actions-container {
+    padding-bottom: 55rem;
+  }
+}
+
+@media screen and (min-width: 62em) {
+  .usajobs-joa .usajobs-joa-actions-container {
+    padding-bottom: 0;
+  }
+}
+
 .usajobs-joa .usajobs-content-gutter {
   padding: 0;
 }
@@ -17,8 +40,78 @@ html {
   }
 }
 
-.usajobs-joa .usajobs-nav-secondary {
-  padding: 0 1.5rem;
+.usajobs-joa .usajobs-content-well {
+  margin-bottom: 0;
+}
+
+.usajobs-joa .usajobs-joa-agency {
+  position: absolute;
+  bottom: 0;
+  left: 1.5rem;
+  right: 1.5rem;
+}
+
+@media screen and (min-width: 62em) {
+  .usajobs-joa .usajobs-joa-agency {
+    position: relative;
+    bottom: auto;
+    left: auto;
+    right: auto;
+    margin-bottom: 3rem;
+  }
+}
+
+.usajobs-joa .usajobs-joa-accordion-title {
+  display: none;
+}
+
+@media screen and (min-width: 37.5em) {
+  .usajobs-joa .usajobs-joa-accordion-title {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 37.5em) {
+  .usajobs-joa .usajobs-joa-summary-container {
+    width: 100%;
+    margin-bottom: 3rem;
+    background-color: #dce4ef;
+  }
+  .usajobs-joa .usajobs-joa-summary-container::after {
+    clear: both;
+    content: "";
+    display: table;
+  }
+  .usajobs-joa .usajobs-joa-summary-col,
+  .usajobs-joa .usajobs-joa-details-col {
+    float: left;
+    display: block;
+    margin-right: 4.8291579146%;
+    width: 47.5854210427%;
+  }
+  .usajobs-joa .usajobs-joa-summary-col:last-child,
+  .usajobs-joa .usajobs-joa-details-col:last-child {
+    margin-right: 0;
+  }
+  .usajobs-joa .usajobs-joa-details-col {
+    margin-right: 0;
+  }
+  .usajobs-joa .usajobs-joa-accordion-trigger.is-open-at-M {
+    display: none;
+  }
+  .usajobs-joa .usajobs-joa-accordion-content {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 62em) {
+  .usajobs-joa .usajobs-joa-accordion-trigger.is-open-at-L {
+    display: none;
+  }
+  .usajobs-joa .usajobs-joa-actions-container {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=joa.css.map */

@@ -13,6 +13,7 @@
   background-color: $color-gray-cool-light;
 
   &__agency {
+    margin-top: 0;
     text-transform: uppercase;
   }
 
@@ -38,38 +39,5 @@
 
   &__apply {
     margin-bottom: $size-default;
-  }
-
-  &__secondary-actions {
-    @include outer-container();
-  }
-
-  &__secondary-actions &__share,
-  &__secondary-actions &__save {
-    display: block;
-    float: left;
-    width: 50%;
-    text-align: center;
-    text-transform: uppercase;
-    font-size: $small-font-size;
-    color: $color-base;
-  }
-
-  &__secondary-actions &__share .fa {
-    color: $color-primary-alt-darkest;
-    font-size: $h3-font-size;
-    vertical-align: middle;
-  }
-
-  &__save:before {
-    @include fa-icon();
-    content: $fa-var-star-o;
-    color: $color-gold;
-    font-size: $h3-font-size;
-    vertical-align: middle;
-  }
-
-  &__save.is-saved:before {
-    content: $fa-var-star;
   }
 }
