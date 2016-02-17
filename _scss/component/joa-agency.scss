@@ -1,0 +1,39 @@
+// JOA - Agency
+
+@import 'lib/bourbon/bourbon';
+@import 'lib/neat/neat';
+@import "font-awesome/font-awesome";
+@import 'core/variables';
+@import 'base/variables';
+@import 'base/utilities';
+@import 'base/breakpoints';
+
+.usajobs-joa-agency {
+  padding: $size-default;
+  border: 1px solid $color-gray-light;
+
+  &__agency {
+    display: block;
+    text-decoration: none;
+  }
+
+  &__announcement-number,
+  &__control-number {
+    margin-top: 0;
+  }
+
+  &__contact,
+  &__address {
+    margin-bottom: $size-default;
+
+    @include media($M) {
+      @include span-columns(3, 6);
+    }
+  }
+
+  &__contact {
+    @include media($M) {
+      @include omega();
+    }
+  }
+}

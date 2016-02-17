@@ -8,6 +8,25 @@
 @import 'base/breakpoints';
 
 .usajobs-joa {
+  .usajobs-joa-summary-title {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: $size-default $size-default 0;
+    background-color: $color-gray-cool-light;
+  }
+
+  .usajobs-joa-actions-container {
+    padding-bottom: rem(700px);
+
+    @include media($M) {
+      padding-bottom: rem(550px);
+    }
+
+    @include media($L) {
+      padding-bottom: 0;
+    }
+  }
+
   .usajobs-content-gutter {
     padding: 0;
 
@@ -17,9 +36,68 @@
     }
   }
 
-  .usajobs-nav-secondary {
-    padding: 0 $size-default;
+  .usajobs-content-well {
+    margin-bottom: 0;
   }
 
+  .usajobs-joa-agency {
+    position: absolute;
+    bottom: 0;
+    left: rem(15px);
+    right: rem(15px);
 
+    @include media($L) {
+      position: relative;
+      bottom: auto;
+      left: auto;
+      right: auto;
+      margin-bottom: $size-M;
+    }
+  }
+
+  .usajobs-joa-accordion-title {
+    display: none;
+
+    @include media($M) {
+      display: block;
+    }
+  }
+
+  @include media($M) {
+    .usajobs-joa-summary-container {
+      @include clearfix();
+      width: 100%;
+      margin-bottom: $size-M;
+      background-color: $color-gray-cool-light;
+    }
+
+    .usajobs-joa-summary-col,
+    .usajobs-joa-details-col {
+      @include span-columns(3, 6);
+    }
+
+    .usajobs-joa-details-col {
+      @include omega();
+    }
+
+    .usajobs-joa-accordion-trigger.is-open-at-M {
+      display: none;
+    }
+
+    .usajobs-joa-accordion-content {
+      padding-left: $size-default;
+      padding-right: $size-default;
+    }
+  }
+
+  @include media($L) {
+    .usajobs-joa-accordion-trigger.is-open-at-L {
+      display: none;
+    }
+
+    .usajobs-joa-actions-container {
+      display: none;
+    }
+  }
 }
+
