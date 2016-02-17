@@ -22,12 +22,17 @@
     margin-top: 0;
   }
 
-  &__contact,
-  &__address {
+  &__details,
+  &__contact {
     margin-bottom: $size-default;
 
     @include media($M) {
       @include span-columns(3, 6);
+    }
+    @include media($L) {
+      float: none;
+      width: 100%;
+      margin-right: 0;
     }
   }
 
