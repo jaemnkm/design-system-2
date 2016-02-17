@@ -1,5 +1,62 @@
 // USAJOBS Utilities
 
+// Typography helpers
+@mixin header {
+  font-family: $font-sans;
+  font-weight: $font-bold;
+  line-height: $heading-line-height;
+  margin-bottom: $size-base;
+  margin-top: $size-default;
+}
+
+@mixin h1 {
+  @include header();
+  font-size: $h1-font-size;
+  font-size: rem($h1-font-size);
+  color: $color-primary-darkest;
+}
+
+@mixin h2 {
+  @include header();
+  font-size: $h2-font-size;
+  font-size: rem($h2-font-size);
+  color: $color-primary-darkest;
+}
+
+@mixin h3 {
+  @include header();
+  font-size: $h3-font-size;
+  font-size: rem($h3-font-size);
+}
+
+@mixin h4 {
+  @include header();
+  font-size: $h4-font-size;
+  font-size: rem($h4-font-size);
+}
+
+@mixin h5 {
+  @include header();
+  font-size: $h5-font-size;
+  font-size: rem($h5-font-size);
+}
+
+@mixin h6 {
+  @include header();
+  font-size: $h6-font-size;
+  font-size: rem($h6-font-size);
+  font-weight: $font-normal;
+  text-transform: uppercase;
+}
+
+@mixin default-text {
+  font-size: $base-font-size-px;
+  font-size: $base-font-size;
+  font-weight: $font-normal;
+  line-height: 1.5;
+}
+
+
 @mixin hide() {
   position: absolute !important;
   margin: -1px !important;

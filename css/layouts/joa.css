@@ -1,0 +1,24 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *::after, *::before {
+  box-sizing: inherit;
+}
+
+.usajobs-joa .usajobs-content-gutter {
+  padding: 0;
+}
+
+@media screen and (min-width: 48em) {
+  .usajobs-joa .usajobs-content-gutter {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}
+
+.usajobs-joa .usajobs-nav-secondary {
+  padding: 0 1.5rem;
+}
+
+/*# sourceMappingURL=joa.css.map */

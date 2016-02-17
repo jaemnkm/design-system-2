@@ -1,0 +1,75 @@
+// JOA - Summary Card
+
+@import 'lib/bourbon/bourbon';
+@import 'lib/neat/neat';
+@import "font-awesome/font-awesome";
+@import 'core/variables';
+@import 'base/variables';
+@import 'base/utilities';
+@import 'base/breakpoints';
+
+.usajobs-joa-summary-card {
+  padding: $size-default;
+  background-color: $color-gray-cool-light;
+
+  &__agency {
+    text-transform: uppercase;
+  }
+
+  &__location {
+    @include default-text();
+
+    .fa {
+      color: $color-primary-alt;
+    }
+
+    .map {
+      color: $color-primary-alt-darkest;
+    }
+  }
+
+  &__employment-type {
+    @include default-text();
+  }
+
+  &__closing-date {
+    color: $color-secondary-darkest;
+  }
+
+  &__apply {
+    margin-bottom: $size-default;
+  }
+
+  &__secondary-actions {
+    @include outer-container();
+  }
+
+  &__secondary-actions &__share,
+  &__secondary-actions &__save {
+    display: block;
+    float: left;
+    width: 50%;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: $small-font-size;
+    color: $color-base;
+  }
+
+  &__secondary-actions &__share .fa {
+    color: $color-primary-alt-darkest;
+    font-size: $h3-font-size;
+    vertical-align: middle;
+  }
+
+  &__save:before {
+    @include fa-icon();
+    content: $fa-var-star-o;
+    color: $color-gold;
+    font-size: $h3-font-size;
+    vertical-align: middle;
+  }
+
+  &__save.is-saved:before {
+    content: $fa-var-star;
+  }
+}

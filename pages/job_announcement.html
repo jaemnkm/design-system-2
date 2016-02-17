@@ -9,14 +9,12 @@ title: Job Announcement
     <section class="usajobs-canvas">
       <div class="usajobs-content-gutter">
         <main class="usajobs-content-well--full-width" id="main-content" role="main">
-          {% include components/joa-nav_secondary.html %}
-
           <div xmlns:soap-env="http://schemas.xmlsoap.org/soap/envelope/"
                      xmlns:hr="http://www.hr-xml.org/3"
                      xmlns:oa="http://www.openapplications.org/oagis/9">
             <div itemscope="" itemtype="http://schema.org/JobPosting">
               {% include components/joa-summary-card.html %}
-              {% include components/joa-summary-details.html %}
+              {% include components/joa-details.html %}
 
               <div class="usa-accordion">
                 <ul class="usa-unstyled-list">

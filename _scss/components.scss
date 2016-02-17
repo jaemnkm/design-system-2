@@ -8,9 +8,18 @@
 @import 'component/nav-secondary';
 @import 'component/footer';
 @import 'component/modal';
+
+// Application Guide
 @import 'component/joa_summary';
 @import 'component/document';
 @import 'component/button_bar';
+
+// JOA
+@import 'component/joa-header';
+@import 'component/joa-summary-card';
+@import 'component/joa-details';
+
+// Search
 @import 'component/search-controls';
 @import 'component/search-pagination';
-@import 'component/joa-header';
+
