@@ -10,13 +10,11 @@
 .usajobs-joa {
   .usajobs-joa-summary-title {
     margin-top: 0;
-    margin-bottom: 0;
     padding: $size-default $size-default 0;
-    background-color: $color-gray-cool-light;
   }
 
   .usajobs-joa-actions-container {
-    padding-bottom: rem(700px);
+    padding-bottom: rem(680px);
 
     @include media($M) {
       padding-bottom: rem(550px);

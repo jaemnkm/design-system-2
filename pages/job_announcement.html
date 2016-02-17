@@ -8,48 +8,31 @@ title: Job Announcement
   <section class="usajobs-shell">
     <section class="usajobs-canvas">
       <div class="usajobs-content-gutter">
+        <div xmlns:soap-env="http://schemas.xmlsoap.org/soap/envelope/"
+                   xmlns:hr="http://www.hr-xml.org/3"
+                   xmlns:oa="http://www.openapplications.org/oagis/9">
+          <div itemscope="" itemtype="http://schema.org/JobPosting">
+            {% include components/joa-intro.html %}
+            {% include components/joa-actions.html %}
+          </div>
+        </div>
         <main class="usajobs-content-well" id="main-content" role="main">
-          <div xmlns:soap-env="http://schemas.xmlsoap.org/soap/envelope/"
-                     xmlns:hr="http://www.hr-xml.org/3"
-                     xmlns:oa="http://www.openapplications.org/oagis/9">
-            <div class="usajobs-joa-summary-outer" itemscope="" itemtype="http://schema.org/JobPosting">
-              <h2 class="usajobs-joa-summary-title" itemprop="title">
-                Chief, Office of NREC (National Renewable Energy Coordination)
-              </h2>
-              <div class="usajobs-joa-summary-container">
-                <div class="usajobs-joa-summary-col">
-                  {% include components/joa-summary-card.html %}
-                  {% include components/joa-actions.html %}
-                </div>
-                <div class="usajobs-joa-details-col">
-                  {% include components/joa-details.html %}
-                </div>
-              </div>
-
               <div class="usa-accordion">
                 <ul class="usa-unstyled-list">
-                  <li>
-                    {% include components/joa-description.html %}
-                  </li>
-                  <li>
-                    {% include components/joa-requirements.html %}
-                  </li>
-                  <li>
-                    {% include components/joa-how_to_apply.html %}
-                  </li>
-                  <li>
-                    {% include components/joa-required_documents.html %}
-                  </li>
+                  <li>{% include components/joa-description.html %}</li>
+                  <li>{% include components/joa-requirements.html %}</li>
+                  <li>{% include components/joa-additional_information.html %}</li>
                 </ul>
               </div>
+              {% include components/joa-agency.html %}
             </div>
           </div>
         </main>
         <aside class="usajobs-rightrail">
-          {% include components/joa-agency.html %}
           <div class="usa-accordion">
             <ul class="usa-unstyled-list">
-              <li>{% include components/joa-additional_information.html %}</li>
+              <li>{% include components/joa-how_to_apply.html %}</li>
+              <li>{% include components/joa-required_documents.html %}</li>
             </ul>
           </div>
         </aside>
