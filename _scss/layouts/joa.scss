@@ -61,6 +61,11 @@
     }
   }
 
+  .usajobs-joa-agency-container {
+    @include span-columns(12, 12);
+    padding: $size-M;
+  }
+
   @include media($M) {
     .usajobs-joa-summary-container {
       @include clearfix();

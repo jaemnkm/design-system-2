@@ -17,15 +17,12 @@ title: Job Announcement
           </div>
         </div>
         <main class="usajobs-content-well" id="main-content" role="main">
-              <div class="usa-accordion">
-                <ul class="usa-unstyled-list">
-                  <li>{% include components/joa-description.html %}</li>
-                  <li>{% include components/joa-requirements.html %}</li>
-                  <li>{% include components/joa-additional_information.html %}</li>
-                </ul>
-              </div>
-              {% include components/joa-agency.html %}
-            </div>
+          <div class="usa-accordion">
+            <ul class="usa-unstyled-list">
+              <li>{% include components/joa-description.html %}</li>
+              <li>{% include components/joa-requirements.html %}</li>
+              <li>{% include components/joa-additional_information.html %}</li>
+            </ul>
           </div>
         </main>
         <aside class="usajobs-rightrail">
@@ -39,6 +36,9 @@ title: Job Announcement
       </div>
       <div class="usajobs-joa-actions-container">
         {% include components/joa-actions.html %}
+      </div>
+      <div class="usajobs-joa-agency-container">
+        {% include components/joa-agency.html %}
       </div>
     </section>
   </section>
