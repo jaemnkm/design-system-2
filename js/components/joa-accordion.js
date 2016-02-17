@@ -5,19 +5,23 @@ var $joa_accordion = $('[data-object="joa-accordion"]'),
   // Open the accordion at the appropriate viewport size
   openAccordions = function () {
     var viewport_width = parseInt($(window).innerWidth(), 10),
-      open_at_ML = $joa_accordion.hasClass('is-open-at-M'),
-      open_at_L = $joa_accordion.hasClass('is-open-at-L');
+      $accordion;
 
-    if (viewport_width > 599) {
-      if (open_at_ML) {
-        $joa_accordion.attr('aria-hidden', 'false');
+    $.each($joa_accordion, function (index, accordion) {
+      $accordion = $(accordion);
+
+      if (viewport_width > 599) {
+        if ($accordion.hasClass('is-open-at-M')) {
+          $accordion.attr('aria-hidden', 'false');
+        }
       }
-    }
-    if (viewport_width > 991) {
-      if (open_at_L) {
-        $joa_accordion.attr('aria-hidden', 'false');
+
+      if (viewport_width > 991) {
+        if ($accordion.hasClass('is-open-at-L')) {
+          $accordion.attr('aria-hidden', 'false');
+        }
       }
-    }
+    });
   };
 
 // Toggle Secondary Nav items on load
