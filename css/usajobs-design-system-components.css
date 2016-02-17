@@ -15316,6 +15316,14 @@ html {
   display: table;
 }
 
+@media screen and (min-width: 62em) {
+  .usajobs-joa-intro {
+    padding-left: 0;
+    padding-right: 0;
+    background-color: #ffffff;
+  }
+}
+
 .usajobs-joa-intro__agency {
   margin-top: 0;
   text-transform: uppercase;

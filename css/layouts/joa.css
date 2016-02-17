@@ -69,6 +69,18 @@ html {
   }
 }
 
+.usajobs-joa .usajobs-joa-agency-container {
+  float: left;
+  display: block;
+  margin-right: 2.3576515979%;
+  width: 100%;
+  padding: 3rem;
+}
+
+.usajobs-joa .usajobs-joa-agency-container:last-child {
+  margin-right: 0;
+}
+
 @media screen and (min-width: 37.5em) {
   .usajobs-joa .usajobs-joa-summary-container {
     width: 100%;
