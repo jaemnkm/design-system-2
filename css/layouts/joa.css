@@ -8,13 +8,11 @@ html {
 
 .usajobs-joa .usajobs-joa-summary-title {
   margin-top: 0;
-  margin-bottom: 0;
   padding: 1.5rem 1.5rem 0;
-  background-color: #dce4ef;
 }
 
 .usajobs-joa .usajobs-joa-actions-container {
-  padding-bottom: 70rem;
+  padding-bottom: 68rem;
 }
 
 @media screen and (min-width: 37.5em) {

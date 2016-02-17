@@ -9,11 +9,14 @@
 @import 'base/breakpoints';
 
 .usajobs-joa-actions {
+  @include clearfix();
+  margin-bottom: $size-M;
   padding: $size-default;
   text-align: center;
+  background-color: $color-gray-lightest;
 
-  &__container {
-    @include row();
+  @include media($M) {
+    text-align: left;
   }
 
   &__apply {
@@ -22,12 +25,22 @@
     }
   }
 
-  &__container &__print,
-  &__container &__share,
-  &__container &__save {
+  &__col {
+    @include media($M) {
+      @include span-columns(3, 6);
+    }
+  }
+
+  &__col &__print,
+  &__col &__share,
+  &__col &__save {
     @include span-columns(4, 12);
     text-align: center;
     color: $color-base;
+
+    @include media($M) {
+      margin-top: $size-default;
+    }
 
     &:hover {
       text-decoration: none;

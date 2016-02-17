@@ -9,6 +9,8 @@
 @import 'base/breakpoints';
 
 .usajobs-joa-agency {
+  @include row();
+  margin-top: $size-XL;
   padding: $size-default;
   border: 1px solid $color-gray-light;
 
@@ -28,11 +30,6 @@
 
     @include media($M) {
       @include span-columns(3, 6);
-    }
-    @include media($L) {
-      float: none;
-      width: 100%;
-      margin-right: 0;
     }
   }
 

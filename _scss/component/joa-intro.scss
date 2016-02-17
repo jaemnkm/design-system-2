@@ -1,4 +1,4 @@
-// JOA - Summary Card
+// JOA - Intro (Summary and Details)
 
 @import 'lib/bourbon/bourbon';
 @import 'lib/neat/neat';
@@ -8,7 +8,8 @@
 @import 'base/utilities';
 @import 'base/breakpoints';
 
-.usajobs-joa-summary-card {
+.usajobs-joa-intro {
+  @include clearfix();
   padding: $size-default;
   background-color: $color-gray-cool-light;
 
@@ -37,7 +38,37 @@
     color: $color-secondary-darkest;
   }
 
-  &__apply {
-    margin-bottom: $size-default;
+  &__summary {
+    @include media($M) {
+      @include span-columns(3, 6);
+    }
+    @include media($L) {
+      @include span-columns(4, 12);
+    }
+  }
+
+  &__details {
+    @include unstyledList();
+
+    @include media($M) {
+      @include span-columns(3, 6);
+    }
+    @include media($L) {
+      @include span-columns(4, 12);
+    }
+  }
+
+  &__details:last-child {
+    @include media($M) {
+      float: right;
+      @include omega();
+    }
+
+    @include media($L) {
+    }
+  }
+
+  &__label {
+    padding-right: $size-base;
   }
 }
