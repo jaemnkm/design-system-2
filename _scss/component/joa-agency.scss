@@ -25,7 +25,7 @@
   }
 
   &__details,
-  &__contact {
+  &__address {
     margin-bottom: $size-default;
 
     @include media($M) {
@@ -33,7 +33,7 @@
     }
   }
 
-  &__contact {
+  &__address {
     @include media($M) {
       @include omega();
     }
