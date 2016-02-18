@@ -19,6 +19,14 @@
     background-color: $color-white;
   }
 
+  &__title {
+    @include h2();
+
+    @include media($ML) {
+      @include h1();
+    }
+  }
+
   &__agency {
     margin-top: 0;
     text-transform: uppercase;
