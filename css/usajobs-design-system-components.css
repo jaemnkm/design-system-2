@@ -19988,24 +19988,24 @@ html {
   margin-top: 0;
 }
 
-.usajobs-joa-agency__details, .usajobs-joa-agency__contact {
+.usajobs-joa-agency__details, .usajobs-joa-agency__address {
   margin-bottom: 1.5rem;
 }
 
 @media screen and (min-width: 37.5em) {
-  .usajobs-joa-agency__details, .usajobs-joa-agency__contact {
+  .usajobs-joa-agency__details, .usajobs-joa-agency__address {
     float: left;
     display: block;
     margin-right: 4.8291579146%;
     width: 47.5854210427%;
   }
-  .usajobs-joa-agency__details:last-child, .usajobs-joa-agency__contact:last-child {
+  .usajobs-joa-agency__details:last-child, .usajobs-joa-agency__address:last-child {
     margin-right: 0;
   }
 }
 
 @media screen and (min-width: 37.5em) {
-  .usajobs-joa-agency__contact {
+  .usajobs-joa-agency__address {
     margin-right: 0;
   }
 }
