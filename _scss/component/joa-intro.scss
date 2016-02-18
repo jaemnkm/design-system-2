@@ -48,29 +48,27 @@
     @include media($M) {
       @include span-columns(3, 6);
     }
+
     @include media($L) {
       @include span-columns(4, 12);
+    }
+  }
+
+  &__details-container {
+    @include media($M) {
+      @include span-columns(3, 6);
+    }
+
+    @include media($L) {
+      @include span-columns(8, 12);
     }
   }
 
   &__details {
     @include unstyledList();
 
-    @include media($M) {
-      @include span-columns(3, 6);
-    }
     @include media($L) {
-      @include span-columns(4, 12);
-    }
-  }
-
-  &__details:last-child {
-    @include media($M) {
-      float: right;
-      @include omega();
-    }
-
-    @include media($L) {
+      @include span-columns(6, 12);
     }
   }
 

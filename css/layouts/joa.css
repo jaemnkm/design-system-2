@@ -12,6 +12,7 @@ html {
 }
 
 .usajobs-joa .usajobs-joa-actions-container {
+  margin-top: 3rem;
   padding-bottom: 68rem;
 }
 
@@ -112,6 +113,12 @@ html {
   .usajobs-joa .usajobs-joa-accordion-content {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 37.5em) and (min-width: 62em) {
+  .usajobs-joa .usajobs-joa-accordion-description {
+    padding-top: 0;
   }
 }
 

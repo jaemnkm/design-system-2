@@ -15386,6 +15386,30 @@ html {
   }
 }
 
+@media screen and (min-width: 37.5em) {
+  .usajobs-joa-intro__details-container {
+    float: left;
+    display: block;
+    margin-right: 4.8291579146%;
+    width: 47.5854210427%;
+  }
+  .usajobs-joa-intro__details-container:last-child {
+    margin-right: 0;
+  }
+}
+
+@media screen and (min-width: 62em) {
+  .usajobs-joa-intro__details-container {
+    float: left;
+    display: block;
+    margin-right: 2.3576515979%;
+    width: 65.8807828007%;
+  }
+  .usajobs-joa-intro__details-container:last-child {
+    margin-right: 0;
+  }
+}
+
 .usajobs-joa-intro__details {
   display: block;
   margin: 0;
@@ -15406,33 +15430,14 @@ html {
   display: none;
 }
 
-@media screen and (min-width: 37.5em) {
-  .usajobs-joa-intro__details {
-    float: left;
-    display: block;
-    margin-right: 4.8291579146%;
-    width: 47.5854210427%;
-  }
-  .usajobs-joa-intro__details:last-child {
-    margin-right: 0;
-  }
-}
-
 @media screen and (min-width: 62em) {
   .usajobs-joa-intro__details {
     float: left;
     display: block;
     margin-right: 2.3576515979%;
-    width: 31.7615656014%;
+    width: 48.821174201%;
   }
   .usajobs-joa-intro__details:last-child {
-    margin-right: 0;
-  }
-}
-
-@media screen and (min-width: 37.5em) {
-  .usajobs-joa-intro__details:last-child {
-    float: right;
     margin-right: 0;
   }
 }
@@ -17632,7 +17637,7 @@ html {
 
 .usajobs-joa-actions {
   margin-bottom: 3rem;
-  padding: 1.5rem;
+  padding: 1.5rem 1.5rem 0;
   text-align: center;
   background-color: #f1f1f1;
 }
@@ -17645,6 +17650,7 @@ html {
 
 @media screen and (min-width: 37.5em) {
   .usajobs-joa-actions {
+    padding-bottom: 1.5rem;
     text-align: left;
   }
 }
@@ -17652,6 +17658,12 @@ html {
 @media screen and (min-width: 30em) {
   .usajobs-joa-actions__apply {
     width: 80%;
+  }
+}
+
+@media screen and (min-width: 62em) {
+  .usajobs-joa-actions__apply {
+    width: 100%;
   }
 }
 
@@ -17667,6 +17679,24 @@ html {
   }
 }
 
+@media screen and (min-width: 62em) {
+  .usajobs-joa-actions__col {
+    float: left;
+    display: block;
+    margin-right: 2.3576515979%;
+    width: 31.7615656014%;
+  }
+  .usajobs-joa-actions__col:last-child {
+    margin-right: 0;
+  }
+}
+
+@media screen and (min-width: 62em) {
+  .usajobs-joa-actions__col:last-child {
+    float: right;
+  }
+}
+
 .usajobs-joa-actions__col .usajobs-joa-actions__print,
 .usajobs-joa-actions__col .usajobs-joa-actions__share,
 .usajobs-joa-actions__col .usajobs-joa-actions__save {
@@ -17674,6 +17704,7 @@ html {
   display: block;
   margin-right: 2.3576515979%;
   width: 31.7615656014%;
+  padding: 1.5rem;
   text-align: center;
   color: #212121;
 }
