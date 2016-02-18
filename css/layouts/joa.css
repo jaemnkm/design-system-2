@@ -108,7 +108,14 @@ html {
     margin-right: 0;
   }
   .usajobs-joa .usajobs-joa-accordion-trigger.is-open-at-M {
-    display: none;
+    position: absolute !important;
+    margin: -1px !important;
+    border: 0 !important;
+    padding: 0 !important;
+    width: 1px !important;
+    height: 1px !important;
+    overflow: hidden !important;
+    clip: rect(0 0 0 0) !important;
   }
   .usajobs-joa .usajobs-joa-accordion-content {
     padding-left: 1.5rem;

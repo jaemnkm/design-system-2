@@ -88,7 +88,7 @@
     }
 
     .usajobs-joa-accordion-trigger.is-open-at-M {
-      display: none;
+      @include hide();
     }
 
     .usajobs-joa-accordion-content {
