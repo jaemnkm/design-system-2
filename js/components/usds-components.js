@@ -237,6 +237,10 @@ Accordion.prototype.show = function($button) {
 
   $button.attr('aria-expanded', true);
   $content.attr('aria-hidden', false);
+
+  $('html, body').animate({
+    scrollTop: $content.offset().top
+  });
 };
 
 Accordion.prototype.hideAll = function() {
