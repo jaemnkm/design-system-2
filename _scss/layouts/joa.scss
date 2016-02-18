@@ -13,7 +13,11 @@
     padding: $size-default $size-default 0;
   }
 
+  // This container is only on the action buttons at the bottom
+  // of the page. It is used to push the footer down to leave room
+  // for the absolutely positioned agency which is pinned to the bottom
   .usajobs-joa-actions-container {
+    margin-top: $size-M;
     padding-bottom: rem(680px);
 
     @include media($M) {
@@ -90,6 +94,12 @@
     .usajobs-joa-accordion-content {
       padding-left: $size-default;
       padding-right: $size-default;
+    }
+
+    .usajobs-joa-accordion-description {
+      @include media($L) {
+        padding-top: 0;
+      }
     }
   }
 
