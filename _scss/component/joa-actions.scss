@@ -29,26 +29,35 @@
     }
   }
 
-  &__col {
+  &__col-apply,
+  &__col-sub-actions {
     @include media($M) {
       @include span-columns(3, 6);
     }
+
     @include media($L) {
       @include span-columns(4, 12);
     }
   }
 
-  &__col:last-child {
-    @include media($L) {
+  &__col-apply {
+    @include media($M) {
       float: right;
+      @include omega();
     }
   }
 
-  &__col &__print,
-  &__col &__share,
-  &__col &__save {
+  &__col-sub-actions:last-child {
+    @include media($M) {
+      margin-right: 4.8291579146%;
+    }
+  }
+
+  &__col-sub-actions &__print,
+  &__col-sub-actions &__share,
+  &__col-sub-actions &__save {
     @include span-columns(4, 12);
-    padding: $size-default;
+    padding: $size-S 0;
     text-align: center;
     color: $color-base;
 

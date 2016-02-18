@@ -43,6 +43,10 @@ module.exports = function(grunt) {
             dest: 'css/usajobs-design-system-components.css'
           },
           {
+            src: '_scss/components-joa.scss',
+            dest: 'css/usajobs-design-system-components-joa.css'
+          },
+          {
             expand: true,
             cwd: '_scss/layouts/',
             src: '*.scss',
