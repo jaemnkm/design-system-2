@@ -117,6 +117,13 @@ html {
 }
 
 @media screen and (min-width: 37.5em) and (min-width: 62em) {
+  .usajobs-joa .usajobs-joa-accordion-content {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media screen and (min-width: 37.5em) and (min-width: 62em) {
   .usajobs-joa .usajobs-joa-accordion-description {
     padding-top: 0;
   }

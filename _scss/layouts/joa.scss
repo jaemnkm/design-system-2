@@ -94,6 +94,11 @@
     .usajobs-joa-accordion-content {
       padding-left: $size-default;
       padding-right: $size-default;
+
+      @include media($L) {
+        padding-left: 0;
+        padding-right: 0;
+      }
     }
 
     .usajobs-joa-accordion-description {
