@@ -1,12 +1,44 @@
 ---
 permalink: /joa/
 layout: joa-print
-title: Job Opportunity Announcemenet
+title: Job Announcement - Print
 ---
   {% include components/nav-logged_in.html %}
-  <div class="usajobs-content-gutter">
-    <main class="usajobs-content-well" id="main-content" role="main">
-      {% include joa-print.html %}
-    </main>
-  </div>
-</div>
+  {% include components/joa-header.html %}
+  <section class="usajobs-shell">
+    <section class="usajobs-canvas">
+      <div class="usajobs-content-gutter">
+        <div xmlns:soap-env="http://schemas.xmlsoap.org/soap/envelope/"
+                   xmlns:hr="http://www.hr-xml.org/3"
+                   xmlns:oa="http://www.openapplications.org/oagis/9">
+          <div itemscope="" itemtype="http://schema.org/JobPosting">
+            {% include components/joa-intro.html %}
+            {% include components/joa-actions.html %}
+          </div>
+        </div>
+        <main class="usajobs-content-well" id="main-content" role="main">
+          <div class="usa-accordion" data-object="joa-accordion">
+            <ul class="usa-unstyled-list">
+              <li>{% include components/joa-description.html %}</li>
+              <li>{% include components/joa-requirements.html %}</li>
+              <li>{% include components/joa-additional_information.html %}</li>
+            </ul>
+          </div>
+        </main>
+        <aside class="usajobs-rightrail">
+          <div class="usa-accordion" data-object="joa-accordion">
+            <ul class="usa-unstyled-list">
+              <li>{% include components/joa-how_to_apply.html %}</li>
+              <li>{% include components/joa-required_documents.html %}</li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+      <div class="usajobs-joa-actions-container">
+        {% include components/joa-actions.html %}
+      </div>
+      <div class="usajobs-joa-agency-container">
+        {% include components/joa-agency.html %}
+      </div>
+    </section>
+  </section>

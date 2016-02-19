@@ -32,15 +32,31 @@
     text-transform: uppercase;
   }
 
+  &__agency-contact {
+    display: block;
+    font-size: $base-font-size;
+    font-weight: normal;
+    text-transform: capitalize;
+    color: $color-primary-alt-darkest;
+
+    @include media($L) {
+      color: $color-primary;
+    }
+
+    &:visited {
+      color: $color-primary-alt-darkest;
+
+      @include media($L) {
+        color: $color-primary;
+      }
+    }
+  }
+
   &__location {
     @include default-text();
 
     .fa {
       color: $color-primary-alt;
-    }
-
-    .map {
-      color: $color-primary-alt-darkest;
     }
   }
 

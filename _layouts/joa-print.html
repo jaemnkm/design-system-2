@@ -6,9 +6,8 @@
     {% include joa-print-styles.html %}
   </head>
   <body class="{{ page.title | slugify }} usajobs-joa">
-    <section class="usajobs-canvas">
-      {{ content }}
-    </section>
+    {{ content }}
+    {% include components/footer.html %}
     {% include scripts.html %}
   </body>
 </html>
