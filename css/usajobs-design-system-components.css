@@ -15360,6 +15360,30 @@ html {
   text-transform: uppercase;
 }
 
+.usajobs-joa-intro__agency-contact {
+  display: block;
+  font-size: 1.7rem;
+  font-weight: normal;
+  text-transform: capitalize;
+  color: #046b99;
+}
+
+@media screen and (min-width: 62em) {
+  .usajobs-joa-intro__agency-contact {
+    color: #0071bc;
+  }
+}
+
+.usajobs-joa-intro__agency-contact:visited {
+  color: #046b99;
+}
+
+@media screen and (min-width: 62em) {
+  .usajobs-joa-intro__agency-contact:visited {
+    color: #0071bc;
+  }
+}
+
 .usajobs-joa-intro__location {
   font-size: 17px;
   font-size: 1.7rem;
@@ -15369,10 +15393,6 @@ html {
 
 .usajobs-joa-intro__location .fa {
   color: #02bfe7;
-}
-
-.usajobs-joa-intro__location .map {
-  color: #046b99;
 }
 
 .usajobs-joa-intro__employment-type {
