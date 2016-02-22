@@ -60,10 +60,21 @@ lead: Secondary navigation allows for movement within a section or page.
     Documentation
   </button>
   <div id="collapsible-0" aria-hidden="false" class="usa-accordion-content">
+    <h4 class="usa-heading">Guidelines</h4>
+    <ul class="usa-content-list">
+      <li>Do not use icons alongside nor within the text of the navigation labels</li>
+      <li>Do not use the required asterisk alongside nor within the text of the navigation labels. Please do use the <a href="{{ site.baseurl }}/form-controls#usajobs-form-legend-documentation">form legend</a> component to indicate that the entire section is required.</li>
+    </ul>
+
     <h4 class="usa-heading">Usability</h4>
     <h5>When to use</h5>
     <ul class="usa-content-list">
-      <li>Use secondary navigation to allow the user to move laterally to other sub-sections of a section. For example, to move to parts of their Profile or parts of a Job Annoucement.</li>
+      <li>Use secondary navigation to allow the user to move laterally to other sub-sections of a section. For example, to move between sub-sections of their Profile.</li>
+    </ul>
+
+    <h5>When NOT to use</h5>
+    <ul class="usa-content-list">
+      <li>Avoid using this component to move within the same page. Typography, including clear section headers, should be enough to allow the user to navigate the page.</li> 
     </ul>
   </div>
 </div>

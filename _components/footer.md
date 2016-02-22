@@ -11,7 +11,7 @@ lead: USAJOBS uses a large footer that incorporates navigation.
 
 <h6 class="usa-heading-alt">Version 1</h6>
 <div class="preview">
-  <footer class="usa-footer usa-footer-big usajobs-footer--v1" role="contentinfo" data-object="footer">
+  <footer class="usa-footer usa-footer-big usajobs-footer--v1" role="contentinfo" aria-label="footer" data-object="footer">
     <div class="usa-grid usa-footer-return-to-top">
       <a href="#footer">Return to top</a>
     </div>
@@ -180,7 +180,7 @@ lead: USAJOBS uses a large footer that incorporates navigation.
 
 <h6 class="usa-heading-alt">Version 2</h6>
 <div class="preview">
-  <footer class="usa-footer usa-footer-big usajobs-footer--v2" role="contentinfo" data-object="footer">
+  <footer class="usa-footer usa-footer-big usajobs-footer--v2" role="contentinfo" aria-label="footer" data-object="footer">
     <div class="usa-grid usa-footer-return-to-top">
       <a href="#footer">Return to top</a>
     </div>

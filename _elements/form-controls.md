@@ -9,7 +9,7 @@ lead: USAJOBS adds or clarifies design for contextual help, required/optional fi
   Design Complete
 </a>
 
-<h2 class="usa-heading" id="text-inputs">Contextual Help</h2>
+<h2 class="usa-heading" id="contextual-help">Contextual Help</h2>
 <p class="usa-font-lead">
   Contextual help provides assistance in clarifying the intent of a question or form input.
 </p>
@@ -49,7 +49,7 @@ lead: USAJOBS adds or clarifies design for contextual help, required/optional fi
 </div>
 
 <div class="preview">
-  <h6 class="usa-heading-alt">Detailed Help</h6>
+  <h6 class="usa-heading-alt" id="detailed-help">Detailed Help</h6>
   <form class="usajobs-form">
     <label for="input-type-text">Text input label</label>
     <input id="input-type-text" name="input-type-text" type="text">
@@ -94,7 +94,7 @@ lead: USAJOBS adds or clarifies design for contextual help, required/optional fi
   </div>
 </div>
 
-<h2 class="usa-heading" id="text-inputs">Labels</h2>
+<h2 class="usa-heading" id="labels">Labels</h2>
 <p>
   Labels are simple text descriptions of data being requested and are found in close proximity to a form input that requests that data.
 </p>

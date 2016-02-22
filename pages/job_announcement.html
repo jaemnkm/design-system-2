@@ -16,7 +16,7 @@ title: Job Announcement
             {% include components/joa-actions.html %}
           </div>
         </div>
-        <main class="usajobs-content-well" id="main-content" role="main">
+        <main class="usajobs-content-well" id="main-content" role="main" aria-label="Main Job annoucement content">
           <div class="usa-accordion" data-object="joa-accordion">
             <ul class="usa-unstyled-list">
               <li>{% include components/joa-description.html %}</li>
@@ -25,7 +25,7 @@ title: Job Announcement
             </ul>
           </div>
         </main>
-        <aside class="usajobs-rightrail">
+        <aside class="usajobs-rightrail" role="complimentary" aria-label="How to apply and required documents">
           <div class="usa-accordion" data-object="joa-accordion">
             <ul class="usa-unstyled-list">
               <li>{% include components/joa-how_to_apply.html %}</li>

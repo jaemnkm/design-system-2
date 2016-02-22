@@ -29,7 +29,7 @@ lead: USAJOBS features a consistent header for top-level navigation across the s
           <div class="usajobs-nav__extended-menu" id="usajobs-menu">
             <ul class="usajobs-nav__menu">
               <li class="usajobs-nav__secondary-menu-container" data-state="is-closed">
-                <a accesskey="S" data-behavior="nav.menu.toggle" aria-haspopup="true" class="menu-toggle" href="/" title="Job Search">
+                <a data-behavior="nav.menu.toggle" aria-haspopup="true" class="menu-toggle" href="/" title="Job Search">
                   Job Search
                 </a>
                 <ul class="usajobs-nav__secondary-menu" aria-expanded="false" role="menu">
@@ -39,7 +39,7 @@ lead: USAJOBS features a consistent header for top-level navigation across the s
                 </ul>
               </li>
               <li class="usajobs-nav__secondary-menu-container" data-state="is-closed">
-                <a accesskey="A" data-behavior="nav.menu.toggle" aria-haspopup="true" class="menu-toggle" href="" title="My Account">
+                <a data-behavior="nav.menu.toggle" aria-haspopup="true" class="menu-toggle" href="" title="My Account">
                   My Account
                 </a>
                 <ul class="usajobs-nav__secondary-menu" aria-expanded="false" role="menu">
@@ -54,7 +54,7 @@ lead: USAJOBS features a consistent header for top-level navigation across the s
                 </ul>
               </li>
               <li class="usajobs-nav__secondary-menu-container" data-state="is-closed">
-                <a accesskey="R" href="http://help.sqa.usajobs.gov/index.php/Main_Page" class="menu-toggle" data-behavior="nav.menu.toggle" aria-haspopup="true" title="Job Resources">
+                <a href="http://help.sqa.usajobs.gov/index.php/Main_Page" class="menu-toggle" data-behavior="nav.menu.toggle" aria-haspopup="true" title="Job Resources">
                   Job Resources
                 </a>
                 <ul class="usajobs-nav__secondary-menu" aria-expanded="false" role="menu">
@@ -111,7 +111,7 @@ lead: USAJOBS features a consistent header for top-level navigation across the s
           <div class="usajobs-nav__extended-menu" id="usajobs-menu">
             <ul class="usajobs-nav__menu">
               <li class="usajobs-nav__secondary-menu-container" data-state="is-closed">
-                <a accesskey="S" data-behavior="nav.menu.toggle" aria-haspopup="true" class="menu-toggle" href="/" title="Job Search">
+                <a data-behavior="nav.menu.toggle" aria-haspopup="true" class="menu-toggle" href="/" title="Job Search">
                   Job Search
                 </a>
                 <ul class="usajobs-nav__secondary-menu" aria-expanded="false" role="menu">
@@ -121,7 +121,7 @@ lead: USAJOBS features a consistent header for top-level navigation across the s
                 </ul>
               </li>
               <li class="usajobs-nav__secondary-menu-container" data-state="is-closed">
-                <a accesskey="A" data-behavior="nav.menu.toggle" aria-haspopup="true" class="menu-toggle" href="" title="My Account">
+                <a data-behavior="nav.menu.toggle" aria-haspopup="true" class="menu-toggle" href="" title="My Account">
                   My Account
                 </a>
                 <ul class="usajobs-nav__secondary-menu" aria-expanded="false" role="menu">
@@ -136,7 +136,7 @@ lead: USAJOBS features a consistent header for top-level navigation across the s
                 </ul>
               </li>
               <li class="usajobs-nav__secondary-menu-container" data-state="is-closed">
-                <a accesskey="R" href="http://help.sqa.usajobs.gov/index.php/Main_Page" class="menu-toggle" data-behavior="nav.menu.toggle" aria-haspopup="true" title="Job Resources">
+                <a href="http://help.sqa.usajobs.gov/index.php/Main_Page" class="menu-toggle" data-behavior="nav.menu.toggle" aria-haspopup="true" title="Job Resources">
                   Job Resources
                 </a>
                 <ul class="usajobs-nav__secondary-menu" aria-expanded="false" role="menu">
@@ -192,7 +192,7 @@ lead: USAJOBS features a consistent header for top-level navigation across the s
           <div class="usajobs-nav__extended-menu" id="usajobs-menu">
             <ul class="usajobs-nav__menu">
               <li class="usajobs-nav__secondary-menu-container" data-state="is-closed">
-                <a accesskey="S" data-behavior="nav.menu.toggle" aria-haspopup="true" class="menu-toggle" href="/" title="Job Search">
+                <a data-behavior="nav.menu.toggle" aria-haspopup="true" class="menu-toggle" href="/" title="Job Search">
                   Job Search
                 </a>
                 <ul class="usajobs-nav__secondary-menu" aria-expanded="false" role="menu">
@@ -202,7 +202,7 @@ lead: USAJOBS features a consistent header for top-level navigation across the s
                 </ul>
               </li>
               <li class="usajobs-nav__secondary-menu-container" data-state="is-closed">
-                <a accesskey="A" data-behavior="nav.menu.toggle" aria-haspopup="true" class="menu-toggle is-active" href="" title="My Account">
+                <a data-behavior="nav.menu.toggle" aria-haspopup="true" class="menu-toggle is-active" href="" title="My Account">
                   My Account
                 </a>
                 <ul class="usajobs-nav__secondary-menu" aria-expanded="false" role="menu">
@@ -217,7 +217,7 @@ lead: USAJOBS features a consistent header for top-level navigation across the s
                 </ul>
               </li>
               <li class="usajobs-nav__secondary-menu-container" data-state="is-closed">
-                <a accesskey="R" href="http://help.sqa.usajobs.gov/index.php/Main_Page" class="menu-toggle" data-behavior="nav.menu.toggle" aria-haspopup="true" title="Job Resources">
+                <a href="http://help.sqa.usajobs.gov/index.php/Main_Page" class="menu-toggle" data-behavior="nav.menu.toggle" aria-haspopup="true" title="Job Resources">
                   Job Resources
                 </a>
                 <ul class="usajobs-nav__secondary-menu" aria-expanded="false" role="menu">
@@ -274,20 +274,20 @@ lead: USAJOBS features a consistent header for top-level navigation across the s
             <div class="usajobs-nav--v2__menu" id="usajobs-menu">
               <ul>
                 <li class="usajobs-nav--v2__menu-container usajobs-nav--v2__account">
-                  <a accesskey="A" class="usajobs-nav--v2__section-link" href="/Applicant/MyAccount/Home" title="Account">
+                  <a class="usajobs-nav--v2__section-link" href="/Applicant/MyAccount/Home" title="Account">
                     <span class="fa fa-user"></span>
                     <span class="usajobs-nav--v2__account_name">QQ</span>
                     <span class="usajobs-nav--v2__first_name">Quadrina</span>
                   </a>
                 </li>
                 <li class="usajobs-nav--v2__menu-container usajobs-nav--v2__help"> 
-                  <a accesskey="A" class="usajobs-nav--v2__section-link" href="http://help.sqa.usajobs.gov/index.php/Main_Page" title="Help">
+                  <a class="usajobs-nav--v2__section-link" href="http://help.sqa.usajobs.gov/index.php/Main_Page" title="Help">
                     <span class="fa fa-question-circle"></span>
                     Help
                   </a>
                 </li>
                 <li class="usajobs-nav--v2__menu-container usajobs-nav--v2__menu-search" data-state="is-closed" data-target="#usajobs-search-form">
-                  <a accesskey="S" data-behavior="nav.menu.search-toggle" aria-haspopup="true" class="usajobs-nav--v2__section-link" href="/" title="Job Search">
+                  <a data-behavior="nav.menu.search-toggle" aria-haspopup="true" class="usajobs-nav--v2__section-link" href="/" title="Job Search">
                     <span class="fa fa-search"></span>
                     Search
                   </a>
@@ -328,14 +328,14 @@ lead: USAJOBS features a consistent header for top-level navigation across the s
 
 <h6 class="usa-heading-alt">Version 2 Authenticated - Alternate</h6>
 <div class="preview">
-  <header class="usajobs-site-header" role="banner">
+  <header class="usajobs-site-header" role="banner" aria-label="header">
     <div class="usa-disclaimer">
       <span class="usajobs-disclaimer-official">
         <img class="usa-flag_icon" alt="U.S. flag signifying that this is a United States federal government website" src="{{ site.baseurl }}/img/us_flag_small.png">
         An official website of the United States Government
       </span>
     </div>
-    <nav class="usajobs-nav--v2" role="navigation" data-object="nav">
+    <nav class="usajobs-nav--v2" role="navigation" aria-label="main navigation" data-object="nav">
       <div class="usajobs-nav--v2__body">
         <div class="usajobs-nav--v2__header-container">
           <div class="usajobs-nav--v2__header">
@@ -347,7 +347,7 @@ lead: USAJOBS features a consistent header for top-level navigation across the s
             <div class="usajobs-nav--v2__menu" id="usajobs-menu">
               <ul>
                 <li class="usajobs-nav--v2__menu-container usajobs-nav--v2__account" data-state="is-closed">
-                  <a accesskey="A" class="usajobs-nav--v2__section-link menu-toggle" data-behavior="nav.menu.toggle" aria-haspopup="true" href="#account" title="Account">
+                  <a class="usajobs-nav--v2__section-link menu-toggle" data-behavior="nav.menu.toggle" aria-haspopup="true" href="#account" title="Account">
                     <span class="fa fa-user"></span>
                     <span class="usajobs-nav--v2__account_name">QQ</span>
                     <span class="usajobs-nav--v2__first_name">Quadrina</span>
@@ -361,13 +361,13 @@ lead: USAJOBS features a consistent header for top-level navigation across the s
                   </ul>
                 </li>
                 <li class="usajobs-nav--v2__menu-container usajobs-nav--v2__help"> 
-                  <a accesskey="A" class="usajobs-nav--v2__section-link" href="http://help.sqa.usajobs.gov/index.php/Main_Page" title="Help">
+                  <a class="usajobs-nav--v2__section-link" href="http://help.sqa.usajobs.gov/index.php/Main_Page" title="Help">
                     <span class="fa fa-question-circle"></span>
                     Help
                   </a>
                 </li>
                 <li class="usajobs-nav--v2__menu-container usajobs-nav--v2__menu-search" data-state="is-closed" data-target="#usajobs-search-form">
-                  <a accesskey="S" data-behavior="nav.menu.search-toggle" aria-haspopup="true" class="usajobs-nav--v2__section-link" href="/" title="Job Search">
+                  <a data-behavior="nav.menu.search-toggle" aria-haspopup="true" class="usajobs-nav--v2__section-link" href="/" title="Job Search">
                     <span class="fa fa-search"></span>
                     Search
                   </a>
@@ -376,7 +376,7 @@ lead: USAJOBS features a consistent header for top-level navigation across the s
             </div>
           </div>
           <div id="usajobs-search-form" class="usajobs-nav--v2__search" aria-expanded="false" role="menu">
-            <form action="/Search" method="get" novalidate="novalidate">
+            <form action="/Search" method="get" novalidate="novalidate" role="search">
               <fieldset>
                 <div class="usajobs-nav--v2__search-keywords-container">
                   <label for="search-keyword">
