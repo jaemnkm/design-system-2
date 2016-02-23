@@ -315,6 +315,7 @@
 
 .usajobs-footer--joa {
   &__authenticity-note {
+    display: none;
     font-size: $small-font-size;
 
     a {
