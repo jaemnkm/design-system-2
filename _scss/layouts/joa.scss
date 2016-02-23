@@ -45,8 +45,13 @@
   .usajobs-joa-agency {
     position: absolute;
     bottom: 0;
-    left: rem(15px);
-    right: rem(15px);
+    left: $size-default;
+    right: $size-default;
+
+    @include media($M) {
+      left: $size-M;
+      right: $size-M;
+    }
 
     @include media($L) {
       position: relative;

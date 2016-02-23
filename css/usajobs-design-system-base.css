@@ -4984,6 +4984,11 @@ html {
   display: table;
 }
 
+.usa-grid,
+.usa-grid-full {
+  max-width: 120rem;
+}
+
 .usajobs-content-gutter {
   padding: 0 1.5rem;
 }

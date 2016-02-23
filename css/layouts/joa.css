@@ -50,6 +50,13 @@ html {
   right: 1.5rem;
 }
 
+@media screen and (min-width: 37.5em) {
+  .usajobs-joa .usajobs-joa-agency {
+    left: 3rem;
+    right: 3rem;
+  }
+}
+
 @media screen and (min-width: 62em) {
   .usajobs-joa .usajobs-joa-agency {
     position: relative;

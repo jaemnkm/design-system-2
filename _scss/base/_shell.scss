@@ -10,6 +10,12 @@
   background: $color-white;
 }
 
+// Update all usa-grid styles to use our site max width
+.usa-grid,
+.usa-grid-full {
+  max-width: $site-max-width;
+}
+
 .usajobs-content-gutter {
   padding: 0 $size-default;
 
