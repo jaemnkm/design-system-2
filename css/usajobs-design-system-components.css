@@ -8159,6 +8159,7 @@ h6 {
 }
 
 .usajobs-footer--joa__authenticity-note {
+  display: none;
   font-size: 1.4rem;
 }
 

@@ -38,6 +38,12 @@ lead: USAJOBS uses a large footer that incorporates navigation.
             </ul>
             <ul class="usa-unstyled-list usa-footer-primary-content usajobs-footer--v1__account">
               <li class="usa-footer-primary-link" data-behavior="footer.toggle" data-state="is-closed" data-target=".account-menu">Account</li>
+              <li class="usajobs-footer--joa__menu-item account-menu is-hidden">
+                <a href="/Applicant/Profile/">Profile</a>
+              </li>
+              <li class="usajobs-footer--v1__menu-item account-menu is-hidden">
+                <a href="/Applicant/Document/ListDocuments">Documents</a>
+              </li>
               <li class="usajobs-footer--v1__menu-item account-menu is-hidden">
                 <a href="/Applicant/SavedJobs/ListSavedJobs">Saved Jobs</a>
               </li>
@@ -49,25 +55,6 @@ lead: USAJOBS uses a large footer that incorporates navigation.
               </li>
               <li class="usajobs-footer--v1__menu-item account-menu is-hidden">
                 <a href="/Account/LogOff">Sign Out</a>
-              </li>
-              <li class="usajobs-footer--v1__menu-item account-menu is-hidden">
-                <a class="usajobs-footer--v1__subsection-title" href="/Applicant/Profile/">
-                  Profile
-                </a>
-                <ul class="usa-unstyled-list usajobs-footer--v1__subsection">
-                  <li><a href="#profile-background">Background</a></li>
-                  <li><a href="#profile-education">Education</a></li>
-                  <li><a href="#profile-experience">Experience</a></li>
-                  <li><a href="#profile-contact_info">Contact Info</a></li>
-                </ul>
-              </li>
-              <li class="usajobs-footer--v1__menu-item account-menu is-hidden">
-                <a class="usajobs-footer--v1__subsection-title" href="/Applicant/Document/ListDocuments">Documents</a>
-                <ul class="usa-unstyled-list usajobs-footer--v1__subsection">
-                  <li><a href="/Applicant/Document/ListDocuments#cover-letters">Cover Letters</a></li>
-                  <li><a href="/Applicant/Document/ListDocuments#forms">Forms</a></li>
-                  <li><a href="/Applicant/Document/ListDocuments#resumes">Resumes</a></li>
-                </ul>
               </li>
             </ul>
           </div>
@@ -81,29 +68,16 @@ lead: USAJOBS uses a large footer that incorporates navigation.
                 <a href="https://help.usajobs.gov/index.php/About_Us">About USAJOBS</a>
               </li>
               <li class="usajobs-footer--v1__menu-item help-menu is-hidden">
-                <a href="https://help.usajobs/gov/Support#Miscellaneous-Other">Contact Us</a>
+                <a href="https://my.usajobs.gov/support#Miscellaneous-Other">Contact Us</a>
+              </li>
+              <li class="usajobs-footer--v1__menu-item help-menu is-hidden">
+                <a href="https://help.usajobs.gov/index.php/FAQs">FAQs</a>
               </li>
               <li class="usajobs-footer--v1__menu-item help-menu is-hidden">
                 <a href="https://help.usajobs.gov/index.php/Getting_Started">Get Started</a>
               </li>
               <li class="usajobs-footer--v1__menu-item help-menu is-hidden">
-                <a href="#">Reference</a>
-              </li>
-              <li class="usajobs-footer--v1__menu-item help-menu is-hidden">
-                <a class="usajobs-footer--v2__subsection-title" href="https://help.usajobs.gov/index.php/FAQs">FAQs</a>
-                <ul class="usa-unstyled-list usajobs-footer--v2__subsection">
-                  <li><a href="#how-to">Can my resume exceed two pages?</a></li>
-                  <li><a href="#how-to">Do I need security clearance for a Federal job?</a></li>
-                  <li><a href="#how-to">Is my resume scanned for keywords?</a></li>
-                </ul>
-              </li>
-              <li class="usajobs-footer--v1__menu-item help-menu is-hidden">
-                <a class="usajobs-footer--v2__subsection-title" href="https://help.usajobs.gov/index.php/How_To">How to&hellip;</a>
-                <ul class="usa-unstyled-list usajobs-footer--v2__subsection">
-                  <li><a href="#how-to">Apply for a job</a></li>
-                  <li><a href="#how-to">Save a questionnaire</a></li>
-                  <li><a href="#how-to">Search for Jobs</a></li>
-                </ul>
+                <a href="https://help.usajobs.gov/index.php/How_To">How to&hellip;</a>
               </li>
             </ul>
             <ul class="usa-unstyled-list usa-footer-primary-content">
@@ -118,19 +92,7 @@ lead: USAJOBS uses a large footer that incorporates navigation.
                 <a href="https://help.usajobs.gov/index.php/Pay_and_Benefits">Salary</a>
               </li>
               <li class="usajobs-footer--v1__menu-item gov-menu is-hidden"> 
-                <a class="usajobs-footer--v1__subsection-title" href="#unique-hiring-paths">
-                  Unique Hiring Paths
-                </a>
-                <ul class="usa-unstyled-list usajobs-footer--v1__subsection">
-                  <li><a href="#federal_employees">Federal Employees</a></li>
-                  <li><a href="#former_overseas_employees">Former overseas employees</a></li>
-                  <li><a href="#individuals_with_disabilities">Individuals with Disabilities</a></li>
-                  <li><a href="#military_spouses">Military Spouses</a></li>
-                  <li><a href="#peace_corps">Peace Corps / VISTA</a></li>
-                  <li><a href="#senior_executives">Senior Executives</a></li>
-                  <li><a href="#students">Students</a></li>
-                  <li><a href="#veterans">Veterans</a></li>
-                </ul>
+                <a href="#unique-hiring-paths">Unique Hiring Paths</a>
               </li>
             </ul>
           </div>
@@ -352,12 +314,6 @@ lead: USAJOBS uses a large footer that incorporates navigation.
               <span class="fa fa-youtube" aria-label="You Tube"></span>
             </a>
           </div>
-
-          <!-- address>
-            <h3 class="usa-footer-contact-heading">Agency Contact Center</h3>
-            <p>(800) CALL-GOVT</p>
-            <a href="mailto:info@agency.gov">info@agency.gov</a>
-          </address-->
         </div>
       </div>
       <div class="usa-grid">

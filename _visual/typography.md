@@ -207,7 +207,7 @@ order: 01
 
     <h4 class="usa-heading">Usability</h4>
     <ul class="usa-content-list">
-      <li>For mobile usage we've decided to always underline links and not only rely on color for link affordance, regardless of placement.</li>
+      <li>For mobile usage we've decided to always underline links in main content areas and not only rely on color for link affordance. In areas where a link is also a title we've opted to not underline those links.</li>
     </ul>
   </div>
 </div>
