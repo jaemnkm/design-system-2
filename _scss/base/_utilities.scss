@@ -187,3 +187,12 @@
   }
   &:nth-child(#{$nth}+1) { clear: none; }
 }
+
+@mixin contentGutter() {
+  padding: 0 $size-default;
+
+  @include media($ML) {
+    padding-left: $size-M;
+    padding-right: $size-M;
+  }
+}

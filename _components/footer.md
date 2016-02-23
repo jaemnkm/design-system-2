@@ -24,6 +24,9 @@ lead: USAJOBS uses a large footer that incorporates navigation.
                 Job Applications
               </li>
               <li class="usajobs-footer--v1__menu-item home-menu is-hidden">
+                <a href="/Applicant/Application/ListApplications">All</a>
+              </li>
+              <li class="usajobs-footer--v1__menu-item home-menu is-hidden">
                 <a href="/Applicant/Application/ListApplications#advancing">Advancing</a>
               </li>
               <li class="usajobs-footer--v1__menu-item home-menu is-hidden">
@@ -35,6 +38,18 @@ lead: USAJOBS uses a large footer that incorporates navigation.
             </ul>
             <ul class="usa-unstyled-list usa-footer-primary-content usajobs-footer--v1__account">
               <li class="usa-footer-primary-link" data-behavior="footer.toggle" data-state="is-closed" data-target=".account-menu">Account</li>
+              <li class="usajobs-footer--v1__menu-item account-menu is-hidden">
+                <a href="/Applicant/SavedJobs/ListSavedJobs">Saved Jobs</a>
+              </li>
+              <li class="usajobs-footer--v1__menu-item account-menu is-hidden">
+                <a href="/Applicant/SavedSearches/ListSavedSearches">Saved Searches</a>
+              </li>
+              <li class="usajobs-footer--v1__menu-item account-menu is-hidden">
+                <a href="/Applicant/Profile/PersonalInformation">Username &amp; Password</a>
+              </li>
+              <li class="usajobs-footer--v1__menu-item account-menu is-hidden">
+                <a href="/Account/LogOff">Sign Out</a>
+              </li>
               <li class="usajobs-footer--v1__menu-item account-menu is-hidden">
                 <a class="usajobs-footer--v1__subsection-title" href="/Applicant/Profile/">
                   Profile
@@ -54,23 +69,14 @@ lead: USAJOBS uses a large footer that incorporates navigation.
                   <li><a href="/Applicant/Document/ListDocuments#resumes">Resumes</a></li>
                 </ul>
               </li>
-              <li class="usajobs-footer--v1__menu-item account-menu is-hidden">
-                <a href="/Applicant/SavedJobs/ListSavedJobs">Saved Jobs</a>
-              </li>
-              <li class="usajobs-footer--v1__menu-item account-menu is-hidden">
-                <a href="/Applicant/SavedSearches/ListSavedSearches">Saved Searches</a>
-              </li>
-              <li class="usajobs-footer--v1__menu-item account-menu is-hidden">
-                <a href="/Applicant/Profile/PersonalInformation">Username &amp; Password</a>
-              </li>
-              <li class="usajobs-footer--v1__menu-item account-menu is-hidden">
-                <a href="/Account/LogOff">Sign Out</a>
-              </li>
             </ul>
           </div>
           <div class="usajobs-footer--v1__content-container">
             <ul class="usa-unstyled-list usa-footer-primary-content">
               <li class="usa-footer-primary-link" data-behavior="footer.toggle" data-state="is-closed" data-target=".help-menu">Help</li>
+              <li class="usajobs-footer--v1__menu-item help-menu is-hidden">
+                <a href="https://help.usajobs.gov/">Help Center</a>
+              </li>
               <li class="usajobs-footer--v1__menu-item help-menu is-hidden">
                 <a href="https://help.usajobs.gov/index.php/About_Us">About USAJOBS</a>
               </li>
@@ -81,7 +87,7 @@ lead: USAJOBS uses a large footer that incorporates navigation.
                 <a href="https://help.usajobs.gov/index.php/Getting_Started">Get Started</a>
               </li>
               <li class="usajobs-footer--v1__menu-item help-menu is-hidden">
-                <a href="https://help.usajobs.gov/">Help Center</a>
+                <a href="#">Reference</a>
               </li>
               <li class="usajobs-footer--v1__menu-item help-menu is-hidden">
                 <a class="usajobs-footer--v2__subsection-title" href="https://help.usajobs.gov/index.php/FAQs">FAQs</a>
@@ -99,12 +105,12 @@ lead: USAJOBS uses a large footer that incorporates navigation.
                   <li><a href="#how-to">Search for Jobs</a></li>
                 </ul>
               </li>
-              <li class="usajobs-footer--v1__menu-item help-menu is-hidden">
-                <a href="#">Reference</a>
-              </li>
             </ul>
             <ul class="usa-unstyled-list usa-footer-primary-content">
               <li class="usa-footer-primary-link" data-behavior="footer.toggle" data-state="is-closed" data-target=".gov-menu">Working for the Government</li>
+              <li class="usajobs-footer--v1__menu-item gov-menu is-hidden">
+                <a href="https://help.usajobs.gov/index.php/Working_for_the_government">Overview</a>
+              </li>
               <li class="usajobs-footer--v1__menu-item gov-menu is-hidden">
                 <a href="https://help.usajobs.gov/index.php/Pay_and_Benefits">Benefits</a>
               </li>
