@@ -68,6 +68,10 @@
     color: $color-gray-dark;
   }
 
+  &__posting-duration {
+    display: block;
+  }
+
   &__summary {
     @include media($M) {
       @include span-columns(3, 6);

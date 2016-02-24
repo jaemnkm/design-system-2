@@ -160,6 +160,7 @@ lead: A main function of USAJOBS is to provide a clear and effective search. Our
     <ul class="usa-content-list">
       <li>Below the ML breakpoint the pagination is represented by the next and/or previous buttons.</li>
       <li>Above the ML breakpoint the current page number is displayed with +/- 2 pages to either side excluding the first or last 4 pages.</li> 
+      <li>Pagination should always be shown at the bottom of the page, near the bottom of the list that it paginates.</li>
     </ul>
 
     <h4 class="usa-heading">Usability</h4>

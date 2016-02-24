@@ -27,7 +27,7 @@ $logo_height-L: 78px;
     border-bottom: 1px solid $color-gray-lighter;
 
     a {
-      // Another override of the base styles just to be certain we don't have
+      // An override of the base styles just to be certain we don't have
       // underlined links in the nav
       text-decoration: none;
     }
@@ -438,15 +438,17 @@ ul.usajobs-nav__secondary-menu {
     display: inline-block;
     margin: 0;
     padding: 0;
-    overflow: hidden;
+    // overflow: hidden;
 
     &:before,
     &:after {
       content: none;
     }
 
-    &[data-state="is-open"] {
-      overflow-y: visible;
+    &[data-state="is-open"],
+    .is-active {
+      // overflow-y: visible;
+      @include transition(all $duration-fast linear);
 
       .usajobs-nav--v2__section-link {
         color: $color-white;
@@ -491,7 +493,7 @@ ul.usajobs-nav__secondary-menu {
     z-index: 99999;
     text-align: left;
 
-    @include media($ML) {
+    @include media($M) {
       left: auto;
       right: auto;
     }
@@ -522,6 +524,7 @@ ul.usajobs-nav__secondary-menu {
 
   &__section-link {
     text-align: center;
+    @include transition(all $duration-fast linear);
 
     &:visited {
       color: $color-primary;
@@ -543,9 +546,7 @@ ul.usajobs-nav__secondary-menu {
   }
 
   &__menu-search {
-    &[data-state="is-open"] {
-      background-color: $color-primary-darker;
-    }
+    // background-color: $color-primary-darker;
   }
 
   &__search {

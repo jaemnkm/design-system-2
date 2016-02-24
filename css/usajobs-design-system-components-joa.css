@@ -4566,6 +4566,10 @@ html {
   color: #323a45;
 }
 
+.usajobs-joa-intro__posting-duration {
+  display: block;
+}
+
 @media screen and (min-width: 37.5em) {
   .usajobs-joa-intro__summary {
     float: left;
