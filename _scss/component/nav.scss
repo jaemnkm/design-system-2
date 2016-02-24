@@ -446,7 +446,7 @@ ul.usajobs-nav__secondary-menu {
     }
 
     &[data-state="is-open"],
-    .is-active {
+    &.is-active {
       // overflow-y: visible;
       @include transition(all $duration-fast linear);
 
