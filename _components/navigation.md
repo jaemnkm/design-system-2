@@ -286,7 +286,7 @@ lead: USAJOBS features a consistent header for top-level navigation across the s
                     Help
                   </a>
                 </li>
-                <li class="usajobs-nav--v2__menu-container usajobs-nav--v2__menu-search" data-state="is-closed" data-target="#usajobs-search-form">
+                <li class="usajobs-nav--v2__menu-container usajobs-nav--v2__menu-search" data-state="is-closed" data-target="#usajobs-search-form-v2">
                   <a data-behavior="nav.menu.search-toggle" aria-haspopup="true" class="usajobs-nav--v2__section-link" href="/" title="Job Search">
                     <span class="fa fa-search"></span>
                     Search
@@ -295,7 +295,7 @@ lead: USAJOBS features a consistent header for top-level navigation across the s
               </ul>
             </div>
           </div>
-          <div id="usajobs-search-form" class="usajobs-nav--v2__search" aria-expanded="false" role="menu">
+          <div id="usajobs-search-form-v2" class="usajobs-nav--v2__search" aria-expanded="false" role="menu">
             <form action="/Search" method="get" novalidate="novalidate">
               <fieldset>
                 <div class="usajobs-nav--v2__search-keywords-container">
@@ -366,7 +366,7 @@ lead: USAJOBS features a consistent header for top-level navigation across the s
                     Help
                   </a>
                 </li>
-                <li class="usajobs-nav--v2__menu-container usajobs-nav--v2__menu-search" data-state="is-closed" data-target="#usajobs-search-form">
+                <li class="usajobs-nav--v2__menu-container usajobs-nav--v2__menu-search" data-state="is-closed" data-target="#usajobs-search-form-v2-alt">
                   <a data-behavior="nav.menu.search-toggle" aria-haspopup="true" class="usajobs-nav--v2__section-link" href="/" title="Job Search">
                     <span class="fa fa-search"></span>
                     Search
@@ -375,7 +375,7 @@ lead: USAJOBS features a consistent header for top-level navigation across the s
               </ul>
             </div>
           </div>
-          <div id="usajobs-search-form" class="usajobs-nav--v2__search" aria-expanded="false" role="menu">
+          <div id="usajobs-search-form-v2-alt" class="usajobs-nav--v2__search" aria-expanded="false" role="menu">
             <form action="/Search" method="get" novalidate="novalidate" role="search">
               <fieldset>
                 <div class="usajobs-nav--v2__search-keywords-container">
@@ -418,7 +418,7 @@ lead: USAJOBS features a consistent header for top-level navigation across the s
       <li>The word "Profile" is visible until the SM breakpoint at which time the user's first name is shown. The first name can comfortably accommodate 17 characters before the overflow is hidden.</li>
       <li>Padding should be applied to the anchor element (<code>a</code>) to increase the tappable target size. The padding should also reach to the top and bottom of the navigation element.</li>
       <li>Padding around the first element (logo) should reach to the left edge of the page to enlarge the tappable target.</li>
-      <li>Padding around the last element (Create Account or User name) should reach to the right edge of the page to enlarge the tappable target.</li>
+      <li>Padding around the last element (Search) should reach to the right edge of the page to enlarge the tappable target.</li>
     </ul>
 
     <h4 class="usa-heading">Usability</h4>

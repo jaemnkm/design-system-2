@@ -320,16 +320,16 @@ $nav.on('nav.toggle', function(event, opts) {
 });
 
 $nav.on('nav.open', function(event, opts) {
-  opts.target.slideToggle('fast', function () {
-    opts.object.attr('data-state', 'is-open');
+  opts.object.attr('data-state', 'is-open');
+  opts.target.slideToggle(300, function () {
     opts.el.attr('aria-expanded', 'true');
     opts.target.attr('aria-expanded', 'true');
   });
 });
 
 $nav.on('nav.close', function(event, opts) {
-  opts.target.slideToggle('fast', function () {
-    opts.object.attr('data-state', 'is-closed');
+  opts.object.attr('data-state', 'is-closed');
+  opts.target.slideToggle(300, function () {
     opts.el.attr('aria-expanded', 'false');
     opts.target.attr('aria-expanded', 'false');
   });
@@ -353,15 +353,15 @@ $nav.on('nav.menu.toggle', function(event, opts) {
 });
 
 $nav.on('nav.menu.slide-open', function(event, opts) {
-  opts.menu.slideDown('fast', function () {
-    opts.parent.attr('data-state', 'is-open');
+  opts.parent.attr('data-state', 'is-open');
+  opts.menu.slideDown(300, function () {
     opts.menu.attr('aria-expanded', 'true');
   });
 });
 
 $nav.on('nav.menu.slide-close', function(event, opts) {
-  opts.menu.slideUp('fast', function () {
-    opts.parent.attr('data-state', 'is-closed');
+  opts.parent.attr('data-state', 'is-closed');
+  opts.menu.slideUp(300, function () {
     opts.menu.attr('aria-expanded', 'false');
   });
 });
