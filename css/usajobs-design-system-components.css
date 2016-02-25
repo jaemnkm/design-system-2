@@ -3313,6 +3313,31 @@ ul.usajobs-nav__secondary-menu li a {
   }
 }
 
+ul.ui-autocomplete {
+  opacity: 1;
+  padding: 1rem 0;
+  border: 1px solid #5b616b;
+  border-top: 0;
+  box-shadow: 0 6px 12px #f1f1f1;
+  background-color: #ffffff;
+}
+
+ul.ui-autocomplete li.ui-menu-item {
+  padding: 0;
+}
+
+ul.ui-autocomplete li.ui-menu-item:before {
+  content: '';
+}
+
+.ui-menu .ui-menu-item {
+  margin: 0;
+  padding: .2em .4em;
+  line-height: 1.5;
+  width: 100%;
+  zoom: 1;
+}
+
 html {
   box-sizing: border-box;
 }

@@ -89,3 +89,8 @@ $nav.on('nav.menu.search-toggle', function(event, opts) {
   }
 });
 
+// Search autocomplete locations
+$( '#search-location-v2' ).autocomplete({
+  minLength: 3,
+  source: [ 'Washington', 'Washington DC, District of Columbia', 'Washington Navy Yard, District of Columbia', 'Washington Township, Ohio', 'Wasco, California', 'Washington, Michigan']
+});
