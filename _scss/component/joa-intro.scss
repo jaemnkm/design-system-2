@@ -64,12 +64,14 @@
     @include default-text();
   }
 
+  &__opening-date,
   &__closing-date {
     color: $color-gray-dark;
   }
 
   &__posting-duration {
     display: block;
+    font-size: $small-font-size;
   }
 
   &__summary {

@@ -3,6 +3,8 @@
 @import 'lib/bourbon/bourbon';
 @import 'lib/neat/neat';
 @import "font-awesome/font-awesome";
+@import 'lib/jquery-ui/jquery-ui';
+@import 'lib/jquery-ui/jquery-ui.structure';
 @import 'core/variables';
 @import 'base/variables';
 @import 'base/utilities';
@@ -445,8 +447,7 @@ ul.usajobs-nav__secondary-menu {
       content: none;
     }
 
-    &[data-state="is-open"],
-    &.is-active {
+    &[data-state="is-open"] {
       // overflow-y: visible;
       @include transition(all $duration-fast linear);
 
