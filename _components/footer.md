@@ -86,10 +86,7 @@ lead: USAJOBS uses a large footer that incorporates navigation.
                 <a href="https://help.usajobs.gov/index.php/Working_for_the_government">Overview</a>
               </li>
               <li class="usajobs-footer--v1__menu-item gov-menu is-hidden">
-                <a href="https://help.usajobs.gov/index.php/Pay_and_Benefits">Benefits</a>
-              </li>
-              <li class="usajobs-footer--v1__menu-item gov-menu is-hidden">
-                <a href="https://help.usajobs.gov/index.php/Pay_and_Benefits">Salary</a>
+                <a href="https://help.usajobs.gov/index.php/Pay_and_Salary">Pay &amp; Salary</a>
               </li>
               <li class="usajobs-footer--v1__menu-item gov-menu is-hidden"> 
                 <a href="#unique-hiring-paths">Unique Hiring Paths</a>
@@ -252,10 +249,7 @@ lead: USAJOBS uses a large footer that incorporates navigation.
                 <a href="https://help.usajobs.gov/index.php/Working_for_the_government">Overview</a>
               </li>
               <li class="usajobs-footer--v1__menu-item gov-menu is-hidden">
-                <a href="https://help.usajobs.gov/index.php/Pay_and_Benefits">Benefits</a>
-              </li>
-              <li class="usajobs-footer--v1__menu-item gov-menu is-hidden">
-                <a href="https://help.usajobs.gov/index.php/Pay_and_Benefits">Salary</a>
+                <a href="https://help.usajobs.gov/index.php/Pay_and_Salary">Pay &amp; Salary</a>
               </li>
               <li class="usajobs-footer--v1__menu-item gov-menu is-hidden"> 
                 <a href="#unique-hiring-paths">Unique Hiring Paths</a>
@@ -394,12 +388,9 @@ lead: USAJOBS uses a large footer that incorporates navigation.
                 <a href="https://help.usajobs.gov/index.php/Working_for_the_government">Overview</a>
               </li>
               <li class="usajobs-footer--v1__menu-item gov-menu is-hidden">
-                <a href="https://help.usajobs.gov/index.php/Pay_and_Benefits">Benefits</a>
+                <a href="https://help.usajobs.gov/index.php/Pay_and_Salary">Pay &amp; Salary</a>
               </li>
               <li class="usajobs-footer--v1__menu-item gov-menu is-hidden">
-                <a href="https://help.usajobs.gov/index.php/Pay_and_Benefits">Salary</a>
-              </li>
-              <li class="usajobs-footer--v1__menu-item gov-menu is-hidden"> 
                 <a href="#unique-hiring-paths">Unique Hiring Paths</a>
               </li>
             </ul>
@@ -582,10 +573,7 @@ lead: USAJOBS uses a large footer that incorporates navigation.
                 </a>
               </li>
               <li class="usajobs-footer--v2__menu-item gov-menu is-hidden">
-                <a href="https://help.usajobs.gov/index.php/Pay_and_Benefits">Benefits</a>
-              </li>
-              <li class="usajobs-footer--v2__menu-item gov-menu is-hidden">
-                <a href="https://help.usajobs.gov/index.php/Pay_and_Benefits">Salary</a>
+                <a href="https://help.usajobs.gov/index.php/Pay_and_Salary">Pay &amp; Salary</a>
               </li>
               <li class="usajobs-footer--v2__menu-item gov-menu is-hidden">
                 <a class="usajobs-footer--v2__subsection-title" href="#unique_hiring_paths">

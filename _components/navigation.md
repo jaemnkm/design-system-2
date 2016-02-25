@@ -306,11 +306,11 @@ lead: USAJOBS features a consistent header for top-level navigation across the s
                   <input id="search-keyword" name="search-keyword" class="usajobs-nav--v2__search-keywords-input" placeholder="Job title, Skills, Agency" type="text" value="" autocomplete="false">
                 </div>
                 <div class="usajobs-nav--v2__search-location-container">
-                  <label for="search-location">
+                  <label for="search-location-v2">
                     <i class="usajobs-nav--v2__search-location-icon fa fa-map-marker"></i>
                     Location
                   </label>
-                  <input id="search-location" name="search-location" type="text" class="usajobs-nav--v2__search-location-input" placeholder="City, State, ZIP, or Country">
+                  <input id="search-location-v2" name="search-location" type="text" class="usajobs-nav--v2__search-location-input" placeholder="City, State, ZIP, or Country">
                 </div>
                 <div class="usajobs-nav--v2__search-button-container">
                   <button class="usa-button usa-button-primary-alt usajobs-nav--v2__search-button">
@@ -386,11 +386,11 @@ lead: USAJOBS features a consistent header for top-level navigation across the s
                   <input id="search-keyword" name="search-keyword" class="usajobs-nav--v2__search-keywords-input" placeholder="Job title, Skills, Agency" type="text" value="" autocomplete="false">
                 </div>
                 <div class="usajobs-nav--v2__search-location-container">
-                  <label for="search-location">
+                  <label for="search-location-v2-alt">
                     <i class="usajobs-nav--v2__search-location-icon fa fa-map-marker"></i>
                     Location
                   </label>
-                  <input id="search-location" name="search-location" type="text" class="usajobs-nav--v2__search-location-input" placeholder="City, State, ZIP, or Country">
+                  <input id="search-location-v2-alt" name="search-location" type="text" class="usajobs-nav--v2__search-location-input" placeholder="City, State, ZIP, or Country">
                 </div>
                 <div class="usajobs-nav--v2__search-button-container">
                   <button class="usa-button usa-button-primary-alt usajobs-nav--v2__search-button">

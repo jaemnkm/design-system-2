@@ -633,3 +633,29 @@ ul.usajobs-nav__secondary-menu {
   }
 }
 
+// jQuery UI Autocomplete styling
+ul.ui-autocomplete {
+  opacity: 1;
+  padding: $size-S 0;
+  border: 1px solid $color-gray;
+  border-top: 0;
+  box-shadow: 0 6px 12px $color-gray-lightest;
+  background-color: $color-white;
+
+  li.ui-menu-item {
+    padding: 0;
+
+    &:before {
+      content: '';
+    }
+  }
+}
+
+.ui-menu .ui-menu-item {
+  margin: 0;
+  padding: .2em .4em;
+  line-height: 1.5;
+  width: 100%;
+  zoom: 1;
+}
+
