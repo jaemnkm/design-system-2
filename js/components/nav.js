@@ -110,31 +110,19 @@ $( '#search-location-v2' ).autocomplete({
   source: usajSrc,
   minLength: 3,
   select: function (event, ui) {
-    var selectedObj = ui.item,
-      whichTextBox = $(this).attr('id');
+    var selectedObj = ui.item;
 
-    if (whichTextBox === 'search-location-v2') {
-      $('#search-location-v2').val(selectedObj.label);
-    } else {
-      $('#Location').val(selectedObj.label);
-    }
-
+    $('#search-location-v2').val(selectedObj.label);
     $('#AutoCompleteSelected').val('true');
     return false;
   },
-  search: function (event, ui) {
+  search: function () {
     //wipe out values on new searches or when user selects one but changes their mind!
-    /*
     $('#AutoCompleteSelected').val('false');
-    $('#Location').validate();
-    if (!$('#Location').valid()) {
-      $('#Location').autocomplete('close');
-      return false;
-    }
-    */
-  },
-  open: function () {
-  },
-  close: function () {
   }
+});
+
+$( '#search-keyword-v2' ).autocomplete({
+  minLength: 3,
+  source: [ 'Nurse', 'Nurse Anesthetists', 'Nurse Anesthetists AND intubation']
 });
