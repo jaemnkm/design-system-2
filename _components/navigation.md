@@ -299,11 +299,11 @@ lead: USAJOBS features a consistent header for top-level navigation across the s
             <form action="/Search" method="get" novalidate="novalidate">
               <fieldset>
                 <div class="usajobs-nav--v2__search-keywords-container">
-                  <label for="search-keyword">
+                  <label for="search-keyword-v2">
                     <i class="usajobs-nav--v2__search-keywords-icon fa fa-search"></i>
                     Keywords
                   </label>
-                  <input id="search-keyword" name="search-keyword" class="usajobs-nav--v2__search-keywords-input" placeholder="Job title, Skills, Agency" type="text" value="" autocomplete="false">
+                  <input id="search-keyword-v2" name="search-keyword" class="usajobs-nav--v2__search-keywords-input" placeholder="Job title, Skills, Agency" type="text" value="" autocomplete="false">
                 </div>
                 <div class="usajobs-nav--v2__search-location-container">
                   <label for="search-location-v2">
@@ -311,6 +311,8 @@ lead: USAJOBS features a consistent header for top-level navigation across the s
                     Location
                   </label>
                   <input id="search-location-v2" name="search-location" type="text" class="usajobs-nav--v2__search-location-input" placeholder="City, State, ZIP, or Country">
+                  <span role="status" aria-live="polite" class="ui-helper-hidden-accessible"></span>
+                  <input type="hidden" id="AutoCompleteSelected" name="AutoCompleteSelected">
                 </div>
                 <div class="usajobs-nav--v2__search-button-container">
                   <button class="usa-button usa-button-primary-alt usajobs-nav--v2__search-button">
@@ -379,11 +381,11 @@ lead: USAJOBS features a consistent header for top-level navigation across the s
             <form action="/Search" method="get" novalidate="novalidate" role="search">
               <fieldset>
                 <div class="usajobs-nav--v2__search-keywords-container">
-                  <label for="search-keyword">
+                  <label for="search-keyword-v2-alt">
                     <i class="usajobs-nav--v2__search-keywords-icon fa fa-search"></i>
                     Keywords
                   </label>
-                  <input id="search-keyword" name="search-keyword" class="usajobs-nav--v2__search-keywords-input" placeholder="Job title, Skills, Agency" type="text" value="" autocomplete="false">
+                  <input id="search-keyword-v2-alt" name="search-keyword" class="usajobs-nav--v2__search-keywords-input" placeholder="Job title, Skills, Agency" type="text" value="" autocomplete="false">
                 </div>
                 <div class="usajobs-nav--v2__search-location-container">
                   <label for="search-location-v2-alt">
