@@ -4562,12 +4562,13 @@ html {
   line-height: 1.5;
 }
 
-.usajobs-joa-intro__closing-date {
+.usajobs-joa-intro__opening-date, .usajobs-joa-intro__closing-date {
   color: #323a45;
 }
 
 .usajobs-joa-intro__posting-duration {
   display: block;
+  font-size: 1.4rem;
 }
 
 @media screen and (min-width: 37.5em) {
