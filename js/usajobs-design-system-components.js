@@ -380,10 +380,54 @@ $nav.on('nav.menu.search-toggle', function(event, opts) {
   }
 });
 
+
 // Search autocomplete locations
+var acHostUrl = 'https://ac.usajobs.gov/acwd',
+usajSrc = function (request, response) {
+  $.ajax({
+    url: acHostUrl,
+    dataType: 'jsonp',
+    crossdomain: true,
+    cache: true,
+    jsonpCallback: 'usaj151067976',
+    data: { t: request.term },
+    success: function (data) {
+      response(data);
+    }
+  });
+};
+
 $( '#search-location-v2' ).autocomplete({
+  source: usajSrc,
   minLength: 3,
-  source: [ 'Washington', 'Washington DC, District of Columbia', 'Washington Navy Yard, District of Columbia', 'Washington Township, Ohio', 'Wasco, California', 'Washington, Michigan']
+  select: function (event, ui) {
+    var selectedObj = ui.item,
+      whichTextBox = $(this).attr('id');
+
+    if (whichTextBox === 'search-location-v2') {
+      $('#search-location-v2').val(selectedObj.label);
+    } else {
+      $('#Location').val(selectedObj.label);
+    }
+
+    $('#AutoCompleteSelected').val('true');
+    return false;
+  },
+  search: function (event, ui) {
+    //wipe out values on new searches or when user selects one but changes their mind!
+    /*
+    $('#AutoCompleteSelected').val('false');
+    $('#Location').validate();
+    if (!$('#Location').valid()) {
+      $('#Location').autocomplete('close');
+      return false;
+    }
+    */
+  },
+  open: function () {
+  },
+  close: function () {
+  }
 });
 
 // Notification
