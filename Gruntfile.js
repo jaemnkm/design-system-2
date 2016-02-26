@@ -79,7 +79,8 @@ module.exports = function(grunt) {
         src: [
           'js/vendor/modernizr.js',
           'library/assets/js/vendor/jquery-1.11.3.min.js',
-          'js/vendor/jquery.ba-throttle-debounce.min.js'
+          'js/vendor/jquery.ba-throttle-debounce.min.js',
+          'js/base.js'
         ],
         dest: 'js/usajobs-design-system-base.js'
       },
