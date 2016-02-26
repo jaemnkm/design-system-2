@@ -1420,3 +1420,35 @@ return new Za.prototype.init(a,b,c,d,e)}m.Tween=Za,Za.prototype={constructor:Za,
  * http://benalman.com/about/license/
  */
 (function(b,c){var $=b.jQuery||b.Cowboy||(b.Cowboy={}),a;$.throttle=a=function(e,f,j,i){var h,d=0;if(typeof f!=="boolean"){i=j;j=f;f=c}function g(){var o=this,m=+new Date()-d,n=arguments;function l(){d=+new Date();j.apply(o,n)}function k(){h=c}if(i&&!h){l()}h&&clearTimeout(h);if(i===c&&m>e){l()}else{if(f!==true){h=setTimeout(i?k:l,i===c?e-m:e)}}}if($.guid){g.guid=j.guid=j.guid||$.guid++}return g};$.debounce=function(d,e,f){return f===c?a(d,e,false):a(d,f,e!==false)}})(this);
+/*global Modernizr */
+
+var USAJOBS = USAJOBS || {};
+USAJOBS.Base = USAJOBS.Base || {};
+
+USAJOBS.Base = (function (window) {
+  "use strict";
+
+  var $ = window.jQuery,
+
+  svgFallback = function () {
+    if (!Modernizr.svg) {
+      $("img[src$='.svg']")
+        .attr("src", "/" + $(this).attr("src").split("/").pop().replace("svg", "png"));
+    }
+  },
+
+  initialize = function () {
+    svgFallback();
+  };
+  // end var
+
+  return {
+    init: initialize
+  };
+}(window));
+
+$(document).ready(function () {
+  "use strict";
+
+  USAJOBS.Base.init();
+});

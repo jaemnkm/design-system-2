@@ -9,5 +9,4 @@ _archive
 *.sublime-*
 npm-debug.log
 node_modules
-bower_components
 visual_design_assets
