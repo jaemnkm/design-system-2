@@ -314,20 +314,6 @@
 }
 
 .usajobs-footer--joa {
-  &__authenticity-note {
-    display: none;
-    font-size: $small-font-size;
-
-    a {
-      display: inline-block;
-      color: $color-primary;
-
-      &:visited {
-        color: $color-primary;
-      }
-    }
-  }
-
   .usajobs-footer--joa__subsection-title,
   .usajobs-footer--joa__subsection-title:visited {
     @include h5();

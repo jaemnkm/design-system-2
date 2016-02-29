@@ -75,6 +75,20 @@
     padding: $size-M;
   }
 
+  &__authenticity-note {
+    display: none;
+    font-size: $small-font-size;
+
+    a {
+      display: inline-block;
+      color: $color-primary;
+
+      &:visited {
+        color: $color-primary;
+      }
+    }
+  }
+
   @include media($M) {
     .usajobs-joa-summary-container {
       @include clearfix();

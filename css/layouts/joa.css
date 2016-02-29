@@ -89,6 +89,20 @@ html {
   margin-right: 0;
 }
 
+.usajobs-joa__authenticity-note {
+  display: none;
+  font-size: 1.4rem;
+}
+
+.usajobs-joa__authenticity-note a {
+  display: inline-block;
+  color: #0071bc;
+}
+
+.usajobs-joa__authenticity-note a:visited {
+  color: #0071bc;
+}
+
 @media screen and (min-width: 37.5em) {
   .usajobs-joa .usajobs-joa-summary-container {
     width: 100%;
@@ -154,4 +168,5 @@ html {
     display: none;
   }
 }
+
 /*# sourceMappingURL=joa.css.map */
