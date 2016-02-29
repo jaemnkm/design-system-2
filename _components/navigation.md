@@ -13,10 +13,10 @@ lead: USAJOBS features a consistent header for top-level navigation across the s
 <div class="preview">
   <header class="usajobs-site-header" role="banner" aria-label="header">
     <div class="usa-disclaimer">
-      <span class="usajobs-disclaimer-official">
+      <div class="usajobs-disclaimer-official">
         <img class="usa-flag_icon" alt="U.S. flag signifying that this is a United States federal government website" src="{{ site.baseurl }}/img/us_flag_small.png">
         An official website of the United States Government
-      </span>
+      </div>
     </div>
     <nav class="usajobs-nav" role="navigation" aria-label="main navigation" data-object="nav">
       <div class="usajobs-nav__body">
