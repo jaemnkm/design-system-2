@@ -11,8 +11,9 @@
 @import 'base/accessibility';
 @import 'base/breakpoints';
 
-$logo_height-S: 73px;
-$logo_height-L: 78px;
+$logo_height-S: 64px;
+$logo_height-L: 71px;
+$nav_item_height: 38.5px;
 
 .usajobs-nav {
   position: relative;
@@ -35,341 +36,19 @@ $logo_height-L: 78px;
     }
   }
 
-  &__header {
-    display: block;
+  &__header,
+  &__header-container {
+    @include clearfix();
   }
 
   &__brand-container {
     display: block;
     float: left;
-    width: 50%;
-
-    @include media($ML) {
-      @include span-columns(6 of 12);
-      width: 53%;
-    }
-
-    @include media($MLL) {
-      max-width: rem(180px + 30px);
-    }
-  }
-
-  &__brand {
-    display: block;
-    padding: $size-default 0 $size-default $size-default;
-    max-width: rem(160px + 30px); // logo width + the left padding
-    line-height: 1;
-
-    @include media($ML) {
-      padding-left: $size-M;
-    }
-
-    @include media($MLL) {
-      padding-top: $size-default;
-      padding-bottom: $size-default;
-    }
-
-    .logo {
-      @include media($MLL) {
-        max-width: rem(180px);
-      }
-    }
-  }
-
-  &__extended-menu {
-    display: none;
-    width: 100%;
-
-    @include media($MLL) {
-      @include span-columns(6 of 12);
-      height: auto;
-      width: 52%;
-      margin-right: 0;
-    }
-  }
-}
-
-.usajobs-nav__menu,
-.usajobs-nav__account {
-  margin: 0;
-
-  li {
-    margin: 0;
-    padding: 0;
-
-    &:before,
-    &:after {
-      content: none;
-    }
-
-    &.pipe {
-      width: 1px;
-    }
-
-    a {
-      display: block;
-      padding: rem(($logo_height-S - 17px) /2) $size-default;
-      line-height: 1;
-      color: $color-base;
-    }
-
-    a:hover {
-      color: $color-primary-darker;
-      text-decoration: none;
-    }
-  }
-}
-
-.usajobs-nav__account {
-  position: absolute;
-  top: 0;
-  right: 15px;
-
-  li {
-    display: none;
-
-    @include media($ML) {
-      display: inline-block;
-    }
-
-    a {
-      @include media($MLL) {
-        padding-top: rem(($logo_height-L - 17px) /2);
-        padding-bottom: rem(($logo_height-L - 17px) /2);
-        font-size: $base-font-size;
-      }
-    }
-  }
-
-  .usajobs-nav__menu-toggle {
-    display: inline-block;
-
-    @include media($MLL) {
-      display: none;
-    }
-  }
-
-  .usajobs-nav__menu-toggle-button {
-    margin: $size-default 0 0;
-    width: rem(80px);
-  }
-
-  .sign_in {
-    @include media($ML) {
-      display: block;
-      padding-right: $size-S;
-    }
-  }
-
-  .create_account {
-    @include media($ML) {
-      padding-left: $size-S;
-      padding-right: $size-M;
-    }
-  }
-
-  .pipe {
-    padding: 0;
-  }
-
-  .account-logged_in {
-    display: block;
     margin-right: $size-S;
-    padding-top: rem(($logo_height-S - 27px) /2);
-    padding-bottom: rem(($logo_height-S - 27px) /2);
 
-    @include media($MLL) {
-      padding-top: rem(($logo_height-L - 27px) /2);
-      padding-bottom: rem(($logo_height-L - 27px) /2);
-      padding-right: $size-M;
-      margin-right: 0;
+    @include media($M) {
+      margin-right: $size-M;
     }
-
-    &:hover {
-      .fa {
-        color: $color-primary-darker;
-      }
-    }
-  }
-
-  .account-icon {
-    @include makeCircle(27px, $color-gray-light, $color-gray-light);
-
-    .fa {
-      padding-left: 7px;
-    }
-  }
-
-  .account-name {
-    padding: 0 $size-base 0 $size-XS;
-    font-size: $small-font-size;
-
-    @include media($MLL) {
-      font-size: $base-font-size;
-    }
-  }
-}
-
-.usajobs-nav__menu {
-  display: block;
-  @include clearfix();
-  clear: both;
-  width: 100%;
-  margin: 0;
-  background-color: $color-gray-lightest;
-
-  @include media($MLL) {
-    display: block;
-    float: left;
-    background-color: $color-white;
-  }
-
-  li {
-    width: 100%;
-    border-bottom: 1px solid $color-gray-light;
-
-    &:first-child {
-      border-top: 1px solid $color-gray-light;
-
-      @include media($MLL) {
-        border-top: 0;
-      }
-    }
-
-    @include media($MLL) {
-      display: inline-block;
-      width: auto;
-      border-bottom: 0;
-    }
-
-    a {
-      position: relative;
-      font-size: $base-font-size;
-      padding: $size-default $size-default $size-default $size-M;
-
-      @include media($MLL) {
-        font-size: $lead-font-size;
-        padding: rem(($logo_height-L - 20px) /2) $size-default;
-      }
-    }
-
-    a.is-active {
-      color: $color-primary-darker;
-
-      @include media($MLL) {
-        border-bottom: 3px solid $color-primary-darker;
-      }
-    }
-  }
-
-  .menu-toggle:after {
-    position: absolute;
-    right: 1rem;
-    @include fa-icon();
-    content: $fa-var-angle-up;
-    font-size: $lead-font-size;
-
-    @include media($MLL) {
-      content: '';
-    }
-  }
-}
-
-.usajobs-nav__secondary-menu-container {
-  position: relative;
-  display: block;
-  float: left;
-
-  &[data-state="is-open"] {
-    .menu-toggle {
-      @include media($MLL) {
-        background-color: $color-gray-warm-light;
-      }
-
-      &:after {
-        @include transform(rotate(180deg));
-        transition: all 0.3s;
-      }
-    }
-
-    .usajobs-nav__secondary-menu {
-      display: block !important;
-    }
-  }
-}
-
-ul.usajobs-nav__secondary-menu {
-  display: none;
-  position: static;
-  width: 100%;
-  margin: 0;
-  background-color: $color-gray-warm-light;
-  box-shadow: inset 0 8px 6px -6px rgba(0,0,0, 0.2);
-
-  @include media($MLL) {
-    float: left;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    z-index: 99999;
-    min-width: rem(330px);
-    padding: $size-base 0;
-  }
-
-  li {
-    display: inline-block;
-
-    @include media($MLL) {
-      display: block;
-      width: 100%;
-    }
-
-    &:last-child {
-      border-bottom: 0;
-    }
-
-    a {
-      padding: $size-S $size-default $size-S $size-L;
-
-      @include media($MLL) {
-        display: block;
-        width: 100%;
-        clear: both;
-        padding-left: $size-M;
-        white-space: nowrap;
-      }
-    }
-  }
-}
-
-.usajobs-nav--v2 {
-  $logo_height-S: 64px;
-  $logo_height-L: 71px;
-  $nav_item_height: 38.5px;
-
-  position: relative;
-  background-color: $color-white;
-
-  ul {
-    // The default is a table which ruins animating the height
-    display: block;
-  }
-
-  &__body {
-    @include outer-container();
-    max-width: $site-max-width;
-    border-bottom: 1px solid $color-gray-lighter;
-
-    a {
-      // Another override of the base styles just to be certain we don't have
-      // underlined links in the nav
-      text-decoration: none;
-    }
-  }
-
-  &__header,
-  &__header-container {
-    @include clearfix();
   }
 
   &__brand-container {
@@ -440,7 +119,6 @@ ul.usajobs-nav__secondary-menu {
     display: inline-block;
     margin: 0;
     padding: 0;
-    // overflow: hidden;
 
     &:before,
     &:after {
@@ -448,41 +126,63 @@ ul.usajobs-nav__secondary-menu {
     }
 
     &[data-state="is-open"] {
-      // overflow-y: visible;
       @include transition(all $duration-fast linear);
 
-      .usajobs-nav--v2__section-link {
+      .usajobs-nav__section-link {
         color: $color-white;
         background-color: $color-primary-darker;
       }
 
-      ul.usajobs-nav--v2__secondary-menu {
+      ul.usajobs-nav__secondary-menu {
         display: block !important;
       }
     }
+  }
 
-    a {
-      display: block;
-      padding: rem(($logo_height-S - $nav_item_height) /2) $size-S;
-      line-height: 1;
+  &__section-link {
+    display: block;
+    padding: rem(($logo_height-S - $nav_item_height) /2) $size-S;
+    line-height: 1;
+    text-align: center;
+    @include transition(all $duration-fast linear);
+    color: $color-gray-dark;
 
-      @include media($SM) {
-        padding-left: $size-default;
-        padding-right: $size-default;
-      }
+    @include media($SM) {
+      padding-left: $size-default;
+      padding-right: $size-default;
+    }
 
-      @include media($MLL) {
-        padding: rem(($logo_height-L - $nav_item_height) /2) $size-M;
+    @include media($L) {
+      padding: rem(($logo_height-L - $nav_item_height) /2) $size-M;
+    }
+
+    &:visited {
+      color: $color-gray-dark;
+    }
+
+    &:hover {
+      color: $color-primary;
+      text-decoration: none;
+    }
+
+    &.is-active {
+      color: $color-primary-darker;
+      padding-bottom: rem(($logo_height-S - $nav_item_height) / 2) - rem(3px);
+      border-bottom: rem(3px) solid $color-primary-darker;
+
+      @include media($L) {
+        padding-bottom: rem(($logo_height-L - $nav_item_height) /2) - rem(3px);
       }
     }
 
-    a:hover {
-      color: $color-primary-darker;
-      text-decoration: none;
+    .fa {
+      display: block;
+      font-size: $lead-font-size;
+      padding-bottom: $size-XS;
     }
   }
 
-  ul.usajobs-nav--v2__secondary-menu {
+  ul.usajobs-nav__secondary-menu {
     display: none;
     position: absolute;
     left: 0;
@@ -523,31 +223,12 @@ ul.usajobs-nav__secondary-menu {
     }
   }
 
-  &__section-link {
-    text-align: center;
-    @include transition(all $duration-fast linear);
-
-    &:visited {
-      color: $color-primary;
-    }
-
-    .fa {
-      display: block;
-      font-size: $lead-font-size;
-      padding-bottom: $size-XS;
-    }
-  }
-
   &__help {
     display: none;
 
     @include media($M) {
       display: inline-block;
     }
-  }
-
-  &__menu-search {
-    // background-color: $color-primary-darker;
   }
 
   &__search {
