@@ -228,9 +228,8 @@
 
 .usajobs-footer--v1,
 .usajobs-footer--joa {
-  &__menu-item a,
   &__menu-item a:visited {
-    color: $color-gray;
+    color: $color-primary;
   }
 
   .usa-footer-logo-heading {
