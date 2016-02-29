@@ -2704,7 +2704,7 @@ html {
   -webkit-transition: all 0.3s linear;
   -moz-transition: all 0.3s linear;
   transition: all 0.3s linear;
-  color: #323a45;
+  color: #0071bc;
 }
 
 @media screen and (min-width: 30em) {
@@ -2721,11 +2721,11 @@ html {
 }
 
 .usajobs-nav__section-link:visited {
-  color: #323a45;
+  color: #0071bc;
 }
 
 .usajobs-nav__section-link:hover {
-  color: #0071bc;
+  color: #205493;
   text-decoration: none;
 }
 
@@ -2929,6 +2929,10 @@ html {
   .usajobs-nav__search-button {
     margin-top: 1rem;
   }
+}
+
+.usajobs-disclaimer-official {
+  max-width: 120rem;
 }
 
 ul.ui-autocomplete {

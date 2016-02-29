@@ -145,7 +145,7 @@ $nav_item_height: 38.5px;
     line-height: 1;
     text-align: center;
     @include transition(all $duration-fast linear);
-    color: $color-gray-dark;
+    color: $color-primary;
 
     @include media($SM) {
       padding-left: $size-default;
@@ -157,11 +157,11 @@ $nav_item_height: 38.5px;
     }
 
     &:visited {
-      color: $color-gray-dark;
+      color: $color-primary;
     }
 
     &:hover {
-      color: $color-primary;
+      color: $color-primary-darker;
       text-decoration: none;
     }
 
@@ -312,6 +312,11 @@ $nav_item_height: 38.5px;
       margin-top: $size-S;
     }
   }
+}
+
+// Disclaimer
+.usajobs-disclaimer-official {
+  max-width: $site-max-width;
 }
 
 // jQuery UI Autocomplete styling
