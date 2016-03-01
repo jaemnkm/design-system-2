@@ -1,5 +1,4 @@
 # Markdown config
-markdown: redcarpet
 highlighter: rouge
 name: USAJOBS Design System
 subtitle: The design system for the next generation of USAJOBS which describes the base visual language upon which the site can be built.
