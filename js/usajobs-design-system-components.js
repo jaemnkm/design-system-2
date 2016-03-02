@@ -397,13 +397,13 @@ usajSrc = function (request, response) {
   });
 };
 
-$( '#search-location-v2' ).autocomplete({
+$('#search-location').autocomplete({
   source: usajSrc,
   minLength: 3,
   select: function (event, ui) {
     var selectedObj = ui.item;
 
-    $('#search-location-v2').val(selectedObj.label);
+    $('#search-location').val(selectedObj.label);
     $('#AutoCompleteSelected').val('true');
     return false;
   },
@@ -413,7 +413,7 @@ $( '#search-location-v2' ).autocomplete({
   }
 });
 
-$( '#search-keyword-v2' ).autocomplete({
+$( '#search-keyword' ).autocomplete({
   minLength: 3,
   source: [ 'Nurse', 'Nurse Anesthetists', 'Nurse Anesthetists AND intubation']
 });

@@ -53,7 +53,7 @@ lead: USAJOBS features a consistent header for top-level navigation across the s
                     Help
                   </a>
                 </li>
-                <li class="usajobs-nav__menu-container usajobs-nav__menu-search" data-state="is-closed" data-target="#usajobs-search-form-v2-alt">
+                <li class="usajobs-nav__menu-container usajobs-nav__menu-search" data-state="is-closed" data-target="#usajobs-search-form">
                   <a data-behavior="nav.menu.search-toggle" aria-haspopup="true" class="usajobs-nav__section-link" href="/" title="Job Search">
                     <span class="fa fa-search"></span>
                     Search
@@ -62,22 +62,24 @@ lead: USAJOBS features a consistent header for top-level navigation across the s
               </ul>
             </div>
           </div>
-          <div id="usajobs-search-form-v2-alt" class="usajobs-nav__search" aria-expanded="false" role="menu">
+          <div id="usajobs-search-form" class="usajobs-nav__search" aria-expanded="false" role="menu">
             <form action="/Search" method="get" novalidate="novalidate" role="search">
               <fieldset>
                 <div class="usajobs-nav__search-keywords-container">
-                  <label for="search-keyword-v2-alt">
+                  <label for="search-keyword">
                     <i class="usajobs-nav__search-keywords-icon fa fa-search"></i>
                     Keywords
                   </label>
-                  <input id="search-keyword-v2-alt" name="search-keyword" class="usajobs-nav__search-keywords-input" placeholder="Job title, Skills, Agency" type="text" value="" autocomplete="false">
+                  <input id="search-keyword" name="search-keyword" class="usajobs-nav__search-keywords-input" placeholder="Job title, Skills, Agency" type="text" value="" autocomplete="false">
                 </div>
                 <div class="usajobs-nav__search-location-container">
-                  <label for="search-location-v2-alt">
+                  <label for="search-location">
                     <i class="usajobs-nav__search-location-icon fa fa-map-marker"></i>
                     Location
                   </label>
-                  <input id="search-location-v2-alt" name="search-location" type="text" class="usajobs-nav__search-location-input" placeholder="City, State, ZIP, or Country">
+                  <input id="search-location" name="search-location" type="text" class="usajobs-nav__search-location-input" placeholder="City, State, ZIP, or Country">
+                  <span role="status" aria-live="polite" class="ui-helper-hidden-accessible"></span>
+                  <input type="hidden" id="AutoCompleteSelected" name="AutoCompleteSelected">
                 </div>
                 <div class="usajobs-nav__search-button-container">
                   <button class="usa-button usa-button-primary-alt usajobs-nav__search-button">
@@ -106,6 +108,8 @@ lead: USAJOBS features a consistent header for top-level navigation across the s
       <li>Padding should be applied to the anchor element (<code>a</code>) to increase the tappable target size. The padding should also reach to the top and bottom of the navigation element.</li>
       <li>Padding around the first element (logo) should reach to the left edge of the page to enlarge the tappable target.</li>
       <li>Padding around the last element (Search) should reach to the right edge of the page to enlarge the tappable target.</li>
+      <li>As the user types into the keyword field an auto-complete box should appear below the input field matching against the user's recent searches. Recent is defined as N months.</li>
+      <li>As the user types into the location field an auto-complete box should appear below the input field suggesting locations that match a known list of locations. <a href="https://ac.usajobs.gov/help/operations/acwd">API for locations</a>.</li>
     </ul>
 
     <h4 class="usa-heading">Usability</h4>
@@ -160,7 +164,7 @@ lead: USAJOBS features a consistent header for top-level navigation across the s
                     Help
                   </a>
                 </li>
-                <li class="usajobs-nav__menu-container usajobs-nav__menu-search" data-state="is-closed" data-target="#usajobs-search-form-v2-alt">
+                <li class="usajobs-nav__menu-container usajobs-nav__menu-search" data-state="is-closed" data-target="#usajobs-search-form-v1-active">
                   <a data-behavior="nav.menu.search-toggle" aria-haspopup="true" class="usajobs-nav__section-link" href="/" title="Job Search">
                     <span class="fa fa-search"></span>
                     Search
@@ -169,22 +173,24 @@ lead: USAJOBS features a consistent header for top-level navigation across the s
               </ul>
             </div>
           </div>
-          <div id="usajobs-search-form-v2-alt" class="usajobs-nav__search" aria-expanded="false" role="menu">
+          <div id="usajobs-search-form-v1-active" class="usajobs-nav__search" aria-expanded="false" role="menu">
             <form action="/Search" method="get" novalidate="novalidate" role="search">
               <fieldset>
                 <div class="usajobs-nav__search-keywords-container">
-                  <label for="search-keyword-v2-alt">
+                  <label for="search-keyword">
                     <i class="usajobs-nav__search-keywords-icon fa fa-search"></i>
                     Keywords
                   </label>
-                  <input id="search-keyword-v2-alt" name="search-keyword" class="usajobs-nav__search-keywords-input" placeholder="Job title, Skills, Agency" type="text" value="" autocomplete="false">
+                  <input id="search-keyword" name="search-keyword" class="usajobs-nav__search-keywords-input" placeholder="Job title, Skills, Agency" type="text" value="" autocomplete="false">
                 </div>
                 <div class="usajobs-nav__search-location-container">
-                  <label for="search-location-v2-alt">
+                  <label for="search-location">
                     <i class="usajobs-nav__search-location-icon fa fa-map-marker"></i>
                     Location
                   </label>
-                  <input id="search-location-v2-alt" name="search-location" type="text" class="usajobs-nav__search-location-input" placeholder="City, State, ZIP, or Country">
+                  <input id="search-location" name="search-location" type="text" class="usajobs-nav__search-location-input" placeholder="City, State, ZIP, or Country">
+                  <span role="status" aria-live="polite" class="ui-helper-hidden-accessible"></span>
+                  <input type="hidden" id="AutoCompleteSelected" name="AutoCompleteSelected">
                 </div>
                 <div class="usajobs-nav__search-button-container">
                   <button class="usa-button usa-button-primary-alt usajobs-nav__search-button">
@@ -249,7 +255,7 @@ lead: USAJOBS features a consistent header for top-level navigation across the s
                     Help
                   </a>
                 </li>
-                <li class="usajobs-nav__menu-container usajobs-nav__menu-search" data-state="is-closed" data-target="#usajobs-search-form-v2-alt">
+                <li class="usajobs-nav__menu-container usajobs-nav__menu-search" data-state="is-closed" data-target="#usajobs-search-form-v1-unauth">
                   <a data-behavior="nav.menu.search-toggle" aria-haspopup="true" class="usajobs-nav__section-link" href="/" title="Job Search">
                     <span class="fa fa-search"></span>
                     Search
@@ -258,22 +264,24 @@ lead: USAJOBS features a consistent header for top-level navigation across the s
               </ul>
             </div>
           </div>
-          <div id="usajobs-search-form-v2-alt" class="usajobs-nav__search" aria-expanded="false" role="menu">
+          <div id="usajobs-search-form-v1-unauth" class="usajobs-nav__search" aria-expanded="false" role="menu">
             <form action="/Search" method="get" novalidate="novalidate" role="search">
               <fieldset>
                 <div class="usajobs-nav__search-keywords-container">
-                  <label for="search-keyword-v2-alt">
+                  <label for="search-keyword">
                     <i class="usajobs-nav__search-keywords-icon fa fa-search"></i>
                     Keywords
                   </label>
-                  <input id="search-keyword-v2-alt" name="search-keyword" class="usajobs-nav__search-keywords-input" placeholder="Job title, Skills, Agency" type="text" value="" autocomplete="false">
+                  <input id="search-keyword" name="search-keyword" class="usajobs-nav__search-keywords-input" placeholder="Job title, Skills, Agency" type="text" value="" autocomplete="false">
                 </div>
                 <div class="usajobs-nav__search-location-container">
-                  <label for="search-location-v2-alt">
+                  <label for="search-location">
                     <i class="usajobs-nav__search-location-icon fa fa-map-marker"></i>
                     Location
                   </label>
-                  <input id="search-location-v2-alt" name="search-location" type="text" class="usajobs-nav__search-location-input" placeholder="City, State, ZIP, or Country">
+                  <input id="search-location" name="search-location" type="text" class="usajobs-nav__search-location-input" placeholder="City, State, ZIP, or Country">
+                  <span role="status" aria-live="polite" class="ui-helper-hidden-accessible"></span>
+                  <input type="hidden" id="AutoCompleteSelected" name="AutoCompleteSelected">
                 </div>
                 <div class="usajobs-nav__search-button-container">
                   <button class="usa-button usa-button-primary-alt usajobs-nav__search-button">
@@ -349,18 +357,18 @@ lead: USAJOBS features a consistent header for top-level navigation across the s
             <form action="/Search" method="get" novalidate="novalidate">
               <fieldset>
                 <div class="usajobs-nav__search-keywords-container">
-                  <label for="search-keyword-v2">
+                  <label for="search-keyword">
                     <i class="usajobs-nav__search-keywords-icon fa fa-search"></i>
                     Keywords
                   </label>
-                  <input id="search-keyword-v2" name="search-keyword" class="usajobs-nav__search-keywords-input" placeholder="Job title, Skills, Agency" type="text" value="" autocomplete="false">
+                  <input id="search-keyword" name="search-keyword" class="usajobs-nav__search-keywords-input" placeholder="Job title, Skills, Agency" type="text" value="" autocomplete="false">
                 </div>
                 <div class="usajobs-nav__search-location-container">
-                  <label for="search-location-v2">
+                  <label for="search-location">
                     <i class="usajobs-nav__search-location-icon fa fa-map-marker"></i>
                     Location
                   </label>
-                  <input id="search-location-v2" name="search-location" type="text" class="usajobs-nav__search-location-input" placeholder="City, State, ZIP, or Country">
+                  <input id="search-location" name="search-location" type="text" class="usajobs-nav__search-location-input" placeholder="City, State, ZIP, or Country">
                   <span role="status" aria-live="polite" class="ui-helper-hidden-accessible"></span>
                   <input type="hidden" id="AutoCompleteSelected" name="AutoCompleteSelected">
                 </div>
