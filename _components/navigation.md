@@ -108,8 +108,8 @@ lead: USAJOBS features a consistent header for top-level navigation across the s
       <li>Padding should be applied to the anchor element (<code>a</code>) to increase the tappable target size. The padding should also reach to the top and bottom of the navigation element.</li>
       <li>Padding around the first element (logo) should reach to the left edge of the page to enlarge the tappable target.</li>
       <li>Padding around the last element (Search) should reach to the right edge of the page to enlarge the tappable target.</li>
-      <li>As the user types into the keyword field an auto-complete box should appear below the input field matching against the user's recent searches. Recent is defined as N months.</li>
       <li>As the user types into the location field an auto-complete box should appear below the input field suggesting locations that match a known list of locations. <a href="https://ac.usajobs.gov/help/operations/acwd">API for locations</a>.</li>
+      <li>NOTE: As the user types into the keyword field the browser may show the user's recent searches. The appearance and display of this auto-complete box depends on the browser and is not explicitly styled.</li>
     </ul>
 
     <h4 class="usa-heading">Usability</h4>
