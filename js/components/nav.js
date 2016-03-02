@@ -121,8 +121,3 @@ $('#search-location').autocomplete({
     $('#AutoCompleteSelected').val('false');
   }
 });
-
-$( '#search-keyword' ).autocomplete({
-  minLength: 3,
-  source: [ 'Nurse', 'Nurse Anesthetists', 'Nurse Anesthetists AND intubation']
-});
