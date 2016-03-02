@@ -228,8 +228,10 @@
 
 .usajobs-footer--v1,
 .usajobs-footer--joa {
-  &__menu-item a:visited {
-    color: $color-primary;
+  &__menu-item {
+    a:visited {
+      color: $color-primary;
+    }
   }
 
   .usa-footer-logo-heading {
@@ -239,7 +241,7 @@
 
   .usa-footer-primary-content {
     @include media($MLL) {
-      @include span-columns(3, 12);
+      @include span-columns(6, 12);
     }
   }
 
@@ -274,7 +276,7 @@
       @include span-columns(3, 6);
     }
     @include media($MLL) {
-      @include span-columns(3, 12);
+      @include span-columns(4, 12);
     }
   }
 
