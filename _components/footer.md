@@ -182,6 +182,9 @@ lead: USAJOBS uses a large footer that incorporates navigation.
                 <a href="/Applicant/Document/ListDocuments">Documents</a>
               </li>
               <li class="usajobs-footer--v1__menu-item account-menu is-hidden">
+                <a href="/Applicant/Document/ListResumes">Resumes</a>
+              </li>
+              <li class="usajobs-footer--v1__menu-item account-menu is-hidden">
                 <a href="/Applicant/SavedJobs/ListSavedJobs">Saved Jobs</a>
               </li>
               <li class="usajobs-footer--v1__menu-item account-menu is-hidden">
