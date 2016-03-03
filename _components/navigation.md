@@ -28,23 +28,23 @@ lead: USAJOBS features a consistent header for top-level navigation across the s
               </a>
             </div>
             <div class="usajobs-nav__menu" id="usajobs-menu">
-              <ul>
+              <ul role="menubar">
                 <li class="usajobs-nav__menu-container usajobs-nav__account" data-state="is-closed">
-                  <a class="usajobs-nav__section-link menu-toggle" data-behavior="nav.menu.toggle" aria-haspopup="true" href="#account" title="Account">
+                  <a class="usajobs-nav__section-link menu-toggle" data-behavior="nav.menu.toggle" role="menuitem" aria-haspopup="true" href="#account" title="Account">
                     <span class="fa fa-user"></span>
                     <span class="usajobs-nav__account_name">QQ</span>
                     <span class="usajobs-nav__first_name">Quadrina</span>
                   </a>
-                  <ul class="usajobs-nav__secondary-menu" aria-expanded="false" role="menu">
-                    <li><a href="/Applicant/MyAccount/Home">Home</a></li>
-                    <li><a href="/Applicant/Application/ListApplications">Application Status</a></li>
-                    <li><a href="/Applicant/MyAccount/Documents">Documents</a></li>
-                    <li><a href="/Applicant/MyAccount/Inbox">Inbox</a></li>
-                    <li><a href="/Applicant/Profile/PersonalInformation">Profile</a></li>
-                    <li><a href="/Applicant/Resume/ListResumes">Resumes</a></li>
-                    <li><a href="/Applicant/SavedJobs/ListSavedJobs">Saved Jobs</a></li>
-                    <li><a href="/Applicant/SavedSearches/ListSavedSearches">Saved Searches</a></li>
-                    <li><a href="/Applicant/Account/LogOff">Sign Out</a></li>
+                  <ul class="usajobs-nav__secondary-menu" aria-expanded="false" role="menu" aria-label="submenu">
+                    <li role="menuitem"><a href="/Applicant/MyAccount/Home">Home</a></li>
+                    <li role="menuitem"><a href="/Applicant/Application/ListApplications">Application Status</a></li>
+                    <li role="menuitem"><a href="/Applicant/MyAccount/Documents">Documents</a></li>
+                    <li role="menuitem"><a href="/Applicant/MyAccount/Inbox">Inbox</a></li>
+                    <li role="menuitem"><a href="/Applicant/Profile/PersonalInformation">Profile</a></li>
+                    <li role="menuitem"><a href="/Applicant/Resume/ListResumes">Resumes</a></li>
+                    <li role="menuitem"><a href="/Applicant/SavedJobs/ListSavedJobs">Saved Jobs</a></li>
+                    <li role="menuitem"><a href="/Applicant/SavedSearches/ListSavedSearches">Saved Searches</a></li>
+                    <li role="menuitem"><a href="/Applicant/Account/LogOff">Sign Out</a></li>
                   </ul>
                 </li>
                 <li class="usajobs-nav__menu-container usajobs-nav__help"> 
@@ -53,8 +53,8 @@ lead: USAJOBS features a consistent header for top-level navigation across the s
                     Help
                   </a>
                 </li>
-                <li class="usajobs-nav__menu-container usajobs-nav__menu-search" data-state="is-closed" data-target="#usajobs-search-form">
-                  <a data-behavior="nav.menu.search-toggle" aria-haspopup="true" class="usajobs-nav__section-link" href="/" title="Job Search">
+                <li class="usajobs-nav__menu-container usajobs-nav__menu-search" data-state="is-closed"> 
+                  <a data-behavior="nav.menu.search-toggle" aria-controls="usajobs-search-form" class="usajobs-nav__section-link" href="/" title="Job Search">
                     <span class="fa fa-search"></span>
                     Search
                   </a>
@@ -101,6 +101,14 @@ lead: USAJOBS features a consistent header for top-level navigation across the s
     Documentation
   </button>
   <div id="collapsible-0" aria-hidden="false" class="usa-accordion-content">
+    <h4 class="usa-heading">Accessibility</h4>
+    <ul class="usa-content-list">
+      <li>Ensure the side navigational system is keyboard accessible. Users should be able to tab through each link.</li>
+      <li>Ensure the header which wraps the entire nav has the role set to "banner" and the nav must have a role set to "navigation". Refer to the <a href="https://www.w3.org/WAI/GL/wiki/Using_ARIA_landmarks_to_identify_regions_of_a_page">W3C ARIA landmarks documentation</a>.</li>
+      <li>Ensure that the Account menu has the <a href="https://www.w3.org/TR/wai-aria/states_and_properties#aria-haspopup">aria-haspopup</a> attribute set to true. The menu must use the <a href="https://www.w3.org/TR/wai-aria/states_and_properties#aria-expanded">aria-expanded</a> attribute set to false when hidden and true when expanded.</li>
+      <li>Ensure that the Search toggle has the <a href="https://www.w3.org/TR/wai-aria/states_and_properties#aria-controls">aria-controls</a> attribute set to the ID name of the search container which uses the <a href="https://www.w3.org/TR/wai-aria/states_and_properties#aria-expanded">aria-expanded</a> attribute set to false when hidden and true when expanded.</li>
+    </ul>
+
     <h4 class="usa-heading">Implementation</h4>
     <ul class="usa-content-list">
       <li>The user's first and last initials are used at the narrowest viewport widths. At the M breakpoint (600px) the full first name of the user is shown.</li>
@@ -146,7 +154,7 @@ lead: USAJOBS features a consistent header for top-level navigation across the s
                     <span class="usajobs-nav__account_name">QQ</span>
                     <span class="usajobs-nav__first_name">Quadrina</span>
                   </a>
-                  <ul class="usajobs-nav__secondary-menu" aria-expanded="false" role="menu">
+                  <ul class="usajobs-nav__secondary-menu" aria-expanded="false" aria-label="submenu">
                     <li><a href="/Applicant/MyAccount/Home">Home</a></li>
                     <li><a href="/Applicant/Application/ListApplications">Application Status</a></li>
                     <li><a href="/Applicant/MyAccount/Documents">Documents</a></li>
@@ -164,8 +172,8 @@ lead: USAJOBS features a consistent header for top-level navigation across the s
                     Help
                   </a>
                 </li>
-                <li class="usajobs-nav__menu-container usajobs-nav__menu-search" data-state="is-closed" data-target="#usajobs-search-form-v1-active">
-                  <a data-behavior="nav.menu.search-toggle" aria-haspopup="true" class="usajobs-nav__section-link" href="/" title="Job Search">
+                <li class="usajobs-nav__menu-container usajobs-nav__menu-search" data-state="is-closed"> 
+                  <a data-behavior="nav.menu.search-toggle" aria-controls="usajobs-search-form-v1-active" class="usajobs-nav__section-link" href="/" title="Job Search">
                     <span class="fa fa-search"></span>
                     Search
                   </a>
@@ -242,7 +250,7 @@ lead: USAJOBS features a consistent header for top-level navigation across the s
             </div>
             <div class="usajobs-nav__menu" id="usajobs-menu">
               <ul>
-                <li class="usajobs-nav__menu-container usajobs-nav__account" data-state="is-closed">
+                <li class="usajobs-nav__menu-container usajobs-nav__account">
                   <a class="usajobs-nav__section-link menu-toggle" href="https://www.usajobs.gov/Applicant/MyAccount/Home/" title="Account">
                     <span class="fa fa-user"></span>
                     <span class="usajobs-nav__account_name">Sign In</span>
@@ -255,8 +263,8 @@ lead: USAJOBS features a consistent header for top-level navigation across the s
                     Help
                   </a>
                 </li>
-                <li class="usajobs-nav__menu-container usajobs-nav__menu-search" data-state="is-closed" data-target="#usajobs-search-form-v1-unauth">
-                  <a data-behavior="nav.menu.search-toggle" aria-haspopup="true" class="usajobs-nav__section-link" href="/" title="Job Search">
+                <li class="usajobs-nav__menu-container usajobs-nav__menu-search" data-state="is-closed"> 
+                  <a data-behavior="nav.menu.search-toggle" aria-controls="usajobs-search-form-v1-unauth" class="usajobs-nav__section-link" href="/" title="Job Search">
                     <span class="fa fa-search"></span>
                     Search
                   </a>
@@ -344,8 +352,8 @@ lead: USAJOBS features a consistent header for top-level navigation across the s
                     Help
                   </a>
                 </li>
-                <li class="usajobs-nav__menu-container usajobs-nav__menu-search" data-state="is-closed" data-target="#usajobs-search-form-v2">
-                  <a data-behavior="nav.menu.search-toggle" aria-haspopup="true" class="usajobs-nav__section-link" href="/" title="Job Search">
+                <li class="usajobs-nav__menu-container usajobs-nav__menu-search" data-state="is-closed"> 
+                  <a data-behavior="nav.menu.search-toggle" aria-controls="usajobs-search-form-v2" class="usajobs-nav__section-link" href="/" title="Job Search">
                     <span class="fa fa-search"></span>
                     Search
                   </a>

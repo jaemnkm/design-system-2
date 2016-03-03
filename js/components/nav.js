@@ -5,9 +5,9 @@ var $nav = $('[data-object="nav"]');
 $nav.on('click', '[data-behavior]', function (event) {
   var $el = $(this),
     $object = $el.closest('[data-object="nav"]'),
-    state = $object.attr('data-state'),
     behavior = $el.attr('data-behavior'),
-    $target = $object.find($object.attr('data-target'));
+    $target = $object.find('#' + $el.attr('aria-controls')),
+    state = $target.attr('aria-expanded');
 
   event.preventDefault();
   $el.blur(); // Removes focus
@@ -76,16 +76,14 @@ $nav.on('nav.menu.slide-close', function(event, opts) {
 });
 
 $nav.on('nav.menu.search-toggle', function(event, opts) {
-  var $parent = opts.el.parent(),
-    parent_state = $parent.attr('data-state'),
-    $menu = $nav.find($parent.attr('data-target'));
+  var $parent = opts.el.parent();
 
   event.preventDefault();
 
-  if (parent_state === 'is-closed') {
-    $nav.trigger('nav.menu.slide-open', { parent: $parent, menu: $menu });
-  } else if (parent_state === 'is-open') {
-    $nav.trigger('nav.menu.slide-close', { parent: $parent, menu: $menu });
+  if (opts.state === 'false') {
+    $nav.trigger('nav.menu.slide-open', { parent: $parent, menu: opts.target });
+  } else if (opts.state === 'true') {
+    $nav.trigger('nav.menu.slide-close', { parent: $parent, menu: opts.target });
   }
 });
 
