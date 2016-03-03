@@ -7595,6 +7595,16 @@ h6 {
   color: #0071bc;
 }
 
+.usajobs-footer--v1__job_applications, .usajobs-footer--v1__account, .usajobs-footer--v1__help,
+.usajobs-footer--v2__job_applications,
+.usajobs-footer--v2__account,
+.usajobs-footer--v2__help,
+.usajobs-footer--joa__job_applications,
+.usajobs-footer--joa__account,
+.usajobs-footer--joa__help {
+  position: relative;
+}
+
 .usajobs-footer--v1 .usa-footer-primary-section .usa-footer-primary-content .usa-footer-primary-link,
 .usajobs-footer--v2 .usa-footer-primary-section .usa-footer-primary-content .usa-footer-primary-link,
 .usajobs-footer--joa .usa-footer-primary-section .usa-footer-primary-content .usa-footer-primary-link {
@@ -7643,6 +7653,7 @@ h6 {
   -o-transform-style: preserve-3d;
   transform-style: preserve-3d;
   overflow: hidden;
+  position: absolute;
 }
 
 @media screen and (min-width: 37.5em) {
@@ -7677,6 +7688,8 @@ h6 {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   content: "";
+  top: 3.7rem;
+  left: 1.2rem;
 }
 
 @media screen and (min-width: 37.5em) {
@@ -7701,6 +7714,8 @@ h6 {
   -webkit-transform: rotate(90deg);
   -ms-transform: rotate(90deg);
   transform: rotate(90deg);
+  top: 4rem;
+  left: 1rem;
 }
 
 @media screen and (min-width: 37.5em) {
@@ -8108,30 +8123,6 @@ h6 {
   clear: both;
   content: "";
   display: table;
-}
-
-@media screen and (min-width: 37.5em) {
-  .usajobs-footer--v2__help.usa-footer-primary-content, .usajobs-footer--v2__working_for_the_government.usa-footer-primary-content {
-    float: left;
-    display: block;
-    margin-right: 4.8291579146%;
-    width: 47.5854210427%;
-  }
-  .usajobs-footer--v2__help.usa-footer-primary-content:last-child, .usajobs-footer--v2__working_for_the_government.usa-footer-primary-content:last-child {
-    margin-right: 0;
-  }
-}
-
-@media screen and (min-width: 62em) {
-  .usajobs-footer--v2__help.usa-footer-primary-content, .usajobs-footer--v2__working_for_the_government.usa-footer-primary-content {
-    float: left;
-    display: block;
-    margin-right: 2.3576515979%;
-    width: 48.821174201%;
-  }
-  .usajobs-footer--v2__help.usa-footer-primary-content:last-child, .usajobs-footer--v2__working_for_the_government.usa-footer-primary-content:last-child {
-    margin-right: 0;
-  }
 }
 
 .usajobs-footer--joa .usajobs-footer--joa__subsection-title,
