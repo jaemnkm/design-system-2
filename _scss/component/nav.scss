@@ -328,8 +328,10 @@ ul.ui-autocomplete {
   opacity: 1;
   padding: $size-S 0;
   border: 1px solid $color-gray;
+  border-bottom-right-radius: rem(3px);
+  border-bottom-left-radius: rem(3px);
   border-top: 0;
-  box-shadow: 0 6px 12px $color-gray-lightest;
+  box-shadow: 1px 1px 5px $color-gray;
   background-color: $color-white;
 
   li.ui-menu-item {
