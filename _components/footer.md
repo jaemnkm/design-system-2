@@ -21,13 +21,13 @@ lead: USAJOBS uses a large footer that incorporates navigation.
           <div class="usajobs-footer--v1__content-container">
             <ul class="usa-unstyled-list usa-footer-primary-content usajobs-footer--v1__account">
               <li class="usa-footer-primary-link" data-behavior="footer.toggle" data-state="is-closed" data-target=".account-menu">Account</li>
-              <li class="usajobs-footer--v1-item account-menu is-hidden">
+              <li class="usajobs-footer--v1__menu-item account-menu is-hidden">
                 <a href="/Applicant/MyAccount/Home/">Home</a>
               </li>
-              <li class="usajobs-footer--v1-item account-menu is-hidden">
+              <li class="usajobs-footer--v1__menu-item account-menu is-hidden">
                 <a href="/Applicant/Profile/">Profile</a>
               </li>
-              <li class="usajobs-footer--v1__menu-item home-menu is-hidden">
+              <li class="usajobs-footer--v1__menu-item account-menu is-hidden">
                 <a href="/Applicant/Application/ListApplications">Application Status</a>
               </li>
               <li class="usajobs-footer--v1__menu-item account-menu is-hidden">
@@ -51,7 +51,7 @@ lead: USAJOBS uses a large footer that incorporates navigation.
             </ul>
           </div>
           <div class="usajobs-footer--v1__content-container">
-            <ul class="usa-unstyled-list usa-footer-primary-content">
+            <ul class="usa-unstyled-list usa-footer-primary-content usajobs-footer--v1__help">
               <li class="usa-footer-primary-link" data-behavior="footer.toggle" data-state="is-closed" data-target=".help-menu">Help</li>
               <li class="usajobs-footer--v1__menu-item help-menu is-hidden">
                 <a href="http://usajobs.github.io/help-center/">Help Center</a>
@@ -116,7 +116,7 @@ lead: USAJOBS uses a large footer that incorporates navigation.
             <li><a href="http://www.opm.gov/efoia/">FOIA</a></li>
             <li><a href="https://www.opm.gov/our-inspector-general/">Inspector General</a></li>
             <li><a href="https://www.opm.gov/information-management/no-fear-act/">No Fear Act Data</a></li>
-            <li><a href="https://help.usajobs.gov/index.php/USAJobsHelp:Privacy_policy">Privacy Policy</a></li>
+            <li><a href="http://usajobs.github.io/help-center/privacy/">Privacy Policy</a></li>
             <li><a href="http://www.usa.gov/">USA.gov</a></li>
           </ul>
         </div>
@@ -169,10 +169,10 @@ lead: USAJOBS uses a large footer that incorporates navigation.
           <div class="usajobs-footer--v1__content-container">
             <ul class="usa-unstyled-list usa-footer-primary-content usajobs-footer--v1__account">
               <li class="usa-footer-primary-link" data-behavior="footer.toggle" data-state="is-closed" data-target=".account-menu">Account</li>
-              <li class="usajobs-footer--v1-item account-menu is-hidden">
+              <li class="usajobs-footer--v1__menu-item account-menu is-hidden">
                 <a href="/Applicant/MyAccount/Home/">Home</a>
               </li>
-              <li class="usajobs-footer--v1-item account-menu is-hidden">
+              <li class="usajobs-footer--v1__menu-item account-menu is-hidden">
                 <a href="/Applicant/Profile/">Profile</a>
               </li>
               <li class="usajobs-footer--v1__menu-item home-menu is-hidden">
@@ -196,7 +196,7 @@ lead: USAJOBS uses a large footer that incorporates navigation.
             </ul>
           </div>
           <div class="usajobs-footer--v1__content-container">
-            <ul class="usa-unstyled-list usa-footer-primary-content">
+            <ul class="usa-unstyled-list usa-footer-primary-content usajobs-footer--v1__help">
               <li class="usa-footer-primary-link" data-behavior="footer.toggle" data-state="is-closed" data-target=".help-menu">Help</li>
               <li class="usajobs-footer--v1__menu-item help-menu is-hidden">
                 <a href="http://usajobs.github.io/help-center/">Help Center</a>
@@ -273,7 +273,7 @@ lead: USAJOBS uses a large footer that incorporates navigation.
             <li><a href="http://www.opm.gov/efoia/">FOIA</a></li>
             <li><a href="https://www.opm.gov/our-inspector-general/">Inspector General</a></li>
             <li><a href="https://www.opm.gov/information-management/no-fear-act/">No Fear Act Data</a></li>
-            <li><a href="https://help.usajobs.gov/index.php/USAJobsHelp:Privacy_policy">Privacy Policy</a></li>
+            <li><a href="http://usajobs.github.io/help-center/privacy/">Privacy Policy</a></li>
             <li><a href="http://www.usa.gov/">USA.gov</a></li>
           </ul>
         </div>
@@ -308,13 +308,13 @@ lead: USAJOBS uses a large footer that incorporates navigation.
           <div class="usajobs-footer--v1__content-container">
             <ul class="usa-unstyled-list usa-footer-primary-content usajobs-footer--v1__account">
               <li class="usa-footer-primary-link" data-behavior="footer.toggle" data-state="is-closed" data-target=".account-menu">Account</li>
-              <li class="usajobs-footer--v1-item account-menu is-hidden">
+              <li class="usajobs-footer--v1__menu-item account-menu is-hidden">
                 <a href="/Applicant/MyAccount/Home/">Home</a>
               </li>
-              <li class="usajobs-footer--v1-item account-menu is-hidden">
+              <li class="usajobs-footer--v1__menu-item account-menu is-hidden">
                 <a href="/Applicant/Profile/">Profile</a>
               </li>
-              <li class="usajobs-footer--v1__menu-item home-menu is-hidden">
+              <li class="usajobs-footer--v1__menu-item account-menu is-hidden">
                 <a href="/Applicant/Application/ListApplications">Application Status</a>
               </li>
               <li class="usajobs-footer--v1__menu-item account-menu is-hidden">
@@ -335,7 +335,7 @@ lead: USAJOBS uses a large footer that incorporates navigation.
             </ul>
           </div>
           <div class="usajobs-footer--v1__content-container">
-            <ul class="usa-unstyled-list usa-footer-primary-content">
+            <ul class="usa-unstyled-list usa-footer-primary-content usajobs-footer--v1__help">
               <li class="usa-footer-primary-link" data-behavior="footer.toggle" data-state="is-closed" data-target=".help-menu">Help</li>
               <li class="usajobs-footer--v1__menu-item help-menu is-hidden">
                 <a href="http://usajobs.github.io/help-center/">Help Center</a>
@@ -400,7 +400,7 @@ lead: USAJOBS uses a large footer that incorporates navigation.
             <li><a href="http://www.opm.gov/efoia/">FOIA</a></li>
             <li><a href="https://www.opm.gov/our-inspector-general/">Inspector General</a></li>
             <li><a href="https://www.opm.gov/information-management/no-fear-act/">No Fear Act Data</a></li>
-            <li><a href="https://help.usajobs.gov/index.php/USAJobsHelp:Privacy_policy">Privacy Policy</a></li>
+            <li><a href="http://usajobs.github.io/help-center/privacy/">Privacy Policy</a></li>
             <li><a href="http://www.usa.gov/">USA.gov</a></li>
           </ul>
         </div>
@@ -432,7 +432,7 @@ lead: USAJOBS uses a large footer that incorporates navigation.
     <div class="usa-footer-primary-section">
       <div class="usa-grid-full">
         <nav class="usa-footer-nav usa-width-one-whole">
-          <ul class="usa-unstyled-list usa-footer-primary-content">
+          <ul class="usa-unstyled-list usa-footer-primary-content usajobs-footer--v2__job_applications">
             <li class="usa-footer-primary-link" data-behavior="footer.toggle" data-state="is-closed" data-target=".home-menu">
               Job Applications
             </li>
@@ -451,7 +451,7 @@ lead: USAJOBS uses a large footer that incorporates navigation.
           </ul>
           <ul class="usa-unstyled-list usa-footer-primary-content usajobs-footer--v2__account">
             <li class="usa-footer-primary-link" data-behavior="footer.toggle" data-state="is-closed" data-target=".account-menu">Account</li>
-            <li class="usajobs-footer--v2-item account-menu is-hidden">
+            <li class="usajobs-footer--v2__menu-item account-menu is-hidden">
               <a href="/Applicant/MyAccount/Home/">Home</a>
             </li>
             <li class="usajobs-footer--v2__menu-item account-menu is-hidden">
@@ -473,7 +473,7 @@ lead: USAJOBS uses a large footer that incorporates navigation.
               <a href="/Account/LogOff">Sign Out</a>
             </li>
           </ul>
-          <ul class="usa-unstyled-list usa-footer-primary-content">
+          <ul class="usa-unstyled-list usa-footer-primary-content usajobs-footer--v2__help">
             <li class="usa-footer-primary-link" data-behavior="footer.toggle" data-state="is-closed" data-target=".help-menu">Help</li>
             <li class="usajobs-footer--v2__menu-item help-menu is-hidden">
               <a href="http://usajobs.github.io/help-center/">Help Center</a>
@@ -539,7 +539,7 @@ lead: USAJOBS uses a large footer that incorporates navigation.
             <li><a href="http://www.opm.gov/efoia/">FOIA</a></li>
             <li><a href="https://www.opm.gov/our-inspector-general/">Inspector General</a></li>
             <li><a href="https://www.opm.gov/information-management/no-fear-act/">No Fear Act Data</a></li>
-            <li><a href="https://help.usajobs.gov/index.php/USAJobsHelp:Privacy_policy">Privacy Policy</a></li>
+            <li><a href="http://usajobs.github.io/help-center/privacy/">Privacy Policy</a></li>
             <li><a href="http://www.usa.gov/">USA.gov</a></li>
           </ul>
         </div>
@@ -571,7 +571,7 @@ lead: USAJOBS uses a large footer that incorporates navigation.
     <div class="usa-footer-primary-section">
       <div class="usa-grid-full">
         <nav class="usa-footer-nav usa-width-one-whole">
-          <ul class="usa-unstyled-list usa-footer-primary-content">
+          <ul class="usa-unstyled-list usa-footer-primary-content usajobs-footer--v2__job_applications">
             <li class="usa-footer-primary-link" data-behavior="footer.toggle" data-state="is-closed" data-target=".home-menu">
               Job Applications
             </li>
@@ -609,7 +609,7 @@ lead: USAJOBS uses a large footer that incorporates navigation.
               <a href="/Account/LogOff">Sign Out</a>
             </li>
           </ul>
-          <ul class="usa-unstyled-list usa-footer-primary-content">
+          <ul class="usa-unstyled-list usa-footer-primary-content usajobs-footer--v2__help">
             <li class="usa-footer-primary-link" data-behavior="footer.toggle" data-state="is-closed" data-target=".help-menu">Help</li>
             <li class="usajobs-footer--v2__menu-item help-menu is-hidden">
               <a href="http://usajobs.github.io/help-center/">Help Center</a>
@@ -687,7 +687,7 @@ lead: USAJOBS uses a large footer that incorporates navigation.
             <li><a href="http://www.opm.gov/efoia/">FOIA</a></li>
             <li><a href="https://www.opm.gov/our-inspector-general/">Inspector General</a></li>
             <li><a href="https://www.opm.gov/information-management/no-fear-act/">No Fear Act Data</a></li>
-            <li><a href="https://help.usajobs.gov/index.php/USAJobsHelp:Privacy_policy">Privacy Policy</a></li>
+            <li><a href="http://usajobs.github.io/help-center/privacy/">Privacy Policy</a></li>
             <li><a href="http://www.usa.gov/">USA.gov</a></li>
           </ul>
         </div>

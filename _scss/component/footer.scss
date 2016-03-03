@@ -38,6 +38,12 @@
     color: $color-primary;
   }
 
+  &__job_applications,
+  &__account,
+  &__help {
+    position: relative;
+  }
+
   // Fix headers inside of unordered lists
   .usa-footer-primary-section .usa-footer-primary-content .usa-footer-primary-link {
     @include h4();
@@ -55,6 +61,7 @@
       @include transition(all $duration-fast ease);
       @include transform-style(preserve-3d);
       overflow: hidden;
+      position: absolute;
 
       @include media($M) {
         display: none;
@@ -74,6 +81,8 @@
     &:before {
       @include fa-icon();
       content: $fa-var-chevron-right;
+      top: rem(37px);
+      left: rem(12px);
 
       @include media($M) {
         display: none;
@@ -85,6 +94,8 @@
       @include fa-icon();
       content: $fa-var-chevron-right;
       @include fa-icon-rotate(90deg, 1);
+      top: rem(40px);
+      left: rem(10px);
 
       @include media($M) {
         display: none;
@@ -301,16 +312,6 @@
   &__content-container {
     @include outer-container();
     clear: both;
-  }
-
-  &__help.usa-footer-primary-content,
-  &__working_for_the_government.usa-footer-primary-content {
-    @include media($M) {
-      @include span-columns(3, 6);
-    }
-    @include media($MLL) {
-      @include span-columns(6, 12);
-    }
   }
 }
 
