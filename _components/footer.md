@@ -84,7 +84,7 @@ lead: USAJOBS uses a large footer that incorporates navigation.
     <div class="usa-footer-secondary_section usa-footer-big-secondary-section">
       <div class="usa-grid">
         <div class="usa-footer-logo usa-width-one-half">
-          <img class="usa-footer-logo-img" src="{{site.baseurl}}/img/logo/footer-white.png" alt="USAJOBS logo image">
+          <span class="logo"></span>
           <p class="usajobs-footer--v1__note">
             USAJOBS is a <a href="https://www.opm.gov">United States Office of Personnel Management</a> website.
           </p>
@@ -232,7 +232,7 @@ lead: USAJOBS uses a large footer that incorporates navigation.
     <div class="usa-footer-secondary_section usa-footer-big-secondary-section">
       <div class="usa-grid">
         <div class="usa-footer-logo usa-width-one-half">
-          <img class="usa-footer-logo-img" src="{{site.baseurl}}/img/logo/footer-white.png" alt="USAJOBS logo image">
+          <span class="logo"></span>
           <p class="usajobs-footer--v1__note">
             USAJOBS is a <a href="https://www.opm.gov">United States Office of Personnel Management</a> website.
           </p>
@@ -371,7 +371,7 @@ lead: USAJOBS uses a large footer that incorporates navigation.
     <div class="usa-footer-secondary_section usa-footer-big-secondary-section">
       <div class="usa-grid">
         <div class="usa-footer-logo usa-width-one-half">
-          <img class="usa-footer-logo-img" src="{{site.baseurl}}/img/logo/footer-white.png" alt="USAJOBS logo image">
+          <span class="logo"></span>
           <p class="usajobs-footer--v1__note">
             USAJOBS is a <a href="https://www.opm.gov">United States Office of Personnel Management</a> website.
           </p>
@@ -509,7 +509,7 @@ lead: USAJOBS uses a large footer that incorporates navigation.
     <div class="usa-footer-secondary_section usa-footer-big-secondary-section">
       <div class="usa-grid">
         <div class="usa-footer-logo usa-width-one-half">
-          <img class="usa-footer-logo-img" src="{{site.baseurl}}/img/logo/footer-white.png" alt="USAJOBS logo image">
+          <span class="logo"></span>
           <p class="usajobs-footer--v1__note">
             USAJOBS is a <a href="https://www.opm.gov">United States Office of Personnel Management</a> website.
           </p>
@@ -645,7 +645,7 @@ lead: USAJOBS uses a large footer that incorporates navigation.
     <div class="usa-footer-secondary_section usa-footer-big-secondary-section">
       <div class="usa-grid">
         <div class="usa-footer-logo usa-width-one-half">
-          <img class="usa-footer-logo-img" src="{{site.baseurl}}/img/logo/footer-white.png" alt="USAJOBS logo image">
+          <span class="logo"></span>
           <p class="usajobs-footer--v1__note">
             USAJOBS is a <a href="https://www.opm.gov">United States Office of Personnel Management</a> website.
           </p>
