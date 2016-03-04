@@ -105,27 +105,6 @@
 
   .usa-footer-primary-content {
     padding-bottom: 0;
-
-    .usajobs-footer--v1__subsection,
-    .usajobs-footer--v2__subsection,
-    .usajobs-footer--joa__subsection {
-      padding-bottom: $size-default;
-
-      li {
-        margin-left: 0;
-      }
-    }
-
-    // combating .usa-unstyled-list li
-    .usajobs-footer--v1__subsection-title,
-    .usajobs-footer--v1__subsection-title:visited,
-    .usajobs-footer--v2__subsection-title,
-    .usajobs-footer--v2__subsection-title:visited,
-    .usajobs-footer--joa__subsection-title,
-    .usajobs-footer--joa__subsection-title:visited {
-      @include h5();
-      color: $color-base;
-    }
   }
 
   .usa-footer-primary-content:last-child.usajobs-footer--v1__account,
@@ -172,6 +151,15 @@
       text-decoration: none;
       font-size: $h3-font-size;
     }
+  }
+
+  .usa-footer-logo .logo {
+    display: inline-block;
+    height: rem(45px);
+    width: rem(188px);
+    background-image: url("../img/logo/png/white-2x.png");
+    background-image: url("../img/logo/svg/white-2x.svg");
+    background-repeat: no-repeat;
   }
 
   &__note {
