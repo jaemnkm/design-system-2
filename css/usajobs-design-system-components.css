@@ -9,6 +9,24 @@ html {
   box-sizing: inherit;
 }
 
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 .usajobs-assistive-text {
   position: absolute !important;
   margin: -1px !important;
@@ -2537,6 +2555,24 @@ html {
 .ui-menu .ui-menu-icon {
   left: auto;
   right: 0;
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .usajobs-assistive-text {
@@ -5159,6 +5195,24 @@ html {
   content: "";
 }
 
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 .usajobs-assistive-text {
   position: absolute !important;
   margin: -1px !important;
@@ -7473,6 +7527,24 @@ html {
   content: "";
 }
 
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 body {
   font-size: 17px;
   font-size: 1.7rem;
@@ -8145,6 +8217,24 @@ html {
 
 *, *::after, *::before {
   box-sizing: inherit;
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .usajobs-assistive-text {
@@ -10512,6 +10602,24 @@ html {
   }
 }
 
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 .usajobs-joa_summary {
   background-color: #205493;
   color: #ffffff;
@@ -10561,6 +10669,24 @@ html {
 .usajobs-joa_summary.v1 .usajobs-joa_summary-body .joa-anchor {
   color: #d6d7d9;
   text-decoration: underline;
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .usajobs-document {
@@ -10914,6 +11040,24 @@ html {
 *::after,
 *::before {
   box-sizing: inherit;
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .usajobs-assistive-text {
@@ -13162,6 +13306,24 @@ html {
 
 .fa-meanpath:before {
   content: "";
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 body {
@@ -15446,6 +15608,24 @@ html {
 
 .fa-meanpath:before {
   content: "";
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .usajobs-joa-intro {
@@ -17820,6 +18000,24 @@ html {
   content: "";
 }
 
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 .usajobs-joa-actions {
   margin-bottom: 3rem;
   padding: 1.5rem 1.5rem 0;
@@ -20127,6 +20325,24 @@ html {
   content: "";
 }
 
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 .usajobs-joa-agency {
   display: block;
   margin-top: 6rem;
@@ -22358,6 +22574,24 @@ html {
 
 .fa-meanpath:before {
   content: "";
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .usajobs-search-controls {
@@ -24598,6 +24832,24 @@ html {
 
 .fa-meanpath:before {
   content: "";
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .usajobs-search-pagination {

@@ -8,6 +8,24 @@ html {
   box-sizing: inherit;
 }
 
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 .l-homepage p {
   font-family: "Source Sans Pro", "Helvetica", "Arial", sans-serif;
   font-size: 1.7rem;

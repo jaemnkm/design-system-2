@@ -11,7 +11,7 @@ lead: USAJOBS has adopted a different visual style to our alerts that deviate fr
 
 <div class="preview">
   <h6 class="usa-heading-alt">Success</h6>
-  <div class="usa-alert usajobs-alert usajobs-alert--success" role="alert">
+  <div class="usa-alert usajobs-alert usajobs-alert--success" role="alert" data-object="alert">
     <div class="usajobs-alert__figure">
       <div class="usajobs-alert__icon">
       </div>
@@ -30,7 +30,7 @@ lead: USAJOBS has adopted a different visual style to our alerts that deviate fr
   </div>
 
   <h6 class="usa-heading-alt">Information</h6>
-  <div class="usa-alert usajobs-alert usajobs-alert--info" role="alert">
+  <div class="usa-alert usajobs-alert usajobs-alert--info" role="alert" data-object="alert">
     <div class="usajobs-alert__figure">
       <div class="usajobs-alert__icon">
       </div>
@@ -46,7 +46,7 @@ lead: USAJOBS has adopted a different visual style to our alerts that deviate fr
   </div>
 
   <h6 class="usa-heading-alt">Warning</h6>
-  <div class="usa-alert usajobs-alert usajobs-alert--warning" role="alert">
+  <div class="usa-alert usajobs-alert usajobs-alert--warning" role="alert" data-object="alert">
     <div class="usajobs-alert__figure">
       <div class="usajobs-alert__icon">
       </div>
@@ -67,7 +67,7 @@ lead: USAJOBS has adopted a different visual style to our alerts that deviate fr
   </div>
 
   <h6 class="usa-heading-alt">Error</h6>
-  <div class="usa-alert usajobs-alert usajobs-alert--error" role="alert">
+  <div class="usa-alert usajobs-alert usajobs-alert--error" role="alert" data-object="alert">
     <div class="usajobs-alert__figure">
       <div class="usajobs-alert__icon">
       </div>

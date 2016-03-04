@@ -2188,6 +2188,24 @@ html {
   content: "";
 }
 
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 body {
   font-size: 17px;
   font-size: 1.7rem;
@@ -4470,6 +4488,24 @@ html {
 
 .fa-meanpath:before {
   content: "";
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .usajobs-joa-intro {
@@ -6844,6 +6880,24 @@ html {
   content: "";
 }
 
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 .usajobs-joa-actions {
   margin-bottom: 3rem;
   padding: 1.5rem 1.5rem 0;
@@ -9149,6 +9203,24 @@ html {
 
 .fa-meanpath:before {
   content: "";
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .usajobs-joa-agency {
