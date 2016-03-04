@@ -23,6 +23,10 @@ $body-padding: $size-M;
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
 
+  &[aria-hidden=false] {
+    @include animation(fadeIn $duration-slow);
+  }
+
   &__figure {
     padding: $size-default $size-M;
   }
