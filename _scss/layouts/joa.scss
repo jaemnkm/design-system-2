@@ -70,6 +70,14 @@
     }
   }
 
+  .usajobs-joa-accordion-content {
+    a:link {
+      display: inline-block;
+      overflow-wrap: break-word;
+      word-wrap: break-word;
+    }
+  }
+
   .usajobs-joa-agency-container {
     @include span-columns(12, 12);
     padding: $size-M;

@@ -95,6 +95,12 @@ html {
   }
 }
 
+.usajobs-joa .usajobs-joa-accordion-content a:link {
+  display: inline-block;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+}
+
 .usajobs-joa .usajobs-joa-agency-container {
   float: left;
   display: block;
