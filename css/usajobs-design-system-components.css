@@ -7854,11 +7854,20 @@ h6 {
 .usajobs-footer--v2 .usa-footer-logo .logo,
 .usajobs-footer--joa .usa-footer-logo .logo {
   display: inline-block;
-  height: 4.5rem;
-  width: 18.8rem;
+  height: 3.6rem;
+  width: 15rem;
   background-image: url("../img/logo/png/white-2x.png");
   background-image: url("../img/logo/svg/white-2x.svg");
   background-repeat: no-repeat;
+}
+
+@media screen and (min-width: 48em) {
+  .usajobs-footer--v1 .usa-footer-logo .logo,
+  .usajobs-footer--v2 .usa-footer-logo .logo,
+  .usajobs-footer--joa .usa-footer-logo .logo {
+    height: 4.5rem;
+    width: 18.8rem;
+  }
 }
 
 .usajobs-footer--v1__note,

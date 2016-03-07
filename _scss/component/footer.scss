@@ -155,11 +155,16 @@
 
   .usa-footer-logo .logo {
     display: inline-block;
-    height: rem(45px);
-    width: rem(188px);
+    height: rem(36px);
+    width: rem(150px);
     background-image: url("../img/logo/png/white-2x.png");
     background-image: url("../img/logo/svg/white-2x.svg");
     background-repeat: no-repeat;
+
+    @include media($ML) {
+      height: rem(45px);
+      width: rem(188px);
+    }
   }
 
   &__note {
