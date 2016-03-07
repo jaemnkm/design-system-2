@@ -24,7 +24,7 @@ lead: USAJOBS features a consistent header for top-level navigation across the s
           <div class="usajobs-nav__header">
             <div class="usajobs-nav__brand-container">
               <a class="usajobs-nav__brand" href="/">
-                <span class="logo"></span>
+                <span class="logo" title="USAJOBS logo"></span>
               </a>
             </div>
             <div class="usajobs-nav__menu" id="usajobs-menu">
@@ -143,7 +143,7 @@ lead: USAJOBS features a consistent header for top-level navigation across the s
           <div class="usajobs-nav__header">
             <div class="usajobs-nav__brand-container">
               <a class="usajobs-nav__brand" href="/">
-                <span class="logo"></span>
+                <span class="logo" title="USAJOBS logo"></span>
               </a>
             </div>
             <div class="usajobs-nav__menu" id="usajobs-menu">
@@ -245,7 +245,7 @@ lead: USAJOBS features a consistent header for top-level navigation across the s
           <div class="usajobs-nav__header">
             <div class="usajobs-nav__brand-container">
               <a class="usajobs-nav__brand" href="/">
-                <span class="logo"></span>
+                <span class="logo" title="USAJOBS logo"></span>
               </a>
             </div>
             <div class="usajobs-nav__menu" id="usajobs-menu">
@@ -334,7 +334,7 @@ lead: USAJOBS features a consistent header for top-level navigation across the s
           <div class="usajobs-nav__header">
             <div class="usajobs-nav__brand-container">
               <a class="usajobs-nav__brand" href="/">
-                <span class="logo"></span>
+                <span class="logo" title="USAJOBS logo"></span>
               </a>
             </div>
             <div class="usajobs-nav__menu" id="usajobs-menu">
