@@ -2959,8 +2959,12 @@ html {
 }
 
 ul.ui-autocomplete {
+  display: block;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
   opacity: 1;
-  padding: 1rem 0;
+  padding: 0;
   border: 1px solid #5b616b;
   border-bottom-right-radius: 0.3rem;
   border-bottom-left-radius: 0.3rem;
@@ -2969,20 +2973,31 @@ ul.ui-autocomplete {
   background-color: #ffffff;
 }
 
-ul.ui-autocomplete li.ui-menu-item {
-  padding: 0;
+ul.ui-autocomplete li {
+  display: list-item;
+  margin: 0;
 }
 
-ul.ui-autocomplete li.ui-menu-item:before {
-  content: '';
+ul.ui-autocomplete li:before {
+  display: none;
+}
+
+ul.ui-autocomplete li:after {
+  display: none;
 }
 
 .ui-menu .ui-menu-item {
+  display: inline-block;
   margin: 0;
-  padding: .2em .4em;
+  padding: 1rem;
   line-height: 1.5;
   width: 100%;
   zoom: 1;
+  list-style-image: none;
+}
+
+.ui-menu .ui-menu-item:hover {
+  background-color: #e1f3f8;
 }
 
 html {

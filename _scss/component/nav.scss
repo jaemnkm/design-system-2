@@ -316,29 +316,28 @@ $nav_item_height: 17px + 26.5px;
 
 // jQuery UI Autocomplete styling
 ul.ui-autocomplete {
+  @include unstyledList();
   opacity: 1;
-  padding: $size-S 0;
+  padding: 0;
   border: 1px solid $color-gray;
   border-bottom-right-radius: rem(3px);
   border-bottom-left-radius: rem(3px);
   border-top: 0;
   box-shadow: 1px 1px 5px $color-gray;
   background-color: $color-white;
-
-  li.ui-menu-item {
-    padding: 0;
-
-    &:before {
-      content: '';
-    }
-  }
 }
 
 .ui-menu .ui-menu-item {
+  display: inline-block;
   margin: 0;
-  padding: .2em .4em;
-  line-height: 1.5;
+  padding: $size-S;
+  line-height: $base-line-height;
   width: 100%;
   zoom: 1;
+  list-style-image: none;
+
+  &:hover {
+    background-color: $color-primary-alt-lightest;
+  }
 }
 
