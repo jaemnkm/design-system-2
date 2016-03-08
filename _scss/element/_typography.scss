@@ -38,6 +38,10 @@ h6 {
   @include h6();
 }
 
+.usajobs-content-well p {
+  @include default-text();
+}
+
 .section-header {
   margin: {
     top: $size-XXL;
