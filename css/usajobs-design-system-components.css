@@ -7613,6 +7613,14 @@ h6 {
   text-transform: uppercase;
 }
 
+.usajobs-content-well p {
+  font-size: 17px;
+  font-size: 1.7rem;
+  font-weight: 400;
+  line-height: 1.5;
+  margin: 1rem 0;
+}
+
 .section-header {
   margin-top: 7.5rem;
   margin-bottom: 1rem;
@@ -13360,6 +13368,14 @@ h6 {
   text-transform: uppercase;
 }
 
+.usajobs-content-well p {
+  font-size: 17px;
+  font-size: 1.7rem;
+  font-weight: 400;
+  line-height: 1.5;
+  margin: 1rem 0;
+}
+
 .section-header {
   margin-top: 7.5rem;
   margin-bottom: 1rem;
@@ -15665,6 +15681,7 @@ html {
   font-size: 1.7rem;
   font-weight: 400;
   line-height: 1.5;
+  margin: 1rem 0;
 }
 
 .usajobs-joa-intro__location .fa {
@@ -15676,6 +15693,7 @@ html {
   font-size: 1.7rem;
   font-weight: 400;
   line-height: 1.5;
+  margin: 1rem 0;
 }
 
 .usajobs-joa-intro__opening-date, .usajobs-joa-intro__closing-date {
