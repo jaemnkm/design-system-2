@@ -260,15 +260,15 @@ lead: USAJOBS uses a large footer that incorporates navigation.
       <div class="usa-grid">
         <div class="usa-footer-logo usa-width-one-whole">
           <ul class="usa-unstyled-list usajobs-footer--joa__subsection-horizontal">
-            <li><a href="https://help.usajobs.gov/index.php/EEO_Policy_Statement" id="helpWikiEEOPolicyStatement" target="_blank">EEO Policy Statement</a></li>
+            <li><a href="http://usajobs.github.io/help-center/equal-employment-opportunity/" id="helpWikiEEOPolicyStatement" target="_blank">EEO Policy Statement</a></li>
             <li>
-              <a href="https://help.usajobs.gov/index.php/Reasonable_Accommodation_Policy_Statement" id="helpWikiResonableAccommodation" target="_blank">Reasonable Accommodation Policy Statement</a>
+              <a href="http://usajobs.github.io/help-center/reasonable-accommodation/" id="helpWikiResonableAccommodation" target="_blank">Reasonable Accommodation Policy Statement</a>
             </li>
             <li>
-              <a href="https://help.usajobs.gov/index.php/Veterans_Information" id="helpWikiVeteransInformation" target="_blank">Veterans Information</a>
+              <a href="http://usajobs.github.io/help-center/working-in-government/unique-hiring-paths/veterans/preference/" id="helpWikiVeteransInformation" target="_blank">Veterans Information</a>
             </li>
             <li>
-              <a href="https://help.usajobs.gov/index.php/Legal_and_Regulatory_Guidance" id="helpWikiLegalAndRegulatory" target="_blank">Legal and Regulatory Guidance</a>
+              <a href="http://usajobs.github.io/help-center/legal-and-regulatory-guidance/" id="helpWikiLegalAndRegulatory" target="_blank">Legal and Regulatory Guidance</a>
             </li>
           </ul>
           <ul class="usa-unstyled-list usajobs-footer--v1__subsection-horizontal">

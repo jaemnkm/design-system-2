@@ -6649,7 +6649,7 @@ button:disabled,
   line-height: 4rem;
   border-radius: 50%;
   color: #ffffff;
-  background-color: none;
+  background-color: inherit;
   box-shadow: inset 0 0 0 2px none;
   background-color: #ffffff;
   width: 4rem;
@@ -6686,7 +6686,7 @@ button:disabled,
   line-height: 30px;
   border-radius: 50%;
   color: #ffffff;
-  background-color: none;
+  background-color: inherit;
   box-shadow: inset 0 0 0 2px none;
   background-color: #aeb0b5;
   text-decoration: none;
