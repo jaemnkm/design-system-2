@@ -14,7 +14,8 @@
   padding: 0;
   text-align: center;
 
-  &__page {
+  &__page,
+  &__page-condensed {
     display: none;
 
     @include media($ML) {
@@ -23,25 +24,42 @@
 
     &:before {
       content: '';
+      padding: 0;
     }
+    &:after {
+      margin-bottom: 0;
+    }
+  }
 
-    a,
-    &.is-active span {
+  &__page {
+    a {
       display: block;
       padding: $size-base $size-default;
 
       @include media($ML) {
         padding: $size-S $size-SM;
       }
+
       @include media($L) {
         padding: $size-S $size-M;
       }
     }
 
-    &.is-active span {
-      color: $color-base;
-      font-weight: bold;
-      background-color: $color-white;
+    &.is-active {
+      span {
+        font-weight: bold;
+        color: $color-white;
+        @include makeCircle(30px, none, $color-primary);
+        margin: $size-base $size-default;
+
+        @include media($ML) {
+          margin: $size-S ($size-SM - rem(13px));
+        }
+
+        @include media($L) {
+          margin: $size-S ($size-M - rem(13px));
+        }
+      }
     }
 
     a {
@@ -49,9 +67,8 @@
       line-height: 1;
 
       &:hover {
-        border-radius: $border-radius;
-        box-shadow: inset 0 0 0 2px $color-primary-darker;
         color: $color-primary-darker;
+        font-weight: bold;
         text-decoration: none;
       }
     }
@@ -96,10 +113,21 @@
       }
 
       &:hover {
-        box-shadow: inset 0 0 0 2px $color-primary-darker;
         color: $color-primary-darker;
         text-decoration: none;
+        font-weight: bold;
       }
+    }
+  }
+
+  &__previous-page-container,
+  &__next-page-container {
+    &:before {
+      content: '';
+      padding: 0;
+    }
+    &:after {
+      margin-bottom: 0;
     }
   }
 

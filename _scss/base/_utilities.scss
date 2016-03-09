@@ -69,7 +69,7 @@
   clip: rect(0 0 0 0) !important;
 }
 
-@mixin makeCircle($size, $border: none, $bg-color: none, $color: $color-white) {
+@mixin makeCircle($size, $border: none, $bg-color: inherit, $color: $color-white) {
   display: inline-block;
   width: $size;
   height: $size;
