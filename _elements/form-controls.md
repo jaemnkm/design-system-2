@@ -24,6 +24,7 @@ lead: USAJOBS adds or clarifies design for contextual help, required/optional fi
     </p>
   </form>
 </div>
+
 <div class="usa-accordion-bordered usa-accordion-docs">
   <button class="usa-button-unstyled usa-accordion-button"
       aria-expanded="true" aria-controls="collapsible-0">
@@ -62,6 +63,7 @@ lead: USAJOBS adds or clarifies design for contextual help, required/optional fi
             </button>
             <div id="collapsible-0" aria-hidden="true" class="usa-accordion-content">
               <p>[Detailed help explaining the intent of the data request.]</p>
+            </div>
           </div>
         </li>
       </ul>
@@ -74,6 +76,7 @@ lead: USAJOBS adds or clarifies design for contextual help, required/optional fi
     <input id="input-type-text" name="input-type-text" type="text">
   </form>
 </div>
+
 <div class="usa-accordion-bordered usa-accordion-docs">
   <button class="usa-button-unstyled usa-accordion-button"
       aria-expanded="true" aria-controls="collapsible-0">
@@ -98,6 +101,7 @@ lead: USAJOBS adds or clarifies design for contextual help, required/optional fi
 <p>
   Labels are simple text descriptions of data being requested and are found in close proximity to a form input that requests that data.
 </p>
+
 <div class="usa-accordion-bordered usa-accordion-docs">
   <button class="usa-button-unstyled usa-accordion-button"
       aria-expanded="true" aria-controls="collapsible-0">
@@ -106,21 +110,26 @@ lead: USAJOBS adds or clarifies design for contextual help, required/optional fi
   <div id="collapsible-0" aria-hidden="false" class="usa-accordion-content">
     <h4 class="usa-heading">Usability</h4>
     <h5>Guidance</h5>
-    <ul class="usa-content-list">
+    <ul>
       <li>Labels are concise text that describes the data being requested by a form input.</li>
-      <li>Labels should appear directly above form controls as seen in the <a href="https://playbook.cio.gov/designstandards/form-controls/">U.S. Web Design Standards</a>.
+      <li>
+        Labels should appear directly above form controls as seen in the <a href="https://playbook.cio.gov/designstandards/form-controls/">U.S. Web Design Standards</a>.
+      </li>
       <li>Labels do NOT end in a colon.</li>
     </ul>
   </div>
 </div>
 
-<h6 id="usajobs-form-field-indicator-documentation" class="usa-heading-alt">Required/Optional Field Indicator</h6>
+<h6 id="usajobs-form-field-indicator-documentation" class="usa-heading-alt">
+  Required/Optional Field Indicator
+</h6>
 <div class="preview">
   <label for="first-name">First name <span class="usa-additional_text">Optional</span></label>
   <input id="first-name" name="first-name" type="text">
   <label for="last-name">Last name <span class="usa-additional_text">Required</span></label>
   <input id="last-name" name="last-name" type="text" required="" aria-required="true">
 </div>
+
 <div class="usa-accordion-bordered usa-accordion-docs">
   <button class="usa-button-unstyled usa-accordion-button"
       aria-expanded="true" aria-controls="collapsible-0">
@@ -128,11 +137,13 @@ lead: USAJOBS adds or clarifies design for contextual help, required/optional fi
   </button>
   <div id="collapsible-0" aria-hidden="false" class="usa-accordion-content">
     <h4 class="usa-heading">Usability</h4>
+
     <h5>When to use</h5>
     <ul class="usa-content-list">
       <li>When the majority of form fields are either required or optional and thus specific fields must be identified as the opposite (optional or required).</li>
       <li>In place of a red asterisk.</li>
     </ul>
+
     <h5>When to consider something else</h5>
     <ul class="usa-content-list">
       <li>If all fields are required or optional consider the <a href="#usajobs-form-legend-documentation">form legend</a> to communicate that to the user.</li>
