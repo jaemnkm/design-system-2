@@ -6615,6 +6615,10 @@ button:disabled,
   color: #323a45;
 }
 
+select {
+  padding-right: 3.5rem;
+}
+
 .usajobs-alert {
   position: relative;
   padding: 0;

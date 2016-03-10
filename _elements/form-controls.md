@@ -9,6 +9,21 @@ lead: USAJOBS adds or clarifies design for contextual help, required/optional fi
   Design Complete
 </a>
 
+<h2 class="usa-heading" id="dropdown">Dropdown</h2>
+<p class="usa-font-lead">
+  Our dropdown adds protection from the text running into the dropdown arrow.
+</p>
+<div class="preview">
+  <form>
+    <label for="options">Dropdown label</label>
+    <select name="options" id="options">
+      <option value="value1">abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz</option>
+      <option value="value2">Option B</option>
+      <option value="value3">Option C</option>
+    </select>
+  </form>
+</div>
+    
 <h2 class="usa-heading" id="contextual-help">Contextual Help</h2>
 <p class="usa-font-lead">
   Contextual help provides assistance in clarifying the intent of a question or form input.
