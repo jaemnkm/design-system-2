@@ -46,7 +46,7 @@ lead: A main function of USAJOBS is to provide a clear and effective search. Our
   </div>
 </div>
 
-<h4 class="usa-heading-alt" id="controls">No results found</h4>
+<h4 class="usa-heading-alt" id="no-results">No results found</h4>
 <div class="preview">
   <div class="usajobs-search-no-results">
     <p>Sorry, no job announcements were found.</p>
