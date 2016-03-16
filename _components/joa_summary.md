@@ -5,8 +5,8 @@ title: JOA Summary
 lead: Summary of the Job Opportunity Announcement (JOA)
 ---
 
-<a href="{{ site.baseurl }}/getting-started/#maturity" class="usa-label maturity design_complete">
-  Design Complete
+<a href="{{ site.baseurl }}/getting-started/#maturity" class="usa-label maturity deployed">
+  Deployed
 </a>
 
 <div class="preview">
