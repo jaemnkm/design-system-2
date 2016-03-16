@@ -14,7 +14,7 @@ lead: A main function of USAJOBS is to provide a clear and effective search. Our
   <h6 class="usa-heading-alt">Results found</h6>
   <div class="usajobs-grid usajobs-search-controls">
     <div class="usajobs-search-controls__results-count">
-      <p>Found 1,562 job annoucements</p>
+      <h3>1,562 jobs found</h3>
     </div>
     <div class="usajobs-search-controls__sort-container">
       <label class="usajobs-search-controls__sort-label" for="search_sort">
@@ -31,20 +31,37 @@ lead: A main function of USAJOBS is to provide a clear and effective search. Our
       </select>
     </div>
   </div>
+</div>
+<div class="usa-accordion-bordered usa-accordion-docs">
+  <button class="usa-button-unstyled usa-accordion-button"
+      aria-expanded="true" aria-controls="collapsible-0">
+    Documentation
+  </button>
+  <div id="collapsible-0" aria-hidden="false" class="usa-accordion-content">
+    <h4 class="usa-heading">Usability</h4>
+    <h5>When to use</h5>
+    <ul class="usa-content-list">
+      <li>When the number of results are relevant to explain to the user the relative success of their query.</li>
+    </ul>
+  </div>
+</div>
 
-  <h6 class="usa-heading-alt">No results found</h6>
-  <div class="usajobs-grid usajobs-search-controls">
-    <div class="usajobs-search-controls__results-count">
-      <p>Sorry, no job announcements were found.</p>
-      <h4>Search Suggestions</h4>
-      <ul>
-        <li>Check your spelling.</li>
-        <li>Try using more general <a href="https://help.usajobs.gov/index.php/Keyword_Tips">keywords</a>.</li>
-        <li>For a more specific search try applying <a href="https://www.usajobs.gov/Search/AdvancedSearch">advanced search filters</a>.</li>
-        <li>For guidance on our job categories and occupation titles please visit <a href="https://help.usajobs.gov/index.php/What_occupations_are_available_in_the_federal_government">Federal government occupation titles</a>. We may just be using a different name or description for the job you are looking for.</li>
+<h4 class="usa-heading-alt" id="controls">No results found</h4>
+<div class="preview">
+  <div class="usajobs-search-no-results">
+    <p>Sorry, no job announcements were found.</p>
+    <h4>Search Suggestions</h4>
+    <ul>
+      <li>Check your spelling.</li>
+      <li>Try using more general <a href="https://help.usajobs.gov/index.php/Keyword_Tips">keywords</a>.</li>
+      <li>For a more specific search try applying <a href="https://www.usajobs.gov/Search/AdvancedSearch">advanced search filters</a>.</li>
+      <li>For guidance on our job categories and occupation titles please visit <a href="https://help.usajobs.gov/index.php/What_occupations_are_available_in_the_federal_government">Federal government occupation titles</a>. We may just be using a different name or description for the job you are looking for.</li>
+    </ul>
+  </div>
 
-      </ul>
-    </div>
+  <h6 class="usa-heading-alt">No results found - Due to Profile eligibilty filter variation</h6>
+  <div class="usajobs-search-no-results">
+    <p>Sorry, no job announcements were found. You have not selected any jobs to view in the Profile - Eligibility filter. Select "Publicly available" to see all jobs open to the U.S. public.</p>
   </div>
 </div>
 
@@ -57,7 +74,8 @@ lead: A main function of USAJOBS is to provide a clear and effective search. Our
     <h4 class="usa-heading">Usability</h4>
     <h5>When to use</h5>
     <ul class="usa-content-list">
-      <li>When the number of results are relevant to explain to the user the relative success of their query.</li>
+      <li>When zero results are returned by the user's query.</li>
+      <li>Use the Profile eligibility filter variation when the user unselects all checkboxes and thus has choosen to view no open jobs.</li>
     </ul>
   </div>
 </div>

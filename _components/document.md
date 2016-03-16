@@ -5,8 +5,8 @@ title: Document
 lead: A way to upload and view documents.
 ---
 
-<a href="{{ site.baseurl }}/getting-started/#maturity" class="usa-label maturity design_complete">
-  Design Complete
+<a href="{{ site.baseurl }}/getting-started/#maturity" class="usa-label maturity available">
+  Available
 </a>
 
 <h4 class="usa-heading-alt" id="thumbnail">Thumbnail</h4>
