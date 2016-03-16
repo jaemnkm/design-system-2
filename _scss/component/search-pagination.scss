@@ -18,7 +18,7 @@
   &__page-condensed {
     display: none;
 
-    @include media($ML) {
+    @include media($M) {
       display: inline-block;
     }
 
@@ -36,7 +36,7 @@
       display: block;
       padding: $size-base $size-default;
 
-      @include media($ML) {
+      @include media($M) {
         padding: $size-S $size-SM;
       }
 
@@ -52,7 +52,7 @@
         @include makeCircle(30px, none, $color-primary);
         margin: $size-base $size-default;
 
-        @include media($ML) {
+        @include media($M) {
           margin: $size-S ($size-SM - rem(13px));
         }
 
@@ -83,7 +83,7 @@
       @include span-columns(1);
     }
 
-    @include media($ML) {
+    @include media($M) {
       display: inline-block;
       width: auto;
     }
@@ -100,12 +100,12 @@
       color: $color-primary;
       text-decoration: none;
 
-      @include media($ML-down) {
+      @include media($M-down) {
         border-radius: $border-radius;
         box-shadow: inset 0 0 0 2px $color-primary;
       }
 
-      @include media($ML) {
+      @include media($M) {
         padding: $size-S $size-SM;
       }
       @include media($L) {
@@ -132,7 +132,7 @@
   }
 
   &__previous-page-container {
-    @include media($ML) {
+    @include media($M) {
       float: none;
       margin-right: $size-base;
     }
@@ -143,7 +143,7 @@
       float: right;
       @include omega();
     }
-    @include media($ML) {
+    @include media($M) {
       float: none;
       margin-left: $size-base;
     }
