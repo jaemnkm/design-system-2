@@ -99,7 +99,7 @@ lead: A main function of USAJOBS is to provide a clear and effective search. Our
       &hellip;
     </li>
     <li class="usajobs-search-pagination__page">
-      <a data-ajax="true" data-ajax-begin="ajaxLoading" data-ajax-complete="UpdatePartialViewsNew" data-ajax-failure="ajaxFailed" data-ajax-mode="replace" data-ajax-success="ajaxComplete" data-ajax-update="#results" href="/Search/GetPageResults/?page=61&amp;statusFilter=public" title="Go To Page 61">61</a>
+      <a data-ajax="true" data-ajax-begin="ajaxLoading" data-ajax-complete="UpdatePartialViewsNew" data-ajax-failure="ajaxFailed" data-ajax-mode="replace" data-ajax-success="ajaxComplete" data-ajax-update="#results" href="/Search/GetPageResults/?page=62&amp;statusFilter=public" title="Go To Page 62">62</a>
     </li>
     <li class="usajobs-search-pagination__next-page-container">
       <a class="usajobs-search-pagination__next-page" data-ajax="true" data-ajax-begin="ajaxLoading" data-ajax-complete="UpdatePartialViewsNew" data-ajax-failure="ajaxFailed" data-ajax-mode="replace" data-ajax-success="ajaxComplete" data-ajax-update="#results" href="/Search/GetPageResults/?page=2&amp;statusFilter=public" title="Go To Next Page">
@@ -114,7 +114,10 @@ lead: A main function of USAJOBS is to provide a clear and effective search. Our
       <a class="usajobs-search-pagination__previous-page" data-ajax="true" data-ajax-begin="ajaxLoading" data-ajax-complete="UpdatePartialViewsNew" data-ajax-failure="ajaxFailed" data-ajax-mode="replace" data-ajax-success="ajaxComplete" data-ajax-update="#results" href="/Search/GetPageResults?page=2&amp;statusFilter=public" title="Go To Previous Page">Previous</a>
     </li>
     <li class="usajobs-search-pagination__page">
-      <a data-ajax="true" data-ajax-begin="ajaxLoading" data-ajax-complete="UpdatePartialViewsNew" data-ajax-failure="ajaxFailed" data-ajax-mode="replace" data-ajax-success="ajaxComplete" data-ajax-update="#results" href="/Search/GetPageResults/?page=3&amp;statusFilter=public" title="Go To Page 3">3</a>
+      <a data-ajax="true" data-ajax-begin="ajaxLoading" data-ajax-complete="UpdatePartialViewsNew" data-ajax-failure="ajaxFailed" data-ajax-mode="replace" data-ajax-success="ajaxComplete" data-ajax-update="#results" href="/Search/GetPageResults/?page=1&amp;statusFilter=public" title="Go To Page 1">1</a>
+    </li>
+    <li class="usajobs-search-pagination__page-condensed">
+      &hellip;
     </li>
     <li class="usajobs-search-pagination__page">
       <a data-ajax="true" data-ajax-begin="ajaxLoading" data-ajax-complete="UpdatePartialViewsNew" data-ajax-failure="ajaxFailed" data-ajax-mode="replace" data-ajax-success="ajaxComplete" data-ajax-update="#results" href="/Search/GetPageResults/?page=4&amp;statusFilter=public" title="Go To Page 4">4</a>
@@ -125,8 +128,11 @@ lead: A main function of USAJOBS is to provide a clear and effective search. Our
     <li class="usajobs-search-pagination__page">
       <a data-ajax="true" data-ajax-begin="ajaxLoading" data-ajax-complete="UpdatePartialViewsNew" data-ajax-failure="ajaxFailed" data-ajax-mode="replace" data-ajax-success="ajaxComplete" data-ajax-update="#results" href="/Search/GetPageResults/?page=6&amp;statusFilter=public" title="Go To Page 6">6</a>
     </li>
+    <li class="usajobs-search-pagination__page-condensed">
+      &hellip;
+    </li>
     <li class="usajobs-search-pagination__page">
-      <a data-ajax="true" data-ajax-begin="ajaxLoading" data-ajax-complete="UpdatePartialViewsNew" data-ajax-failure="ajaxFailed" data-ajax-mode="replace" data-ajax-success="ajaxComplete" data-ajax-update="#results" href="/Search/GetPageResults/?page=7&amp;statusFilter=public" title="Go To Page 7">7</a>
+      <a data-ajax="true" data-ajax-begin="ajaxLoading" data-ajax-complete="UpdatePartialViewsNew" data-ajax-failure="ajaxFailed" data-ajax-mode="replace" data-ajax-success="ajaxComplete" data-ajax-update="#results" href="/Search/GetPageResults/?page=62&amp;statusFilter=public" title="Go To Page 62">62</a>
     </li>
     <li class="usajobs-search-pagination__next-page-container">
       <a class="usajobs-search-pagination__next-page" data-ajax="true" data-ajax-begin="ajaxLoading" data-ajax-complete="UpdatePartialViewsNew" data-ajax-failure="ajaxFailed" data-ajax-mode="replace" data-ajax-success="ajaxComplete" data-ajax-update="#results" href="/Search/GetPageResults/?page=8&amp;statusFilter=public" title="Go To Next Page">
@@ -141,10 +147,10 @@ lead: A main function of USAJOBS is to provide a clear and effective search. Our
       <a class="usajobs-search-pagination__previous-page" data-ajax="true" data-ajax-begin="ajaxLoading" data-ajax-complete="UpdatePartialViewsNew" data-ajax-failure="ajaxFailed" data-ajax-mode="replace" data-ajax-success="ajaxComplete" data-ajax-update="#results" href="/Search/GetPageResults?page=61&amp;statusFilter=public" title="Go To Previous Page">Previous</a>
     </li>
     <li class="usajobs-search-pagination__page">
-      <a data-ajax="true" data-ajax-begin="ajaxLoading" data-ajax-complete="UpdatePartialViewsNew" data-ajax-failure="ajaxFailed" data-ajax-mode="replace" data-ajax-success="ajaxComplete" data-ajax-update="#results" href="/Search/GetPageResults/?page=58&amp;statusFilter=public" title="Go To Page 58">58</a>
+      <a data-ajax="true" data-ajax-begin="ajaxLoading" data-ajax-complete="UpdatePartialViewsNew" data-ajax-failure="ajaxFailed" data-ajax-mode="replace" data-ajax-success="ajaxComplete" data-ajax-update="#results" href="/Search/GetPageResults/?page=1&amp;statusFilter=public" title="Go To Page 1">1</a>
     </li>
-    <li class="usajobs-search-pagination__page">
-      <a data-ajax="true" data-ajax-begin="ajaxLoading" data-ajax-complete="UpdatePartialViewsNew" data-ajax-failure="ajaxFailed" data-ajax-mode="replace" data-ajax-success="ajaxComplete" data-ajax-update="#results" href="/Search/GetPageResults/?page=59&amp;statusFilter=public" title="Go To Page 59">59</a>
+    <li class="usajobs-search-pagination__page-condensed">
+      &hellip;
     </li>
     <li class="usajobs-search-pagination__page">
       <a data-ajax="true" data-ajax-begin="ajaxLoading" data-ajax-complete="UpdatePartialViewsNew" data-ajax-failure="ajaxFailed" data-ajax-mode="replace" data-ajax-success="ajaxComplete" data-ajax-update="#results" href="/Search/GetPageResults/?page=60&amp;statusFilter=public" title="Go To Page 60">60</a>
@@ -176,8 +182,17 @@ lead: A main function of USAJOBS is to provide a clear and effective search. Our
 
     <h4 class="usa-heading">Implementation</h4>
     <ul class="usa-content-list">
-      <li>Below the ML breakpoint the pagination is represented by the next and/or previous buttons.</li>
-      <li>Above the ML breakpoint the current page number is displayed with +/- 2 pages to either side excluding the first or last 4 pages.</li> 
+      <li>Below the M breakpoint (600px) the pagination is represented by the next and/or previous buttons.</li>
+      <li>Above the M breakpoint there are several rules:
+        <ul>
+          <li>The first and last page links are always displayed.</li>
+          <li>Current page number is always displayed with +/- 1 page to either side.</li> 
+          <li>When displaying the first and last pages +/- 2 pages are displayed.</li>
+          <li>When displaying the first page the Previous button is not displayed.</li>
+          <li>When displaying the last page the Next button is not displayed.</li>
+          <li>There are only ever 5 page links displayed, including first and last page. All other pages are abbreviated into ellipses.</li>
+        </ul>
+      </li>
       <li>Pagination should always be shown at the bottom of the page, near the bottom of the list that it paginates.</li>
     </ul>
 
