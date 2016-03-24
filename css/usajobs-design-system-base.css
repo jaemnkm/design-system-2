@@ -6585,8 +6585,13 @@ button:disabled,
   color: #323a45;
 }
 
+select::-ms-expand {
+  display: none;
+}
+
 select {
   padding-right: 3.5rem;
+  background-image: url("../img/arrow-down.png");
 }
 
 .usajobs-alert {
