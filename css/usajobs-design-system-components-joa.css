@@ -169,7 +169,8 @@ html {
 :root .fa-rotate-270,
 :root .fa-flip-horizontal,
 :root .fa-flip-vertical {
-  filter: none;
+  -webkit-filter: none;
+          filter: none;
 }
 
 .fa-stack {
@@ -2479,7 +2480,8 @@ html {
 :root .fa-rotate-270,
 :root .fa-flip-horizontal,
 :root .fa-flip-vertical {
-  filter: none;
+  -webkit-filter: none;
+          filter: none;
 }
 
 .fa-stack {
@@ -4672,16 +4674,16 @@ html {
   list-style-type: none;
 }
 
-.usajobs-joa-intro__details li {
+.usajobs-joa-intro__details > li {
   display: list-item;
   margin: 0;
 }
 
-.usajobs-joa-intro__details li:before {
+.usajobs-joa-intro__details > li:before {
   display: none;
 }
 
-.usajobs-joa-intro__details li:after {
+.usajobs-joa-intro__details > li:after {
   display: none;
 }
 
@@ -4871,7 +4873,8 @@ html {
 :root .fa-rotate-270,
 :root .fa-flip-horizontal,
 :root .fa-flip-vertical {
-  filter: none;
+  -webkit-filter: none;
+          filter: none;
 }
 
 .fa-stack {
@@ -7196,7 +7199,8 @@ html {
 :root .fa-rotate-270,
 :root .fa-flip-horizontal,
 :root .fa-flip-vertical {
-  filter: none;
+  -webkit-filter: none;
+          filter: none;
 }
 
 .fa-stack {
@@ -9276,5 +9280,4 @@ html {
     margin-right: 0;
   }
 }
-
 /*# sourceMappingURL=usajobs-design-system-components-joa.css.map */
