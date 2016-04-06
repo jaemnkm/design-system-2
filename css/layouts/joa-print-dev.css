@@ -6,24 +6,6 @@ html {
   box-sizing: inherit;
 }
 
-@-webkit-keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
 .usajobs-joa {
   font-size: 1.3rem;
 }
@@ -248,5 +230,4 @@ html {
 .usajobs-joa #jobinfo1 {
   margin-bottom: 1rem;
 }
-
 /*# sourceMappingURL=joa-print-dev.css.map */

@@ -4,6 +4,8 @@ $icon-width: rem(40px);
 $icon-padding: $size-default;
 $body-padding: $size-M;
 
+@include animateFade();
+
 @mixin alert($color, $icon) {
   background-color: $color;
   border-color: $color;
