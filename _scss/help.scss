@@ -4,12 +4,12 @@
 
 // U.S. Web Design Standards ****************************** //
 
-// Vendor -------------- //
+// Vendor ----------------- //
 @import 'lib/bourbon/bourbon';
 @import 'lib/neat/neat';
 @import 'lib/normalize';
 
-// Core -------------- //
+// Core ------------------- //
 @import 'core/grid-settings';
 @import 'core/defaults';
 @import 'core/variables';
@@ -18,7 +18,7 @@
 @import 'core/utilities';
 
 
-// Elements -------------- //
+// Elements -------------_- //
 // Styles basic html elements
 
 @import 'elements/typography';
@@ -30,7 +30,7 @@
 @import 'elements/labels';
 
 
-// Components -------------- //
+// Components ------------- //
 @import 'components/skipnav';
 @import 'components/disclaimer';
 @import 'components/sidenav';
@@ -43,7 +43,7 @@
 
 // USAJOBS ************************************************ //
 
-// Base -------------- //
+// Base ------------------- //
 @import 'base/variables';
 @import 'base/utilities';
 @import 'base/fonts';
@@ -55,8 +55,15 @@
 @import 'base/list';
 @import 'base/forms';
 
-// Elements -------------- //
+
+// Elements --------------- //
 @import 'element/typography';
 @import 'element/link';
 @import 'element/button';
 @import 'element/select';
+
+
+// Components ------------- //
+@import 'component/header';
+@import 'component/nav';
+@import 'component/footer';
