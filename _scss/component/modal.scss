@@ -52,7 +52,6 @@ $modal-width-large: 930px;
     margin: 0;
     z-index: $layer-modal-backdrop;
     background-color: rgba(0,0,0, 0.38); // this acts as the backdrop
-    // animation: fadeIn 0.3s ease-out;
     transition: opacity $duration-slow linear;
   }
 
