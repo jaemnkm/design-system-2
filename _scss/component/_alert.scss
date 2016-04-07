@@ -56,6 +56,13 @@ $body-padding: $size-M;
     }
   }
 
+  &__footer {
+    margin-top: $size-M;
+    padding-top: $size-default;
+    border-top: 1px solid $color-gray-light;
+    text-align: right;
+  }
+
   .usa-alert-text {
     max-width: inherit;
   }
