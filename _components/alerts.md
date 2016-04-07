@@ -66,6 +66,30 @@ lead: USAJOBS has adopted a different visual style to our alerts that deviate fr
     </button>
   </div>
 
+  <h6 class="usa-heading-alt">Warning with footer</h6>
+  <div class="usa-alert usajobs-alert usajobs-alert--warning" role="alert" data-object="alert">
+    <div class="usajobs-alert__figure">
+      <div class="usajobs-alert__icon">
+      </div>
+    </div>
+    <div class="usajobs-alert__body">
+      <h3 class="usa-alert-heading">
+        Your password is about to expire!
+      </h3>
+      <p class="usa-alert-text">
+        Your password will expire on 04/01/2016. Please change your password now.
+      </p>
+      <div class="usajobs-alert__footer">
+        <button class="usa-button usa-button-primary" data-behavior="modal.close">
+          Change password
+        </button>
+      </div>
+    </div>
+    <button class="usajobs-alert__close" data-behavior="alert.close" >
+      <span class="usajobs-assistive-text">Close</span>
+    </button>
+  </div>
+
   <h6 class="usa-heading-alt">Error</h6>
   <div class="usa-alert usajobs-alert usajobs-alert--error" role="alert" data-object="alert">
     <div class="usajobs-alert__figure">
