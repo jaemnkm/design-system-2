@@ -6600,6 +6600,7 @@ select {
 
 .usajobs-alert {
   position: relative;
+  margin-bottom: 3rem;
   padding: 0;
   background-color: #ffffff;
   border: 1px solid;
