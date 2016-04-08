@@ -24,7 +24,8 @@
     "time-grunt": "^1.3.0"
   },
   "dependencies": {
-    "lt-ie-9": "^0.1.0"
+    "lt-ie-9": "^0.1.0",
+    "uswds": "^0.9.1"
   },
   "scripts": {
     "build": "grunt build",

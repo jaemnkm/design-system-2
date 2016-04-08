@@ -798,6 +798,10 @@ h3 + .button_wrapper {
   background-color: $color-green-lightest;
 }
 
+.usa-color-primary-darkest {
+  background-color: $color-primary-darkest;
+}
+
 // Color text helpers
 .usa-color-text-primary-darkest {
   color: $color-primary-darkest;
@@ -813,6 +817,10 @@ h3 + .button_wrapper {
 
 .usa-color-text-green {
   color: $color-green;
+}
+
+.usajobs-img-2x-doc {
+  max-width: 376px;
 }
 
 .usa-heading-alt {

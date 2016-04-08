@@ -812,6 +812,10 @@ h3 + .button_wrapper {
   background-color: #e7f4e4;
 }
 
+.usa-color-primary-darkest {
+  background-color: #112e51;
+}
+
 .usa-color-text-primary-darkest {
   color: #112e51;
 }
@@ -826,6 +830,10 @@ h3 + .button_wrapper {
 
 .usa-color-text-green {
   color: #2e8540;
+}
+
+.usajobs-img-2x-doc {
+  max-width: 376px;
 }
 
 .usa-heading-alt {
