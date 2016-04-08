@@ -6655,9 +6655,7 @@ select {
 }
 
 .usajobs-alert__footer {
-  margin-top: 3rem;
-  padding-top: 1.5rem;
-  border-top: 1px solid #aeb0b5;
+  margin-top: 1.5rem;
   text-align: right;
 }
 
