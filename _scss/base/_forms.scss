@@ -1,6 +1,7 @@
 // Forms
 
-.usajobs-form {
+.usajobs-form,
+.usajobs-content-well .usajobs-form {
   max-width: inherit;
 
   @include media($L) {

@@ -2,6 +2,7 @@
 
 <aside class="sidenav" id="menu-content">
   <nav>
+    <h4>Base Elements</h4>
     <ul class="usa-sidenav-list">
       <li>
         <a {% if current[1] == 'getting-started' %}class="usa-current"{% endif %} href="{{ site.baseurl }}/getting-started/">Getting started</a>
@@ -49,10 +50,24 @@
         <a {% if current[1] == 'buttons' %}class="usa-current"{% endif %} href="{{ site.baseurl }}/buttons/">Buttons</a>
       </li>
       <li>
+        <a {% if current[1] == 'form-controls' %}class="usa-current"{% endif %} href="{{ site.baseurl }}/form-controls/">Form controls</a>
+      </li>
+    </ul>
+
+    <h4>Components</h4>
+    <ul class="usa-sidenav-list">
+      <li>
         <a {% if current[1] == 'alerts' %}class="usa-current"{% endif %} href="{{ site.baseurl }}/alerts/">Alerts</a>
       </li>
       <li>
-        <a {% if current[1] == 'form-controls' %}class="usa-current"{% endif %} href="{{ site.baseurl }}/form-controls/">Form controls</a>
+        <a {% if current[1] == 'document' %}class="usa-current"{% endif %} href="{{ site.baseurl }}/document/">Document</a>
+        <ul class="usa-sidenav-sub_list document-sublist">
+          <li><a href="{{ site.baseurl }}/document/#thumbnail">Thumbnail</a></li>
+          <li><a href="{{ site.baseurl }}/document/#placeholder">Placeholder</a></li>
+        </ul>
+      </li>
+      <li>
+        <a {% if current[1] == 'joa_summary' %}class="usa-current"{% endif %} href="{{ site.baseurl }}/joa_summary/">JOA Summary</a>
       </li>
       <li>
         <a {% if current[1] == 'modals' %}class="usa-current"{% endif %} href="{{ site.baseurl }}/modals/">Modals</a>
@@ -67,24 +82,23 @@
         <a {% if current[1] == 'footer' %}class="usa-current"{% endif %} href="{{ site.baseurl }}/footer/">Navigation: Footer</a>
       </li>
       <li>
-        <a {% if current[1] == 'joa_summary' %}class="usa-current"{% endif %} href="{{ site.baseurl }}/joa_summary/">JOA Summary</a>
-      </li>
-      <li>
-        <a {% if current[1] == 'document' %}class="usa-current"{% endif %} href="{{ site.baseurl }}/document/">Document</a>
-        <ul class="usa-sidenav-sub_list document-sublist">
-          <li><a href="{{ site.baseurl }}/document/#thumbnail">Thumbnail</a></li>
-          <li><a href="{{ site.baseurl }}/document/#placeholder">Placeholder</a></li>
-        </ul>
-      </li>
-      <li>
         <a {% if current[1] == 'search' %}class="usa-current"{% endif %} href="{{ site.baseurl }}/search/">Search</a>
         <ul class="usa-sidenav-sub_list search-sublist">
           <li><a href="{{ site.baseurl }}/search/#controls">Controls</a></li>
           <li><a href="{{ site.baseurl }}/search/#pagination">Pagination</a></li>
         </ul>
       </li>
+    </ul>
+    <h4>Layouts</h4>
+    <ul class="usa-sidenav-list">
       <li>
-        <a {% if current[1] == 'page-layouts' %}class="usa-current"{% endif %} href="{{ site.baseurl }}/page-layouts/">Page Layouts</a>
+        <a {% if current[1] == 'create-account' %}class="usa-current"{% endif %} href="{{ site.baseurl }}/create-account/">Create Account</a>
+      </li>
+      <li>
+        <a {% if current[1] == 'sign-in' %}class="usa-current"{% endif %} href="{{ site.baseurl }}/sign-in/">Sign In</a>
+      </li>
+      <li>
+        <a {% if current[1] == 'job_announcement' %}class="usa-current"{% endif %} href="{{ site.baseurl }}/job_announcement/">Job announcement</a>
       </li>
     </ul>
   </nav>

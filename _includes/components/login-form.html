@@ -1,0 +1,31 @@
+<form class="usajobs-form" action="/account/signin" method="post" novalidate="novalidate">
+  <input name="__RequestVerificationToken" type="hidden" value="B8U2t52vu_aTbp1GQSkb7AkIX0YR9Clwv4Fk8EnKGilCJCjK-wk1UXTmR3kRKaukW-UTtytoOYMka-e0QGIeV5-Td2UvpInUKsG6cMTlSEQ1">
+  <h1>Sign In</h1>
+  <div class="form-group">
+    <label class="control-label sr-only" for="UserName">Username or Email</label>
+    <input class="form-control input-lg valid" data-val="true" data-val-required="The Username or Primary/Secondary Email field is required." id="UserName" name="UserName" type="text" value="">
+    <span class="field-validation-valid" data-valmsg-for="UserName" data-valmsg-replace="true"></span>
+    <p class="usajobs-form__help-brief">
+      Enter your username, primary email, or secondary email.
+    </p>
+  </div>
+  <div class="form-group">
+    <label class="control-label sr-only" for="Password">Password</label>
+    <input class="form-control input-lg" data-val="true" data-val-required="The Password field is required." id="Password" name="Password" type="password">
+    <span class="field-validation-valid" data-valmsg-for="Password" data-valmsg-replace="true"></span>
+  </div>
+  <div class="form-group">
+    <p>
+      <a href="/account/ForgotPassword?absoluteUri=https%3A%2F%2Flogin.usajobs.gov%2Faccount%2Fsignin%3FReturnUrl%3D%252fissue%252fwsfed%253fwa%253dwsignin1.0%2526wtrealm%253dhttps%25253a%25252f%25252fwww.usajobs.gov%25252f%2526wctx%253dhttps%25253a%25252f%25252fwww.usajobs.gov%25252fApplicant%25252fMyAccount%25252fHome%25252f%2526wct%253d2016-04-11T16%25253a09%25253a25Z%26wa%3Dwsignin1.0%26wtrealm%3Dhttps%253a%252f%252fwww.usajobs.gov%252f%26wctx%3Dhttps%253a%252f%252fwww.usajobs.gov%252fApplicant%252fMyAccount%252fHome%252f%26wct%3D2016-04-11T16%253a09%253a25Z">
+        Forgot your username or password?
+      </a>
+    </p>
+    <input class="usa-button usa-button-big" type="submit" value="Sign In">
+  </div>
+  <div class="form-group">
+    <p>Don't have a USAJOBS account?</p>
+    <a href="/account/Create" class="usa-button usa-button-big usa-button-outline">
+      Create a new account
+    </a>
+  </div>
+</form>

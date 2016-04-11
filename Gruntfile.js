@@ -47,6 +47,10 @@ module.exports = function(grunt) {
             dest: 'css/usajobs-design-system-components-joa.css'
           },
           {
+            src: '_scss/components-sign-in.scss',
+            dest: 'css/usajobs-components-sign-in.css'
+          },
+          {
             src: '_scss/help.scss',
             dest: 'css/usajobs-design-system-base--help-center.css'
           },
