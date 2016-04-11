@@ -38,7 +38,7 @@
 .usajobs-content-well {
   margin-bottom: $size-XL;
 
-  @include media($MLL) {
+  @include media($L) {
     @include span-columns(8);
   }
 
@@ -48,7 +48,7 @@
 }
 
 .usajobs-rightrail {
-  @include media($MLL) {
+  @include media($L) {
     @include span-columns(4);
   }
 
@@ -57,7 +57,7 @@
   }
 
   .usajobs-content-gutter {
-    @include media($MLL) {
+    @include media($L) {
       padding-left: 0;
     }
   }

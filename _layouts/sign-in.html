@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<!--[if lt IE 9]><html class="lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!--><html lang="en"><!--<![endif]-->
+  <head>
+    {% include prod-head.html %}
+    <link rel="stylesheet" href="{{ "/css/usajobs-components-sign-in.css" | prepend: site.baseurl }}">
+  </head>
+  <body class="{{ page.title | slugify }} usajobs-sign-in">
+    {% include components/nav-logo-only.html %}
+    {{ content }}
+    {% include components/footer-signed-out.html %}
+    {% include scripts.html %}
+  </body>
+</html>
