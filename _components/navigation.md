@@ -300,7 +300,7 @@ lead: USAJOBS features a consistent header for top-level navigation across the s
             </form>
           </div>
           <div class="usajobs-nav__create-account">
-            <a href="https://login.test.usajobs.gov/account/Create" class="usajobs-nav__create-account-link">Create an account</a> to build your profile and prepare to apply.
+            <a href="https://login.test.usajobs.gov/account/Create" class="usajobs-nav__create-account-link">Create an account</a> to get started &mdash; build your profile, create or upload resumes and apply for jobs.
           </div>
         </div>
       </div>
