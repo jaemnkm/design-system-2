@@ -318,6 +318,7 @@ $nav_item_height: 17px + 26.5px;
     margin: 0;
     padding: $size-base $size-default;
     border: 1px solid $color-gray-lighter;
+    border-bottom-width: 0;
     background-color: $color-gray-lightest;
   }
 
