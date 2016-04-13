@@ -27,6 +27,7 @@
   &__help-brief {
     margin-top: $size-base;
     font-size: $small-font-size;
+    max-width: $input-max-width;
   }
 
   &__help-detailed {
