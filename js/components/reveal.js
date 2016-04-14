@@ -1,8 +1,8 @@
-var $show_more = $('[data-object="show-more"]');
+var $reveal = $('[data-object="reveal"]');
 
-$show_more.on('click', '[data-behavior]', function (event) {
+$reveal.on('click', '[data-behavior]', function (event) {
   var $el = $(this),
-    $object = $el.closest('[data-object="show-more"]'),
+    $object = $el.closest('[data-object="reveal"]'),
     behavior = $el.attr('data-behavior'),
     $target = $object.find('#' + $el.attr('aria-controls')),
     state = $target.attr('aria-hidden');
@@ -16,7 +16,7 @@ $show_more.on('click', '[data-behavior]', function (event) {
   });
 });
 
-$show_more.on('show-more.toggle', function(event, opts) {
+$reveal.on('reveal.show-toggle', function(event, opts) {
   var $toggle_text_container = opts.el.find('[data-toggle-text]'),
     toggle_text = $toggle_text_container.attr('data-toggle-text'),
     current_text = $toggle_text_container.text();
@@ -47,3 +47,16 @@ $show_more.on('show-more.toggle', function(event, opts) {
   }
 });
 
+$reveal.on('reveal.show-next', function(event, opts) {
+
+  event.preventDefault();
+
+  opts.target.attr('aria-hidden', 'false');
+
+  opts.target.slideDown(function () {
+    $('html, body').animate({
+      scrollTop: opts.el.offset().top
+    });
+    opts.el.remove();
+  });
+});
