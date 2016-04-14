@@ -1,4 +1,4 @@
-// Home - Applications -- Show More
+// Home - Reveal - Show all, more, next
 
 @import 'lib/bourbon/bourbon';
 @import 'lib/neat/neat';
@@ -9,7 +9,8 @@
 @import 'base/breakpoints';
 @import '../home-variables';
 
-.usajobs-show-more {
+.usajobs-show-more,
+.usajobs-show-next {
   &__trigger {
     display: block;
     margin: $size-default $size-default 0;
@@ -39,5 +40,21 @@
         content: $fa-var-angle-up;
       }
     }
+  }
+}
+
+.usajobs-show-all {
+  margin: $size-base $size-default;
+
+  @include media($M) {
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+
+  &__trigger {
+    display: block;
+    width: 100%;
+    margin: 0;
   }
 }
