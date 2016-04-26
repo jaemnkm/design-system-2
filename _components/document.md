@@ -5,8 +5,8 @@ title: Document
 lead: A way to upload and view documents.
 ---
 
-<a href="{{ site.baseurl }}/getting-started/#maturity" class="usa-label maturity available">
-  Available
+<a href="{{ site.baseurl }}/getting-started/#maturity" class="usa-label maturity under_review">
+  Under Review
 </a>
 
 <h4 class="usa-heading-alt" id="thumbnail">Thumbnail</h4>
@@ -20,6 +20,7 @@ lead: A way to upload and view documents.
             <img src="{{ site.baseurl }}/img/document-thumbnails/resume-thumbnail-01-2x.png" class="img-2x" />
           </div>
         </div>
+        <a href="#view" class="usajobs-document__view" data-behavior="document.view">View</a>
         <div class="usajobs-document__details">
           <p class="usajobs-document__title">
             Director-resume.pdf
@@ -29,11 +30,7 @@ lead: A way to upload and view documents.
           </p>
           <ul class="usajobs-document__controls">
             <li class="ctrl">
-              <a class="view" href="#view">View</a>
-            </li>
-            <li class="pipe">|</li>
-            <li class="ctrl">
-              <a class="delete" href="#delete">Delete</a>
+              <a class="edit" href="#edit"><i class="fa fa-edit"></i> Edit</a>
             </li>
           </ul>
         </div>
@@ -54,6 +51,7 @@ lead: A way to upload and view documents.
             <img src="{{ site.baseurl }}/img/document-thumbnails/resume-thumbnail-01-2x.png" class="img-2x" />
           </div>
         </div>
+        <a href="#view" class="usajobs-document__view" data-behavior="document.view">View</a>
         <div class="usajobs-document__details">
           <p class="usajobs-document__title">
             Director-resume.pdf
@@ -63,11 +61,7 @@ lead: A way to upload and view documents.
           </p>
           <ul class="usajobs-document__controls">
             <li class="ctrl">
-              <a class="view" href="#view">View</a>
-            </li>
-            <li class="pipe">|</li>
-            <li class="ctrl">
-              <a class="delete" href="#delete">Delete</a>
+              <a class="edit" href="#edit"><i class="fa fa-edit"></i> Edit</a>
             </li>
           </ul>
         </div>
@@ -91,19 +85,16 @@ lead: A way to upload and view documents.
           <img src="{{ site.baseurl }}/img/document-thumbnails/doc-thumbnail-01-2x.jpeg" class="img-2x" />
         </div>
       </div>
+      <a href="#view" class="usajobs-document__view" data-behavior="document.view">View</a>
       <div class="usajobs-document__details">
         <p class="usajobs-document__title">My-Federal-Form.jpg</p>
-        <p class="usajobs-document__type">SF-50</p>
         <p class="usajobs-document__date">Uploaded 02/14/15</p>
         <ul class="usajobs-document__controls">
           <li class="ctrl">
-            <a class="view" href="#view">View</a>
-          </li>
-          <li class="pipe">|</li>
-          <li class="ctrl">
-            <a class="delete" href="#delete">Delete</a>
+            <a class="edit" href="#edit"><i class="fa fa-edit"></i> Edit</a>
           </li>
         </ul>
+        <p class="usajobs-document__type">SF-50</p>
       </div>
       <div class="usajobs-document__toggle">
         <input id="document-3" type="checkbox" name="document-3" value="doc-3" class="usajobs-document__input"> 
@@ -140,11 +131,7 @@ lead: A way to upload and view documents.
       </p>
       <ul class="usajobs-document__controls">
         <li class="ctrl">
-          <a class="view" href="#view">View</a>
-        </li>
-        <li class="pipe">|</li>
-        <li class="ctrl">
-          <a class="delete" href="#delete">Delete</a>
+          <a class="delete" href="#delete"><i class="fa fa-times"></i> Delete</a>
         </li>
       </ul>
     </div>
@@ -167,6 +154,7 @@ lead: A way to upload and view documents.
             <img src="{{ site.baseurl }}/img/document-thumbnails/resume-thumbnail-01-2x.png" class="img-2x" />
           </div>
         </div>
+        <a href="#view" class="usajobs-document__view" data-behavior="document.view">View</a>
         <div class="usajobs-document__details">
           <p class="usajobs-document__title">
             Director-resume.pdf
@@ -176,11 +164,7 @@ lead: A way to upload and view documents.
           </p>
           <ul class="usajobs-document__controls">
             <li class="ctrl">
-              <a class="view" href="#view">View</a>
-            </li>
-            <li class="pipe">|</li>
-            <li class="ctrl">
-              <a class="delete" href="#delete">Delete</a>
+              <a class="delete" href="#delete"><i class="fa fa-times"></i> Delete</a>
             </li>
           </ul>
         </div>
@@ -211,6 +195,7 @@ lead: A way to upload and view documents.
         <img src="{{ site.baseurl }}/img/document-thumbnails/resume-thumbnail-01-2x.png" class="img-2x" />
       </div>
     </div>
+    <a class="usajobs-document__reupload" href="#reupload">Re-Upload</a>
     <div class="usajobs-document__details">
       <p class="usajobs-document__title">
         Director-resume.pdf
@@ -220,11 +205,7 @@ lead: A way to upload and view documents.
       </p>
       <ul class="usajobs-document__controls">
         <li class="ctrl">
-          <a class="reupload" href="#reupload">Re-Upload</a>
-        </li>
-        <li class="pipe">|</li>
-        <li class="ctrl">
-          <a class="delete" href="#delete">Delete</a>
+          <a class="delete" href="#delete"><i class="fa fa-times"></i> Delete</a>
         </li>
       </ul>
     </div>
@@ -251,11 +232,10 @@ lead: A way to upload and view documents.
       <p class="usajobs-document__date">Built 03/18/10</p>
       <ul class="usajobs-document__controls">
         <li class="ctrl">
-          <a class="edit" href="#edit">Edit</a>
+          <a class="edit" href="#edit"><i class="fa fa-edit"></i> Edit</a>
         </li>
-        <li class="pipe">|</li>
         <li class="ctrl">
-          <a class="delete" href="#delete">Delete</a>
+          <a class="delete" href="#delete"><i class="fa fa-times"></i> Delete</a>
         </li>
       </ul>
     </div>
@@ -317,33 +297,185 @@ lead: A way to upload and view documents.
 
 <h4 class="usa-heading-alt" id="placeholder">Placeholder variation</h4>
 <div class="preview">
-  <div class="usajobs-document usajobs-document--placeholder" data-object="document" data-state="is-selectable">
-    <div class="usajobs-document__figure" data-behavior="document.toggle" data-target="#toggle-document-2">
-      <span class="usajobs-document__placeholder fa fa-file"></span>
+  <h6 class="usa-heading-alt">Application Guide - Multi-select</h6>
+  <div class="usajobs-grid">
+    <div class="usajobs-width-one-half">
+      <div class="usajobs-document usajobs-document--placeholder" data-object="document" data-state="is-selectable">
+        <div class="usajobs-document__figure" data-behavior="document.toggle" data-target="#toggle-document-2">
+          <span class="usajobs-document--placeholder__icon word"></span>
+        </div>
+        <a href="#view" class="usajobs-document__view" data-behavior="document.view">View</a>
+        <div class="usajobs-document__details">
+          <p class="usajobs-document__title">Exec-Core.doc</p>
+          <p class="usajobs-document__date">
+            Uploaded 03/14/45
+          </p>
+          <ul class="usajobs-document__controls">
+            <li class="ctrl">
+              <a class="edit" href="#edit"><i class="fa fa-edit"></i> Edit</a>
+            </li>
+          </ul>
+          <p class="usajobs-document__type">ECQ</p>
+        </div>
+        <div class="usajobs-document__toggle">
+          <input id="select-document-2" type="checkbox" name="doc-2" value="doc-2" class="usajobs-document__input">
+          <label id="toggle-document-2" for="select-document-2" class="usajobs-document__selector">
+            <span class="usajobs-assistive-text">
+              Select Document 2
+            </span>
+          </label>
+        </div>
+      </div>
     </div>
-    <div class="usajobs-document__details">
-      <p class="usajobs-document__title">Exec-Core</p>
-      <p class="usajobs-document__type">ECQ</p>
-      <p class="usajobs-document__date">
-        Uploaded 03/22/25
-      </p>
-      <ul class="usajobs-document__controls">
-        <li class="ctrl">
-          <a class="view" href="#view">View</a>
-        </li>
-        <li class="pipe">|</li>
-        <li class="ctrl">
-          <a class="delete" href="#delete">Delete</a>
-        </li>
-      </ul>
+    <div class="usajobs-width-one-half">
+      <div class="usajobs-document usajobs-document--placeholder" data-object="document" data-state="is-selectable">
+        <div class="usajobs-document__figure" data-behavior="document.toggle" data-target="#toggle-document-7">
+          <span class="usajobs-document--placeholder__icon image"></span>
+        </div>
+        <a href="#view" class="usajobs-document__view" data-behavior="document.view">View</a>
+        <div class="usajobs-document__details">
+          <p class="usajobs-document__title">My OPM form.jpg</p>
+          <p class="usajobs-document__date">
+            Uploaded 03/18/10
+          </p>
+          <ul class="usajobs-document__controls">
+            <li class="ctrl">
+              <a class="edit" href="#edit"><i class="fa fa-edit"></i> Edit</a>
+            </li>
+          </ul>
+          <p class="usajobs-document__type">SF-50</p>
+        </div>
+        <div class="usajobs-document__toggle">
+          <input id="select-document-7" type="checkbox" name="doc-7" value="doc-7" class="usajobs-document__input">
+          <label id="toggle-document-7" for="select-document-7" class="usajobs-document__selector">
+            <span class="usajobs-assistive-text">
+              Select Document 7
+            </span>
+          </label>
+        </div>
+      </div>
     </div>
-    <div class="usajobs-document__toggle">
-      <input id="select-document-2" type="checkbox" name="doc-2" value="doc-2" class="usajobs-document__input">
-      <label id="toggle-document-2" for="select-document-2" class="usajobs-document__selector">
-        <span class="usajobs-assistive-text">
-          Select Document 2
-        </span>
-      </label>
+  </div>
+
+  <h6 class="usa-heading-alt">Account - Documents - Other</h6>
+  <div class="usajobs-grid">
+    <div class="usajobs-width-one-half">
+      <div class="usajobs-document usajobs-document--placeholder" data-object="document">
+        <div class="usajobs-document__figure" data-behavior="document.view" data-target="#view-document-8">
+          <span class="usajobs-document--placeholder__icon pdf"></span>
+        </div>
+        <a href="#view" class="usajobs-document__view" data-behavior="document.view">View</a>
+        <div class="usajobs-document__details">
+          <p class="usajobs-document__title">Pending discharge on letterhead.pdf</p>
+          <p class="usajobs-document__date">
+            Uploaded 03/12/75
+          </p>
+          <ul class="usajobs-document__controls">
+            <li class="ctrl">
+              <a class="edit" href="#edit"><i class="fa fa-edit"></i> Edit</a>
+            </li>
+            <li class="ctrl">
+              <a class="duplicate" href="#duplicate"><i class="fa fa-copy"></i> Duplicate</a>
+            </li>
+            <li class="ctrl">
+              <a class="delete" href="#delete"><i class="fa fa-times"></i> Delete</a>
+            </li>
+          </ul>
+          <p class="usajobs-document__type">Veteran Other</p>
+        </div>
+      </div>
+    </div>
+    <div class="usajobs-width-one-half">
+      <div class="usajobs-document usajobs-document--placeholder" data-object="document">
+        <div class="usajobs-document__figure" data-behavior="document.view" data-target="#view-document-9">
+          <span class="usajobs-document--placeholder__icon text"></span>
+        </div>
+        <a href="#view" class="usajobs-document__view" data-behavior="document.view">View</a>
+        <div class="usajobs-document__details">
+          <p class="usajobs-document__title">Latest-Cover-Letter.txt</p>
+          <p class="usajobs-document__date">
+            Uploaded 03/18/16
+          </p>
+          <ul class="usajobs-document__controls">
+            <li class="ctrl">
+              <a class="edit" href="#edit"><i class="fa fa-edit"></i> Edit</a>
+            </li>
+            <li class="ctrl">
+              <a class="duplicate" href="#duplicate"><i class="fa fa-copy"></i> Duplicate</a>
+            </li>
+            <li class="ctrl">
+              <a class="delete" href="#delete"><i class="fa fa-times"></i> Delete</a>
+            </li>
+          </ul>
+          <p class="usajobs-document__type">Cover Letter</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <h6 class="usa-heading-alt">Account - Documents - Resumes</h6>
+  <div class="usajobs-grid">
+    <div class="usajobs-width-one-half">
+      <div class="usajobs-document usajobs-document--placeholder" data-object="document">
+        <div class="usajobs-document__figure" data-behavior="document.view" data-target="#view-document-10">
+          <span class="usajobs-document--placeholder__icon pdf"></span>
+        </div>
+        <a href="#view" class="usajobs-document__view" data-behavior="document.view">View</a>
+        <div class="usajobs-document__details">
+          <p class="usajobs-document__title">TSA resume.pdf</p>
+          <p class="usajobs-document__date">
+            Uploaded 04/26/16
+          </p>
+          <ul class="usajobs-document__controls">
+            <li class="ctrl">
+              <a class="edit" href="#edit"><i class="fa fa-edit"></i> Edit</a>
+            </li>
+            <li class="ctrl">
+              <a class="duplicate" href="#duplicate"><i class="fa fa-copy"></i> Duplicate</a>
+            </li>
+            <li class="ctrl">
+              <a class="delete" href="#delete"><i class="fa fa-times"></i> Delete</a>
+            </li>
+          </ul>
+          <div class="usajobs-document__searchable">
+            <input id="document-10-searchable" type="checkbox" name="document-10-searchable" value="document-10-searchable" checked="">
+            <label for="document-10-searchable">Searchable</label>
+            <p class="usajobs-document__searchable-date">
+              until 04/26/17
+              <a href="#extend" class="usajobs-document__searchable-extend">Extend for 1 year</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="usajobs-width-one-half">
+      <div class="usajobs-document usajobs-document--placeholder" data-object="document">
+        <div class="usajobs-document__figure" data-behavior="document.view" data-target="#view-document-11">
+          <span class="usajobs-document--placeholder__icon text"></span>
+        </div>
+        <a href="#view" class="usajobs-document__view" data-behavior="document.view">View</a>
+        <div class="usajobs-document__details">
+          <p class="usajobs-document__title">Latest-Cover-Letter.txt</p>
+          <p class="usajobs-document__date">
+            Uploaded 03/18/16
+          </p>
+          <ul class="usajobs-document__controls">
+            <li class="ctrl">
+              <a class="edit" href="#edit"><i class="fa fa-edit"></i> Edit</a>
+            </li>
+            <li class="ctrl">
+              <a class="duplicate" href="#duplicate"><i class="fa fa-copy"></i> Duplicate</a>
+            </li>
+            <li class="ctrl">
+              <a class="delete" href="#delete"><i class="fa fa-times"></i> Delete</a>
+            </li>
+          </ul>
+          <div class="usajobs-document__searchable">
+            <input id="document-11-searchable" type="checkbox" name="document-11-searchable" value="document-11-searchable">
+            <label for="document-11-searchable">Searchable</label>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </div>
