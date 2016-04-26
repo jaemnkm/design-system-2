@@ -1,18 +1,20 @@
 // Document
 
 @import 'lib/bourbon/bourbon';
+@import "font-awesome/font-awesome";
 @import 'core/variables';
 @import 'base/variables';
 @import 'base/utilities';
 @import 'base/breakpoints';
 
-// Desired aspect ratio is 2:3
-// Retina dimensions: 380x482
-// Dimensions: 190x246
-$thumbnail-img-width: rem(190px);
-$thumbnail-img-height: rem(246px);
-$doc-width: $thumbnail-img-width + rem(2px) + 2rem; // 1px border + 1 rem padding on either side
-$figure-height: $thumbnail-img-height + rem(2px) + 2rem; // 1px border + 1 rem padding top & bottom
+// Desired aspect ratio is 2:3 but in reality most thumbnails are only 208px tall
+// Retina dimensions: 318x
+// Dimensions: 159x239
+$thumbnail-img-width: rem(159px);
+$thumbnail-img-height: rem(239px);
+$view-height: rem(33px);
+$doc-width: $thumbnail-img-width + rem(2px) + $size-base + $size-base;  // 1px border & .5 rem padding on either side
+$figure-height: $thumbnail-img-height + rem(1px) + 1rem ; // 1px border + 1 rem padding top
 
 .usajobs-document {
   position: relative;
@@ -30,7 +32,7 @@ $figure-height: $thumbnail-img-height + rem(2px) + 2rem; // 1px border + 1 rem p
 
   &__figure {
     position: relative;
-    padding: $size-S;
+    padding: $size-S $size-base 0;
     height: $figure-height;
     overflow: hidden;
     background-color: $color-white;
@@ -41,11 +43,28 @@ $figure-height: $thumbnail-img-height + rem(2px) + 2rem; // 1px border + 1 rem p
   }
 
   &__details {
-    padding: $size-default $size-default $size-S;
+    padding: $size-default $size-default 0;
     background-color: $color-white;
     text-align: center;
     border-top: 1px solid $color-gray-lighter;
     box-shadow: 0px 0px 8px 2px rgba(0, 0, 0, 0.07)
+  }
+
+  a.usajobs-document__view,
+  a.usajobs-document__reupload {
+    display: block;
+    padding: $size-base 0;
+    color: $color-white;
+    font-weight: bold;
+    background-color: $color-primary;
+    text-decoration: none;
+    text-align: center;
+    border-top: 1px solid $color-white;
+
+    &:hover,
+    &:visited {
+      color: $color-white;
+    }
   }
 
   &__title,
@@ -54,26 +73,70 @@ $figure-height: $thumbnail-img-height + rem(2px) + 2rem; // 1px border + 1 rem p
     margin: 0;
   }
 
+  &__type,
+  &__date,
+  &__searchable {
+    font-size: $small-font-size;
+  }
+
+  &__date {
+    font-style: italic;
+  }
+
+  &__type,
+  &__searchable {
+    display: block;
+    margin-left: -#{$size-default};
+    margin-right: -#{$size-default};
+    text-align: center;
+    background-color: $color-gray-lightest;
+  }
+
+  &__type {
+    padding: $size-base;
+    font-weight: bold;
+  }
+
+  &__searchable {
+    padding: $size-S $size-default;
+
+    label {
+      margin-top: 0;
+    }
+  }
+
+  &__searchable-date {
+    font-style: italic;
+    margin-bottom: 0;
+  }
+
+  &__searchable-extend {
+    font-style: normal;
+    display: block;
+  }
+
   &__controls {
     @include unstyledList();
+    padding-bottom: $size-S;
 
-    .ctrl,
-    .pipe {
-      display: inline-block;
+    .ctrl {
+      font-size: $small-font-size;
     }
 
     .view,
     .reupload,
     .edit,
+    .duplicate,
     .delete {
       display: block;
+      padding: $size-base $size-M;
+      text-decoration: none;
     }
 
     .view,
     .reupload,
+    .duplicate,
     .edit {
-      padding: $size-default $size-S $size-default $size-default;
-
       &:visited {
         color: $color-primary;
       }
@@ -81,7 +144,6 @@ $figure-height: $thumbnail-img-height + rem(2px) + 2rem; // 1px border + 1 rem p
 
     .delete {
       color: $color-secondary;
-      padding: $size-default $size-default $size-default $size-S;
     }
 
     .pipe {
@@ -188,15 +250,28 @@ $figure-height: $thumbnail-img-height + rem(2px) + 2rem; // 1px border + 1 rem p
     }
   }
 
-  .usajobs-document__placeholder {
+  &__icon:before {
     @include fa-icon();
+    content: $fa-var-file;
     color: $color-white;
     font-size: 8rem;
-    line-height: $thumbnail-img-height;
+    line-height: $figure-height - $view-height - 1rem;
+  }
 
-    &:before {
-      content: $fa-var-file;
-    }
+  &__icon.pdf:before {
+    content: $fa-var-file-pdf-o;
+  }
+
+  &__icon.image:before {
+    content: $fa-var-file-image-o;
+  }
+
+  &__icon.word:before {
+    content: $fa-var-file-word-o;
+  }
+
+  &__icon.text:before {
+    content: $fa-var-file-text-o;
   }
 }
 
@@ -232,7 +307,7 @@ $figure-height: $thumbnail-img-height + rem(2px) + 2rem; // 1px border + 1 rem p
       content: 'Your file is loading';
       position: absolute;
       top: 80%;
-      left: 20%;
+      left: 12%;
     }
 
     &:after {
@@ -267,7 +342,7 @@ $figure-height: $thumbnail-img-height + rem(2px) + 2rem; // 1px border + 1 rem p
       content: 'This file is corrupt. Please re-upload.';
       position: absolute;
       top: 60%;
-      left: 20%;
+      left: 15%;
     }
 
     &:after {
