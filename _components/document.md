@@ -280,6 +280,7 @@ lead: A way to upload and view documents.
     <h4 class="usa-heading">Guidance</h4>
     <ul class="usa-content-list">
       <li>The first line of the document details is the user-provided title of the document.</li>
+      <li><strong>Title truncation:</strong> 8 characters at the start and end of the filename MUST be visible. For example, if the uploaded file name is "My-long-document-name-that-is-too-long-to-show.doc" then it woulbe abbreviated to "My-long-&hellip;show.doc". This keeps the title on one line. The desire is to handle document names that have a suffix that is important to the user (e.g. "-1") and to include the mime type of the file.</li>
       <li>The second line of a document, NOT a resume, is the document type which is one of:
         <ul>
           <li>Cover Letter</li>
@@ -297,7 +298,7 @@ lead: A way to upload and view documents.
       <li>The third line of a document is the date the document was uploaded. This line of text is in the format "Uploaded [date]". Resumes created by Resume Builder are in the format "Built [date]".</li>
       <li>The <strong>View</strong> link opens the full document in a <a href="{{ site.baseurl}}/modals/">modal</a>.</li>
       <li> The <strong>Delete</strong> link will open a dialog in a <a href="{{ site.baseurl}}/modals/">modal</a> asking the user to confirm removal of the document.</li>
-      <li>For resume documents that are built with Resume Builder the View link is replaced by an <strong>Edit</strong> link. Clicking that link will open the Resume Builder in a <a href="{{ site.baseurl }}/modals/">modal</a>.</li>
+      <li>For resume documents that are built with Resume Builder the View link is replaced by an <strong>Edit</strong> link. Clicking that link will open the Resume Builder in a new target (tab or window).</li>
     </ul>
 
     <h4 class="usa-heading">Usability</h4>
@@ -305,7 +306,7 @@ lead: A way to upload and view documents.
     <ul class="usa-content-list">
       <li>Whenever a document has been uploaded to USAJOBS use this component to reflect the document back to the user.</li>
       <li>Use the single-select version, which contains a radio button input, when only a single document can be selected from a series of documents (i.e. resume).</li>
-      <li>Use the multi-select version, which contains a checkobx input, when multiple documents can be selected from a series of documents.</li>
+      <li>Use the multi-select version, which contains a checkbox input, when multiple documents can be selected from a series of documents.</li>
       <li>Use the loading animation when the document has been uploaded and the thumbnail is loading into this component.</li>
     </ul>
 
@@ -393,7 +394,7 @@ lead: A way to upload and view documents.
         </div>
         <a href="#view" class="usajobs-document__view" data-behavior="document.view">View</a>
         <div class="usajobs-document__details">
-          <p class="usajobs-document__title">Pending discharge on letterhead.pdf</p>
+          <p class="usajobs-document__title">Pending&hellip;head.pdf</p>
           <p class="usajobs-document__date">
             Uploaded 03/12/75
           </p>
@@ -419,7 +420,7 @@ lead: A way to upload and view documents.
         </div>
         <a href="#view" class="usajobs-document__view" data-behavior="document.view">View</a>
         <div class="usajobs-document__details">
-          <p class="usajobs-document__title">Latest-Cover-Letter.txt</p>
+          <p class="usajobs-document__title">Latest-C&hellip;tter.txt</p>
           <p class="usajobs-document__date">
             Uploaded 03/18/16
           </p>
@@ -484,7 +485,7 @@ lead: A way to upload and view documents.
         </div>
         <a href="#view" class="usajobs-document__view" data-behavior="document.view">View</a>
         <div class="usajobs-document__details">
-          <p class="usajobs-document__title">Latest-Cover-Letter.txt</p>
+          <p class="usajobs-document__title">Latest-C&hellip;tter.txt</p>
           <p class="usajobs-document__date">
             Uploaded 03/18/16
           </p>
