@@ -2,7 +2,7 @@
 layout: styleguide
 type: component
 title: Form controls
-lead: USAJOBS adds or clarifies design for contextual help, required/optional field handling, and legend.
+lead: USAJOBS adds or clarifies design for labels, contextual help, required/optional field handling, and legend.
 ---
 
 <a href="{{ site.baseurl }}/getting-started/#maturity" class="usa-label maturity design_complete">
@@ -103,7 +103,7 @@ lead: USAJOBS adds or clarifies design for contextual help, required/optional fi
     <ul class="usa-content-list">
       <li>A detailed explanation of the data being requested is necessary.</li>
       <li>Additional context for why the request is being made is desired.</li>
-      <li>To replace the existing help icon treatment that links to the Resource Center. It is preferred to bring the help onto the page, ideally with an AJAX request to pull the content from the Resource Center into this help section.</li>
+      <li>To replace the existing help icon treatment that links to Help. It is preferred to bring the help onto the page, ideally with an AJAX request to pull the content from the Help Center into this help section.</li>
     </ul>
     <h5>When to consider something else</h5>
     <ul class="usa-content-list">
@@ -111,6 +111,37 @@ lead: USAJOBS adds or clarifies design for contextual help, required/optional fi
     </ul>
   </div>
 </div>
+
+<div class="preview">
+  <h6 class="usa-heading-alt" id="help-tip">Tip</h6>
+  <div class="usajobs-help-tip">
+    <h3 class="usajobs-help-tip__title">
+      Tip: Make your resume searchable to be found by Hiring Managers. 
+    </h3>
+    <p class="usajobs-help-tip__text">
+      If you make your resume searchable, your profile information and all resume information will be visible to recruiters searching our resume bank.
+    </p>
+  </div>
+</div>
+<div class="usa-accordion-bordered usa-accordion-docs">
+  <button class="usa-button-unstyled usa-accordion-button"
+      aria-expanded="true" aria-controls="collapsible-0">
+    Documentation
+  </button>
+  <div id="collapsible-0" aria-hidden="false" class="usa-accordion-content">
+    <h4 class="usa-heading">Usability</h4>
+    <h5>When to use</h5>
+    <ul class="usa-content-list">
+      <li>To draw attention to a particular piece of functionality.</li>
+    </ul>
+    <h5>When to consider something else</h5>
+    <ul class="usa-content-list">
+      <li>A tip should not be used when one of the other contextual help elements is more approriate.</li>
+    </ul>
+  </div>
+</div>
+
+
 
 <h2 class="usa-heading" id="labels">Labels</h2>
 <p>
