@@ -32,6 +32,9 @@ lead: A way to upload and view documents.
             <li class="ctrl">
               <a class="edit" href="#edit"><i class="fa fa-edit"></i> Edit</a>
             </li>
+            <li class="ctrl">
+              <a class="delete" href="#delete"><i class="fa fa-times"></i> Delete</a>
+            </li>
           </ul>
         </div>
         <div class="usajobs-document__toggle">
@@ -63,6 +66,9 @@ lead: A way to upload and view documents.
             <li class="ctrl">
               <a class="edit" href="#edit"><i class="fa fa-edit"></i> Edit</a>
             </li>
+            <li class="ctrl">
+              <a class="delete" href="#delete"><i class="fa fa-times"></i> Delete</a>
+            </li>
           </ul>
         </div>
         <div class="usajobs-document__toggle">
@@ -93,11 +99,14 @@ lead: A way to upload and view documents.
           <li class="ctrl">
             <a class="edit" href="#edit"><i class="fa fa-edit"></i> Edit</a>
           </li>
+          <li class="ctrl">
+            <a class="delete" href="#delete"><i class="fa fa-times"></i> Delete</a>
+          </li>
         </ul>
         <p class="usajobs-document__type">SF-50</p>
       </div>
       <div class="usajobs-document__toggle">
-        <input id="document-3" type="checkbox" name="document-3" value="doc-3" class="usajobs-document__input"> 
+        <input id="document-3" type="checkbox" name="document-3" value="doc-3" class="usajobs-document__input" data-behavior="document.select-checkbox"> 
         <label id="toggle-document-3" for="document-3" class="usajobs-document__selector" data-behavior="document.toggle-checkbox">
           <span class="usajobs-assistive-text">
             Select Document 3
@@ -108,11 +117,23 @@ lead: A way to upload and view documents.
   </form>
 
   <h6 class="usa-heading-alt">Add</h6>
-  <div class="usajobs-document usajobs-document--add" data-object="document" data-state="is-selectable">
-    <button class="usa-button-gray usajobs-document__trigger" data-object-trigger="modal" data-target="#modal-addResume">
-      <div class="usajobs-document__add-icon fa fa-plus-circle"></div>
-      Add a resume
-    </button>
+    <div class="usajobs-grid">
+      <div class="usajobs-width-one-half">
+        <div class="usajobs-document usajobs-document--add" data-object="document" data-state="is-selectable">
+          <button class="usa-button-gray usajobs-document__trigger" data-object-trigger="modal" data-target="#modal-addResume">
+            <div class="usajobs-document__add-icon fa fa-plus-circle"></div>
+            Upload or build resume
+          </button>
+        </div>
+      </div>
+      <div class="usajobs-width-one-half">
+        <div class="usajobs-document usajobs-document--add" data-object="document" data-state="is-selectable">
+          <button class="usa-button-gray usajobs-document__trigger" data-object-trigger="modal" data-target="#modal-addResume">
+            <div class="usajobs-document__add-icon fa fa-plus-circle"></div>
+            Upload document
+          </button>
+        </div>
+      </div>
   </div>
 
   <h6 class="usa-heading-alt">Loading</h6>
@@ -314,6 +335,9 @@ lead: A way to upload and view documents.
             <li class="ctrl">
               <a class="edit" href="#edit"><i class="fa fa-edit"></i> Edit</a>
             </li>
+            <li class="ctrl">
+              <a class="delete" href="#delete"><i class="fa fa-times"></i> Delete</a>
+            </li>
           </ul>
           <p class="usajobs-document__type">ECQ</p>
         </div>
@@ -341,6 +365,9 @@ lead: A way to upload and view documents.
           <ul class="usajobs-document__controls">
             <li class="ctrl">
               <a class="edit" href="#edit"><i class="fa fa-edit"></i> Edit</a>
+            </li>
+            <li class="ctrl">
+              <a class="delete" href="#delete"><i class="fa fa-times"></i> Delete</a>
             </li>
           </ul>
           <p class="usajobs-document__type">SF-50</p>
@@ -439,11 +466,13 @@ lead: A way to upload and view documents.
           </ul>
           <div class="usajobs-document__searchable">
             <input id="document-10-searchable" type="checkbox" name="document-10-searchable" value="document-10-searchable" checked="">
-            <label for="document-10-searchable">Searchable</label>
+            <label for="document-10-searchable" class="usajobs-document__searchable-label">
+              Searchable
+            </label>
             <p class="usajobs-document__searchable-date">
               until 04/26/17
-              <a href="#extend" class="usajobs-document__searchable-extend">Extend for 1 year</a>
             </p>
+            <a href="#extend" class="usajobs-document__searchable-extend">Extend for 1 year</a>
           </div>
         </div>
       </div>
@@ -472,7 +501,9 @@ lead: A way to upload and view documents.
           </ul>
           <div class="usajobs-document__searchable">
             <input id="document-11-searchable" type="checkbox" name="document-11-searchable" value="document-11-searchable">
-            <label for="document-11-searchable">Searchable</label>
+            <label for="document-11-searchable" class="usajobs-document__searchable-label">
+              Searchable
+            </label>
           </div>
         </div>
       </div>
