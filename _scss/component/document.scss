@@ -43,7 +43,7 @@ $figure-height: $thumbnail-img-height + rem(1px) + 1rem ; // 1px border + 1 rem 
   }
 
   &__details {
-    padding: $size-default $size-default 0;
+    padding: $size-default $size-S 0;
     background-color: $color-white;
     text-align: center;
     border-top: 1px solid $color-gray-lighter;
@@ -86,8 +86,8 @@ $figure-height: $thumbnail-img-height + rem(1px) + 1rem ; // 1px border + 1 rem 
   &__type,
   &__searchable {
     display: block;
-    margin-left: -#{$size-default};
-    margin-right: -#{$size-default};
+    margin-left: -#{$size-S};
+    margin-right: -#{$size-S};
     text-align: center;
     background-color: $color-gray-lightest;
   }
@@ -99,6 +99,7 @@ $figure-height: $thumbnail-img-height + rem(1px) + 1rem ; // 1px border + 1 rem 
 
   &__searchable {
     padding: $size-S $size-default;
+    min-height: rem(78px);
   }
 
   &__searchable &__searchable-label {

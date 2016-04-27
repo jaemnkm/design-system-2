@@ -13161,7 +13161,7 @@ html {
 }
 
 .usajobs-document__details {
-  padding: 1.5rem 1.5rem 0;
+  padding: 1.5rem 1rem 0;
   background-color: #ffffff;
   text-align: center;
   border-top: 1px solid #d6d7d9;
@@ -13200,8 +13200,8 @@ html {
 
 .usajobs-document__type, .usajobs-document__searchable {
   display: block;
-  margin-left: -1.5rem;
-  margin-right: -1.5rem;
+  margin-left: -1rem;
+  margin-right: -1rem;
   text-align: center;
   background-color: #f1f1f1;
 }
@@ -13213,6 +13213,7 @@ html {
 
 .usajobs-document__searchable {
   padding: 1rem 1.5rem;
+  min-height: 7.8rem;
 }
 
 .usajobs-document__searchable .usajobs-document__searchable-label {
