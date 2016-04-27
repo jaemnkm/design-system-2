@@ -1,8 +1,8 @@
 // Document - Object for uploading, viewing, and editing documents
 
 var $doc = $('[data-object="document"]'),
-  $doc_multiselect = $doc.find('input[type="checkbox"]'),
-  $doc_singleselect = $doc.find('input[type="radio"]');
+  $doc_multiselect = $doc.find('input[type="checkbox"][data-behavior="document.select-checkbox"]'),
+  $doc_singleselect = $doc.find('input[type="radio"][data-behavior="document.select-radio"]');
 
 $doc.on('click', '[data-behavior]', function () {
   var $el = $(this),

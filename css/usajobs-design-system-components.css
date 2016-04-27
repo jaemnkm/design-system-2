@@ -13219,13 +13219,13 @@ html {
   padding: 1rem 1.5rem;
 }
 
-.usajobs-document__searchable label {
-  margin-top: 0;
+.usajobs-document__searchable .usajobs-document__searchable-label {
+  margin: 0;
 }
 
 .usajobs-document__searchable-date {
-  font-style: italic;
-  margin-bottom: 0;
+  margin: 0;
+  padding-left: 4.5rem;
 }
 
 .usajobs-document__searchable-extend {

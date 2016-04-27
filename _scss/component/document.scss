@@ -99,15 +99,15 @@ $figure-height: $thumbnail-img-height + rem(1px) + 1rem ; // 1px border + 1 rem 
 
   &__searchable {
     padding: $size-S $size-default;
+  }
 
-    label {
-      margin-top: 0;
-    }
+  &__searchable &__searchable-label {
+    margin: 0;
   }
 
   &__searchable-date {
-    font-style: italic;
-    margin-bottom: 0;
+    margin: 0;
+    padding-left: $size-L;
   }
 
   &__searchable-extend {
