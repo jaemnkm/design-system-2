@@ -478,11 +478,11 @@ lead: A way to upload and view documents.
     <div class="usajobs-width-one-half">
       <div class="usajobs-document usajobs-document--placeholder-docs" data-object="document">
         <div class="usajobs-document__figure" data-behavior="document.view" data-target="#view-document-11">
-          <span class="usajobs-document--placeholder__icon text"></span>
+          <span class="usajobs-document--placeholder__icon builder"></span>
         </div>
         <a href="#view" class="usajobs-document__view" data-behavior="document.view">View</a>
         <div class="usajobs-document__details">
-          <p class="usajobs-document__title">Latest-C&hellip;tter.txt</p>
+          <p class="usajobs-document__title">TSA v2</p>
           <p class="usajobs-document__date">
             Uploaded 03/18/16
           </p>

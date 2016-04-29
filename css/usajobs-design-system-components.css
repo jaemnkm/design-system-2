@@ -13443,6 +13443,11 @@ html {
   content: "";
 }
 
+.usajobs-document--placeholder__icon.builder:before,
+.usajobs-document--placeholder-docs__icon.builder:before {
+  content: "";
+}
+
 .usajobs-document--placeholder-docs .usajobs-document__controls {
   min-height: 10.3rem;
 }

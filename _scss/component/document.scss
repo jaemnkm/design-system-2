@@ -275,6 +275,10 @@ $figure-height: $thumbnail-img-height + rem(1px) + 1rem ; // 1px border + 1 rem 
   &__icon.text:before {
     content: $fa-var-file-text-o;
   }
+
+  &__icon.builder:before {
+    content: $fa-var-file-text;
+  }
 }
 
 .usajobs-document--placeholder-docs {
