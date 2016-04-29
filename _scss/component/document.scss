@@ -242,7 +242,7 @@ $figure-height: $thumbnail-img-height + rem(1px) + 1rem ; // 1px border + 1 rem 
 }
 
 .usajobs-document--placeholder,
-.usajobs-document--placeholder-docs {
+.usajobs-document--placeholder-resume {
   .usajobs-document__figure {
     background-color: $color-primary-darker;
     text-align: center;
@@ -281,7 +281,7 @@ $figure-height: $thumbnail-img-height + rem(1px) + 1rem ; // 1px border + 1 rem 
   }
 }
 
-.usajobs-document--placeholder-docs {
+.usajobs-document--placeholder-resume {
   .usajobs-document__controls {
     min-height: rem(103px);
   }
