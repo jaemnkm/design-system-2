@@ -13456,6 +13456,10 @@ html {
   min-height: 10.3rem;
 }
 
+.usajobs-document--placeholder-docs.is-not-searchable .usajobs-document__searchable {
+  visibility: hidden;
+}
+
 .usajobs-document--thumbnail .usajobs-document__figure {
   position: relative;
 }
