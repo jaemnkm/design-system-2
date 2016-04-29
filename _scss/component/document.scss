@@ -285,6 +285,12 @@ $figure-height: $thumbnail-img-height + rem(1px) + 1rem ; // 1px border + 1 rem 
   .usajobs-document__controls {
     min-height: rem(103px);
   }
+
+  &.is-not-searchable {
+    .usajobs-document__searchable {
+      visibility: hidden;
+    }
+  }
 }
 
 .usajobs-document--thumbnail {
