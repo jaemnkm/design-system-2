@@ -388,7 +388,7 @@ lead: A way to upload and view documents.
   <h6 class="usa-heading-alt">Account - Documents - Other</h6>
   <div class="usajobs-grid">
     <div class="usajobs-width-one-half">
-      <div class="usajobs-document usajobs-document--placeholder-docs" data-object="document">
+      <div class="usajobs-document usajobs-document--placeholder" data-object="document">
         <div class="usajobs-document__figure" data-behavior="document.view" data-target="#view-document-8">
           <span class="usajobs-document--placeholder__icon pdf"></span>
         </div>
@@ -414,7 +414,7 @@ lead: A way to upload and view documents.
       </div>
     </div>
     <div class="usajobs-width-one-half">
-      <div class="usajobs-document usajobs-document--placeholder-docs" data-object="document">
+      <div class="usajobs-document usajobs-document--placeholder" data-object="document">
         <div class="usajobs-document__figure" data-behavior="document.view" data-target="#view-document-9">
           <span class="usajobs-document--placeholder__icon text"></span>
         </div>
@@ -444,7 +444,7 @@ lead: A way to upload and view documents.
   <h6 class="usa-heading-alt">Account - Documents - Resumes</h6>
   <div class="usajobs-grid">
     <div class="usajobs-width-one-half">
-      <div class="usajobs-document usajobs-document--placeholder-docs" data-object="document">
+      <div class="usajobs-document usajobs-document--placeholder-resume" data-object="document">
         <div class="usajobs-document__figure" data-behavior="document.view" data-target="#view-document-10">
           <span class="usajobs-document--placeholder__icon pdf"></span>
         </div>
@@ -476,7 +476,7 @@ lead: A way to upload and view documents.
       </div>
     </div>
     <div class="usajobs-width-one-half">
-      <div class="usajobs-document usajobs-document--placeholder-docs" data-object="document">
+      <div class="usajobs-document usajobs-document--placeholder-resume" data-object="document">
         <div class="usajobs-document__figure" data-behavior="document.view" data-target="#view-document-11">
           <span class="usajobs-document--placeholder__icon builder"></span>
         </div>
