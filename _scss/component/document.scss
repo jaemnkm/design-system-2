@@ -241,7 +241,8 @@ $figure-height: $thumbnail-img-height + rem(1px) + 1rem ; // 1px border + 1 rem 
   }
 }
 
-.usajobs-document--placeholder {
+.usajobs-document--placeholder,
+.usajobs-document--placeholder-docs {
   .usajobs-document__figure {
     background-color: $color-primary-darker;
     text-align: center;
@@ -273,6 +274,12 @@ $figure-height: $thumbnail-img-height + rem(1px) + 1rem ; // 1px border + 1 rem 
 
   &__icon.text:before {
     content: $fa-var-file-text-o;
+  }
+}
+
+.usajobs-document--placeholder-docs {
+  .usajobs-document__controls {
+    min-height: rem(103px);
   }
 }
 
@@ -368,8 +375,6 @@ $figure-height: $thumbnail-img-height + rem(1px) + 1rem ; // 1px border + 1 rem 
 }
 
 .usajobs-document[data-state="is-disabled"] {
-  // opacity: $layer-disabled;
-
   .usajobs-document__figure {
     &:before {
       content: '';

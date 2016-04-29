@@ -13402,16 +13402,19 @@ html {
   font-size: 5.9rem;
 }
 
-.usajobs-document--placeholder .usajobs-document__figure {
+.usajobs-document--placeholder .usajobs-document__figure,
+.usajobs-document--placeholder-docs .usajobs-document__figure {
   background-color: #205493;
   text-align: center;
 }
 
-.usajobs-document--placeholder .usajobs-document__figure:hover {
+.usajobs-document--placeholder .usajobs-document__figure:hover,
+.usajobs-document--placeholder-docs .usajobs-document__figure:hover {
   background-color: #0e243f;
 }
 
-.usajobs-document--placeholder__icon:before {
+.usajobs-document--placeholder__icon:before,
+.usajobs-document--placeholder-docs__icon:before {
   display: inline-block;
   font: normal normal normal 14px / 1 FontAwesome;
   font-size: inherit;
@@ -13424,20 +13427,28 @@ html {
   line-height: 20.7rem;
 }
 
-.usajobs-document--placeholder__icon.pdf:before {
+.usajobs-document--placeholder__icon.pdf:before,
+.usajobs-document--placeholder-docs__icon.pdf:before {
   content: "";
 }
 
-.usajobs-document--placeholder__icon.image:before {
+.usajobs-document--placeholder__icon.image:before,
+.usajobs-document--placeholder-docs__icon.image:before {
   content: "";
 }
 
-.usajobs-document--placeholder__icon.word:before {
+.usajobs-document--placeholder__icon.word:before,
+.usajobs-document--placeholder-docs__icon.word:before {
   content: "";
 }
 
-.usajobs-document--placeholder__icon.text:before {
+.usajobs-document--placeholder__icon.text:before,
+.usajobs-document--placeholder-docs__icon.text:before {
   content: "";
+}
+
+.usajobs-document--placeholder-docs .usajobs-document__controls {
+  min-height: 10.3rem;
 }
 
 .usajobs-document--thumbnail .usajobs-document__figure {
