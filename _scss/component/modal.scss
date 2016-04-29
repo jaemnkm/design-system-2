@@ -127,10 +127,12 @@ $modal-width-large: 930px;
 // Variations
 // ----------------------------------------------------------------------------
 
-.usajobs-modal--info {
+.usajobs-modal--error,
+.usajobs-modal--info,
+.usajobs-modal--success,
+.usajobs-modal--warning {
   .usajobs-modal__header {
     padding: 0;
-    border-bottom: 1px solid $color-primary-darker;
 
     .usajobs-alert {
       margin-top: 0;
@@ -146,5 +148,29 @@ $modal-width-large: 930px;
         padding: $size-default $size-M;
       }
     }
+  }
+}
+
+.usajobs-modal--error {
+  .usajobs-modal__header {
+    border-bottom: 1px solid $color-secondary-dark;
+  }
+}
+
+.usajobs-modal--info {
+  .usajobs-modal__header {
+    border-bottom: 1px solid $color-primary-darker;
+  }
+}
+
+.usajobs-modal--success {
+  .usajobs-modal__header {
+    border-bottom: 1px solid $color-green-dark;
+  }
+}
+
+.usajobs-modal--warning {
+  .usajobs-modal__header {
+    border-bottom: 1px solid $color-gold;
   }
 }
