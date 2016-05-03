@@ -234,3 +234,10 @@
   }
 }
 
+@mixin permaLink() {
+  color: $color-primary;
+
+  &:visited {
+    color: $color-primary;
+  }
+}
