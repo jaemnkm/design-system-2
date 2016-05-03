@@ -6,56 +6,186 @@ title: USAJOBS Design System
 
 <a class="skipnav" href="#main-content">Skip main navigation</a>
 
-<header role="banner">
+<header class="usajobs-site-header" role="banner" aria-label="header">
   <div class="usa-disclaimer">
-    <div class="usa-grid">
-      <span class="usa-disclaimer-official">
-        <img class="usa-flag_icon" alt="U.S. flag signifying that this is a United States federal government website" src="{{ site.baseurl }}/img/us_flag_small.png">
-        An official website of the United States government
-      </span>
-      <span class="usa-disclaimer-stage">This site is currently in alpha.</span>
+    <div class="usa-grid usajobs-disclaimer-official">
+      <img class="usa-flag_icon" alt="U.S. flag signifying that this is a United States federal government website" src="{{ site.baseurl }}/img/us_flag_small.png">
+      An official website of the United States Government
     </div>
+    <span class="usa-disclaimer-stage">This site is currently in alpha.</span>
   </div>
-
-  <section class="usa-banner">
-    <div class="usa-grid">
-      <div class="usa-banner-content" id="main-content">
-        <img class="usajobs-logo" alt="USAJOBS logo" src="{{ site.baseurl }}/img/logo/svg/red-2x.svg" />
-        <h1>USAJOBS Design System</h1>
-        <h2 class="usa-font-lead">
-          Setting the base visual language, components, and guidelines that help define the next generation of USAJOBS.
-        </h2>
-
-        <a class="usa-button usa-button-big" href="{{ site.baseurl}}/getting-started">
-          View the system
-        </a>
+  <nav class="usajobs-nav" role="navigation" aria-label="main navigation" data-object="nav">
+    <div class="usajobs-nav__body">
+      <div class="usajobs-nav__header-container">
+        <div class="usajobs-nav__header">
+          <div class="usajobs-nav__brand-container">
+            <a class="usajobs-nav__brand" href="/">
+              <span class="logo" title="USAJOBS logo"></span>
+            </a>
+          </div>
+          <div class="usajobs-nav__menu" id="usajobs-menu">
+          </div>
+        </div>
       </div>
     </div>
-  </section>
+  </nav>
 </header>
 
-<section class="usa-section usa-section-alt">
-  <div class="usa-grid">
-    <div class="usa-intro">
-      <p>This design system represents the start of the next generation of USAJOBS. A design system describes the base visual language, using UI elements and style guidelines, upon which the site can be built. It will also include examples and usage guidelines of new components.</p>
+<div class="usajobs-ds-home-banner">
+  <div class="usajobs-ds-home-banner__body">
+    <h1 class="usajobs-ds-home-banner__title">
+      USAJOBS Design System
+    </h1>
+    <p class="usajobs-ds-home-banner__desc">
+      The central source for the style and interaction guidelines for the next generation of USAJOBS.
+    </p>
+    <ul class="usajobs-ds-home-banner__actions">
+      <li>
+        <a class="usa-button usa-button-big usa-button-gray" href="{{ site.baseurl }}/getting-started/">
+          View the Design System
+        </a>
+      </li>
+      <li>
+        <a class="usa-button usa-button-big usa-button-outline-inverse" href="{{ site.repository.url }}">
+          View on GitHub
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
 
-      <p>Because the design system is brand new it also acts as a prototyping toolkit. This allows us to quickly explore new ideas in code and iterate on our designs. New projects within USAJOBS will leverage and potentially extend the design system further.</p>
+<div class="usajobs-shell">
+  <section class="usajobs-content-gutter">
+    <h2>Creating the next generation of USAJOBS</h2>
+    <p>This design system represents the start of the next generation of USAJOBS. A design system describes the base visual language, using UI elements and style guidelines, upon which the site can be built. It will also include examples and usage guidelines of new components.</p>
 
-      <p>The USAJOBS design system starts with the <a href="https://standards.usa.gov/">U.S. Web Design Standards</a> and extends them to meet the needs of the USAJOBS next generation project. This repo allows the team working on USAJOBS to:</p>
+    <h3>Rapid prototyping</h3>
+    <p>Because the design system is brand new it also acts as a prototyping toolkit. This allows us to quickly explore new ideas in code and iterate on our designs. New projects within USAJOBS will leverage and potentially extend the design system further.</p>
 
-      <ol>
-        <li>Document where we have intentionally deviated from an existing guildeline in the U.S. Web Design Standards and provide a platform for contributing back to those standards.</li>
-        <li>Document where we have unintentionally deviated from an existing guideline in the U.S. Web Design Standards and want to track getting back inline with the standards.</li>
-        <li>Design new components or elements that are not yet a part of the U.S. Web Design Standards. These components or elements may or may not be appropriate to contribute back to the standards given their potential for reuse elsewhere.</li>
-      </ol>
+    <h3>Based on the U.S. Web Design Standards</h3>
+    <p>The USAJOBS design system starts with the <a class="usajobs-permalink" href="https://standards.usa.gov/">U.S. Web Design Standards</a> and extends them to meet the needs of the USAJOBS next generation project. This repo allows the team working on USAJOBS to:</p>
+
+    <ol>
+      <li>Document where we have intentionally deviated from an existing guildeline in the U.S. Web Design Standards and provide a platform for contributing back to those standards.</li>
+      <li>Document where we have unintentionally deviated from an existing guideline in the U.S. Web Design Standards and want to track getting back inline with the standards.</li>
+      <li>Design new components or elements that are not yet a part of the U.S. Web Design Standards. These components or elements may or may not be appropriate to contribute back to the standards given their potential for reuse elsewhere.</li>
+    </ol>
+  </section>
+
+  <div class="usajobs-ds-home-research-pillars">
+    <h2 class="usajobs-ds-home-research-pillars__title">
+      Design Pillars: Grounded in research
+    </h2>
+    <p class="usajobs-ds-home-research-pillars__description">
+      USAJOBS joined forced with OPM’s Innovation Lab to conduct qualitative user interviews with applicants and HR specialists. From the research, we developed 6 design pillars to keep in mind as we improve USAJOBS.gov
+    </p>
+    <ul class="usajobs-ds-home-research-pillars__list">
+      <li class="usajobs-ds-home-research-pillars__pillar p1">
+        <div class="usajobs-ds-home-research-pillars__figure">
+          <div class="usajobs-ds-home-research-pillars__icon p1">
+            <i class="fa fa-compass"></i>
+          </div>
+        </div>
+        <div class="usajobs-ds-home-research-pillars__body">
+          <h4 class="usajobs-ds-home-research-pillars__pillar-title">
+            Design Pillar 1: Helping Hands
+          </h4>
+          <p class="usajobs-ds-home-research-pillars__pillar-desc">
+            Clearly guide applicants to the information they need to make confident job search and application decisions.
+          </p>
+        </div>
+      </li>
+      <li class="usajobs-ds-home-research-pillars__pillar p2">
+        <div class="usajobs-ds-home-research-pillars__figure">
+          <div class="usajobs-ds-home-research-pillars__icon p2">
+            <i class="fa fa-compass"></i>
+          </div>
+        </div>
+        <div class="usajobs-ds-home-research-pillars__body">
+          <h4 class="usajobs-ds-home-research-pillars__pillar-title">
+            Design Pillar 2: Keep It Simple
+          </h4>
+          <p class="usajobs-ds-home-research-pillars__pillar-desc">
+            Set clear application expectations and present a unified and simplified application process.
+          </p>
+        </div>
+      </li>
+      <li class="usajobs-ds-home-research-pillars__pillar p3">
+        <div class="usajobs-ds-home-research-pillars__figure">
+          <div class="usajobs-ds-home-research-pillars__icon p3">
+            <i class="fa fa-compass"></i>
+          </div>
+        </div>
+        <div class="usajobs-ds-home-research-pillars__body">
+          <h4 class="usajobs-ds-home-research-pillars__pillar-title">
+            Design Pillar 3: Where's Waldo
+          </h4>
+          <p class="usajobs-ds-home-research-pillars__pillar-desc">
+            Provide opportunities for applicants to showcase their unique qualities.
+          </p>
+        </div>
+      </li>
+      <li class="usajobs-ds-home-research-pillars__pillar p4">
+        <div class="usajobs-ds-home-research-pillars__figure">
+          <div class="usajobs-ds-home-research-pillars__icon p4">
+            <i class="fa fa-compass"></i>
+          </div>
+        </div>
+        <div class="usajobs-ds-home-research-pillars__body">
+          <h4 class="usajobs-ds-home-research-pillars__pillar-title">
+            Design Pillar 4: Speak my Language
+          </h4>
+          <p class="usajobs-ds-home-research-pillars__pillar-desc">
+            Convey information in a language that every applicant can understand.
+          </p>
+        </div>
+      </li>
+      <li class="usajobs-ds-home-research-pillars__pillar p5">
+        <div class="usajobs-ds-home-research-pillars__figure">
+          <div class="usajobs-ds-home-research-pillars__icon p5">
+            <i class="fa fa-compass"></i>
+          </div>
+        </div>
+        <div class="usajobs-ds-home-research-pillars__body">
+          <h4 class="usajobs-ds-home-research-pillars__pillar-title">
+            Design Pillar 5: One Stop Shop
+          </h4>
+          <p class="usajobs-ds-home-research-pillars__pillar-desc">
+            Serve as the most trusted resource for Federal hiring information.
+          </p>
+        </div>
+      </li>
+      <li class="usajobs-ds-home-research-pillars__pillar p6">
+        <div class="usajobs-ds-home-research-pillars__figure">
+          <div class="usajobs-ds-home-research-pillars__icon p6">
+            <i class="fa fa-compass"></i>
+          </div>
+        </div>
+        <div class="usajobs-ds-home-research-pillars__body">
+          <h4 class="usajobs-ds-home-research-pillars__pillar-title">
+            Design Pillar 6: Looks Matter
+          </h4>
+          <p class="usajobs-ds-home-research-pillars__pillar-desc">
+            Provide a thoughtfully crafted experience that helps users accomplish their intended goals.
+          </p>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<footer class="usa-footer usa-footer-big usajobs-footer--v1" role="contentinfo" aria-label="footer" data-object="footer">
+  <div class="usa-grid usa-footer-return-to-top">
+    <a href="#footer">Return to top</a>
+  </div>
+  <div class="usa-footer-secondary_section usa-footer-big-secondary-section">
+    <div class="usa-grid">
+      <div class="usa-footer-logo usa-width-one-half">
+        <span class="logo"></span>
+        <p class="usajobs-footer--v1__note">
+          USAJOBS is a <a href="https://www.opm.gov">United States Office of Personnel Management</a> website.
+        </p>
+      </div>
     </div>
   </div>
-</section>
-
-<section class="usa-section">
-  <div class="usa-grid">
-    <div class="usa-cta">
-      <a class="usa-button usa-button-gray" href="{{ site.repository.url }}">View on GitHub</a>
-    </div>
-  </div>
-</section>
+</footer>
