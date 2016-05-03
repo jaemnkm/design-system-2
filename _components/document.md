@@ -495,7 +495,7 @@ lead: A way to upload and view documents.
             </li>
           </ul>
           <div class="usajobs-document__searchable">
-            <input id="document-11-searchable" type="checkbox" name="document-11-searchable" value="document-11-searchable">
+            <input id="document-11-searchable" type="checkbox" name="document-11-searchable" value="document-11-searchable" disabled>
             <label for="document-11-searchable" class="usajobs-document__searchable-label">
               Searchable
             </label>
