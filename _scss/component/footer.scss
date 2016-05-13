@@ -1,13 +1,7 @@
 // Footer
 
-@import 'lib/bourbon/bourbon';
-@import 'lib/neat/neat';
+@import '../base-shared';
 @import "font-awesome/font-awesome";
-@import 'core/variables';
-@import 'base/variables';
-@import 'base/utilities';
-@import 'base/breakpoints';
-@import 'element/typography';
 
 .usajobs-footer--v1,
 .usajobs-footer--v2,

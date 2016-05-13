@@ -1,14 +1,9 @@
 // Navigation
 
-@import 'lib/bourbon/bourbon';
-@import 'lib/neat/neat';
-@import 'lib/jquery-ui/jquery-ui';
-@import 'lib/jquery-ui/jquery-ui.structure';
-@import 'core/variables';
-@import 'base/variables';
-@import 'base/utilities';
-@import 'base/accessibility';
-@import 'base/breakpoints';
+@import '../base-shared';
+
+@import 'vendor/jquery-ui/jquery-ui';
+@import 'vendor/jquery-ui/jquery-ui.structure';
 
 $logo_img_height-S: 36px;
 $logo_img_height-L: 45px;

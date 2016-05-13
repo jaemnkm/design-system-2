@@ -1,12 +1,7 @@
 // JOA - Actions (Apply, print, share, save)
 
-@import 'lib/bourbon/bourbon';
-@import 'lib/neat/neat';
+@import '../base-shared';
 @import "font-awesome/font-awesome";
-@import 'core/variables';
-@import 'base/variables';
-@import 'base/utilities';
-@import 'base/breakpoints';
 
 .usajobs-joa-actions {
   @include clearfix();

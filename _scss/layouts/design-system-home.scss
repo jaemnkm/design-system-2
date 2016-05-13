@@ -1,11 +1,6 @@
 // Layouts: Design System Home
 
-@import 'lib/bourbon/bourbon';
-@import 'lib/neat/neat';
-@import 'core/variables';
-@import 'base/utilities';
-@import 'base/variables';
-@import 'base/breakpoints';
+@import '../base-shared';
 @import 'shared';
 
 .usajobs-ds-home {

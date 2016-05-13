@@ -8,6 +8,17 @@ html {
   box-sizing: inherit;
 }
 
+.usajobs-assistive-text {
+  position: absolute !important;
+  margin: -1px !important;
+  border: 0 !important;
+  padding: 0 !important;
+  width: 1px !important;
+  height: 1px !important;
+  overflow: hidden !important;
+  clip: rect(0 0 0 0) !important;
+}
+
 .usa-site-header {
   background-color: #ffffff;
   border-bottom: 1px solid #aeb0b5;
@@ -87,7 +98,7 @@ html {
 
 .usa-site-header .usa-site-navbar .usa-button-list li {
   display: inline;
-  font-family: "Source Sans Pro", "Helvetica", "Arial", sans-serif;
+  font-family: "Source Sans Pro", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
 }
 
 .usa-site-header .usa-site-navbar .usa-button-list li:last-child .usa-button {
@@ -827,7 +838,7 @@ code[class*="language-"], pre[class*="language-"] {
 }
 
 .serif-robust.serif-body .usa-font-example p {
-  font-family: "Merriweather", "Georgia", "Times New Roman", serif;
+  font-family: "Merriweather", "Georgia", "Cambria", "Times New Roman", "Times", serif;
   font-size: 1.5rem;
   line-height: 1.7;
 }
@@ -842,7 +853,7 @@ code[class*="language-"], pre[class*="language-"] {
 }
 
 .sans-style h1, .sans-style h2, .sans-style h3, .sans-style h4, .sans-style h5, .sans-style h6 {
-  font-family: "Source Sans Pro", "Helvetica", "Arial", sans-serif;
+  font-family: "Source Sans Pro", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
 }
 
 .sans-style h1 {
@@ -879,20 +890,20 @@ code[class*="language-"], pre[class*="language-"] {
 }
 
 .sans-style .usa-font-lead {
-  font-family: "Source Sans Pro", "Helvetica", "Arial", sans-serif;
+  font-family: "Source Sans Pro", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
   font-size: 2.2rem;
   font-weight: 300;
   line-height: 1.5;
 }
 
 .sans-style.serif-body .usa-font-example p {
-  font-family: "Merriweather", "Georgia", "Times New Roman", serif;
+  font-family: "Merriweather", "Georgia", "Cambria", "Times New Roman", "Times", serif;
   font-size: 1.5rem;
   line-height: 1.7;
 }
 
 .sans-style.serif-body .usa-font-example .usa-font-lead {
-  font-family: "Source Sans Pro", "Helvetica", "Arial", sans-serif;
+  font-family: "Source Sans Pro", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
   font-size: 2.2rem;
   font-weight: 300;
   line-height: 1.5;
@@ -903,7 +914,7 @@ code[class*="language-"], pre[class*="language-"] {
 }
 
 .serif-sans-minor h6 {
-  font-family: "Source Sans Pro", "Helvetica", "Arial", sans-serif;
+  font-family: "Source Sans Pro", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
 }
 
 .usa-disclaimer-stage {

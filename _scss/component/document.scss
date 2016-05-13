@@ -1,11 +1,7 @@
 // Document
 
-@import 'lib/bourbon/bourbon';
-@import "font-awesome/font-awesome";
-@import 'core/variables';
-@import 'base/variables';
-@import 'base/utilities';
-@import 'base/breakpoints';
+@import '../base-shared';
+@import 'font-awesome/font-awesome';
 
 // Desired aspect ratio is 2:3 but in reality most thumbnails are only 208px tall
 // Retina dimensions: 318x
@@ -166,7 +162,7 @@ $figure-height: $thumbnail-img-height + rem(1px) + 1rem ; // 1px border + 1 rem 
     + label.usajobs-document__selector {
       margin: 0;
 
-      &:before {
+      &::before {
         background-image: none;
         box-shadow: 0 0 0 2px $color-white, 0 0 0 3px $color-primary-darker;
         height: 2rem;
@@ -252,7 +248,7 @@ $figure-height: $thumbnail-img-height + rem(1px) + 1rem ; // 1px border + 1 rem 
     }
   }
 
-  &__icon:before {
+  &__icon::before {
     @include fa-icon();
     content: $fa-var-file;
     color: $color-white;
@@ -260,23 +256,23 @@ $figure-height: $thumbnail-img-height + rem(1px) + 1rem ; // 1px border + 1 rem 
     line-height: $figure-height - $view-height - 1rem;
   }
 
-  &__icon.pdf:before {
+  &__icon.pdf::before {
     content: $fa-var-file-pdf-o;
   }
 
-  &__icon.image:before {
+  &__icon.image::before {
     content: $fa-var-file-image-o;
   }
 
-  &__icon.word:before {
+  &__icon.word::before {
     content: $fa-var-file-word-o;
   }
 
-  &__icon.text:before {
+  &__icon.text::before {
     content: $fa-var-file-text-o;
   }
 
-  &__icon.builder:before {
+  &__icon.builder::before {
     content: $fa-var-file-text;
   }
 }
