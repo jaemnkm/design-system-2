@@ -1,12 +1,7 @@
 // Home - Reveal - Show all, more, next
 
-@import 'lib/bourbon/bourbon';
-@import 'lib/neat/neat';
-@import "font-awesome/font-awesome";
-@import 'core/variables';
-@import 'base/variables';
-@import 'base/utilities';
-@import 'base/breakpoints';
+@import '../base-shared';
+@import 'font-awesome/font-awesome';
 @import '../home-variables';
 
 .usajobs-show-more,
@@ -24,19 +19,19 @@
       color: $color-base;
     }
 
-    &:after {
+    &::after {
       @include fa-icon();
       font-weight: bold;
     }
 
     &[aria-expanded=false] {
-      &:after {
+      &::after {
         content: $fa-var-angle-down;
       }
     }
 
     &[aria-expanded=true] {
-      &:after {
+      &::after {
         content: $fa-var-angle-up;
       }
     }

@@ -1,13 +1,6 @@
 // JOA Header
 
-@import 'lib/bourbon/bourbon';
-@import 'lib/neat/neat';
-@import "font-awesome/font-awesome";
-@import 'core/variables';
-@import 'base/variables';
-@import 'base/utilities';
-@import 'base/breakpoints';
-@import 'element/typography';
+@import '../base-shared';
 
 .usajobs-joa-header {
   padding-top: $size-default;

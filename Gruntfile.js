@@ -29,13 +29,16 @@ module.exports = function(grunt) {
           sassDir: '_scss',
           cssDir: '_site/css',
           includePaths: [
-            'library/assets/_scss/',
+            'node_modules/bourbon/app/assets/stylesheets/',
+            'node_modules/bourbon-neat/app/assets/stylesheets/',
+            'node_modules/uswds/src/stylesheets/',
+            'node_modules/uswds/src/stylesheets/lib/',
             '_scss/'
           ],
         },
         files: [
           {
-            src: '_scss/all.scss',
+            src: '_scss/all-usajobs.scss',
             dest: 'css/usajobs-design-system-base.css'
           },
           {
@@ -64,6 +67,16 @@ module.exports = function(grunt) {
         ]
       }
     },
+    scsslint: {
+      options: {
+        bundleExec: true
+      },
+      dist: {
+        src: [
+          '_scss/component/*.scss'
+        ]
+      }
+    },
     autoprefixer: {
       options: {
         map: true, // Use and update the sourcemap
@@ -86,7 +99,7 @@ module.exports = function(grunt) {
       js_base: {
         src: [
           'js/vendor/modernizr.js',
-          'library/assets/js/vendor/jquery-1.11.3.min.js',
+          'node_modules/jquery/dist/jquery.min.js',
           'js/vendor/jquery.ba-throttle-debounce.min.js',
           'js/vendor/jquery-ui.min.js',
           'js/base.js'
@@ -194,6 +207,6 @@ module.exports = function(grunt) {
 
   grunt.registerTask('serve', ['concurrent:serve']);
   grunt.registerTask('build', ['shell:jekyllBuild', 'css', 'js']);
-  grunt.registerTask('css', ['sass', 'autoprefixer', 'cssmin']);
+  grunt.registerTask('css', ['sass', 'scsslint', 'autoprefixer', 'cssmin']);
   grunt.registerTask('js', ['jshint:all', 'concat']);
 };

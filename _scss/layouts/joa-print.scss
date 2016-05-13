@@ -1,11 +1,6 @@
 // JOA Print styles
 
-@import 'lib/bourbon/bourbon';
-@import 'lib/neat/neat';
-@import 'core/variables';
-@import 'base/variables';
-@import 'base/utilities';
-@import 'base/breakpoints';
+@import '../base-shared';
 
 @media print {
   @import 'joa-print-dev';

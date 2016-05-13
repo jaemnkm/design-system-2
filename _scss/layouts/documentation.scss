@@ -1,12 +1,7 @@
 // Layouts: Documentation
 // Based off of U.S. Web Design Standards Styleguide
 
-@import 'lib/bourbon/bourbon';
-@import 'lib/neat/neat';
-@import 'core/variables';
-@import 'base/utilities';
-@import 'base/variables';
-@import 'base/breakpoints';
+@import '../base-shared';
 @import 'shared';
 
 // Navigation ------------- //

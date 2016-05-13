@@ -10,7 +10,7 @@ $body-padding: $size-M;
   background-color: $color;
   border-color: $color;
 
-  .usajobs-alert__icon:after {
+  .usajobs-alert__icon::after {
     content: $icon;
     color: $color;
   }
@@ -47,7 +47,7 @@ $body-padding: $size-M;
     width: $icon-width;
     height: $icon-width;
 
-    &:after {
+    &::after {
       position: absolute;
       top: 15%;
       left: 50%;
@@ -81,11 +81,11 @@ $body-padding: $size-M;
   }
 
   &__body {
-    @include calc(width, "100% - " ($icon-width + $icon-padding + $body-padding));
+    @include calc(width, '100% - ' ($icon-width + $icon-padding + $body-padding));
+  }
 
-    .lt-ie9 & {
-      width: 75%;
-    }
+  &__body .lt-ie9 & {
+    width: 75%;
   }
 }
 
@@ -106,8 +106,8 @@ $body-padding: $size-M;
 .usajobs-alert--success {
   @include alert($color-green-dark, $fa-var-check);
 
-  .usajobs-alert__icon:after {
-    margin-left: -#{$size-default)};
+  .usajobs-alert__icon::after {
+    margin-left: -#{$size-default};
   }
 }
 
