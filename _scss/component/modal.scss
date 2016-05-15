@@ -1,7 +1,7 @@
 // Modal
 
 @import '../base-shared';
-@import "font-awesome/font-awesome";
+@import 'font-awesome/font-awesome';
 
 $modal-width-medium: 600px;
 $modal-width-large: 930px;
@@ -45,7 +45,7 @@ $modal-width-large: 930px;
     width: 100%;
     margin: 0;
     z-index: $layer-modal-backdrop;
-    background-color: rgba(0,0,0, 0.38); // this acts as the backdrop
+    background-color: rgba(0, 0, 0, 0.38); // this acts as the backdrop
     transition: opacity $duration-slow linear;
   }
 
@@ -67,9 +67,9 @@ $modal-width-large: 930px;
   &__content {
     position: relative;
     background-color: $color-white;
-    border: 1px solid rgba(70,70,70, .14);
+    border: 1px solid rgba(70, 70, 70, .14);
     border-radius: $size-base;
-    box-shadow: 0 3px 6px rgba(0,0,0, 0.29);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.29);
     background-clip: padding-box;
     outline: 0;
   }

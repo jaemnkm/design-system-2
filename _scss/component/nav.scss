@@ -64,8 +64,8 @@ $nav_item_height: 17px + 26.5px;
       display: inline-block;
       height: rem(36px);
       width: rem(150px);
-      background-image: url("../img/logo/png/red-2x.png");
-      background-image: url("../img/logo/svg/red-2x.svg");
+      background-image: url('../img/logo/png/red-2x.png');
+      background-image: url('../img/logo/svg/red-2x.svg');
       background-repeat: no-repeat;
 
       @include media($ML) {
@@ -110,8 +110,8 @@ $nav_item_height: 17px + 26.5px;
     margin: 0;
     padding: 0;
 
-    &:before,
-    &:after {
+    &::before,
+    &::after {
       content: none;
     }
 
@@ -134,7 +134,7 @@ $nav_item_height: 17px + 26.5px;
 
   &__section-link {
     display: block;
-    padding: (($logo_height-S - 40px) /2) $size-S;
+    padding: (($logo_height-S - 40px) / 2) $size-S;
     line-height: 1;
     text-align: center;
     @include transition(all $duration-fast linear);
@@ -146,7 +146,7 @@ $nav_item_height: 17px + 26.5px;
     }
 
     @include media($ML) {
-      padding: rem(($logo_height-L - 40px) /2) $size-M;
+      padding: rem(($logo_height-L - 40px) / 2) $size-M;
     }
 
     &:visited {
@@ -177,7 +177,7 @@ $nav_item_height: 17px + 26.5px;
     display: none;
     position: absolute;
     left: 0;
-    right:0;
+    right: 0;
     margin: 0;
     padding: $size-base 0;
     background-color: $color-gray-lightest;
@@ -198,8 +198,8 @@ $nav_item_height: 17px + 26.5px;
         margin: 0;
       }
 
-      &:before,
-      &:after {
+      &::before,
+      &::after {
         content: none;
         margin: 0;
       }
@@ -212,7 +212,7 @@ $nav_item_height: 17px + 26.5px;
         display: block;
         width: 100%;
         clear: both;
-        padding: $size-S $size-M $size-S $size-M;
+        padding: $size-S $size-M;
         white-space: nowrap;
       }
     }
@@ -233,6 +233,7 @@ $nav_item_height: 17px + 26.5px;
     @include media($M) {
       padding-bottom: $size-S;
     }
+
     @include media($ML) {
       padding-left: $size-M;
       padding-right: $size-M;
@@ -279,6 +280,7 @@ $nav_item_height: 17px + 26.5px;
     @include media($M) {
       @include span-columns(6, 6);
     }
+
     @include media($MLL) {
       @include span-columns(2, 12);
       @include omega();
@@ -354,117 +356,3 @@ ul.ui-autocomplete {
     background-color: $color-primary-alt-lightest;
   }
 }
-
-/*
-.usajobs-nav--v1B,
-.usajobs-nav--v1C {
-  @include media($M-down) {
-    &__brand-container {
-      float: none;
-      margin-right: 0;
-    }
-
-    &__menu {
-      float: none;
-
-      ul {
-        text-align: left;
-      }
-    }
-
-    &__help {
-      display: inline-block;
-    }
-
-    &__section-link {
-      line-height: $base-line-height;
-      min-height: rem(98px);
-    }
-  }
-}
-
-.usajobs-nav--v1B {
-  @include media($M-down) {
-    &__menu-container {
-      float: left;
-      width: 33.333333%;
-    }
-  }
-}
-
-.usajobs-nav--v1C {
-  @include media($M-down) {
-    &__brand {
-      padding-left: 0;
-      text-align: center;
-    }
-
-    &__menu-container {
-      float: left;
-      width: 25%;
-    }
-  }
-}
-
-.usajobs-nav--v1D {
-  @include media($M-down) {
-    &__brand-container {
-      float: none;
-      margin-right: 0;
-    }
-
-    &__menu-container {
-      display: block;
-      border-top: 1px solid $color-gray-lighter;
-      clear: left;
-    }
-
-    &__menu {
-      float: none;
-      height: auto;
-
-      ul {
-        text-align: left;
-      }
-    }
-
-    &__account &__section-link {
-      float: left;
-      width: 50%;
-    }
-
-    &__help {
-      display: block;
-    }
-
-    &__section-link {
-      text-align: left;
-      line-height: $base-line-height;
-
-      .fa {
-        display: inline-block;
-        font-size: $h4-font-size;
-      }
-    }
-  }
-  @include media($M) {
-    &__account &__section-link {
-      display: inline-block;
-      float: none;
-      width: auto;
-    }
-  }
-}
-
-.usajobs-nav--v1E {
-  &__brand {
-    padding-top: $size-SM;
-    padding-bottom: $size-S;
-
-    .logo {
-      width: 11rem;
-      height: 2.7rem;
-    }
-  }
-}
-*/

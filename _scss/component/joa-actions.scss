@@ -1,7 +1,7 @@
 // JOA - Actions (Apply, print, share, save)
 
 @import '../base-shared';
-@import "font-awesome/font-awesome";
+@import 'font-awesome/font-awesome';
 
 .usajobs-joa-actions {
   @include clearfix();
@@ -19,6 +19,7 @@
     @include media($SM) {
       width: 80%;
     }
+
     @include media($L) {
       width: 100%;
     }
@@ -65,7 +66,7 @@
     }
   }
 
-  &__save:before {
+  &__save::before {
     @include fa-icon();
     content: $fa-var-star-o;
     color: $color-gold;
@@ -73,7 +74,7 @@
     vertical-align: middle;
   }
 
-  &__save.is-saved:before {
+  &__save.is-saved::before {
     content: $fa-var-star;
   }
 }

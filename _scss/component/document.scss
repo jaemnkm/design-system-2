@@ -10,7 +10,7 @@ $thumbnail-img-width: rem(159px);
 $thumbnail-img-height: rem(239px);
 $view-height: rem(33px);
 $doc-width: $thumbnail-img-width + rem(2px) + $size-base + $size-base;  // 1px border & .5 rem padding on either side
-$figure-height: $thumbnail-img-height + rem(1px) + 1rem ; // 1px border + 1 rem padding top
+$figure-height: $thumbnail-img-height + rem(1px) + 1rem; // 1px border + 1 rem padding top
 
 .usajobs-document {
   position: relative;
@@ -43,7 +43,7 @@ $figure-height: $thumbnail-img-height + rem(1px) + 1rem ; // 1px border + 1 rem 
     background-color: $color-white;
     text-align: center;
     border-top: 1px solid $color-gray-lighter;
-    box-shadow: 0px 0px 8px 2px rgba(0, 0, 0, 0.07)
+    box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.07);
   }
 
   a.usajobs-document__view,
@@ -225,7 +225,7 @@ $figure-height: $thumbnail-img-height + rem(1px) + 1rem ; // 1px border + 1 rem 
     color: $color-primary;
 
     &:hover {
-      background-color: rgba(0,0,0, 0.2);
+      background-color: rgba(0, 0, 0, 0.2);
       transition: all $duration-fast;
     }
   }
@@ -294,7 +294,7 @@ $figure-height: $thumbnail-img-height + rem(1px) + 1rem ; // 1px border + 1 rem 
     position: relative;
   }
 
-  .usajobs-document__figure-overlay:after {
+  .usajobs-document__figure-overlay::after {
     content: '\A';
     position: absolute;
     top: 0;
@@ -306,7 +306,7 @@ $figure-height: $thumbnail-img-height + rem(1px) + 1rem ; // 1px border + 1 rem 
     transition: all $duration-fast;
   }
 
-  .usajobs-document__figure-overlay:hover:after {
+  .usajobs-document__figure-overlay:hover::after {
     opacity: 1;
   }
 }
@@ -317,14 +317,14 @@ $figure-height: $thumbnail-img-height + rem(1px) + 1rem ; // 1px border + 1 rem 
   .usajobs-document__figure {
     background-color: $color-gray-light;
 
-    &:before {
+    &::before {
       content: 'Your file is loading';
       position: absolute;
       top: 80%;
       left: 12%;
     }
 
-    &:after {
+    &::after {
       position: absolute;
       top: 50%;
       left: 50%;
@@ -333,8 +333,7 @@ $figure-height: $thumbnail-img-height + rem(1px) + 1rem ; // 1px border + 1 rem 
       font-size: rem(50px);
       content: $fa-var-circle-o-notch;
       color: $color-green;
-      -webkit-animation: fa-spin 2s infinite linear;
-      animation: fa-spin 2s infinite linear;
+      @include animation(fa-spin 2s infinite linear);
     }
   }
 
@@ -352,14 +351,14 @@ $figure-height: $thumbnail-img-height + rem(1px) + 1rem ; // 1px border + 1 rem 
   .usajobs-document__figure {
     background-color: $color-gray-light;
 
-    &:before {
+    &::before {
       content: 'This file is corrupt. Please re-upload.';
       position: absolute;
       top: 60%;
       left: 15%;
     }
 
-    &:after {
+    &::after {
       position: absolute;
       top: 35%;
       left: 50%;
@@ -382,7 +381,7 @@ $figure-height: $thumbnail-img-height + rem(1px) + 1rem ; // 1px border + 1 rem 
 
 .usajobs-document[data-state="is-disabled"] {
   .usajobs-document__figure {
-    &:before {
+    &::before {
       content: '';
       position: absolute;
       top: 0;
@@ -402,7 +401,7 @@ $figure-height: $thumbnail-img-height + rem(1px) + 1rem ; // 1px border + 1 rem 
     opacity: 0.4;
   }
 
-  .usajobs-document__figure-overlay:hover:after {
+  .usajobs-document__figure-overlay:hover::after {
     opacity: 0;
   }
 
@@ -423,7 +422,7 @@ $figure-height: $thumbnail-img-height + rem(1px) + 1rem ; // 1px border + 1 rem 
     }
   }
 
-  .usajobs-document__figure-overlay:hover:after {
+  .usajobs-document__figure-overlay:hover::after {
     opacity: 0;
   }
 }

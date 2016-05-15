@@ -1,7 +1,7 @@
 // Footer
 
 @import '../base-shared';
-@import "font-awesome/font-awesome";
+@import 'font-awesome/font-awesome';
 
 .usajobs-footer--v1,
 .usajobs-footer--v2,
@@ -50,7 +50,7 @@
       padding-left: 0;
     }
 
-    &:before {
+    &::before {
       @include fa-icon();
       @include transition(all $duration-fast ease);
       @include transform-style(preserve-3d);
@@ -72,7 +72,7 @@
   }
 
   .usa-footer-primary-section .usa-footer-primary-content .usa-footer-primary-link[data-state="is-closed"] {
-    &:before {
+    &::before {
       @include fa-icon();
       content: $fa-var-chevron-right;
       top: rem(37px);
@@ -83,8 +83,9 @@
       }
     }
   }
+
   .usa-footer-primary-section .usa-footer-primary-content .usa-footer-primary-link[data-state="is-open"] {
-    &:before {
+    &::before {
       @include fa-icon();
       content: $fa-var-chevron-right;
       @include fa-icon-rotate(90deg, 1);
@@ -151,8 +152,8 @@
     display: inline-block;
     height: rem(36px);
     width: rem(150px);
-    background-image: url("../img/logo/png/white-2x.png");
-    background-image: url("../img/logo/svg/white-2x.svg");
+    background-image: url('../img/logo/png/white-2x.png');
+    background-image: url('../img/logo/svg/white-2x.svg');
     background-repeat: no-repeat;
 
     @include media($ML) {
@@ -273,6 +274,7 @@
     @include media($M) {
       @include span-columns(3, 6);
     }
+
     @include media($MLL) {
       @include span-columns(4, 12);
     }
@@ -282,6 +284,7 @@
     @include media($M) {
       @include omega();
     }
+
     @include media($MLL) {
       // grrr, the Neat grid automatically sets the last child to margin-right: 0
       // given the way we have split the grid into 2 then 4 columns the work around

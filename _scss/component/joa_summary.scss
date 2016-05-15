@@ -21,12 +21,12 @@
   .detail {
     margin: 0;
 
-    li:before {
+    li::before {
       content: '';
       padding-right: 0;
     }
 
-    li:after {
+    li::after {
       margin-bottom: 2px;
     }
 
