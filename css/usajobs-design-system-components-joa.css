@@ -438,7 +438,8 @@ html {
 :root .fa-rotate-270,
 :root .fa-flip-horizontal,
 :root .fa-flip-vertical {
-  filter: none;
+  -webkit-filter: none;
+          filter: none;
 }
 
 .fa-stack {
@@ -3081,7 +3082,7 @@ html {
   text-decoration: none;
 }
 
-.usajobs-joa-actions__save:before {
+.usajobs-joa-actions__save::before {
   display: inline-block;
   font: normal normal normal 14px/1 FontAwesome;
   font-size: inherit;
@@ -3094,7 +3095,7 @@ html {
   vertical-align: middle;
 }
 
-.usajobs-joa-actions__save.is-saved:before {
+.usajobs-joa-actions__save.is-saved::before {
   content: "";
 }
 
@@ -3160,5 +3161,4 @@ html {
     margin-right: 0;
   }
 }
-
 /*# sourceMappingURL=usajobs-design-system-components-joa.css.map */

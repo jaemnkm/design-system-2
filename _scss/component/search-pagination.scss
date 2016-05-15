@@ -16,11 +16,12 @@
       display: inline-block;
     }
 
-    &:before {
+    &::before {
       content: '';
       padding: 0;
     }
-    &:after {
+
+    &::after {
       margin-bottom: 0;
     }
   }
@@ -29,6 +30,8 @@
     a {
       display: block;
       padding: $size-base $size-default;
+      text-decoration: none;
+      line-height: 1;
 
       @include media($M) {
         padding: $size-S $size-SM;
@@ -36,6 +39,12 @@
 
       @include media($L) {
         padding: $size-S $size-M;
+      }
+
+      &:hover {
+        color: $color-primary-darker;
+        font-weight: bold;
+        text-decoration: none;
       }
     }
 
@@ -55,17 +64,6 @@
         }
       }
     }
-
-    a {
-      text-decoration: none;
-      line-height: 1;
-
-      &:hover {
-        color: $color-primary-darker;
-        font-weight: bold;
-        text-decoration: none;
-      }
-    }
   }
 
   &__previous-page-container,
@@ -82,7 +80,7 @@
       width: auto;
     }
 
-    &:before {
+    &::before {
       content: '';
     }
 
@@ -102,6 +100,7 @@
       @include media($M) {
         padding: $size-S $size-SM;
       }
+
       @include media($L) {
         padding: $size-S $size-M;
       }
@@ -116,11 +115,12 @@
 
   &__previous-page-container,
   &__next-page-container {
-    &:before {
+    &::before {
       content: '';
       padding: 0;
     }
-    &:after {
+
+    &::after {
       margin-bottom: 0;
     }
   }
@@ -137,19 +137,20 @@
       float: right;
       @include omega();
     }
+
     @include media($M) {
       float: none;
       margin-left: $size-base;
     }
   }
 
-  &__previous-page:before {
+  &__previous-page::before {
     @include fa-icon();
     content: $fa-var-chevron-left;
     padding-right: $size-base;
   }
 
-  &__next-page:after {
+  &__next-page::after {
     @include fa-icon();
     content: $fa-var-chevron-right;
     padding-left: $size-base;
