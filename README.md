@@ -59,32 +59,27 @@ To view and work on the site run:
 $ npm start
 ```
 
-This will perform the necessary Jekyll build, generate concatenated CSS and JS files, serve the site, and watch for changes to Sass and JS files. You should now be able to visit `http://127.0.0.1:4000/` and view the design system locally.
+This will perform the necessary Jekyll build, generate concatenated CSS and JS files, serve the site, and watch for changes to Sass and JS files. You should now be able to visit `http://127.0.0.1:4001/` and view the design system locally.
 
 Questions or need help with setup? Feel free to open an issue here [https://github.com/USAJOBS/design-system/issues](https://github.com/USAJOBS/design-system/issues).
 
 ### How to use this repo in projects
 
-We will create a new repo for each project that will incrementally redesign a portion of the USAJOBS site. Those project repos will include this repo as a git submodule. This allows the project to simply pull in new changes as they appear.
+We will create a new repo for each project that will incrementally redesign a portion of the USAJOBS site. Those project repos will depend on the usajobs-design-system node module. 
 
-#### How to submodule this repo
+If you have node installed on your machine, you can use npm to install the design system. Add usajobs-design-system to your project's package.json as a dependency:
 
-From the top level of your project repo:
+```shell
+npm install usajobs-design-system --save
+```
 
-1. `git submodule add git@github.com:USAJOBS/design-system.git library`
-2. `git commit`
+The package will be installed in ```node_modules/usajobs-design-system```.
 
-#### IMPORTANT: Don't make changes to the library in your project!
+The main Sass (SCSS) source file is here:
 
-Unfortunately, submodules don't allow for making changes to the submodule from within          another repo. Thus you must not make changes in the submodule. Git will discard your           changes and it may cause conflicts in your project. Do NOT make changes in the submodule!
-
-#### Picking up changes to this repo from your project
-
-From the top level of your project repo:
-
-1. `cd library`
-2. `git pull`
-3. `git commit`
+```shell
+_scss/all-usajobs.scss
+```
 
 ## Feedback
 
