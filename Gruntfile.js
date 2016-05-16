@@ -114,8 +114,8 @@ module.exports = function(grunt) {
       },
       js_docs: {
         src: [
-          'library/assets-styleguide/js/vendor/prism.js',
-          'library/assets-styleguide/js/styleguide.js'
+          'js/vendor/prism.js',
+          'js/vendor/uswds-styleguide.js'
         ],
         dest: 'js/usajobs-design-system-documentation.js'
       }
