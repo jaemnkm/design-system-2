@@ -13494,8 +13494,13 @@ html {
 }
 
 .usajobs-button_bar--slim .usajobs-button_bar__body {
-  padding: 0;
+  padding: 3rem 0;
   text-align: right;
+}
+
+.usajobs-button_bar--slim .usajobs-button_bar__body .usa-button,
+.usajobs-button_bar--slim .usajobs-button_bar__body .usa-button-big {
+  margin: 0;
 }
 
 .usajobs-button_bar--slim .usajobs-button_bar__save {

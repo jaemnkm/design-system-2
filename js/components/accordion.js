@@ -9,11 +9,17 @@ function Accordion($el) {
   var self = this;
   this.$root = $el;
   this.$root.on('click', 'button', function(ev) {
-    var expanded = JSON.parse($(this).attr('aria-expanded'));
-    ev.preventDefault();
-    self.hideAll();
-    if (!expanded) {
-      self.show($(this));
+    var action = $(this).data('button-action'),
+      expanded;
+
+    if (action != 'no-toggle') {
+      expanded = JSON.parse($(this).attr('aria-expanded'));
+      ev.preventDefault();
+      self.hideAll();
+
+      if (!expanded) {
+        self.show($(this));
+      }
     }
   });
 }
