@@ -124,3 +124,86 @@ lead: USAJOBS has adopted a different visual style to our alerts that deviate fr
   </div>
 </div>
 
+<div class="preview">
+  <h6 class="usa-heading-alt" id="alert-tip-single">Tip (Single)</h6>
+  <div class="usa-alert usajobs-alert usajobs-alert--tip" role="alert" data-object="alert">
+    <div class="usajobs-alert__figure">
+      <div class="usajobs-alert__icon">
+      </div>
+    </div>
+    <div class="usajobs-alert__body">
+      <h4 class="usajobs-alert__title">
+        Current or former federal employee?
+      </h4>
+      <p class="usajobs-alert__text">
+        If so, we recommend you upload your SF-50. Many jobs require the SF-50 to verify your federal service.
+      </p>
+      <div class="usajobs-alert__footer">
+        <a href="#add-doc" class="usa-button usa-button-primary">Upload Documents</a>
+      </div>
+    </div>
+    <button class="usajobs-alert__close" data-behavior="alert.close" >
+      <span class="usajobs-assistive-text">Close</span>
+    </button>
+  </div>
+
+  <h6 class="usa-heading-alt" id="alert">Tip (Multiple)</h6>
+  <div class="usa-alert usajobs-alert usajobs-alert--tip" role="alert" data-object="alert">
+    <div class="usajobs-alert__figure">
+      <div class="usajobs-alert__icon">
+      </div>
+    </div>
+    <div class="usajobs-alert__body"> 
+      <div id="alert-1" aria-hidden="false">
+        <p class="usajobs-alert__count">1 of 2 Tips</p>
+        <h4 class="usajobs-alert__title">
+          Do you want to claim veterans' preference?
+        </h4>
+        <p class="usajobs-alert__text">
+          If so, we recommend you upload your DD-214 - it's required if you want to claim veterans' preference.
+        </p>
+        <div class="usajobs-alert__footer">
+          <a href="#next-tip" class="usa-button usa-button-outline" data-behavior="alert.skip" aria-controls="alert-1" data-target-next="alert-2">Skip</a>
+          <a href="#add-doc" class="usa-button usa-button-primary">Upload Documents</a>
+        </div>
+      </div>
+      <div id="alert-2" aria-hidden="true">
+        <p class="usajobs-alert__count">2 of 2 Tips</p>
+        <h4 class="usajobs-alert__title">
+          Do you want to claim veterans' preference?
+        </h4>
+        <p class="usajobs-alert__text">
+          If so, we recommend you upload your SF-15 - it's required if you want to claim veterans' preference.
+        </p>
+        <div class="usajobs-alert__footer">
+          <a href="#next-tip" class="usa-button usa-button-outline" data-behavior="alert.back" aria-controls="alert-2" data-target-previous="alert-1">Back</a>
+          <a href="#add-doc" class="usa-button usa-button-primary">Upload Documents</a>
+        </div>
+      </div>
+    </div>
+    <button class="usajobs-alert__close" data-behavior="alert.close" >
+      <span class="usajobs-assistive-text">Close</span>
+    </button>
+  </div>
+</div>
+
+<div class="usa-accordion-bordered usa-accordion-docs">
+  <button class="usa-button-unstyled usa-accordion-button"
+      aria-expanded="true" aria-controls="collapsible-0">
+    Documentation
+  </button>
+  <div id="collapsible-0" aria-hidden="false" class="usa-accordion-content">
+    <h4 class="usa-heading">Usability</h4>
+    <h5>When to use</h5>
+    <ul class="usa-content-list">
+      <li>To draw attention to a particular piece of functionality.</li>
+    </ul>
+    <h5>When to consider something else</h5>
+    <ul class="usa-content-list">
+      <li>A tip should not be used when one of the other <a href="{{ site.baseurl }}/form-controls/">contextual help elements</a> is more approriate.</li>
+      <li>A tip should not be used in place of an alert.</li>
+    </ul>
+  </div>
+</div>
+
+
