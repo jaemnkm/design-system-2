@@ -7,22 +7,15 @@ lead: USAJOBS uses the modal component to draw attention to actions that require
 
 <a href="{{ site.baseurl }}/getting-started/#maturity" class="usa-label maturity under_review">Under Review</a>
 
+<h4 class="usa-heading-alt">Default Modal</h4>
 <div class="preview">
-  <h6 class="usa-heading-alt">Default Modal</h6>
-  <a href="#modal-trigger" class="usa-button usajobs-button" data-object-trigger="modal" data-target="#modal-demo">Open</a>
-
-  <h6 class="usa-heading-alt">Modal - Info variation (v1)</h6>
-  <a href="#modal-trigger" class="usa-button usajobs-button" data-object-trigger="modal" data-target="#modal-info-demo">Open</a>
-
-  <h6 class="usa-heading-alt">Modal - Default with full form</h6>
-  <a href="#modal-trigger" class="usa-button usajobs-button" data-object-trigger="modal" data-target="#modal-wide-demo">Open</a>
-
+  <a href="#modal-trigger" class="usa-button usajobs-button" data-object-trigger="modal" data-target="#modal-demo">Open Default Modal</a>
 
   <div class="usajobs-modal" data-object="modal" data-state="is-closed" id="modal-default" aria-hidden="true" role="dialog" aria-labelledby="usajobs-modal-heading" aria-describedby="usajobs-modal-description">
     <div class="usajobs-modal__dialog">
       <div class="usajobs-modal__content">
         <div id="usajobs-modal-description" class="usajobs-assistive-text">
-          Beginning of a dialog window for the contact form. It begins with a heading 2
+          Beginning of a dialog window for the [form name] form. It begins with a heading 2
           called &quot;[Modal Header]&quot;. Escape will cancel and close the window.
         </div>
         <div class="usajobs-modal__header">
@@ -83,3 +76,68 @@ lead: USAJOBS uses the modal component to draw attention to actions that require
     </ul>
   </div>
 </div>
+
+<h4 class="usa-heading-alt">Alert variations</h4>
+<div class="preview">
+  <h6 class="usa-heading-alt">Modal - Info variation</h6>
+  <a href="#modal-trigger" class="usa-button usajobs-button" data-object-trigger="modal" data-target="#modal-info-demo">Open info modal</a>
+
+  <h6 class="usa-heading-alt">Modal - Delete account variation</h6>
+  <a href="#modal-trigger" class="usa-button usajobs-button usa-button-secondary" data-object-trigger="modal" data-target="#modal-delete-account">Delete Account</a>
+
+  <h6 class="usa-heading-alt">Modal - Delete document variation</h6>
+  <a href="#modal-trigger" class="usa-button usajobs-button usa-button-secondary" data-object-trigger="modal" data-target="#modal-delete-document">Delete Document</a>
+</div>
+
+<div class="usa-accordion-bordered usa-accordion-docs">
+  <button class="usa-button-unstyled usa-accordion-button"
+      aria-expanded="true" aria-controls="collapsible-0">
+    Documentation
+  </button>
+  <div id="collapsible-0" aria-hidden="false" class="usa-accordion-content">
+    <h4 class="usa-heading">Usability</h4>
+    <h5>When to use</h5>
+    <ul class="usa-content-list">
+      <li>When an action is required by the user before they may continue.</li>
+      <li>When it is necessary to redirect the user to another part of the site.</li> 
+    </ul>
+
+    <h4 class="usa-heading">Guidelines</h4>
+    <ul class="usa-content-list">
+      <li>These modals are simply containers for an <a href="{{site.baseurl}}/alerts/">alert</a>. Thus the modal should adhere to the guidelines for the appropriate alert.</li>
+      <li>Modals that manage destructive actions should be triggered by a <a href="{{site.baseurl}}/buttons/">red, secondary button</a> and should use the error alert style. However, unlike the deafult error alert these modals should allow the user to dismiss them.</a>
+    </ul>
+  </div>
+</div>
+
+<h4 class="usa-heading-alt">Form variations</h4>
+<div class="preview">
+  <h6 class="usa-heading-alt">Modal - Default with full form</h6>
+  <a href="#modal-trigger" class="usa-button usajobs-button" data-object-trigger="modal" data-target="#modal-wide-demo">Open</a>
+</div>
+
+<div class="usa-accordion-bordered usa-accordion-docs">
+  <button class="usa-button-unstyled usa-accordion-button"
+      aria-expanded="true" aria-controls="collapsible-0">
+    Documentation
+  </button>
+  <div id="collapsible-0" aria-hidden="false" class="usa-accordion-content">
+    <h4 class="usa-heading">Accessibility</h4>
+    <ul class="usa-content-list">
+      <li>Unfortunately, we have a number of these modals and we should excise them as quickly as possible. Content behind these modal has to scroll to support the egregious form lengths on mobile devices.</li>
+    </ul>
+
+    <h4 class="usa-heading">Usability</h4>
+    <h5>When to use</h5>
+    <ul class="usa-content-list">
+      <li>Never. Long forms do not belong in modals.</li>
+    </ul>
+
+    <h4 class="usa-heading">Guidelines</h4>
+    <ul class="usa-content-list">
+      <li>Do not create new instances of modals that contain long forms.</li>
+      <li><strong>Retain form input</strong>: All data entered into a modal should be retained until the modal is submitted. Thus if a user enters data, dismisses the modal, and then reopens the modal the form data should be populated in the form fields.</li>
+    </ul>
+  </div>
+</div>
+
