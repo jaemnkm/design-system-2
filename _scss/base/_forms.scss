@@ -1,6 +1,6 @@
 // Forms
 
-@import "font-awesome/font-awesome";
+@import 'font-awesome/font-awesome';
 
 .usajobs-form,
 .usajobs-content-well .usajobs-form {
@@ -89,27 +89,3 @@
   }
 }
 
-.usajobs-help-tip {
-  position: relative;
-  background-color: $color-primary-alt-lightest;
-  margin: $size-default 0;
-  padding: $size-default $size-default $size-default $size-XL;
-
-  &:before {
-    @include fa-icon();
-    content: $fa-var-lightbulb-o;
-    position: absolute;
-    left: $size-default;
-    top: $size-default;
-    font-size: $h1-font-size;
-    color: $color-primary-alt-dark;
-  }
-
-  &__title {
-    margin-top: 0;
-  }
-
-  &__text {
-    margin-bottom: 0;
-  }
-}

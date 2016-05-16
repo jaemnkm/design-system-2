@@ -417,8 +417,7 @@ body {
 }
 
 .lt-ie9 * {
-  -webkit-filter: none !important;
-          filter: none !important;
+  filter: none !important;
 }
 
 [aria-hidden=true] {
@@ -728,9 +727,7 @@ button,
 [type="submit"],
 [type="reset"],
 [type="image"] {
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  appearance: none;
   background-color: #0071bc;
   border: 0;
   border-radius: 0.3rem;
@@ -1217,9 +1214,7 @@ input[type="time"],
 input[type="week"],
 textarea,
 select {
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  appearance: none;
   border: 1px solid #205493;
   border-radius: 0;
   box-sizing: border-box;
@@ -2147,11 +2142,7 @@ p a,
 
 @media screen and (min-width: 600px) {
   .usa-footer-medium .usa-footer-nav ul {
-    -webkit-align-items: center;
-        -ms-flex-align: center;
-            align-items: center;
-    display: -webkit-flex;
-    display: -ms-flexbox;
+    align-items: center;
     display: flex;
   }
 }
@@ -2170,11 +2161,7 @@ p a,
     padding-top: 1rem;
   }
   .usa-footer-slim .usa-footer-primary-section .usa-grid-full {
-    -webkit-align-items: center;
-        -ms-flex-align: center;
-            align-items: center;
-    display: -webkit-flex;
-    display: -ms-flexbox;
+    align-items: center;
     display: flex;
   }
 }
@@ -2726,6 +2713,8 @@ fieldset {
 }
 
 .skipnav {
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   background: transparent;
   color: #212121;
@@ -2737,6 +2726,8 @@ fieldset {
 }
 
 .skipnav:focus {
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   background: #ffffff;
   left: 0;
@@ -4320,8 +4311,7 @@ img {
 :root .fa-rotate-270,
 :root .fa-flip-horizontal,
 :root .fa-flip-vertical {
-  -webkit-filter: none;
-          filter: none;
+  filter: none;
 }
 
 .fa-stack {
@@ -6985,36 +6975,6 @@ img {
   margin-top: 0;
 }
 
-.usajobs-help-tip {
-  position: relative;
-  background-color: #e1f3f8;
-  margin: 1.5rem 0;
-  padding: 1.5rem 1.5rem 1.5rem 6rem;
-}
-
-.usajobs-help-tip:before {
-  display: inline-block;
-  font: normal normal normal 14px/1 FontAwesome;
-  font-size: inherit;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  content: "";
-  position: absolute;
-  left: 1.5rem;
-  top: 1.5rem;
-  font-size: 44px;
-  color: #00a6d2;
-}
-
-.usajobs-help-tip__title {
-  margin-top: 0;
-}
-
-.usajobs-help-tip__text {
-  margin-bottom: 0;
-}
-
 body {
   font-size: 17px;
   font-size: 1.7rem;
@@ -7182,7 +7142,7 @@ select {
 
 .usajobs-alert {
   position: relative;
-  margin-bottom: 3rem;
+  margin: 3rem 0;
   padding: 0;
   background-color: #ffffff;
   border: 1px solid;
@@ -7193,6 +7153,7 @@ select {
 
 .usajobs-alert[aria-hidden=false] {
   -webkit-animation: fadeIn 0.8s;
+  -moz-animation: fadeIn 0.8s;
   animation: fadeIn 0.8s;
 }
 
@@ -7204,6 +7165,14 @@ select {
   min-height: 7.7rem;
   padding: 1.5rem 3rem;
   background-color: #ffffff;
+}
+
+.usajobs-alert__title {
+  margin: 0.3rem 0;
+}
+
+.usajobs-alert__text {
+  margin: 0;
 }
 
 .usajobs-alert__icon {
@@ -7238,10 +7207,6 @@ select {
 .usajobs-alert__footer {
   margin-top: 1.5rem;
   text-align: right;
-}
-
-.usajobs-alert .usa-alert-text {
-  max-width: inherit;
 }
 
 .usajobs-alert__close {
@@ -7297,6 +7262,7 @@ select {
 }
 
 .no-flexbox .usajobs-alert__body {
+  width: -webkit-calc(100% -  8.5rem);
   width: calc(100% -  8.5rem);
 }
 
@@ -7312,6 +7278,8 @@ select {
   display: -moz-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -moz-box-align: center;
   box-align: center;
   -webkit-align-items: center;
   -moz-align-items: center;
@@ -7323,17 +7291,24 @@ select {
 
 .flexbox .usajobs-alert__figure {
   -webkit-flex-shrink: 0;
-          flex-shrink: 0;
+  -moz-flex-shrink: 0;
+  flex-shrink: 0;
   -ms-flex-negative: 0;
 }
 
 .flexbox .usajobs-alert__body {
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
   box-flex: 1;
   -webkit-flex: 1;
   -moz-flex: 1;
   -ms-flex: 1;
   flex: 1;
   min-width: 0;
+}
+
+.usajobs-alert .usa-alert-text {
+  max-width: inherit;
 }
 
 .usajobs-alert--success {
@@ -7379,4 +7354,5 @@ select {
   content: "";
   color: #cd2026;
 }
+
 /*# sourceMappingURL=usajobs-design-system-base.css.map */

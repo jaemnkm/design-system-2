@@ -113,16 +113,68 @@ lead: USAJOBS adds or clarifies design for labels, contextual help, required/opt
 </div>
 
 <div class="preview">
-  <h6 class="usa-heading-alt" id="help-tip">Tip</h6>
-  <div class="usajobs-help-tip">
-    <h3 class="usajobs-help-tip__title">
-      Tip: Make your resume searchable to be found by Hiring Managers. 
-    </h3>
-    <p class="usajobs-help-tip__text">
-      If you make your resume searchable, your profile information and all resume information will be visible to recruiters searching our resume bank.
-    </p>
+  <h6 class="usa-heading-alt" id="help-tip">Tip (Single)</h6>
+  <div class="usajobs-help-tip" data-object="help-tip">
+    <div class="usajobs-help-tip__figure">
+      <div class="usajobs-help-tip__icon">
+      </div>
+    </div>
+    <div class="usajobs-help-tip__body">
+      <h4 class="usajobs-help-tip__title">
+        Current or former federal employee?
+      </h4>
+      <p class="usajobs-help-tip__text">
+        If so, we recommend you upload your SF-50. Many jobs require the SF-50 to verify your federal service.
+      </p>
+      <div class="usajobs-help-tip__footer">
+        <a href="#add-doc" class="usa-button usa-button-primary">Upload Documents</a>
+      </div>
+    </div>
+    <button class="usajobs-alert__close" data-behavior="alert.close" >
+      <span class="usajobs-assistive-text">Close</span>
+    </button>
+  </div>
+
+  <h6 class="usa-heading-alt" id="help-tip">Tip (Multiple)</h6>
+  <div class="usajobs-help-tip" data-object="help-tip">
+    <div class="usajobs-help-tip__figure">
+      <div class="usajobs-help-tip__icon">
+      </div>
+    </div>
+    <div class="usajobs-help-tip__body"> 
+      <div id="help-tip-1" aria-hidden="false">
+        <p class="usajobs-help-tip__count">1 of 2 Tips</p>
+        <h4 class="usajobs-help-tip__title">
+          Do you want to claim veterans' preference?
+        </h4>
+        <p class="usajobs-help-tip__text">
+          If so, we recommend you upload your DD-214 - it's required if you want to claim veterans' preference.
+        </p>
+        <div class="usajobs-help-tip__footer">
+          <a href="#next-tip" class="usa-button usa-button-outline" data-behavior="help-tip.skip" aria-controls="help-tip-1" data-target-next="help-tip-2">Skip</a>
+          <a href="#add-doc" class="usa-button usa-button-primary">Upload Documents</a>
+        </div>
+      </div>
+      <div id="help-tip-2" aria-hidden="true">
+        <p class="usajobs-help-tip__count">2 of 2 Tips</p>
+        <h4 class="usajobs-help-tip__title">
+          Do you want to claim veterans' preference?
+        </h4>
+        <p class="usajobs-help-tip__text">
+          If so, we recommend you upload your SF-15 - it's required if you want to claim veterans' preference.
+        </p>
+        <div class="usajobs-help-tip__footer">
+          <a href="#next-tip" class="usa-button usa-button-outline" data-behavior="help-tip.back" aria-controls="help-tip-2" data-target-previous="help-tip-1">Back</a>
+          <a href="#add-doc" class="usa-button usa-button-primary">Upload Documents</a>
+        </div>
+      </div>
+    </div>
+    <button class="usajobs-alert__close" data-behavior="alert.close" >
+      <span class="usajobs-assistive-text">Close</span>
+    </button>
   </div>
 </div>
+
 <div class="usa-accordion-bordered usa-accordion-docs">
   <button class="usa-button-unstyled usa-accordion-button"
       aria-expanded="true" aria-controls="collapsible-0">
@@ -137,6 +189,7 @@ lead: USAJOBS adds or clarifies design for labels, contextual help, required/opt
     <h5>When to consider something else</h5>
     <ul class="usa-content-list">
       <li>A tip should not be used when one of the other contextual help elements is more approriate.</li>
+      <li>A tip should not be used in place of an <a href="{{ site.baseurl }}/alerts/">alert</a>.</li>
     </ul>
   </div>
 </div>
