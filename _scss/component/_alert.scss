@@ -39,3 +39,16 @@
 .usajobs-alert--error {
   @include alert($color-secondary-dark, $fa-var-exclamation);
 }
+
+.usajobs-alert--tip {
+  @include alert($color-primary-alt-dark, $fa-var-lightbulb-o);
+
+  &__icon::after {
+    margin-left: -0.8rem;
+  }
+
+  &__count {
+    margin: 0;
+    font-size: $small-font-size;
+  }
+}
