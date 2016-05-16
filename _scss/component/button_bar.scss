@@ -27,8 +27,13 @@
   border-top: 1px solid $color-gray-lighter;
 
   .usajobs-button_bar__body {
-    padding: 0;
+    padding: $size-M 0;
     text-align: right;
+
+    .usa-button,
+    .usa-button-big {
+      margin: 0;
+    }
   }
 
   .usajobs-button_bar__save {
