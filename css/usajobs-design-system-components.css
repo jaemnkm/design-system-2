@@ -579,6 +579,8 @@ html {
 .usajobs-nav--v1C__menu-container[data-state="is-open"],
 .usajobs-nav--v1D__menu-container[data-state="is-open"],
 .usajobs-nav--v1E__menu-container[data-state="is-open"] {
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
   transition: all 0.3s linear;
 }
 
@@ -619,6 +621,8 @@ html {
   padding: 10.5px 1rem;
   line-height: 1;
   text-align: center;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
   transition: all 0.3s linear;
   color: #0071bc;
 }
@@ -1293,8 +1297,7 @@ html {
 :root .fa-rotate-270,
 :root .fa-flip-horizontal,
 :root .fa-flip-vertical {
-  -webkit-filter: none;
-          filter: none;
+  filter: none;
 }
 
 .fa-stack {
@@ -4153,8 +4156,7 @@ html {
 :root .fa-rotate-270,
 :root .fa-flip-horizontal,
 :root .fa-flip-vertical {
-  -webkit-filter: none;
-          filter: none;
+  filter: none;
 }
 
 .fa-stack {
@@ -6787,8 +6789,11 @@ html {
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
   transition: all 0.3s ease;
   -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
   -ms-transform-style: preserve-3d;
   -o-transform-style: preserve-3d;
   transform-style: preserve-3d;
@@ -7448,8 +7453,7 @@ html {
 :root .fa-rotate-270,
 :root .fa-flip-horizontal,
 :root .fa-flip-vertical {
-  -webkit-filter: none;
-          filter: none;
+  filter: none;
 }
 
 .fa-stack {
@@ -9994,7 +9998,6 @@ html {
 .usajobs-modal {
   opacity: 0;
   visibility: hidden;
-  transition: -webkit-transform 0.3s linear, opacity 0.3s linear;
   transition: transform 0.3s linear, opacity 0.3s linear;
   overflow: hidden;
   position: fixed;
@@ -10466,8 +10469,7 @@ html {
 :root .fa-rotate-270,
 :root .fa-flip-horizontal,
 :root .fa-flip-vertical {
-  -webkit-filter: none;
-          filter: none;
+  filter: none;
 }
 
 .fa-stack {
@@ -13354,6 +13356,7 @@ html {
   content: "";
   color: #2e8540;
   -webkit-animation: fa-spin 2s infinite linear;
+  -moz-animation: fa-spin 2s infinite linear;
   animation: fa-spin 2s infinite linear;
 }
 
@@ -13946,8 +13949,7 @@ html {
 :root .fa-rotate-270,
 :root .fa-flip-horizontal,
 :root .fa-flip-vertical {
-  -webkit-filter: none;
-          filter: none;
+  filter: none;
 }
 
 .fa-stack {
@@ -16873,8 +16875,7 @@ html {
 :root .fa-rotate-270,
 :root .fa-flip-horizontal,
 :root .fa-flip-vertical {
-  -webkit-filter: none;
-          filter: none;
+  filter: none;
 }
 
 .fa-stack {
@@ -19676,4 +19677,203 @@ html {
   content: "";
   padding-left: 0.5rem;
 }
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.usajobs-help-tip {
+  position: relative;
+  margin: 3rem 0;
+  padding: 0;
+  background-color: #ffffff;
+  border: 1px solid;
+  border-radius: 0.3rem;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  background-color: #00a6d2;
+  border-color: #00a6d2;
+}
+
+.usajobs-help-tip[aria-hidden=false] {
+  -webkit-animation: fadeIn 0.8s;
+  -moz-animation: fadeIn 0.8s;
+  animation: fadeIn 0.8s;
+}
+
+.usajobs-help-tip__figure {
+  padding: 1.5rem 3rem;
+}
+
+.usajobs-help-tip__body {
+  min-height: 7.7rem;
+  padding: 1.5rem 3rem;
+  background-color: #ffffff;
+}
+
+.usajobs-help-tip__title {
+  margin: 0.3rem 0;
+}
+
+.usajobs-help-tip__text {
+  margin: 0;
+}
+
+.usajobs-help-tip__icon {
+  position: relative;
+  display: inline-block;
+  width: 4rem;
+  height: 4rem;
+  line-height: 4rem;
+  border-radius: 50%;
+  color: #ffffff;
+  background-color: inherit;
+  box-shadow: inset 0 0 0 2px none;
+  background-color: #ffffff;
+  width: 4rem;
+  height: 4rem;
+}
+
+.usajobs-help-tip__icon::after {
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  margin-left: -0.5rem;
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 3rem;
+}
+
+.usajobs-help-tip__footer {
+  margin-top: 1.5rem;
+  text-align: right;
+}
+
+.usajobs-help-tip__close {
+  position: absolute;
+  top: -1.5rem;
+  right: -1.5rem;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 50%;
+  color: #ffffff;
+  background-color: inherit;
+  box-shadow: inset 0 0 0 2px none;
+  background-color: #aeb0b5;
+  text-decoration: none;
+}
+
+.usajobs-help-tip__close:after {
+  position: relative;
+  width: 1rem;
+  height: 1rem;
+  margin-left: -0.2rem;
+  margin-top: 0.6rem;
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: "";
+  color: #ffffff;
+}
+
+.usajobs-help-tip__close:hover {
+  background-color: #323a45;
+}
+
+.no-flexbox .usajobs-help-tip {
+  display: table;
+}
+
+.no-flexbox .usajobs-help-tip::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.no-flexbox .usajobs-help-tip__figure, .no-flexbox .usajobs-help-tip__body {
+  display: table-cell;
+}
+
+.no-flexbox .usajobs-help-tip__body {
+  width: -webkit-calc(100% -  8.5rem);
+  width: calc(100% -  8.5rem);
+}
+
+.no-flexbox .usajobs-help-tip__body .lt-ie9 .no-flexbox .usajobs-help-tip {
+  width: 75%;
+}
+
+.flexbox .usajobs-help-tip {
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  box-align: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  -o-align-items: center;
+  align-items: center;
+  -ms-flex-align: center;
+}
+
+.flexbox .usajobs-help-tip__figure {
+  -webkit-flex-shrink: 0;
+  -moz-flex-shrink: 0;
+  flex-shrink: 0;
+  -ms-flex-negative: 0;
+}
+
+.flexbox .usajobs-help-tip__body {
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  box-flex: 1;
+  -webkit-flex: 1;
+  -moz-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  min-width: 0;
+}
+
+.usajobs-help-tip__icon::after {
+  content: "";
+  color: #00a6d2;
+  margin-left: -0.8rem;
+}
+
+.usajobs-help-tip__count {
+  margin: 0;
+  font-size: 1.4rem;
+}
+
 /*# sourceMappingURL=usajobs-design-system-components.css.map */
