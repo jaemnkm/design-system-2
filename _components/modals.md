@@ -43,10 +43,7 @@ lead: USAJOBS uses the modal component to draw attention to actions that require
 </div>
 
 <div class="usa-accordion-bordered usa-accordion-docs">
-  <button class="usa-button-unstyled usa-accordion-button"
-      aria-expanded="true" aria-controls="collapsible-0">
-    Documentation
-  </button>
+  <button class="usa-button-unstyled usa-accordion-button" aria-expanded="true" aria-controls="collapsible-0">Documentation</button>
   <div id="collapsible-0" aria-hidden="false" class="usa-accordion-content">
     <h4 class="usa-heading">Accessibility</h4>
     <ul class="usa-content-list">
@@ -90,10 +87,7 @@ lead: USAJOBS uses the modal component to draw attention to actions that require
 </div>
 
 <div class="usa-accordion-bordered usa-accordion-docs">
-  <button class="usa-button-unstyled usa-accordion-button"
-      aria-expanded="true" aria-controls="collapsible-0">
-    Documentation
-  </button>
+  <button class="usa-button-unstyled usa-accordion-button" aria-expanded="true" aria-controls="collapsible-0">Documentation</button>
   <div id="collapsible-0" aria-hidden="false" class="usa-accordion-content">
     <h4 class="usa-heading">Usability</h4>
     <h5>When to use</h5>
@@ -105,7 +99,7 @@ lead: USAJOBS uses the modal component to draw attention to actions that require
     <h4 class="usa-heading">Guidelines</h4>
     <ul class="usa-content-list">
       <li>These modals are simply containers for an <a href="{{site.baseurl}}/alerts/">alert</a>. Thus the modal should adhere to the guidelines for the appropriate alert.</li>
-      <li>Modals that manage destructive actions should be triggered by a <a href="{{site.baseurl}}/buttons/">red, secondary button</a> and should use the error alert style. However, unlike the deafult error alert these modals should allow the user to dismiss them.</a>
+      <li>Modals that manage destructive actions should be triggered by a <a href="{{site.baseurl}}/buttons/">red, secondary button</a> and should use the error alert style. However, unlike the deafult error alert these modals should allow the user to dismiss them.</a></li>
     </ul>
   </div>
 </div>
