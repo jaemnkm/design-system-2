@@ -191,8 +191,8 @@ lead: USAJOBS adds or clarifies design for labels, contextual help, required/opt
     <h5>When to use</h5>
     <ul class="usa-content-list">
       <li>When all fields for a form are required use the text "All fields are required".</li>
-      <li>When most of the form fields are required use the text "All fields are required unless otherwise noted".</li>
-      <li>When an entire sub-section of a section is required use the text "This section is required".</li>
+      <li>When all fields for a form are optional use the text "All fields are optional".</li>
+      <li>When most of the form fields are required use the text "All fields are required unless otherwise noted" in conjunction with the <a href="#usajobs-form-field-indicator-documentation">Optional Field Indicator</a> to indicate the optional fields.</li>
     </ul>
     <h5>When not to use</h5>
     <ul class="usa-content-list">
