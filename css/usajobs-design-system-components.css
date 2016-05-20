@@ -16552,6 +16552,12 @@ html {
   }
 }
 
+@media screen and (min-width: 62em) {
+  .usajobs-joa-actions__col-sub-actions {
+    min-width: 27.5rem;
+  }
+}
+
 @media screen and (min-width: 37.5em) {
   .usajobs-joa-actions__col-apply {
     float: right;
@@ -16575,6 +16581,7 @@ html {
   padding: 1rem 0;
   text-align: center;
   color: #212121;
+  text-decoration: none;
 }
 
 .usajobs-joa-actions__col-sub-actions .usajobs-joa-actions__print:last-child,
@@ -16597,21 +16604,81 @@ html {
   text-decoration: none;
 }
 
-.usajobs-joa-actions__save::before {
+.usajobs-joa-actions__save {
+  min-width: 7.3rem;
+}
+
+.usajobs-joa-actions__save:before {
   display: inline-block;
   font: normal normal normal 14px/1 FontAwesome;
   font-size: inherit;
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  content: "";
+  padding-right: 0.25rem;
   color: #fdb81e;
   font-size: 24px;
   vertical-align: middle;
 }
 
-.usajobs-joa-actions__save.is-saved::before {
+.usajobs-joa-actions__save[data-state=is-saved]:before {
   content: "";
+}
+
+.usajobs-joa-actions__save[data-state=is-unsaved]:before {
+  content: "";
+}
+
+.usajobs-joa-actions__social-list {
+  display: block;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  margin-bottom: 0;
+  padding-bottom: 3rem;
+}
+
+.usajobs-joa-actions__social-list::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.usajobs-joa-actions__social-list > li {
+  display: list-item;
+  margin: 0;
+}
+
+.usajobs-joa-actions__social-list > li:before {
+  display: none;
+}
+
+.usajobs-joa-actions__social-list > li:after {
+  display: none;
+}
+
+@media screen and (min-width: 37.5em) {
+  .usajobs-joa-actions__social-list > li {
+    float: left;
+    display: block;
+    margin-right: 4.8291579146%;
+    width: 47.5854210427%;
+  }
+  .usajobs-joa-actions__social-list > li:last-child {
+    margin-right: 0;
+  }
+}
+
+@media screen and (min-width: 37.5em) {
+  .usajobs-joa-actions__social-list > li:nth-child(2n) {
+    margin-right: 0;
+  }
+}
+
+.usajobs-joa-actions__social-list a {
+  display: block;
+  padding: 1rem 0;
+  font-size: 19px;
 }
 
 html {

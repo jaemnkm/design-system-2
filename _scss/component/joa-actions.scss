@@ -36,6 +36,12 @@
     }
   }
 
+  &__col-sub-actions {
+    @include media($L) {
+      min-width: rem(275px);
+    }
+  }
+
   &__col-apply {
     @include media($M) {
       float: right;
@@ -56,6 +62,7 @@
     padding: $size-S 0;
     text-align: center;
     color: $color-base;
+    text-decoration: none;
 
     @include media($M) {
       margin-top: $size-default;
@@ -66,15 +73,53 @@
     }
   }
 
-  &__save::before {
-    @include fa-icon();
-    content: $fa-var-star-o;
-    color: $color-gold;
-    font-size: $h3-font-size;
-    vertical-align: middle;
+  &__save {
+    min-width: rem(73px);
+
+    &:before {
+      @include fa-icon();
+      padding-right: $size-XS;
+      color: $color-gold;
+      font-size: $h3-font-size;
+      vertical-align: middle;
+    }
   }
 
-  &__save.is-saved::before {
-    content: $fa-var-star;
+  &__save[data-state=is-saved] {
+    &:before {
+      content: $fa-var-star;
+    }
+  }
+
+  &__save[data-state=is-unsaved] {
+    &:before {
+      content: $fa-var-star-o;
+    }
+  }
+
+  // This is actually styling the modal that opens when a job is shared
+  &__social-list {
+    @include clearfix();
+    @include unstyledList();
+    margin-bottom: 0;
+    padding-bottom: $size-M;
+
+    > li {
+      @include media($M) {
+        @include span-columns(3,6);
+      }
+    }
+
+    > li:nth-child(2n) {
+      @include media($M) {
+        @include omega();
+      }
+    }
+
+    a {
+      display: block;
+      padding: $size-S 0;
+      font-size: $h4-font-size;
+    }
   }
 }

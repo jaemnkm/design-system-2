@@ -5,7 +5,9 @@ title: Modals
 lead: USAJOBS uses the modal component to draw attention to actions that require user input.
 ---
 
-<a href="{{ site.baseurl }}/getting-started/#maturity" class="usa-label maturity under_review">Under Review</a>
+<a href="{{ site.baseurl }}/getting-started/#maturity" class="usa-label maturity design_complete">
+  Design Complete
+</a>
 
 <h4 class="usa-heading-alt">Default Modal</h4>
 <div class="preview">
