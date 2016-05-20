@@ -8,3 +8,5 @@ $color-red-darkest:    #7B0608;
 
 $color-black:          #000000; // If there is $color-white...
 
+// Working around a bug...somewhere that was redefining this color as $color-cool-blue
+$color-gray:           #5b616b; // lighten($color-gray-dark, 20%)

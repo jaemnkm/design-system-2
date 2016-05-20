@@ -2,17 +2,19 @@
 
 @import '../base-shared';
 
-.usajobs-button_bar {
+@mixin buttonBar () {
   @include outer-container();
-  max-width: none;
-  margin: $size-XL 0 $size-XXL;
-  background-color: $color-gray-lighter;
 
   &__body {
     @include clearfix();
     max-width: $site-max-width;
     margin: 0 auto;
     padding: $size-M;
+
+    .usa-button,
+    .usa-button-big {
+      margin: 0;
+    }
   }
 
   &__save {
@@ -21,19 +23,22 @@
   }
 }
 
+.usajobs-button_bar {
+  @include buttonBar();
+  max-width: none;
+  margin: $size-XL 0 $size-XXL;
+  background-color: $color-gray-lighter;
+}
+
 .usajobs-button_bar--slim {
+  @include buttonBar();
   margin: $size-M 0 $size-XL;
-  background-color: inherit;
   border-top: 1px solid $color-gray-lighter;
 
   .usajobs-button_bar__body {
-    padding: $size-M 0;
+    padding-left: 0;
+    padding-right: 0;
     text-align: right;
-
-    .usa-button,
-    .usa-button-big {
-      margin: 0;
-    }
   }
 
   .usajobs-button_bar__save {

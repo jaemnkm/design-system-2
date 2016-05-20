@@ -6268,7 +6268,9 @@ button:disabled,
 }
 
 .usajobs-button_bar [type="submit"]:disabled,
-.usajobs-button_bar .usa-button-disabled {
+.usajobs-button_bar .usa-button-disabled,
+.usajobs-button-bar [type="submit"]:disabled,
+.usajobs-button-bar .usa-button-disabled {
   background-color: #aeb0b5;
   color: #323a45;
   cursor: default;
@@ -6279,11 +6281,118 @@ button:disabled,
 .usajobs-button_bar .usa-button-disabled.usa-button-hover,
 .usajobs-button_bar .usa-button-disabled:active,
 .usajobs-button_bar .usa-button-disabled.usa-button-active,
-.usajobs-button_bar .usa-button-disabled:focus {
+.usajobs-button_bar .usa-button-disabled:focus,
+.usajobs-button-bar [type="submit"]:disabled:hover,
+.usajobs-button-bar [type="submit"]:disabled.usa-button-hover,
+.usajobs-button-bar [type="submit"]:disabled:active,
+.usajobs-button-bar [type="submit"]:disabled.usa-button-active,
+.usajobs-button-bar [type="submit"]:disabled:focus,
+.usajobs-button-bar .usa-button-disabled:hover,
+.usajobs-button-bar .usa-button-disabled.usa-button-hover,
+.usajobs-button-bar .usa-button-disabled:active,
+.usajobs-button-bar .usa-button-disabled.usa-button-active,
+.usajobs-button-bar .usa-button-disabled:focus {
   background-color: #aeb0b5;
   border: 0;
   box-shadow: none;
   color: #323a45;
+}
+
+.usajobs-button_bar .usa-button.usa-button-gray,
+.usajobs-button_bar .usa-button-primary.usa-button-gray,
+.usajobs-button_bar .usa-button:visited.usa-button-gray,
+.usajobs-button_bar .usa-button-primary:visited.usa-button-gray,
+.usajobs-button_bar button.usa-button-gray,
+.usajobs-button_bar [type="button"].usa-button-gray,
+.usajobs-button_bar [type="submit"].usa-button-gray,
+.usajobs-button_bar [type="reset"].usa-button-gray,
+.usajobs-button_bar [type="image"].usa-button-gray,
+.usajobs-button-bar .usa-button.usa-button-gray,
+.usajobs-button-bar .usa-button-primary.usa-button-gray,
+.usajobs-button-bar .usa-button:visited.usa-button-gray,
+.usajobs-button-bar .usa-button-primary:visited.usa-button-gray,
+.usajobs-button-bar button.usa-button-gray,
+.usajobs-button-bar [type="button"].usa-button-gray,
+.usajobs-button-bar [type="submit"].usa-button-gray,
+.usajobs-button-bar [type="reset"].usa-button-gray,
+.usajobs-button-bar [type="image"].usa-button-gray {
+  background-color: #5b616b;
+}
+
+.usajobs-button_bar .usa-button.usa-button-gray:hover, .usajobs-button_bar .usa-button.usa-button-gray.usa-button-hover,
+.usajobs-button_bar .usa-button-primary.usa-button-gray:hover,
+.usajobs-button_bar .usa-button-primary.usa-button-gray.usa-button-hover,
+.usajobs-button_bar .usa-button:visited.usa-button-gray:hover,
+.usajobs-button_bar .usa-button:visited.usa-button-gray.usa-button-hover,
+.usajobs-button_bar .usa-button-primary:visited.usa-button-gray:hover,
+.usajobs-button_bar .usa-button-primary:visited.usa-button-gray.usa-button-hover,
+.usajobs-button_bar button.usa-button-gray:hover,
+.usajobs-button_bar button.usa-button-gray.usa-button-hover,
+.usajobs-button_bar [type="button"].usa-button-gray:hover,
+.usajobs-button_bar [type="button"].usa-button-gray.usa-button-hover,
+.usajobs-button_bar [type="submit"].usa-button-gray:hover,
+.usajobs-button_bar [type="submit"].usa-button-gray.usa-button-hover,
+.usajobs-button_bar [type="reset"].usa-button-gray:hover,
+.usajobs-button_bar [type="reset"].usa-button-gray.usa-button-hover,
+.usajobs-button_bar [type="image"].usa-button-gray:hover,
+.usajobs-button_bar [type="image"].usa-button-gray.usa-button-hover,
+.usajobs-button-bar .usa-button.usa-button-gray:hover,
+.usajobs-button-bar .usa-button.usa-button-gray.usa-button-hover,
+.usajobs-button-bar .usa-button-primary.usa-button-gray:hover,
+.usajobs-button-bar .usa-button-primary.usa-button-gray.usa-button-hover,
+.usajobs-button-bar .usa-button:visited.usa-button-gray:hover,
+.usajobs-button-bar .usa-button:visited.usa-button-gray.usa-button-hover,
+.usajobs-button-bar .usa-button-primary:visited.usa-button-gray:hover,
+.usajobs-button-bar .usa-button-primary:visited.usa-button-gray.usa-button-hover,
+.usajobs-button-bar button.usa-button-gray:hover,
+.usajobs-button-bar button.usa-button-gray.usa-button-hover,
+.usajobs-button-bar [type="button"].usa-button-gray:hover,
+.usajobs-button-bar [type="button"].usa-button-gray.usa-button-hover,
+.usajobs-button-bar [type="submit"].usa-button-gray:hover,
+.usajobs-button-bar [type="submit"].usa-button-gray.usa-button-hover,
+.usajobs-button-bar [type="reset"].usa-button-gray:hover,
+.usajobs-button-bar [type="reset"].usa-button-gray.usa-button-hover,
+.usajobs-button-bar [type="image"].usa-button-gray:hover,
+.usajobs-button-bar [type="image"].usa-button-gray.usa-button-hover {
+  background-color: #323a45;
+}
+
+.usajobs-button_bar .usa-button.usa-button-gray:active, .usajobs-button_bar .usa-button.usa-button-gray.usa-button-active,
+.usajobs-button_bar .usa-button-primary.usa-button-gray:active,
+.usajobs-button_bar .usa-button-primary.usa-button-gray.usa-button-active,
+.usajobs-button_bar .usa-button:visited.usa-button-gray:active,
+.usajobs-button_bar .usa-button:visited.usa-button-gray.usa-button-active,
+.usajobs-button_bar .usa-button-primary:visited.usa-button-gray:active,
+.usajobs-button_bar .usa-button-primary:visited.usa-button-gray.usa-button-active,
+.usajobs-button_bar button.usa-button-gray:active,
+.usajobs-button_bar button.usa-button-gray.usa-button-active,
+.usajobs-button_bar [type="button"].usa-button-gray:active,
+.usajobs-button_bar [type="button"].usa-button-gray.usa-button-active,
+.usajobs-button_bar [type="submit"].usa-button-gray:active,
+.usajobs-button_bar [type="submit"].usa-button-gray.usa-button-active,
+.usajobs-button_bar [type="reset"].usa-button-gray:active,
+.usajobs-button_bar [type="reset"].usa-button-gray.usa-button-active,
+.usajobs-button_bar [type="image"].usa-button-gray:active,
+.usajobs-button_bar [type="image"].usa-button-gray.usa-button-active,
+.usajobs-button-bar .usa-button.usa-button-gray:active,
+.usajobs-button-bar .usa-button.usa-button-gray.usa-button-active,
+.usajobs-button-bar .usa-button-primary.usa-button-gray:active,
+.usajobs-button-bar .usa-button-primary.usa-button-gray.usa-button-active,
+.usajobs-button-bar .usa-button:visited.usa-button-gray:active,
+.usajobs-button-bar .usa-button:visited.usa-button-gray.usa-button-active,
+.usajobs-button-bar .usa-button-primary:visited.usa-button-gray:active,
+.usajobs-button-bar .usa-button-primary:visited.usa-button-gray.usa-button-active,
+.usajobs-button-bar button.usa-button-gray:active,
+.usajobs-button-bar button.usa-button-gray.usa-button-active,
+.usajobs-button-bar [type="button"].usa-button-gray:active,
+.usajobs-button-bar [type="button"].usa-button-gray.usa-button-active,
+.usajobs-button-bar [type="submit"].usa-button-gray:active,
+.usajobs-button-bar [type="submit"].usa-button-gray.usa-button-active,
+.usajobs-button-bar [type="reset"].usa-button-gray:active,
+.usajobs-button-bar [type="reset"].usa-button-gray.usa-button-active,
+.usajobs-button-bar [type="image"].usa-button-gray:active,
+.usajobs-button-bar [type="image"].usa-button-gray.usa-button-active {
+  background-color: #212121;
 }
 
 select::-ms-expand {
