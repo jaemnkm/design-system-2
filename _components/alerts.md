@@ -203,7 +203,83 @@ lead: USAJOBS has adopted a different visual style to our alerts that deviate fr
       <li>A tip should not be used when one of the other <a href="{{ site.baseurl }}/form-controls/">contextual help elements</a> is more approriate.</li>
       <li>A tip should not be used in place of an alert.</li>
     </ul>
+    <h5>Guidelines</h5>
+    <ul class="usa-content-list">
+      <li>
+        Each tip is dismissible and include a primary CTA button.
+      </li>
+      <li>
+        The counter (1 of 2 tips) and secondary CTA button (Skip) is only shown if a user has 2 or more tips.
+      </li>
+      <li>
+        Clicking the skip, or the dismiss button will trigger the next tip (if applicable).
+      </li>
+      <li>
+        <strong>Tip lifespan:</strong> The dismiss and skip button does not remove the tip forever. In other words, if a user dismiss or skip a tip, then the tip will be shown again the next time the document page is loaded.
+      </li>
+    </ul>
+
+    <h4 class="usa-heading">Examples</h4>
+    <h5>DD-214</h5>
+    <p>
+      This tip is shown if the user indicates in their profile that they are:
+    </p>
+    <ul class="usajobs-unstyled-list">
+      <li>A veteran AND claim veterans' preference.</li>
+    </ul>
+    <p>
+      Regardless of veteran status, this tip will not be shown if the user indicates in their profile that they do NOT claim veterans' preference (selects the "No, I do not claim Veterans' Preference" radio button option).
+    </p>
+    <h6>Tip Title</h6>
+    <p>
+      Do you want to claim veterans’ preference?
+    </p>
+    <h6>Body copy</h6>
+    <p>
+      If so, we recommend you upload your DD-214 – it’s required if you want to claim veterans’ preference.
+    </p>
+
+    <h5>SF-15</h5>
+    <p>
+      This tip is shown if the user indicates in their profile that they are:
+    </p>
+    <ul class="usajobs-unstyled-list">
+      <li>A veteran AND claim veterans' preference.</li>
+    </ul>
+    <p>
+      Regardless of veteran status, this tip will not be shown if the user indicates in their profile that they do NOT claim veterans' preference (selects the "No, I do not claim Veterans' Preference" radio button option).
+    </p>
+    <h6>Tip Title</h6>
+    <p>
+      Do you want to claim veterans’ preference?
+    </p>
+    <h6>Body copy</h6>
+    <p>
+      If so, we recommend you upload your SF-15 – agencies will often request this form to verify your veterans’ preference.
+    </p>
+
+    <h5>SF-50</h5>
+    <p>
+      This tip is shown if the user indicates in their profile that they are:
+    </p>
+    <ul class="usajobs-unstyled-list">
+      <li>Currently a federal civilian employee.</li>
+      <li>A former federal civilian employee with reinstatement eligibility.</li>
+    </ul>
+    <p>
+      This tip will not be shown if the user indicates in their profile that they are:
+    </p>
+    <ul class="usajobs-unstyled-list">
+      <li>Not and have never been a federal civilian employee.</li>
+      <li>A former federal civilian employee but DO NOT have reinstatement eligibility.</li>
+    </ul>
+    <h6>Tip Title</h6>
+    <p>
+      Your profile says you are or were a federal employee.
+    </p>
+    <h6>Body copy</h6>
+    <p>
+      We recommend you upload your SF-50. Many jobs require the SF-50 to verify your federal service.
+    </p>
   </div>
 </div>
-
-
