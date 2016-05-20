@@ -26,7 +26,8 @@ button:disabled,
 // In Application Guide, our button bar background matches the disabled state of a button
 // Thus we make the button darker
 
-.usajobs-button_bar {
+.usajobs-button_bar,
+.usajobs-button-bar {
   [type="submit"]:disabled,
   .usa-button-disabled {
     background-color: $color-gray-light;
@@ -42,6 +43,33 @@ button:disabled,
       border: 0;
       box-shadow: none;
       color: $color-gray-dark;
+    }
+  }
+}
+
+.usajobs-button_bar,
+.usajobs-button-bar {
+  .usa-button,
+  .usa-button-primary,
+  .usa-button:visited,
+  .usa-button-primary:visited,
+  button,
+  [type="button"],
+  [type="submit"],
+  [type="reset"],
+  [type="image"] {
+    &.usa-button-gray {
+      background-color: $color-gray;
+
+      &:hover,
+      &.usa-button-hover {
+        background-color: $color-gray-dark;
+      }
+
+      &:active,
+      &.usa-button-active {
+        background-color: $color-base;
+      }
     }
   }
 }
