@@ -1,7 +1,7 @@
 ---
 layout: styleguide
 type: component
-title: JOA Summary
+title: Job announcement summary
 lead: Summary of the Job Opportunity Announcement (JOA)
 ---
 
