@@ -34,6 +34,19 @@ lead: Users can print, share, or save a job announcment.
     Documentation
   </button>
   <div id="collapsible-0" aria-hidden="false" class="usa-accordion-content">
+    <h4 class="usa-heading">Guidelines</h4>
+    <ul class="usa-content-list">
+      <li>
+        A job announcement that has not been saved starts out in the state shown above with the text text "Save" and the unfilled star icon.
+      </li>
+      <li>
+        Clicking "Save" or the star icon will update the text to "Saved" and fill the icon. The job should be saved at that time to the user's list of Saved Jobs.
+      </li>
+      <li>
+        Clicking "Saved" or the star icon will update the text to "Save" and un-fill the icon. The jobs hould be removed at that time from the user's list of Saved Jobs.
+      </li>
+    </ul>
+
     <h4 class="usa-heading">Usability</h4>
     <h5>When to use</h5>
     <ul class="usa-content-list">
