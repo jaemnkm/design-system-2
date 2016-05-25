@@ -212,10 +212,10 @@ lead: USAJOBS has adopted a different visual style to our alerts that deviate fr
         The counter (1 of 2 tips) and secondary CTA button (Skip) is only shown if a user has 2 or more tips.
       </li>
       <li>
-        Clicking the skip, or the dismiss button will trigger the next tip (if applicable).
+        Clicking the <strong>Skip</strong> button will trigger the next tip (if applicable). Clicking the <strong>Back</strong> button will show the previous tip (if applicable). 
       </li>
       <li>
-        <strong>Tip lifespan:</strong> The dismiss and skip button does not remove the tip forever. In other words, if a user dismiss or skip a tip, then the tip will be shown again the next time the document page is loaded.
+        <strong>Tip lifespan:</strong> The dismiss and skip buttons do not remove the tip permanently. If a user dismisses or skips a tip, then the tip will be shown again the next time the page is loaded. The tip will no longer be shown once the suggested action has been taken. For example, the tip will continue appear until the suggested document upload has been completed.
       </li>
     </ul>
 
@@ -228,7 +228,7 @@ lead: USAJOBS has adopted a different visual style to our alerts that deviate fr
       <li>A veteran AND claim veterans' preference.</li>
     </ul>
     <p>
-      Regardless of veteran status, this tip will not be shown if the user indicates in their profile that they do NOT claim veterans' preference (selects the "No, I do not claim Veterans' Preference" radio button option).
+      Regardless of veteran status, this tip will not be shown if the user indicates in their profile that they do NOT claim veterans' preference (selects the "No, I do not claim Veterans' Preference" radio button option). The tip will continue to appear on the Documents page until the document is uploaded.
     </p>
     <h6>Tip Title</h6>
     <p>
@@ -247,7 +247,7 @@ lead: USAJOBS has adopted a different visual style to our alerts that deviate fr
       <li>A veteran AND claim veterans' preference.</li>
     </ul>
     <p>
-      Regardless of veteran status, this tip will not be shown if the user indicates in their profile that they do NOT claim veterans' preference (selects the "No, I do not claim Veterans' Preference" radio button option).
+      Regardless of veteran status, this tip will not be shown if the user indicates in their profile that they do NOT claim veterans' preference (selects the "No, I do not claim Veterans' Preference" radio button option). The tip will continue to appear on the Documents page until the document is uploaded.
     </p>
     <h6>Tip Title</h6>
     <p>
@@ -273,6 +273,9 @@ lead: USAJOBS has adopted a different visual style to our alerts that deviate fr
       <li>Not and have never been a federal civilian employee.</li>
       <li>A former federal civilian employee but DO NOT have reinstatement eligibility.</li>
     </ul>
+    <p>
+      The tip will continue to appear on the Documents page until the document is uploaded.
+    </p>
     <h6>Tip Title</h6>
     <p>
       Your profile says you are or were a federal employee.
