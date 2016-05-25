@@ -430,7 +430,7 @@ body {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
-  max-width: 1040px;
+  max-width: 120rem;
 }
 
 .usa-grid::after,
@@ -736,7 +736,7 @@ button,
   cursor: pointer;
   display: inline-block;
   font-family: "Source Sans Pro", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
-  font-size: 1.6rem;
+  font-size: 1.7rem;
   font-weight: 700;
   line-height: 1;
   margin-bottom: 0.5em;
@@ -942,7 +942,7 @@ button.usa-button-gray,
 [type="submit"].usa-button-gray,
 [type="reset"].usa-button-gray,
 [type="image"].usa-button-gray {
-  background-color: #205493;
+  background-color: #5b616b;
 }
 
 .usa-button.usa-button-gray:hover, .usa-button.usa-button-gray.usa-button-hover,
@@ -1216,12 +1216,12 @@ input[type="week"],
 textarea,
 select {
   appearance: none;
-  border: 1px solid #205493;
+  border: 1px solid #5b616b;
   border-radius: 0;
   box-sizing: border-box;
   color: #212121;
   display: block;
-  font-size: 1.6rem;
+  font-size: 1.7rem;
   margin: 0.2em 0;
   max-width: 46rem;
   outline: none;
@@ -1304,14 +1304,14 @@ select.usa-input-success {
 
 .usa-input-error-label {
   display: block;
-  font-size: 1.6rem;
+  font-size: 1.7rem;
   font-weight: 700;
 }
 
 .usa-input-error-message {
   color: #cd2026;
   display: block;
-  font-size: 1.6rem;
+  font-size: 1.7rem;
   font-weight: 700;
   padding-bottom: 3px;
   padding-top: 3px;
@@ -1340,7 +1340,7 @@ select {
 }
 
 legend {
-  font-size: 3rem;
+  font-size: 34px;
   font-weight: 700;
 }
 
@@ -1430,7 +1430,7 @@ input[type="checkbox"]:focus + label::before {
 }
 
 input[type="checkbox"]:disabled + label {
-  color: #205493;
+  color: #5b616b;
 }
 
 input[type="checkbox"]:disabled + label::before,
@@ -1561,7 +1561,7 @@ input[type=range]:focus::-ms-thumb {
   background-color: #0071bc;
   border-radius: 0.3rem;
   color: #ffffff;
-  font-size: 1.5rem;
+  font-size: 16px;
   margin-right: 0.5rem;
   padding: 0.1rem 0.7rem;
   text-transform: uppercase;
@@ -1572,7 +1572,7 @@ input[type=range]:focus::-ms-thumb {
 }
 
 .usa-label-big {
-  font-size: 1.6rem;
+  font-size: 1.7rem;
   padding-left: 0.9rem;
   padding-right: 0.9rem;
 }
@@ -1678,7 +1678,7 @@ table tbody th {
 }
 
 table th, table td {
-  border: 1px solid #205493;
+  border: 1px solid #5b616b;
   padding: 1.5rem;
 }
 
@@ -1701,7 +1701,7 @@ html {
 }
 
 body {
-  font-size: 1.6rem;
+  font-size: 1.7rem;
 }
 
 p {
@@ -1738,33 +1738,33 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: 4rem;
+  font-size: 44px;
   font-weight: 700;
 }
 
 h2 {
-  font-size: 3rem;
+  font-size: 34px;
   font-weight: 700;
 }
 
 h3 {
-  font-size: 2rem;
+  font-size: 24px;
   font-weight: 700;
 }
 
 h4 {
-  font-size: 1.7rem;
+  font-size: 19px;
   font-weight: 700;
 }
 
 h5 {
-  font-size: 1.5rem;
+  font-size: 16px;
   font-weight: 700;
 }
 
 h6 {
   font-family: "Source Sans Pro", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
-  font-size: 1.3rem;
+  font-size: 13px;
   font-weight: 400;
   text-transform: uppercase;
 }
@@ -1777,11 +1777,11 @@ dfn {
 }
 
 .usa-content p {
-  max-width: 53rem;
+  max-width: 62rem;
 }
 
 .usa-content-list {
-  max-width: 53rem;
+  max-width: 62rem;
 }
 
 p a,
@@ -1803,14 +1803,14 @@ p a,
 }
 
 .usa-display {
-  font-size: 2rem;
+  font-size: 24px;
   font-weight: 700;
   margin-bottom: 0;
 }
 
 @media screen and (min-width: 481px) {
   .usa-display {
-    font-size: 4rem;
+    font-size: 44px;
     font-weight: 700;
   }
 }
@@ -1824,7 +1824,7 @@ p a,
 
 .usa-font-lead {
   font-family: "Merriweather", "Georgia", "Cambria", "Times New Roman", "Times", serif;
-  font-size: 2.2rem;
+  font-size: 1.9rem;
   line-height: 1.7;
 }
 
@@ -1865,7 +1865,7 @@ p a,
 }
 
 .usa-text-small {
-  font-size: 1.3rem;
+  font-size: 13px;
   margin-top: 0;
 }
 
@@ -2044,14 +2044,14 @@ p a,
 
 .usa-disclaimer {
   background-color: #f1f1f1;
-  font-size: 1.3rem;
+  font-size: 13px;
   padding-bottom: .5rem;
   padding-top: .5rem;
 }
 
 @media screen and (min-width: 481px) {
   .usa-disclaimer {
-    font-size: 1.5rem;
+    font-size: 16px;
   }
 }
 
@@ -2395,7 +2395,7 @@ form input[name="password"], form input[name="confirmPassword"] {
 .usa-form-note {
   float: right;
   font-family: "Source Sans Pro", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
-  font-size: 1.5rem;
+  font-size: 16px;
   margin: 0 0 1.5rem;
 }
 
@@ -2605,7 +2605,7 @@ fieldset {
   }
   .usa-search.usa-search-big [type="submit"],
   .usa-search.usa-search-big .usa-search-submit {
-    font-size: 2rem;
+    font-size: 24px;
     height: 4.4rem;
     width: 11.6rem;
   }
@@ -2647,8 +2647,8 @@ fieldset {
 }
 
 .usa-sidenav-list li {
-  border-top: 1px solid #205493;
-  font-size: 1.7rem;
+  border-top: 1px solid #5b616b;
+  font-size: 19px;
 }
 
 .usa-sidenav-list li:first-child {
@@ -2692,7 +2692,7 @@ fieldset {
 
 .usa-sidenav-sub_list li {
   border: none;
-  font-size: 1.5rem;
+  font-size: 16px;
 }
 
 .usa-sidenav-sub_list a {
@@ -6981,7 +6981,6 @@ img {
 
 body {
   font-size: 17px;
-  font-size: 1.7rem;
 }
 
 .lt-ie9 p,
