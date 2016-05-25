@@ -6,10 +6,10 @@
 @import 'lib/neat';
 @import 'lib/normalize';
 
+// Our variables come first, we don't mess with defaults because that relationship did not work out.
+@import 'base/variables';
 
 // Core -------------- //
-
-@import 'core/defaults';
 @import 'core/base';
 @import 'core/grid-settings';
 @import 'core/grid';
@@ -17,8 +17,6 @@
 
 
 // Elements -------------- //
-// Styles basic HTML elements
-
 @import 'elements/buttons';
 @import 'elements/figure';
 @import 'elements/inputs';
@@ -29,7 +27,6 @@
 
 
 // Components -------------- //
-
 @import 'components/accordions';
 @import 'components/alerts';
 @import 'components/disclaimer';
@@ -43,7 +40,6 @@
 // USAJOBS ****************************** //
 
 // Base -------------- //
-@import 'base/variables';
 @import 'base/utilities';
 @import 'base/fonts';
 @import 'base/breakpoints';
