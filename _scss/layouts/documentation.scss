@@ -927,7 +927,7 @@ $font-light: 300;
     position: relative;
     padding: 0;
 
-    @include media($MLL) {
+    @include media($L) {
       min-width: rem(992px);
     }
 

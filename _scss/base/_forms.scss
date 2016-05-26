@@ -10,6 +10,11 @@
     max-width: inherit;
   }
 
+  legend {
+    width: 100%;
+    font-size: $h3-font-size;
+  }
+
   &__legend {
     display: block;
     font-style: italic;
@@ -54,13 +59,16 @@
 .usajobs-form-grid {
   @include outer-container();
 
-  &__col {
-    @include media($MLL) {
+  &__col,
+  &__col--right {
+    @include media($L) {
       @include span-columns(6);
     }
+  }
 
-    &:nth-child(2n) {
-      margin-right: 0;
+  &__col--right {
+    @include media($L) {
+      @include omega();
     }
   }
 
@@ -88,4 +96,3 @@
     margin-top: 0;
   }
 }
-

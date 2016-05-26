@@ -80,7 +80,7 @@ $nav_item_height: 17px + 26.5px;
     float: right;
     height: rem($logo_height-S);
 
-    @include media($MLL) {
+    @include media($L) {
       height: rem($logo_height-L);
     }
 
@@ -258,7 +258,7 @@ $nav_item_height: 17px + 26.5px;
       @include span-columns(3, 6);
     }
 
-    @include media($MLL) {
+    @include media($L) {
       @include span-columns(6, 12);
     }
   }
@@ -269,7 +269,7 @@ $nav_item_height: 17px + 26.5px;
       @include omega();
     }
 
-    @include media($MLL) {
+    @include media($L) {
       @include span-columns(4, 12);
     }
   }
@@ -281,7 +281,7 @@ $nav_item_height: 17px + 26.5px;
       @include span-columns(6, 6);
     }
 
-    @include media($MLL) {
+    @include media($L) {
       @include span-columns(2, 12);
       @include omega();
       margin-top: $size-L;
