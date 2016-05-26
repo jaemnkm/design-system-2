@@ -417,7 +417,8 @@ body {
 }
 
 .lt-ie9 * {
-  filter: none !important;
+  -webkit-filter: none !important;
+          filter: none !important;
 }
 
 [aria-hidden=true] {
@@ -727,7 +728,9 @@ button,
 [type="submit"],
 [type="reset"],
 [type="image"] {
-  appearance: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   background-color: #0071bc;
   border: 0;
   border-radius: 0.3rem;
@@ -735,7 +738,7 @@ button,
   cursor: pointer;
   display: inline-block;
   font-family: "Source Sans Pro", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
-  font-size: 1.6rem;
+  font-size: 1.7rem;
   font-weight: 700;
   line-height: 1;
   margin-bottom: 0.5em;
@@ -941,7 +944,7 @@ button.usa-button-gray,
 [type="submit"].usa-button-gray,
 [type="reset"].usa-button-gray,
 [type="image"].usa-button-gray {
-  background-color: #205493;
+  background-color: #5b616b;
 }
 
 .usa-button.usa-button-gray:hover, .usa-button.usa-button-gray.usa-button-hover,
@@ -1214,13 +1217,15 @@ input[type="time"],
 input[type="week"],
 textarea,
 select {
-  appearance: none;
-  border: 1px solid #205493;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: 1px solid #5b616b;
   border-radius: 0;
   box-sizing: border-box;
   color: #212121;
   display: block;
-  font-size: 1.6rem;
+  font-size: 1.7rem;
   margin: 0.2em 0;
   max-width: 46rem;
   outline: none;
@@ -1291,7 +1296,9 @@ select.usa-input-success {
   right: 1.9rem;
 }
 
-.usa-input-error input {
+.usa-input-error input,
+.usa-input-error textarea,
+.usa-input-error select {
   border: 3px solid #cd2026;
   width: calc(100% + 1.5rem);
 }
@@ -1302,14 +1309,14 @@ select.usa-input-success {
 
 .usa-input-error-label {
   display: block;
-  font-size: 1.6rem;
+  font-size: 1.7rem;
   font-weight: 700;
 }
 
 .usa-input-error-message {
   color: #cd2026;
   display: block;
-  font-size: 1.6rem;
+  font-size: 1.7rem;
   font-weight: 700;
   padding-bottom: 3px;
   padding-top: 3px;
@@ -1428,7 +1435,7 @@ input[type="checkbox"]:focus + label::before {
 }
 
 input[type="checkbox"]:disabled + label {
-  color: #205493;
+  color: #5b616b;
 }
 
 input[type="checkbox"]:disabled + label::before,
@@ -1570,7 +1577,7 @@ input[type=range]:focus::-ms-thumb {
 }
 
 .usa-label-big {
-  font-size: 1.6rem;
+  font-size: 1.7rem;
   padding-left: 0.9rem;
   padding-right: 0.9rem;
 }
@@ -1676,7 +1683,7 @@ table tbody th {
 }
 
 table th, table td {
-  border: 1px solid #205493;
+  border: 1px solid #5b616b;
   padding: 1.5rem;
 }
 
@@ -1699,7 +1706,7 @@ html {
 }
 
 body {
-  font-size: 1.6rem;
+  font-size: 1.7rem;
 }
 
 p {
@@ -1822,7 +1829,7 @@ p a,
 
 .usa-font-lead {
   font-family: "Merriweather", "Georgia", "Cambria", "Times New Roman", "Times", serif;
-  font-size: 2.2rem;
+  font-size: 2rem;
   line-height: 1.7;
 }
 
@@ -2142,7 +2149,11 @@ p a,
 
 @media screen and (min-width: 600px) {
   .usa-footer-medium .usa-footer-nav ul {
-    align-items: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
   }
 }
@@ -2161,7 +2172,11 @@ p a,
     padding-top: 1rem;
   }
   .usa-footer-slim .usa-footer-primary-section .usa-grid-full {
-    align-items: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
   }
 }
@@ -2645,7 +2660,7 @@ fieldset {
 }
 
 .usa-sidenav-list li {
-  border-top: 1px solid #205493;
+  border-top: 1px solid #5b616b;
   font-size: 1.7rem;
 }
 
@@ -2713,8 +2728,6 @@ fieldset {
 }
 
 .skipnav {
-  -webkit-transition: all 0.2s ease-in-out;
-  -moz-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   background: transparent;
   color: #212121;
@@ -2726,8 +2739,6 @@ fieldset {
 }
 
 .skipnav:focus {
-  -webkit-transition: all 0.2s ease-in-out;
-  -moz-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   background: #ffffff;
   left: 0;
@@ -3484,7 +3495,8 @@ img {
 :root .fa-rotate-270,
 :root .fa-flip-horizontal,
 :root .fa-flip-vertical {
-  filter: none;
+  -webkit-filter: none;
+          filter: none;
 }
 
 .fa-stack {
@@ -6038,6 +6050,12 @@ img {
   }
 }
 
+.usajobs-form legend,
+.usajobs-content-well .usajobs-form legend {
+  width: 100%;
+  font-size: 24px;
+}
+
 .usajobs-form__legend,
 .usajobs-content-well .usajobs-form__legend {
   display: block;
@@ -6100,19 +6118,21 @@ img {
 }
 
 @media screen and (min-width: 62em) {
-  .usajobs-form-grid__col {
+  .usajobs-form-grid__col, .usajobs-form-grid__col--right {
     float: left;
     display: block;
     margin-right: 2.3576515979%;
     width: 48.821174201%;
   }
-  .usajobs-form-grid__col:last-child {
+  .usajobs-form-grid__col:last-child, .usajobs-form-grid__col--right:last-child {
     margin-right: 0;
   }
 }
 
-.usajobs-form-grid__col:nth-child(2n) {
-  margin-right: 0;
+@media screen and (min-width: 62em) {
+  .usajobs-form-grid__col--right {
+    margin-right: 0;
+  }
 }
 
 .usajobs-form-grid__full-col {
@@ -6981,8 +7001,6 @@ html {
 .usajobs-nav--v1C__menu-container[data-state="is-open"],
 .usajobs-nav--v1D__menu-container[data-state="is-open"],
 .usajobs-nav--v1E__menu-container[data-state="is-open"] {
-  -webkit-transition: all 0.3s linear;
-  -moz-transition: all 0.3s linear;
   transition: all 0.3s linear;
 }
 
@@ -7023,8 +7041,6 @@ html {
   padding: 10.5px 1rem;
   line-height: 1;
   text-align: center;
-  -webkit-transition: all 0.3s linear;
-  -moz-transition: all 0.3s linear;
   transition: all 0.3s linear;
   color: #0071bc;
 }
@@ -7697,7 +7713,8 @@ html {
 :root .fa-rotate-270,
 :root .fa-flip-horizontal,
 :root .fa-flip-vertical {
-  filter: none;
+  -webkit-filter: none;
+          filter: none;
 }
 
 .fa-stack {
@@ -10330,11 +10347,8 @@ html {
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
   transition: all 0.3s ease;
   -webkit-transform-style: preserve-3d;
-  -moz-transform-style: preserve-3d;
   -ms-transform-style: preserve-3d;
   -o-transform-style: preserve-3d;
   transform-style: preserve-3d;
@@ -10790,5 +10804,4 @@ html {
   font-size: 1.6rem;
   font-size: 1.7rem;
 }
-
 /*# sourceMappingURL=usajobs-design-system-base--help-center.css.map */

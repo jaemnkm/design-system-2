@@ -59,7 +59,7 @@ $modal-width-large: 930px;
       margin: $size-M auto;
     }
 
-    @include media($MLL) {
+    @include media($L) {
       width: rem($modal-width-large);
     }
   }

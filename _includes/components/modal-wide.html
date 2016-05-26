@@ -6,17 +6,19 @@
         called &quot;[Modal Header]&quot;. Escape will cancel and close the window.
       </div>
       <div class="usajobs-modal__header">
-        <h2 id="usajobs-modal-heading" class="usajobs-modal__title">Add/Edit Work Experience</h2>
+        <h2 id="usajobs-modal-heading" class="usajobs-modal__title">Add Experience</h2>
       </div>
       <div class="usajobs-modal__body">
         <form class="usa-form-large usajobs-form">
-          <h3>
-            Work Experience
-            <a href="https://help.usajobs.gov/index.php/Work_Experience"><i class="fa fa-question-circle"></i></a>
-          </h3>
-          <fieldset class="usajobs-form-grid">
+          <fieldset class="usajobs-form usajobs-form-grid">
+            <legend>
+              Work Experience
+               <span class="usajobs-form__legend">
+                  All fields are required unless otherwise noted.
+               </span>
+            </legend>
             <div class="usajobs-form-grid__col">
-              <label for="employer-name">Employer Name</label>
+              <label for="employer-name">Employer name</label>
               <input id="employer-name" name="employer-name" type="text">
 
               <label for="employer-address-1">Employer address 1</label>
@@ -289,7 +291,7 @@
                 <option value="267">Zimbabwe</option>
               </select>
 
-              <label for="postal-code">Postal Code</label>
+              <label for="postal-code">Postal code</label>
               <input class="usa-input-medium" id="postal-code" name="postal-code" type="text" pattern="[\d]{5}(-[\d]{4})?" data-grouplength="5,4" data-delimiter="-" data-politespace="">
 
               <label for="city">City</label>
@@ -351,8 +353,8 @@
                 <option value="WY">Wyoming</option>
               </select>
             </div>
-            <div class="usajobs-form-grid__col">
-              <label for="job-title">Job Title</label>
+            <div class="usajobs-form-grid__col--right">
+              <label for="job-title">Job title</label>
               <input id="job-title" name="job-title" type="text">
 
               <div class="usajobs-date-group">
@@ -562,12 +564,12 @@
                 <option value="1734">Without Compensation</option>
               </select>
 
-              <label for="hours_per_week">Average Hours per Week</label>
+              <label for="hours_per_week">Average hours per week</label>
               <input id="hours_per_week" name="hours_per_week" type="number" pattern="[0-9]{2}">
             </div>
 
             <div class="usajobs-form-grid__full-col">
-              <label for="duties">Duties, Accomplishments and Related Skills</label>
+              <label for="duties">Duties, Accomplishments and Skills</label>
               <textarea name="duties" rows="6" class="usajobs-input-large"></textarea>
             </div>
           </fieldset>
@@ -575,7 +577,7 @@
           <div class="usajobs-button_bar-container">
             <!-- Button Bar is full bleed -->
             <!-- Button Bar start -->
-            <div class="usajobs-button_bar usajobs-button_bar--slim">
+            <div class="usajobs-button_bar--slim">
               <div class="usajobs-button_bar__body">
                 <button class="usa-button-big usa-button-outline" data-behavior="modal.close">
                   Cancel

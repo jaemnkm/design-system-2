@@ -105,7 +105,7 @@
   .usa-footer-primary-content:last-child.usajobs-footer--v1__account,
   .usa-footer-primary-content:last-child.usajobs-footer--v2__account,
   .usa-footer-primary-content:last-child.usajobs-footer--joa__account {
-    @include media($MLL) {
+    @include media($L) {
       // grrr, the Neat grid automatically sets the last child to margin-right: 0
       // given the way we have split the grid into 2 then 4 columns the work around
       // is to hard code the margin-right
@@ -239,7 +239,7 @@
   }
 
   .usa-footer-primary-content {
-    @include media($MLL) {
+    @include media($L) {
       @include span-columns(6, 12);
     }
   }
@@ -249,7 +249,7 @@
       @include span-columns(3);
     }
 
-    @include media($MLL) {
+    @include media($L) {
       float: none;
       width: auto;
       margin: 0;
@@ -275,7 +275,7 @@
       @include span-columns(3, 6);
     }
 
-    @include media($MLL) {
+    @include media($L) {
       @include span-columns(4, 12);
     }
   }
@@ -285,7 +285,7 @@
       @include omega();
     }
 
-    @include media($MLL) {
+    @include media($L) {
       // grrr, the Neat grid automatically sets the last child to margin-right: 0
       // given the way we have split the grid into 2 then 4 columns the work around
       // is to hard code the margin-right
@@ -294,7 +294,7 @@
   }
 
   .usa-footer-primary-content:nth-child(4n) {
-    @include media($MLL) {
+    @include media($L) {
       @include omega();
     }
   }

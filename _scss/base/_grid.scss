@@ -54,7 +54,7 @@
     }
   }
 
-  @include media($MLL) {
+  @include media($L) {
     .usa-width-one-whole,
     .usajobs-width-one-whole {
       @include span-columns(12);
