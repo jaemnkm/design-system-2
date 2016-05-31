@@ -203,7 +203,7 @@ lead: USAJOBS adds or clarifies design for labels, contextual help, required/opt
   </div>
 </div>
 
-<h2 class="usa-heading" id="dropdown">Validation</h2>
+<h2 class="usa-heading" id="validation">Validation</h2>
 <p class="usa-font-lead">
   Styling, timing, and alert style guidance.
 </p>
