@@ -5,109 +5,124 @@
 @import 'shared';
 
 // Navigation ------------- //
-
-.usa-site-header {
+.usa-site-header,
+.usajobs-site-header {
   background-color: $color-white;
   border-bottom: 1px solid $color-gray-light;
-  position: fixed;
-  left: 0;
-  top: 0;
-  width: 100%;
-  z-index: 201;
 
   a {
     border-bottom: none;
   }
 
-  .usa-site-navbar {
-    @include media($medium-screen + $width-nav-sidebar) {
-      height: 6rem;
-      margin: {
-        bottom: 1rem;
-        top: 2.7rem;
-      }
-    }
-    margin-top: 4px;
-
-    .logo {
-      @include media($medium-screen + $width-nav-sidebar) {
-        padding-left: $site-margins;
-        text-align: left;
-        padding-top: 0;
-        width: auto;
-      }
-      float: left;
-      text-align: center;
-      padding-top: 1.3rem;
-      width: 70%;
-
-      a {
-        color: $color-gray;
-
-        &:hover {
-          color: $color-gray-dark;
-          text-decoration: none;
-        }
-      }
-    }
-
-    h1 {
-      @include media($medium-screen + $width-nav-sidebar) {
-        display: block;
-        font-size: $h3-font-size;
-        margin-top: .9rem;
-      }
-      margin: 0;
-      font-size: $h5-font-size;
-    }
-
-    .usa-button-list {
-      @include media($medium-screen + $width-nav-sidebar) {
-        display: block;
-        padding-right: $site-margins;
-      }
-      float: right;
-      display: none;
-      margin-top: -5px;
-
-      li {
-        display: inline;
-        font-family: $font-sans;
-
-        &:last-child .usa-button {
-          margin-right: 0;
-        }
-      }
-    }
-  }
-
   .disclaimer {
     padding: .5rem 2rem;
-    color: white;
+    color: $color-white;
     text-align: center;
     font-size: $base-font-size / 1.25;
     border-bottom: 1px solid #616161;
     font-weight: 100;
+
     .us-official {
       margin: 0;
     }
+
     .stage {
-      a { text-decoration: underline; }
       float: none;
       display: block;
       padding-top: 5px;
+
+      a {
+        text-decoration: underline;
+      }
     }
+
     @include media($medium-screen + $width-nav-sidebar) {
       .us-official {
         margin-left: 177px;
       }
+
       .stage {
         float: right;
         padding: 0;
       }
     }
   }
+}
 
+.usa-site-navbar,
+.usajobs-site-navbar {
+  @include media($medium-screen + $width-nav-sidebar) {
+    height: 6rem;
+    margin: {
+      bottom: 1rem;
+      top: 2.7rem;
+    }
+  }
+
+  .logo {
+    text-align: center;
+
+    @include media($medium-screen + $width-nav-sidebar) {
+      float: left;
+      width: 70%;
+      padding-left: $site-margins;
+      text-align: left;
+      padding-top: 0;
+      width: auto;
+    }
+
+    .logo-link {
+      display: block;
+      width: 100%;
+      padding: 1rem 0;
+      color: $color-gray;
+      font-size: $h3-font-size;
+      font-weight: bold;
+
+      @include media($medium-screen + $width-nav-sidebar) {
+        padding: 0;
+      }
+
+      &:hover {
+        color: $color-gray-dark;
+        text-decoration: none;
+      }
+    }
+  }
+
+  .usa-button-list {
+    display: none;
+    float: right;
+    margin-top: -5px;
+
+    @include media($medium-screen + $width-nav-sidebar) {
+      display: block;
+      padding-right: $site-margins;
+    }
+
+    li {
+      display: inline;
+      font-family: $font-sans;
+
+      &:last-child .usa-button {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+.usa-site-header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 201;
+}
+
+.usa-site-navbar {
+}
+
+.usajobs-site-navbar {
 }
 
 .menu-btn {
@@ -117,7 +132,7 @@
 
   display: inline;
   float: left;
-  margin-top: -4px;
+  margin-top: 2px;
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
   color: $color-white;
@@ -234,6 +249,10 @@
       width: 75%;
     }
   }
+}
+
+.l-shell-doc.main-content {
+  margin-top: $size-XL;
 }
 
 // Styleguide Content -------- //
@@ -908,16 +927,6 @@ $font-light: 300;
 // Odd one, but the design system header is fixed and thus conflicts with our modal
 .modals.is-open-modal .usa-site-header {
   display: none;
-}
-
-// For the shell demonstration we need to account for the fixed header of the site
-.shell .usajobs-shell,
-.grid .usajobs-shell {
-  padding-top: 2.3rem;
-
-  @include media(850px) {
-    padding-top: 8rem;
-  }
 }
 
 // For some components, like navigation we need more width to allow
