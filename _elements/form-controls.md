@@ -1,7 +1,7 @@
 ---
 layout: styleguide
 type: component
-title: Form controls
+title: Forms 
 lead: USAJOBS adds or clarifies design for labels, contextual help, required/optional field handling, and legend.
 ---
 
@@ -9,21 +9,6 @@ lead: USAJOBS adds or clarifies design for labels, contextual help, required/opt
   Design Complete
 </a>
 
-<h2 class="usa-heading" id="dropdown">Dropdown</h2>
-<p class="usa-font-lead">
-  Our dropdown adds protection from the text running into the dropdown arrow.
-</p>
-<div class="preview">
-  <form>
-    <label for="options">Dropdown label</label>
-    <select name="options" id="options">
-      <option value="value1">abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz</option>
-      <option value="value2">Option B</option>
-      <option value="value3">Option C</option>
-    </select>
-  </form>
-</div>
-    
 <h2 class="usa-heading" id="contextual-help">Contextual Help</h2>
 <p class="usa-font-lead">
   Contextual help provides assistance in clarifying the intent of a question or form input.
@@ -111,6 +96,22 @@ lead: USAJOBS adds or clarifies design for labels, contextual help, required/opt
     </ul>
   </div>
 </div>
+
+<h2 class="usa-heading" id="dropdown">Dropdown</h2>
+<p class="usa-font-lead">
+  Our dropdown adds protection from the text running into the dropdown arrow.
+</p>
+<div class="preview">
+  <form>
+    <label for="options">Dropdown label</label>
+    <select name="options" id="options">
+      <option value="value1">abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz</option>
+      <option value="value2">Option B</option>
+      <option value="value3">Option C</option>
+    </select>
+  </form>
+</div>
+    
 
 <h2 class="usa-heading" id="labels">Labels</h2>
 <p>
@@ -201,3 +202,57 @@ lead: USAJOBS adds or clarifies design for labels, contextual help, required/opt
     </ul>
   </div>
 </div>
+
+<h2 class="usa-heading" id="dropdown">Validation</h2>
+<p class="usa-font-lead">
+  Styling, timing, and alert style guidance.
+</p>
+<div class="usa-accordion-bordered usa-accordion-docs">
+  <button class="usa-button-unstyled usa-accordion-button"
+      aria-expanded="true" aria-controls="collapsible-0">
+    Documentation
+  </button>
+  <div id="collapsible-0" aria-hidden="false" class="usa-accordion-content">
+    <h4 class="usa-heading">Visual</h4>
+    <ul class="usa-content-list">
+      <li>Input boxes and dropdowns in error should be <a href="https://standards.usa.gov/form-controls/#text-inputs">outlined in red</a>/</li>
+      <li>A <a href="https://standards.usa.gov/form-controls/#text-inputs">vertical red bar</a> should run along the left side of all failed form fields. The red bar should run the length of each individual question, including the radio buttons or answer options.</li>
+      <li>Input boxes and dropdowns no longer in error should be outlined in green.</li>
+      <li>The <a href="https://standards.usa.gov/form-controls/#text-inputs">styling should follow the U.S. Design Standards</a>.</li>
+    </ul>
+    <h4 class="usa-heading">Labels</h4>
+    <ul class="usa-content-list">
+      <li>When a field is required the help text "This field is required" should be placed directly under the field label or required question.</li>
+      <li>The help text related to character issues or unmet requirements should use the text "This field" rather than the actual field name.</li>
+    </ul>
+    <h4 class="usa-heading">Timing</h4>
+    <h5>Errors</h5>
+    <ul class="usa-content-list">
+      <li>Inline error validation should occur on all required input fields and dropdowns. The error styling should be triggered after the field has lost focus (the user has clicked or tabbed away from the input field without meeting field requirements).</li>
+      <li>Do not display an alert at the top of the page when using inline error validation.</li>
+      <li>Inline error validation should also occur if a user enters a character that does not meet the requirements of the field. For example, entering a number in the first name text input. This should occur for optional and required fields.</li>
+    </ul>
+
+    <h5>Success</h5>
+    <ul class="usa-content-list">
+      <li>Success styling should be triggered when a form error (red styling) is corrected. The success validation should appear once the user clicks or tabs out of the input and meets the basic requirements of that field.</li>
+      <li>Success styling should be removed when the page is saved.</li>
+    </ul>
+
+    <h5>Dependent fields</h5>
+    <ul class="usa-content-list">
+      <li>
+        When you have dependent fields (i.e. Start Date & End date) you should not receive an error on either field until the user leaves the set (both fields). After the set has been left, error styling should be triggered on one or both of the fields.
+      </li>
+    </ul>
+
+    <h4 class="usa-heading">Error alert</h4>
+    <ul class="usa-content-list">
+      <li>If a user saves a form with known errors or skipped required fields, reload the page with the errors styling displayed and an alert at the top of the page.</li>
+      <li>The alert should appear above the form but not within the form.</li>
+      <li>The alert should list the missed fields or known errors on the page in a bulleted list below the text "There were one or more errors in your submission. Please correct the errors below:"</li>
+    </ul>
+  </div>
+</div>
+
+
