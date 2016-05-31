@@ -19,41 +19,75 @@ html {
   clip: rect(0 0 0 0) !important;
 }
 
-.usa-site-header {
+.usa-site-header,
+.usajobs-site-header {
   background-color: #ffffff;
   border-bottom: 1px solid #aeb0b5;
-  position: fixed;
-  left: 0;
-  top: 0;
-  width: 100%;
-  z-index: 201;
 }
 
-.usa-site-header a {
+.usa-site-header a,
+.usajobs-site-header a {
   border-bottom: none;
 }
 
-.usa-site-header .usa-site-navbar {
-  margin-top: 4px;
+.usa-site-header .disclaimer,
+.usajobs-site-header .disclaimer {
+  padding: .5rem 2rem;
+  color: #ffffff;
+  text-align: center;
+  font-size: 1.36rem;
+  border-bottom: 1px solid #616161;
+  font-weight: 100;
+}
+
+.usa-site-header .disclaimer .us-official,
+.usajobs-site-header .disclaimer .us-official {
+  margin: 0;
+}
+
+.usa-site-header .disclaimer .stage,
+.usajobs-site-header .disclaimer .stage {
+  float: none;
+  display: block;
+  padding-top: 5px;
+}
+
+.usa-site-header .disclaimer .stage a,
+.usajobs-site-header .disclaimer .stage a {
+  text-decoration: underline;
 }
 
 @media screen and (min-width: 850px) {
-  .usa-site-header .usa-site-navbar {
+  .usa-site-header .disclaimer .us-official,
+  .usajobs-site-header .disclaimer .us-official {
+    margin-left: 177px;
+  }
+  .usa-site-header .disclaimer .stage,
+  .usajobs-site-header .disclaimer .stage {
+    float: right;
+    padding: 0;
+  }
+}
+
+@media screen and (min-width: 850px) {
+  .usa-site-navbar,
+  .usajobs-site-navbar {
     height: 6rem;
     margin-bottom: 1rem;
     margin-top: 2.7rem;
   }
 }
 
-.usa-site-header .usa-site-navbar .logo {
-  float: left;
+.usa-site-navbar .logo,
+.usajobs-site-navbar .logo {
   text-align: center;
-  padding-top: 1.3rem;
-  width: 70%;
 }
 
 @media screen and (min-width: 850px) {
-  .usa-site-header .usa-site-navbar .logo {
+  .usa-site-navbar .logo,
+  .usajobs-site-navbar .logo {
+    float: left;
+    width: 70%;
     padding-left: 3rem;
     text-align: left;
     padding-top: 0;
@@ -61,87 +95,67 @@ html {
   }
 }
 
-.usa-site-header .usa-site-navbar .logo a {
+.usa-site-navbar .logo .logo-link,
+.usajobs-site-navbar .logo .logo-link {
+  display: block;
+  width: 100%;
+  padding: 1rem 0;
   color: #5b616b;
+  font-size: 24px;
+  font-weight: bold;
 }
 
-.usa-site-header .usa-site-navbar .logo a:hover {
+@media screen and (min-width: 850px) {
+  .usa-site-navbar .logo .logo-link,
+  .usajobs-site-navbar .logo .logo-link {
+    padding: 0;
+  }
+}
+
+.usa-site-navbar .logo .logo-link:hover,
+.usajobs-site-navbar .logo .logo-link:hover {
   color: #323a45;
   text-decoration: none;
 }
 
-.usa-site-header .usa-site-navbar h1 {
-  margin: 0;
-  font-size: 16px;
-}
-
-@media screen and (min-width: 850px) {
-  .usa-site-header .usa-site-navbar h1 {
-    display: block;
-    font-size: 24px;
-    margin-top: .9rem;
-  }
-}
-
-.usa-site-header .usa-site-navbar .usa-button-list {
-  float: right;
+.usa-site-navbar .usa-button-list,
+.usajobs-site-navbar .usa-button-list {
   display: none;
+  float: right;
   margin-top: -5px;
 }
 
 @media screen and (min-width: 850px) {
-  .usa-site-header .usa-site-navbar .usa-button-list {
+  .usa-site-navbar .usa-button-list,
+  .usajobs-site-navbar .usa-button-list {
     display: block;
     padding-right: 3rem;
   }
 }
 
-.usa-site-header .usa-site-navbar .usa-button-list li {
+.usa-site-navbar .usa-button-list li,
+.usajobs-site-navbar .usa-button-list li {
   display: inline;
   font-family: "Source Sans Pro", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
 }
 
-.usa-site-header .usa-site-navbar .usa-button-list li:last-child .usa-button {
+.usa-site-navbar .usa-button-list li:last-child .usa-button,
+.usajobs-site-navbar .usa-button-list li:last-child .usa-button {
   margin-right: 0;
 }
 
-.usa-site-header .disclaimer {
-  padding: 0.5rem 2rem;
-  color: white;
-  text-align: center;
-  font-size: 1.36rem;
-  border-bottom: 1px solid #616161;
-  font-weight: 100;
-}
-
-.usa-site-header .disclaimer .us-official {
-  margin: 0;
-}
-
-.usa-site-header .disclaimer .stage {
-  float: none;
-  display: block;
-  padding-top: 5px;
-}
-
-.usa-site-header .disclaimer .stage a {
-  text-decoration: underline;
-}
-
-@media screen and (min-width: 850px) {
-  .usa-site-header .disclaimer .us-official {
-    margin-left: 177px;
-  }
-  .usa-site-header .disclaimer .stage {
-    float: right;
-    padding: 0;
-  }
+.usa-site-header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 201;
 }
 
 .menu-btn {
   display: inline;
   float: left;
-  margin-top: -4px;
+  margin-top: 2px;
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
   color: #ffffff;
@@ -178,7 +192,9 @@ html {
     height: 100%;
     width: 220px;
     -webkit-transform: translateX(-220px);
+    -moz-transform: translateX(-220px);
     -ms-transform: translateX(-220px);
+    -o-transform: translateX(-220px);
     transform: translateX(-220px);
     background: #fff;
     -webkit-overflow-scrolling: touch;
@@ -186,9 +202,13 @@ html {
     z-index: 999999;
   }
   #menu-content.is-visible {
+    -webkit-transition: all 0.25s linear;
+    -moz-transition: all 0.25s linear;
     transition: all 0.25s linear;
     -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
     -ms-transform: translateX(0);
+    -o-transform: translateX(0);
     transform: translateX(0);
   }
 }
@@ -199,6 +219,8 @@ html {
   right: 0;
   bottom: 0;
   left: 0;
+  -webkit-transition: all 0.15s ease-out 0s;
+  -moz-transition: all 0.15s ease-out 0s;
   transition: all 0.15s ease-out 0s;
   background: #000;
   opacity: 0;
@@ -272,6 +294,10 @@ html {
   .lt-ie9 .l-doc.main-content {
     width: 75%;
   }
+}
+
+.l-shell-doc.main-content {
+  margin-top: 6rem;
 }
 
 .styleguide-content {
@@ -932,18 +958,6 @@ code[class*="language-"], pre[class*="language-"] {
   display: none;
 }
 
-.shell .usajobs-shell,
-.grid .usajobs-shell {
-  padding-top: 2.3rem;
-}
-
-@media screen and (min-width: 850px) {
-  .shell .usajobs-shell,
-  .grid .usajobs-shell {
-    padding-top: 8rem;
-  }
-}
-
 .navigation .preview {
   position: relative;
   padding: 0;
@@ -959,4 +973,5 @@ code[class*="language-"], pre[class*="language-"] {
 .navigation .preview .usajobs-nav--v2 {
   margin-bottom: 1rem;
 }
+
 /*# sourceMappingURL=documentation.css.map */
