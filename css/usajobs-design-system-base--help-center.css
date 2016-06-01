@@ -6095,6 +6095,11 @@ img {
   color: #205493;
 }
 
+.usajobs-form__field-group,
+.usajobs-content-well .usajobs-form__field-group {
+  margin-bottom: 6rem;
+}
+
 .usajobs-form-grid {
   max-width: 1200px;
   margin-left: auto;

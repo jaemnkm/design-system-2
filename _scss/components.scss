@@ -4,10 +4,13 @@
 // It is just a shortcut. In practice these will be included on appropriate pages as needed.
 
 @import 'component/header';
-@import 'component/nav';
-@import 'component/nav-secondary';
 @import 'component/footer';
 @import 'component/modal';
+
+// Navigation
+@import 'component/nav';
+@import 'component/nav-secondary';
+@import 'component/profile-sidenav';
 
 // Application Guide
 @import 'component/joa_summary';

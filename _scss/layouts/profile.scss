@@ -1,0 +1,42 @@
+// Profile (including layouts or Documents and Username & Password)
+
+@import 'base-shared';
+@import 'font-awesome/font-awesome';
+
+@import 'account';
+@import '../home-variables';
+
+.usajobs-profile {
+  @include accountLayout(true);
+}
+
+.usajobs-profile {
+  &__body {
+    fieldset {
+      width: 100%;
+      margin-bottom: $size-L;
+
+      legend {
+        @include h3();
+        margin: 0;
+      }
+    }
+  }
+
+  &__section-title {
+    max-width: $input-max-width;
+
+    &.is-complete::before {
+      @include fa-icon();
+      content: $fa-var-check-circle;
+      color: $color-green;
+    }
+  }
+
+  &__required-section {
+    float: right;
+    padding-top: $size-default;
+    font-size: $small-font-size;
+    color: $color-secondary;
+  }
+}
