@@ -1,0 +1,22 @@
+// Profile - Side navigation
+
+@import 'base-shared';
+@import 'font-awesome/font-awesome';
+
+@import 'sidenav';
+@import 'profile-status';
+
+.usajobs-profile-sidenav {
+  @include sidenav();
+  @include profileStatus();
+
+  a.usajobs-profile-sidenav__link,
+  a.usajobs-profile-sidenav__sub-link {
+    // Defeating annoying global styles
+    text-decoration: none;
+  }
+
+  &.has-secondary-nav {
+    @include sidenavSecondary();
+  }
+}

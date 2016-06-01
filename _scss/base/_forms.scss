@@ -54,6 +54,10 @@
     padding-left: $size-base;
     color: $color-primary-darker;
   }
+
+  &__field-group {
+    margin-bottom: $size-XL;
+  }
 }
 
 .usajobs-form-grid {

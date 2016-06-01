@@ -1,0 +1,46 @@
+// Shared Account Layout
+
+@import 'base-shared';
+@import 'font-awesome/font-awesome';
+
+@import '../home-variables';
+
+@mixin accountLayout ($hasChildren: false) {
+  @include clearfix();
+
+  @include media($home-switch-to-tabs) {
+    margin-bottom: 0;
+    // this is to get the sidenav stripe to run to the bottom of the page
+    // background-color: $color-gray-dark;
+  }
+
+  &__body {
+    @include clearfix();
+    background-color: $color-white;
+
+    @include media($home-switch-to-tabs) {
+      position: relative;
+      float: left;
+      @if $hasChildren == true {
+        width: calc(100% - #{$home-sidenav-width-combined-small});
+      } @else {
+        width: calc(100% - #{$home-sidenav-width-small});
+      }
+      min-height: rem(600px);
+    }
+
+    @include media($L) {
+      @if $hasChildren == true {
+        width: calc(100% - #{$home-sidenav-width-combined-large});
+      } @else {
+        width: calc(100% - #{$home-sidenav-width-large});
+      }
+    }
+  }
+
+  &__title {
+    @include media($home-switch-to-tabs) {
+      margin: $size-L 0;
+    }
+  }
+}
