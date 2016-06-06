@@ -249,6 +249,10 @@ html {
   width: 25%;
 }
 
+.sidenav .usa-sidenav-list li {
+  font-size: 1.7rem;
+}
+
 .sidenav .usa-sidenav-sub_list {
   display: none;
 }
