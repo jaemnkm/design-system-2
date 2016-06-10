@@ -284,5 +284,20 @@ lead: USAJOBS has adopted a different visual style to our alerts that deviate fr
     <p>
       We recommend you upload your SF-50. Many jobs require the SF-50 to verify your federal service.
     </p>
+     <h4 class="usa-heading">Profile Tips and Alerts</h4>
+   <h5>Success message - Contact information saved</h5>
+   <p>
+      This alert displays when a user has updated or completed their contact information, but has not completed their eligibility section.
+    </p>
+    <h6>Tip Title</h6>
+    <p>
+      Contact information saved.
+    </p>
+    <h6>Body copy</h6>
+    <p>
+     Your contact information has been saved to your profile. You have completed 1 of 2 required sections in your profile. You need to complete the Eligibility section, before you can apply for jobs.
+    </p>
+    <h6>Call to action</h6>
+    <p>Next: Eligibility</p>
   </div>
 </div>
