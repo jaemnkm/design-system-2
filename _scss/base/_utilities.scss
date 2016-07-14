@@ -80,6 +80,18 @@
   box-shadow: inset 0 0 0 2px $border;
 }
 
+@mixin makeSemiCircle($size, $bg-color: inherit, $color: $color-white) {
+  display: inline-block;
+  width: $size;
+  height: $size /2;
+  line-height: $size;
+  -moz-border-radius: $size $size 0 0;
+  -webkit-border-radius: $size $size 0 0;
+  border-radius: $size $size 0 0;
+  color: $color;
+  background-color: $bg-color;
+}
+
 @mixin makeCloseButton($size: 35px) {
   position: absolute;
   top: -#{$size-default};

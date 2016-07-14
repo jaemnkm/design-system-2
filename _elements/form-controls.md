@@ -250,7 +250,7 @@ lead: USAJOBS adds or clarifies design for labels, contextual help, required/opt
     <ul class="usa-content-list">
       <li>If a user saves a form with known errors or skipped required fields, reload the page with the errors styling displayed and an alert at the top of the page.</li>
       <li>The alert should appear above the form but not within the form.</li>
-      <li>The alert should list the missed fields or known errors on the page in a bulleted list below the text "There were one or more errors in your submission. Please correct the errors below:"</li>
+      <li>The alert should read "We can’t save your information because there are one or more errors. Please correct the information below and then save your changes."</li>
     </ul>
   </div>
 </div>

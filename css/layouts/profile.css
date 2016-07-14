@@ -202,7 +202,8 @@ html {
 :root .fa-rotate-270,
 :root .fa-flip-horizontal,
 :root .fa-flip-vertical {
-  filter: none;
+  -webkit-filter: none;
+          filter: none;
 }
 
 .fa-stack {
@@ -2947,7 +2948,8 @@ html {
 :root .fa-rotate-270,
 :root .fa-flip-horizontal,
 :root .fa-flip-vertical {
-  filter: none;
+  -webkit-filter: none;
+          filter: none;
 }
 
 .fa-stack {
@@ -5492,7 +5494,7 @@ html {
 .usajobs-profile::after {
   clear: both;
   content: "";
-  display: table;
+  display: block;
 }
 
 @media screen and (min-width: 48em) {
@@ -5508,7 +5510,7 @@ html {
 .usajobs-profile__body::after {
   clear: both;
   content: "";
-  display: table;
+  display: block;
 }
 
 @media screen and (min-width: 48em) {
@@ -5569,5 +5571,4 @@ html {
   font-size: 1.4rem;
   color: #e31c3d;
 }
-
 /*# sourceMappingURL=profile.css.map */

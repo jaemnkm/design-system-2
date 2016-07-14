@@ -190,9 +190,7 @@ html {
     height: 100%;
     width: 220px;
     -webkit-transform: translateX(-220px);
-    -moz-transform: translateX(-220px);
     -ms-transform: translateX(-220px);
-    -o-transform: translateX(-220px);
     transform: translateX(-220px);
     background: #fff;
     -webkit-overflow-scrolling: touch;
@@ -200,13 +198,9 @@ html {
     z-index: 999999;
   }
   #menu-content.is-visible {
-    -webkit-transition: all 0.25s linear;
-    -moz-transition: all 0.25s linear;
     transition: all 0.25s linear;
     -webkit-transform: translateX(0);
-    -moz-transform: translateX(0);
     -ms-transform: translateX(0);
-    -o-transform: translateX(0);
     transform: translateX(0);
   }
 }
@@ -217,8 +211,6 @@ html {
   right: 0;
   bottom: 0;
   left: 0;
-  -webkit-transition: all 0.15s ease-out 0s;
-  -moz-transition: all 0.15s ease-out 0s;
   transition: all 0.15s ease-out 0s;
   background: #000;
   opacity: 0;
@@ -382,7 +374,7 @@ html {
 .preview::after {
   clear: both;
   content: "";
-  display: table;
+  display: block;
 }
 
 .preview.compact {
@@ -603,8 +595,8 @@ h3 + .button_wrapper {
 .usa-primary-color-section .usa-color-square {
   float: left;
   display: block;
-  margin-right: 2.3576515979%;
-  width: 48.821174201%;
+  margin-right: 2.3576520234%;
+  width: 48.8211739883%;
   margin-bottom: 7rem;
   padding-bottom: 50%;
   position: relative;
@@ -618,8 +610,8 @@ h3 + .button_wrapper {
   .usa-primary-color-section .usa-color-square {
     float: left;
     display: block;
-    margin-right: 2.3576515979%;
-    width: 23.2317613015%;
+    margin-right: 2.3576520234%;
+    width: 23.2317609825%;
     margin-bottom: 0;
     padding-bottom: 19%;
   }
@@ -975,5 +967,4 @@ code[class*="language-"], pre[class*="language-"] {
 .navigation .preview .usajobs-nav--v2 {
   margin-bottom: 1rem;
 }
-
 /*# sourceMappingURL=documentation.css.map */

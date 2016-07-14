@@ -58,7 +58,7 @@ html {
 .usajobs-joa-intro::after {
   clear: both;
   content: "";
-  display: table;
+  display: block;
 }
 
 @media screen and (min-width: 62em) {
@@ -155,8 +155,8 @@ html {
   .usajobs-joa-intro__summary {
     float: left;
     display: block;
-    margin-right: 4.8291579146%;
-    width: 47.5854210427%;
+    margin-right: 4.8291588071%;
+    width: 47.5854205965%;
   }
   .usajobs-joa-intro__summary:last-child {
     margin-right: 0;
@@ -167,8 +167,8 @@ html {
   .usajobs-joa-intro__summary {
     float: left;
     display: block;
-    margin-right: 2.3576515979%;
-    width: 31.7615656014%;
+    margin-right: 2.3576520234%;
+    width: 31.7615653177%;
   }
   .usajobs-joa-intro__summary:last-child {
     margin-right: 0;
@@ -179,8 +179,8 @@ html {
   .usajobs-joa-intro__details-container {
     float: left;
     display: block;
-    margin-right: 4.8291579146%;
-    width: 47.5854210427%;
+    margin-right: 4.8291588071%;
+    width: 47.5854205965%;
   }
   .usajobs-joa-intro__details-container:last-child {
     margin-right: 0;
@@ -191,8 +191,8 @@ html {
   .usajobs-joa-intro__details-container {
     float: left;
     display: block;
-    margin-right: 2.3576515979%;
-    width: 65.8807828007%;
+    margin-right: 2.3576520234%;
+    width: 65.8807826589%;
   }
   .usajobs-joa-intro__details-container:last-child {
     margin-right: 0;
@@ -223,8 +223,8 @@ html {
   .usajobs-joa-intro__details {
     float: left;
     display: block;
-    margin-right: 2.3576515979%;
-    width: 48.821174201%;
+    margin-right: 2.3576520234%;
+    width: 48.8211739883%;
   }
   .usajobs-joa-intro__details:last-child {
     margin-right: 0;
@@ -438,7 +438,8 @@ html {
 :root .fa-rotate-270,
 :root .fa-flip-horizontal,
 :root .fa-flip-vertical {
-  filter: none;
+  -webkit-filter: none;
+          filter: none;
 }
 
 .fa-stack {
@@ -2990,7 +2991,7 @@ html {
 .usajobs-joa-actions::after {
   clear: both;
   content: "";
-  display: table;
+  display: block;
 }
 
 @media screen and (min-width: 37.5em) {
@@ -3016,8 +3017,8 @@ html {
   .usajobs-joa-actions__col-apply, .usajobs-joa-actions__col-sub-actions {
     float: left;
     display: block;
-    margin-right: 4.8291579146%;
-    width: 47.5854210427%;
+    margin-right: 4.8291588071%;
+    width: 47.5854205965%;
   }
   .usajobs-joa-actions__col-apply:last-child, .usajobs-joa-actions__col-sub-actions:last-child {
     margin-right: 0;
@@ -3028,8 +3029,8 @@ html {
   .usajobs-joa-actions__col-apply, .usajobs-joa-actions__col-sub-actions {
     float: left;
     display: block;
-    margin-right: 2.3576515979%;
-    width: 31.7615656014%;
+    margin-right: 2.3576520234%;
+    width: 31.7615653177%;
   }
   .usajobs-joa-actions__col-apply:last-child, .usajobs-joa-actions__col-sub-actions:last-child {
     margin-right: 0;
@@ -3060,8 +3061,8 @@ html {
 .usajobs-joa-actions__col-sub-actions .usajobs-joa-actions__save {
   float: left;
   display: block;
-  margin-right: 2.3576515979%;
-  width: 31.7615656014%;
+  margin-right: 2.3576520234%;
+  width: 31.7615653177%;
   padding: 1rem 0;
   text-align: center;
   color: #212121;
@@ -3125,7 +3126,7 @@ html {
 .usajobs-joa-actions__social-list::after {
   clear: both;
   content: "";
-  display: table;
+  display: block;
 }
 
 .usajobs-joa-actions__social-list > li {
@@ -3145,8 +3146,8 @@ html {
   .usajobs-joa-actions__social-list > li {
     float: left;
     display: block;
-    margin-right: 4.8291579146%;
-    width: 47.5854210427%;
+    margin-right: 4.8291588071%;
+    width: 47.5854205965%;
   }
   .usajobs-joa-actions__social-list > li:last-child {
     margin-right: 0;
@@ -3194,7 +3195,7 @@ html {
 .usajobs-joa-agency::after {
   clear: both;
   content: "";
-  display: table;
+  display: block;
 }
 
 .usajobs-joa-agency__agency {
@@ -3214,8 +3215,8 @@ html {
   .usajobs-joa-agency__details, .usajobs-joa-agency__address {
     float: left;
     display: block;
-    margin-right: 4.8291579146%;
-    width: 47.5854210427%;
+    margin-right: 4.8291588071%;
+    width: 47.5854205965%;
   }
   .usajobs-joa-agency__details:last-child, .usajobs-joa-agency__address:last-child {
     margin-right: 0;
@@ -3227,5 +3228,4 @@ html {
     margin-right: 0;
   }
 }
-
 /*# sourceMappingURL=usajobs-design-system-components-joa.css.map */
