@@ -10,5 +10,5 @@
 
 // The Leftovers
 $border-radius:     rem(3px);
-$box-shadow:        0 0 2px rgba(#000, 0.3);
+$box-shadow:        0 0 2px $color-shadow;
 $focus-shadow:      0 0 3px $color-focus, 0 0 7px $color-focus;
