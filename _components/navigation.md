@@ -15,7 +15,7 @@ lead: USAJOBS features a consistent header for top-level navigation across the s
     <div class="usa-disclaimer">
       <div class="usa-grid usajobs-disclaimer-official">
         <img class="usa-flag_icon" alt="U.S. flag signifying that this is a United States federal government website" src="{{ site.baseurl }}/img/us_flag_small.png">
-        An official website of the United States Government
+        <p>An official website of the United States Government</p>
       </div>
     </div>
     <nav class="usajobs-nav" role="navigation" aria-label="main navigation" data-object="nav">
@@ -134,7 +134,7 @@ lead: USAJOBS features a consistent header for top-level navigation across the s
     <div class="usa-disclaimer">
       <div class="usa-grid usajobs-disclaimer-official">
         <img class="usa-flag_icon" alt="U.S. flag signifying that this is a United States federal government website" src="{{ site.baseurl }}/img/us_flag_small.png">
-        An official website of the United States Government
+        <p>An official website of the United States Government</p>
       </div>
     </div>
     <nav class="usajobs-nav" role="navigation" aria-label="main navigation" data-object="nav">
@@ -236,7 +236,7 @@ lead: USAJOBS features a consistent header for top-level navigation across the s
     <div class="usa-disclaimer">
       <div class="usa-grid usajobs-disclaimer-official">
         <img class="usa-flag_icon" alt="U.S. flag signifying that this is a United States federal government website" src="{{ site.baseurl }}/img/us_flag_small.png">
-        An official website of the United States Government
+        <p>An official website of the United States Government</p>
       </div>
     </div>
     <nav class="usajobs-nav" role="navigation" aria-label="main navigation" data-object="nav">
@@ -314,7 +314,7 @@ lead: USAJOBS features a consistent header for top-level navigation across the s
     <div class="usa-disclaimer">
       <div class="usa-grid usajobs-disclaimer-official">
         <img class="usa-flag_icon" alt="U.S. flag signifying that this is a United States federal government website" src="{{ site.baseurl }}/img/us_flag_small.png">
-        An official website of the United States Government
+        <p>An official website of the United States Government</p>
       </div>
     </div>
     <nav class="usajobs-nav--v1B" role="navigation" aria-label="main navigation" data-object="nav">
@@ -388,7 +388,7 @@ lead: USAJOBS features a consistent header for top-level navigation across the s
     <div class="usa-disclaimer">
       <div class="usa-grid usajobs-disclaimer-official">
         <img class="usa-flag_icon" alt="U.S. flag signifying that this is a United States federal government website" src="{{ site.baseurl }}/img/us_flag_small.png">
-        An official website of the United States Government
+        <p>An official website of the United States Government</p>
       </div>
     </div>
     <nav class="usajobs-nav--v1C" role="navigation" aria-label="main navigation" data-object="nav">
@@ -468,7 +468,7 @@ lead: USAJOBS features a consistent header for top-level navigation across the s
     <div class="usa-disclaimer">
       <div class="usa-grid usajobs-disclaimer-official">
         <img class="usa-flag_icon" alt="U.S. flag signifying that this is a United States federal government website" src="{{ site.baseurl }}/img/us_flag_small.png">
-        An official website of the United States Government
+        <p>An official website of the United States Government</p>
       </div>
     </div>
     <nav class="usajobs-nav--v1D" role="navigation" aria-label="main navigation" data-object="nav">
@@ -546,7 +546,7 @@ lead: USAJOBS features a consistent header for top-level navigation across the s
     <div class="usa-disclaimer">
       <div class="usa-grid usajobs-disclaimer-official">
         <img class="usa-flag_icon" alt="U.S. flag signifying that this is a United States federal government website" src="{{ site.baseurl }}/img/us_flag_small.png">
-        An official website of the United States Government
+        <p>An official website of the United States Government</p>
       </div>
     </div>
     <nav class="usajobs-nav" role="navigation" aria-label="main navigation" data-object="nav">
@@ -635,7 +635,7 @@ lead: USAJOBS features a consistent header for top-level navigation across the s
     <div class="usa-disclaimer">
       <div class="usa-grid usajobs-disclaimer-official">
         <img class="usa-flag_icon" alt="U.S. flag signifying that this is a United States federal government website" src="{{ site.baseurl }}/img/us_flag_small.png">
-        An official website of the United States Government
+        <p>An official website of the United States Government</p>
       </div>
     </div>
     <nav class="usajobs-nav" role="navigation" aria-label="main navigation" data-object="nav">
@@ -674,7 +674,7 @@ lead: USAJOBS features a consistent header for top-level navigation across the s
     <div class="usa-disclaimer">
       <div class="usa-grid usajobs-disclaimer-official">
         <img class="usa-flag_icon" alt="U.S. flag signifying that this is a United States federal government website" src="{{ site.baseurl }}/img/us_flag_small.png">
-        An official website of the United States Government
+        <p>An official website of the United States Government</p>
       </div>
     </div>
     <nav class="usajobs-nav" role="navigation" data-object="nav">

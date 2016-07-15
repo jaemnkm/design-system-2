@@ -418,7 +418,8 @@ body {
 }
 
 .lt-ie9 * {
-  filter: none !important;
+  -webkit-filter: none !important;
+          filter: none !important;
 }
 
 .usa-grid,
@@ -735,7 +736,9 @@ button,
   margin-top: 0.5em;
   margin-right: 0.5em;
   margin-bottom: 0.5em;
-  appearance: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   background-color: #0071bc;
   border: 0;
   border-radius: 0.3rem;
@@ -1220,7 +1223,9 @@ input[type="time"],
 input[type="week"],
 textarea,
 select {
-  appearance: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   border: 1px solid #5b616b;
   border-radius: 0;
   box-sizing: border-box;
@@ -2240,7 +2245,9 @@ dfn {
 
 @media screen and (min-width: 600px) {
   .usa-footer-medium .usa-footer-nav ul {
-    align-items: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
@@ -2258,7 +2265,9 @@ dfn {
     padding-top: 1rem;
   }
   .usa-footer-slim .usa-footer-primary-section .usa-grid-full {
-    align-items: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
@@ -4478,7 +4487,8 @@ img {
 :root .fa-rotate-270,
 :root .fa-flip-horizontal,
 :root .fa-flip-vertical {
-  filter: none;
+  -webkit-filter: none;
+          filter: none;
 }
 
 .fa-stack {
@@ -7155,6 +7165,10 @@ img {
   margin-top: 0;
 }
 
+.usa-input-error label {
+  font-weight: 700;
+}
+
 body {
   font-size: 17px;
 }
@@ -7447,7 +7461,6 @@ select {
 
 .usajobs-alert[aria-hidden=false] {
   -webkit-animation: fadeIn 0.8s;
-  -moz-animation: fadeIn 0.8s;
   animation: fadeIn 0.8s;
 }
 
@@ -7557,7 +7570,6 @@ select {
 }
 
 .no-flexbox .usajobs-alert__body {
-  width: -webkit-calc(100% -  8.5rem);
   width: calc(100% -  8.5rem);
 }
 
@@ -7573,8 +7585,6 @@ select {
   display: -moz-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -moz-box-align: center;
   box-align: center;
   -webkit-align-items: center;
   -moz-align-items: center;
@@ -7586,14 +7596,11 @@ select {
 
 .flexbox .usajobs-alert__figure {
   -webkit-flex-shrink: 0;
-  -moz-flex-shrink: 0;
-  flex-shrink: 0;
+          flex-shrink: 0;
   -ms-flex-negative: 0;
 }
 
 .flexbox .usajobs-alert__body {
-  -webkit-box-flex: 1;
-  -moz-box-flex: 1;
   box-flex: 1;
   -webkit-flex: 1;
   -moz-flex: 1;
@@ -7668,5 +7675,4 @@ select {
   margin: 0;
   font-size: 1.4rem;
 }
-
 /*# sourceMappingURL=usajobs-design-system-base.css.map */
