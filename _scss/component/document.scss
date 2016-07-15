@@ -248,12 +248,15 @@ $figure-height: $thumbnail-img-height + rem(1px) + 1rem; // 1px border + 1 rem p
     }
   }
 
-  &__icon::before {
-    @include fa-icon();
-    content: $fa-var-file;
-    color: $color-white;
-    font-size: 8rem;
-    line-height: $figure-height - $view-height - 1rem;
+  &__icon {
+    line-height: $figure-height + 0.7rem;
+
+    &::before {
+      @include fa-icon();
+      content: $fa-var-file;
+      color: $color-white;
+      font-size: 8rem;
+    }
   }
 
   &__icon.pdf::before {
