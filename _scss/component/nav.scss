@@ -325,11 +325,6 @@ $nav_item_height: 17px + 26.5px;
   }
 }
 
-// Disclaimer
-.usajobs-disclaimer-official {
-  max-width: $site-max-width;
-}
-
 // jQuery UI Autocomplete styling
 ul.ui-autocomplete {
   @include unstyledList();

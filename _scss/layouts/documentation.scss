@@ -76,6 +76,7 @@
       width: 100%;
       padding: 1rem 0;
       color: $color-gray;
+      text-decoration: none;
       font-size: $h3-font-size;
       font-weight: bold;
 
@@ -912,15 +913,39 @@ $font-light: 300;
 
 // This adds styleguide-only right and left margins for our disclaimer
 // Since the layout we use is not in a grid
-.usa-disclaimer-stage {
-  padding-right: $site-margins;
+.usa-disclaimer {
+  @include contentGutter();
+  font-size: 1.3rem;
 }
 
 .usa-disclaimer-official {
-  @include media($medium-screen) {
-    padding-left: $site-margins;
+  display: inline-block;
+
+  img {
+    float: left;
+    margin-right: 0.7rem;
+    margin-top: 1px;
+    width: 2rem;
   }
-  padding-left: 2rem;
+
+  p {
+    display: inline-block;
+    margin: 3px 0;
+
+    @include media($SM) {
+      margin: 2px 0;
+    }
+  }
+}
+
+.usa-disclaimer-stage {
+  display: none;
+  float: right;
+  margin: 2px 0;
+
+  @include media($L) {
+    display: block;
+  }
 }
 
 .usa-banner {

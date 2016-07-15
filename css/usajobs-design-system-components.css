@@ -18,13 +18,46 @@ html {
   clip: rect(0 0 0 0) !important;
 }
 
-.usajobs-site-header .usajobs-disclaimer-official {
-  padding-left: 1.5rem;
+.usajobs-site-header .usa-disclaimer {
+  padding: 0 1.5rem;
+  padding-right: 0;
+  font-size: 1.2rem;
 }
 
 @media screen and (min-width: 48em) {
-  .usajobs-site-header .usajobs-disclaimer-official {
+  .usajobs-site-header .usa-disclaimer {
     padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}
+
+@media screen and (min-width: 30em) {
+  .usajobs-site-header .usa-disclaimer {
+    font-size: 1.3rem;
+  }
+}
+
+.usajobs-site-header .usajobs-disclaimer-official {
+  display: inline-block;
+  padding: 0;
+  max-width: 120rem;
+}
+
+.usajobs-site-header .usajobs-disclaimer-official .usa-flag_icon {
+  float: left;
+  margin-right: 0.7rem;
+  margin-top: 1px;
+  width: 2rem;
+}
+
+.usajobs-site-header .usajobs-disclaimer-official p {
+  display: inline-block;
+  margin: 3px 0;
+}
+
+@media screen and (min-width: 30em) {
+  .usajobs-site-header .usajobs-disclaimer-official p {
+    margin: 2px 0;
   }
 }
 
@@ -231,7 +264,8 @@ html {
 :root .fa-rotate-270,
 :root .fa-flip-horizontal,
 :root .fa-flip-vertical {
-  filter: none;
+  -webkit-filter: none;
+          filter: none;
 }
 
 .fa-stack {
@@ -2864,11 +2898,8 @@ html {
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
   transition: all 0.3s ease;
   -webkit-transform-style: preserve-3d;
-  -moz-transform-style: preserve-3d;
   -ms-transform-style: preserve-3d;
   -o-transform-style: preserve-3d;
   transform-style: preserve-3d;
@@ -3528,7 +3559,8 @@ html {
 :root .fa-rotate-270,
 :root .fa-flip-horizontal,
 :root .fa-flip-vertical {
-  filter: none;
+  -webkit-filter: none;
+          filter: none;
 }
 
 .fa-stack {
@@ -6073,6 +6105,7 @@ html {
 .usajobs-modal {
   opacity: 0;
   visibility: hidden;
+  transition: -webkit-transform 0.3s linear, opacity 0.3s linear;
   transition: transform 0.3s linear, opacity 0.3s linear;
   overflow: hidden;
   position: fixed;
@@ -6820,8 +6853,6 @@ html {
 .usajobs-nav--v1C__menu-container[data-state="is-open"],
 .usajobs-nav--v1D__menu-container[data-state="is-open"],
 .usajobs-nav--v1E__menu-container[data-state="is-open"] {
-  -webkit-transition: all 0.3s linear;
-  -moz-transition: all 0.3s linear;
   transition: all 0.3s linear;
 }
 
@@ -6862,8 +6893,6 @@ html {
   padding: 10.5px 1rem;
   line-height: 1;
   text-align: center;
-  -webkit-transition: all 0.3s linear;
-  -moz-transition: all 0.3s linear;
   transition: all 0.3s linear;
   color: #0071bc;
 }
@@ -7287,10 +7316,6 @@ html {
   color: #0071bc;
 }
 
-.usajobs-disclaimer-official {
-  max-width: 120rem;
-}
-
 ul.ui-autocomplete {
   display: block;
   margin: 0;
@@ -7536,7 +7561,8 @@ html {
 :root .fa-rotate-270,
 :root .fa-flip-horizontal,
 :root .fa-flip-vertical {
-  filter: none;
+  -webkit-filter: none;
+          filter: none;
 }
 
 .fa-stack {
@@ -10395,7 +10421,8 @@ html {
 :root .fa-rotate-270,
 :root .fa-flip-horizontal,
 :root .fa-flip-vertical {
-  filter: none;
+  -webkit-filter: none;
+          filter: none;
 }
 
 .fa-stack {
@@ -13140,7 +13167,8 @@ html {
 :root .fa-rotate-270,
 :root .fa-flip-horizontal,
 :root .fa-flip-vertical {
-  filter: none;
+  -webkit-filter: none;
+          filter: none;
 }
 
 .fa-stack {
@@ -16286,7 +16314,8 @@ html {
 :root .fa-rotate-270,
 :root .fa-flip-horizontal,
 :root .fa-flip-vertical {
-  filter: none;
+  -webkit-filter: none;
+          filter: none;
 }
 
 .fa-stack {
@@ -19177,7 +19206,6 @@ html {
   content: "";
   color: #2e8540;
   -webkit-animation: fa-spin 2s infinite linear;
-  -moz-animation: fa-spin 2s infinite linear;
   animation: fa-spin 2s infinite linear;
 }
 
@@ -19806,7 +19834,8 @@ html {
 :root .fa-rotate-270,
 :root .fa-flip-horizontal,
 :root .fa-flip-vertical {
-  filter: none;
+  -webkit-filter: none;
+          filter: none;
 }
 
 .fa-stack {
@@ -22799,7 +22828,8 @@ html {
 :root .fa-rotate-270,
 :root .fa-flip-horizontal,
 :root .fa-flip-vertical {
-  filter: none;
+  -webkit-filter: none;
+          filter: none;
 }
 
 .fa-stack {
@@ -25601,5 +25631,4 @@ html {
   content: "";
   padding-left: 0.5rem;
 }
-
 /*# sourceMappingURL=usajobs-design-system-components.css.map */

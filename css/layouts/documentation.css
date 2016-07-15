@@ -99,6 +99,7 @@ html {
   width: 100%;
   padding: 1rem 0;
   color: #5b616b;
+  text-decoration: none;
   font-size: 24px;
   font-weight: bold;
 }
@@ -190,9 +191,7 @@ html {
     height: 100%;
     width: 220px;
     -webkit-transform: translateX(-220px);
-    -moz-transform: translateX(-220px);
     -ms-transform: translateX(-220px);
-    -o-transform: translateX(-220px);
     transform: translateX(-220px);
     background: #fff;
     -webkit-overflow-scrolling: touch;
@@ -200,13 +199,9 @@ html {
     z-index: 999999;
   }
   #menu-content.is-visible {
-    -webkit-transition: all 0.25s linear;
-    -moz-transition: all 0.25s linear;
     transition: all 0.25s linear;
     -webkit-transform: translateX(0);
-    -moz-transform: translateX(0);
     -ms-transform: translateX(0);
-    -o-transform: translateX(0);
     transform: translateX(0);
   }
 }
@@ -217,8 +212,6 @@ html {
   right: 0;
   bottom: 0;
   left: 0;
-  -webkit-transition: all 0.15s ease-out 0s;
-  -moz-transition: all 0.15s ease-out 0s;
   transition: all 0.15s ease-out 0s;
   background: #000;
   opacity: 0;
@@ -937,17 +930,49 @@ code[class*="language-"], pre[class*="language-"] {
   font-family: "Source Sans Pro", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
 }
 
-.usa-disclaimer-stage {
-  padding-right: 3rem;
+.usa-disclaimer {
+  padding: 0 1.5rem;
+  font-size: 1.3rem;
+}
+
+@media screen and (min-width: 48em) {
+  .usa-disclaimer {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
 }
 
 .usa-disclaimer-official {
-  padding-left: 2rem;
+  display: inline-block;
 }
 
-@media screen and (min-width: 600px) {
-  .usa-disclaimer-official {
-    padding-left: 3rem;
+.usa-disclaimer-official img {
+  float: left;
+  margin-right: 0.7rem;
+  margin-top: 1px;
+  width: 2rem;
+}
+
+.usa-disclaimer-official p {
+  display: inline-block;
+  margin: 3px 0;
+}
+
+@media screen and (min-width: 30em) {
+  .usa-disclaimer-official p {
+    margin: 2px 0;
+  }
+}
+
+.usa-disclaimer-stage {
+  display: none;
+  float: right;
+  margin: 2px 0;
+}
+
+@media screen and (min-width: 62em) {
+  .usa-disclaimer-stage {
+    display: block;
   }
 }
 
@@ -975,5 +1000,4 @@ code[class*="language-"], pre[class*="language-"] {
 .navigation .preview .usajobs-nav--v2 {
   margin-bottom: 1rem;
 }
-
 /*# sourceMappingURL=documentation.css.map */
