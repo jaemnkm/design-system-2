@@ -23,10 +23,12 @@ var $nav_secondary = $('[data-object="nav-secondary"]'),
     available_space = $nav_secondary.outerWidth(true) - more_width;
 
     if (nav_width > available_space) {
-      last_item = $menu.find('> li:not(.more)').last();
-      last_item.attr('data-width', last_item.outerWidth(true));
-      last_item.prependTo($more_container);
-      navSecondaryToggleMenuItems();
+      $menu.each(function () {
+        last_item = $menu.find('> li:not(.more)').last();
+        last_item.attr('data-width', last_item.outerWidth(true));
+        last_item.prependTo($more_container);
+        navSecondaryToggleMenuItems();
+      });
     } else {
       first_more_el = $more_menu.find('li').first();
 
