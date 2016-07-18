@@ -37,7 +37,7 @@ lead: A container for buttons, links, and calls-to-action.
       aria-expanded="true" aria-controls="collapsible-0">
     Documentation
   </button>
-  <div id="collapsible-0" aria-hidden="false" class="usa-accordion-content">
+  <div id="collapsible-0" class="usa-accordion-content">
     <h4 class="usa-heading">Usability</h4>
     <h5>When to use</h5>
     <ul class="usa-content-list">
