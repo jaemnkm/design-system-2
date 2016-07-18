@@ -1,61 +1,76 @@
 /**
- * Accordion
+ * @class Accordion
  *
  * An accordion component.
  *
- * @param {jQuery} $el A jQuery html element to turn into an accordion.
+ * @param {jQuery} el A jQuery html element to turn into an accordion.
  */
-function Accordion($el) {
+function Accordion ($el) {
   var self = this;
   this.$root = $el;
-  this.$root.on('click', 'button', function(ev) {
-    var action = $(this).data('button-action'),
-      expanded;
 
-    if (action != 'no-toggle') {
-      expanded = JSON.parse($(this).attr('aria-expanded'));
-      ev.preventDefault();
-      self.hideAll();
-
-      if (!expanded) {
-        self.show($(this));
-      }
+  // delegate click events on each <button>
+  this.$root.on('click', 'button', function (ev) {
+    var $button = $(this);
+    var expanded = $button.attr('aria-expanded') === 'true';
+    ev.preventDefault();
+    self.hideAll();
+    if (!expanded) {
+      self.show($button);
     }
   });
+
+  // find the first expanded button
+  var $expanded = this.$('button[aria-expanded=true]');
+  this.hideAll();
+  if ($expanded.length) {
+    this.show($expanded);
+  }
 }
 
-Accordion.prototype.$ = function(selector) {
+/**
+ * @param {String} selector
+ * @return {jQuery}
+ */
+Accordion.prototype.$ = function (selector) {
   return this.$root.find(selector);
 };
 
-Accordion.prototype.hide = function($button) {
+/**
+ * @param {jQuery} button
+ * @return {Accordion}
+ */
+Accordion.prototype.hide = function ($button) {
   var selector = $button.attr('aria-controls'),
-      $content = this.$('#' + selector);
+    $content = this.$('#' + selector);
 
   $button.attr('aria-expanded', false);
   $content.attr('aria-hidden', true);
+  return this;
 };
 
-Accordion.prototype.show = function($button) {
+/**
+ * @param {jQuery} button
+ * @return {Accordion}
+ */
+Accordion.prototype.show = function ($button) {
   var selector = $button.attr('aria-controls'),
-      $content = this.$('#' + selector);
+    $content = this.$('#' + selector);
 
   $button.attr('aria-expanded', true);
   $content.attr('aria-hidden', false);
-
-  /*
-  Backing this out as we don't always want this behavior
-  $('html, body').animate({
-    scrollTop: $content.offset().top
-  });
-  */
+  return this;
 };
 
-Accordion.prototype.hideAll = function() {
+/**
+ * @return {Accordion}
+ */
+Accordion.prototype.hideAll = function () {
   var self = this;
-  this.$('button').each(function() {
+  this.$('button').each(function () {
     self.hide($(this));
   });
+  return this;
 };
 
 /**
@@ -65,13 +80,16 @@ Accordion.prototype.hideAll = function() {
  *
  * @param {jQuery} $el A jQuery html element to turn into an accordion.
  */
+ /*
 function accordion($el) {
   return new Accordion($el);
 }
+*/
 
 $(function() {
   $('[class^=usa-accordion]').each(function() {
-    accordion($(this));
+    new Accordion($(this));
+    // accordion($(this));
   });
 });
 
