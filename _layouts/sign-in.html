@@ -3,11 +3,18 @@
 <!--[if gt IE 8]><!--><html lang="en"><!--<![endif]-->
   <head>
     {% include prod-head.html %}
-    <link rel="stylesheet" href="{{ "/css/usajobs-components-sign-in.css" | prepend: site.baseurl }}">
+    <link rel="stylesheet" href="{{ site.baseurl }}/css/usajobs-components-sign-in.css">
+    <link rel="stylesheet" href="{{ site.baseurl }}/css/layouts/sign-in.css" />
   </head>
   <body class="{{ page.title | slugify }} usajobs-sign-in">
     {% include components/nav-logo-only.html %}
-    {{ content }}
+    <section class="usajobs-shell">
+      <section class="usajobs-canvas">
+        <div class="usajobs-content-gutter">
+          {{ content }}
+        </div>
+      </section>
+    </section>
     {% include components/footer-signed-out.html %}
     {% include scripts.html %}
   </body>

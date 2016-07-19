@@ -1,77 +1,37 @@
-<form class="usajobs-form" action="/account/Create" class="" method="post" role="form" novalidate="novalidate">
-  <fieldset>
-    <input name="__RequestVerificationToken" type="hidden" value="dmnrj4V5tTEdc5YJ77Fl5P3Nu8UOGCchkPbaR0FMDl03CQptCo-LY2hE8b4LFUUHhfWm8Kw9HFi3bBLPJaupOjM-0-am3Bkz3Y43efjjsxk1">
-    <input id="ReturnUrl" name="ReturnUrl" type="hidden" value="https://login.test.usajobs.gov/account/signin">
+<fieldset class="usajobs-fieldset">
+  <span class="usajobs-form__legend">All fields are required unless otherwise noted</span>
 
-    <span class="usajobs-form__legend">All fields are required unless otherwise noted</span>
+  <label for="PrimaryEmail">Primary Email</label>
+  <input class="form-control" data-val="true" data-val-email="The Primary Email field is not a valid e-mail address." data-val-required="- Primary Email field is required." id="PrimaryEmail" name="PrimaryEmail" type="text" value="">
+  <span class="field-validation-valid" data-valmsg-for="PrimaryEmail" data-valmsg-replace="true"></span>
+  <p class="usajobs-form__help-brief">
+    Only one account can be created for each email address. Do not share your account with anyone else.
+  </p>
 
-    <div class="form-group">
-      <label for="PrimaryEmail">Primary Email</label>
-      <div class="input-group">
-        <input class="form-control" data-val="true" data-val-email="The Primary Email field is not a valid e-mail address." data-val-required="- Primary Email field is required." id="PrimaryEmail" name="PrimaryEmail" type="text" value="">
-      </div>
-      <span class="field-validation-valid" data-valmsg-for="PrimaryEmail" data-valmsg-replace="true"></span>
-      <p class="usajobs-form__help-brief">
-        Only one account can be created for each email address. Do not share your account with anyone else.
-      </p>
-    </div>
-    <div class="form-group col-sm-12">
-      <label class="control-label" for="ConfirmPrimaryEmail">Confirm Primary Email</label>
-      <div class="input-group">
-        <input class="form-control" data-val="true" data-val-equalto="- Primary Email and Confirm Primary Email do not match." data-val-equalto-other="*.PrimaryEmail" data-val-required="- Confirm Primary Email field is required." id="ConfirmPrimaryEmail" name="ConfirmPrimaryEmail" type="text" value="">
-      </div>
-      <span class="field-validation-valid" data-valmsg-for="ConfirmPrimaryEmail" data-valmsg-replace="true"></span>
-    </div>
-    <div class="form-group col-sm-9">
-      <label class="control-label" for="Username">Username</label>
-      <!--span class="usa-input-error-message" id="username-error-message" role="alert">
-        A username must contain at least one letter (i.e. can’t be all numbers), and may only contain the following special characters: underscore(_), ampersand(&amp;), and period(.).
-      </span -->
-      <input class="form-control" data-val="true" data-val-length="- Username must be between 8 and 20 alphanumeric characters" data-val-length-max="20" data-val-length-min="8" id="Username" name="Username" type="text" value="" data-val-regex-pattern="^[a-zA-Z0-9\x5F\x2E\x26]*[a-zA-Z]+[a-zA-Z0-9\x5F\x2E\x26]*">
-      <p class="usajobs-form__help-brief">
-        Username must be between <strong>8</strong> and <strong>20</strong> alphanumeric characters, must contain at least one letter (i.e. can’t be all numbers), and may only contain the following special characters: underscore(_), ampersand(&amp;), and period(.).
-      </p>
-    </div>
-    <div class="form-group">
-      <label for="UseHTMLForEmail">
-        Email format preference
-      </label>
-      <ul class="usa-unstyled-list">
-        <li>
-          <input type="radio" name="UseHTMLForEmail" id="optionsRadios2" value="false" checked="">
-          <label for="optionsRadios2">Text</label>
-        </li>
-        <li>
-          <input type="radio" name="UseHTMLForEmail" id="optionsRadios1" value="true">
-          <label for="optionsRadios1">HTML</label>
-        </li>
-      </ul>
-      <div class="usa-accordion-bordered usajobs-form__help-detailed">
-        <ul class="usa-unstyled-list">
-          <li>
-            <div class="usajobs-accordion">
-              <button class="usa-accordion-button usajobs-form__help-detailed-trigger" aria-expanded="false" aria-controls="collapsible-0">
-                <span class="fa fa-question-circle"></span> Help me answer
-              </button>
-              <div id="collapsible-0" aria-hidden="true" class="usa-accordion-content">
-                <p>
-                  Emails received in text format contains only text as its content. No colors or images will appear in text emails.
-                </p>
-                <p>
-                  HTML emails look similar to web pages with colors and images. Some email providers will block HTML emails even if your email settings allow them to be received.
-                </p>
-                <p>
-                  If you are unsure of which option you should use select text emails. Your email provider will not have any problems with accepting text formatted emails.
-                </p>
-              </div>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </div>
+  <label class="control-label" for="ConfirmPrimaryEmail">Confirm Primary Email</label>
+  <input class="form-control" data-val="true" data-val-equalto="- Primary Email and Confirm Primary Email do not match." data-val-equalto-other="*.PrimaryEmail" data-val-required="- Confirm Primary Email field is required." id="ConfirmPrimaryEmail" name="ConfirmPrimaryEmail" type="text" value="">
+  <span class="field-validation-valid" data-valmsg-for="ConfirmPrimaryEmail" data-valmsg-replace="true"></span>
 
-  {% include components/login-terms.html %}
+  <label class="control-label" for="Username">Username</label>
+  <input class="form-control" data-val="true" data-val-length="- Username must be between 8 and 20 alphanumeric characters" data-val-length-max="20" data-val-length-min="8" id="Username" name="Username" type="text" value="" data-val-regex-pattern="^[a-zA-Z0-9\x5F\x2E\x26]*[a-zA-Z]+[a-zA-Z0-9\x5F\x2E\x26]*">
+  <p class="usajobs-form__help-brief">
+    Your Username must:
+    <ul class="usajobs-form__help-details" id="username-validation-list">
+      <li id="username_info_length" class="required username_info_invalid">
+        Be 8 to 20 characters long
+      </li>
+      <li id="username_info_letter" class="required username_info_invalid">
+        Have at least one letter
+      </li>
+      <li id="username_info_symbol" class="required username_info_invalid">
+        Only contain the following special characters: underscore (_), ampersand (&amp;), and period (.)
+      </li>
+    </ul>
+  </p>
 
-  <input type="submit" name="btn-agreecrtacct" value="I agree. Create my account." title="I agree. Create my account." class="btn btn-info">
-  </fieldset>
-</form>
+  <div class="usajobs-button_bar--slim">
+    <div class="usajobs-button_bar__body">
+      <input type="submit" name="btn-agreecrtacct" value="Create account" title="Create account" class="btn btn-info">
+    </div>
+  </div>
+</fieldset>

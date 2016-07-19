@@ -3,15 +3,13 @@ permalink: /sign-in/
 layout: sign-in
 title: Sign In
 ---
-  <section class="usajobs-shell">
-    <section class="usajobs-canvas">
-      <div class="usajobs-content-gutter">
-        <main class="usajobs-content-well" id="main-content" role="main" aria-label="Sign In">
-          {% include components/login-form.html %}
-        </main>
-        <aside>
-          {% include components/login-terms.html %}
-        </aside>
-      </div>
-    </section>
-  </section>
+<main class="usajobs-content-well" id="main-content" role="main" aria-label="Sign In">
+  <h1>Sign In</h1>
+  <form class="usajobs-form" action="/account/signin" method="post" novalidate="novalidate">
+    <input name="__RequestVerificationToken" type="hidden" value="B8U2t52vu_aTbp1GQSkb7AkIX0YR9Clwv4Fk8EnKGilCJCjK-wk1UXTmR3kRKaukW-UTtytoOYMka-e0QGIeV5-Td2UvpInUKsG6cMTlSEQ1">
+    {% include components/login-form.html %}
+  </form>
+</main>
+<aside>
+  {% include components/login-terms.html %}
+</aside>

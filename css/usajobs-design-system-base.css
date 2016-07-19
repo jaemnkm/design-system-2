@@ -4294,6 +4294,26 @@ img {
   margin-bottom: 0.5em;
 }
 
+.usajobs-unstyled-list {
+  display: block;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.usajobs-unstyled-list > li {
+  display: list-item;
+  margin: 0;
+}
+
+.usajobs-unstyled-list > li:before {
+  display: none;
+}
+
+.usajobs-unstyled-list > li:after {
+  display: none;
+}
+
 /*!
  *  Font Awesome 4.6.3 by @davegandy - http://fontawesome.io - @fontawesome
  *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
@@ -7224,10 +7244,20 @@ img {
   background-color: #00a6d2;
 }
 
+.usajobs-form__help-details,
+.usajobs-content-well .usajobs-form__help-details {
+  font-size: 1.4rem;
+}
+
 .usajobs-form .help-icon,
 .usajobs-content-well .usajobs-form .help-icon {
   padding-left: 0.5rem;
   color: #205493;
+}
+
+.usajobs-form__sub-section,
+.usajobs-content-well .usajobs-form__sub-section {
+  margin-top: 4.5rem;
 }
 
 .usajobs-form__field-group,
@@ -7303,7 +7333,7 @@ img {
 }
 
 .usa-input-error .usa-datefield input {
-  width: auto;
+  width: 100%;
 }
 
 body {

@@ -5,4 +5,21 @@ html {
 *, *::after, *::before {
   box-sizing: inherit;
 }
+
+.usajobs-assistive-text {
+  position: absolute !important;
+  margin: -1px !important;
+  border: 0 !important;
+  padding: 0 !important;
+  width: 1px !important;
+  height: 1px !important;
+  overflow: hidden !important;
+  clip: rect(0 0 0 0) !important;
+}
+
+.usajobs-sign-in .usajobs-button_bar--slim,
+.usajobs-sign-in .usajobs-login-terms {
+  max-width: 46rem;
+}
+
 /*# sourceMappingURL=sign-in.css.map */
