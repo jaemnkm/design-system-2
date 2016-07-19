@@ -99,13 +99,21 @@
       </li>
     </ul>
     <h4>Layouts</h4>
+    <h5>Account</h5>
     <ul class="usa-sidenav-list">
       <li>
-        <a {% if current[1] == 'create-account' %}class="usa-current"{% endif %} href="{{ site.baseurl }}/create-account/">Create Account</a>
+        <a {% if current[1] == 'account' %}class="usa-current"{% endif %} href="{{ site.baseurl }}/account/">Create</a>
       </li>
       <li>
-        <a {% if current[1] == 'sign-in' %}class="usa-current"{% endif %} href="{{ site.baseurl }}/sign-in/">Sign In</a>
+        <a {% if current[1] == 'account' %}class="usa-current"{% endif %} href="{{ site.baseurl }}/account/activate/">Activate</a>
       </li>
+      <li>
+        <a {% if current[1] == 'sign-in' %}class="usa-current"{% endif %} href="{{ site.baseurl }}/account/sign-in/">Sign In</a>
+      </li>
+    </ul>
+
+    <h5>Job announcement</h5>
+    <ul class="usa-sidenav-list">
       <li>
         <a {% if current[1] == 'job_announcement' %}class="usa-current"{% endif %} href="{{ site.baseurl }}/job_announcement/">Job announcement</a>
       </li>

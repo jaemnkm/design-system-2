@@ -31,6 +31,10 @@
     }
   }
 
+  &__container {
+    clear: both;
+  }
+
   &__help-brief {
     margin-top: $size-base;
     font-size: $small-font-size;
@@ -51,6 +55,7 @@
   }
 
   &__help-details {
+    max-width: $input-max-width;
     font-size: $small-font-size;
   }
 
@@ -91,6 +96,10 @@
 
 .usajobs-form--narrow {
   max-width: $input-max-width;
+
+  .usajobs-form__legend {
+    margin-bottom: $size-L;
+  }
 }
 
 .usajobs-input-large {

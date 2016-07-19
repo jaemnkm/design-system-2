@@ -1,16 +1,17 @@
 ---
-permalink: /create-account/
-layout: sign-in
-title: Create Account
+permalink: /account/
+layout: auth
+title: Create account
 ---
-<main class="usajobs-sign-in-content-well" id="main-content" role="main" aria-label="Create account">
-  <h1>Create Account</h1>
-  <form class="usajobs-form" action="/account/Create" class="" method="post" role="form" novalidate="novalidate">
+
+<main class="usajobs-content-well" id="main-content" role="main" aria-label="Create account">
+  <h1>Create account</h1>
+  <form class="usajobs-form--narrow" action="/account/Create" class="" method="post" role="form" novalidate="novalidate">
     <input name="__RequestVerificationToken" type="hidden" value="dmnrj4V5tTEdc5YJ77Fl5P3Nu8UOGCchkPbaR0FMDl03CQptCo-LY2hE8b4LFUUHhfWm8Kw9HFi3bBLPJaupOjM-0-am3Bkz3Y43efjjsxk1">
     <input id="ReturnUrl" name="ReturnUrl" type="hidden" value="https://login.test.usajobs.gov/account/signin">
     {% include components/create-account-form.html %}
   </form>
 </main>
-<aside>
+<aside class="usajobs-rightrail usajobs-auth__terms">
   {% include components/login-terms.html %}
 </aside>

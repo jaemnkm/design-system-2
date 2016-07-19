@@ -1,5 +1,5 @@
 <fieldset class="usajobs-fieldset">
-  <label for="Username">Username or Email</label>
+  <label for="Username">Username or email</label>
   <input data-val="true" data-val-required="This field is required." id="Username" name="Username" type="text" value="">
   <span class="field-validation-valid" data-valmsg-for="UserName" data-valmsg-replace="true"></span>
   <p class="usajobs-form__help-brief">
@@ -18,12 +18,13 @@
 
   <div class="usajobs-button_bar--slim">
     <div class="usajobs-button_bar__body">
-      <input class="usa-button usa-button-big" type="submit" value="Sign In">
-    </div>
+      <a href="http://usajobs.github.io/american-discovery-trail/signed-in/home/" class="usa-button usa-button-big">
+        Sign In
+      </a>
   </div>
 
   <h4>Don't have a USAJOBS account?</h4>
-  <a href="/account/Create" class="usa-button usa-button-big usa-button-outline">
+  <a href="{{ site.baseurl }}/account/" class="usa-button usa-button-big usa-button-outline">
     Create a new account
   </a>
 </fieldset>

@@ -1,0 +1,22 @@
+---
+permalink: /account/activate/
+layout: auth
+title: Activate account
+---
+
+<main class="usajobs-content-well" id="main-content" role="main" aria-label="Create account">
+  <h1>Activate account</h1>
+  <form class="usajobs-form--narrow" action="/account/activate" class="" method="post" role="form" novalidate="novalidate">
+    {% include components/auth/security-questions.html %}
+    <div class="usajobs-button_bar--slim">
+      <div class="usajobs-button_bar__body">
+        <a href="http://usajobs.github.io/american-discovery-trail/signed-in/home-incomplete-profile/" class="usa-button usa-button-big">
+          Activate Account
+        </a>
+      </div>
+    </div>
+  </form>
+</main>
+<aside class="usajobs-rightrail usajobs-auth__terms">
+  {% include components/login-terms.html %}
+</aside>
