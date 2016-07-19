@@ -3,13 +3,14 @@ permalink: /create-account/
 layout: sign-in
 title: Create Account
 ---
-  <section class="usajobs-shell">
-    <section class="usajobs-canvas">
-      <div class="usajobs-content-gutter">
-        <main class="usajobs-sign-in-content-well" id="main-content" role="main" aria-label="Sign In">
-          <h1>Create Account</h1>
-          {% include components/create-account-form.html %}
-        </main>
-      </div>
-    </section>
-  </section>
+<main class="usajobs-sign-in-content-well" id="main-content" role="main" aria-label="Create account">
+  <h1>Create Account</h1>
+  <form class="usajobs-form" action="/account/Create" class="" method="post" role="form" novalidate="novalidate">
+    <input name="__RequestVerificationToken" type="hidden" value="dmnrj4V5tTEdc5YJ77Fl5P3Nu8UOGCchkPbaR0FMDl03CQptCo-LY2hE8b4LFUUHhfWm8Kw9HFi3bBLPJaupOjM-0-am3Bkz3Y43efjjsxk1">
+    <input id="ReturnUrl" name="ReturnUrl" type="hidden" value="https://login.test.usajobs.gov/account/signin">
+    {% include components/create-account-form.html %}
+  </form>
+</main>
+<aside>
+  {% include components/login-terms.html %}
+</aside>

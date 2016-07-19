@@ -1,0 +1,10 @@
+// Layouts: Sign In
+
+@import '../base-shared';
+
+.usajobs-sign-in {
+  .usajobs-button_bar--slim,
+  .usajobs-login-terms {
+    max-width: $input-max-width;
+  }
+}

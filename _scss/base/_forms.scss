@@ -50,9 +50,17 @@
     }
   }
 
+  &__help-details {
+    font-size: $small-font-size;
+  }
+
   .help-icon {
     padding-left: $size-base;
     color: $color-primary-darker;
+  }
+
+  &__sub-section {
+    margin-top: $size-L;
   }
 
   &__field-group {
@@ -106,5 +114,6 @@
 }
 
 .usa-input-error .usa-datefield input {
-  width: auto;
+  width: 100%;
 }
+

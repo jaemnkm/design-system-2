@@ -3,3 +3,7 @@
 .usajobs-list-bullets {
   @include bulletList();
 }
+
+.usajobs-unstyled-list {
+  @include unstyledList();
+}
