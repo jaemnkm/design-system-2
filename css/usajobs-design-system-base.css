@@ -7217,6 +7217,11 @@ img {
   }
 }
 
+.usajobs-form__container,
+.usajobs-content-well .usajobs-form__container {
+  clear: both;
+}
+
 .usajobs-form__help-brief,
 .usajobs-content-well .usajobs-form__help-brief {
   margin-top: 0.5rem;
@@ -7242,6 +7247,7 @@ img {
 
 .usajobs-form__help-details,
 .usajobs-content-well .usajobs-form__help-details {
+  max-width: 46rem;
   font-size: 1.4rem;
 }
 
@@ -7304,6 +7310,10 @@ img {
 
 .usajobs-form--narrow {
   max-width: 46rem;
+}
+
+.usajobs-form--narrow .usajobs-form__legend {
+  margin-bottom: 4.5rem;
 }
 
 .usajobs-input-large {

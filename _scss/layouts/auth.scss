@@ -1,0 +1,22 @@
+// Layouts: Authentication (Sign In, Create account, Account activation)
+
+@import '../base-shared';
+
+.usajobs-auth {
+  .usajobs-button_bar--slim,
+  .usajobs-login-terms {
+    max-width: $input-max-width;
+  }
+
+  &.create-account-success {
+    .usajobs-create-account-content {
+      min-height: 60vh;
+    }
+  }
+
+  &__terms {
+    @include media($L) {
+      margin-top: $size-XXL;
+    }
+  }
+}

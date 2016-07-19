@@ -17,13 +17,19 @@ html {
   clip: rect(0 0 0 0) !important;
 }
 
-.usajobs-sign-in .usajobs-button_bar--slim,
-.usajobs-sign-in .usajobs-login-terms {
+.usajobs-auth .usajobs-button_bar--slim,
+.usajobs-auth .usajobs-login-terms {
   max-width: 46rem;
 }
 
-.usajobs-sign-in.create-account-success .usajobs-create-account-content-well {
+.usajobs-auth.create-account-success .usajobs-create-account-content {
   min-height: 60vh;
 }
 
-/*# sourceMappingURL=sign-in.css.map */
+@media screen and (min-width: 62em) {
+  .usajobs-auth__terms {
+    margin-top: 7.5rem;
+  }
+}
+
+/*# sourceMappingURL=auth.css.map */
