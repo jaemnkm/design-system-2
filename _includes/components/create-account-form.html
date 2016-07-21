@@ -1,6 +1,5 @@
 <fieldset class="usajobs-fieldset">
   <span class="usajobs-form__legend">All fields are required</span>
-
   <div class="usajobs-form__container">
     <label for="Email">Primary Email address</label>
     <input data-val="true" data-val-email="This field is not a valid e-mail address." data-val-required="This field is required." id="Email" name="Email" type="email" value="">
@@ -30,8 +29,11 @@
       </ul>
     </p>
 
-    <div class="usajobs-button_bar--slim">
-      <div class="usajobs-button_bar__body">
+    {% include components/login-terms.html %}
+
+    <div class="usajobs-button-bar--slim">
+      <div class="usajobs-button-bar__body">
+        <p class="usajobs-button-bar__instructions"> By clicking "Create Account" you are agreeing to the Terms and Conditions.</p>
         <a href="{{ site.baseurl }}/account/success/" class="usa-button usa-button-big">
           Create Account
         </a>

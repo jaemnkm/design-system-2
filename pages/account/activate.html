@@ -4,9 +4,28 @@ layout: auth
 title: Activate account
 ---
 
+<div class="usa-alert usajobs-alert usajobs-alert--info" role="alert" data-object="alert">
+  <div class="usajobs-alert__figure">
+    <div class="usajobs-alert__icon">
+    </div>
+  </div>
+  <div class="usajobs-alert__body">
+    <p class="usa-alert-text">
+      Thanks for confirming that your email address is [email address]. Your USAJOBS username is [username]. to activate your new account, please provide the additional account information below.
+    </p>
+  </div>
+  <button class="usajobs-alert__close" data-behavior="alert.close" >
+    <span class="usajobs-assistive-text">Close</span>
+  </button>
+</div>
+
 <main class="usajobs-content-well" id="main-content" role="main" aria-label="Create account">
   <h1>Activate account</h1>
-  <form class="usajobs-form--narrow" action="/account/activate" class="" method="post" role="form" novalidate="novalidate">
+  <form class="usajobs-form usajobs-form--narrow" action="/account/activate" class="" method="post" role="form" novalidate="novalidate">
+    <span class="usajobs-form__legend">All fields are required unless otherwise noted</span>
+    {% include components/auth/contact-name.html %}
+    {% include components/auth/password.html %}
+    {% include components/auth/contact-telephone.html %}
     {% include components/auth/security-questions.html %}
     <div class="usajobs-button_bar--slim">
       <div class="usajobs-button_bar__body">

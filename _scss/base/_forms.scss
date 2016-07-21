@@ -31,6 +31,28 @@
     }
   }
 
+  .usajobs-fieldset {
+    width: 100%;
+    margin-bottom: $size-L;
+
+    &.first {
+      margin-top: $size-L;
+    }
+
+    legend {
+      @include h3();
+      margin: $size-M 0;
+      padding: 0 0 $size-S;
+      color: $color-primary-darkest;
+      border-bottom: 1px solid $color-primary-darkest;
+
+      & + label,
+      & + p {
+        margin-top: 0;
+      }
+    }
+  }
+
   &__container {
     clear: both;
   }
@@ -94,7 +116,8 @@
   }
 }
 
-.usajobs-form--narrow {
+.usajobs-form--narrow,
+.usajobs-content-well .usajobs-form--narrow {
   max-width: $input-max-width;
 
   .usajobs-form__legend {
@@ -125,4 +148,3 @@
 .usa-input-error .usa-datefield input {
   width: 100%;
 }
-
