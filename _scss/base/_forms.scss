@@ -51,6 +51,12 @@
         margin-top: 0;
       }
     }
+
+    input:disabled {
+      color: $color-gray;
+      border-color: $color-gray-lighter;
+      cursor: not-allowed;
+    }
   }
 
   &__container {
