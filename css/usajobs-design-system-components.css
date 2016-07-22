@@ -20010,8 +20010,8 @@ html {
   min-height: 10.3rem;
 }
 
-.usajobs-document--placeholder-resume.is-not-searchable .usajobs-document__searchable {
-  visibility: hidden;
+.usajobs-document--placeholder-resume.is-not-searchable .usajobs-document__searchable p {
+  margin: 0;
 }
 
 .usajobs-document--thumbnail .usajobs-document__figure {
