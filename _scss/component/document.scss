@@ -12,6 +12,7 @@ $view-height: rem(33px);
 $doc-width: $thumbnail-img-width + rem(2px) + $size-base + $size-base;  // 1px border & .5 rem padding on either side
 $figure-height: $thumbnail-img-height + rem(1px) + 1rem; // 1px border + 1 rem padding top
 
+
 .usajobs-document {
   position: relative;
   width: $doc-width;
@@ -286,8 +287,8 @@ $figure-height: $thumbnail-img-height + rem(1px) + 1rem; // 1px border + 1 rem p
   }
 
   &.is-not-searchable {
-    .usajobs-document__searchable {
-      visibility: hidden;
+    .usajobs-document__searchable p {
+      margin: 0;
     }
   }
 }

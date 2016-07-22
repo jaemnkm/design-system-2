@@ -443,7 +443,7 @@ lead: A way to upload and view documents.
 
   <h6 class="usa-heading-alt">Account - Documents - Resumes</h6>
   <div class="usajobs-grid">
-    <div class="usajobs-width-one-half">
+    <div class="usajobs-width-one-third">
       <div class="usajobs-document usajobs-document--placeholder-resume" data-object="document">
         <div class="usajobs-document__figure" data-behavior="document.view" data-target="#view-document-10">
           <span class="usajobs-document--placeholder__icon pdf"></span>
@@ -475,7 +475,7 @@ lead: A way to upload and view documents.
         </div>
       </div>
     </div>
-    <div class="usajobs-width-one-half">
+    <div class="usajobs-width-one-third">
       <div class="usajobs-document usajobs-document--placeholder-resume" data-object="document">
         <div class="usajobs-document__figure" data-behavior="document.view" data-target="#view-document-11">
           <span class="usajobs-document--placeholder__icon builder"></span>
@@ -499,6 +499,31 @@ lead: A way to upload and view documents.
             <label for="document-11-searchable" class="usajobs-document__searchable-label">
               Searchable
             </label>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="usajobs-width-one-third">
+      <div class="usajobs-document usajobs-document--placeholder-resume is-not-searchable" data-object="document">
+        <div class="usajobs-document__figure" data-behavior="document.view" data-target="#view-document-12">
+          <span class="usajobs-document--placeholder__icon image"></span>
+        </div>
+        <a href="#view" class="usajobs-document__view" data-behavior="document.view">View</a>
+        <div class="usajobs-document__details">
+          <p class="usajobs-document__title">TSA v2</p>
+          <p class="usajobs-document__date">
+            Uploaded 03/18/16
+          </p>
+          <ul class="usajobs-document__controls">
+            <li class="ctrl">
+              <a class="edit" href="#edit"><i class="fa fa-edit"></i> Edit</a>
+            </li>
+            <li class="ctrl">
+              <a class="delete" href="#delete"><i class="fa fa-times"></i> Delete</a>
+            </li>
+          </ul>
+          <div class="usajobs-document__searchable">
+            <p>Image files are not searchable</p>
           </div>
         </div>
       </div>
