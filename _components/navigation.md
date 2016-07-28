@@ -24,7 +24,7 @@ lead: USAJOBS features a consistent header for top-level navigation across the s
           <div class="usajobs-nav__header">
             <div class="usajobs-nav__brand-container">
               <a class="usajobs-nav__brand" href="/">
-                <span class="logo" title="USAJOBS logo"></span>
+                <span class="logo" title="USAJOBS logo" aria-label="USAJOBS logo"></span>
               </a>
             </div>
             <div class="usajobs-nav__menu" id="usajobs-menu">
@@ -48,7 +48,7 @@ lead: USAJOBS features a consistent header for top-level navigation across the s
                   </ul>
                 </li>
                 <li class="usajobs-nav__menu-container usajobs-nav__help"> 
-                  <a class="usajobs-nav__section-link" href="http://usajobs.github.io/help-center" title="Help">
+                  <a class="usajobs-nav__section-link" href="http://usajobs.github.io/help-center">
                     <span class="fa fa-question-circle"></span>
                     Help
                   </a>
