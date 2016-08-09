@@ -153,7 +153,7 @@ lead: USAJOBS has adopted a different visual style to our alerts that deviate fr
       <div class="usajobs-alert__icon">
       </div>
     </div>
-    <div class="usajobs-alert__body"> 
+    <div class="usajobs-alert__body">
       <div id="alert-1" aria-hidden="false">
         <p class="usajobs-alert__count">1 of 2 Tips</p>
         <h4 class="usajobs-alert__title">
@@ -212,10 +212,10 @@ lead: USAJOBS has adopted a different visual style to our alerts that deviate fr
         The counter (1 of 2 tips) and secondary CTA button (Skip) is only shown if a user has 2 or more tips.
       </li>
       <li>
-        Clicking the <strong>Skip</strong> button will trigger the next tip (if applicable). Clicking the <strong>Back</strong> button will show the previous tip (if applicable). 
+        Clicking the <strong>Skip</strong> button will trigger the next tip (if applicable). Clicking the <strong>Back</strong> button will show the previous tip (if applicable).
       </li>
       <li>
-        <strong>Tip lifespan:</strong> The dismiss and skip buttons do not remove the tip permanently. If a user dismisses or skips a tip, then the tip will be shown again the next time the page is loaded. The tip will no longer be shown once the suggested action has been taken. For example, the tip will continue appear until the suggested document upload has been completed.
+        <strong>Tip lifespan:</strong> The dismiss and skip buttons do not remove the tip permanently. If a user dismisses or skips a tip, then the tip will be shown again the next time the user restarts their browser (and thus a new browser session is created) or 2 weeks, whichever comes first. The tip will no longer be shown once the suggested action has been taken. For example, the tip will continue to appear until the suggested document upload has been completed.
       </li>
     </ul>
 
