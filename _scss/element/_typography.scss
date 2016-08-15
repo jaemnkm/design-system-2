@@ -42,12 +42,28 @@ h6 {
   @include default-text();
 }
 
+.usajobs-section-header,
 .section-header {
-  margin: {
-    top: $size-XXL;
-    bottom: $size-S;
-  }
+  margin-top: $size-XXL;
+  margin-bottom: $size-S;
   padding: 0.5em 0;
   color: $color-primary-darkest;
   border-bottom: 1px solid $color-primary-darkest;
+
+  &__link {
+    display: block;
+    padding: $size-base $size-default $size-default 0;
+    font-size: $base-font-size;
+    @include permaLink();
+
+    @include media($M) {
+      display: inline-block;
+      float: right;
+    }
+  }
+}
+
+// Annoying override
+.main-content .usajobs-section-header .usajobs-section-header__link {
+  text-decoration: none;
 }
