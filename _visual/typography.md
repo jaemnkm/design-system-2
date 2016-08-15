@@ -168,6 +168,13 @@ order: 01
   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. End of previous section content.</p>
   <h3 class="section-header">Your Documents</h3>
   <p>Start of the next section.</p>
+
+  <h3 class="usajobs-section-header">
+      Resumes <span class="usajobs-documents__header-count">(4/5)</span>
+      <a href="http://usajobs.github.io/Help/how-to/account/documents/" class="usajobs-section-header__link" target="_blank">
+        <i class="fa fa-question-circle"></i> Help
+      </a>
+    </h3>
 </div>
 
 <div class="usa-accordion-bordered usa-accordion-docs">
@@ -179,6 +186,7 @@ order: 01
     <h4 class="usa-heading">Usability</h4>
     <ul class="usa-content-list">
       <li>The section header separates blocks of content and associates the header with the content that follows.</li>
+      <li>If there is help for the entire section then a link can be used in the section header.</li>
     </ul>
   </div>
 </div>
