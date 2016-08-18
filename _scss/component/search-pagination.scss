@@ -144,6 +144,11 @@
     }
   }
 
+  &__previous-page[aria-hidden=true],
+  &__next-page[aria-hidden=true] {
+    display: none;
+  }
+
   &__previous-page::before {
     @include fa-icon();
     content: $fa-var-chevron-left;
@@ -156,4 +161,3 @@
     padding-left: $size-base;
   }
 }
-
