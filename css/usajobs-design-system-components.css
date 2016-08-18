@@ -26778,6 +26778,10 @@ html {
   }
 }
 
+.usajobs-search-pagination__previous-page[aria-hidden=true], .usajobs-search-pagination__next-page[aria-hidden=true] {
+  display: none;
+}
+
 .usajobs-search-pagination__previous-page::before {
   display: inline-block;
   font: normal normal normal 14px/1 FontAwesome;
