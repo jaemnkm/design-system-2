@@ -253,3 +253,17 @@
     color: $color-primary;
   }
 }
+
+// Allows us to use an HTML button and not get the default styling
+@mixin removeButton() {
+  margin: 0;
+  background-color: inherit;
+  border-radius: inherit;
+  color: $color-base;
+  font-weight: normal;
+
+  &:hover {
+    color: $color-base;
+    background-color: inherit;
+  }
+}
