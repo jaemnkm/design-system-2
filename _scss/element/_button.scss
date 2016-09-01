@@ -38,17 +38,14 @@ button:disabled,
     &.usa-button-hover,
     &:active,
     &.usa-button-active,
-    &:focus  {
+    &:focus {
       background-color: $color-gray-light;
       border: 0;
       box-shadow: none;
       color: $color-gray-dark;
     }
   }
-}
 
-.usajobs-button_bar,
-.usajobs-button-bar {
   .usa-button,
   .usa-button-primary,
   .usa-button:visited,

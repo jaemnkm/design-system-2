@@ -1,6 +1,7 @@
 // JOA - Actions (Apply, print, share, save)
 
 @import '../base-shared';
+@import 'actions';
 @import 'font-awesome/font-awesome';
 
 .usajobs-joa-actions {
@@ -73,10 +74,18 @@
     }
   }
 
+  &__col-sub-actions &__print {
+    padding-top: $size-S + rem(1px);
+  }
+
+  &__col-sub-actions &__share {
+    padding: rem(2.5px) 0;
+  }
+
   &__save {
     min-width: rem(73px);
 
-    &:before {
+    &::before {
       @include fa-icon();
       padding-right: $size-XS;
       color: $color-gold;
@@ -86,40 +95,18 @@
   }
 
   &__save[data-state=is-saved] {
-    &:before {
+    &::before {
       content: $fa-var-star;
     }
   }
 
   &__save[data-state=is-unsaved] {
-    &:before {
+    &::before {
       content: $fa-var-star-o;
     }
   }
+}
 
-  // This is actually styling the modal that opens when a job is shared
-  &__social-list {
-    @include clearfix();
-    @include unstyledList();
-    margin-bottom: 0;
-    padding-bottom: $size-M;
-
-    > li {
-      @include media($M) {
-        @include span-columns(3,6);
-      }
-    }
-
-    > li:nth-child(2n) {
-      @include media($M) {
-        @include omega();
-      }
-    }
-
-    a {
-      display: block;
-      padding: $size-S 0;
-      font-size: $h4-font-size;
-    }
-  }
+.usajobs-joa-actions-share {
+  @include actionShare();
 }
