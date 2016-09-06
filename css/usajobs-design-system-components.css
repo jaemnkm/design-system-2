@@ -26526,9 +26526,20 @@ html {
   border-width: 12px;
 }
 
+.usajobs-joa-actions-share__list.is-disabled {
+  opacity: 0.4;
+}
+
 .usajobs-joa-actions-share__list .usajobs-joa-actions-share__item {
   display: inline-block;
   float: left;
+}
+
+.usajobs-joa-actions-share__item .short-url {
+  display: block;
+  padding: 0.5rem 1rem;
+  font-size: 1.4rem;
+  color: #212121;
 }
 
 .usajobs-joa-actions-share__link {
