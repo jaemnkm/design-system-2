@@ -24,7 +24,7 @@ lead: Users can print, share, or save a job announcement.
         </button>
         <ul class="usajobs-joa-actions-share__list" id="joa-share-menu" aria-hidden="true" aria-labeledby="joa-share">
           <li class="usajobs-joa-actions-share__item">
-            <a href="mailto:?subject=USAJOBS Job Announcement&body=https://www.usajobs.gov/GetJob/PrintPreview/437919000" class="usajobs-joa-actions-share__link email" data-behavior="joa-actions.close-share" data-target="#joa-share-menu">
+            <a href="mailto:?subject=USAJOBS Job Announcement - [job title]&body=Read more about [job title ] at https://www.usajobs.gov/GetJob/ViewDetails/437919000" class="usajobs-joa-actions-share__link email" data-behavior="joa-actions.close-share" data-target="#joa-share-menu">
               <i class="fa fa-envelope-square"></i> <span class="sr-only">Email</span>
             </a>
           </li>
@@ -34,7 +34,7 @@ lead: Users can print, share, or save a job announcement.
             </a>
           </li>
           <li class="usajobs-joa-actions-share__item">
-            <a href="" class="usajobs-joa-actions-share__link google" target="_blank" data-behavior="joa-actions.close-share" data-target="#joa-share-menu">
+            <a href="https://plus.google.com/share?url=https%3A%2F%2Fwww.usajobs.gov%2FGetJob%2FViewDetails%2F444821100" class="usajobs-joa-actions-share__link google" target="_blank" data-behavior="joa-actions.close-share" data-target="#joa-share-menu">
               <i class="fa fa-google-plus-square"></i> <span class="sr-only">Google+</span>
             </a>
           </li>
@@ -49,8 +49,8 @@ lead: Users can print, share, or save a job announcement.
             </a>
           </li>
           <li class="usajobs-joa-actions-share__item">
-            <a href="http://tinyurl.com/create.php?url=https%3A%2F%2Fwww.usajobs.gov%2FGetJob%2FViewDetails%2F444821100%2F%3Fshare%3Dtinyurl" class="usajobs-joa-actions-share__link link" target="_blank" data-behavior="joa-actions.close-share" data-target="#joa-share-menu">
-              <i class="fa fa-chain"></i> <span class="sr-only">Copy link</span>
+            <a href="#joa-share-menu" data-shorten-url="https://www.usajobs.gov/GetJob/ViewDetails/437919000" class="usajobs-joa-actions-share__link link" data-behavior="joa-actions.shorten-link" data-target="#joa-share-menu">
+              <i class="fa fa-chain"></i> <span class="sr-only">Shorten link</span>
             </a>
           </li>
         </ul>

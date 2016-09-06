@@ -62,9 +62,20 @@
     border-width: 12px;
   }
 
+  &__list.is-disabled {
+    opacity: $layer-disabled;
+  }
+
   &__list &__item {
     display: inline-block;
     float: left;
+  }
+
+  &__item .short-url {
+    display: block;
+    padding: $size-base $size-S;
+    font-size: $small-font-size;
+    color: $color-base;
   }
 
   &__link {

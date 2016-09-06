@@ -18,7 +18,7 @@ lead: A main function of USAJOBS is to provide a clear and effective search. Our
     </div>
     <div class="usajobs-search-controls__sort-container">
       <label class="usajobs-search-controls__sort-label" for="search_sort">
-        Sort by 
+        Sort by
       </label>
       <select class="usajobs-search-controls__sort-control" id="search_sort" name="search_sort">
         <option value="n/a">Relevance</option>
@@ -43,6 +43,12 @@ lead: A main function of USAJOBS is to provide a clear and effective search. Our
     <ul class="usa-content-list">
       <li>When the number of results are relevant to explain to the user the relative success of their query.</li>
     </ul>
+    <h5>When not to use</h5>
+    <ul class="usa-content-list">
+      <li>
+        When there are no results (see "No results found").
+      </li>
+    </ul>
   </div>
 </div>
 
@@ -58,11 +64,6 @@ lead: A main function of USAJOBS is to provide a clear and effective search. Our
       <li>For guidance on our job categories and occupation titles please visit <a href="http://usajobs.github.io/help-center/how-to/search/advanced/occupational-series/">Federal government occupation titles</a>. We may just be using a different name or description for the job you are looking for.</li>
     </ul>
   </div>
-
-  <h6 class="usa-heading-alt">No results found - Due to Profile eligibilty filter variation</h6>
-  <div class="usajobs-search-no-results">
-    <p>Sorry, no job announcements were found. You have not selected any jobs to view in the Profile - Eligibility filter. Select "Publicly available" to see all jobs open to the U.S. public.</p>
-  </div>
 </div>
 
 <div class="usa-accordion-bordered usa-accordion-docs">
@@ -71,6 +72,11 @@ lead: A main function of USAJOBS is to provide a clear and effective search. Our
     Documentation
   </button>
   <div id="collapsible-0" aria-hidden="false" class="usa-accordion-content">
+    <h4 class="usa-heading">Guidelines</h4>
+    <ul class="usa-content-list">
+      <li>Do not show search controls or pagination when no results are displayed.</li>
+    </ul>
+
     <h4 class="usa-heading">Usability</h4>
     <h5>When to use</h5>
     <ul class="usa-content-list">
@@ -186,7 +192,7 @@ lead: A main function of USAJOBS is to provide a clear and effective search. Our
       <li>Above the M breakpoint there are several rules:
         <ul>
           <li>The first and last page links are always displayed.</li>
-          <li>Current page number is always displayed with +/- 1 page to either side.</li> 
+          <li>Current page number is always displayed with +/- 1 page to either side.</li>
           <li>When displaying the first and last pages +/- 2 pages are displayed.</li>
           <li>When displaying the first page the Previous button is not displayed.</li>
           <li>When displaying the last page the Next button is not displayed.</li>
@@ -207,5 +213,3 @@ lead: A main function of USAJOBS is to provide a clear and effective search. Our
     </ul>
   </div>
 </div>
-
-
