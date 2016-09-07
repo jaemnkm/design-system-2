@@ -56,7 +56,6 @@
     "build": "grunt build",
     "css": "grunt css",
     "deploy": "grunt build",
-    "publish": "npm version  [<newversion>]; npm publish",
     "js": "grunt js",
     "open:repo": "opener http://github.com/USAJOBS/design-system",
     "open:module": "opener https://www.npmjs.com/package/usajobs-design-system",
