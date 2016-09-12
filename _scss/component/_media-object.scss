@@ -28,6 +28,10 @@ $body-padding: $size-M;
     min-height: rem(77px);
     padding: $size-default $body-padding;
     background-color: $color-white;
+
+    [aria-hidden=true] {
+      display: none;
+    }
   }
 
   &__title {
