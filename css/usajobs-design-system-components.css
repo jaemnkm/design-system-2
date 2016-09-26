@@ -7343,6 +7343,32 @@ html {
   color: #0071bc;
 }
 
+.usajobs-nav--full_bleed__body {
+  max-width: inherit;
+}
+
+.usajobs-nav--full_bleed__disclaimer-container, .usajobs-nav--full_bleed__header, .usajobs-nav--full_bleed__search-body, .usajobs-nav--full_bleed__create-account-container {
+  max-width: 160rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (min-width: 48em) {
+  .usajobs-nav--full_bleed__create-account {
+    padding-left: 3rem;
+  }
+}
+
+@media screen and (min-width: 120em) {
+  .usajobs-nav--full_bleed__brand {
+    padding-left: 0;
+  }
+}
+
+.usajobs-nav--full_bleed__search-button-container {
+  text-align: left;
+}
+
 .usajobs-nav--vATP__body {
   max-width: inherit;
 }
@@ -19559,7 +19585,7 @@ html {
 .usajobs-document__figure {
   position: relative;
   padding: 1rem 0.5rem 0;
-  height: 25rem;
+  height: 21.7rem;
   overflow: hidden;
   background-color: #ffffff;
 }
@@ -19780,8 +19806,11 @@ html {
 
 .usajobs-document--placeholder .usajobs-document__figure,
 .usajobs-document--placeholder-resume .usajobs-document__figure {
+  display: block;
+  padding: 1rem 0 0 0;
   background-color: #205493;
   text-align: center;
+  text-decoration: none;
 }
 
 .usajobs-document--placeholder .usajobs-document__figure:hover,
@@ -19791,7 +19820,7 @@ html {
 
 .usajobs-document--placeholder__icon,
 .usajobs-document--placeholder-resume__icon {
-  line-height: 25.7rem;
+  line-height: 17.7rem;
 }
 
 .usajobs-document--placeholder__icon::before,
@@ -19830,6 +19859,13 @@ html {
 .usajobs-document--placeholder__icon.builder::before,
 .usajobs-document--placeholder-resume__icon.builder::before {
   content: "";
+}
+
+.usajobs-document--placeholder__view,
+.usajobs-document--placeholder-resume__view {
+  padding: 0.5rem;
+  background-color: #5b616b;
+  color: #ffffff;
 }
 
 .usajobs-document--placeholder-resume .usajobs-document__controls {

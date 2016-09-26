@@ -338,6 +338,37 @@ $nav_item_height: 17px + 26.5px;
   }
 }
 
+.usajobs-nav--full_bleed {
+  &__body {
+    max-width: inherit;
+  }
+
+  &__disclaimer-container,
+  &__header,
+  &__search-body,
+  &__create-account-container {
+    max-width: $site-max-width-L;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &__create-account {
+    @include media($ML) {
+      padding-left: $size-M;
+    }
+  }
+
+  &__brand {
+    @include media($XXXXL) {
+      padding-left: 0;
+    }
+  }
+
+  &__search-button-container {
+    text-align: left;
+  }
+}
+
 .usajobs-nav--vATP {
   &__body {
     max-width: inherit;

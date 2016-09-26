@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<!--[if lt IE 9]><html class="lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!--><html lang="en"><!--<![endif]-->
+
+  <head>
+    {% include head.html %}
+  </head>
+
+  <body class="{{ page.title | slugify }}">
+  	{% include navbar.html %}
+  	{% include sidenav.html %}
+    <div class="main-content l-doc l-doc--full_bleed" id="main-content">
+      <div class="styleguide-content usa-content">
+        <h1 id="{{ page.title | slugify }}">{{ page.title }}</h1>
+        <p class="usa-font-lead">{{ page.lead }}</p>
+        {{ content }}
+      </div>
+
+      <footer class="usa-styleguide-footer">
+        {% include footer.html %}
+      </footer>
+    </div>
+    {% include components/modal-share-joa.html %}
+    {% include scripts.html %}
+  </body>
+</html>

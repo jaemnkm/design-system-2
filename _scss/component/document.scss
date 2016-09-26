@@ -10,7 +10,7 @@ $thumbnail-img-width: rem(159px);
 $thumbnail-img-height: rem(239px);
 $view-height: rem(33px);
 $doc-width: $thumbnail-img-width + rem(2px) + $size-base + $size-base;  // 1px border & .5 rem padding on either side
-$figure-height: $thumbnail-img-height + rem(1px) + 1rem; // 1px border + 1 rem padding top
+$figure-height: $thumbnail-img-height - $view-height + rem(1px) + 1rem; // 1px border + 1 rem padding top
 
 
 .usajobs-document {
@@ -241,8 +241,11 @@ $figure-height: $thumbnail-img-height + rem(1px) + 1rem; // 1px border + 1 rem p
 .usajobs-document--placeholder,
 .usajobs-document--placeholder-resume {
   .usajobs-document__figure {
+    display: block;
+    padding: $size-S 0 0 0;
     background-color: $color-primary-darker;
     text-align: center;
+    text-decoration: none;
 
     &:hover {
       background-color: darken($color-primary-darker, 20%);
@@ -250,7 +253,7 @@ $figure-height: $thumbnail-img-height + rem(1px) + 1rem; // 1px border + 1 rem p
   }
 
   &__icon {
-    line-height: $figure-height + 0.7rem;
+    line-height: $figure-height - 0.7rem - $view-height;
 
     &::before {
       @include fa-icon();
@@ -278,6 +281,12 @@ $figure-height: $thumbnail-img-height + rem(1px) + 1rem; // 1px border + 1 rem p
 
   &__icon.builder::before {
     content: $fa-var-file-text;
+  }
+
+  &__view {
+    padding: $size-base;
+    background-color: $color-gray;
+    color: $color-white;
   }
 }
 
@@ -430,4 +439,3 @@ $figure-height: $thumbnail-img-height + rem(1px) + 1rem; // 1px border + 1 rem p
     opacity: 0;
   }
 }
-
