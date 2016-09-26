@@ -7653,6 +7653,32 @@ html {
   color: #0071bc;
 }
 
+.usajobs-nav--full_bleed__body {
+  max-width: inherit;
+}
+
+.usajobs-nav--full_bleed__disclaimer-container, .usajobs-nav--full_bleed__header, .usajobs-nav--full_bleed__search-body, .usajobs-nav--full_bleed__create-account-container {
+  max-width: 160rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (min-width: 48em) {
+  .usajobs-nav--full_bleed__create-account {
+    padding-left: 3rem;
+  }
+}
+
+@media screen and (min-width: 120em) {
+  .usajobs-nav--full_bleed__brand {
+    padding-left: 0;
+  }
+}
+
+.usajobs-nav--full_bleed__search-button-container {
+  text-align: left;
+}
+
 .usajobs-nav--vATP__body {
   max-width: inherit;
 }

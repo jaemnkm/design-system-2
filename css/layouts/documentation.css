@@ -276,6 +276,10 @@ html {
   display: block;
 }
 
+.l-doc--full_bleed .styleguide-content {
+  max-width: inherit;
+}
+
 .l-doc.main-content {
   position: absolute;
   top: 4rem;
