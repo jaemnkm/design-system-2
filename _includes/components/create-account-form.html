@@ -1,14 +1,14 @@
 <fieldset class="usajobs-fieldset">
   <span class="usajobs-form__legend">All fields are required</span>
   <div class="usajobs-form__container">
-    <label for="Email">Primary Email address</label>
+    <label for="Email">Primary email address</label>
     <input data-val="true" data-val-email="This field is not a valid e-mail address." data-val-required="This field is required." id="Email" name="Email" type="email" value="">
     <span class="field-validation-valid" data-valmsg-for="Email" data-valmsg-replace="true"></span>
     <p class="usajobs-form__help-brief">
       Only one account can be created for each email address. Do not share your account with anyone else.
     </p>
 
-    <label for="ConfirmEmail">Confirm Primary Email address</label>
+    <label for="ConfirmEmail">Confirm primary email address</label>
     <input data-val="true" data-val-equalto="Primary Email and Confirm Primary Email do not match." data-val-equalto-other="*.PrimaryEmail" data-val-required="This field is required." id="ConfirmEmail" name="ConfirmEmail" type="email" value="">
     <span class="field-validation-valid" data-valmsg-for="ConfirmEmail" data-valmsg-replace="true"></span>
 
@@ -29,7 +29,7 @@
       </ul>
     </p>
 
-    {% include components/login-terms.html %}
+    {% include components/auth/login-terms.html %}
 
     <div class="usajobs-button-bar--slim">
       <div class="usajobs-button-bar__body">

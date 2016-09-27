@@ -309,7 +309,7 @@ lead: USAJOBS features a consistent header for top-level navigation across the s
                     <i class="usajobs-nav__search-keywords-icon fa fa-search"></i>
                     Keywords
                   </label>
-                  <input id="search-keyword" name="search-keyword" class="usajobs-nav__search-keywords-input" placeholder="Job title, Skills, Agency" type="text" value="" autocomplete="false">
+                  <input id="search-keyword" name="search-keyword" class="usajobs-nav__search-keywords-input" placeholder="Job title, department &amp; agency, series" type="text" value="" autocomplete="false">
                 </div>
                 <div class="usajobs-nav__search-location-container">
                   <label for="search-location">
