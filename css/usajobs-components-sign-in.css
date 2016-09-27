@@ -17,8 +17,11 @@ html {
   clip: rect(0 0 0 0) !important;
 }
 
+.usajobs-login-terms-accordion {
+  width: 100%;
+}
+
 .usajobs-login-terms p {
   font-size: 1.4rem;
 }
-
 /*# sourceMappingURL=usajobs-components-sign-in.css.map */

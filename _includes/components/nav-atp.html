@@ -1,0 +1,78 @@
+<header class="usajobs-site-header" role="banner" aria-label="header">
+  <div class="usa-disclaimer">
+    <div class="usa-grid usajobs-disclaimer-official">
+      <img class="usa-flag_icon" alt="U.S. flag signifying that this is a United States federal government website" src="{{ site.baseurl }}/img/us_flag_small.png">
+      <p>An official website of the United States Government</p>
+    </div>
+  </div>
+  <nav class="usajobs-nav usajobs-nav--vATP" role="navigation" aria-label="main navigation" data-object="nav">
+    <div class="usajobs-nav__body usajobs-nav--vATP__body">
+      <div class="usajobs-nav__header-container">
+        <div class="usajobs-nav__header">
+          <div class="usajobs-nav__brand-container">
+            <a class="usajobs-nav__brand" href="/">
+              <span class="logo" title="USAJOBS logo"></span>
+              <span class="usajobs-nav__sub-brand">Agency Talent Portal</span>
+            </a>
+          </div>
+          <div class="usajobs-nav__menu usajobs-nav--vATP__menu" id="usajobs-menu">
+            <ul>
+              <li class="usajobs-nav__menu-container usajobs-nav__account usajobs-nav--vATP__account">
+                <a class="usajobs-nav__section-link menu-toggle usajobs-nav--vATP__section-link" href="https://agencyportal.usajobs.gov/Account" title="Account">
+                  <span class="fa fa-user"></span>
+                  <span class="usajobs-nav__account_name">QQ</span>
+                  <span class="usajobs-nav__first_name">Quadrina</span>
+                </a>
+              </li>
+              <!-- li class="usajobs-nav__menu-container usajobs-nav--vATP__help">
+                <a class="usajobs-nav__section-link" href="http://agencyportal.usajobs.gov/Help" title="Help">
+                  <span class="fa fa-question-circle"></span>
+                  Help
+                </a>
+              </li -->
+              <li class="usajobs-nav__menu-container usajobs-nav__reports">
+                <a class="usajobs-nav__section-link menu-toggle usajobs-nav--vATP__section-link" href="http://agencyportal.usajobs.gov/Report" title="Reports">
+                  <span class="fa fa-bar-chart-o"></span>
+                  Reports
+                </a>
+              </li>
+              <li class="usajobs-nav__menu-container usajobs-nav__menu-search" data-state="is-closed">
+                <a data-behavior="nav.menu.search-toggle" aria-controls="usajobs-search-form-atp" class="usajobs-nav__section-link usajobs-nav--vATP__section-link" href="/" title="Job Search">
+                  <span class="fa fa-search"></span>
+                  Search
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div id="usajobs-search-form-atp" class="usajobs-nav__search" aria-expanded="false" role="menu">
+          <form action="/ResumeMining" method="get" novalidate="novalidate">
+            <fieldset>
+              <div class="usajobs-nav__search-keywords-container usajobs-nav--vATP__search-keywords-container">
+                <label for="search-keyword">
+                  <i class="usajobs-nav__search-keywords-icon fa fa-search"></i>
+                  Keywords
+                </label>
+                <input id="search-keyword" name="search-keyword" class="usajobs-nav__search-keywords-input" placeholder="" type="text" value="" autocomplete="false">
+              </div>
+              <div class="usajobs-nav__search-location-container usajobs-nav--vATP__search-location-container">
+                <label for="search-location">
+                  <i class="usajobs-nav__search-location-icon fa fa-map-marker"></i>
+                  Location
+                </label>
+                <input id="search-location" name="search-location" type="text" class="usajobs-nav__search-location-input" placeholder="City, state, zip, or country">
+                <span role="status" aria-live="polite" class="ui-helper-hidden-accessible"></span>
+                <input type="hidden" id="AutoCompleteSelected" name="AutoCompleteSelected">
+              </div>
+              <div class="usajobs-nav__search-button-container usajobs-nav--vATP__search-button-container">
+                <button class="usa-button usa-button-primary-alt usajobs-nav__search-button">
+                  Search resumes
+                </button>
+              </div>
+            </fieldset>
+          </form>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>

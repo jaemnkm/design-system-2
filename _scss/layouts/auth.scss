@@ -5,7 +5,7 @@
 .usajobs-auth {
   .usajobs-button_bar--slim,
   .usajobs-login-terms {
-    max-width: $input-max-width;
+    max-width: $article-max-width;
   }
 
   &.create-account-success {
@@ -18,5 +18,22 @@
     @include media($L) {
       margin-top: $size-XXL;
     }
+  }
+
+  &__security-tips {
+    p,
+    li {
+      font-size: $small-font-size;
+    }
+  }
+}
+
+.usajobs-login-terms-accordion {
+  width: 100%;
+}
+
+.usajobs-login-terms {
+  p {
+    font-size: $small-font-size;
   }
 }

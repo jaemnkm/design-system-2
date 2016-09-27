@@ -356,8 +356,6 @@ $joa_actions.on('joa-actions.shorten-link', function(event, opts) {
       opts.el.after('<span class="short-url">' + short_url + '</span>');
       opts.el.hide();
       opts.el.parent().parent().removeClass('is-disabled');
-    },
-    error: function () {
     }
   });
 });

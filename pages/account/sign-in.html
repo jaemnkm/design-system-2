@@ -8,9 +8,10 @@ title: Sign in
   <h1>Sign in</h1>
   <form class="usajobs-form usajobs-form--narrow" action="/account/signin" method="post" novalidate="novalidate">
     <input name="__RequestVerificationToken" type="hidden" value="B8U2t52vu_aTbp1GQSkb7AkIX0YR9Clwv4Fk8EnKGilCJCjK-wk1UXTmR3kRKaukW-UTtytoOYMka-e0QGIeV5-Td2UvpInUKsG6cMTlSEQ1">
-    {% include components/login-form.html %}
+    {% include components/auth/login-form.html %}
   </form>
 </main>
 <aside class="usajobs-rightrail usajobs-auth__terms">
-  {% include components/login-terms.html %}
+  {% include components/auth/login-terms.html %}
+  {% include components/auth/security-tips.html %}
 </aside>

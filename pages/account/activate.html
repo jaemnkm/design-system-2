@@ -11,7 +11,7 @@ title: Activate account
   </div>
   <div class="usajobs-alert__body">
     <p class="usa-alert-text">
-      Thanks for confirming that your email address is [email address]. Your USAJOBS username is [username]. to activate your new account, please provide the additional account information below.
+      Thanks for confirming that your email address is [email address]. Your USAJOBS username is [username]. To activate your new account, please provide the additional account information below.
     </p>
   </div>
   <button class="usajobs-alert__close" data-behavior="alert.close" >
@@ -29,6 +29,9 @@ title: Activate account
     {% include components/auth/security-questions.html %}
     <div class="usajobs-button_bar--slim">
       <div class="usajobs-button_bar__body">
+        <p class="usajobs-button-bar__instructions">
+          By clicking "Activate Account" you are confirming that you have read and agreed to the security guidelines above.
+        </p>
         <a href="http://usajobs.github.io/american-discovery-trail/signed-in/home-incomplete-profile/" class="usa-button usa-button-big">
           Activate Account
         </a>
@@ -37,5 +40,6 @@ title: Activate account
   </form>
 </main>
 <aside class="usajobs-rightrail usajobs-auth__terms">
-  {% include components/login-terms.html %}
+  {% include components/auth/login-terms-accordion.html %}
+  {% include components/auth/security-tips.html %}
 </aside>
