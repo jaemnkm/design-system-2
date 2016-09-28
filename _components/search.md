@@ -210,9 +210,9 @@ lead: A main function of USAJOBS is to provide a clear and effective search. Our
 </div>
 
 <h4 class="usa-heading-alt" id="results">Results</h4>
-<div class="preview">
-  <h6 class="usa-heading-alt">Mission Critical Occupation variation</h6>
+<div class="preview compact">
   <div class="usajobs-search">
+    <h6 class="usa-heading-alt">Mission Critical Occupation variation</h6>
     <div class="usajobs-search-result--card">
       <a href="https://www.usajobs.gov/GetJob/ViewDetails/435870100?PostingChannelID=RESTAPI" class="usajobs-search-result--card__body">
         <h3 class="usajobs-search-result__title" itemprop="title">
@@ -243,6 +243,60 @@ lead: A main function of USAJOBS is to provide a clear and effective search. Our
           </div>
         </div>
       </a>
+    </div>
+
+    <h6 class="usa-heading-alt">Agency Talent Portal variation</h6>
+    <div class="usajobs-search-result--atp__container">
+      <div class="usajobs-search-result--atp">
+        <a href="#user-detail" class="usajobs-search-result--atp__body">
+          <h3 class="usajobs-search-result--atp__title" itemprop="title">
+            Tony Stark
+          </h3>
+          <div class="usajobs-search-result--atp__summary">
+            <div class="usajobs-search-result--atp__summary-body">
+              <h4 class="usajobs-search-result--atp__agency">
+                US Fish and Wildlife Service
+              </h4>
+              <h5 class="usajobs-search-result--atp__department">
+                Department of the Interior
+              </h5>
+              <p class="usajobs-search-result--atp__grade">
+                GS-15
+              </p>
+              <h4 class="usajobs-search-result--atp__location" itemprop="addressLocality">
+                <span class="usajobs-search-result--atp__location-link viewmap" data-object-trigger="modal" data-target="#modal-job-map" data-name=" " data-coord-lat="38.89051" data-coord-long="-77.086295" itemprop="addressLocality">
+                  <i class="fa fa-map-marker"></i> Fremont, CA
+                </span>
+              </h4>
+              <p class="usajobs-search-result--atp__last-updated">
+                <i class="fa fa-clock-o"></i> Last updated 10/01/2016
+              </p>
+            </div>
+            <div class="usajobs-search-result--atp__eligibility">
+              <div class="usajobs-search-result--atp__uhp-row">
+                <div class="usajobs-search-result--atp__uhp">
+                  <span class="usajobs-search-result--atp__uhp-icon federal-employees">
+                    <i class="fa fa-institution"></i>
+                  </span> Federal employee
+                </div>
+                <div class="usajobs-search-result--atp__doc-pill federal-employees">
+                  <i class="fa fa-file"></i> SF-50
+                </div>
+              </div>
+              <div class="usajobs-search-result--atp__uhp-row">
+                <div class="usajobs-search-result--atp__uhp">
+                  <span class="usajobs-search-result--atp__uhp-icon veterans">
+                    <i class="fa fa-shield"></i>
+                  </span> Veteran
+                </div>
+                <div class="usajobs-search-result--atp__doc-pill veterans">
+                  <i class="fa fa-file"></i> DD-214
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
     </div>
   </div>
 </div>
