@@ -396,7 +396,7 @@ lead: USAJOBS features a consistent header for top-level navigation across the s
                 <li class="usajobs-nav__menu-container usajobs-nav__menu-search" data-state="is-closed">
                   <a data-behavior="nav.menu.search-toggle" aria-controls="usajobs-search-form-atp" class="usajobs-nav__section-link usajobs-nav--vATP__section-link" href="/" title="Job Search">
                     <span class="fa fa-search"></span>
-                    Search
+                    Resumes
                   </a>
                 </li>
               </ul>

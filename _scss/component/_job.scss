@@ -1,0 +1,130 @@
+// Job (JOA) -- Used in Applications and Saved Jobs
+
+@import 'base-shared';
+@import 'font-awesome/font-awesome';
+
+@import '../home-variables';
+
+@mixin job() {
+  &__department {
+    @include default-text();
+    margin: 0;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: $color-base;
+  }
+
+  &__agency {
+    @include default-text();
+    margin: 0;
+    font-weight: bold;
+    color: $color-base;
+  }
+
+  &__location {
+    @include default-text();
+    margin: 0;
+    color: $color-base;
+  }
+
+  &__location-link {
+    color: $color-base;
+
+    .fa {
+      color: $color-primary-alt;
+    }
+  }
+
+  &__location-more,
+  &__location-more:visited {
+    color: $color-primary;
+  }
+
+  &__locations {
+    @include unstyledList();
+
+    @include media($SM) {
+      @include clearfix();
+      margin-bottom: $size-default;
+    }
+
+    > li {
+      @include media($SM) {
+        @include span-columns(1, 2);
+      }
+    }
+
+    > li:nth-child(2n) {
+      @include media($SM) {
+        @include omega();
+      }
+    }
+  }
+
+  // In a variation of the job card this includes:
+  // starting salary
+  // Pay Plan and Grade
+  // Appointment type
+  // Work schedule
+  &__multi-line {
+    margin: 0;
+    color: $color-base;
+  }
+
+  &__closing-date {
+    margin: $size-base 0;
+    font-style: italic;
+    color: $color-base;
+
+    .is-near-closing {
+      color: $color-gold;
+    }
+  }
+
+  &__relocation {
+    display: block;
+    margin: 0;
+    color: $color-gray-dark;
+
+    @include media($SM) {
+      float: right;
+      display: inline-block;
+    }
+  }
+
+  &__last-update,
+  &__saved-date {
+    margin: $size-base 0 $size-default;
+    font-size: $small-font-size;
+
+    @include media($L) {
+      margin: $size-default 0 0;
+      padding-left: $size-L;
+      text-align: center;
+    }
+  }
+
+  &__details &__status {
+    text-align: left;
+
+    &__status-item {
+      display: inline-block;
+      margin-bottom: $size-base;
+    }
+  }
+
+  &__series,
+  &__work-schedule {
+    @include media($M) {
+      @include span-columns(2, 6);
+    }
+  }
+
+  &__salary,
+  &__announcement-number {
+    @include media($M) {
+      @include span-columns(4, 6);
+      @include omega();
+    }
+  }
+}
