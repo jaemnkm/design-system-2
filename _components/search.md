@@ -25,6 +25,7 @@ lead: A main function of USAJOBS is to provide a clear and effective search. Our
         <option value="OpenDate">Open Date</option>
         <option value="CloseDate">Close Date</option>
         <option value="OrganizationName">Agency</option>
+        <option value="Location">Location</option>
         <option value="PositionTitle">Job Title</option>
         <option value="RemunerationMinimumAmount">Salary Minimum</option>
         <option value="RemunerationMaximumAmount">Salary Maximum</option>
@@ -98,9 +99,6 @@ lead: A main function of USAJOBS is to provide a clear and effective search. Our
     <li class="usajobs-search-pagination__page">
       <a data-ajax="true" data-ajax-begin="ajaxLoading" data-ajax-complete="UpdatePartialViewsNew" data-ajax-failure="ajaxFailed" data-ajax-mode="replace" data-ajax-success="ajaxComplete" data-ajax-update="#results" href="/Search/GetPageResults/?page=2&amp;statusFilter=public" title="Go To Page 2">2</a>
     </li>
-    <li class="usajobs-search-pagination__page">
-      <a data-ajax="true" data-ajax-begin="ajaxLoading" data-ajax-complete="UpdatePartialViewsNew" data-ajax-failure="ajaxFailed" data-ajax-mode="replace" data-ajax-success="ajaxComplete" data-ajax-update="#results" href="/Search/GetPageResults/?page=3&amp;statusFilter=public" title="Go To Page 3">3</a>
-    </li>
     <li class="usajobs-search-pagination__page-condensed">
       &hellip;
     </li>
@@ -159,9 +157,6 @@ lead: A main function of USAJOBS is to provide a clear and effective search. Our
       &hellip;
     </li>
     <li class="usajobs-search-pagination__page">
-      <a data-ajax="true" data-ajax-begin="ajaxLoading" data-ajax-complete="UpdatePartialViewsNew" data-ajax-failure="ajaxFailed" data-ajax-mode="replace" data-ajax-success="ajaxComplete" data-ajax-update="#results" href="/Search/GetPageResults/?page=60&amp;statusFilter=public" title="Go To Page 60">60</a>
-    </li>
-    <li class="usajobs-search-pagination__page">
       <a data-ajax="true" data-ajax-begin="ajaxLoading" data-ajax-complete="UpdatePartialViewsNew" data-ajax-failure="ajaxFailed" data-ajax-mode="replace" data-ajax-success="ajaxComplete" data-ajax-update="#results" href="/Search/GetPageResults/?page=61&amp;statusFilter=public" title="Go To Page 61">61</a>
     </li>
     <li class="usajobs-search-pagination__page is-active">
@@ -211,5 +206,43 @@ lead: A main function of USAJOBS is to provide a clear and effective search. Our
     <ul class="usa-content-list">
       <li>When it is undesirable to have the user pause for navigation. Some alternatives include the infinite scroll pattern or simple un-numbered navigation.</li>
     </ul>
+  </div>
+</div>
+
+<h4 class="usa-heading-alt" id="results">Results</h4>
+<div class="preview">
+  <h6 class="usa-heading-alt">Mission Critical Occupation variation</h6>
+  <div class="usajobs-search">
+    <div class="usajobs-search-result--card">
+      <a href="https://www.usajobs.gov/GetJob/ViewDetails/435870100?PostingChannelID=RESTAPI" class="usajobs-search-result--card__body">
+        <h3 class="usajobs-search-result__title" itemprop="title">
+            Interdisciplinary (Ecologist/Botanist)
+        </h3>
+        <div class="usajobs-search-result__summary">
+          <div class="usajobs-search-result__summary-body--single-col">
+            <h4 class="usajobs-search-result__department">
+              Department of the Interior
+            </h4>
+            <h5 class="usajobs-search-result__agency">
+              US Fish and Wildlife Service
+            </h5>
+            <h4 class="usajobs-search-result__location" itemprop="addressLocality">
+
+              <span class="usajobs-search-result__location-link viewmap" data-object-trigger="modal" data-target="#modal-job-map" data-name=" " data-coord-lat="38.89051" data-coord-long="-77.086295" itemprop="addressLocality">
+                <i class="fa fa-map-marker"></i> Fremont, CA
+              </span>
+
+            </h4>
+            <p class="usajobs-search-result__multi-line">
+              Permanent &bull; Full Time &bull;
+              Starting at $47,525 &bull; GS07 - 09
+            </p>
+            <p class="usajobs-search-result__closing-date">
+              <i class="fa fa-clock-o is-near-closing"></i> Closes 6/3/2016
+            </p>
+          </div>
+        </div>
+      </a>
+    </div>
   </div>
 </div>

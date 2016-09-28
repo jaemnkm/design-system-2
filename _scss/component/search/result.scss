@@ -1,0 +1,18 @@
+// Search - Result card
+
+@import 'base-shared';
+@import 'font-awesome/font-awesome';
+
+@import '../home-variables';
+@import '../card';
+@import '../job';
+
+.usajobs-content-well .usajobs-search-result,
+.usajobs-search-result {
+  @include card();
+  @include job();
+}
+
+.usajobs-search .usajobs-search-result--card {
+  @include cardInset();
+}
