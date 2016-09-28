@@ -137,3 +137,44 @@
     }
   }
 }
+
+@mixin card-v2() {
+  &__body {
+    display: block;
+    padding: $size-M $size-default;
+    border-top: 1px solid $color-gray-light;
+    text-decoration: none;
+    color: $color-base;
+  }
+
+  &__title {
+    margin-top: 0;
+    color: $color-primary;
+  }
+
+  &__summary {
+    @include row();
+  }
+
+  &__summary-body {
+    @include media($ML) {
+      @include span-columns(3, 6);
+    }
+
+    @include media($L) {
+      @include span-columns(8, 12);
+    }
+  }
+
+  &__eligibility {
+    @include media($ML) {
+      @include span-columns(3, 6);
+      @include omega();
+    }
+
+    @include media($L) {
+      @include span-columns(4, 12);
+      @include omega();
+    }
+  }
+}

@@ -6,6 +6,7 @@
 @import '../home-variables';
 @import '../card';
 @import '../job';
+@import '../atp/applicant';
 
 .usajobs-content-well .usajobs-search-result,
 .usajobs-search-result {
@@ -15,4 +16,14 @@
 
 .usajobs-search .usajobs-search-result--card {
   @include cardInset();
+}
+
+.usajobs-search .usajobs-search-result--atp {
+  @include card-v2();
+  @include applicant();
+
+  &__container {
+    @include cardInset();
+    max-width: rem(800px);
+  }
 }
