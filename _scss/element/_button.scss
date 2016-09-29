@@ -82,7 +82,7 @@ button:disabled,
   // This component works in concert with the Chosen.js plugin
   &.chosen-container-active.chosen-with-drop .chosen-single {
     background-color: inherit;
-    background-image: url('../../img/arrow-up-white.svg');
+    background-image: url('../img/arrow-up-white.svg');
   }
 
   &.chosen-container-single .chosen-single {
@@ -90,6 +90,6 @@ button:disabled,
     background-color: inherit;
     color: $color-white;
     font-weight: bold;
-    background-image: url('../../img/arrow-down-white.svg');
+    background-image: url('../img/arrow-down-white.svg');
   }
 }

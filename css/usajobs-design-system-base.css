@@ -10966,7 +10966,7 @@ button:disabled,
 
 .usajobs-button-select.chosen-container-active.chosen-with-drop .chosen-single {
   background-color: inherit;
-  background-image: url("../../img/arrow-up-white.svg");
+  background-image: url("../img/arrow-up-white.svg");
 }
 
 .usajobs-button-select.chosen-container-single .chosen-single {
@@ -10974,7 +10974,7 @@ button:disabled,
   background-color: inherit;
   color: #ffffff;
   font-weight: bold;
-  background-image: url("../../img/arrow-down-white.svg");
+  background-image: url("../img/arrow-down-white.svg");
 }
 
 select::-ms-expand {
