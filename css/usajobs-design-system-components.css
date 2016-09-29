@@ -41669,7 +41669,7 @@ html {
 .usajobs-search .usajobs-search-result--atp__body {
   display: block;
   padding: 3rem 1.5rem;
-  border-top: 1px solid #aeb0b5;
+  border-bottom: 1px solid #f1f1f1;
   text-decoration: none;
   color: #212121;
 }

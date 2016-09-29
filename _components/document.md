@@ -106,7 +106,7 @@ lead: A way to upload and view documents.
         <p class="usajobs-document__type">SF-50</p>
       </div>
       <div class="usajobs-document__toggle">
-        <input id="document-3" type="checkbox" name="document-3" value="doc-3" class="usajobs-document__input" data-behavior="document.select-checkbox"> 
+        <input id="document-3" type="checkbox" name="document-3" value="doc-3" class="usajobs-document__input" data-behavior="document.select-checkbox">
         <label id="toggle-document-3" for="document-3" class="usajobs-document__selector" data-behavior="document.toggle-checkbox">
           <span class="usajobs-assistive-text">
             Select Document 3
@@ -294,7 +294,7 @@ lead: A way to upload and view documents.
           <li>Veteran Other</li>
         </ul>
       </li>
-      <li>Resumes either uploaded or created by the resume builder do not get a document type in Application Guide.</li> 
+      <li>Resumes either uploaded or created by the resume builder do not get a document type in Application Guide.</li>
       <li>The third line of a document is the date the document was uploaded. This line of text is in the format "Uploaded [date]". Resumes created by Resume Builder are in the format "Built [date]".</li>
       <li>The <strong>View</strong> link opens the full document in a <a href="{{ site.baseurl}}/modals/">modal</a>.</li>
       <li> The <strong>Delete</strong> link will open a dialog in a <a href="{{ site.baseurl}}/modals/">modal</a> asking the user to confirm removal of the document.</li>
@@ -326,7 +326,7 @@ lead: A way to upload and view documents.
         <div class="usajobs-document__figure" data-behavior="document.toggle" data-target="#toggle-document-2">
           <span class="usajobs-document--placeholder__icon word"></span>
         </div>
-        <a href="#view" class="usajobs-document__view" data-behavior="document.view">View</a>
+        <a href="#this-just-downloads-this-proprietary-doc" class="usajobs-document__view" data-behavior="document.view">View</a>
         <div class="usajobs-document__details">
           <p class="usajobs-document__title">Exec-Core.doc</p>
           <p class="usajobs-document__date">
@@ -357,9 +357,9 @@ lead: A way to upload and view documents.
         <div class="usajobs-document__figure" data-behavior="document.toggle" data-target="#toggle-document-7">
           <span class="usajobs-document--placeholder__icon image"></span>
         </div>
-        <a href="#view" class="usajobs-document__view" data-behavior="document.view">View</a>
+        <a href="{{site.baseurl}}/sample-docs/sf52.jpg" class="usajobs-document__view" data-behavior="document.view" target="_blank">View</a>
         <div class="usajobs-document__details">
-          <p class="usajobs-document__title">My OPM form.jpg</p>
+          <p class="usajobs-document__title">My SF52 form.jpg</p>
           <p class="usajobs-document__date">
             Uploaded 03/18/10
           </p>
@@ -392,7 +392,7 @@ lead: A way to upload and view documents.
         <div class="usajobs-document__figure" data-behavior="document.view" data-target="#view-document-8">
           <span class="usajobs-document--placeholder__icon pdf"></span>
         </div>
-        <a href="#view" class="usajobs-document__view" data-behavior="document.view">View</a>
+        <a href="{{site.baseurl}}/ViewerJS/#../sample-docs/sf52.pdf" class="usajobs-document__view" target="_blank">View</a>
         <div class="usajobs-document__details">
           <p class="usajobs-document__title">Pending&hellip;head.pdf</p>
           <p class="usajobs-document__date">
@@ -418,7 +418,7 @@ lead: A way to upload and view documents.
         <div class="usajobs-document__figure" data-behavior="document.view" data-target="#view-document-9">
           <span class="usajobs-document--placeholder__icon text"></span>
         </div>
-        <a href="#view" class="usajobs-document__view" data-behavior="document.view">View</a>
+        <a href="#browsers-cannot-display-text-files-sadness" class="usajobs-document__view" target="_blank">View</a>
         <div class="usajobs-document__details">
           <p class="usajobs-document__title">Latest-C&hellip;tter.txt</p>
           <p class="usajobs-document__date">
@@ -445,10 +445,10 @@ lead: A way to upload and view documents.
   <div class="usajobs-grid">
     <div class="usajobs-width-one-third">
       <div class="usajobs-document usajobs-document--placeholder-resume" data-object="document">
-        <div class="usajobs-document__figure" data-behavior="document.view" data-target="#view-document-10">
+        <a href="{{site.baseurl}}/ViewerJS/#../sample-docs/sample-resume.pdf" target="_blank" class="usajobs-document__figure">
           <span class="usajobs-document--placeholder__icon pdf"></span>
-        </div>
-        <a href="#view" class="usajobs-document__view" data-behavior="document.view">View</a>
+          <div class="usajobs-document--placeholder__view">View</div>
+        </a>
         <div class="usajobs-document__details">
           <p class="usajobs-document__title">TSA resume.pdf</p>
           <p class="usajobs-document__date">
@@ -480,7 +480,7 @@ lead: A way to upload and view documents.
         <div class="usajobs-document__figure" data-behavior="document.view" data-target="#view-document-11">
           <span class="usajobs-document--placeholder__icon builder"></span>
         </div>
-        <a href="#view" class="usajobs-document__view" data-behavior="document.view">View</a>
+        <a href="#built-resumes-open-in-resume-builder" class="usajobs-document__view" data-behavior="document.view">View</a>
         <div class="usajobs-document__details">
           <p class="usajobs-document__title">TSA v2</p>
           <p class="usajobs-document__date">
@@ -508,7 +508,7 @@ lead: A way to upload and view documents.
         <div class="usajobs-document__figure" data-behavior="document.view" data-target="#view-document-12">
           <span class="usajobs-document--placeholder__icon image"></span>
         </div>
-        <a href="#view" class="usajobs-document__view" data-behavior="document.view">View</a>
+        <a href="{{ site.baseurl }}/sample-docs/sample-resume.jpg" class="usajobs-document__view" data-behavior="document.view" target="_blank">View</a>
         <div class="usajobs-document__details">
           <p class="usajobs-document__title">TSA v2</p>
           <p class="usajobs-document__date">
@@ -548,4 +548,3 @@ lead: A way to upload and view documents.
     </ul>
   </div>
 </div>
-
