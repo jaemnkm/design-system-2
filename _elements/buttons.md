@@ -40,7 +40,7 @@ lead: USAJOBS alters the disabled button and adds a secondary button style.
         Reducing the opacity of disabled buttons helped the affordance in cases where a button was employed as part of a large component (e.g. <a href="{{site.baseurl}}/document/">Document</a>).
       </li>
       <li>
-        If the default disabled button is on a gray background it does not have enough contrast and affordance for being disabled. 
+        If the default disabled button is on a gray background it does not have enough contrast and affordance for being disabled.
       </li>
     </ul>
 
@@ -53,7 +53,7 @@ lead: USAJOBS alters the disabled button and adds a secondary button style.
   </div>
 </div>
 
-<h3 class="usa-heading">Secondary Buttons</h3>
+<h3 class="usa-heading">Secondary Button</h3>
 <div class="preview">
   <h6>Alert variation</h6>
   <div class="button_wrapper">
@@ -78,3 +78,41 @@ lead: USAJOBS alters the disabled button and adds a secondary button style.
   </div>
 </div>
 
+<h3 id="button-select" class="usa-heading">Button select</h3>
+<p class="lead">
+  A call-to-action button that reveals a select menu and then executes an action.
+</p>
+<div class="preview">
+    <select id="atp-projects" name="atp-projects" class="usajobs-button-select" data-placeholder="Save to project">
+      <option value=""></option>
+      <option value="1">Project ABC</option>
+      <option value="2">Project BCD</option>
+      <option value="3">Project CDE</option>
+      <option value="4">Project DEF</option>
+      <option value="5">Project EFG</option>
+      <option value="6">Project FGH</option>
+      <option value="7">Project GHI</option>
+      <option value="8">Project HIJ</option>
+      <option value="9">Project IJK</option>
+      <option value="10">Project JKL</option>
+      <option value="11">Project KLM</option>
+      <option value="12">Project LMN</option>
+      <option value="13">Project MNO</option>
+      <option value="14">Project NOP</option>
+      <option value="15">Project OPQ</option>
+    </select>
+</div>
+
+<div class="usa-accordion-bordered usa-accordion-docs">
+  <button class="usa-button-unstyled usa-accordion-button"
+      aria-expanded="true" aria-controls="collapsible-0">
+    Documentation
+  </button>
+  <div id="collapsible-0" aria-hidden="false" class="usa-accordion-content">
+    <h4 class="usa-heading">Usability</h4>
+    <h5>When to use</h5>
+    <ul class="usa-content-list">
+      <li>For micro-interactions where the user must select from a list and the act of making a selection takes immediate action.</li>
+    </ul>
+  </div>
+</div>

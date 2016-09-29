@@ -443,7 +443,7 @@ lead: A way to upload and view documents.
 
   <h6 class="usa-heading-alt">Account - Documents - Resumes</h6>
   <div class="usajobs-grid">
-    <div class="usajobs-width-one-third">
+    <!-- div class="usajobs-width-one-third">
       <div class="usajobs-document usajobs-document--placeholder-resume" data-object="document">
         <a href="{{site.baseurl}}/ViewerJS/#../sample-docs/sample-resume.pdf" target="_blank" class="usajobs-document__figure">
           <span class="usajobs-document--placeholder__icon pdf"></span>
@@ -474,7 +474,7 @@ lead: A way to upload and view documents.
           </div>
         </div>
       </div>
-    </div>
+    </div -->
     <div class="usajobs-width-one-third">
       <div class="usajobs-document usajobs-document--placeholder-resume" data-object="document">
         <div class="usajobs-document__figure" data-behavior="document.view" data-target="#view-document-11">
