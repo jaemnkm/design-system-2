@@ -255,17 +255,74 @@ lead: A main function of USAJOBS is to provide a clear and effective search. Our
           <div class="usajobs-search-result--atp__summary">
             <div class="usajobs-search-result--atp__summary-body">
               <h4 class="usajobs-search-result--atp__agency">
-                US Fish and Wildlife Service
+                Air Force C2 & Intelligence, Surveillance & Reconnaissance
               </h4>
               <h5 class="usajobs-search-result--atp__department">
-                Department of the Interior
+                Department of the Air Force
               </h5>
               <p class="usajobs-search-result--atp__grade">
                 GS-15
               </p>
               <h4 class="usajobs-search-result--atp__location" itemprop="addressLocality">
-                <span class="usajobs-search-result--atp__location-link viewmap" data-object-trigger="modal" data-target="#modal-job-map" data-name=" " data-coord-lat="38.89051" data-coord-long="-77.086295" itemprop="addressLocality">
-                  <i class="fa fa-map-marker"></i> Fremont, CA
+                <span class="usajobs-search-result--atp__location-link viewmap" data-object-trigger="modal" data-target="#modal-job-map" data-name=" " data-coord-lat="40.7146" data-coord-long="-74.0071" itemprop="addressLocality">
+                  <i class="fa fa-map-marker"></i> New York, NY
+                </span>
+              </h4>
+              <p class="usajobs-search-result--atp__last-updated">
+                <i class="fa fa-clock-o"></i> Last updated 10/01/2016
+              </p>
+            </div>
+            <div class="usajobs-search-result--atp__eligibility">
+              <div class="usajobs-search-result--atp__uhp-row">
+                <div class="usajobs-search-result--atp__uhp">
+                  <span class="usajobs-search-result--atp__uhp-icon federal-employees">
+                    <i class="fa fa-institution"></i>
+                  </span> Federal employee
+                </div>
+                <div class="usajobs-search-result--atp__doc-pill federal-employees">
+                  <i class="fa fa-file"></i> SF-50
+                </div>
+              </div>
+              <div class="usajobs-search-result--atp__uhp-row">
+                <div class="usajobs-search-result--atp__uhp">
+                  <span class="usajobs-search-result--atp__uhp-icon veterans">
+                    <i class="fa fa-shield"></i>
+                  </span> Veteran
+                </div>
+                <div class="usajobs-search-result--atp__doc-pill veterans">
+                  <i class="fa fa-file"></i> DD-214
+                </div>
+              </div>
+              <div class="usajobs-search-result--atp__uhp-row">
+                <div class="usajobs-search-result--atp__uhp">
+                  <span class="usajobs-search-result--atp__uhp-icon individuals-with-disabilities">
+                    <i class="fa fa-wheelchair-alt"></i>
+                  </span> Individuals with disabilities
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="usajobs-search-result--atp">
+        <a href="#user-detail" class="usajobs-search-result--atp__body">
+          <h3 class="usajobs-search-result--atp__title" itemprop="title">
+            Steve Rogers
+          </h3>
+          <div class="usajobs-search-result--atp__summary">
+            <div class="usajobs-search-result--atp__summary-body">
+              <h4 class="usajobs-search-result--atp__agency">
+                  U.S. Army Intelligence and Security Command
+              </h4>
+              <h5 class="usajobs-search-result--atp__department">
+                Department of the Army
+              </h5>
+              <p class="usajobs-search-result--atp__grade">
+                GS-15
+              </p>
+              <h4 class="usajobs-search-result--atp__location" itemprop="addressLocality">
+                <span class="usajobs-search-result--atp__location-link viewmap" data-object-trigger="modal" data-target="#modal-job-map" data-name=" " data-coord-lat="40.7146" data-coord-long="-74.0071" itemprop="addressLocality">
+                  <i class="fa fa-map-marker"></i> New York, NY
                 </span>
               </h4>
               <p class="usajobs-search-result--atp__last-updated">
