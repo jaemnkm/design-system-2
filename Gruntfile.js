@@ -102,7 +102,7 @@ module.exports = function(grunt) {
           'node_modules/jquery/dist/jquery.min.js',
           'js/vendor/jquery.ba-throttle-debounce.min.js',
           'js/vendor/jquery-ui.min.js',
-          'js/vendor/chosen.jquery.min.js',
+          'node_modules/chosen-js/chosen.jquery.js',
           'js/base.js'
         ],
         dest: 'js/usajobs-design-system-base.js'

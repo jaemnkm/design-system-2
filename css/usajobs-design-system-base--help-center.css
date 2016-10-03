@@ -6484,6 +6484,134 @@ img {
   margin-bottom: 6rem;
 }
 
+.usajobs-form .chosen-container,
+.usajobs-content-well .usajobs-form .chosen-container {
+  font-size: inherit;
+}
+
+.usajobs-form .chosen-container .chosen-drop,
+.usajobs-content-well .usajobs-form .chosen-container .chosen-drop {
+  border: 1px solid #5b616b;
+  border-top: 0;
+  background: #ffffff;
+  padding: 0 0.7em;
+  border-radius: 0;
+}
+
+.usajobs-form .chosen-container-single .chosen-single,
+.usajobs-content-well .usajobs-form .chosen-container-single .chosen-single {
+  padding: 0 0.7em;
+  height: 47px;
+  border: 1px solid #5b616b;
+  line-height: 46px;
+  color: #212121;
+  font-size: 1.7rem;
+  max-width: 46rem;
+  width: 100%;
+  background-color: #ffffff;
+  background-image: url("../img/arrow-down.png");
+  background-image: url("../img/arrow-down.svg");
+  background-position: right 1.3rem center;
+  background-repeat: no-repeat;
+  background-size: 1.3rem;
+  border-radius: 0;
+}
+
+.usajobs-form .chosen-container-single .chosen-single abbr,
+.usajobs-content-well .usajobs-form .chosen-container-single .chosen-single abbr {
+  background: url("../img/chosen-sprite.png") -42px 1px no-repeat;
+}
+
+.usajobs-form .chosen-container-single .chosen-search input[type="text"],
+.usajobs-content-well .usajobs-form .chosen-container-single .chosen-search input[type="text"] {
+  margin: 1rem 0;
+  outline: 0;
+  border: 1px solid #757575;
+  background-color: #ffffff;
+  font-size: 1.7rem;
+  line-height: 1.5;
+  background: url("../img/chosen-sprite.png") no-repeat 100% -20px;
+}
+
+.usajobs-form .chosen-container .chosen-results,
+.usajobs-content-well .usajobs-form .chosen-container .chosen-results {
+  display: block;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: block;
+  width: 100%;
+  color: #323a45;
+}
+
+.usajobs-form .chosen-container .chosen-results > li,
+.usajobs-content-well .usajobs-form .chosen-container .chosen-results > li {
+  display: list-item;
+  margin: 0;
+}
+
+.usajobs-form .chosen-container .chosen-results > li:before,
+.usajobs-content-well .usajobs-form .chosen-container .chosen-results > li:before {
+  display: none;
+}
+
+.usajobs-form .chosen-container .chosen-results > li:after,
+.usajobs-content-well .usajobs-form .chosen-container .chosen-results > li:after {
+  display: none;
+}
+
+.usajobs-form .chosen-container .chosen-results li,
+.usajobs-content-well .usajobs-form .chosen-container .chosen-results li {
+  line-height: 1.5;
+}
+
+.usajobs-form .chosen-container .chosen-results li.highlighted,
+.usajobs-content-well .usajobs-form .chosen-container .chosen-results li.highlighted {
+  background-image: none;
+  background-color: #0071bc;
+  color: #ffffff;
+}
+
+.usajobs-form .chosen-container .chosen-results li.no-results,
+.usajobs-content-well .usajobs-form .chosen-container .chosen-results li.no-results {
+  color: #212121;
+  padding: 1rem;
+}
+
+.usajobs-form .chosen-container-multi .chosen-choices li.search-choice .search-choice-close,
+.usajobs-content-well .usajobs-form .chosen-container-multi .chosen-choices li.search-choice .search-choice-close {
+  background: url("../img/chosen-sprite.png") -42px 1px no-repeat;
+}
+
+.usajobs-form .chosen-container-active .chosen-single:focus,
+.usajobs-content-well .usajobs-form .chosen-container-active .chosen-single:focus {
+  box-shadow: 0 0 3px #3e94cf, 0 0 7px #3e94cf;
+}
+
+.usajobs-form .chosen-container-active.chosen-with-drop .chosen-single,
+.usajobs-content-well .usajobs-form .chosen-container-active.chosen-with-drop .chosen-single {
+  border: 1px solid #5b616b;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 144dpi), only screen and (min-resolution: 1.5dppx) {
+  .usajobs-form .chosen-rtl .chosen-search input[type="text"],
+  .usajobs-form .chosen-container-single .chosen-single abbr,
+  .usajobs-form .chosen-container-single .chosen-single div b,
+  .usajobs-form .chosen-container-single .chosen-search input[type="text"],
+  .usajobs-form .chosen-container-multi .chosen-choices .search-choice .search-choice-close,
+  .usajobs-form .chosen-container .chosen-results-scroll-down span,
+  .usajobs-form .chosen-container .chosen-results-scroll-up span,
+  .usajobs-content-well .usajobs-form .chosen-rtl .chosen-search input[type="text"],
+  .usajobs-content-well .usajobs-form .chosen-container-single .chosen-single abbr,
+  .usajobs-content-well .usajobs-form .chosen-container-single .chosen-single div b,
+  .usajobs-content-well .usajobs-form .chosen-container-single .chosen-search input[type="text"],
+  .usajobs-content-well .usajobs-form .chosen-container-multi .chosen-choices .search-choice .search-choice-close,
+  .usajobs-content-well .usajobs-form .chosen-container .chosen-results-scroll-down span,
+  .usajobs-content-well .usajobs-form .chosen-container .chosen-results-scroll-up span {
+    background-image: url("../img/chosen-sprite@2x.png") !important;
+  }
+}
+
 .usajobs-form-grid {
   max-width: 1200px;
   margin-left: auto;
