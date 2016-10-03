@@ -167,10 +167,6 @@
     padding: $size-S;
   }
 
-  .chosen-container-multi .chosen-choices li.search-choice .search-choice-close {
-    background: url('../img/chosen-sprite.png') -42px 1px no-repeat;
-  }
-
   .chosen-container-active .chosen-single {
     &:focus {
       box-shadow: $focus-shadow;
@@ -178,7 +174,34 @@
   }
 
   .chosen-container-active.chosen-with-drop .chosen-single {
+    background-image: url('../img/arrow-up.png');
+    background-image: url('../img/arrow-up.svg');
     border: 1px solid $color-gray;
+  }
+
+  .chosen-container-multi .chosen-choices {
+    @include unstyledList();
+    padding: 0 0.7em;
+    border: 1px solid $color-gray;
+    background-image: none;
+    box-shadow: none;
+  }
+
+  .chosen-container-multi .chosen-choices li.search-choice {
+    margin-top: rem(4px);
+    margin-bottom: rem(4px);
+    padding-top: $size-base;
+    padding-bottom: $size-base;
+    line-height: $base-line-height;
+  }
+
+  .chosen-container-multi .chosen-choices li.search-field input[type="text"] {
+    height: 43px;
+    font-family: $font-sans;
+  }
+
+  .chosen-container-multi .chosen-choices li.search-choice .search-choice-close {
+    background: url('../img/chosen-sprite.png') -42px 1px no-repeat;
   }
 
   @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 144dpi), only screen and (min-resolution: 1.5dppx) {

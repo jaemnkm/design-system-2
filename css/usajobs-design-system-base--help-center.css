@@ -6578,11 +6578,6 @@ img {
   padding: 1rem;
 }
 
-.usajobs-form .chosen-container-multi .chosen-choices li.search-choice .search-choice-close,
-.usajobs-content-well .usajobs-form .chosen-container-multi .chosen-choices li.search-choice .search-choice-close {
-  background: url("../img/chosen-sprite.png") -42px 1px no-repeat;
-}
-
 .usajobs-form .chosen-container-active .chosen-single:focus,
 .usajobs-content-well .usajobs-form .chosen-container-active .chosen-single:focus {
   box-shadow: 0 0 3px #3e94cf, 0 0 7px #3e94cf;
@@ -6590,7 +6585,57 @@ img {
 
 .usajobs-form .chosen-container-active.chosen-with-drop .chosen-single,
 .usajobs-content-well .usajobs-form .chosen-container-active.chosen-with-drop .chosen-single {
+  background-image: url("../img/arrow-up.png");
+  background-image: url("../img/arrow-up.svg");
   border: 1px solid #5b616b;
+}
+
+.usajobs-form .chosen-container-multi .chosen-choices,
+.usajobs-content-well .usajobs-form .chosen-container-multi .chosen-choices {
+  display: block;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  padding: 0 0.7em;
+  border: 1px solid #5b616b;
+  background-image: none;
+  box-shadow: none;
+}
+
+.usajobs-form .chosen-container-multi .chosen-choices > li,
+.usajobs-content-well .usajobs-form .chosen-container-multi .chosen-choices > li {
+  display: list-item;
+  margin: 0;
+}
+
+.usajobs-form .chosen-container-multi .chosen-choices > li:before,
+.usajobs-content-well .usajobs-form .chosen-container-multi .chosen-choices > li:before {
+  display: none;
+}
+
+.usajobs-form .chosen-container-multi .chosen-choices > li:after,
+.usajobs-content-well .usajobs-form .chosen-container-multi .chosen-choices > li:after {
+  display: none;
+}
+
+.usajobs-form .chosen-container-multi .chosen-choices li.search-choice,
+.usajobs-content-well .usajobs-form .chosen-container-multi .chosen-choices li.search-choice {
+  margin-top: 0.4rem;
+  margin-bottom: 0.4rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  line-height: 1.5;
+}
+
+.usajobs-form .chosen-container-multi .chosen-choices li.search-field input[type="text"],
+.usajobs-content-well .usajobs-form .chosen-container-multi .chosen-choices li.search-field input[type="text"] {
+  height: 43px;
+  font-family: "Source Sans Pro", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+}
+
+.usajobs-form .chosen-container-multi .chosen-choices li.search-choice .search-choice-close,
+.usajobs-content-well .usajobs-form .chosen-container-multi .chosen-choices li.search-choice .search-choice-close {
+  background: url("../img/chosen-sprite.png") -42px 1px no-repeat;
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 144dpi), only screen and (min-resolution: 1.5dppx) {
