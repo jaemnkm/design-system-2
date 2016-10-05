@@ -59,7 +59,7 @@
   }
 
   &__uhp-icon {
-    @include makeCircle(30px, none, $color-secondary);
+    @include makeCircle(31px, none, $color-secondary);
     display: inline-block;
     padding-bottom: $size-default;
     font-size: $base-font-size;
@@ -67,7 +67,7 @@
 
     &.federal-employees,
     &.ses {
-      @include makeCircle(32px, none, $color-primary-darkest);
+      @include makeCircle(31px, none, $color-primary-darkest);
     }
 
     &.federal-employees .fa::before {
@@ -77,7 +77,7 @@
 
     &.veterans,
     &.military-spouses {
-      @include makeCircle(32px, none, $color-green);
+      @include makeCircle(31px, none, $color-green);
     }
 
     &.veterans {
@@ -85,11 +85,11 @@
     }
 
     &.students {
-      @include makeCircle(32px, none, $color-gold);
+      @include makeCircle(31px, none, $color-gold);
     }
 
     &.individuals-with-disabilities {
-      @include makeCircle(32px, none, $color-primary-darker);
+      @include makeCircle(31px, none, $color-primary-darker);
     }
   }
 

@@ -128,3 +128,150 @@
     }
   }
 }
+
+@mixin job-core-v1() {
+  &__title {
+    @include h3();
+    color: $color-primary;
+    text-decoration: none;
+
+    &:visited {
+      color: $color-visited;
+    }
+  }
+
+  &__department {
+    @include default-text();
+    margin: 0;
+    color: $color-base;
+  }
+
+  &__agency {
+    @include default-text();
+    margin: 0;
+    font-weight: bold;
+    color: $color-base;
+  }
+
+  &__location {
+    @include default-text();
+    margin: 0;
+    color: $color-base;
+  }
+
+  &__location-link {
+    color: $color-base;
+
+    .fa {
+      color: $color-primary-alt;
+    }
+  }
+
+  &__location-more,
+  &__location-more:visited {
+    color: $color-primary;
+  }
+
+  &__locations {
+    @include unstyledList();
+
+    @include media($SM) {
+      @include clearfix();
+      margin-bottom: $size-default;
+    }
+
+    > li {
+      @include media($SM) {
+        @include span-columns(1, 2);
+      }
+    }
+
+    > li:nth-child(2n) {
+      @include media($SM) {
+        @include omega();
+      }
+    }
+  }
+
+  &__item {
+    color: $color-gray;
+  }
+
+  &__hiring-path {
+    margin: $size-base 0 0;
+    color: $color-primary-darkest;
+  }
+
+  &__uhp {
+    float: left;
+    font-size: $small-font-size;
+  }
+
+  &__uhp-icon {
+    @include makeCircle(31px, none, $color-secondary);
+    display: inline-block;
+    padding-bottom: $size-default;
+    font-size: $base-font-size;
+    text-align: center;
+    margin-right: $size-S;
+
+    &.public {
+      @include makeCircle(31px, none, $color-primary-alt);
+    }
+
+    &.federal-employees,
+    &.ses {
+      @include makeCircle(31px, none, $color-primary-darkest);
+    }
+
+    &.federal-employees .fa::before {
+      margin-top: rem(-3px);
+      margin-right: rem(-3px);
+    }
+
+    &.veterans,
+    &.military-spouses {
+      @include makeCircle(31px, none, $color-green);
+    }
+
+    &.students {
+      @include makeCircle(31px, none, $color-gold);
+    }
+
+    &.individuals-with-disabilities {
+      @include makeCircle(31px, none, $color-primary-darker);
+    }
+  }
+
+  &__closing-date {
+    margin-top: $size-default;
+    font-style: italic;
+    color: $color-gray;
+
+    .is-near-closing {
+      color: $color-gold;
+    }
+
+    .is-rapidly-closing {
+      color: $color-secondary;
+    }
+  }
+
+  &__more-jobs-like-this {
+    margin: $size-default 0 0;
+    font-size: $small-font-size;
+    text-decoration: none;
+  }
+
+  &__save-job {
+    font-size: $small-font-size;
+
+    @include media($M) {
+      font-size: $base-font-size;
+    }
+
+    .fa {
+      color: $color-gold;
+    }
+  }
+}

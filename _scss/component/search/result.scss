@@ -14,8 +14,18 @@
   @include job();
 }
 
+.usajobs-search-results {
+  @include cardInset();
+  max-width: rem(800px);
+}
+
 .usajobs-search .usajobs-search-result--card {
   @include cardInset();
+}
+
+.usajobs-search .usajobs-search-result--core {
+  @include card-core-v1();
+  @include job-core-v1();
 }
 
 .usajobs-search .usajobs-search-result--atp {
