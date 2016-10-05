@@ -200,6 +200,7 @@
   &__hiring-path {
     margin: $size-base 0 0;
     color: $color-primary-darkest;
+    font-size: $small-font-size;
   }
 
   &__uhp {
@@ -245,6 +246,7 @@
 
   &__closing-date {
     margin-top: $size-default;
+    margin-bottom: 0;
     font-style: italic;
     color: $color-gray;
 
@@ -258,7 +260,8 @@
   }
 
   &__more-jobs-like-this {
-    margin: $size-default 0 0;
+    margin-top: $size-default;
+    margin-bottom: 0;
     font-size: $small-font-size;
     text-decoration: none;
   }
