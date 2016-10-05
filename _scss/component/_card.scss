@@ -178,3 +178,78 @@
     }
   }
 }
+
+
+@mixin card-core-v1() {
+  position: relative;
+  padding: $size-default;
+  border-bottom: 1px solid $color-gray-lightest;
+
+  &__body {
+    text-decoration: none;
+  }
+
+  &__title {
+    margin-top: 0;
+  }
+
+  &__body,
+  &__footer {
+    @include row();
+  }
+
+  &__summary,
+  &__footer-item {
+    @include media($ML) {
+      @include span-columns(3, 6);
+    }
+
+    @include media($L) {
+      @include span-columns(8, 12);
+    }
+  }
+
+  &__footer-item {
+    max-width: auto;
+  }
+
+  &__details,
+  &__footer-item.right {
+    @include media($ML) {
+      @include span-columns(3, 6);
+      @include omega();
+    }
+
+    @include media($L) {
+      @include span-columns(4, 12);
+      @include omega();
+    }
+  }
+
+  &__details-list {
+    @include unstyledList();
+    margin: 0;
+  }
+
+  &__save-job {
+    position: absolute;
+    right: $size-default;
+    bottom: $size-default;
+
+    @include media($M) {
+      display: inline-block;
+      float: inherit;
+      width: auto;
+      top: $size-base;
+      right: $size-default;
+      bottom: auto;
+      margin: 0;
+    }
+  }
+
+  &__save-job-text {
+    @include media($M) {
+      display: none;
+    }
+  }
+}

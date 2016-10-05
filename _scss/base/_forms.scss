@@ -193,6 +193,8 @@
     padding-top: $size-base;
     padding-bottom: $size-base;
     line-height: $base-line-height;
+    background-image: none;
+    background-color: $color-gray-lightest;
   }
 
   .chosen-container-multi .chosen-choices li.search-field input[type="text"] {

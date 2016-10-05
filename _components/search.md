@@ -212,6 +212,124 @@ lead: A main function of USAJOBS is to provide a clear and effective search. Our
 <h4 class="usa-heading-alt" id="results">Results</h4>
 <div class="preview compact">
   <div class="usajobs-search">
+    <h6 class="usa-heading-alt">Core variation</h6>
+    <div class="usajobs-search-results">
+      <div class="usajobs-search-result--core">
+        <a href="https://www.usajobs.gov/GetJob/ViewDetails/450087700" class="usajobs-search-result--core__title" itemprop="title">
+          Registered Nurse -5A Medical / Surgical unit
+        </a>
+        <div class="usajobs-search-result--core__body">
+          <div class="usajobs-search-result--core__summary">
+            <h4 class="usajobs-search-result--core__agency">
+              Veterans Affairs, Veterans Health Administration
+            </h4>
+            <h5 class="usajobs-search-result--core__department">
+              Department of Veterans Affairs
+            </h5>
+            <h4 class="usajobs-search-result--core__location" itemprop="addressLocality">
+              <span class="usajobs-search-result--core__location-link viewmap" data-object-trigger="modal" data-target="#modal-job-map" data-coord-lat="38.89051" data-coord-long="-77.086295" itemprop="addressLocality">
+                <i class="fa fa-map-marker"></i> Fremont, CA
+              </span>
+            </h4>
+          </div>
+          <div class="usajobs-search-result--core__details">
+            <ul class="usajobs-search-result--core__details-list">
+              <li class="usajobs-search-result--core__item">
+                Starting at $47,065 (VN00)
+              </li>
+              <li class="usajobs-search-result--core__item">
+                Permanent
+              </li>
+              <li class="usajobs-search-result--core__item">
+                <p class="usajobs-search-result--core__hiring-path">
+                  This job is open to:
+                </p>
+                <span class="usajobs-search-result--core__uhp-icon public">
+                  <i class="fa fa-users"></i>
+                </span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="usajobs-search-result--core__footer">
+          <p class="usajobs-search-result--core__footer-item usajobs-search-result--core__closing-date">
+            <i class="fa fa-clock-o"></i> 9/9/2016 - 9/30/2016
+          </p>
+          <p class="usajobs-search-result--core__footer-item right">
+            <a href="#more" class="usajobs-search-result--core__more-jobs-like-this">
+              <i class="fa fa-bullhorn"></i> More jobs like this
+            </a>
+          </p>
+          <p class="usajobs-search-result--core__footer-item usajobs-search-result--core__save-job">
+            <a href="#save" class="usajobs-search-result--core__save-job-link">
+              <i class="fa fa-star-o"></i>
+              <span class="usajobs-search-result--core__save-job-text">Save</span>
+            </a>
+          </p>
+        </div>
+      </div>
+      <div class="usajobs-search-result--core">
+        <a href="https://www.usajobs.gov/GetJob/ViewDetails/450087700" class="usajobs-search-result--core__title" itemprop="title">
+          Science and Research Director, Northwest Region
+        </a>
+        <div class="usajobs-search-result--core__body">
+          <div class="usajobs-search-result--core__summary">
+            <h4 class="usajobs-search-result--core__agency">
+              National Oceanic and Atmospheric Administration
+            </h4>
+            <h5 class="usajobs-search-result--core__department">
+              Department of Commerce
+            </h5>
+            <h4 class="usajobs-search-result--core__location" itemprop="addressLocality">
+              <span class="usajobs-search-result--core__location-link viewmap" data-object-trigger="modal" data-target="#modal-job-map" data-name="Seattle, Washington " data-coord-lat="47.60358" data-coord-long="-122.329453" itemprop="addressLocality">
+                <i class="fa fa-map-marker"></i> Seattle, Washington
+              </span>
+            </h4>
+          </div>
+          <div class="usajobs-search-result--core__details">
+            <ul class="usajobs-search-result--core__details-list">
+              <li class="usajobs-search-result--core__item">
+                Starting at $123,175 (ES00)
+              </li>
+              <li class="usajobs-search-result--core__item">
+                Permanent
+              </li>
+              <li class="usajobs-search-result--core__item">
+                <p class="usajobs-search-result--core__hiring-path">
+                  This job is open to:
+                </p>
+                <span class="usajobs-search-result--core__uhp-icon federal-employees">
+                  <i class="fa fa-institution"></i>
+                </span>
+                <span class="usajobs-search-result--core__uhp-icon veterans">
+                  <i class="fa fa-shield"></i>
+                </span>
+                <span class="usajobs-search-result--core__uhp-icon individuals-with-disabilities">
+                  <i class="fa fa-wheelchair-alt"></i>
+                </span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="usajobs-search-result--core__footer">
+          <p class="usajobs-search-result--core__footer-item usajobs-search-result--core__closing-date">
+            <i class="fa fa-clock-o"></i> 8/24/2016 - 10/03/2016
+          </p>
+          <p class="usajobs-search-result--core__footer-item right">
+            <a href="#more" class="usajobs-search-result--core__more-jobs-like-this">
+              <i class="fa fa-bullhorn"></i> More jobs like this
+            </a>
+          </p>
+          <p class="usajobs-search-result--core__footer-item usajobs-search-result--core__save-job">
+            <a href="#save" class="usajobs-search-result--core__save-job-link">
+              <i class="fa fa-star-o"></i>
+              <span class="usajobs-search-result--core__save-job-text">Save</span>
+            </a>
+          </p>
+        </div>
+      </div>
+    </div>
+
     <h6 class="usa-heading-alt">Mission Critical Occupation variation</h6>
     <div class="usajobs-search-result--card">
       <a href="https://www.usajobs.gov/GetJob/ViewDetails/435870100?PostingChannelID=RESTAPI" class="usajobs-search-result--card__body">
