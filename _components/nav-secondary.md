@@ -17,32 +17,32 @@ lead: Secondary navigation allows for movement within a section or page.
     <nav class="usajobs-nav-secondary" role="navigation" data-object="nav-secondary" data-target="#usajobs-nav-secondary-menu--profile">
       <div class="usajobs-nav-secondary__body" id="usajobs-menu-profile">
         <ul class="usajobs-nav-secondary__menu">
-          <li class="usajobs-nav-secondary__container"> 
+          <li class="usajobs-nav-secondary__container">
             <a class="usajobs-nav-secondary__item is-active" href="#contact">
               Contact
             </a>
           </li>
-          <li class="usajobs-nav-secondary__container"> 
+          <li class="usajobs-nav-secondary__container">
             <a class="usajobs-nav-secondary__item" href="#eligibility">
               Eligibility
             </a>
           </li>
-          <li class="usajobs-nav-secondary__container"> 
+          <li class="usajobs-nav-secondary__container">
             <a class="usajobs-nav-secondary__item" href="#demographics">
               Demographics
             </a>
           </li>
-          <li class="usajobs-nav-secondary__container"> 
+          <li class="usajobs-nav-secondary__container">
             <a class="usajobs-nav-secondary__item" href="#account">
               Account
             </a>
           </li>
-          <li class="usajobs-nav-secondary__container"> 
+          <li class="usajobs-nav-secondary__container">
             <a class="usajobs-nav-secondary__item" href="#other">
               Other
             </a>
           </li>
-          <li class="usajobs-nav-secondary__container more is-hidden"> 
+          <li class="usajobs-nav-secondary__container more is-hidden">
             <a class="usajobs-nav-secondary__more-toggle" href="#more" data-behavior="nav-secondary.toggle" data-target="#usajobs-nav-secondary-menu--profile"><i class="fa fa-plus"></i></a>
             <ul class="usajobs-nav-secondary__more-container" id="usajobs-nav-secondary-menu--profile" data-state="is-closed">
             </ul>
@@ -76,7 +76,7 @@ lead: Secondary navigation allows for movement within a section or page.
 
     <h5>When NOT to use</h5>
     <ul class="usa-content-list">
-      <li>Avoid using this component to move within the same page. Typography, including clear section headers, should be enough to allow the user to navigate the page.</li> 
+      <li>Avoid using this component to move within the same page. Typography, including clear section headers, should be enough to allow the user to navigate the page.</li>
     </ul>
   </div>
 </div>
@@ -175,11 +175,12 @@ lead: Secondary navigation allows for movement within a section or page.
     <h5>When to use</h5>
     <ul class="usa-content-list">
       <li>The vertical variation of the secondary navigation replaces the horizontal variation within Account.</li>
-      <li>Use when showing both required sub-sections and completion of sub-sections is necessary.
+      <li>Use when showing both required sub-sections and completion of sub-sections is necessary.</li>
     </ul>
 
     <h5>When NOT to use</h5>
     <ul class="usa-content-list">
       <li>Do not use this specific variation outside of Account.</li>
+    </ul>
   </div>
 </div>
