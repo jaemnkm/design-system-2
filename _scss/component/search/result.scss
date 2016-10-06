@@ -16,7 +16,7 @@
 
 .usajobs-search-results {
   @include cardInset();
-  max-width: rem(800px);
+  background-color: $color-white;
 }
 
 .usajobs-search .usajobs-search-result--card {
