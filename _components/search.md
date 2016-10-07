@@ -240,7 +240,7 @@ lead: A main function of USAJOBS is to provide a clear and effective search. Our
               <li class="usajobs-search-result--core__item">
                 Permanent
               </li>
-              <li class="usajobs-search-result--core__item">
+              <li class="usajobs-search-result--core__item open-to">
                 <span class="usajobs-search-result--core__uhp-icon public" title="This job is open to the public">
                   <i class="fa fa-users"></i>
                 </span>
@@ -291,7 +291,7 @@ lead: A main function of USAJOBS is to provide a clear and effective search. Our
               <li class="usajobs-search-result--core__item">
                 Permanent
               </li>
-              <li class="usajobs-search-result--core__item">
+              <li class="usajobs-search-result--core__item open-to">
                 <!-- p class="usajobs-search-result--core__hiring-path">
                   This job is open to:
                 </p -->

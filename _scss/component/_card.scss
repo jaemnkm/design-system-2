@@ -116,7 +116,6 @@
 @mixin cardInset() {
   @include media($M) {
     @include boxShadow(2);
-    margin: 0 $size-default $size-default;
   }
 
   @include media($L) {
@@ -200,6 +199,15 @@
 
   &__summary,
   &__footer-item {
+    @include media($L) {
+      @include span-columns(8, 12);
+    }
+  }
+
+  &__footer-item {
+    max-width: inherit !important; // override of .usa-content p:not(.usa-font-lead)
+    margin-bottom: 0;
+
     @include media($ML) {
       @include span-columns(3, 6);
     }
@@ -209,18 +217,15 @@
     }
   }
 
-  &__footer-item {
-    max-width: auto;
-    margin-bottom: 0;
+  &__footer-item.right {
+    @include media($ML) {
+      @include omega();
+    }
   }
+
 
   &__details,
   &__footer-item.right {
-    @include media($ML) {
-      @include span-columns(3, 6);
-      @include omega();
-    }
-
     @include media($L) {
       @include span-columns(4, 12);
       @include omega();

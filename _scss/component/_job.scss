@@ -195,6 +195,10 @@
 
   &__item {
     color: $color-gray;
+
+    &.open-to {
+      margin-top: $size-S;
+    }
   }
 
   &__hiring-path {
@@ -262,7 +266,6 @@
   &__more-jobs-like-this {
     margin-top: $size-default;
     margin-bottom: 0;
-    font-size: $small-font-size;
     text-decoration: none;
   }
 
