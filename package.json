@@ -27,7 +27,7 @@
   },
   "homepage": "http://usajobs.github.io/design-system/",
   "devDependencies": {
-    "clean-css": "^3.4.18",
+    "clean-css": "^3.4.20",
     "grunt": "^1.0.1",
     "grunt-autoprefixer": "^3.0.4",
     "grunt-cli": "^1.2.0",
@@ -40,17 +40,17 @@
     "grunt-notify": "^0.4.5",
     "grunt-sass": "^1.2.1",
     "grunt-scss-lint": "^0.5.0",
-    "grunt-shell": "^1.2.1",
+    "grunt-shell": "^2.0.0",
     "jshint-stylish": "^2.2.0",
     "load-grunt-tasks": "^3.5.0",
-    "node-sass": "^3.8.0",
-    "opener": "^1.4.1",
+    "node-sass": "^3.10.1",
+    "opener": "^1.4.2",
     "sass-lint": "^1.8.2",
     "scsslint": "0.0.3",
     "time-grunt": "^1.3.0"
   },
   "dependencies": {
-    "uswds": "^0.12.0"
+    "uswds": "^0.13.1"
   },
   "scripts": {
     "build": "grunt build",

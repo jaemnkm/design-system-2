@@ -37,6 +37,12 @@ $nav_item_height: 17px + 26.5px;
     @include clearfix();
   }
 
+  &__banner-inner {
+    @include media($ML) {
+      padding-left: $size-M;
+    }
+  }
+
   &__brand-container {
     display: block;
     float: left;
@@ -343,13 +349,24 @@ $nav_item_height: 17px + 26.5px;
     max-width: inherit;
   }
 
-  &__disclaimer-container,
+  &__banner-inner,
   &__header,
   &__search-body,
   &__create-account-container {
     max-width: $site-max-width-L;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  &__banner-inner {
+    @include media($ML) {
+      padding-left: $size-M;
+    }
+
+    @include media($XXXXL) {
+      padding-left: 0;
+      padding-right: 0;
+    }
   }
 
   &__create-account {
@@ -372,6 +389,35 @@ $nav_item_height: 17px + 26.5px;
 .usajobs-nav--vATP {
   &__body {
     max-width: inherit;
+  }
+
+  &__banner-inner,
+  &__header,
+  &__search-body {
+    max-width: $site-max-width-L;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &__banner-inner {
+    @include media($ML) {
+      padding-left: $size-M;
+    }
+
+    @include media($XXXXL) {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+
+  &__brand {
+    @include media($XXXXL) {
+      padding-left: 0;
+    }
+  }
+
+  &__search-button-container {
+    text-align: left;
   }
 
   &__menu {

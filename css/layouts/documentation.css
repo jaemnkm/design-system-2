@@ -990,11 +990,6 @@ code[class*="language-"], pre[class*="language-"] {
   }
 }
 
-.usa-banner {
-  padding-top: 2rem;
-  padding-bottom: 3.7rem;
-}
-
 .modals.is-open-modal .usa-site-header {
   display: none;
 }

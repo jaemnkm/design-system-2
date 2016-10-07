@@ -12,12 +12,40 @@ lead: USAJOBS features a consistent header for top-level navigation across the s
 <h6 class="usa-heading-alt">Authenticated</h6>
 <div class="preview">
   <header class="usajobs-site-header" role="banner">
-    <div class="usa-disclaimer">
-      <div class="usa-grid usajobs-disclaimer-official">
-        <img class="usa-flag_icon" alt="U.S. flag signifying that this is a United States federal government website" src="{{ site.baseurl }}/img/us_flag_small.png">
-        <p>An official website of the United States Government</p>
+    <!-- Gov banner BEGIN -->
+    <div class="usa-banner">
+      <div class="usa-accordion">
+        <header class="usa-banner-header">
+          <div class="usa-grid usa-banner-inner usajobs-nav__banner-inner">
+          <img src="{{ site.baseurl }}/img/favicons/favicon-57.png" alt="U.S. flag">
+          <p>An official website of the United States government</p>
+          <button class="usa-accordion-button usa-banner-button"
+            aria-expanded="false" aria-controls="gov-banner">
+            <span class="usa-banner-button-text">Here's how you know</span>
+          </button>
+          </div>
+        </header>
+        <div class="usa-banner-content usa-grid usa-accordion-content" id="gov-banner">
+          <div class="usa-banner-guidance-gov usa-width-one-half">
+            <img class="usa-banner-icon usa-media_block-img" src="{{ site.baseurl }}/img/icon-dot-gov.svg" alt="Dot gov">
+            <div class="usa-media_block-body">
+              <p>
+                <strong>The .gov means it’s official.</strong>
+                <br>
+                Federal government websites always use a .gov or .mil domain. Before sharing sensitive information online, make sure you’re on a .gov or .mil site by inspecting your browser’s address (or “location”) bar.
+              </p>
+            </div>
+          </div>
+          <div class="usa-banner-guidance-ssl usa-width-one-half">
+            <img class="usa-banner-icon usa-media_block-img" src="{{ site.baseurl }}/img/icon-https.svg" alt="SSL">
+            <div class="usa-media_block-body">
+              <p>This site is also protected by an SSL (Secure Sockets Layer) certificate that’s been signed by the U.S. government. The <strong>https://</strong> means all transmitted data is encrypted  — in other words, any information or browsing history that you provide is transmitted securely.</p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
+    <!-- Gov banner END -->
     <nav class="usajobs-nav" role="navigation" data-object="nav">
       <div class="usajobs-nav__body">
         <div class="usajobs-nav__header-container">
@@ -129,12 +157,40 @@ lead: USAJOBS features a consistent header for top-level navigation across the s
 <h6 class="usa-heading-alt">Unauthenticated</h6>
 <div class="preview">
   <header class="usajobs-site-header" role="banner" aria-label="header">
-    <div class="usa-disclaimer">
-      <div class="usa-grid usajobs-disclaimer-official">
-        <img class="usa-flag_icon" alt="U.S. flag signifying that this is a United States federal government website" src="{{ site.baseurl }}/img/us_flag_small.png">
-        <p>An official website of the United States Government</p>
+    <!-- Gov banner BEGIN -->
+    <div class="usa-banner">
+      <div class="usa-accordion">
+        <header class="usa-banner-header">
+          <div class="usa-grid usa-banner-inner usajobs-nav__banner-inner">
+          <img src="{{ site.baseurl }}/img/favicons/favicon-57.png" alt="U.S. flag">
+          <p>An official website of the United States government</p>
+          <button class="usa-accordion-button usa-banner-button"
+            aria-expanded="false" aria-controls="gov-banner">
+            <span class="usa-banner-button-text">Here's how you know</span>
+          </button>
+          </div>
+        </header>
+        <div class="usa-banner-content usa-grid usa-accordion-content" id="gov-banner">
+          <div class="usa-banner-guidance-gov usa-width-one-half">
+            <img class="usa-banner-icon usa-media_block-img" src="{{ site.baseurl }}/img/icon-dot-gov.svg" alt="Dot gov">
+            <div class="usa-media_block-body">
+              <p>
+                <strong>The .gov means it’s official.</strong>
+                <br>
+                Federal government websites always use a .gov or .mil domain. Before sharing sensitive information online, make sure you’re on a .gov or .mil site by inspecting your browser’s address (or “location”) bar.
+              </p>
+            </div>
+          </div>
+          <div class="usa-banner-guidance-ssl usa-width-one-half">
+            <img class="usa-banner-icon usa-media_block-img" src="{{ site.baseurl }}/img/icon-https.svg" alt="SSL">
+            <div class="usa-media_block-body">
+              <p>This site is also protected by an SSL (Secure Sockets Layer) certificate that’s been signed by the U.S. government. The <strong>https://</strong> means all transmitted data is encrypted  — in other words, any information or browsing history that you provide is transmitted securely.</p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
+    <!-- Gov banner END -->
     <nav class="usajobs-nav" role="navigation" aria-label="main navigation" data-object="nav">
       <div class="usajobs-nav__body">
         <div class="usajobs-nav__header-container">
@@ -221,12 +277,40 @@ lead: USAJOBS features a consistent header for top-level navigation across the s
 <h6 class="usa-heading-alt">Logo-only</h6>
 <div class="preview">
   <header class="usajobs-site-header" role="banner" aria-label="header">
-    <div class="usa-disclaimer">
-      <div class="usa-grid usajobs-disclaimer-official">
-        <img class="usa-flag_icon" alt="U.S. flag signifying that this is a United States federal government website" src="{{ site.baseurl }}/img/us_flag_small.png">
-        <p>An official website of the United States Government</p>
+    <!-- Gov banner BEGIN -->
+    <div class="usa-banner">
+      <div class="usa-accordion">
+        <header class="usa-banner-header">
+          <div class="usa-grid usa-banner-inner usajobs-nav__banner-inner">
+          <img src="{{ site.baseurl }}/img/favicons/favicon-57.png" alt="U.S. flag">
+          <p>An official website of the United States government</p>
+          <button class="usa-accordion-button usa-banner-button"
+            aria-expanded="false" aria-controls="gov-banner">
+            <span class="usa-banner-button-text">Here's how you know</span>
+          </button>
+          </div>
+        </header>
+        <div class="usa-banner-content usa-grid usa-accordion-content" id="gov-banner">
+          <div class="usa-banner-guidance-gov usa-width-one-half">
+            <img class="usa-banner-icon usa-media_block-img" src="{{ site.baseurl }}/img/icon-dot-gov.svg" alt="Dot gov">
+            <div class="usa-media_block-body">
+              <p>
+                <strong>The .gov means it’s official.</strong>
+                <br>
+                Federal government websites always use a .gov or .mil domain. Before sharing sensitive information online, make sure you’re on a .gov or .mil site by inspecting your browser’s address (or “location”) bar.
+              </p>
+            </div>
+          </div>
+          <div class="usa-banner-guidance-ssl usa-width-one-half">
+            <img class="usa-banner-icon usa-media_block-img" src="{{ site.baseurl }}/img/icon-https.svg" alt="SSL">
+            <div class="usa-media_block-body">
+              <p>This site is also protected by an SSL (Secure Sockets Layer) certificate that’s been signed by the U.S. government. The <strong>https://</strong> means all transmitted data is encrypted  — in other words, any information or browsing history that you provide is transmitted securely.</p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
+    <!-- Gov banner END -->
     <nav class="usajobs-nav" role="navigation" aria-label="main navigation" data-object="nav">
       <div class="usajobs-nav__body">
         <div class="usajobs-nav__header-container">
@@ -260,14 +344,40 @@ lead: USAJOBS features a consistent header for top-level navigation across the s
 <h6 class="usa-heading-alt">Unauthenticated - Full bleed</h6>
 <div class="preview">
   <header class="usajobs-site-header" role="banner" aria-label="header">
-    <div class="usa-disclaimer">
-      <div class="usajobs-nav--full_bleed__disclaimer-container">
-        <div class="usa-grid usajobs-disclaimer-official">
-          <img class="usa-flag_icon" alt="U.S. flag signifying that this is a United States federal government website" src="{{ site.baseurl }}/img/us_flag_small.png">
-          <p>An official website of the United States Government</p>
+    <!-- Gov banner BEGIN -->
+    <div class="usa-banner">
+      <div class="usa-accordion">
+        <header class="usa-banner-header">
+          <div class="usa-grid usa-banner-inner usajobs-nav--full_bleed__banner-inner">
+          <img src="{{ site.baseurl }}/img/favicons/favicon-57.png" alt="U.S. flag">
+          <p>An official website of the United States government</p>
+          <button class="usa-accordion-button usa-banner-button"
+            aria-expanded="false" aria-controls="gov-banner">
+            <span class="usa-banner-button-text">Here's how you know</span>
+          </button>
+          </div>
+        </header>
+        <div class="usa-banner-content usa-grid usa-accordion-content" id="gov-banner">
+          <div class="usa-banner-guidance-gov usa-width-one-half">
+            <img class="usa-banner-icon usa-media_block-img" src="{{ site.baseurl }}/img/icon-dot-gov.svg" alt="Dot gov">
+            <div class="usa-media_block-body">
+              <p>
+                <strong>The .gov means it’s official.</strong>
+                <br>
+                Federal government websites always use a .gov or .mil domain. Before sharing sensitive information online, make sure you’re on a .gov or .mil site by inspecting your browser’s address (or “location”) bar.
+              </p>
+            </div>
+          </div>
+          <div class="usa-banner-guidance-ssl usa-width-one-half">
+            <img class="usa-banner-icon usa-media_block-img" src="{{ site.baseurl }}/img/icon-https.svg" alt="SSL">
+            <div class="usa-media_block-body">
+              <p>This site is also protected by an SSL (Secure Sockets Layer) certificate that’s been signed by the U.S. government. The <strong>https://</strong> means all transmitted data is encrypted  — in other words, any information or browsing history that you provide is transmitted securely.</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
+    <!-- Gov banner END -->
     <nav class="usajobs-nav usajobs-nav--full_bleed" role="navigation" aria-label="main navigation" data-object="nav">
       <div class="usajobs-nav__body usajobs-nav--full_bleed__body">
         <div class="usajobs-nav__header-container">
@@ -356,55 +466,85 @@ lead: USAJOBS features a consistent header for top-level navigation across the s
 <h6 class="usa-heading-alt">Agency Talent Portal</h6>
 <div class="preview">
   <header class="usajobs-site-header" role="banner" aria-label="header">
-    <div class="usa-disclaimer">
-      <div class="usa-grid usajobs-disclaimer-official">
-        <img class="usa-flag_icon" alt="U.S. flag signifying that this is a United States federal government website" src="{{ site.baseurl }}/img/us_flag_small.png">
-        <p>An official website of the United States Government</p>
+    <!-- Gov banner BEGIN -->
+    <div class="usa-banner">
+      <div class="usa-accordion">
+        <header class="usa-banner-header">
+          <div class="usa-grid usa-banner-inner usajobs-nav--vATP__banner-inner">
+          <img src="{{ site.baseurl }}/img/favicons/favicon-57.png" alt="U.S. flag">
+          <p>An official website of the United States government</p>
+          <button class="usa-accordion-button usa-banner-button"
+            aria-expanded="false" aria-controls="gov-banner">
+            <span class="usa-banner-button-text">Here's how you know</span>
+          </button>
+          </div>
+        </header>
+        <div class="usa-banner-content usa-grid usa-accordion-content" id="gov-banner">
+          <div class="usa-banner-guidance-gov usa-width-one-half">
+            <img class="usa-banner-icon usa-media_block-img" src="{{ site.baseurl }}/img/icon-dot-gov.svg" alt="Dot gov">
+            <div class="usa-media_block-body">
+              <p>
+                <strong>The .gov means it’s official.</strong>
+                <br>
+                Federal government websites always use a .gov or .mil domain. Before sharing sensitive information online, make sure you’re on a .gov or .mil site by inspecting your browser’s address (or “location”) bar.
+              </p>
+            </div>
+          </div>
+          <div class="usa-banner-guidance-ssl usa-width-one-half">
+            <img class="usa-banner-icon usa-media_block-img" src="{{ site.baseurl }}/img/icon-https.svg" alt="SSL">
+            <div class="usa-media_block-body">
+              <p>This site is also protected by an SSL (Secure Sockets Layer) certificate that’s been signed by the U.S. government. The <strong>https://</strong> means all transmitted data is encrypted  — in other words, any information or browsing history that you provide is transmitted securely.</p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
+    <!-- Gov banner END -->
     <nav class="usajobs-nav usajobs-nav--vATP" role="navigation" aria-label="main navigation" data-object="nav">
       <div class="usajobs-nav__body usajobs-nav--vATP__body">
         <div class="usajobs-nav__header-container">
-          <div class="usajobs-nav__header">
-            <div class="usajobs-nav__brand-container">
-              <a class="usajobs-nav__brand" href="/">
-                <span class="logo" title="USAJOBS logo"></span>
-                <span class="usajobs-nav__sub-brand">Agency Talent Portal</span>
-              </a>
-            </div>
-            <div class="usajobs-nav__menu usajobs-nav--vATP__menu" id="usajobs-menu">
-              <ul>
-                <li class="usajobs-nav__menu-container usajobs-nav__account usajobs-nav--vATP__account">
-                  <a class="usajobs-nav__section-link menu-toggle usajobs-nav--vATP__section-link" href="https://agencyportal.usajobs.gov/Account" title="Account">
-                    <span class="fa fa-user"></span>
-                    <span class="usajobs-nav__account_name">QQ</span>
-                    <span class="usajobs-nav__first_name">Quadrina</span>
-                  </a>
-                </li>
-                <!-- li class="usajobs-nav__menu-container usajobs-nav--vATP__help">
-                  <a class="usajobs-nav__section-link" href="http://agencyportal.usajobs.gov/Help" title="Help">
-                    <span class="fa fa-question-circle"></span>
-                    Help
-                  </a>
-                </li -->
-                <li class="usajobs-nav__menu-container usajobs-nav__reports">
-                  <a class="usajobs-nav__section-link menu-toggle usajobs-nav--vATP__section-link" href="http://agencyportal.usajobs.gov/Report" title="Reports">
-                    <span class="fa fa-bar-chart-o"></span>
-                    Reports
-                  </a>
-                </li>
-                <li class="usajobs-nav__menu-container usajobs-nav__menu-search" data-state="is-closed">
-                  <a data-behavior="nav.menu.search-toggle" aria-controls="usajobs-search-form-atp" class="usajobs-nav__section-link usajobs-nav--vATP__section-link" href="/" title="Job Search">
-                    <span class="fa fa-search"></span>
-                    Resumes
-                  </a>
-                </li>
-              </ul>
+          <div class="usajobs-nav__header usajobs-nav--vATP__header">
+            <div class="usajobs-nav__header">
+              <div class="usajobs-nav__brand-container">
+                <a class="usajobs-nav__brand usajobs-nav--vATP__brand" href="/">
+                  <span class="logo" title="USAJOBS logo"></span>
+                  <span class="usajobs-nav__sub-brand">Agency Talent Portal</span>
+                </a>
+              </div>
+              <div class="usajobs-nav__menu usajobs-nav--vATP__menu" id="usajobs-menu">
+                <ul>
+                  <li class="usajobs-nav__menu-container usajobs-nav__account usajobs-nav--vATP__account">
+                    <a class="usajobs-nav__section-link menu-toggle usajobs-nav--vATP__section-link" href="https://agencyportal.usajobs.gov/Account" title="Account">
+                      <span class="fa fa-user"></span>
+                      <span class="usajobs-nav__account_name">QQ</span>
+                      <span class="usajobs-nav__first_name">Quadrina</span>
+                    </a>
+                  </li>
+                  <!-- li class="usajobs-nav__menu-container usajobs-nav--vATP__help">
+                    <a class="usajobs-nav__section-link" href="http://agencyportal.usajobs.gov/Help" title="Help">
+                      <span class="fa fa-question-circle"></span>
+                      Help
+                    </a>
+                  </li -->
+                  <li class="usajobs-nav__menu-container usajobs-nav__reports">
+                    <a class="usajobs-nav__section-link menu-toggle usajobs-nav--vATP__section-link" href="http://agencyportal.usajobs.gov/Report" title="Reports">
+                      <span class="fa fa-bar-chart-o"></span>
+                      Reports
+                    </a>
+                  </li>
+                  <li class="usajobs-nav__menu-container usajobs-nav__menu-search" data-state="is-closed">
+                    <a data-behavior="nav.menu.search-toggle" aria-controls="usajobs-search-form-atp" class="usajobs-nav__section-link usajobs-nav--vATP__section-link" href="/" title="Job Search">
+                      <span class="fa fa-search"></span>
+                      Resumes
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
           <div id="usajobs-search-form-atp" class="usajobs-nav__search" aria-expanded="false" role="menu">
             <form action="/ResumeMining" method="get" novalidate="novalidate">
-              <fieldset>
+              <fieldset class="usajobs-nav--vATP__search-body">
                 <div class="usajobs-nav__search-keywords-container usajobs-nav--vATP__search-keywords-container">
                   <label for="search-keyword">
                     <i class="usajobs-nav__search-keywords-icon fa fa-search"></i>

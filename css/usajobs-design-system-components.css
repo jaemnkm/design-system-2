@@ -6964,6 +6964,12 @@ html {
   display: block;
 }
 
+@media screen and (min-width: 48em) {
+  .usajobs-nav__banner-inner {
+    padding-left: 3rem;
+  }
+}
+
 .usajobs-nav__brand-container {
   display: block;
   float: left;
@@ -7349,10 +7355,23 @@ html {
   max-width: inherit;
 }
 
-.usajobs-nav--full_bleed__disclaimer-container, .usajobs-nav--full_bleed__header, .usajobs-nav--full_bleed__search-body, .usajobs-nav--full_bleed__create-account-container {
+.usajobs-nav--full_bleed__banner-inner, .usajobs-nav--full_bleed__header, .usajobs-nav--full_bleed__search-body, .usajobs-nav--full_bleed__create-account-container {
   max-width: 160rem;
   margin-left: auto;
   margin-right: auto;
+}
+
+@media screen and (min-width: 48em) {
+  .usajobs-nav--full_bleed__banner-inner {
+    padding-left: 3rem;
+  }
+}
+
+@media screen and (min-width: 120em) {
+  .usajobs-nav--full_bleed__banner-inner {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
 @media screen and (min-width: 48em) {
@@ -7373,6 +7392,35 @@ html {
 
 .usajobs-nav--vATP__body {
   max-width: inherit;
+}
+
+.usajobs-nav--vATP__banner-inner, .usajobs-nav--vATP__header, .usajobs-nav--vATP__search-body {
+  max-width: 160rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (min-width: 48em) {
+  .usajobs-nav--vATP__banner-inner {
+    padding-left: 3rem;
+  }
+}
+
+@media screen and (min-width: 120em) {
+  .usajobs-nav--vATP__banner-inner {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media screen and (min-width: 120em) {
+  .usajobs-nav--vATP__brand {
+    padding-left: 0;
+  }
+}
+
+.usajobs-nav--vATP__search-button-container {
+  text-align: left;
 }
 
 .usajobs-nav--vATP__menu {
