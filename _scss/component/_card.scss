@@ -115,7 +115,7 @@
 
 @mixin cardInset() {
   @include media($M) {
-    @include boxShadow(2);
+    @include boxShadow(1);
   }
 
   @include media($L) {
@@ -182,7 +182,7 @@
 @mixin card-core-v1() {
   position: relative;
   padding: $size-default;
-  border-bottom: 1px solid $color-gray-lightest;
+  border-bottom: 1px solid $color-gray-lighter;
 
   &__body {
     text-decoration: none;

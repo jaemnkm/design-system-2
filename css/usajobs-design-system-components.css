@@ -6514,7 +6514,7 @@ html {
   border-radius: 50%;
   color: #ffffff;
   background-color: inherit;
-  box-shadow: inset 0 0 0 2px none;
+  box-shadow: 0 0 0 2px none inset;
   background-color: #aeb0b5;
   text-decoration: none;
 }
@@ -29568,7 +29568,7 @@ html {
   border-radius: 50%;
   color: #ffffff;
   background-color: #0071bc;
-  box-shadow: inset 0 0 0 2px none;
+  box-shadow: 0 0 0 2px none inset;
   margin: 0.5rem 1.5rem;
 }
 
@@ -41691,7 +41691,7 @@ html {
 
 @media screen and (min-width: 37.5em) {
   .usajobs-search-results {
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   }
 }
 
@@ -41723,7 +41723,7 @@ html {
 
 @media screen and (min-width: 37.5em) {
   .usajobs-search .usajobs-search-result--card {
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   }
 }
 
@@ -41756,7 +41756,7 @@ html {
 .usajobs-search .usajobs-search-result--core {
   position: relative;
   padding: 1.5rem;
-  border-bottom: 1px solid #f1f1f1;
+  border-bottom: 1px solid #d6d7d9;
 }
 
 .usajobs-search .usajobs-search-result--core__body {
@@ -41890,6 +41890,7 @@ html {
   margin-top: 1.5rem;
   font-size: 24px;
   font-size: 2.4rem;
+  font-weight: normal;
   color: #0071bc;
   text-decoration: none;
 }
@@ -42017,7 +42018,7 @@ html {
   border-radius: 50%;
   color: #ffffff;
   background-color: #e31c3d;
-  box-shadow: inset 0 0 0 2px none;
+  box-shadow: 0 0 0 2px none inset;
   display: inline-block;
   padding-bottom: 1.5rem;
   font-size: 1.7rem;
@@ -42033,7 +42034,7 @@ html {
   border-radius: 50%;
   color: #ffffff;
   background-color: #02bfe7;
-  box-shadow: inset 0 0 0 2px none;
+  box-shadow: 0 0 0 2px none inset;
 }
 
 .usajobs-search .usajobs-search-result--core__uhp-icon.federal-employees, .usajobs-search .usajobs-search-result--core__uhp-icon.ses {
@@ -42044,12 +42045,12 @@ html {
   border-radius: 50%;
   color: #ffffff;
   background-color: #112e51;
-  box-shadow: inset 0 0 0 2px none;
+  box-shadow: 0 0 0 2px none inset;
 }
 
 .usajobs-search .usajobs-search-result--core__uhp-icon.federal-employees .fa::before {
   margin-top: -0.3rem;
-  margin-right: -0.3rem;
+  margin-right: -0.2rem;
 }
 
 .usajobs-search .usajobs-search-result--core__uhp-icon.veterans, .usajobs-search .usajobs-search-result--core__uhp-icon.military-spouses {
@@ -42060,7 +42061,7 @@ html {
   border-radius: 50%;
   color: #ffffff;
   background-color: #2e8540;
-  box-shadow: inset 0 0 0 2px none;
+  box-shadow: 0 0 0 2px none inset;
 }
 
 .usajobs-search .usajobs-search-result--core__uhp-icon.students {
@@ -42071,7 +42072,7 @@ html {
   border-radius: 50%;
   color: #ffffff;
   background-color: #fdb81e;
-  box-shadow: inset 0 0 0 2px none;
+  box-shadow: 0 0 0 2px none inset;
 }
 
 .usajobs-search .usajobs-search-result--core__uhp-icon.individuals-with-disabilities {
@@ -42082,7 +42083,29 @@ html {
   border-radius: 50%;
   color: #ffffff;
   background-color: #205493;
-  box-shadow: inset 0 0 0 2px none;
+  box-shadow: 0 0 0 2px none inset;
+}
+
+.usajobs-search .usajobs-search-result--core__uhp-icon.native-americans {
+  display: inline-block;
+  width: 31px;
+  height: 31px;
+  line-height: 31px;
+  border-radius: 50%;
+  color: #ffffff;
+  background-color: #8ba6ca;
+  box-shadow: 0 0 0 2px none inset;
+}
+
+.usajobs-search .usajobs-search-result--core__uhp-icon.land-mgmt {
+  display: inline-block;
+  width: 31px;
+  height: 31px;
+  line-height: 31px;
+  border-radius: 50%;
+  color: #ffffff;
+  background-color: #94bfa2;
+  box-shadow: 0 0 0 2px none inset;
 }
 
 .usajobs-search .usajobs-search-result--core__closing-date {
@@ -42104,6 +42127,7 @@ html {
   margin-top: 1.5rem;
   margin-bottom: 0;
   text-decoration: none;
+  font-size: 1.4rem;
 }
 
 .usajobs-search .usajobs-search-result--core__save-job {
@@ -42271,7 +42295,7 @@ html {
   border-radius: 50%;
   color: #ffffff;
   background-color: #e31c3d;
-  box-shadow: inset 0 0 0 2px none;
+  box-shadow: 0 0 0 2px none inset;
   display: inline-block;
   padding-bottom: 1.5rem;
   font-size: 1.7rem;
@@ -42286,7 +42310,7 @@ html {
   border-radius: 50%;
   color: #ffffff;
   background-color: #112e51;
-  box-shadow: inset 0 0 0 2px none;
+  box-shadow: 0 0 0 2px none inset;
 }
 
 .usajobs-search .usajobs-search-result--atp__uhp-icon.federal-employees .fa::before {
@@ -42302,7 +42326,7 @@ html {
   border-radius: 50%;
   color: #ffffff;
   background-color: #2e8540;
-  box-shadow: inset 0 0 0 2px none;
+  box-shadow: 0 0 0 2px none inset;
 }
 
 .usajobs-search .usajobs-search-result--atp__uhp-icon.veterans {
@@ -42317,7 +42341,7 @@ html {
   border-radius: 50%;
   color: #ffffff;
   background-color: #fdb81e;
-  box-shadow: inset 0 0 0 2px none;
+  box-shadow: 0 0 0 2px none inset;
 }
 
 .usajobs-search .usajobs-search-result--atp__uhp-icon.individuals-with-disabilities {
@@ -42328,7 +42352,7 @@ html {
   border-radius: 50%;
   color: #ffffff;
   background-color: #205493;
-  box-shadow: inset 0 0 0 2px none;
+  box-shadow: 0 0 0 2px none inset;
 }
 
 .usajobs-search .usajobs-search-result--atp__doc-pill {
@@ -42361,7 +42385,7 @@ html {
 
 @media screen and (min-width: 37.5em) {
   .usajobs-search .usajobs-search-result--atp__container {
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   }
 }
 
