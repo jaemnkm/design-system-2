@@ -132,6 +132,7 @@
 @mixin job-core-v1() {
   &__title {
     @include h3();
+    font-weight: normal;
     color: $color-primary;
     text-decoration: none;
 
@@ -213,39 +214,7 @@
   }
 
   &__uhp-icon {
-    @include makeCircle(31px, none, $color-secondary);
-    display: inline-block;
-    padding-bottom: $size-default;
-    font-size: $base-font-size;
-    text-align: center;
-    margin-right: $size-S;
-
-    &.public {
-      @include makeCircle(31px, none, $color-primary-alt);
-    }
-
-    &.federal-employees,
-    &.ses {
-      @include makeCircle(31px, none, $color-primary-darkest);
-    }
-
-    &.federal-employees .fa::before {
-      margin-top: rem(-3px);
-      margin-right: rem(-3px);
-    }
-
-    &.veterans,
-    &.military-spouses {
-      @include makeCircle(31px, none, $color-green);
-    }
-
-    &.students {
-      @include makeCircle(31px, none, $color-gold);
-    }
-
-    &.individuals-with-disabilities {
-      @include makeCircle(31px, none, $color-primary-darker);
-    }
+    @include UHPIcons(31px);
   }
 
   &__closing-date {
@@ -267,6 +236,7 @@
     margin-top: $size-default;
     margin-bottom: 0;
     text-decoration: none;
+    font-size: $small-font-size;
   }
 
   &__save-job {

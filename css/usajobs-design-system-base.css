@@ -9834,7 +9834,7 @@ select {
   border-radius: 50%;
   color: #ffffff;
   background-color: inherit;
-  box-shadow: inset 0 0 0 2px none;
+  box-shadow: 0 0 0 2px none inset;
   background-color: #ffffff;
   width: 4rem;
   height: 4rem;
@@ -9872,7 +9872,7 @@ select {
   border-radius: 50%;
   color: #ffffff;
   background-color: inherit;
-  box-shadow: inset 0 0 0 2px none;
+  box-shadow: 0 0 0 2px none inset;
   background-color: #aeb0b5;
   text-decoration: none;
 }
