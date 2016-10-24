@@ -386,6 +386,53 @@ $nav_item_height: 17px + 26.5px;
   }
 }
 
+.usajobs-nav--vTest {
+  &__banner-header {
+    @include media($L) {
+      @include clearfix();
+    }
+  }
+
+  &__banner-inner {
+    display: none;
+
+    @include media($ML) {
+      display: inherit;
+    }
+
+    @include media($L) {
+      @include span-columns(6, 12);
+    }
+  }
+
+  &__banner-warning {
+    color: $color-secondary;
+    font-weight: bold;
+    margin-top: 2px;
+    margin-bottom: 2px;
+
+    @include media($L) {
+      @include span-columns(6, 12);
+      @include omega();
+    }
+  }
+
+  &__brand {
+    .test,
+    .test:visited {
+      @include h2();
+      margin: rem(-2px) 0 0;
+      color: $color-primary-alt-dark;
+      line-height: 0;
+      display: none;
+
+      @include media($ML) {
+        display: inline-block;
+      }
+    }
+  }
+}
+
 .usajobs-nav--vATP {
   &__body {
     max-width: inherit;
