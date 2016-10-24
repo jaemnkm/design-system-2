@@ -7390,6 +7390,79 @@ html {
   text-align: left;
 }
 
+@media screen and (min-width: 62em) {
+  .usajobs-nav--vTest__banner-header::after {
+    clear: both;
+    content: "";
+    display: block;
+  }
+}
+
+.usajobs-nav--vTest__banner-inner {
+  display: none;
+}
+
+@media screen and (min-width: 48em) {
+  .usajobs-nav--vTest__banner-inner {
+    display: inherit;
+  }
+}
+
+@media screen and (min-width: 62em) {
+  .usajobs-nav--vTest__banner-inner {
+    float: left;
+    display: block;
+    margin-right: 2.3576520234%;
+    width: 48.8211739883%;
+  }
+  .usajobs-nav--vTest__banner-inner:last-child {
+    margin-right: 0;
+  }
+}
+
+.usajobs-nav--vTest__banner-warning {
+  color: #e31c3d;
+  font-weight: bold;
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+
+@media screen and (min-width: 62em) {
+  .usajobs-nav--vTest__banner-warning {
+    float: left;
+    display: block;
+    margin-right: 2.3576520234%;
+    width: 48.8211739883%;
+    margin-right: 0;
+  }
+  .usajobs-nav--vTest__banner-warning:last-child {
+    margin-right: 0;
+  }
+}
+
+.usajobs-nav--vTest__brand .test,
+.usajobs-nav--vTest__brand .test:visited {
+  font-family: "Source Sans Pro", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+  font-weight: 700;
+  line-height: 1.3;
+  margin-bottom: 0.5rem;
+  margin-top: 1.5rem;
+  font-size: 34px;
+  font-size: 3.4rem;
+  color: #112e51;
+  margin: -0.2rem 0 0;
+  color: #00a6d2;
+  line-height: 0;
+  display: none;
+}
+
+@media screen and (min-width: 48em) {
+  .usajobs-nav--vTest__brand .test,
+  .usajobs-nav--vTest__brand .test:visited {
+    display: inline-block;
+  }
+}
+
 .usajobs-nav--vATP__body {
   max-width: inherit;
 }
