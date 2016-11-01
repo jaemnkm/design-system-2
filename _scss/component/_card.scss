@@ -253,9 +253,30 @@
     }
   }
 
+  &__save-job-link,
+  &__save-job-link:visited {
+    color: $color-primary;
+    text-decoration: none;
+  }
+
   &__save-job-text {
-    @include media($M) {
-      display: none;
-    }
+    display: inline-block;
+    font-size: $small-font-size;
+  }
+
+  &__save-job-link[data-state=is-saved]::before {
+    @include fa-icon();
+    padding-right: $size-XS;
+    color: $color-gold;
+    vertical-align: middle;
+    content: $fa-var-star;
+  }
+
+  &__save-job-link[data-state=is-unsaved]::before {
+    @include fa-icon();
+    padding-right: $size-XS;
+    color: $color-gold;
+    vertical-align: middle;
+    content: $fa-var-star-o;
   }
 }

@@ -213,7 +213,7 @@ lead: A main function of USAJOBS is to provide a clear and effective search. Our
 <div class="preview compact">
   <div class="usajobs-search">
     <h6 class="usa-heading-alt">Core variation</h6>
-    <div class="usajobs-search-results">
+    <div class="usajobs-search-results" data-object="search-results">
       <div class="usajobs-search-result--core">
         <a href="https://www.usajobs.gov/GetJob/ViewDetails/450087700" class="usajobs-search-result--core__title" itemprop="title">
           Registered Nurse -5A Medical / Surgical unit
@@ -252,14 +252,13 @@ lead: A main function of USAJOBS is to provide a clear and effective search. Our
           <p class="usajobs-search-result--core__footer-item usajobs-search-result--core__closing-date">
             <i class="fa fa-clock-o"></i> 9/9/2016 - 9/30/2016
           </p>
-          <p class="usajobs-search-result--core__footer-item right">
+          <!-- p class="usajobs-search-result--core__footer-item right">
             <a href="#more" class="usajobs-search-result--core__more-jobs-like-this">
               <i class="fa fa-bullhorn"></i> More jobs like this
             </a>
-          </p>
+          </p -->
           <p class="usajobs-search-result--core__footer-item usajobs-search-result--core__save-job">
-            <a href="#save" class="usajobs-search-result--core__save-job-link">
-              <i class="fa fa-star-o"></i>
+            <a href="#save" class="usajobs-search-result--core__save-job-link" data-behavior="search-results.toggle-save" data-target=".usajobs-search-result--core__save-job-text" data-state="is-unsaved">
               <span class="usajobs-search-result--core__save-job-text">Save</span>
             </a>
           </p>
@@ -309,18 +308,17 @@ lead: A main function of USAJOBS is to provide a clear and effective search. Our
           </div>
         </div>
         <div class="usajobs-search-result--core__footer">
-          <p class="usajobs-search-result--core__footer-item usajobs-search-result--core__closing-date">
+          <p class="usajobs-search-result--core__footer-item usajobs-search-result--core__closing-date" title="Opening and closing dates">
             <i class="fa fa-clock-o"></i> 8/24/2016 - 10/03/2016
           </p>
-          <p class="usajobs-search-result--core__footer-item right">
+          <!-- p class="usajobs-search-result--core__footer-item right">
             <a href="#more" class="usajobs-search-result--core__more-jobs-like-this">
               <i class="fa fa-bullhorn"></i> More jobs like this
             </a>
-          </p>
+          </p -->
           <p class="usajobs-search-result--core__footer-item usajobs-search-result--core__save-job">
-            <a href="#save" class="usajobs-search-result--core__save-job-link">
-              <i class="fa fa-star-o"></i>
-              <span class="usajobs-search-result--core__save-job-text">Save</span>
+            <a href="#save" class="usajobs-search-result--core__save-job-link" data-behavior="search-results.toggle-save" data-target=".usajobs-search-result--core__save-job-text" data-state="is-saved">
+              <span class="usajobs-search-result--core__save-job-text">Saved</span>
             </a>
           </p>
         </div>
