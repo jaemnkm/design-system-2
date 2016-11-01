@@ -20,7 +20,7 @@ usajSrc = function (request, response) {
 $('#search-location').autocomplete({
   source: usajSrc,
   minLength: 3,
-  open: function (e, ui) {
+  open: function () {
     var acData = $(this).data('ui-autocomplete');
     acData
       .menu

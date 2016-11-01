@@ -41945,10 +41945,40 @@ html {
   }
 }
 
-@media screen and (min-width: 37.5em) {
-  .usajobs-search .usajobs-search-result--core__save-job-text {
-    display: none;
-  }
+.usajobs-search .usajobs-search-result--core__save-job-link, .usajobs-search .usajobs-search-result--core__save-job-link:visited {
+  color: #0071bc;
+  text-decoration: none;
+}
+
+.usajobs-search .usajobs-search-result--core__save-job-text {
+  display: inline-block;
+  font-size: 1.4rem;
+}
+
+.usajobs-search .usajobs-search-result--core__save-job-link[data-state=is-saved]::before {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  padding-right: 0.25rem;
+  color: #fdb81e;
+  vertical-align: middle;
+  content: "";
+}
+
+.usajobs-search .usajobs-search-result--core__save-job-link[data-state=is-unsaved]::before {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  padding-right: 0.25rem;
+  color: #fdb81e;
+  vertical-align: middle;
+  content: "";
 }
 
 .usajobs-search .usajobs-search-result--core__title {
