@@ -343,11 +343,19 @@
     @include makeCircle($size, none, $color-primary-darker);
   }
 
+  &.peace-corps {
+    @include makeCircle($size, none, $color-green-lighter);
+  }
+
+  &.former-overseas-employees {
+    @include makeCircle($size, none, $color-cool-blue-light);
+  }
+
   &.native-americans {
-    @include makeCircle($size, none, $color-cool-blue-lighter);
+    @include makeCircle($size, none, $color-gray-warm-light);
   }
 
   &.land-mgmt {
-    @include makeCircle($size, none, $color-green-lighter);
+    @include makeCircle($size, none, $color-gray-warm-dark);
   }
 }
