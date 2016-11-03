@@ -264,7 +264,8 @@ html {
 :root .fa-rotate-270,
 :root .fa-flip-horizontal,
 :root .fa-flip-vertical {
-  filter: none;
+  -webkit-filter: none;
+          filter: none;
 }
 
 .fa-stack {
@@ -3040,11 +3041,8 @@ html {
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
   transition: all 0.3s ease;
   -webkit-transform-style: preserve-3d;
-  -moz-transform-style: preserve-3d;
   -ms-transform-style: preserve-3d;
   -o-transform-style: preserve-3d;
   transform-style: preserve-3d;
@@ -3704,7 +3702,8 @@ html {
 :root .fa-rotate-270,
 :root .fa-flip-horizontal,
 :root .fa-flip-vertical {
-  filter: none;
+  -webkit-filter: none;
+          filter: none;
 }
 
 .fa-stack {
@@ -6392,6 +6391,7 @@ html {
 .usajobs-modal {
   opacity: 0;
   visibility: hidden;
+  transition: -webkit-transform 0.3s linear, opacity 0.3s linear;
   transition: transform 0.3s linear, opacity 0.3s linear;
   overflow: hidden;
   position: fixed;
@@ -7080,8 +7080,6 @@ html {
 }
 
 .usajobs-nav__menu-container[data-state="is-open"] {
-  -webkit-transition: all 0.3s linear;
-  -moz-transition: all 0.3s linear;
   transition: all 0.3s linear;
 }
 
@@ -7100,8 +7098,6 @@ html {
   padding: 8.5px 1rem;
   line-height: 1;
   text-align: center;
-  -webkit-transition: all 0.3s linear;
-  -moz-transition: all 0.3s linear;
   transition: all 0.3s linear;
   color: #0071bc;
 }
@@ -7824,7 +7820,8 @@ html {
 :root .fa-rotate-270,
 :root .fa-flip-horizontal,
 :root .fa-flip-vertical {
-  filter: none;
+  -webkit-filter: none;
+          filter: none;
 }
 
 .fa-stack {
@@ -10826,7 +10823,8 @@ html {
 :root .fa-rotate-270,
 :root .fa-flip-horizontal,
 :root .fa-flip-vertical {
-  filter: none;
+  -webkit-filter: none;
+          filter: none;
 }
 
 .fa-stack {
@@ -13714,7 +13712,8 @@ html {
 :root .fa-rotate-270,
 :root .fa-flip-horizontal,
 :root .fa-flip-vertical {
-  filter: none;
+  -webkit-filter: none;
+          filter: none;
 }
 
 .fa-stack {
@@ -17003,7 +17002,8 @@ html {
 :root .fa-rotate-270,
 :root .fa-flip-horizontal,
 :root .fa-flip-vertical {
-  filter: none;
+  -webkit-filter: none;
+          filter: none;
 }
 
 .fa-stack {
@@ -20047,7 +20047,6 @@ html {
   content: "";
   color: #2e8540;
   -webkit-animation: fa-spin 2s infinite linear;
-  -moz-animation: fa-spin 2s infinite linear;
   animation: fa-spin 2s infinite linear;
 }
 
@@ -20720,7 +20719,8 @@ html {
 :root .fa-rotate-270,
 :root .fa-flip-horizontal,
 :root .fa-flip-vertical {
-  filter: none;
+  -webkit-filter: none;
+          filter: none;
 }
 
 .fa-stack {
@@ -23589,7 +23589,8 @@ html {
 :root .fa-rotate-270,
 :root .fa-flip-horizontal,
 :root .fa-flip-vertical {
-  filter: none;
+  -webkit-filter: none;
+          filter: none;
 }
 
 .fa-stack {
@@ -26821,7 +26822,8 @@ html {
 :root .fa-rotate-270,
 :root .fa-flip-horizontal,
 :root .fa-flip-vertical {
-  filter: none;
+  -webkit-filter: none;
+          filter: none;
 }
 
 .fa-stack {
@@ -29974,7 +29976,8 @@ html {
 :root .fa-rotate-270,
 :root .fa-flip-horizontal,
 :root .fa-flip-vertical {
-  filter: none;
+  -webkit-filter: none;
+          filter: none;
 }
 
 .fa-stack {
@@ -32862,7 +32865,8 @@ html {
 :root .fa-rotate-270,
 :root .fa-flip-horizontal,
 :root .fa-flip-vertical {
-  filter: none;
+  -webkit-filter: none;
+          filter: none;
 }
 
 .fa-stack {
@@ -35750,7 +35754,8 @@ html {
 :root .fa-rotate-270,
 :root .fa-flip-horizontal,
 :root .fa-flip-vertical {
-  filter: none;
+  -webkit-filter: none;
+          filter: none;
 }
 
 .fa-stack {
@@ -38638,7 +38643,8 @@ html {
 :root .fa-rotate-270,
 :root .fa-flip-horizontal,
 :root .fa-flip-vertical {
-  filter: none;
+  -webkit-filter: none;
+          filter: none;
 }
 
 .fa-stack {
@@ -42192,7 +42198,7 @@ html {
   line-height: 31px;
   border-radius: 50%;
   color: #ffffff;
-  background-color: #94bfa2;
+  background-color: #4c2c92;
   box-shadow: 0 0 0 2px none inset;
 }
 
@@ -42203,7 +42209,7 @@ html {
   line-height: 31px;
   border-radius: 50%;
   color: #ffffff;
-  background-color: #4773aa;
+  background-color: #046b99;
   box-shadow: 0 0 0 2px none inset;
 }
 
@@ -42214,7 +42220,7 @@ html {
   line-height: 31px;
   border-radius: 50%;
   color: #ffffff;
-  background-color: #e4e2e0;
+  background-color: #5b616b;
   box-shadow: 0 0 0 2px none inset;
 }
 
@@ -42535,5 +42541,4 @@ html {
     border-top: 0;
   }
 }
-
 /*# sourceMappingURL=usajobs-design-system-components.css.map */
