@@ -235,7 +235,7 @@ lead: A main function of USAJOBS is to provide a clear and effective search. Our
           <div class="usajobs-search-result--core__details">
             <ul class="usajobs-search-result--core__details-list">
               <li class="usajobs-search-result--core__item">
-                Starting at $47,065 (VN00)
+                Starting at $47,065 (GS 9-10)
               </li>
               <li class="usajobs-search-result--core__item">
                 Permanent
@@ -249,7 +249,7 @@ lead: A main function of USAJOBS is to provide a clear and effective search. Our
           </div>
         </div>
         <div class="usajobs-search-result--core__footer">
-          <p class="usajobs-search-result--core__footer-item usajobs-search-result--core__closing-date">
+          <p class="usajobs-search-result--core__footer-item usajobs-search-result--core__closing-date" title="Opening and closing dates" aria-label="Opening and closing dates">
             <i class="fa fa-clock-o"></i> 9/9/2016 - 9/30/2016
           </p>
           <!-- p class="usajobs-search-result--core__footer-item right">
@@ -285,7 +285,7 @@ lead: A main function of USAJOBS is to provide a clear and effective search. Our
           <div class="usajobs-search-result--core__details">
             <ul class="usajobs-search-result--core__details-list">
               <li class="usajobs-search-result--core__item">
-                Starting at $123,175 (ES00)
+                Starting at $123,175 (ES 00)
               </li>
               <li class="usajobs-search-result--core__item">
                 Permanent
@@ -308,7 +308,7 @@ lead: A main function of USAJOBS is to provide a clear and effective search. Our
           </div>
         </div>
         <div class="usajobs-search-result--core__footer">
-          <p class="usajobs-search-result--core__footer-item usajobs-search-result--core__closing-date" title="Opening and closing dates">
+          <p class="usajobs-search-result--core__footer-item usajobs-search-result--core__closing-date" title="Opening and closing dates" aria-label="Opening and closing dates">
             <i class="fa fa-clock-o"></i> 8/24/2016 - 10/03/2016
           </p>
           <!-- p class="usajobs-search-result--core__footer-item right">

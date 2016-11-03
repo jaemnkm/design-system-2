@@ -42185,6 +42185,28 @@ html {
   box-shadow: 0 0 0 2px none inset;
 }
 
+.usajobs-search .usajobs-search-result--core__uhp-icon.peace-corps {
+  display: inline-block;
+  width: 31px;
+  height: 31px;
+  line-height: 31px;
+  border-radius: 50%;
+  color: #ffffff;
+  background-color: #94bfa2;
+  box-shadow: 0 0 0 2px none inset;
+}
+
+.usajobs-search .usajobs-search-result--core__uhp-icon.former-overseas-employees {
+  display: inline-block;
+  width: 31px;
+  height: 31px;
+  line-height: 31px;
+  border-radius: 50%;
+  color: #ffffff;
+  background-color: #4773aa;
+  box-shadow: 0 0 0 2px none inset;
+}
+
 .usajobs-search .usajobs-search-result--core__uhp-icon.native-americans {
   display: inline-block;
   width: 31px;
@@ -42192,7 +42214,7 @@ html {
   line-height: 31px;
   border-radius: 50%;
   color: #ffffff;
-  background-color: #8ba6ca;
+  background-color: #e4e2e0;
   box-shadow: 0 0 0 2px none inset;
 }
 
@@ -42203,7 +42225,7 @@ html {
   line-height: 31px;
   border-radius: 50%;
   color: #ffffff;
-  background-color: #94bfa2;
+  background-color: #494440;
   box-shadow: 0 0 0 2px none inset;
 }
 
