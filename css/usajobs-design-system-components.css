@@ -7280,6 +7280,18 @@ html {
   }
 }
 
+.usajobs-nav__search-map-view, .usajobs-nav__search-map-view:visited {
+  display: inline-block;
+  float: right;
+  color: #ffffff;
+  font-size: 1.4rem;
+  text-decoration: underline;
+}
+
+.usajobs-nav__search-map-view:hover, .usajobs-nav__search-map-view:visited:hover {
+  color: #ffffff;
+}
+
 .usajobs-nav__search-button-container {
   text-align: right;
 }
