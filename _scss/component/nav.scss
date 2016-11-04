@@ -293,6 +293,19 @@ $nav_item_height: 17px + 26.5px;
     }
   }
 
+  &__search-map-view,
+  &__search-map-view:visited {
+    display: inline-block;
+    float: right;
+    color: $color-white;
+    font-size: $small-font-size;
+    text-decoration: underline;
+
+    &:hover {
+      color: $color-white;
+    }
+  }
+
   &__search-button-container {
     text-align: right;
 
