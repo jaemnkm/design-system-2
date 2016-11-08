@@ -321,7 +321,7 @@ lead: USAJOBS features a consistent header for top-level navigation across the s
       </div>
     </div>
     <!-- Gov banner END -->
-    <nav class="usajobs-nav usajobs-nav--full_bleed" role="navigation" aria-label="main navigation" data-object="nav">
+    <nav class="usajobs-nav usajobs-nav--full_bleed usajobs-nav--search" role="navigation" aria-label="main navigation" data-object="nav" data-behavior="closeOnLoad">
       <div class="usajobs-nav__body usajobs-nav--full_bleed__body">
         <div class="usajobs-nav__header-container">
           <div class="usajobs-nav__header usajobs-nav--full_bleed__header">
@@ -346,7 +346,7 @@ lead: USAJOBS features a consistent header for top-level navigation across the s
                   </a>
                 </li>
                 <li class="usajobs-nav__menu-container usajobs-nav__menu-search" data-state="is-closed">
-                  <a data-behavior="nav.menu.search-toggle" aria-controls="usajobs-search-form-v2-unauth" class="usajobs-nav__section-link" href="/" title="Job Search">
+                  <a data-behavior="nav.menu.search-toggle" aria-controls="usajobs-search-form-v2-unauth" class="usajobs-nav__section-link usajobs-nav--search__section-link" href="/" title="Job Search">
                     <span class="fa fa-search"></span>
                     Search
                   </a>

@@ -7,15 +7,27 @@
   padding: 0;
   margin-bottom: $size-default;
 
-  &__results-count {
+  &__results-count-container {
     margin-bottom: $size-S;
 
     @include media($M) {
       @include span-columns(3);
     }
+  }
 
-    h3 {
-      margin-top: 0.8rem; // an odd-ball amount to align with the sort control
+  &__results-count {
+    margin-top: 1.2rem; // an odd-ball amount to align with the sort control
+    color: $color-primary-darkest;
+    font-weight: normal;
+
+    @include media($M) {
+      font-weight: bold;
+    }
+  }
+
+  &__viewing {
+    @include media($M) {
+      display: none; // switches to search bar exposed at this point
     }
   }
 
@@ -39,4 +51,3 @@
     width: auto;
   }
 }
-

@@ -13,8 +13,13 @@ lead: A main function of USAJOBS is to provide a clear and effective search. Our
 <div class="preview">
   <h6 class="usa-heading-alt">Results found</h6>
   <div class="usajobs-grid usajobs-search-controls">
-    <div class="usajobs-search-controls__results-count">
-      <h3>1,562 jobs found</h3>
+    <div class="usajobs-search-controls__results-count-container">
+      <h4 class="usajobs-search-controls__results-count">
+        Viewing 1-10 of 1,562 jobs found
+        <span class="usajobs-search-controls__viewing">
+          matching <a href="#open-search" id="search-controls-keyword">Engineer</a> in <a href="#open-search" id="search-controls-location">Washington, DC</a>
+        </span>
+      </h4>
     </div>
     <div class="usajobs-search-controls__sort-container">
       <label class="usajobs-search-controls__sort-label" for="search_sort">

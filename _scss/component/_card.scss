@@ -237,6 +237,14 @@
     margin: 0;
   }
 
+  &__closing-date {
+    margin-right: rem(55px); // avoid collision with save
+
+    @include media($ML) {
+      margin-right: 0;
+    }
+  }
+
   &__save-job {
     position: absolute;
     right: $size-default;

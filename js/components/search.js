@@ -27,20 +27,16 @@ $('#search-location').autocomplete({
       .element
       .find('li')
       .each(function () {
-        var me = $(this);
-        var keywords = acData.term.split(' ').join('|');
-        me.html(me.text().replace(new RegExp("(" + keywords + ")", "gi"), '<strong>$1</strong>'));
+        var me = $(this),
+          keywords = acData.term.split(' ').join('|');
+
+        me.html(me.text().replace(new RegExp('(' + keywords + ')', 'gi'), '<strong>$1</strong>'));
       });
   },
   select: function (event, ui) {
     var selectedObj = ui.item;
 
     $('#search-location').val(selectedObj.label);
-    $('#AutoCompleteSelected').val('true');
     return false;
-  },
-  search: function () {
-    //wipe out values on new searches or when user selects one but changes their mind!
-    $('#AutoCompleteSelected').val('false');
   }
 });
