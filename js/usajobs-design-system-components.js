@@ -545,7 +545,20 @@ $nav_secondary.on('nav-secondary.close', function(event, opts) {
 
 // Navigation (top-level-nav)
 
-var $nav = $('[data-object="nav"]');
+var $nav = $('[data-object="nav"]'),
+  closeNavOnLoad = function ($nav_bar) {
+    var width = window.innerWidth,
+      $trigger = $nav_bar.find('[data-behavior="nav.menu.search-toggle"]'),
+      $parent = $trigger.parent(),
+      state = $parent.attr('data-state'),
+      $menu = $nav_bar.find('#' + $trigger.attr('aria-controls'));
+
+    if (width < 600 && state === 'is-open') {
+      $nav.trigger('nav.menu.slide-close', { parent: $parent, menu: $menu });
+    } else if (width >= 600 && state === 'is-closed') {
+      $nav.trigger('nav.menu.slide-open', { parent: $parent, menu: $menu });
+    }
+  };
 
 $nav.on('click', '[data-behavior]', function (event) {
   var $el = $(this),
@@ -559,7 +572,9 @@ $nav.on('click', '[data-behavior]', function (event) {
 
   // Each behavior attached to the element should be triggered
   $.each(behavior.split(' '), function (idx, action) {
-    $el.trigger(action, { el: $el, object: $object, state: state, target: $target });
+    if (action.match(/^nav/)) {
+      $el.trigger(action, { el: $el, object: $object, state: state, target: $target });
+    }
   });
 });
 
@@ -631,6 +646,32 @@ $nav.on('nav.menu.search-toggle', function(event, opts) {
     $nav.trigger('nav.menu.slide-close', { parent: $parent, menu: opts.target });
   }
 });
+
+$(document).ready(function() {
+  if ($nav !== undefined && $nav.length > 0) {
+    $.each($nav, function (idx, nav) {
+      var $nav_bar = $(nav);
+      if ($nav_bar.attr('data-behavior') !== undefined) {
+        if ($nav_bar.attr('data-behavior') === 'closeOnLoad') {
+          closeNavOnLoad($nav_bar);
+        }
+      }
+    });
+  }
+});
+
+$(window).resize($.throttle(250, function() {
+  if ($nav !== undefined && $nav.length > 0) {
+    $.each($nav, function (idx, nav) {
+      var $nav_bar = $(nav);
+      if ($nav_bar.attr('data-behavior') !== undefined) {
+        if ($nav_bar.attr('data-behavior') === 'closeOnLoad') {
+          closeNavOnLoad($nav_bar);
+        }
+      }
+    });
+  }
+}));
 
 // Notification
 
@@ -820,21 +861,17 @@ $('#search-location').autocomplete({
       .element
       .find('li')
       .each(function () {
-        var me = $(this);
-        var keywords = acData.term.split(' ').join('|');
-        me.html(me.text().replace(new RegExp("(" + keywords + ")", "gi"), '<strong>$1</strong>'));
+        var me = $(this),
+          keywords = acData.term.split(' ').join('|');
+
+        me.html(me.text().replace(new RegExp('(' + keywords + ')', 'gi'), '<strong>$1</strong>'));
       });
   },
   select: function (event, ui) {
     var selectedObj = ui.item;
 
     $('#search-location').val(selectedObj.label);
-    $('#AutoCompleteSelected').val('true');
     return false;
-  },
-  search: function () {
-    //wipe out values on new searches or when user selects one but changes their mind!
-    $('#AutoCompleteSelected').val('false');
   }
 });
 
