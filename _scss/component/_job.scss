@@ -1,4 +1,5 @@
 // Job (JOA) -- Used in Applications and Saved Jobs
+//              These mixins handle individual parts of a job, usually used within a card
 
 @import 'base-shared';
 @import 'font-awesome/font-awesome';
@@ -204,12 +205,12 @@
     color: $color-gray;
 
     &.open-to {
+      @include clearfix();
       margin-top: $size-S;
     }
   }
 
   &__hiring-path {
-    margin: $size-base 0 0;
     color: $color-primary-darkest;
     font-size: $small-font-size;
   }

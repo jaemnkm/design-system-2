@@ -9507,6 +9507,12 @@ html {
   }
 }
 
+.usajobs-nav--search__location-label::after {
+  clear: both;
+  content: "";
+  display: block;
+}
+
 ul.ui-autocomplete {
   display: block;
   margin: 0;

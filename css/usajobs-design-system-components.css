@@ -7604,6 +7604,12 @@ html {
   }
 }
 
+.usajobs-nav--search__location-label::after {
+  clear: both;
+  content: "";
+  display: block;
+}
+
 ul.ui-autocomplete {
   display: block;
   margin: 0;
@@ -29534,7 +29540,7 @@ html {
 }
 
 .usajobs-search-controls {
-  padding: 0;
+  padding: 1.2rem 0 0 0;
   margin-bottom: 1.5rem;
 }
 
@@ -29555,7 +29561,7 @@ html {
 }
 
 .usajobs-search-controls__results-count {
-  margin-top: 1.2rem;
+  margin-top: 1rem;
   color: #112e51;
   font-weight: normal;
 }
@@ -29596,6 +29602,7 @@ html {
 .usajobs-search-controls__sort-control {
   display: inline-block;
   width: auto;
+  margin: 0;
 }
 
 html {
@@ -41875,6 +41882,7 @@ html {
 
 .usajobs-search .usajobs-search-result--core__title {
   margin-top: 0;
+  overflow-wrap: break-word;
 }
 
 .usajobs-search .usajobs-search-result--core__body, .usajobs-search .usajobs-search-result--core__footer {
@@ -41976,6 +41984,22 @@ html {
   .usajobs-search .usajobs-search-result--core__closing-date {
     margin-right: 0;
   }
+}
+
+.usajobs-search .usajobs-search-result--core__hiring-path {
+  display: inline-block;
+  float: left;
+  margin: 0.5rem 0.5rem 0 0;
+}
+
+@media screen and (min-width: 62em) {
+  .usajobs-search .usajobs-search-result--core__hiring-path {
+    display: none;
+  }
+}
+
+.usajobs-search .usajobs-search-result--core__uhp-icon {
+  float: left;
 }
 
 .usajobs-search .usajobs-search-result--core__save-job {
@@ -42158,8 +42182,13 @@ html {
   margin-top: 1rem;
 }
 
+.usajobs-search .usajobs-search-result--core__item.open-to::after {
+  clear: both;
+  content: "";
+  display: block;
+}
+
 .usajobs-search .usajobs-search-result--core__hiring-path {
-  margin: 0.5rem 0 0;
   color: #112e51;
   font-size: 1.4rem;
 }
@@ -42323,6 +42352,16 @@ html {
 
 .usajobs-search .usajobs-search-result--core__save-job .fa {
   color: #fdb81e;
+}
+
+.usajobs-search .usajobs-search-result--core .usajobs-search-result--core__department, .usajobs-search .usajobs-search-result--core__item.usajobs-search-result--core__appt-type {
+  display: none;
+}
+
+@media screen and (min-width: 62em) {
+  .usajobs-search .usajobs-search-result--core .usajobs-search-result--core__department, .usajobs-search .usajobs-search-result--core__item.usajobs-search-result--core__appt-type {
+    display: inherit;
+  }
 }
 
 .usajobs-search .usajobs-search-result--atp__body {
