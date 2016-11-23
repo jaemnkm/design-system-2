@@ -238,6 +238,10 @@
     margin: 0;
   }
 
+  &__item.open-to {
+    @include clearfix();
+  }
+
   &__closing-date {
     margin-right: rem(55px); // avoid collision with save
 
