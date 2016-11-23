@@ -1,0 +1,45 @@
+// Tooltip
+// Borrows generously from:
+// https://osvaldas.info/examples/elegant-css-and-jquery-tooltip-responsive-mobile-friendly/
+
+@import 'base-shared';
+
+.usajobs-tooltip {
+  position: absolute;
+  text-align: center;
+  color: $color-white;
+  background: rgba(50, 58, 69, 0.9);
+  z-index: $layer-tooltip;
+  padding: $size-S $size-base;
+
+  &:after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -#{$size-S};
+    margin-left: -#{$size-S};
+    width: 0;
+    height: 0;
+    border-left: $size-S solid transparent;
+    border-right: $size-S solid transparent;
+    border-top: $size-S solid rgba(50, 58, 69, 0.9);
+  }
+
+  &.top:after {
+    border-top-color: transparent;
+    border-bottom: 10px solid #111;
+    top: -#{$size-SM};
+    bottom: auto;
+  }
+
+  &.left:after {
+    left: $size-S;
+    margin: 0;
+  }
+
+  &.right:after {
+    right: $size-S;
+    left: auto;
+    margin: 0;
+  }
+}

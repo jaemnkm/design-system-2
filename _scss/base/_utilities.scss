@@ -314,7 +314,7 @@
   padding-bottom: $size-default;
   font-size: $base-font-size;
   text-align: center;
-  margin-right: $size-S;
+  margin-right: $size-base;
 
   &.public {
     @include makeCircle($size, none, $color-primary-alt);

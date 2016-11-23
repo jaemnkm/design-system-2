@@ -249,7 +249,7 @@ lead: A main function of USAJOBS is to provide a clear and effective search. Our
                 <p class="usajobs-search-result--core__hiring-path">
                   This job is open to:
                 </p>
-                <span class="usajobs-search-result--core__uhp-icon public" title="This job is open to the public">
+                <span class="usajobs-search-result--core__uhp-icon public" rel="tooltip" title="This job is open to the public">
                   <i class="fa fa-users"></i>
                 </span>
               </li>
@@ -302,13 +302,13 @@ lead: A main function of USAJOBS is to provide a clear and effective search. Our
                 <p class="usajobs-search-result--core__hiring-path">
                   This job is open to:
                 </p>
-                <span class="usajobs-search-result--core__uhp-icon federal-employees" title="This job is open to current or former federal employees">
+                <span class="usajobs-search-result--core__uhp-icon federal-employees" title="This job is open to current or former federal employees" rel="tooltip">
                   <i class="fa fa-institution"></i>
                 </span>
-                <span class="usajobs-search-result--core__uhp-icon veterans" title="This jobs is open to veterans">
+                <span class="usajobs-search-result--core__uhp-icon veterans" title="This jobs is open to veterans" rel="tooltip">
                   <i class="fa fa-shield"></i>
                 </span>
-                <span class="usajobs-search-result--core__uhp-icon individuals-with-disabilities" title="This job is open to individuals with disabilities">
+                <span class="usajobs-search-result--core__uhp-icon individuals-with-disabilities" title="This job is open to individuals with disabilities" rel="tooltip">
                   <i class="fa fa-wheelchair-alt"></i>
                 </span>
               </li>
