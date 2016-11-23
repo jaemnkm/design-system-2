@@ -1,4 +1,5 @@
 // Card -- Used in Applications, Saved Jobs, and Saved Searches
+//         These mixins handle the LAYOUT of the card only, not the display of individual data
 
 @import 'base-shared';
 @import 'font-awesome/font-awesome';
@@ -190,6 +191,7 @@
 
   &__title {
     margin-top: 0;
+    overflow-wrap: break-word; // This prevents whack titles from breaking the card
   }
 
   &__body,
@@ -223,7 +225,6 @@
     }
   }
 
-
   &__details,
   &__footer-item.right {
     @include media($L) {
@@ -243,6 +244,20 @@
     @include media($ML) {
       margin-right: 0;
     }
+  }
+
+  &__hiring-path {
+    display: inline-block;
+    float: left;
+    margin: $size-base $size-base 0 0;
+
+    @include media($L) {
+      display: none;
+    }
+  }
+
+  &__uhp-icon {
+    float: left;
   }
 
   &__save-job {

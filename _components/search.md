@@ -242,10 +242,13 @@ lead: A main function of USAJOBS is to provide a clear and effective search. Our
               <li class="usajobs-search-result--core__item">
                 Starting at $47,065 (GS 9-10)
               </li>
-              <li class="usajobs-search-result--core__item">
-                Permanent
+              <li class="usajobs-search-result--core__item usajobs-search-result--core__appt-type">
+                Permanent &bull; Full-time
               </li>
               <li class="usajobs-search-result--core__item open-to">
+                <p class="usajobs-search-result--core__hiring-path">
+                  This job is open to:
+                </p>
                 <span class="usajobs-search-result--core__uhp-icon public" title="This job is open to the public">
                   <i class="fa fa-users"></i>
                 </span>
@@ -255,7 +258,7 @@ lead: A main function of USAJOBS is to provide a clear and effective search. Our
         </div>
         <div class="usajobs-search-result--core__footer">
           <p class="usajobs-search-result--core__footer-item usajobs-search-result--core__closing-date" title="Opening and closing dates" aria-label="Opening and closing dates">
-            <i class="fa fa-clock-o"></i> 9/9/2016 - 9/30/2016
+            <i class="fa fa-clock-o"></i> Open 9/9/2016 to 9/30/2016
           </p>
           <!-- p class="usajobs-search-result--core__footer-item right">
             <a href="#more" class="usajobs-search-result--core__more-jobs-like-this">
@@ -264,7 +267,7 @@ lead: A main function of USAJOBS is to provide a clear and effective search. Our
           </p -->
           <p class="usajobs-search-result--core__footer-item usajobs-search-result--core__save-job">
             <a href="#save" class="usajobs-search-result--core__save-job-link" data-behavior="search-results.toggle-save" data-target=".usajobs-search-result--core__save-job-text" data-state="is-unsaved">
-              <span class="usajobs-search-result--core__save-job-text">Save</span>
+              <span class="usajobs-search-result--core__save-job-text">Save job</span>
             </a>
           </p>
         </div>
@@ -292,13 +295,13 @@ lead: A main function of USAJOBS is to provide a clear and effective search. Our
               <li class="usajobs-search-result--core__item">
                 Starting at $123,175 (ES 00)
               </li>
-              <li class="usajobs-search-result--core__item">
-                Permanent
+              <li class="usajobs-search-result--core__item usajobs-search-result--core__appt-type">
+                Permanent &bull; Full-time
               </li>
               <li class="usajobs-search-result--core__item open-to">
-                <!-- p class="usajobs-search-result--core__hiring-path">
+                <p class="usajobs-search-result--core__hiring-path">
                   This job is open to:
-                </p -->
+                </p>
                 <span class="usajobs-search-result--core__uhp-icon federal-employees" title="This job is open to current or former federal employees">
                   <i class="fa fa-institution"></i>
                 </span>
@@ -314,7 +317,7 @@ lead: A main function of USAJOBS is to provide a clear and effective search. Our
         </div>
         <div class="usajobs-search-result--core__footer">
           <p class="usajobs-search-result--core__footer-item usajobs-search-result--core__closing-date" title="Opening and closing dates" aria-label="Opening and closing dates">
-            <i class="fa fa-clock-o"></i> 8/24/2016 - 10/03/2016
+            <i class="fa fa-clock-o"></i> Open 10/24/2016 to 12/03/2016
           </p>
           <!-- p class="usajobs-search-result--core__footer-item right">
             <a href="#more" class="usajobs-search-result--core__more-jobs-like-this">
@@ -329,7 +332,57 @@ lead: A main function of USAJOBS is to provide a clear and effective search. Our
         </div>
       </div>
     </div>
+  </div>
+</div>
 
+<div class="usa-accordion-bordered usa-accordion-docs">
+  <button class="usa-button-unstyled usa-accordion-button"
+      aria-expanded="true" aria-controls="collapsible-0">
+    Documentation
+  </button>
+  <div id="collapsible-0" aria-hidden="false" class="usa-accordion-content">
+    <h4 class="usa-heading">Requirements</h4>
+    <p>The search card component MUST include the following:</p>
+    <ul class="usa-content-list">
+      <li>Position title
+        <ul>
+          <li>display position title as a link that opens the job posting (job announcement) in the same window.</li>
+          <li>on click, change the link to visit link state (purple link).
+            <ul>
+              <li>MUST remain in this state for the entire session.</li>
+              <li>MUST remain in this state even when the user signs out and signs back in.</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li>Agency name</li>
+      <li>Department name</li>
+      <li>Location</li>
+      <li>Starting salary & matching starting-ending pay schedule (example: GS13-14)</li>
+      <li>Appointment type (formerly known as work type)</li>
+      <li>Work type</li>
+      <li>Unique hiring paths icons</li>
+      <li>The label/description is shown on the hover state</li>
+      <li>Opening and closing period</li>
+      <li>Save/saved star trigger
+        <ul>
+          <li>Only show to signed-in users</li>
+          <li>Display as a link that will allow users to save and un-save a job posting.</li>
+          <li>Follow the <a href="{{ site.baseurl }}/joa-actions/">save/saved star trigger guidelines</a>.</li>
+          <li>Do NOT display the save/saved star trigger to signed-out users.</li>
+        </ul>
+      </li>
+    </ul>
+
+    <h5>When to use</h5>
+    <ul class="usa-content-list">
+      <li>To represent a job announcement in a list of announcements.</li>
+    </ul>
+  </div>
+</div>
+
+<div class="preview compact">
+  <div class="usajobs-search">
     <h6 class="usa-heading-alt">Mission Critical Occupation variation</h6>
     <div class="usajobs-search-result--card">
       <a href="https://www.usajobs.gov/GetJob/ViewDetails/435870100?PostingChannelID=RESTAPI" class="usajobs-search-result--card__body">

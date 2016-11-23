@@ -26,6 +26,16 @@
 .usajobs-search .usajobs-search-result--core {
   @include card-core-v1();
   @include job-core-v1();
+
+  // Specificity nightmare here
+  .usajobs-search-result--core__department,
+  &__item.usajobs-search-result--core__appt-type {
+    display: none;
+
+    @include media($L) {
+      display: inherit;
+    }
+  }
 }
 
 .usajobs-search .usajobs-search-result--atp {

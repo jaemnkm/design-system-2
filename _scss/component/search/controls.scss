@@ -4,7 +4,7 @@
 @import 'font-awesome/font-awesome';
 
 .usajobs-search-controls {
-  padding: 0;
+  padding: 1.2rem 0 0 0; // an odd-ball amount to align with the sort control
   margin-bottom: $size-default;
 
   &__results-count-container {
@@ -16,7 +16,7 @@
   }
 
   &__results-count {
-    margin-top: 1.2rem; // an odd-ball amount to align with the sort control
+    margin-top: $size-S;
     color: $color-primary-darkest;
     font-weight: normal;
 
@@ -49,5 +49,6 @@
   &__sort-control {
     display: inline-block;
     width: auto;
+    margin: 0;
   }
 }
