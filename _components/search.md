@@ -258,7 +258,7 @@ lead: A main function of USAJOBS is to provide a clear and effective search. Our
         </div>
         <div class="usajobs-search-result--core__footer">
           <p class="usajobs-search-result--core__footer-item usajobs-search-result--core__closing-date" title="Opening and closing dates" aria-label="Opening and closing dates">
-            <i class="fa fa-clock-o"></i> Open 9/9/2016 to 9/30/2016
+            <i class="fa fa-clock-o"></i> Open 09/9/2016 to 10/30/2016
           </p>
           <!-- p class="usajobs-search-result--core__footer-item right">
             <a href="#more" class="usajobs-search-result--core__more-jobs-like-this">

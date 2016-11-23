@@ -134,13 +134,18 @@
   &__title {
     @include h3();
     display: block;
-    margin-top: 0;
+    margin: 0;
+    font-size: $h4-font-size;
     font-weight: normal;
     color: $color-primary;
     text-decoration: none;
 
     @include media($M) {
       @include calc('max-width', '100% - 65px');
+    }
+
+    @include media($ML) {
+      font-size: $h3-font-size;
     }
 
     &:visited {
@@ -202,11 +207,12 @@
   }
 
   &__item {
-    color: $color-gray;
+    @include media($L) {
+      color: $color-gray;
+    }
 
     &.open-to {
-      @include clearfix();
-      margin-top: $size-S;
+      margin-top: $size-base;
     }
   }
 
@@ -227,8 +233,13 @@
   &__closing-date {
     margin-top: $size-default;
     margin-bottom: 0;
+    font-size: $small-font-size;
     font-style: italic;
     color: $color-gray;
+
+    @include media($SM) {
+      font-size: $base-font-size;
+    }
 
     .is-near-closing {
       color: $color-gold;
