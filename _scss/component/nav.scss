@@ -550,6 +550,10 @@ $nav_item_height: 17px + 26.5px;
       @include activeNavElement();
     }
   }
+
+  &__location-label {
+    @include clearfix();
+  }
 }
 
 // jQuery UI Autocomplete styling
