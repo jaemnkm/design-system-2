@@ -4,11 +4,19 @@
 @import 'font-awesome/font-awesome';
 
 .usajobs-search-controls {
-  padding: 1.2rem 0 0 0; // an odd-ball amount to align with the sort control
-  margin-bottom: $size-default;
+  margin-bottom: $size-base;
+  padding: 0;
+
+  @include media($M) {
+    margin-bottom: $size-default;
+  }
+
+  @include media($L) {
+    padding: .9rem 0 0 0; // odd sizing to align properly with search prefs
+  }
 
   &__results-count-container {
-    margin-bottom: $size-S;
+    margin-bottom: 0;
 
     @include media($M) {
       @include span-columns(3);
@@ -32,6 +40,8 @@
   }
 
   &__sort-container {
+    text-align: right;
+
     @include media($M) {
       @include span-columns(3);
       @include omega();
@@ -44,11 +54,21 @@
     margin-top: 0;
     padding-right: $size-base;
     font-weight: bold;
+
+    @include media($M-down) {
+      font-size: $small-font-size;
+    }
   }
 
   &__sort-control {
     display: inline-block;
     width: auto;
     margin: 0;
+
+    @include media($M-down) {
+      height: auto;
+      padding: 0.3em 3.5rem 0.3em 0.7em;
+      font-size: $small-font-size;
+    }
   }
 }

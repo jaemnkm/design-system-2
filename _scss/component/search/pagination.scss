@@ -3,6 +3,7 @@
 @import '../base-shared';
 
 .usajobs-search-pagination {
+  @include clearfix();
   width: 100%;
   margin: $size-M 0;
   padding: 0;
