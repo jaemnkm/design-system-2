@@ -5,8 +5,8 @@ title: Search
 lead: A main function of USAJOBS is to provide a clear and effective search. Our search interface is comprised of serveral components including controls, filters, pagination, and results.
 ---
 
-<a href="{{ site.baseurl }}/getting-started/#maturity" class="usa-label maturity under_review">
-  Under Review
+<a href="{{ site.baseurl }}/getting-started/#maturity" class="usa-label maturity design_complete">
+  Design complete
 </a>
 
 <h4 class="usa-heading-alt" id="controls">Controls</h4>
@@ -62,12 +62,12 @@ lead: A main function of USAJOBS is to provide a clear and effective search. Our
 <div class="preview">
   <div class="usajobs-search-no-results">
     <p>Sorry, no job announcements were found.</p>
-    <h4>Search Suggestions</h4>
+    <h4>Search suggestions</h4>
     <ul>
       <li>Check your spelling.</li>
-      <li>Try using more general <a href="http://usajobs.github.io/help-center/how-to/search/advanced/keyword/">keywords</a>.</li>
-      <li>For a more specific search try applying <a href="https://www.usajobs.gov/Search/AdvancedSearch">advanced search filters</a>.</li>
-      <li>For guidance on our job categories and occupation titles please visit <a href="http://usajobs.github.io/help-center/how-to/search/advanced/occupational-series/">Federal government occupation titles</a>. We may just be using a different name or description for the job you are looking for.</li>
+      <li>Use more generic <a href="http://usajobs.github.io/help-center/how-to/search/keyword/">keywords</a> or fewer keywords.</li>
+      <li>Use the filters located on the right to broaden or narrow your search - expaned the <strong>Show options with 0 jobs</strong> to see more options. <a href="https://usajobs.github.io/help/how-to/search/filters/">Learn more about filters</a>.</li>
+      <li>Review the <a href="http://usajobs.github.io/help/how-to/search/series/">federal occupation titles</a> - we may be using a different job title or description for what you're looking for.</li>
     </ul>
   </div>
 </div>
@@ -87,7 +87,6 @@ lead: A main function of USAJOBS is to provide a clear and effective search. Our
     <h5>When to use</h5>
     <ul class="usa-content-list">
       <li>When zero results are returned by the user's query.</li>
-      <li>Use the Profile eligibility filter variation when the user unselects all checkboxes and thus has choosen to view no open jobs.</li>
     </ul>
   </div>
 </div>

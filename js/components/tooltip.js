@@ -8,7 +8,7 @@ var $targets = $('[rel~=tooltip]'),
   pos_left,
   pos_top;
 
-$targets.bind('mouseenter', function () {
+$targets.on('mouseenter', function () {
   $target  = $(this);
   tip     = $target.attr('title');
   $tooltip = $('<div class="usajobs-tooltip" id="tooltip"></div>');
@@ -71,6 +71,6 @@ $targets.bind('mouseenter', function () {
     $target.attr( 'title', tip );
   };
 
-  $target.bind('mouseleave', removeTooltip);
-  $tooltip.bind('click', removeTooltip );
+  $target.on('mouseleave', removeTooltip);
+  $tooltip.on('click', removeTooltip );
 });
