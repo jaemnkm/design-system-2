@@ -18,19 +18,13 @@
   &__results-count-container {
     margin-bottom: 0;
 
-    @include media($M) {
-      @include span-columns(3);
+    @include media($L) {
+      @include span-columns(6);
     }
   }
 
   &__results-count {
     margin-top: $size-S;
-    color: $color-primary-darkest;
-    font-weight: normal;
-
-    @include media($M) {
-      font-weight: bold;
-    }
   }
 
   &__viewing {
@@ -40,10 +34,11 @@
   }
 
   &__sort-container {
+    display: none;
     text-align: right;
 
-    @include media($M) {
-      @include span-columns(3);
+    @include media($L) {
+      @include span-columns(6);
       @include omega();
       text-align: right;
     }
