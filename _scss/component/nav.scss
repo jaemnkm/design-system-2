@@ -311,8 +311,37 @@ $nav_item_height: 17px + 26.5px;
     }
   }
 
+  &__save-search-trigger {
+    display: none;
+    width: 100%;
+    margin-top: $size-base;
+    color: $color-white;
+
+    @include media($L) {
+      display: block;
+    }
+
+    &:hover,
+    &:visited {
+      color: $color-white;
+    }
+
+    &[aria-expanded=true] .usajobs-nav__save-search-toggle-icon {
+      @include transform(rotate(180deg));
+    }
+  }
+
+  &__save-search-icon {
+    color: $color-primary-alt;
+  }
+
   &__search-button-container {
     text-align: right;
+
+    @include media($SM) {
+      // override of standards
+      text-align: right;
+    }
 
     @include media($M) {
       @include span-columns(6, 6);
@@ -322,6 +351,7 @@ $nav_item_height: 17px + 26.5px;
       @include span-columns(2, 12);
       @include omega();
       margin-top: $size-L;
+      text-align: left;
     }
   }
 
@@ -397,10 +427,6 @@ $nav_item_height: 17px + 26.5px;
     @include media($XXXXL) {
       padding-left: 0;
     }
-  }
-
-  &__search-button-container {
-    text-align: left;
   }
 }
 
@@ -537,6 +563,8 @@ $nav_item_height: 17px + 26.5px;
   }
 
   &__search-button-container {
+    text-align: right;
+
     @include media($L) {
       @include span-columns(3, 12);
       text-align: left;

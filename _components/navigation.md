@@ -346,7 +346,7 @@ lead: USAJOBS features a consistent header for top-level navigation across the s
                   </a>
                 </li>
                 <li class="usajobs-nav__menu-container usajobs-nav__menu-search" data-state="is-closed">
-                  <a data-behavior="nav.menu.search-toggle" aria-controls="usajobs-search-form-v2-unauth" class="usajobs-nav__section-link usajobs-nav--search__section-link" href="/" title="Job Search">
+                  <a data-behavior="nav.menu.search-toggle" aria-controls="usajobs-search--vsearch" class="usajobs-nav__section-link usajobs-nav--search__section-link" href="/" title="Job Search">
                     <span class="fa fa-search"></span>
                     Search
                   </a>
@@ -354,7 +354,7 @@ lead: USAJOBS features a consistent header for top-level navigation across the s
               </ul>
             </div>
           </div>
-          <div id="usajobs-search-form-v2-unauth" class="usajobs-nav__search" aria-expanded="false" role="menu">
+          <div id="usajobs-search--vsearch" class="usajobs-nav__search" aria-expanded="false" role="menu">
             <form action="/Search" method="get" novalidate="novalidate" role="search">
               <fieldset class="usajobs-nav--full_bleed__search-body">
                 <div class="usajobs-nav__search-keywords-container">
@@ -380,6 +380,9 @@ lead: USAJOBS features a consistent header for top-level navigation across the s
                   <button class="usa-button usa-button-primary-alt usajobs-nav__search-button">
                     Search
                   </button>
+                  <a href="#open-save-search" class="usajobs-nav__save-search-trigger" data-behavior="nav.open_save_search" aria-expanded="false" aria-controls="search-save" id="search-save-toggle">
+                    <i class="fa fa-bookmark usajobs-nav__save-search-icon"></i> Save search <i class="fa fa-angle-down usajobs-nav__save-search-toggle-icon"></i>
+                  </a>
                 </div>
               </fieldset>
             </form>
