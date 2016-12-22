@@ -19,7 +19,7 @@ $nav.on('click', '[data-behavior]', function (event) {
   var $el = $(this),
     $object = $el.closest('[data-object="nav"]'),
     behavior = $el.attr('data-behavior'),
-    $target = $object.find('#' + $el.attr('aria-controls')),
+    $target = $(window.document).find('#' + $el.attr('aria-controls')),
     state = $target.attr('aria-expanded');
 
   event.preventDefault();
@@ -99,6 +99,20 @@ $nav.on('nav.menu.search-toggle', function(event, opts) {
     $nav.trigger('nav.menu.slide-open', { parent: $parent, menu: opts.target });
   } else if (opts.state === 'true') {
     $nav.trigger('nav.menu.slide-close', { parent: $parent, menu: opts.target });
+  }
+});
+
+$nav.on('nav.open_save_search', function(event, opts) {
+  var state = opts.el.attr('aria-expanded');
+
+  if (state === 'false') {
+    // open the target
+    opts.target.attr('aria-hidden', 'false');
+    opts.el.attr('aria-expanded', 'true');
+  } else {
+    // close the target
+    opts.target.attr('aria-hidden', 'true');
+    opts.el.attr('aria-expanded', 'false');
   }
 });
 
