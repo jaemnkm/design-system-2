@@ -9757,6 +9757,9 @@ button:disabled,
 .usajobs-button-select.chosen-container-active.chosen-with-drop .chosen-single {
   background-color: inherit;
   background-image: url("../img/arrow-up-white.svg");
+  background-repeat: no-repeat;
+  background-position: right;
+  box-shadow: inherit;
 }
 
 .usajobs-button-select.chosen-container-single .chosen-single {
@@ -9765,6 +9768,53 @@ button:disabled,
   color: #ffffff;
   font-weight: bold;
   background-image: url("../img/arrow-down-white.svg");
+  background-repeat: no-repeat;
+  background-position: right;
+  box-shadow: inherit;
+}
+
+.usajobs-toggle::after {
+  clear: both;
+  content: "";
+  display: block;
+}
+
+.usajobs-toggle__button {
+  display: block;
+  float: left;
+  margin: 0;
+  height: 4.4rem;
+  border: 1px solid #5b616b;
+}
+
+.usajobs-toggle__button:first-child {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.usajobs-toggle__button:last-child {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border-left: 0;
+}
+
+.usajobs-toggle__button[aria-pressed=true] {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16) inset, 0 3px 6px rgba(0, 0, 0, 0.23) inset;
+}
+
+.usajobs-toggle__button[aria-pressed=false] {
+  background-color: #ffffff;
+  color: #5b616b;
+}
+
+.usajobs-toggle__button[aria-pressed=false]:hover {
+  background-color: #ffffff;
+  border-bottom: 1px solid #5b616b;
+  color: #323a45;
+}
+
+.usajobs-toggle--search-view {
+  float: right;
 }
 
 select::-ms-expand {

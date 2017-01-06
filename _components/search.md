@@ -12,14 +12,13 @@ lead: A main function of USAJOBS is to provide a clear and effective search. Our
 <h4 class="usa-heading-alt" id="controls">Controls</h4>
 <div class="preview">
   <h6 class="usa-heading-alt">Results found</h6>
+  <div class="usajobs-search-count">
+    <div class="usajobs-search-count__results">
+      <h4>Viewing 1-10 of 1,562 jobs</h4>
+    </div>
+  </div>
   <div class="usajobs-grid usajobs-search-controls">
     <div class="usajobs-search-controls__results-count-container">
-      <h4 class="usajobs-search-controls__results-count">
-        Viewing 1-10 of 1,562 jobs found
-        <span class="usajobs-search-controls__viewing">
-          matching <a href="#open-search" id="search-controls-keyword">Engineer</a> in <a href="#open-search" id="search-controls-location">Washington, DC</a>
-        </span>
-      </h4>
     </div>
     <div class="usajobs-search-controls__sort-container">
       <label class="usajobs-search-controls__sort-label" for="search_sort">
@@ -35,6 +34,16 @@ lead: A main function of USAJOBS is to provide a clear and effective search. Our
         <option value="RemunerationMinimumAmount">Salary Minimum</option>
         <option value="RemunerationMaximumAmount">Salary Maximum</option>
       </select>
+    </div>
+    <div class="usajobs-search-controls__toggle-container">
+      <div class="usajobs-toggle usajobs-toggle--search-view" role="toolbar" aria-label="view options" aria-controls="usajobs-search-results" data-object="search-view-toggle">
+        <button type="button" class="usa-button-gray usajobs-toggle__button" aria-pressed="true" data-view="list">
+          <span class="fa fa-list-ul"></span> List
+        </button>
+        <button type="button" class="usa-button-gray usajobs-toggle__button" aria-pressed="false" data-view="map">
+          <span class="fa fa-map"></span> Map
+        </button>
+      </div>
     </div>
   </div>
 </div>
@@ -61,14 +70,20 @@ lead: A main function of USAJOBS is to provide a clear and effective search. Our
 <h4 class="usa-heading-alt" id="no-results">No results found</h4>
 <div class="preview">
   <div class="usajobs-search-no-results">
-    <p>Sorry, no job announcements were found.</p>
-    <h4>Search suggestions</h4>
+    <p>We couldn't find any jobs that match your search.</p>
+    <h4>Tips</h4>
+    <p>Here are a few suggestions that may improve your results:</p>
     <ul>
       <li>Check your spelling.</li>
-      <li>Use more generic <a href="http://usajobs.github.io/help-center/how-to/search/keyword/">keywords</a> or fewer keywords.</li>
-      <li>Use the filters located on the right to broaden or narrow your search - expaned the <strong>Show options with 0 jobs</strong> to see more options. <a href="https://usajobs.github.io/help/how-to/search/filters/">Learn more about filters</a>.</li>
+      <li>Use more generic or fewer <a href="http://usajobs.github.io/help-center/how-to/search/keyword/">keywords</a>.</li>
+      <li>Use the filters located on the right to broaden or narrow your search - expand the <strong>Show options with 0 jobs</strong> to see more options. <a href="https://usajobs.github.io/help/how-to/search/filters/">Learn more about filters</a>.</li>
       <li>Review the <a href="http://usajobs.github.io/help/how-to/search/series/">federal occupation titles</a> - we may be using a different job title or description for what you're looking for.</li>
     </ul>
+    <h4>Save this search</h4>
+    <p>
+      Even though there are no jobs that match your search right now, there may be jobs that open in the future. When you save a search, we’ll automatically send you email updates with any new job that matches what you’re looking for.
+    </p>
+    <button>Save this search</button>
   </div>
 </div>
 

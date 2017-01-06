@@ -4,6 +4,7 @@
 @import 'font-awesome/font-awesome';
 
 .usajobs-search-controls {
+  display: none;
   margin-bottom: $size-base;
   padding: 0;
 
@@ -12,35 +13,15 @@
   }
 
   @include media($L) {
+    display: block;
     padding: .9rem 0 0 0; // odd sizing to align properly with search prefs
-  }
-
-  &__results-count-container {
-    margin-bottom: 0;
-
-    @include media($L) {
-      @include span-columns(6);
-    }
-  }
-
-  &__results-count {
-    margin-top: $size-S;
-  }
-
-  &__viewing {
-    @include media($M) {
-      display: none; // switches to search bar exposed at this point
-    }
   }
 
   &__sort-container {
     display: none;
-    text-align: right;
 
     @include media($L) {
-      @include span-columns(6);
-      @include omega();
-      text-align: right;
+      @include span-columns(6, 12);
     }
   }
 
@@ -64,6 +45,15 @@
       height: auto;
       padding: 0.3em 3.5rem 0.3em 0.7em;
       font-size: $small-font-size;
+    }
+  }
+
+  &__toggle-container {
+    text-align: right;
+
+    @include media($L) {
+      @include span-columns(6, 12);
+      @include omega();
     }
   }
 }
