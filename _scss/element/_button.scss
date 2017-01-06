@@ -83,6 +83,9 @@ button:disabled,
   &.chosen-container-active.chosen-with-drop .chosen-single {
     background-color: inherit;
     background-image: url('../img/arrow-up-white.svg');
+    background-repeat: no-repeat;
+    background-position: right;
+    box-shadow: inherit;
   }
 
   &.chosen-container-single .chosen-single {
@@ -91,5 +94,52 @@ button:disabled,
     color: $color-white;
     font-weight: bold;
     background-image: url('../img/arrow-down-white.svg');
+    background-repeat: no-repeat;
+    background-position: right;
+    box-shadow: inherit;
   }
+}
+
+// Toggle is a setup of two buttons to toggle a view or whatever you like
+.usajobs-toggle {
+  @include clearfix();
+
+  &__button {
+    display: block;
+    float: left;
+    margin: 0;
+    height: 4.4rem; // making them the same height as the select menu
+    border: 1px solid $color-gray;
+
+    &:first-child {
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+
+    &:last-child {
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+      border-left: 0;
+    }
+  }
+
+  &__button[aria-pressed=true] {
+    @include boxShadow(2, inset);
+  }
+
+  &__button[aria-pressed=false] {
+    background-color: $color-white;
+    color: $color-gray;
+
+    &:hover {
+      background-color: $color-white;
+      border-bottom: 1px solid $color-gray;
+      color: $color-gray-dark;
+    }
+  }
+}
+
+// This is an odd place to have to put this but, here it is
+.usajobs-toggle--search-view {
+  float: right;
 }
