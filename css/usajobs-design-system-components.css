@@ -29564,7 +29564,13 @@ html {
 }
 
 .usajobs-search-controls__results-count {
-  margin-top: 1rem;
+  margin-top: 0;
+}
+
+@media screen and (min-width: 62em) {
+  .usajobs-search-controls__results-count {
+    margin-top: 1rem;
+  }
 }
 
 @media screen and (min-width: 37.5em) {

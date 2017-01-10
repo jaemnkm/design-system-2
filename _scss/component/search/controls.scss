@@ -24,7 +24,11 @@
   }
 
   &__results-count {
-    margin-top: $size-S;
+    margin-top: 0;
+
+    @include media($L) {
+      margin-top: $size-S;
+    }
   }
 
   &__viewing {
