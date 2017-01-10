@@ -357,37 +357,24 @@ lead: USAJOBS features a consistent header for top-level navigation across the s
           <div id="usajobs-search--vsearch" class="usajobs-nav__search" aria-expanded="false" role="menu">
             <form action="/Search" method="get" novalidate="novalidate" role="search">
               <fieldset class="usajobs-nav--full_bleed__search-body">
-                <div class="usajobs-nav__search-keywords-container usajobs-nav--search__search-keywords-container">
+                <div class="usajobs-nav__search-keywords-container">
                   <label for="search-keyword">
                     <i class="usajobs-nav__search-keywords-icon fa fa-search"></i>
                     Keywords
                   </label>
                   <input id="search-keyword" name="search-keyword" class="usajobs-nav__search-keywords-input" placeholder="Job title, department &amp; agency, series" type="text" value="" autocomplete="false">
                 </div>
-                <div class="usajobs-nav__search-location-container usajobs-nav--search__search-location-container">
-                  <div class="usajobs-nav--search__search-location-inner-container">
-                    <label class="usajobs-nav__location-label usajobs-nav--search__location-label" for="search-location">
-                      <i class="usajobs-nav__search-location-icon fa fa-map-marker"></i>
-                      Location
-                    </label>
-                    <input id="search-location" name="search-location" type="text" class="usajobs-nav__search-location-input" placeholder="City, state, zip, or country">
-                    <span role="status" aria-live="polite" class="ui-helper-hidden-accessible"></span>
-                    <input type="hidden" id="AutoCompleteSelected" name="AutoCompleteSelected">
-                  </div>
-                  <div class="usajobs-nav--search__search-radius-container">
-                    <label class="usajobs-nav--search__radius-label" for="radius">
-                      Distance within
-                    </label>
-                    <select name="radius" id="radius" class="usajobs-nav--search__radius">
-                      <option value="0">0 miles</option>
-                      <option value="5">5 miles</option>
-                      <option value="10">10 miles</option>
-                      <option value="25" selected>25 miles</option>
-                      <option value="50">50 miles</option>
-                      <option value="100">100 miles</option>
-                      <option value="200">200 miles</option>
-                    </select>
-                  </div>
+                <div class="usajobs-nav__search-location-container">
+                  <label class="usajobs-nav__location-label usajobs-nav--search__location-label" for="search-location">
+                    <i class="usajobs-nav__search-location-icon fa fa-map-marker"></i>
+                    Location
+                    <a href="#map" class="usajobs-nav__search-map-view">		
+                      Map view
+                    </a>
+                  </label>
+                  <input id="search-location" name="search-location" type="text" class="usajobs-nav__search-location-input" placeholder="City, state, zip, or country">
+                  <span role="status" aria-live="polite" class="ui-helper-hidden-accessible"></span>
+                  <input type="hidden" id="AutoCompleteSelected" name="AutoCompleteSelected">
                 </div>
                 <div class="usajobs-nav__search-button-container usajobs-nav--full_bleed__search-button-container">
                   <button class="usa-button usa-button-primary-alt usajobs-nav__search-button">

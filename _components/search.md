@@ -12,13 +12,11 @@ lead: A main function of USAJOBS is to provide a clear and effective search. Our
 <h4 class="usa-heading-alt" id="controls">Controls</h4>
 <div class="preview">
   <h6 class="usa-heading-alt">Results found</h6>
-  <div class="usajobs-search-count">
-    <div class="usajobs-search-count__results">
-      <h4>Viewing 1-10 of 1,562 jobs</h4>
-    </div>
-  </div>
   <div class="usajobs-grid usajobs-search-controls">
     <div class="usajobs-search-controls__results-count-container">
+      <h4 class="usajobs-search-controls__results-count">
+        Viewing 1-10 of 1,562 jobs
+      </h4>
     </div>
     <div class="usajobs-search-controls__sort-container">
       <label class="usajobs-search-controls__sort-label" for="search_sort">
@@ -34,16 +32,6 @@ lead: A main function of USAJOBS is to provide a clear and effective search. Our
         <option value="RemunerationMinimumAmount">Salary Minimum</option>
         <option value="RemunerationMaximumAmount">Salary Maximum</option>
       </select>
-    </div>
-    <div class="usajobs-search-controls__toggle-container">
-      <div class="usajobs-toggle usajobs-toggle--search-view" role="toolbar" aria-label="view options" aria-controls="usajobs-search-results" data-object="search-view-toggle">
-        <button type="button" class="usa-button-gray usajobs-toggle__button" aria-pressed="true" data-view="list">
-          <span class="fa fa-list-ul"></span> List
-        </button>
-        <button type="button" class="usa-button-gray usajobs-toggle__button" aria-pressed="false" data-view="map">
-          <span class="fa fa-map"></span> Map
-        </button>
-      </div>
     </div>
   </div>
 </div>
