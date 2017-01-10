@@ -124,6 +124,12 @@
       <li>
         <a {% if current[1] == '404' %}class="usa-current"{% endif %} href="{{ site.baseurl }}/errors/404/">404</a>
       </li>
+      <li>
+        <a {% if current[1] == '500' %}class="usa-current"{% endif %} href="{{ site.baseurl }}/errors/500/">500</a>
+      </li>
+      <li>
+        <a {% if current[1] == 'session-timeout' %}class="usa-current"{% endif %} href="{{ site.baseurl }}/errors/session-timeout/">Session timeout</a>
+      </li>
     </ul>
 
     <h5>Agency Talent Portal</h5>

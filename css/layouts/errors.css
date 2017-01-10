@@ -2905,7 +2905,9 @@ html {
   max-width: 62rem;
 }
 
-.usajobs-error__title, .usajobs-error__text, .usajobs-error__item,
+.usajobs-error__title, .usajobs-error__text,
+.usajobs-error__text a,
+.usajobs-error__text a:visited, .usajobs-error__item,
 .usajobs-error__item a,
 .usajobs-error__item a:visited {
   color: #ffffff;
@@ -2976,12 +2978,25 @@ html {
   font-size: 19px;
 }
 
-.usajobs-error__img--404 {
-  background-image: url("../../img/errors/404_puzzle.png");
-  background-image: url("../../img/errors/404_puzzle.svg");
+.usajobs-error__img {
   background-repeat: no-repeat;
   background-position: center center;
   height: 14.3rem;
+}
+
+.usajobs-error__img--404 {
+  background-image: url("../../img/errors/404_puzzle.png");
+  background-image: url("../../img/errors/404_puzzle.svg");
+}
+
+.usajobs-error__img--500 {
+  background-image: url("../../img/errors/500_puzzle.png");
+  background-image: url("../../img/errors/500_puzzle.svg");
+}
+
+.usajobs-error__img--session-expired {
+  background-image: url("../../img/errors/session.png");
+  background-image: url("../../img/errors/session.svg");
 }
 
 /*# sourceMappingURL=errors.css.map */
