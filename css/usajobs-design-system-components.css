@@ -29531,7 +29531,6 @@ html {
 }
 
 .usajobs-search-controls {
-  display: none;
   margin-bottom: 0.5rem;
   padding: 0;
 }
@@ -29544,7 +29543,6 @@ html {
 
 @media screen and (min-width: 62em) {
   .usajobs-search-controls {
-    display: block;
     padding: .9rem 0 0 0;
   }
 }

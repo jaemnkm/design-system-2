@@ -4,7 +4,6 @@
 @import 'font-awesome/font-awesome';
 
 .usajobs-search-controls {
-  display: none;
   margin-bottom: $size-base;
   padding: 0;
 
@@ -13,7 +12,6 @@
   }
 
   @include media($L) {
-    display: block;
     padding: .9rem 0 0 0; // odd sizing to align properly with search prefs
   }
 
