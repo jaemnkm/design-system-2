@@ -67,11 +67,6 @@ lead: A main function of USAJOBS is to provide a clear and effective search. Our
       <li>Use the filters located on the right to broaden or narrow your search - expand the <strong>Show options with 0 jobs</strong> to see more options. <a href="https://usajobs.github.io/help/how-to/search/filters/">Learn more about filters</a>.</li>
       <li>Review the <a href="http://usajobs.github.io/help/how-to/search/series/">federal occupation titles</a> - we may be using a different job title or description for what you're looking for.</li>
     </ul>
-    <h4>Save this search</h4>
-    <p>
-      Even though there are no jobs that match your search right now, there may be jobs that open in the future. When you save a search, we’ll automatically send you email updates with any new job that matches what you’re looking for.
-    </p>
-    <button>Save this search</button>
   </div>
 </div>
 
