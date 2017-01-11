@@ -10,7 +10,7 @@ function Accordion ($el) {
   this.$root = $el;
 
   // delegate click events on each <button>
-  this.$root.on('click', 'button', function (ev) {
+  this.$root.on('click', '.usa-accordion-button', function (ev) {
     var $button = $(this);
     var expanded = $button.attr('aria-expanded') === 'true';
     ev.preventDefault();
@@ -92,4 +92,3 @@ $(function() {
     // accordion($(this));
   });
 });
-
