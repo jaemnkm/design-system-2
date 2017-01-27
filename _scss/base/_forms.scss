@@ -59,6 +59,62 @@
     }
   }
 
+  .usajobs-fieldset--horizontal {
+    label {
+      @include media($L) {
+        margin-top: 0;
+      }
+    }
+
+    .usa-input-error {
+      padding-top: 0;
+      padding-left: $size-S;
+
+      @include media($L) {
+        margin-top: 0;
+        padding-left: $size-default;
+      }
+    }
+
+    &__col,
+    &__col-right {
+      @include media($ML) {
+        @include span-columns(3, 6);
+      }
+
+      @include media($L) {
+        @include span-columns(6, 12);
+      }
+    }
+
+    &__col-right {
+      @include media($ML) {
+        @include omega();
+      }
+
+      @include media($L) {
+        @include omega();
+      }
+    }
+
+    &__row {
+      margin-top: $size-M;
+      max-width: $input-max-width;
+
+      @include media($ML) {
+        @include row();
+        margin-top: 0;
+        max-width: inherit;
+        text-align: right;
+      }
+
+      @include media($L) {
+        @include span-columns(12, 12);
+        text-align: right;
+      }
+    }
+  }
+
   &__container {
     clear: both;
   }

@@ -266,13 +266,15 @@ html {
 
 .visual-style .sidenav .visual-style-sublist,
 .document .sidenav .document-sublist,
-.search .sidenav .search-sublist {
+.search .sidenav .search-sublist,
+.forms .sidenav .forms-sublist {
   display: block;
 }
 
 .visual-style .sidenav .visual-style-sublist ul,
 .document .sidenav .document-sublist ul,
-.search .sidenav .search-sublist ul {
+.search .sidenav .search-sublist ul,
+.forms .sidenav .forms-sublist ul {
   display: block;
 }
 
