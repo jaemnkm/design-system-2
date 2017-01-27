@@ -1064,3 +1064,111 @@ lead: USAJOBS adds or clarifies design for labels, contextual help, required/opt
     </ul>
   </div>
 </div>
+
+<h2 class="usa-heading" id="layout">Alternative Layouts</h2>
+<div class="preview">
+  <h6 id="usajobs-form-legend-documentation" class="usa-heading-alt">Horizontal layout</h6>
+  <form name="layout-example" class="usajobs-form">
+    <div class="usajobs-search-save__scroll-container">
+      <div class="usajobs-search-save__body" id="search-save-body">
+        <h3 class="usajobs-search-save__title">Save search</h3>
+        <fieldset class="usajobs-fieldset--horizontal">
+          <div class="usajobs-fieldset--horizontal__col usajobs-search-save__input">
+            <label for="search-save-name">
+              Name
+              <span class="usa-additional_text">Required</span>
+            </label>
+            <input name="search-save-name" class="usajobs-search-save__name" type="text" value="" autocomplete="false" required aria-required="true" />
+          </div>
+          <div class="usajobs-fieldset--horizontal__col-right usajobs-search-save__select">
+            <label for="search-save-frequency">
+              <i class="fa fa-bell usajobs-search-save__freq-icon"></i> Notification frequency
+            </label>
+            <select name="search-save-frequency" class="usajobs-search-save__frequency">
+              <option>Daily</option>
+              <option>Weekly</option>
+              <option>Monthly</option>
+              <option>Never</option>
+            </select>
+          </div>
+          <div class="usajobs-fieldset--horizontal__row usajobs-search-save__button">
+            <button id="search-save-cta" class="usa-button usa-button-primary usajobs-search-save__create">Save</button>
+            <button class="usa-button usa-button-outline usajobs-search-save__cancel" data-behavior="search-save.close" aria-controls="search-save">Cancel</button>
+          </div>
+        </fieldset>
+      </div>
+    </div>
+  </form>
+
+  <h6 id="usajobs-form-legend-documentation" class="usa-heading-alt">Horizontal layout with validation error -- Left</h6>
+  <form name="layout-example" class="usajobs-form">
+    <div class="usajobs-search-save__scroll-container">
+      <div class="usajobs-search-save__body" id="search-save-body">
+        <h3 class="usajobs-search-save__title">Save search</h3>
+        <fieldset class="usajobs-fieldset--horizontal">
+          <div class="usajobs-fieldset--horizontal__col usa-input-error">
+            <label for="search-save-name" class="usa-input-error-label" for="search-save-name">
+              Name
+              <span class="usa-additional_text">Required</span>
+            </label>
+            <input name="search-save-name" class="usajobs-search-save__name" type="text" value="" autocomplete="false" required aria-required="true" aria-described-by="input-error-message" />
+            <span class="usa-input-error-message" id="input-error-message" role="alert">
+              This field is required
+            </span>
+          </div>
+          <div class="usajobs-fieldset--horizontal__col-right">
+            <label for="search-save-frequency">
+              <i class="fa fa-bell usajobs-search-save__freq-icon"></i> Notification frequency
+            </label>
+            <select name="search-save-frequency" class="usajobs-search-save__frequency">
+              <option>Daily</option>
+              <option>Weekly</option>
+              <option>Monthly</option>
+              <option>Never</option>
+            </select>
+          </div>
+          <div class="usajobs-fieldset--horizontal__row usajobs-search-save__button">
+            <button id="search-save-cta" class="usa-button usa-button-primary usajobs-search-save__create">Save</button>
+            <button class="usa-button usa-button-outline usajobs-search-save__cancel" data-behavior="search-save.close" aria-controls="search-save">Cancel</button>
+          </div>
+        </fieldset>
+      </div>
+    </div>
+  </form>
+
+  <h6 id="usajobs-form-legend-documentation" class="usa-heading-alt">Horizontal layout with validation error -- Right</h6>
+  <form name="layout-example" class="usajobs-form">
+    <div class="usajobs-search-save__scroll-container">
+      <div class="usajobs-search-save__body" id="search-save-body">
+        <h3 class="usajobs-search-save__title">Save search</h3>
+        <fieldset class="usajobs-fieldset--horizontal">
+          <div class="usajobs-fieldset--horizontal__col">
+            <label for="search-save-name" class="" for="search-save-name">
+              Name
+              <span class="usa-additional_text">Required</span>
+            </label>
+            <input name="search-save-name" class="usajobs-search-save__name" type="text" value="" autocomplete="false" required aria-required="true" aria-described-by="input-error-message" />
+          </div>
+          <div class="usajobs-fieldset--horizontal__col-right usa-input-error">
+            <label for="search-save-frequency" class="usa-input-error-label">
+              <i class="fa fa-bell usajobs-search-save__freq-icon"></i> Notification frequency
+            </label>
+            <select name="search-save-frequency" class="usajobs-search-save__frequency">
+              <option>Daily</option>
+              <option>Weekly</option>
+              <option>Monthly</option>
+              <option>Never</option>
+            </select>
+            <span class="usa-input-error-message" id="input-error-message" role="alert">
+              This field is required
+            </span>
+          </div>
+          <div class="usajobs-fieldset--horizontal__row usajobs-search-save__button">
+            <button id="search-save-cta" class="usa-button usa-button-primary usajobs-search-save__create">Save</button>
+            <button class="usa-button usa-button-outline usajobs-search-save__cancel" data-behavior="search-save.close" aria-controls="search-save">Cancel</button>
+          </div>
+        </fieldset>
+      </div>
+    </div>
+  </form>
+</div>
