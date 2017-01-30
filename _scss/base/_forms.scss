@@ -51,13 +51,6 @@
         margin-top: 0;
       }
     }
-
-    input[disabled],
-    input[readonly] {
-      color: $color-gray;
-      border-color: $color-gray-lighter;
-      cursor: not-allowed;
-    }
   }
 
   .usajobs-fieldset--horizontal {
@@ -304,6 +297,14 @@
   .usajobs-form__legend {
     margin-bottom: $size-L;
   }
+}
+
+// Inputs
+input[disabled],
+input[readonly] {
+  color: $color-gray;
+  border-color: $color-gray-lighter;
+  cursor: not-allowed;
 }
 
 .usajobs-input-large {
