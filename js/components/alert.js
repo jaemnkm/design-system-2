@@ -5,7 +5,7 @@ $alert.on('click', '[data-behavior]', function (event) {
   var $el = $(this),
     $object = $el.closest('[data-object="alert"]'),
     $target = $object.find('#' + $el.attr('aria-controls')),
-    state = $target.attr('aria-hidden');
+    state = $target.attr('aria-hidden'),
     behavior = $el.attr('data-behavior');
 
   event.preventDefault();

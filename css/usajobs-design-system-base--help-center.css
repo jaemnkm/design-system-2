@@ -7779,8 +7779,10 @@ img {
   margin-top: 0;
 }
 
-.usajobs-form .usajobs-fieldset input:disabled,
-.usajobs-content-well .usajobs-form .usajobs-fieldset input:disabled {
+.usajobs-form .usajobs-fieldset input[disabled],
+.usajobs-form .usajobs-fieldset input[readonly],
+.usajobs-content-well .usajobs-form .usajobs-fieldset input[disabled],
+.usajobs-content-well .usajobs-form .usajobs-fieldset input[readonly] {
   color: #5b616b;
   border-color: #d6d7d9;
   cursor: not-allowed;

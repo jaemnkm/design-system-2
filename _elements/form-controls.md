@@ -923,6 +923,27 @@ lead: USAJOBS adds or clarifies design for labels, contextual help, required/opt
   </div>
 </div>
 
+<h2 class="usa-heading" id="inputs">Inputs</h2>
+<p class="usa-font-lead">
+  Guidance and styling on disabled and readonly inputs.
+</p>
+<div class="preview">
+  <h6 id="usajobs-form-input-disabled" class="usa-heading-alt">Disabled</h6>
+  <form name="example" aria-labelled-by="usajobs-form-heading-0" class="usajobs-form">
+    <fieldset class="usajobs-fieldset">
+      <label for="last-name">Last name <span class="usa-additional_text">Required</span></label>
+      <input id="last-name" name="last-name" type="text" required="" aria-required="true" disabled>
+    </fieldset>
+
+    <fieldset class="usajobs-fieldset">
+      <h6 id="usajobs-form-input-readonly" class="usa-heading-alt">Read only</h6>
+      <label for="last-name">Last name <span class="usa-additional_text">Required</span></label>
+      <input id="last-name" name="last-name" type="text" required="" aria-required="true" value="Mahoney" readonly>
+    </fieldset>
+  </for>
+</div>
+
+
 <h2 class="usa-heading" id="labels">Labels</h2>
 <p class="usa-font-lead">
   Labels are simple text descriptions of data being requested and are found in close proximity to a form input that requests that data.
@@ -1100,7 +1121,7 @@ lead: USAJOBS adds or clarifies design for labels, contextual help, required/opt
     </div>
   </form>
 
-  <h6 id="usajobs-form-legend-documentation" class="usa-heading-alt">Horizontal layout with validation error -- Left</h6>
+  <h6 class="usa-heading-alt">Horizontal layout with validation error -- Left</h6>
   <form name="layout-example" class="usajobs-form">
     <div class="usajobs-search-save__scroll-container">
       <div class="usajobs-search-save__body" id="search-save-body">
@@ -1136,7 +1157,7 @@ lead: USAJOBS adds or clarifies design for labels, contextual help, required/opt
     </div>
   </form>
 
-  <h6 id="usajobs-form-legend-documentation" class="usa-heading-alt">Horizontal layout with validation error -- Right</h6>
+  <h6 class="usa-heading-alt">Horizontal layout with validation error -- Right</h6>
   <form name="layout-example" class="usajobs-form">
     <div class="usajobs-search-save__scroll-container">
       <div class="usajobs-search-save__body" id="search-save-body">
