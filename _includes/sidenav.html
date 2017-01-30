@@ -128,6 +128,9 @@
     <h5>Errors</h5>
     <ul class="usa-sidenav-list">
       <li>
+        <a {% if current[1] == '400' %}class="usa-current"{% endif %} href="{{ site.baseurl }}/errors/400/">400</a>
+      </li>
+      <li>
         <a {% if current[1] == '404' %}class="usa-current"{% endif %} href="{{ site.baseurl }}/errors/404/">404</a>
       </li>
       <li>
