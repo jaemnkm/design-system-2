@@ -52,7 +52,8 @@
       }
     }
 
-    input:disabled {
+    input[disabled],
+    input[readonly] {
       color: $color-gray;
       border-color: $color-gray-lighter;
       cursor: not-allowed;
