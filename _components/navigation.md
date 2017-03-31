@@ -15,7 +15,7 @@ lead: USAJOBS features a consistent header for top-level navigation across the s
     <!-- Gov banner BEGIN -->
     <div class="usa-banner">
       <div class="usa-accordion">
-        <header class="usa-banner-header">
+        <div class="usa-banner-header">
           <div class="usa-grid usa-banner-inner usajobs-nav--full_bleed__banner-inner">
           <img src="{{ site.baseurl }}/img/favicons/favicon-57.png" alt="U.S. flag">
           <p>An official website of the United States government</p>
@@ -24,7 +24,7 @@ lead: USAJOBS features a consistent header for top-level navigation across the s
             <span class="usa-banner-button-text">Here's how you know</span>
           </button>
           </div>
-        </header>
+        </div>
         <div class="usa-banner-content usa-grid usa-accordion-content" id="gov-banner">
           <div class="usa-banner-guidance-gov usa-width-one-half">
             <img class="usa-banner-icon usa-media_block-img" src="{{ site.baseurl }}/img/icon-dot-gov.svg" alt="Dot gov">
@@ -90,14 +90,14 @@ lead: USAJOBS features a consistent header for top-level navigation across the s
                     <i class="usajobs-nav__search-keywords-icon fa fa-search"></i>
                     Keywords
                   </label>
-                  <input id="search-keyword" name="search-keyword" class="usajobs-nav__search-keywords-input" placeholder="Job title, department &amp; agency, series" type="text" value="" autocomplete="false">
+                  <input id="search-keyword" name="search-keyword" class="usajobs-nav__search-keywords-input" placeholder="Job title, department &amp; agency, series" type="text" value="" autocomplete="off">
                 </div>
                 <div class="usajobs-nav__search-location-container">
                   <label for="search-location">
                     <i class="usajobs-nav__search-location-icon fa fa-map-marker"></i>
                     Location
                   </label>
-                  <input id="search-location" name="search-location" type="text" class="usajobs-nav__search-location-input" placeholder="City, state, zip, or country">
+                  <input id="search-location" name="search-location" type="text" class="usajobs-nav__search-location-input" placeholder="City, state, zip, or country" autocomplete="off">
                   <span role="status" aria-live="polite" class="ui-helper-hidden-accessible"></span>
                   <input type="hidden" id="AutoCompleteSelected" name="AutoCompleteSelected">
                 </div>

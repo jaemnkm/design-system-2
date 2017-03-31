@@ -353,6 +353,7 @@
     @include makeCircle($size, none, $color-gold);
   }
 
+  &.disability,
   &.individuals-with-disabilities {
     @include makeCircle($size, none, $color-primary-darker);
   }
@@ -369,7 +370,8 @@
     @include makeCircle($size, none, $color-gray);
   }
 
-  &.land-mgmt {
+  &.land-mgmt,
+  &.land-management {
     @include makeCircle($size, none, $color-gray-warm-dark);
   }
 }
