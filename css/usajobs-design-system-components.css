@@ -29785,6 +29785,10 @@ html {
   font-weight: bold;
 }
 
+.usajobs-search-pagination__previous-page-container a, .usajobs-search-pagination__next-page-container a {
+  padding: 1rem;
+}
+
 .usajobs-search-pagination__previous-page-container::before, .usajobs-search-pagination__next-page-container::before {
   content: '';
   padding: 0;

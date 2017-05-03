@@ -116,6 +116,10 @@
 
   &__previous-page-container,
   &__next-page-container {
+    a {
+      padding: $size-S;
+    }
+
     &::before {
       content: '';
       padding: 0;
