@@ -1,0 +1,61 @@
+// JOA - Banner
+
+@import '../base-shared';
+
+.usajobs-joa-banner {
+  background-color: $color-primary-alt-darkest;
+
+  &__body {
+    max-width: $site-max-width;
+    margin-left: auto;
+    margin-right: auto;
+    padding: $size-default;
+
+    @include media($ML) {
+      padding-left: $size-M; // to align with current non-full-bleed header
+      padding-right: $size-M; // to align with current non-full-bleed header
+    }
+  }
+
+  &__title {
+    @include h2();
+    margin: 0 0 $size-default 0;
+    color: $color-white;
+
+    @include media($ML) {
+      @include h1();
+      color: $color-white;
+    }
+  }
+
+  &__agency {
+    @include h4();
+    display: block;
+    margin: 0 0 $size-default 0;
+    font-weight: normal;
+    color: $color-white;
+  }
+
+  &__location-list {
+    @include unstyledList();
+    @include clearfix();
+  }
+
+  &__location-list > &__location-item {
+    @include media($SM) {
+      float: left;
+      margin-right: $size-default;
+    }
+  }
+
+  &__location {
+    @include h4();
+    margin: 0;
+    font-weight: normal;
+    color: $color-white;
+
+    .fa {
+      color: $color-primary-alt;
+    }
+  }
+}

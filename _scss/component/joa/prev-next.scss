@@ -1,0 +1,49 @@
+// JOA - Previous and Next
+@import '../base-shared';
+
+.usajobs-joa-prev-next {
+  &__body {
+    @include display(flex);
+    @include flex-wrap(wrap);
+    font-size: $small-font-size;
+    max-width: $site-max-width;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &__prev,
+  &__back,
+  &__next {
+    display: block;
+    @include flex(1);
+    text-decoration: none;
+
+    &:visited {
+      color: $color-primary;
+      text-decoration: none;
+    }
+  }
+
+  &__prev {
+    padding: $size-default 0 $size-base $size-default;
+
+    @include media($ML) {
+      padding-left: $size-M; // to align with current non-full-bleed header
+    }
+  }
+
+  &__back {
+    padding: $size-default 0 $size-base;
+    text-align: center;
+    min-width: rem(125px);
+  }
+
+  &__next {
+    padding: $size-default $size-default $size-base 0;
+    text-align: right;
+
+    @include media($ML) {
+      padding-right: $size-M; // to align with current non-full-bleed header
+    }
+  }
+}

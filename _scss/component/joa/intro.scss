@@ -1,0 +1,178 @@
+// JOA - Intro (Overview)
+
+@import '../base-shared';
+
+$icon-width: rem(31px);
+$icon-padding: $size-default;
+$body-padding: $size-default;
+
+.usajobs-joa-intro {
+  @include clearfix();
+  padding: $size-default;
+
+  @include media($ML) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.usajobs-joa-summary {
+  margin-bottom: $size-M;
+
+  @include media($L) {
+    @include span-columns(8, 12);
+  }
+
+  &__list {
+    @include unstyledList();
+    @include clearfix();
+  }
+
+  &__list > &__item {
+    @include media($ML) {
+      @include span-columns(3, 6);
+    }
+
+    &:nth-child(2n) {
+      @include media($ML) {
+        @include omega();
+      }
+    }
+  }
+
+  &__value,
+  &__grades,
+  &__salary,
+  &__series {
+    margin-top: 0;
+    margin-bottom: $size-base;
+  }
+
+  &__label {
+  }
+
+  &__opening-date,
+  &__closing-date {
+    color: $color-gray-dark;
+  }
+
+  &__posting-duration {
+    display: block;
+    font-size: $small-font-size;
+  }
+
+  &__summary {
+    @include media($M) {
+      @include span-columns(3, 6);
+    }
+
+    @include media($L) {
+      @include span-columns(4, 12);
+    }
+  }
+}
+
+.usajobs-joa-intro {
+  &__details-container {
+    @include media($M) {
+      @include span-columns(3, 6);
+    }
+
+    @include media($L) {
+      @include span-columns(8, 12);
+    }
+  }
+
+  &__details {
+    @include unstyledList();
+
+    @include media($L) {
+      @include span-columns(6, 12);
+    }
+  }
+}
+
+.usajobs-joa-intro-hiring-paths {
+  @include media($L) {
+    @include span-columns(4, 12);
+    @include omega();
+    padding: $size-default;
+    background-color: $color-gray-lightest;
+  }
+
+  &__list {
+    @include unstyledList();
+  }
+
+  &__icon {
+    @include UHPIcons();
+  }
+
+  &__link {
+    width: 100%;
+    padding: $size-S;
+    color: $color-base;
+    text-decoration: none;
+
+    &:visited {
+      color: $color-base;
+    }
+
+    &:hover {
+      text-decoration: none;
+      box-shadow: $focus-shadow;
+    }
+  }
+
+  &__body {
+    padding: 0 $size-default;
+  }
+
+  &__title {
+    margin: 0;
+    color: $color-primary;
+    font-weight: normal;
+    text-decoration: underline;
+  }
+
+  &__detail {
+    font-size: $small-font-size;
+    margin-top: 0;
+  }
+}
+
+.no-flexbox .usajobs-joa-intro-hiring-paths {
+  &__link {
+    @include clearfix();
+    display: table;
+  }
+
+  &__figure,
+  &__body {
+    display: table-cell;
+  }
+
+  &__body {
+    @include calc(width, "100% - " ($icon-width + $icon-padding + $body-padding));
+
+    .lt-ie9 & {
+      width: 75%;
+    }
+  }
+}
+
+.flexbox .usajobs-joa-intro-hiring-paths {
+  &__link {
+    @include display(flex);
+    @include align-items(top);
+  }
+
+  &__figure {
+    @include flex-shrink(0);
+  }
+
+  &__body {
+    @include flex(1);
+    min-width: 0;
+  }
+}
