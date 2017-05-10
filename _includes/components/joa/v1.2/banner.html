@@ -1,0 +1,19 @@
+<div class="usajobs-joa-banner">
+  <div class="usajobs-joa-banner__body">
+    <h1 class="usajobs-joa-banner__title" itemprop="title">
+      {{ job.PositionTitle }}
+    </h1>
+    <a class="usajobs-joa-banner__agency" href="#agencycontact">
+      {{ job.OrganizationName }}
+    </a>
+    <ul class="usajobs-joa-banner__location-list">
+    {% for position in job.PositionLocation %}
+      <li class="usajobs-joa-banner__location-item">
+        <h4 class="usajobs-joa-banner__location" itemprop="addressLocality">
+          <a href="#map"><i class="fa fa-map-marker"></i></a> {{ position.LocationName }}
+        </h4>
+      </li>
+    {% endfor %}
+    </ul>
+  </div>
+</div>

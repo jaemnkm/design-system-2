@@ -1,0 +1,183 @@
+<div class="usajobs-joa-intro">
+  <div class="usajobs-joa-summary">
+    <ul class="usajobs-joa-summary__list">
+      <li class="usajobs-joa-summary__item">
+        <h5 class="usajobs-joa-summary__label">
+          Open &amp; Closing dates
+        </h5>
+        <p class="usajobs-joa-summary__value">
+          <i class="fa fa-clock-o"></i>
+          Opened {{ job.PublicationStartDate }}, Closes {{ job.ApplicationCloseDate }}
+        </p>
+      </li>
+      <li class="usajobs-joa-summary__item">
+        <h5 class="usajobs-joa-summary__label">
+          Salary
+        </h5>
+        <p class="usajobs-joa-summary__salary">
+          ${{ job.PositionRemuneration.first.MinimumRange }} -
+          ${{ job.PositionRemuneration.first.MaximumRange}} {{job.PositionRemuneration.first.RateIntervalCode }}
+        </p>
+      </li>
+      <li class="usajobs-joa-summary__item">
+        <h5 class="usajobs-joa-summary__label">
+          Pay scale &amp; Grade
+        </h5>
+        <p class="usajobs-joa-summary__grades">
+          {{ job.JobGrade.first.Code }} {{ job.UserArea.Details.LowGrade }} - {{ job.UserArea.Details.HighGrade }}
+        </p>
+      </li>
+      <li class="usajobs-joa-summary__item">
+        <h5 class="usajobs-joa-summary__label">
+          Series
+        </h5>
+        {% for series in job.JobCategory %}
+        <p class="usajobs-joa-summary__series">
+          {{ series.Code  }} {{ series.Name }}
+        </p>
+        {% endfor %}
+      </li>
+      <li class="usajobs-joa-summary__item">
+        <h5 class="usajobs-joa-summary__label">
+          Appointment type
+        </h5>
+        <p class="usajobs-joa-summary__value">
+          {{ job.PositionOfferingType.first.Name }}
+        </p>
+      </li>
+      <li class="usajobs-joa-summary__item">
+        <h5 class="usajobs-joa-summary__label">
+          Work schedule
+        </h5>
+        <p class="usajobs-joa-summary__value">
+          {{ job.PositionSchedule.first.Name }}
+        </p>
+      </li>
+
+      {% if job.SupervisoryStatus && job.PromotionPotential %}
+      <li class="usajobs-joa-summary__item">
+        <h5 class="usajobs-joa-summary__label">
+          Supervisory status
+        </h5>
+        <p class="usajobs-joa-summary__value">
+          {{ job.SupervisoryStatus }}
+        </p>
+      </li>
+      <li class="usajobs-joa-summary__item">
+        <h5 class="usajobs-joa-summary__label">
+          Promotion Potential
+        </h5>
+        <p class="usajobs-joa-summary__value">
+          {{ job.PromotionPotential }}
+        </p>
+      </li>
+      {% elsif job.SupervisoryStatus || job.PromotionPotential %}
+      <!-- Keep the list balanced: If only one exists, show the other with a dash -->
+      <li class="usajobs-joa-summary__item">
+        <h5 class="usajobs-joa-summary__label">
+          Supervisory status
+        </h5>
+        <p class="usajobs-joa-summary__value">
+        {% if job.SupervisoryState %}
+          {{ job.SupervisoryStatus }}
+        {% else %}
+          &dash;
+        {% endif %}
+        </p>
+      </li>
+      <li class="usajobs-joa-summary__item">
+        <h5 class="usajobs-joa-summary__label">
+          Promotion Potential
+        </h5>
+        <p class="usajobs-joa-summary__value">
+        {% if job.PromotionPotential %}
+          {{ job.PromotionPotential }}
+        {% else %}
+          &dash;
+        {% endif %}
+        </p>
+      </li>
+      {% endif %}
+
+      <li class="usajobs-joa-summary__item">
+        <h5 class="usajobs-joa-summary__label">
+          Job announcement number
+        </h5>
+        <p class="usajobs-joa-summary__value">
+          {{ job.PositionID }}
+        </p>
+      </li>
+      <li class="usajobs-joa-summary__item">
+        <h5 class="usajobs-joa-summary__label">
+          Control number
+        </h5>
+        <p class="usajobs-joa-summary__value">
+          {{ page.control-number }}
+        </p>
+      </li>
+    </ul>
+  </div>
+  <div class="usajobs-joa-intro-hiring-paths">
+    <h3>This job is open to</h3>
+    <ul class="usajobs-joa-intro-hiring-paths__list">
+      {% for hiring_path in job.UserArea.Details.HiringPath %}
+        {% if hiring_path == 'public' %}
+        <li class="usajobs-joa-intro-hiring-paths__item">
+          <a href="http://usajobs.github.io/Help/working-in-government/unique-hiring-paths/public/" class="usajobs-joa-intro-hiring-paths__link">
+            <div class="usajobs-joa-intro-hiring-paths__figure">
+              <div class="usajobs-joa-intro-hiring-paths__icon public">
+                <span class="fa fa-group"></span>
+              </div>
+            </div>
+            <div class="usajobs-joa-intro-hiring-paths__body">
+              <h4 class="usajobs-joa-intro-hiring-paths__title">
+                The public
+              </h4>
+              <p class="usajobs-joa-intro-hiring-paths__detail">
+                U.S. citizens, nationals, or those who owe allegiance to the U.S.
+              </p>
+            </div>
+          </a>
+        </li>
+        {% elsif hiring_path == 'fed' %}
+        <li class="usajobs-joa-intro-hiring-paths__item">
+          <a href="http://usajobs.github.io/Help/working-in-government/unique-hiring-paths/federal-employees/" class="usajobs-joa-intro-hiring-paths__link">
+            <div class="usajobs-joa-intro-hiring-paths__figure">
+              <span class="usajobs-joa-intro-hiring-paths__icon federal-employees">
+                <span class="fa fa-bank"></span>
+              </span>
+            </div>
+            <div class="usajobs-joa-intro-hiring-paths__body">
+              <h4 class="usajobs-joa-intro-hiring-paths__title">
+                Federal employees
+              </h4>
+              <p class="usajobs-joa-intro-hiring-paths__detail">
+                CTAP/ICTAP, reinstatement, transfer
+              </p>
+            </div>
+          </a>
+        </li>
+        {% elsif hiring_path == 'vet' %}
+        <li class="usajobs-joa-intro-hiring-paths__item">
+          <a href="http://usajobs.github.io/Help/working-in-government/unique-hiring-paths/veterans/" class="usajobs-joa-intro-hiring-paths__link">
+            <div class="usajobs-joa-intro-hiring-paths__figure">
+              <span class="usajobs-joa-intro-hiring-paths__icon veterans">
+                <span class="fa fa-shield"></span>
+              </span>
+            </div>
+            <div class="usajobs-joa-intro-hiring-paths__body">
+              <h4 class="usajobs-joa-intro-hiring-paths__title">
+                Veterans
+              </h4>
+              <p class="usajobs-joa-intro-hiring-paths__detail">
+                VRA, VEOA, 30% disabled
+              </p>
+            </div>
+          </a>
+        </li>
+        {% elsif hiring_path == 'native' %}
+        {% endif %}
+      {% endfor %}
+    </ul>
+  </div>
+</div>

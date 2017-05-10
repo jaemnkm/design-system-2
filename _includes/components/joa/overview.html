@@ -1,0 +1,36 @@
+<button class="usa-button-unstyled usajobs-joa-accordion-trigger is-open-at-M" aria-expanded="true" aria-controls="summary" data-behavior="joa_accordion.toggle">
+  Job Overview
+</button>
+<div id="summary" aria-hidden="false" class="usa-accordion-content usajobs-joa-accordion-content is-open-at-M usajobs-joa-accordion-overview">
+  <h2 class="usajobs-joa-accordion-title">Job Overview</h2>
+  <h3>Summary</h3>
+  <div itemprop="description">
+    {{ job.UserArea.Details.JobSummary }}
+  </div>
+
+  <div id="duties" class="content">
+    <h3>Duties</h3>
+    <div>
+      {{ job.UserArea.Details.MajorDuties }}
+    </div>
+  </div>
+
+  <div id="travelrequired" class="noUSAJobsCSS">
+    <h3>Travel Required</h3>
+    <ul>
+      <li>Occasional Travel</li>
+      <li>Travel is required to attend trainings, conferences, workshops, and field visits.</li>
+    </ul>
+  </div>
+
+  <div id="relocationauthorized" class="noUSAJobsCSS">
+    <h3>Relocation Authorized</h3>
+    <p>
+      {% if job.UserArea.Details.Relocation %}
+      Yes
+      {% else %}
+      No
+      {% endif %}
+    </p>
+  </div>
+</div>
