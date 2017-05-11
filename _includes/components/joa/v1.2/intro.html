@@ -24,7 +24,12 @@
           Pay scale &amp; Grade
         </h5>
         <p class="usajobs-joa-summary__grades">
-          {{ job.JobGrade.first.Code }} {{ job.UserArea.Details.LowGrade }} - {{ job.UserArea.Details.HighGrade }}
+          {{ job.JobGrade.first.Code }}
+          {% if job.UserArea.Details.LowGrade == job.UserArea.Details.HighGrade %}
+            {{ job.UserArea.Details.LowGrade }}
+          {% else %}
+          {{ job.UserArea.Details.LowGrade }} - {{ job.UserArea.Details.HighGrade }}
+          {% endif %}
         </p>
       </li>
       <li class="usajobs-joa-summary__item">
@@ -152,7 +157,7 @@
                 Federal employees
               </h4>
               <p class="usajobs-joa-intro-hiring-paths__detail">
-                CTAP/ICTAP, reinstatement, transfer
+                Includes Merit promotion, CTAP/ICTAP, reinstatement, transfer, and internal to the agency positions.
               </p>
             </div>
           </a>
@@ -170,8 +175,54 @@
                 Veterans
               </h4>
               <p class="usajobs-joa-intro-hiring-paths__detail">
-                VRA, VEOA, 30% disabled
+                Includes VRA, VEOA, and 30% disabled.
               </p>
+            </div>
+          </a>
+        </li>
+        {% elsif hiring_path == 'disability' %}
+        <li class="usajobs-joa-intro-hiring-paths__item">
+          <a href="http://usajobs.github.io/Help/working-in-government/unique-hiring-paths/individuals-with-disabilities/" class="usajobs-joa-intro-hiring-paths__link">
+            <div class="usajobs-joa-intro-hiring-paths__figure">
+              <span class="usajobs-joa-intro-hiring-paths__icon disability">
+                <span class="fa fa-wheelchair-alt"></span>
+              </span>
+            </div>
+            <div class="usajobs-joa-intro-hiring-paths__body">
+              <h4 class="usajobs-joa-intro-hiring-paths__title">
+                Individuals with a disability
+              </h4>
+            </div>
+          </a>
+        </li>
+        {% elsif hiring_path == 'mspouse' %}
+        <li class="usajobs-joa-intro-hiring-paths__item">
+          <a href="http://usajobs.github.io/Help/working-in-government/unique-hiring-paths/military-spouses/" class="usajobs-joa-intro-hiring-paths__link">
+            <div class="usajobs-joa-intro-hiring-paths__figure">
+              <span class="usajobs-joa-intro-hiring-paths__icon military-spouses fa-stack">
+                <span class="fa fa-circle-o fa-stack-1x is-first"></span>
+                <span class="fa fa-circle-o fa-stack-1x is-second"></span>
+              </span>
+            </div>
+            <div class="usajobs-joa-intro-hiring-paths__body">
+              <h4 class="usajobs-joa-intro-hiring-paths__title">
+                Military Spouses
+              </h4>
+            </div>
+          </a>
+        </li>
+        {% elsif hiring_path == 'peace' %}
+        <li class="usajobs-joa-intro-hiring-paths__item">
+          <a href="http://usajobs.github.io/Help/working-in-government/unique-hiring-paths/peace-corps/" class="usajobs-joa-intro-hiring-paths__link">
+            <div class="usajobs-joa-intro-hiring-paths__figure">
+              <span class="usajobs-joa-intro-hiring-paths__icon peace-corps">
+                <span class="fa fa-globe"></span>
+              </span>
+            </div>
+            <div class="usajobs-joa-intro-hiring-paths__body">
+              <h4 class="usajobs-joa-intro-hiring-paths__title">
+                Peace Corps &amp; Vista
+              </h4>
             </div>
           </a>
         </li>
