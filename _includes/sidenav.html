@@ -81,22 +81,7 @@
         </ul>
       </li>
       <li>
-        <a {% if current[1] == 'joa-actions' %}class="usa-current"{% endif %} href="{{ site.baseurl }}/joa-actions/">JOA Actions</a>
-      </li>
-      <li>
-        <a {% if current[1] == 'joa_summary' %}class="usa-current"{% endif %} href="{{ site.baseurl }}/joa_summary/">JOA Summary</a>
-      </li>
-      <li>
         <a {% if current[1] == 'modals' %}class="usa-current"{% endif %} href="{{ site.baseurl }}/modals/">Modals</a>
-      </li>
-      <li>
-        <a {% if current[1] == 'navigation' %}class="usa-current"{% endif %} href="{{ site.baseurl }}/navigation/">Navigation: Top</a>
-      </li>
-      <li>
-        <a {% if current[1] == 'secondary-nav' %}class="usa-current"{% endif %} href="{{ site.baseurl }}/nav-secondary/">Navigation: Secondary</a>
-      </li>
-      <li>
-        <a {% if current[1] == 'footer' %}class="usa-current"{% endif %} href="{{ site.baseurl }}/footer/">Navigation: Footer</a>
       </li>
       <li>
         <a {% if current[1] == 'search' %}class="usa-current"{% endif %} href="{{ site.baseurl }}/search/">Search</a>
@@ -110,6 +95,33 @@
         <a {% if current[1] == 'reveal' %}class="usa-current"{% endif %} href="{{ site.baseurl }}/reveal/">Reveal</a>
       </li>
     </ul>
+
+    <h5>Job announcement</h5>
+    <ul class="usa-sidenav-list">
+      <li>
+        <a {% if current[1] == 'joa-actions' %}class="usa-current"{% endif %} href="{{ site.baseurl }}/joa-actions/">Actions</a>
+      </li>
+      <li>
+        <a {% if current[1] == 'joa-intro' %}class="usa-current"{% endif %} href="{{ site.baseurl }}/joa-intro/">Intro</a>
+      </li>
+      <li>
+        <a {% if current[1] == 'joa-summary' %}class="usa-current"{% endif %} href="{{ site.baseurl }}/joa-summary/">Summary</a>
+      </li>
+    </ul>
+
+    <h5>Navigation</h5>
+    <ul class="usa-sidenav-list">
+      <li>
+        <a {% if current[1] == 'navigation' %}class="usa-current"{% endif %} href="{{ site.baseurl }}/navigation/">Top</a>
+      </li>
+      <li>
+        <a {% if current[1] == 'secondary-nav' %}class="usa-current"{% endif %} href="{{ site.baseurl }}/nav-secondary/">Secondary</a>
+      </li>
+      <li>
+        <a {% if current[1] == 'footer' %}class="usa-current"{% endif %} href="{{ site.baseurl }}/footer/">Footer</a>
+      </li>
+    </ul>
+
     <h4>Layouts</h4>
     <h5>Account</h5>
     <ul class="usa-sidenav-list">
@@ -127,6 +139,13 @@
       </li>
     </ul>
 
+    <h5>Agency Talent Portal</h5>
+    <ul class="usa-sidenav-list">
+      <li>
+        <a href="{{ site.baseurl }}/agency-talent-portal/user-detail/">User detail</a>
+      </li>
+    </ul>
+
     <h5>Errors</h5>
     <ul class="usa-sidenav-list">
       <li>
@@ -140,13 +159,6 @@
       </li>
       <li>
         <a {% if current[1] == 'session-timeout' %}class="usa-current"{% endif %} href="{{ site.baseurl }}/errors/session-timeout/">Session timeout</a>
-      </li>
-    </ul>
-
-    <h5>Agency Talent Portal</h5>
-    <ul class="usa-sidenav-list">
-      <li>
-        <a href="{{ site.baseurl }}/agency-talent-portal/user-detail/">User detail</a>
       </li>
     </ul>
 

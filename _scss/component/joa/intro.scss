@@ -48,7 +48,8 @@ $body-padding: $size-default;
     margin-bottom: $size-base;
   }
 
-  &__label {
+  &__salary {
+    text-transform: lowercase;
   }
 
   &__opening-date,
@@ -97,7 +98,7 @@ $body-padding: $size-default;
     @include span-columns(4, 12);
     @include omega();
     padding: $size-default;
-    background-color: $color-gray-lightest;
+    background-color: $color-gray-cool-light;
   }
 
   &__list {
@@ -131,7 +132,6 @@ $body-padding: $size-default;
   &__title {
     margin: 0;
     color: $color-primary;
-    font-weight: normal;
     text-decoration: underline;
   }
 
@@ -140,6 +140,14 @@ $body-padding: $size-default;
     margin: 0;
   }
 }
+
+// Fix for documentation only
+.main-content .usajobs-joa-intro-hiring-paths {
+  .usajobs-joa-intro-hiring-paths__link {
+    text-decoration: none;
+  }
+}
+
 
 .no-flexbox .usajobs-joa-intro-hiring-paths {
   &__link {
