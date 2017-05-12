@@ -94,11 +94,16 @@ $body-padding: $size-default;
 }
 
 .usajobs-joa-intro-hiring-paths {
+  padding: $size-default;
+  background-color: $color-gray-cool-light;
+
   @include media($L) {
     @include span-columns(4, 12);
     @include omega();
-    padding: $size-default;
-    background-color: $color-gray-cool-light;
+  }
+
+  &__section-title {
+    margin-top: 0;
   }
 
   &__list {

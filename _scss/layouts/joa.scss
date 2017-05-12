@@ -73,6 +73,15 @@
     }
   }
 
+  .usajobs-joa-who-may-apply {
+    padding: $size-default;
+    background-color: $color-gray-cool-light;
+
+    h3 {
+      margin-top: 0;
+    }
+  }
+
   .usajobs-joa-agency-container {
     @include span-columns(12, 12);
     padding: $size-M;
@@ -141,15 +150,6 @@
   @include media($L) {
     .usajobs-joa-actions-container {
       display: none;
-    }
-
-    .usajobs-joa-who-may-apply {
-      padding: $size-default;
-      background-color: $color-gray-cool-light;
-
-      h3 {
-        margin-top: 0;
-      }
     }
   }
 }

@@ -20700,6 +20700,11 @@ html {
   }
 }
 
+.usajobs-joa-intro-hiring-paths {
+  padding: 1.5rem;
+  background-color: #dce4ef;
+}
+
 @media screen and (min-width: 62em) {
   .usajobs-joa-intro-hiring-paths {
     float: left;
@@ -20707,12 +20712,14 @@ html {
     margin-right: 2.3576520234%;
     width: 31.7615653177%;
     margin-right: 0;
-    padding: 1.5rem;
-    background-color: #dce4ef;
   }
   .usajobs-joa-intro-hiring-paths:last-child {
     margin-right: 0;
   }
+}
+
+.usajobs-joa-intro-hiring-paths__section-title {
+  margin-top: 0;
 }
 
 .usajobs-joa-intro-hiring-paths__list {
