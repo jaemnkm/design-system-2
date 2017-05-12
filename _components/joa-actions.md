@@ -5,8 +5,8 @@ title: Job announcement actions
 lead: Users can print, share, or save a job announcement.
 ---
 
-<a href="{{ site.baseurl }}/getting-started/#maturity" class="usa-label maturity under_review">
-  Under Review
+<a href="{{ site.baseurl }}/getting-started/#maturity" class="usa-label maturity deployed">
+  Deployed
 </a>
 
 <div class="preview compact">

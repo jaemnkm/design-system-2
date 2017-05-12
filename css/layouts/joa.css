@@ -184,6 +184,13 @@ html {
   .usajobs-joa .usajobs-joa-actions-container {
     display: none;
   }
+  .usajobs-joa .usajobs-joa-who-may-apply {
+    padding: 1.5rem;
+    background-color: #dce4ef;
+  }
+  .usajobs-joa .usajobs-joa-who-may-apply h3 {
+    margin-top: 0;
+  }
 }
 
 /*# sourceMappingURL=joa.css.map */

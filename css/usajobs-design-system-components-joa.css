@@ -129,7 +129,7 @@ html {
   font-size: 34px;
   font-size: 3.4rem;
   color: #112e51;
-  margin: 0 0 1.5rem 0;
+  margin: 0 0 0.5rem 0;
   color: #ffffff;
 }
 
@@ -143,8 +143,16 @@ html {
     font-size: 44px;
     font-size: 4.4rem;
     color: #112e51;
+    margin: 0;
     color: #ffffff;
   }
+}
+
+.usajobs-joa-banner__dept {
+  margin-top: 1rem;
+  text-transform: uppercase;
+  font-weight: normal;
+  color: #ffffff;
 }
 
 .usajobs-joa-banner__agency {
@@ -158,6 +166,10 @@ html {
   display: block;
   margin: 0 0 1.5rem 0;
   font-weight: normal;
+  color: #ffffff;
+}
+
+.usajobs-joa-banner__agency:active, .usajobs-joa-banner__agency:visited {
   color: #ffffff;
 }
 
@@ -312,6 +324,10 @@ html {
   margin-bottom: 0.5rem;
 }
 
+.usajobs-joa-summary__salary {
+  text-transform: lowercase;
+}
+
 .usajobs-joa-summary__opening-date, .usajobs-joa-summary__closing-date {
   color: #323a45;
 }
@@ -409,7 +425,7 @@ html {
     width: 31.7615653177%;
     margin-right: 0;
     padding: 1.5rem;
-    background-color: #f1f1f1;
+    background-color: #dce4ef;
   }
   .usajobs-joa-intro-hiring-paths:last-child {
     margin-right: 0;
@@ -591,13 +607,16 @@ html {
 .usajobs-joa-intro-hiring-paths__title {
   margin: 0;
   color: #0071bc;
-  font-weight: normal;
   text-decoration: underline;
 }
 
 .usajobs-joa-intro-hiring-paths__detail {
   font-size: 1.4rem;
   margin: 0;
+}
+
+.main-content .usajobs-joa-intro-hiring-paths .usajobs-joa-intro-hiring-paths__link {
+  text-decoration: none;
 }
 
 .no-flexbox .usajobs-joa-intro-hiring-paths__link {

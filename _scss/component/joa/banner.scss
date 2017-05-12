@@ -19,13 +19,21 @@
 
   &__title {
     @include h2();
-    margin: 0 0 $size-default 0;
+    margin: 0 0 $size-base 0;
     color: $color-white;
 
     @include media($ML) {
       @include h1();
+      margin: 0;
       color: $color-white;
     }
+  }
+
+  &__dept {
+    margin-top: $size-S;
+    text-transform: uppercase;
+    font-weight: normal;
+    color: $color-white;
   }
 
   &__agency {
@@ -34,6 +42,11 @@
     margin: 0 0 $size-default 0;
     font-weight: normal;
     color: $color-white;
+
+    &:active,
+    &:visited {
+      color: $color-white;
+    }
   }
 
   &__location-list {
