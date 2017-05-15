@@ -20611,8 +20611,12 @@ html {
   text-transform: lowercase;
 }
 
-.usajobs-joa-summary__opening-date, .usajobs-joa-summary__closing-date {
-  color: #323a45;
+.usajobs-joa-summary__closing-clock--is-warning {
+  color: #fdb81e;
+}
+
+.usajobs-joa-summary__closing-clock--is-critical {
+  color: #981b1e;
 }
 
 .usajobs-joa-summary__posting-duration {

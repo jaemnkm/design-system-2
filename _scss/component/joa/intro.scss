@@ -52,9 +52,12 @@ $body-padding: $size-default;
     text-transform: lowercase;
   }
 
-  &__opening-date,
-  &__closing-date {
-    color: $color-gray-dark;
+  &__closing-clock--is-warning {
+    color: $color-gold;
+  }
+
+  &__closing-clock--is-critical {
+    color: $color-secondary-darkest;
   }
 
   &__posting-duration {
