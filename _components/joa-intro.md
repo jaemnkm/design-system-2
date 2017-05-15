@@ -24,7 +24,7 @@ control-number: '468841900'
   <div id="collapsible-0" aria-hidden="false" class="usa-accordion-content">
     <h4 class="usa-heading">Guidelines</h4>
     <ul class="usa-content-list">
-      <li></li>
+      <li>The intro now features a "This job is open to" section that begins to replace the "Who May Apply" section.</li>
     </ul>
 
     <h4 class="usa-heading">Usability</h4>
@@ -32,6 +32,9 @@ control-number: '468841900'
     <ul class="usa-content-list">
       <li>
         Use inside a job announcement to introduce the job to the user and to explain who is eligible to apply to this announcement.
+      </li>
+      <li>
+        Not all hiring paths in the "This job is open to" section require meta text describing that eligibility. In testing we found that users were able to self-identify into one or more of these categories. The paths that do have meta text required either a bit of clarification for some sub-sets of job seekers or text to further clarify the label.
       </li>
     </ul>
   </div>

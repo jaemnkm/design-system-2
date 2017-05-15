@@ -59,51 +59,6 @@
         </p>
       </li>
 
-      {% if job.SupervisoryStatus && job.PromotionPotential %}
-      <li class="usajobs-joa-summary__item">
-        <h5 class="usajobs-joa-summary__label">
-          Supervisory status
-        </h5>
-        <p class="usajobs-joa-summary__value">
-          {{ job.SupervisoryStatus }}
-        </p>
-      </li>
-      <li class="usajobs-joa-summary__item">
-        <h5 class="usajobs-joa-summary__label">
-          Promotion Potential
-        </h5>
-        <p class="usajobs-joa-summary__value">
-          {{ job.PromotionPotential }}
-        </p>
-      </li>
-      {% elsif job.SupervisoryStatus || job.PromotionPotential %}
-      <!-- Keep the list balanced: If only one exists, show the other with a dash -->
-      <li class="usajobs-joa-summary__item">
-        <h5 class="usajobs-joa-summary__label">
-          Supervisory status
-        </h5>
-        <p class="usajobs-joa-summary__value">
-        {% if job.SupervisoryState %}
-          {{ job.SupervisoryStatus }}
-        {% else %}
-          &dash;
-        {% endif %}
-        </p>
-      </li>
-      <li class="usajobs-joa-summary__item">
-        <h5 class="usajobs-joa-summary__label">
-          Promotion Potential
-        </h5>
-        <p class="usajobs-joa-summary__value">
-        {% if job.PromotionPotential %}
-          {{ job.PromotionPotential }}
-        {% else %}
-          &dash;
-        {% endif %}
-        </p>
-      </li>
-      {% endif %}
-
       <li class="usajobs-joa-summary__item">
         <h5 class="usajobs-joa-summary__label">
           Job announcement number
@@ -122,6 +77,7 @@
       </li>
     </ul>
   </div>
+
   <div id="hiring-paths" class="usajobs-joa-intro-hiring-paths">
     <h3 class="usajobs-joa-intro-hiring-paths__section-title">This job is open to</h3>
     <ul class="usajobs-joa-intro-hiring-paths__list">

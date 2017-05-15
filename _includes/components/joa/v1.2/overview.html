@@ -20,6 +20,24 @@
     </div>
   </div>
 
+  <div id="supervisory-status">
+    <h3>Supervisory Status</h3>
+    <p>
+      {% if jobs.SupervisoryStatus %}
+        {{ job.SupervisoryStatus }}
+      {% else %}
+      No
+      {% endif %}
+    </p>
+  </div>
+
+  <div id="promotion-potential">
+    <h3>Promotion Potential</h3>
+    <p>
+      The selectee may be promoted to the full performance level without further competition when all regulatory, qualification, and performance requirements are met. Selection at a lower grade level does not guarantee promotion to the full performance level.
+    </p>
+  </div>
+
   <div id="travelrequired">
     <h3>Travel Required</h3>
     <ul>
@@ -38,6 +56,17 @@
       {% else %}
       No
       {% endif %}
+    </p>
+  </div>
+
+  <div class="usajobs-joa-who-may-apply">
+    <h3>Who May Apply</h3>
+    <h4>This job is open to&hellip;</h4>
+    {{ job.UserArea.Details.WhoMayApply.Name }}
+    <p>
+      <a href="#hiring-paths">
+        Questions? This job is open to {{ job.UserArea.Details.HiringPath.size }} groups.
+      </a>
     </p>
   </div>
 </div>

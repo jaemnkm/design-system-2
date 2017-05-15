@@ -95,6 +95,7 @@ html {
 }
 
 .usajobs-joa .usajobs-joa-who-may-apply {
+  margin: 3rem 0 0 0;
   padding: 1.5rem;
   background-color: #dce4ef;
 }
@@ -178,6 +179,9 @@ html {
 }
 
 @media screen and (min-width: 37.5em) and (min-width: 37.5em) {
+  .usajobs-joa .usajobs-joa-accordion-content.is-open-at-M {
+    padding-top: 0;
+  }
   .usajobs-joa .usajobs-joa-accordion-content.is-open-at-M[aria-hidden=true] {
     display: block !important;
   }
