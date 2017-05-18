@@ -34,7 +34,8 @@ control-number: '468841900'
       <li><strong>Open &amp; closing dates</strong> are now combined into one field. The clock icon should appear yellow when the closing date is within a week and red when it is within 48 hours.</li>
       <li><strong>Salary</strong> values should not show cents when the rate is per year. For example, "$100,000" instead of "$100,000.00".</li>
       <li><strong>Pay scale</strong> - There must be a space between pay scale and grade(s).</li>
-      <li><strong>Grade</strong> - When a position is open across more than one grade level a dash should be used to separate the lowest and highest grade. For example, "O5 - 09".</li>
+      <li><strong>Grade - multiple</strong> - When a position is open across more than one grade level a dash should be used to separate the lowest and highest grade. For example, "O5 - 09".</li>
+      <li><strong>Grade - single</strong> - When a position is open in only one grade level only a single grade level should be shown. For example, "O5".</li>
       <li><strong>Series</strong> number is shown, with leading zero when appropriate, in front of the series name.</li>
     </ul>
 
