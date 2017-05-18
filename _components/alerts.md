@@ -284,9 +284,10 @@ lead: USAJOBS has adopted a different visual style to our alerts that deviate fr
     <p>
       We recommend you upload your SF-50. Many jobs require the SF-50 to verify your federal service.
     </p>
-     <h4 class="usa-heading">Profile Tips and Alerts</h4>
-   <h5>Success message - Contact information saved</h5>
-   <p>
+
+    <h4 class="usa-heading">Profile Tips and Alerts</h4>
+    <h5>Success message - Contact information saved</h5>
+    <p>
       This alert displays when a user has updated or completed their contact information, but has not completed their eligibility section.
     </p>
     <h6>Tip Title</h6>
@@ -299,5 +300,20 @@ lead: USAJOBS has adopted a different visual style to our alerts that deviate fr
     </p>
     <h6>Call to action</h6>
     <p>Next: Eligibility</p>
+
+    <h5>Info message - No preferences in profile</h5>
+    <p>This alert displays when a user has updated their profile but has not specified any preferences.</p>
+    <h6>Body copy</h6>
+    <p>
+      We noticed you don't have any profile preferences. You can improve you search results if you update and use your preferences. Update your preferences.
+    </p>
+
+    <h5>Info message - User who have not updated their profile in over 6 months</h5>
+    <p>This alert displays for signed in users when they have not updated their profile in over 6 months.</p>
+    <h6>Body copy</h6>
+    <p>
+      It's been over six months since you've signed in. Is your profile up-to-date? Update your profile.
+    </p>
+
   </div>
 </div>
