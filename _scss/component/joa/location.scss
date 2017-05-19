@@ -10,6 +10,7 @@
   &__list {
     @include unstyledList();
     @include clearfix();
+    margin-top: $size-S;
   }
 
   &__list > &__item {
