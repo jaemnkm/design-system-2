@@ -1,0 +1,29 @@
+<div class="usajobs-joa-locations">
+  <h3 class="usajobs-joa-locations__title">Locations</h3>
+  <ul class="usajobs-joa-locations__list">
+  {% for position in job.PositionLocation %}
+    <li class="usajobs-joa-locations__item">
+      <a class="usajobs-joa-locations__link" href="#map" itemtype="http://schema.org/PostalAddress">
+        <div class="usajobs-joa-locations__figure">
+          <i class="fa fa-map-marker"></i>
+        </div>
+        <div class="usajobs-joa-locations__body">
+          <span class="usajobs-joa-locations__street" itemprop="streetAddress">
+            {{ position.AddressLine }}
+          </span>
+          <span class="usajobs-joa-locations__city" itemprop="addressLocality">
+            {{ position.LocationName }}
+          </span>
+          <span class="usajobs-joa-locations__vacancies">
+            {% if position.Vacancies == '1' %}
+              1 vacancy
+            {% else %}
+              {{ position.Vacancies }} vacancies
+            {% endif %}
+          </span>
+        </div>
+      </a>
+    </li>
+  {% endfor %}
+  </ul>
+</div>
