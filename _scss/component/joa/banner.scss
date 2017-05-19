@@ -48,27 +48,10 @@
       color: $color-white;
     }
   }
+}
 
-  &__location-list {
-    @include unstyledList();
-    @include clearfix();
-  }
-
-  &__location-list > &__location-item {
-    @include media($SM) {
-      float: left;
-      margin-right: $size-default;
-    }
-  }
-
-  &__location {
-    @include h4();
-    margin: 0;
-    font-weight: normal;
-    color: $color-white;
-
-    .fa {
-      color: $color-primary-alt;
-    }
+.usajobs-joa-banner--v1-3 {
+  &__agency {
+    margin-bottom: 0;
   }
 }

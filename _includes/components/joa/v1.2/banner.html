@@ -10,8 +10,14 @@
     <ul class="usajobs-joa-banner__location-list">
     {% for position in job.PositionLocation %}
       <li class="usajobs-joa-banner__location-item">
-        <p class="usajobs-joa-banner__location" itemprop="addressLocality">
-          <a href="#map"><i class="fa fa-map-marker"></i></a> {{ position.LocationName }}
+        <p class="usajobs-joa-banner__location" itemtype="http://schema.org/PostalAddress">
+          <a href="#map"><i class="fa fa-map-marker"></i></a>
+          <span class="usajobs-joa-banner__location-street" itemprop="streetAddress">
+            {{ position.AddressLine }}
+          </span>
+          <span class="usajobs-joa-banner__location-city" itemprop="addressLocality">
+            {{ position.LocationName }}
+          </span>
         </p>
       </li>
     {% endfor %}
