@@ -21,6 +21,7 @@ $body-padding: $size-default;
 
   @include media($L) {
     @include span-columns(8, 12);
+    margin-bottom: 0;
   }
 
   &__list {
