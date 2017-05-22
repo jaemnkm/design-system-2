@@ -41,8 +41,8 @@ control-number: '468841900'
 
     <h5>Locations</h5>
     <ul class="usa-content-list">
+      <li>4 locations are displayed at all view points with any additional locations hidden behind a <a href="{{ site.baseurl }}/reveal/">reveal</a> show more/less toggle. Expanding the toggle reveals all additional locations. Collapsing the toggle hides those additional locations.</li>
       <li>The number of vacancies is required via section 1105 of Title 5, U.S.C. and thus must be specified and displayed next to each duty location.</li>
-
     </ul>
 
     <h4 class="usa-heading">Usability</h4>

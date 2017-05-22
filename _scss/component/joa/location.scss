@@ -54,7 +54,20 @@
 
   &__city {
     font-weight: bold;
-    line-height: 1;
+    line-height: 1.2;
+  }
+
+  &__reveal-link,
+  &__reveal-link:visited {
+    color: $color-primary;
+  }
+
+  &__more-locations {
+    padding: $size-default 0;
+
+    &[aria-hidden=true] {
+      display: none;
+    }
   }
 }
 

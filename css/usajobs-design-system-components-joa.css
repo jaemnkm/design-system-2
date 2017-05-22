@@ -737,7 +737,19 @@ html {
 
 .usajobs-joa-locations__city {
   font-weight: bold;
-  line-height: 1;
+  line-height: 1.2;
+}
+
+.usajobs-joa-locations__reveal-link, .usajobs-joa-locations__reveal-link:visited {
+  color: #0071bc;
+}
+
+.usajobs-joa-locations__more-locations {
+  padding: 1.5rem 0;
+}
+
+.usajobs-joa-locations__more-locations[aria-hidden=true] {
+  display: none;
 }
 
 .main-content .usajobs-joa-locations__link {

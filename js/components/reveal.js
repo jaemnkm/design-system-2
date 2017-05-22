@@ -23,7 +23,7 @@ $reveal.on('reveal.show-toggle', function(event, opts) {
 
   event.preventDefault();
 
-  if (opts.state == "true") {
+  if (opts.state === 'true') {
     opts.el.attr('aria-expanded', 'true');
     opts.target.attr('aria-hidden', 'false');
 
