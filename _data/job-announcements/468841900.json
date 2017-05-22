@@ -46,6 +46,16 @@
       "Latitude": 39.3293,
       "AddressLine": "1001 Park Place Building 456 Suite 1234",
       "Vacancies": "3"
+    },
+    {
+      "LocationName": "Washington, DC",
+      "CountryCode": "United States",
+      "CountrySubDivisionCode": "District of Columbia",
+      "CityName": "Washington, DC",
+      "Longitude": -94.9212,
+      "Latitude": 39.3293,
+      "AddressLine": "1900 Consitution Avenue SW",
+      "Vacancies": "5"
     }
   ],
   "OrganizationName": "Bureau of Reclamation",
