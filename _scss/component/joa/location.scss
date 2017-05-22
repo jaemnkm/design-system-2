@@ -58,6 +58,10 @@
   }
 }
 
+.main-content .usajobs-joa-locations__link {
+  text-decoration: none;
+}
+
 .no-flexbox .usajobs-joa-locations {
   &__link {
     @include clearfix();

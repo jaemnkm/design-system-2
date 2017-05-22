@@ -21027,6 +21027,10 @@ html {
   line-height: 1;
 }
 
+.main-content .usajobs-joa-locations__link {
+  text-decoration: none;
+}
+
 .no-flexbox .usajobs-joa-locations__link {
   display: table;
 }

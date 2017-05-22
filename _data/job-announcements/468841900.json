@@ -13,7 +13,39 @@
       "CountrySubDivisionCode": "Arizona",
       "CityName": "Davis Dam, Arizona",
       "Longitude": -114.569489,
-      "Latitude": 35.1987572
+      "Latitude": 35.1987572,
+      "AddressLine": "1234 Consitution Ave.",
+      "Vacancies": "1"
+    },
+    {
+      "LocationName": "Fort Leavenworth, Kansas",
+      "CountryCode": "United States",
+      "CountrySubDivisionCode": "Kansas",
+      "CityName": "Fort Leavenworth, Kansas",
+      "Longitude": -94.9212,
+      "Latitude": 39.3293,
+      "AddressLine": "123 Main Street Building 456",
+      "Vacancies": "1"
+    },
+    {
+      "LocationName": "Reno, Nevada",
+      "CountryCode": "United States",
+      "CountrySubDivisionCode": "Nevada",
+      "CityName": "Reno, Nevada",
+      "Longitude": -119.813,
+      "Latitude": 39.5274,
+      "AddressLine": "1340 Financial Blvd Building 123",
+      "Vacancies": "2"
+    },
+    {
+      "LocationName": "New York, New York",
+      "CountryCode": "United States",
+      "CountrySubDivisionCode": "New York",
+      "CityName": "New York, New York",
+      "Longitude": -94.9212,
+      "Latitude": 39.3293,
+      "AddressLine": "1001 Park Place Building 456 Suite 1234",
+      "Vacancies": "3"
     }
   ],
   "OrganizationName": "Bureau of Reclamation",
