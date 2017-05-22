@@ -3,7 +3,7 @@ $(function(){
     $('.sidenav, .overlay').toggleClass('is-visible');
     e.preventDefault();
   });
-  
+
   function handleDisabledLinks() {
     $(document).on('click', 'a[href="#"]', function (event) {
       // Stop default browser action which would likely return to the top of the page
@@ -30,7 +30,7 @@ $(function(){
         '<div class="usa-accordion-bordered usa-code-sample">' +
           '<ul class="usa-unstyled-list">' +
             '<li>' +
-              '<button class="usa-button-unstyled" aria-expanded="false" aria-controls="collapsible-0">Code</button>' +
+              '<button class="usa-accordion-button usa-button-unstyled" aria-expanded="false" aria-controls="collapsible-0">Code</button>' +
               '<div id="collapsible-0" aria-hidden="true" class="usa-accordion-content">' +
                 '<pre><code class="language-markup"></code></pre>' +
               '</div>' +
@@ -67,12 +67,12 @@ var calculateAnchorPosition = function (hash) {
   if (anchor.length === 0) {
     return topOffset;
   }
-  
+
   //start with the height of the header
   topOffset = $('.usa-site-header').first().outerHeight();
   //subtract the diffence in padding between nav top and anchor
   topOffset = topOffset - (anchorPadding - navPadding);
-  
+
   //anchor should now align with first item inside nav
   return anchor.offset().top - topOffset;
 }
@@ -113,7 +113,7 @@ $('.sidenav').on('click', 'a', function(e) {
   if (scrollTopPos === 0) {
     return true;
   }
-  
+
   e.preventDefault();
 
   /* Firefox needs html, others need body */
