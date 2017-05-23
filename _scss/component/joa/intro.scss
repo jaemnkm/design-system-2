@@ -41,6 +41,10 @@ $body-padding: $size-default;
     }
   }
 
+  &__label {
+    font-size: $base-font-size;
+  }
+
   &__value,
   &__grades,
   &__salary,

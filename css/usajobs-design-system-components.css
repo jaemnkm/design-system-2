@@ -20561,6 +20561,10 @@ html {
   }
 }
 
+.usajobs-joa-summary__label {
+  font-size: 1.7rem;
+}
+
 .usajobs-joa-summary__value, .usajobs-joa-summary__grades, .usajobs-joa-summary__salary, .usajobs-joa-summary__series {
   margin-top: 0;
   margin-bottom: 0.5rem;
