@@ -27,6 +27,7 @@ $body-padding: $size-default;
   &__list {
     @include unstyledList();
     @include clearfix();
+    margin-bottom: $size-M;
   }
 
   &__list > &__item {

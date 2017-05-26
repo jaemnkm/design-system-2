@@ -57,16 +57,9 @@ lead: A main function of USAJOBS is to provide a clear and effective search. Our
 
 <h4 class="usa-heading-alt" id="no-results">No results found</h4>
 <div class="preview">
-  <div class="usajobs-search-no-results">
-    <p>We couldn't find any jobs that match your search.</p>
-    <h4>Tips</h4>
-    <p>Here are a few suggestions that may improve your results:</p>
-    <ul>
-      <li>Check your spelling.</li>
-      <li>Use more generic or fewer <a href="http://usajobs.github.io/help-center/how-to/search/keyword/">keywords</a>.</li>
-      <li>Use the filters located on the right to broaden or narrow your search - expand the <strong>Show options with 0 jobs</strong> to see more options. <a href="https://usajobs.github.io/help/how-to/search/filters/">Learn more about filters</a>.</li>
-      <li>Review the <a href="http://usajobs.github.io/help/how-to/search/series/">federal occupation titles</a> - we may be using a different job title or description for what you're looking for.</li>
-    </ul>
+  <div class="usajobs-search-no-params-highlight">
+    <h4 class="usajobs-search-no-params-highlight__title">Please refine your search</h4>
+    <p>We want to help you find the right job. Try entering a keyword or location, or use the filters on the right.</p>
   </div>
 </div>
 
@@ -357,8 +350,8 @@ lead: A main function of USAJOBS is to provide a clear and effective search. Our
       <li>Location</li>
       <li>Starting salary & matching starting-ending pay schedule (example: GS13-14)</li>
       <li>Appointment type (formerly known as work type)</li>
-      <li>Work type</li>
-      <li>Unique hiring paths icons</li>
+      <li>Work schedule</li>
+      <li>Hiring paths icons</li>
       <li>The label/description is shown on the hover state</li>
       <li>Opening and closing period</li>
       <li>Save/saved star trigger
@@ -412,7 +405,25 @@ lead: A main function of USAJOBS is to provide a clear and effective search. Our
         </div>
       </a>
     </div>
+  </div>
+</div>
 
+<div class="usa-accordion-bordered usa-accordion-docs">
+  <button class="usa-button-unstyled usa-accordion-button"
+      aria-expanded="true" aria-controls="collapsible-mco">
+    Documentation
+  </button>
+  <div id="collapsible-mco" aria-hidden="false" class="usa-accordion-content">
+    <h5>When to use</h5>
+    <ul class="usa-content-list">
+      <li>To represent a job announcement an a Mission Critical Occupation page.</li>
+      <li>THIS VARIATION IS TO BE REPLACED BY THE STANDARD CORE VARIATION ABOVE.</li>
+    </ul>
+  </div>
+</div>
+
+<div class="preview compact">
+  <div class="usajobs-search">
     <h6 class="usa-heading-alt">Agency Talent Portal variation</h6>
     <div class="usajobs-search-result--atp__container">
       <div class="usajobs-search-result--atp">
@@ -522,6 +533,72 @@ lead: A main function of USAJOBS is to provide a clear and effective search. Our
           </div>
         </a>
       </div>
+    </div>
+  </div>
+</div>
+
+<div class="usa-accordion-bordered usa-accordion-docs">
+  <button class="usa-button-unstyled usa-accordion-button"
+      aria-expanded="true" aria-controls="collapsible-mco">
+    Documentation
+  </button>
+  <div id="collapsible-mco" aria-hidden="false" class="usa-accordion-content">
+    <h5>When to use</h5>
+    <ul class="usa-content-list">
+      <li>To represent a job announcement in the recruitment tool.</li>
+    </ul>
+  </div>
+</div>
+
+<h4 class="usa-heading-alt" id="teasers">Teasers</h4>
+<div class="preview compact">
+  <h6 class="usa-heading-alt">Data Science variation</h6>
+  <div class="usajobs-search">
+    <div class="usajobs-search-results" data-object="search-results">
+      <div class="usajobs-search-teaser usajobs-search-teaser--data-science" itemscope itemtype="http://schema.org/WebSite">
+        <div class="usajobs-search-teaser__body">
+          <h3 class="usajobs-search-teaser__title" itemprop="name">Explore a career in data science.</h3>
+          <a href="https://www.usajobs.gov/careerfields/data-science/" class="usa-button usa-button-outline-inverse usajobs-search-teaser__link" itemprop="url">
+            Learn more
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <h6 class="usa-heading-alt">Cyber Security variation</h6>
+  <div class="usajobs-search">
+    <div class="usajobs-search-results" data-object="search-results">
+      <div class="usajobs-search-teaser usajobs-search-teaser--cyber-security" itemscope itemtype="http://schema.org/WebSite">
+        <div class="usajobs-search-teaser__body">
+          <h3 class="usajobs-search-teaser__title" itemprop="name">Explore a career in cyber security.</h3>
+          <a href="https://www.cybercareers.gov/" class="usa-button usa-button-outline-inverse usajobs-search-teaser__link" itemprop="url">
+            Learn more
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <h6 class="usa-heading-alt">Privacy variation</h6>
+  <div class="usajobs-search">
+    <div class="usajobs-search-results" data-object="search-results">
+      <div class="usajobs-search-teaser usajobs-search-teaser--privacy" itemscope itemtype="http://schema.org/WebSite">
+        <div class="usajobs-search-teaser__body">
+          <h3 class="usajobs-search-teaser__title usajobs-search-teaser--privacy__title" itemprop="name">Help protect privacy rights</h3>
+          <p class="usajobs-search-teaser__desc">
+            The Federal Privacy Council is looking for privacy professionals interested in the growing use of technology, big data and analytics.
+          </p>
+          <a href="https://www.fpc.gov/" class="usa-button usa-button-primary usajobs-search-teaser__link" itemprop="url">
+            Learn more
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <h6 class="usa-heading-alt">Event variation</h6>
+  <div class="usajobs-search">
+    <div class="usajobs-search-result--core">
+      {% assign event = site.data.events['va'] %}
+      {% include components/event/v1.0/event.html %}
     </div>
   </div>
 </div>
