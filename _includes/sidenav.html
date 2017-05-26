@@ -81,7 +81,10 @@
         </ul>
       </li>
       <li>
-        <a {% if current[1] == 'modals' %}class="usa-current"{% endif %} href="{{ site.baseurl }}/modals/">Modals</a>
+        <a {% if current[1] == 'event' %}class="usa-current"{% endif %} href="{{ site.baseurl }}/event/">Event</a>
+      </li>
+      <li>
+        <a {% if current[1] == 'modals' %}class="usa-current"{% endif %} href="{{ site.baseurl }}/modals/">Modal</a>
       </li>
       <li>
         <a {% if current[1] == 'search' %}class="usa-current"{% endif %} href="{{ site.baseurl }}/search/">Search</a>
@@ -89,6 +92,7 @@
           <li><a href="{{ site.baseurl }}/search/#controls">Controls</a></li>
           <li><a href="{{ site.baseurl }}/search/#pagination">Pagination</a></li>
           <li><a href="{{ site.baseurl }}/search/#results">Results</a></li>
+          <li><a href="{{ site.baseurl }}/search/#teasers">Teasers</a></li>
         </ul>
       </li>
       <li>

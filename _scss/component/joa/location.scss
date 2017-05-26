@@ -7,6 +7,10 @@
   $icon-padding: $size-base;
   $body-padding: $size-S;
 
+  &__sub-title {
+    margin-top: $size-base; 
+  }
+
   &__list {
     @include unstyledList();
     @include clearfix();

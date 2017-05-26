@@ -1,4 +1,4 @@
-// Search - Result card
+// Search - Result card + no results card
 
 @import 'base-shared';
 @import 'font-awesome/font-awesome';
@@ -34,6 +34,31 @@
 
     @include media($L) {
       display: inherit;
+    }
+  }
+}
+
+// No results treatment
+.usajobs-search-no-params-highlight {
+  @include boxShadow(1);
+  background-color: $color-white;
+  margin: $size-default 0 ;
+  padding: $size-default;
+
+  &__title {
+    margin-top: 0;
+    color: $color-primary-darkest;
+  }
+
+  &__list {
+    @include unstyledList();
+  }
+
+  &__list > li {
+    margin-bottom: $size-S;
+
+    & > a {
+      text-decoration: none;
     }
   }
 }
