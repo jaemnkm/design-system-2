@@ -636,43 +636,8 @@ lead: A main function of USAJOBS is to provide a clear and effective search. Our
       <div class="usa-width-one-half">
         <h6>Data Science: Keywords</h6>
         <ol class="usa-content-list">
-          <li>big data</li>
-          <li>chief data officer</li>
           <li>data</li>
-          <li>data analysis</li>
-          <li>data analyst</li>
-          <li>data analytics</li>
-          <li>data architect</li>
-          <li>data collection</li>
-          <li>data governance</li>
-          <li>data management</li>
-          <li>data management specialist</li>
-          <li>data manager</li>
-          <li>data mining</li>
-          <li>data processing</li>
-          <li>data quality</li>
-          <li>data research</li>
-          <li>data science</li>
-          <li>data scientist</li>
-          <li>data specialist</li>
-          <li>data strategy</li>
-          <li>data technician</li>
-          <li>data visualization</li>
-          <li>data warehouse</li>
-          <li>data, research</li>
-          <li>database administration</li>
-          <li>database administrator</li>
-          <li>database analyst</li>
-          <li>database management</li>
-          <li>database manager</li>
-          <li>datamgmt</li>
-          <li>datamgt</li>
           <li>dmat</li>
-          <li>health data</li>
-          <li>health data analyst</li>
-          <li>information technology specialist (datamgt)</li>
-          <li>it specialist (data management)</li>
-          <li>it specialist (datamgt)</li>
         </ol>
       </div>
       <div class="usa-width-one-half">
@@ -710,46 +675,21 @@ lead: A main function of USAJOBS is to provide a clear and effective search. Our
       <div class="usa-width-one-half">
         <h6>Cyber Security: Keywords</h6>
         <ol class="usa-content-list">
-          <li>Assistant Director, Cyber Engineering</li>
-          <li>CH OF CYBER & ENTERPRISE OPS</li>
           <li>Chief Operating Officer</li>
           <li>cyber</li>
-          <li>cyber security</li>
-          <li>cybersecurity</li>
           <li>Deputy Chief Information Security Officer</li>
           <li>federal protective service</li>
           <li>Foreign Service Office Management Specialist</li>
           <li>Forensic Computer Analyst</li>
           <li>fps</li>
           <li>homeland</li>
-          <li>homeland security</li>
           <li>informatics</li>
           <li>information</li>
-          <li>information assurance</li>
-          <li>Information Resources Specialist</li>
-          <li>information security</li>
-          <li>information technology</li>
-          <li>information technology specialist</li>
-          <li>Information Technology Specialist (Applications Software - APPSW)</li>
-          <li>INFORMATION TECHNOLOGY SPECIALIST (INFOSEC)</li>
           <li>infosec</li>
           <li>it</li>
-          <li>it project manager</li>
-          <li>it specialist</li>
-          <li>It Specialist (Infosec)</li>
-          <li>It Specialist (Network/Infosec)</li>
           <li>Performance Analyst</li>
-          <li>personnel security</li>
-          <li>personnel security specialist</li>
-          <li>physical security</li>
-          <li>physical security specialist</li>
           <li>Policy Brand Chief</li>
           <li>security</li>
-          <li>security assistant</li>
-          <li>security guard</li>
-          <li>security manager</li>
-          <li>security officer</li>
-          <li>security specialist</li>
           <li>Supervisory Management And Program Analyst</li>
           <li>technology</li>
           <li>Telecommunications Specialist</li>
@@ -784,63 +724,26 @@ lead: A main function of USAJOBS is to provide a clear and effective search. Our
           <li>ASSISTANT COUNSEL</li>
           <li>Associate Chief Information Officer</li>
           <li>attorney</li>
-          <li>ATTORNEY (Ethics & Compliance -Federal Compliance)</li>
-          <li>attorney advisor</li>
-          <li>Attorney Advisor (General)</li>
           <li>CH OF CYBER & ENTERPRISE OPS</li>
           <li>claims</li>
           <li>counsel</li>
           <li>cyber</li>
-          <li>cyber security</li>
-          <li>cybersecurity</li>
           <li>data privacy</li>
           <li>Deputy Chief Information Officer</li>
           <li>foia</li>
-          <li>foia analyst</li>
-          <li>foia attorney</li>
-          <li>foia officer</li>
-          <li>foia specialist</li>
-          <li>foia, ppqa, quality assurance, audit, process</li>
-          <li>foia, privacy</li>
-          <li>foia, records, privacy</li>
-          <li>freedom foia</li>
-          <li>government information specialist - foia</li>
-          <li>government information specialist (foia)</li>
           <li>health insurance specialist</li>
           <li>informatics</li>
           <li>information</li>
-          <li>information assurance</li>
-          <li>information security</li>
-          <li>information technology</li>
-          <li>information technology specialist</li>
-          <li>Information Technology Specialist (INFOSEC)</li>
-          <li>INFORMATION TECHNOLOGY SPECIALIST (SECURITY)</li>
           <li>infosec</li>
           <li>inspector</li>
-          <li>inspector general</li>
           <li>it specialist</li>
-          <li>IT Specialist (Customer Support)</li>
-          <li>IT Specialist (CUSTSPT)</li>
-          <li>IT Specialist (INFO SEC)</li>
-          <li>IT SPECIALIST (INFOSEC/NETWORK)</li>
-          <li>IT Specialist (SYSADM/CUSTSPT)</li>
           <li>j.d.</li>
           <li>judge</li>
           <li>law</li>
-          <li>lawyer</li>
           <li>oig</li>
           <li>physical security</li>
-          <li>physical security specialist</li>
           <li>privacy</li>
-          <li>privacy act</li>
-          <li>privacy analyst</li>
-          <li>privacy and foia</li>
-          <li>privacy officer</li>
-          <li>privacy specialist</li>
           <li>security</li>
-          <li>security assistant</li>
-          <li>security manager</li>
-          <li>security specialist</li>
           <li>social insurance specialist</li>
           <li>Supervisory IT Specialist (PLCYPLN)</li>
           <li>SUPV IT SPECIALIST (NETWORK/CUSTSPT)</li>
