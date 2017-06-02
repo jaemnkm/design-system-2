@@ -29,6 +29,18 @@ lead: USAJOBS leverages Font Awesome via the U.S. Standards and in addition defi
       Federal employees
     </li>
     <li class="usajobs-unique-hiring-paths__item">
+      <div class="usajobs-unique-hiring-paths__icon internal">
+        <i class="fa fa-dot-circle-o"></i>
+      </div>
+      Internal to an agency
+    </li>
+    <li class="usajobs-unique-hiring-paths__item">
+      <div class="usajobs-unique-hiring-paths__icon interchange">
+        <i class="fa fa-exchange"></i>
+      </div>
+      Interchange agreement
+    </li>
+    <li class="usajobs-unique-hiring-paths__item">
       <div class="usajobs-unique-hiring-paths__icon veterans">
         <i class="fa fa-shield"></i>
       </div>

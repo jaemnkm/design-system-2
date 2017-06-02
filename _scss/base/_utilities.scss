@@ -321,6 +321,8 @@
   }
 
   &.federal-employees,
+  &.internal,
+  &.interchange,
   &.ses {
     @include makeCircle($size, none, $color-primary-darkest);
   }
@@ -328,6 +330,10 @@
   &.federal-employees .fa::before {
     margin-top: rem(-3px);
     margin-right: rem(-2px);
+  }
+
+  &.internal .fa {
+    padding-top: rem(6px);
   }
 
   &.veterans,
