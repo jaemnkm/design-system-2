@@ -14,7 +14,7 @@ order: 01
 <div class="usa-accordion-bordered usa-typography-example usa-accordion-docs">
   <ul class="usa-unstyled-list">
     <li>
-      <button class="usa-button-unstyled"
+      <button class="usa-accordion-button usa-button-unstyled"
           aria-expanded="false" aria-controls="collapsible-0">
         <h5>Source Sans Pro headings and body</h5>
       </button>
