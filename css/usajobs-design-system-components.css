@@ -20750,7 +20750,11 @@ html {
 }
 
 .usajobs-joa-intro-hiring-paths__icon.internal .fa {
-  padding-top: 0.6rem;
+  padding-top: 0.5rem;
+}
+
+.usajobs-joa-intro-hiring-paths__icon.internal .fa::before {
+  margin-left: 0.1rem;
 }
 
 .usajobs-joa-intro-hiring-paths__icon.veterans, .usajobs-joa-intro-hiring-paths__icon.military-spouses {
@@ -42841,6 +42845,7 @@ html {
   font-size: 1.7rem;
   text-align: center;
   margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
 .usajobs-search .usajobs-search-result--core__uhp-icon.public {
@@ -42871,7 +42876,11 @@ html {
 }
 
 .usajobs-search .usajobs-search-result--core__uhp-icon.internal .fa {
-  padding-top: 0.6rem;
+  padding-top: 0.5rem;
+}
+
+.usajobs-search .usajobs-search-result--core__uhp-icon.internal .fa::before {
+  margin-left: 0.1rem;
 }
 
 .usajobs-search .usajobs-search-result--core__uhp-icon.veterans, .usajobs-search .usajobs-search-result--core__uhp-icon.military-spouses {

@@ -333,7 +333,11 @@
   }
 
   &.internal .fa {
-    padding-top: rem(6px);
+    padding-top: rem(5px);
+
+    &::before {
+      margin-left: rem(1px);
+    }
   }
 
   &.veterans,

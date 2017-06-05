@@ -228,6 +228,7 @@
 
   &__uhp-icon {
     @include UHPIcons(31px);
+    margin-bottom: $size-base;
   }
 
   &__closing-date {
