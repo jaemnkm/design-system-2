@@ -10005,7 +10005,11 @@ select {
 }
 
 .usajobs-unique-hiring-paths__icon.internal .fa {
-  padding-top: 0.6rem;
+  padding-top: 0.5rem;
+}
+
+.usajobs-unique-hiring-paths__icon.internal .fa::before {
+  margin-left: 0.1rem;
 }
 
 .usajobs-unique-hiring-paths__icon.veterans, .usajobs-unique-hiring-paths__icon.military-spouses {
