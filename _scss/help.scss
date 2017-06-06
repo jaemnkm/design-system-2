@@ -12,7 +12,6 @@
 
 
 // Core -------------- //
-
 @import 'core/defaults';
 @import 'core/base';
 @import 'core/grid-settings';
@@ -22,7 +21,6 @@
 
 // Elements -------------- //
 // Styles basic HTML elements
-
 @import 'elements/buttons';
 @import 'elements/figure';
 @import 'elements/inputs';
@@ -70,5 +68,6 @@
 
 // Components ------------- //
 @import 'component/header';
+@import 'component/modal';
 @import 'component/nav';
 @import 'component/footer';
