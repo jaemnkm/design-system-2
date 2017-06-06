@@ -558,7 +558,7 @@ lead: A main function of USAJOBS is to provide a clear and effective search. Our
       <div class="usajobs-search-teaser usajobs-search-teaser--data-science" itemscope itemtype="http://schema.org/WebSite">
         <div class="usajobs-search-teaser__body">
           <h3 class="usajobs-search-teaser__title" itemprop="name">Explore a career in data science.</h3>
-          <a href="https://www.usajobs.gov/careerfields/data-science/" class="usa-button usa-button-outline-inverse usajobs-search-teaser__link" itemprop="url">
+          <a href="https://www.usajobs.gov/careerfields/data-science/" class="usa-button usa-button-outline-inverse usajobs-search-teaser__link" itemprop="url" target="_blank">
             Learn more
           </a>
         </div>
@@ -571,7 +571,7 @@ lead: A main function of USAJOBS is to provide a clear and effective search. Our
       <div class="usajobs-search-teaser usajobs-search-teaser--cyber-security" itemscope itemtype="http://schema.org/WebSite">
         <div class="usajobs-search-teaser__body">
           <h3 class="usajobs-search-teaser__title" itemprop="name">Explore a career in cyber security.</h3>
-          <a href="https://www.cybercareers.gov/" class="usa-button usa-button-outline-inverse usajobs-search-teaser__link" itemprop="url">
+          <a href="https://www.cybercareers.gov/" class="usa-button usa-button-outline-inverse usajobs-search-teaser__link" itemprop="url" target="_blank">
             Learn more
           </a>
         </div>
@@ -587,7 +587,7 @@ lead: A main function of USAJOBS is to provide a clear and effective search. Our
           <p class="usajobs-search-teaser__desc">
             The Federal Privacy Council is looking for privacy professionals interested in the growing use of technology, big data and analytics.
           </p>
-          <a href="https://www.fpc.gov/" class="usa-button usa-button-primary usajobs-search-teaser__link" itemprop="url">
+          <a href="https://www.fpc.gov/" class="usa-button usa-button-primary usajobs-search-teaser__link" itemprop="url" target="_blank">
             Learn more
           </a>
         </div>
@@ -612,6 +612,7 @@ lead: A main function of USAJOBS is to provide a clear and effective search. Our
     <ul class="usa-content-list">
       <li>The teaser, when it appears, should appear between the 5th and 6th job result. Ideally it would be loaded via an asynchronous request after results are displayed so that it does not negatively impact search performance.</li>
       <li>Only one teaser should be shown in one set of search results. Currently there is overlap in triggering keywords thus a round robin mechanism should be deployed to rotate between the overlapping teasers. There is also the possibility of overlap in the use of filters. In this case the keyword trigger should win out.</li>
+      <li>Links that leave the usajobs.gov domain should open in a new tab.</li>
     </ul>
 
     <h5>When to use</h5>
