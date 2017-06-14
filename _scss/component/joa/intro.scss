@@ -125,7 +125,7 @@ $body-padding: $size-default;
 
   &__link {
     width: 100%;
-    padding: $size-S;
+    padding: $size-S 0;
     color: $color-base;
     text-decoration: none;
 
@@ -142,7 +142,7 @@ $body-padding: $size-default;
   }
 
   &__body {
-    padding: 0 $size-default;
+    padding: 0 0 0 $size-default;
   }
 
   &__title {
