@@ -13,7 +13,7 @@ control-number: '468841900'
 </a>
 
 <div class="preview">
-  {% include components/joa/v1.3/intro.html %}
+  {% include components/joa/v1.4/intro.html %}
 </div>
 
 <div class="usa-accordion-bordered usa-accordion-docs">

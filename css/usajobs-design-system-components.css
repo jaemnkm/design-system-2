@@ -20853,7 +20853,7 @@ html {
   text-decoration: none;
 }
 
-.usajobs-joa-intro-hiring-paths__link:visited {
+.usajobs-joa-intro-hiring-paths__link:visited, .usajobs-joa-intro-hiring-paths__link:active, .usajobs-joa-intro-hiring-paths__link:hover {
   color: #212121;
 }
 
@@ -20872,9 +20872,13 @@ html {
   text-decoration: underline;
 }
 
-.usajobs-joa-intro-hiring-paths__detail {
+.usajobs-joa-intro-hiring-paths__detail, .usajobs-joa-intro-hiring-paths__sublist-item {
   font-size: 1.4rem;
   margin: 0;
+}
+
+.usajobs-joa-intro-hiring-paths__sublist {
+  margin-bottom: 0;
 }
 
 .main-content .usajobs-joa-intro-hiring-paths .usajobs-joa-intro-hiring-paths__link {
