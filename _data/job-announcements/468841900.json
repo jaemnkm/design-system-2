@@ -83,7 +83,7 @@
       "Code": "15317"
     }
   ],
-  "QualificationSummary": "Minimum qualifications for trades and labor positions are determined by evaluation of Job Elements. You must meet at least 2 points on the screen-out element identified below and obtain an average of at least 2 points on all of the job elements in order to be considered qualified for this position.Job Elements:1) Ability to do the work of the position without more than normal supervision. (Screen-out)2) Knowledge of equipment assembly, installation and repair.3) Technical Practices4) Ability to interpret instructions, specifications, etc.5) Ability to use and maintain tools and equipment.6) Knowledge of Materials.7) Trouble Shooting.",
+  "QualificationSummary": "Minimum qualifications for trades and labor positions are determined by evaluation of Job Elements. You must meet at least 2 points on the screen-out element identified below and obtain an average of at least 2 points on all of the job elements in order to be considered qualified for this position. Job Elements: 1) Ability to do the work of the position without more than normal supervision. (Screen-out) 2) Knowledge of equipment assembly, installation and repair. 3) Technical Practices 4) Ability to interpret instructions, specifications, etc. 5) Ability to use and maintain tools and equipment. 6) Knowledge of Materials. 7) Trouble Shooting.",
   "PositionRemuneration": [
     {
       "MinimumRange": "37.21",
@@ -131,6 +131,8 @@
       "HiringPath": [
         "public",
         "fed",
+        "internal",
+        "interchange",
         "vet",
         "student",
         "disability",

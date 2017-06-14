@@ -129,7 +129,9 @@ $body-padding: $size-default;
     color: $color-base;
     text-decoration: none;
 
-    &:visited {
+    &:visited,
+    &:active,
+    &:hover {
       color: $color-base;
     }
 
@@ -149,9 +151,14 @@ $body-padding: $size-default;
     text-decoration: underline;
   }
 
-  &__detail {
+  &__detail,
+  &__sublist-item {
     font-size: $small-font-size;
     margin: 0;
+  }
+
+  &__sublist {
+    margin-bottom: 0;
   }
 }
 

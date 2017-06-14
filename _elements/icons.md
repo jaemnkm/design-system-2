@@ -18,86 +18,86 @@ lead: USAJOBS leverages Font Awesome via the U.S. Standards and in addition defi
   <ul class="usajobs-unique-hiring-paths__list">
     <li class="usajobs-unique-hiring-paths__item">
       <div class="usajobs-unique-hiring-paths__icon public">
-        <i class="fa fa-users"></i>
+        <span class="fa fa-users"></span>
       </div>
       Public
     </li>
     <li class="usajobs-unique-hiring-paths__item">
       <div class="usajobs-unique-hiring-paths__icon federal-employees">
-        <i class="fa fa-institution"></i>
+        <span class="fa fa-institution"></span>
       </div>
       Federal employees
     </li>
     <li class="usajobs-unique-hiring-paths__item">
       <div class="usajobs-unique-hiring-paths__icon internal">
-        <i class="fa fa-dot-circle-o"></i>
+        <span class="fa fa-dot-circle-o"></span>
       </div>
       Internal to an agency
     </li>
     <li class="usajobs-unique-hiring-paths__item">
       <div class="usajobs-unique-hiring-paths__icon interchange">
-        <i class="fa fa-exchange"></i>
+        <span class="fa fa-exchange"></span>
       </div>
       Interchange agreement
     </li>
     <li class="usajobs-unique-hiring-paths__item">
       <div class="usajobs-unique-hiring-paths__icon veterans">
-        <i class="fa fa-shield"></i>
+        <span class="fa fa-shield"></span>
       </div>
       Veterans
     </li>
     <li class="usajobs-unique-hiring-paths__item">
       <div class="usajobs-unique-hiring-paths__icon students">
-        <i class="fa fa-graduation-cap"></i>
+        <span class="fa fa-graduation-cap"></span>
       </div>
       Students &amp; recent graduates
     </li>
     <li class="usajobs-unique-hiring-paths__item">
       <div class="usajobs-unique-hiring-paths__icon individuals-with-disabilities">
-        <i class="fa fa-wheelchair-alt"></i>
+        <span class="fa fa-wheelchair-alt"></span>
       </div>
       Individuals with disabilities
     </li>
     <li class="usajobs-unique-hiring-paths__item">
       <div class="usajobs-unique-hiring-paths__icon former-overseas-employees">
-        <i class="fa fa-plane"></i>
+        <span class="fa fa-plane"></span>
       </div>
       Former overseas employees
     </li>
     <li class="usajobs-unique-hiring-paths__item">
       <div class="usajobs-unique-hiring-paths__icon land-mgmt">
-        <i class="fa fa-tree"></i>
+        <span class="fa fa-tree"></span>
       </div>
       Land Management
     </li>
     <li class="usajobs-unique-hiring-paths__item">
       <div class="usajobs-unique-hiring-paths__icon military-spouses fa-stack">
-        <i class="fa fa-circle-o fa-stack-1x is-first"></i>
-        <i class="fa fa-circle-o fa-stack-1x is-second"></i>
+        <span class="fa fa-circle-o fa-stack-1x is-first"></span>
+        <span class="fa fa-circle-o fa-stack-1x is-second"></span>
       </div>
       Military Spouses
     </li>
     <li class="usajobs-unique-hiring-paths__item">
       <div class="usajobs-unique-hiring-paths__icon national-guard">
-        <i class="fa fa-flag"></i>
+        <span class="fa fa-flag"></span>
       </div>
       National Guard
     </li>
     <li class="usajobs-unique-hiring-paths__item">
       <div class="usajobs-unique-hiring-paths__icon native-americans">
-        <i class="fa fa-sun-o"></i>
+        <span class="fa fa-sun-o"></span>
       </div>
       Native Americans
     </li>
     <li class="usajobs-unique-hiring-paths__item">
       <div class="usajobs-unique-hiring-paths__icon peace-corps">
-        <i class="fa fa-globe"></i>
+        <span class="fa fa-globe"></span>
       </div>
       Peace Corps &amp; Vista
     </li>
     <li class="usajobs-unique-hiring-paths__item">
       <div class="usajobs-unique-hiring-paths__icon ses">
-        <i class="fa fa-briefcase"></i>
+        <span class="fa fa-briefcase"></span>
       </div>
       Senior Executives
     </li>
