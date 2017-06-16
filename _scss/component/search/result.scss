@@ -26,6 +26,8 @@
 .usajobs-search .usajobs-search-result--core {
   @include card-core-v1();
   @include job-core-v1();
+  @include card-core-v2();
+  @include job-core-v2();
 
   // Specificity nightmare here
   .usajobs-search-result--core__department,
