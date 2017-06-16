@@ -207,7 +207,6 @@
   }
 
   &__footer-item {
-    max-width: inherit !important; // override of .usa-content p:not(.usa-font-lead)
     margin-bottom: 0;
 
     @include media($ML) {
@@ -305,5 +304,73 @@
     color: $color-gold;
     vertical-align: middle;
     content: $fa-var-star-o;
+  }
+}
+
+@mixin card-core-v2() {
+  &__footer-item,
+  &__footer-item.right {
+    @include media($M) {
+      @include span-columns(3, 6);
+    }
+  }
+
+  &__footer-item {
+    @include media($L) {
+      @include span-columns(8, 12);
+    }
+  }
+
+  &__footer-item.right {
+    @include media($M) {
+      @include omega();
+    }
+
+    @include media($L) {
+      @include span-columns(4, 12);
+      @include omega();
+    }
+  }
+
+  &__footer-item.application-status {
+    max-width: rem(200px);
+    margin-top: $size-base;
+    padding: 0 $size-S;
+    border-radius: $size-M;
+    font-size: $small-font-size;
+
+    @include media($SM) {
+      font-size: $base-font-size;
+    }
+
+    @include media($M) {
+      float: right;
+      margin-top: $size-S;
+    }
+
+    @include media($L) {
+      float: left;
+    }
+  }
+
+  &__footer-item.usajobs-search-result--core__closing-date {
+    max-width: inherit;
+  }
+
+  // have to repeat this given the changes above
+  &__save-job {
+    position: absolute;
+    right: $size-default;
+    bottom: $size-default;
+
+    @include media($M) {
+      display: inline-block;
+      float: inherit;
+      width: auto;
+      top: $size-base;
+      right: $size-default;
+      bottom: auto;
+      margin: 0;
+    }
   }
 }

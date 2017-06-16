@@ -385,3 +385,34 @@
     @include makeCircle($size, none, $color-gray-warm-dark);
   }
 }
+
+@mixin applicationStatusColors() {
+  background-color: $color-gray-dark;
+  color: $color-white;
+  border: 1px solid $color-gray-dark;
+
+  &.status-received,
+  &.status-referred,
+  &.status-selected {
+    background-color: $color-green-dark;
+    color: $color-white;
+    border-color: $color-green-dark;
+  }
+
+  // Paused
+  &.status-incomplete,
+  &.status-in-progress {
+    background-color: $color-gold;
+    color: $color-base;
+    border-color: $color-gold;
+  }
+
+  // Stopped
+  &.status-canceled,
+  &.status-not-referred,
+  &.status-not-selected {
+    background-color: $color-secondary;
+    color: $color-white;
+    border-color: $color-secondary;
+  }
+}

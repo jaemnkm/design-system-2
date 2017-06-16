@@ -255,6 +255,9 @@ lead: A main function of USAJOBS is to provide a clear and effective search. Our
               <i class="fa fa-bullhorn"></i> More jobs like this
             </a>
           </p -->
+          <p class="usajobs-search-result--core__footer-item right application-status status-received">
+            Application: Received
+          </p>
           <p class="usajobs-search-result--core__footer-item usajobs-search-result--core__save-job">
             <a href="#save" class="usajobs-search-result--core__save-job-link" data-behavior="search-results.toggle-save" data-target=".usajobs-search-result--core__save-job-text" data-state="is-unsaved">
               <span class="usajobs-search-result--core__save-job-text">Save job</span>
@@ -362,6 +365,10 @@ lead: A main function of USAJOBS is to provide a clear and effective search. Our
           <li>Do NOT display the save/saved star trigger to signed-out users.</li>
         </ul>
       </li>
+    </ul>
+    <p>The search card component MAY include the following:</p>
+    <ul class="usa-content-list">
+      <li>Application status: If the user has a started or finished an application to this job then the application status should appear. The same state names and colors as appear for application status in the profile dashboard should be employed.</li>
     </ul>
 
     <h5>When to use</h5>
