@@ -150,6 +150,15 @@ module.exports = function(grunt) {
       ],
       gruntfile: 'Gruntfile.js'
     },
+    base64: {
+      fonts: {
+        files: {
+          'fonts/fontawesome-webfont.woff.b64': 'fonts/fontawesome-webfont.woff',
+          'fonts/sourcesanspro-regular-webfont.woff.b64': 'fonts/sourcesanspro-regular-webfont.woff',
+          'fonts/merriweather-regular-webfont.woff.b64': 'fonts/merriweather-regular-webfont.woff'
+        }
+      }
+    },
     notify_hooks: {
       options: {
         enabled: true,
@@ -210,8 +219,8 @@ module.exports = function(grunt) {
   });
 
   grunt.registerTask('serve', ['concurrent:serve']);
-  grunt.registerTask('build', ['shell:jekyllBuild', 'css', 'js']);
-  grunt.registerTask('css', ['sass', 'autoprefixer', 'cssmin']);
+  grunt.registerTask('build', ['shell:jekyllBuild', 'base64', 'css', 'js']);
+  grunt.registerTask('css', ['base64', 'sass', 'autoprefixer', 'cssmin']);
   grunt.registerTask('js', ['jshint:all', 'concat']);
   grunt.registerTask('test', ['jshint:all', 'scsslint']);
 };
