@@ -248,16 +248,13 @@ lead: A main function of USAJOBS is to provide a clear and effective search. Our
         </div>
         <div class="usajobs-search-result--core__footer">
           <p class="usajobs-search-result--core__footer-item usajobs-search-result--core__closing-date" title="Opening and closing dates" aria-label="Opening and closing dates">
-            <i class="fa fa-clock-o"></i> Open 09/9/2016 to 10/30/2016
+            <i class="fa fa-clock-o"></i> Open 09/09/2016 to 10/30/2016
           </p>
           <!-- p class="usajobs-search-result--core__footer-item right">
             <a href="#more" class="usajobs-search-result--core__more-jobs-like-this">
               <i class="fa fa-bullhorn"></i> More jobs like this
             </a>
           </p -->
-          <p class="usajobs-search-result--core__footer-item right application-status status-received">
-            Application: Received
-          </p>
           <p class="usajobs-search-result--core__footer-item usajobs-search-result--core__save-job">
             <a href="#save" class="usajobs-search-result--core__save-job-link" data-behavior="search-results.toggle-save" data-target=".usajobs-search-result--core__save-job-text" data-state="is-unsaved">
               <span class="usajobs-search-result--core__save-job-text">Save job</span>
@@ -322,6 +319,50 @@ lead: A main function of USAJOBS is to provide a clear and effective search. Our
               <span class="usajobs-search-result--core__save-job-text">Saved</span>
             </a>
           </p>
+        </div>
+      </div>
+      <div class="usajobs-search-result--core">
+        <a href="https://www.usajobs.gov/GetJob/ViewDetails/390086900" class="usajobs-search-result--core__title" itemprop="title">
+          Transportation Security Officer (TSO)
+        </a>
+        <div class="usajobs-search-result--core__body">
+          <div class="usajobs-search-result--core__summary">
+            <h4 class="usajobs-search-result--core__agency">
+              Transportation Security Administration
+            </h4>
+            <h5 class="usajobs-search-result--core__department">
+              Department of Homeland Security
+            </h5>
+            <h4 class="usajobs-search-result--core__location" itemprop="addressLocality">
+              Multiple Locations
+            </h4>
+          </div>
+          <div class="usajobs-search-result--core__details">
+            <ul class="usajobs-search-result--core__details-list">
+              <li class="usajobs-search-result--core__item">
+                Starting at $15.37 (SV D)
+              </li>
+              <li class="usajobs-search-result--core__item usajobs-search-result--core__appt-type">
+                Permanent &bull; Part-time
+              </li>
+              <li class="usajobs-search-result--core__item open-to">
+                <p class="usajobs-search-result--core__hiring-path">
+                  This job is open to:
+                </p>
+                <span class="usajobs-search-result--core__uhp-icon public" rel="tooltip" title="This job is open to the public">
+                  <i class="fa fa-users"></i>
+                </span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="usajobs-search-result--core__footer">
+          <p class="usajobs-search-result--core__footer-item usajobs-search-result--core__closing-date" title="Opening and closing dates" aria-label="Opening and closing dates">
+            <i class="fa fa-clock-o"></i> Open 04/12/2017 to 06/30/2017
+          </p>
+          <a href="https://www.test.usajobs.gov/Applicant/ProfileDashboard/Home" class="usajobs-search-result--core__footer-item right application-status status-received">
+            Application: Received
+          </a>
         </div>
       </div>
     </div>

@@ -43276,6 +43276,7 @@ html {
 .usajobs-search .usajobs-search-result--core__footer-item.application-status {
   text-align: center;
   font-weight: bold;
+  text-decoration: none;
   background-color: #323a45;
   color: #ffffff;
   border: 1px solid #323a45;
