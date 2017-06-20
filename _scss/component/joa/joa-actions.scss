@@ -107,6 +107,23 @@
   }
 }
 
+.usajobs-joa-actions--v1-5 {
+  &__col-sub-actions,
+  &__numbers {
+    @include row();
+  }
+
+  &__number-container {
+    @include media($SM) {
+      @include span-columns(1,2);
+    }
+  }
+
+  &__number {
+    margin-top: 0;
+  }
+}
+
 .usajobs-joa-actions-share {
   @include actionShare();
 }

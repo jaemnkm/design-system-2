@@ -1,0 +1,33 @@
+<button class="usa-accordion-button usajobs-joa-accordion-trigger is-open-at-M" aria-expanded="true" aria-controls="duties" data-behavior="joa_accordion.toggle">
+  Duties
+</button>
+<div id="duties" aria-hidden="false" class="usa-accordion-content usajobs-joa-accordion-content is-open-at-M usajobs-joa-accordion-overview">
+  <h2 class="usajobs-joa-accordion-title">Duties</h2>
+  <div id="duties" class="content">
+    <h3>Duties</h3>
+    <div>
+      <p>As an Education Services Specialist, you will perform the following duties:</p><ul><li>Assess inmate records to establish educational level.</li><li>Administer diagnostic interest, surveys, and/or tests to establish education and vocational goals.</li><li>Assist in developing valid educational plans and realistic career goals for re-entry into society.</li><li>Develop program goals based on the needs of the inmate population.</li><li>Assess the quality of the educational services provided in order to make recommendations on process improvement.</li><li>Develop curriculum to meet educational needs.</li><li>Compose lesson plans for use in educational courses.</li><li>Prepare reports on inmate progress in support of pre-release efforts.</li><li>Enroll inmates in appropriate courses based on individual assessment results.</li></ul>
+    </div>
+  </div>
+
+  <div id="travelrequired">
+    <h3>Travel Required</h3>
+    <ul>
+      <li>Occasional travel.</li>
+      <li>Expected temporary duty travel is 5% or less.</li>
+    </ul>
+  </div>
+
+  <div id="relocationauthorized">
+    <h3>
+      Relocation Authorized
+    </h3>
+    <p>
+      {% if job.UserArea.Details.Relocation %}
+      Yes
+      {% else %}
+      No
+      {% endif %}
+    </p>
+  </div>
+</div>
