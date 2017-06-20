@@ -316,13 +316,13 @@
   text-align: center;
   margin-right: $size-base;
 
-  &.public {
+  &.public,
+  &.interchange {
     @include makeCircle($size, none, $color-primary-alt);
   }
 
   &.federal-employees,
   &.internal,
-  &.interchange,
   &.ses {
     @include makeCircle($size, none, $color-primary-darkest);
   }

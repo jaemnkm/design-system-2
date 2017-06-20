@@ -23,6 +23,12 @@ lead: USAJOBS leverages Font Awesome via the U.S. Standards and in addition defi
       Public
     </li>
     <li class="usajobs-unique-hiring-paths__item">
+      <div class="usajobs-unique-hiring-paths__icon interchange">
+        <span class="fa fa-exchange"></span>
+      </div>
+      Interchange agreement
+    </li>
+    <li class="usajobs-unique-hiring-paths__item">
       <div class="usajobs-unique-hiring-paths__icon federal-employees">
         <span class="fa fa-institution"></span>
       </div>
@@ -33,12 +39,6 @@ lead: USAJOBS leverages Font Awesome via the U.S. Standards and in addition defi
         <span class="fa fa-dot-circle-o"></span>
       </div>
       Internal to an agency
-    </li>
-    <li class="usajobs-unique-hiring-paths__item">
-      <div class="usajobs-unique-hiring-paths__icon interchange">
-        <span class="fa fa-exchange"></span>
-      </div>
-      Interchange agreement
     </li>
     <li class="usajobs-unique-hiring-paths__item">
       <div class="usajobs-unique-hiring-paths__icon veterans">

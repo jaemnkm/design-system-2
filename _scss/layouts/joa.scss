@@ -156,3 +156,36 @@
     }
   }
 }
+
+.usajobs-joa-bground {
+  @include media($M) {
+    background-color: $color-gray-lightest;
+  }
+}
+
+.usajobs-joa-section {
+  background-color: $color-white;
+
+  @include media($M) {
+    padding: $size-default;
+    @include boxShadow(1);
+  }
+
+  &__header {
+    display: none;
+    margin-top: 0;
+    color: $color-primary-alt-darkest;
+
+    @include media($M) {
+      display: block;
+    }
+  }
+}
+
+.usajobs-joa--v1-5 {
+  &__shell {
+    @include media($M) {
+      background-color: $color-gray-lightest;
+    }
+  }
+}

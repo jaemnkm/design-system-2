@@ -1,0 +1,37 @@
+// JOA - Nav
+
+@import '../base-shared';
+
+.usajobs-joa-nav {
+  @include boxShadow(1);
+
+  &__body {
+    padding: 0 $size-default;
+    border-bottom: 0;
+
+    @include media($ML) {
+      padding-left: $size-M;
+      padding-right: $size-M;
+    }
+  }
+
+  &__item {
+    font-size: $small-font-size;
+    color: $color-base;
+
+    &:visited {
+      color: $color-base;
+    }
+
+    &:hover {
+      color: $color-primary;
+      text-decoration: underline;
+    }
+
+    &.is-active,
+    &[data-state="is-active"] {
+      color: $color-base;
+      border-bottom: 3px solid $color-gold;
+    }
+  }
+}

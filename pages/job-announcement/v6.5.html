@@ -1,0 +1,48 @@
+---
+permalink: /job-announcement/v6.5/
+layout: joa
+title: Job Announcement
+control-number: '469480700'
+---
+{% assign job = site.data.job-announcements[page.control-number] %}
+
+{% include components/nav-logged_in.html %}
+{% include components/joa/v1.2/prev-next.html %}
+<div xmlns:soap-env="http://schemas.xmlsoap.org/soap/envelope/"
+     xmlns:hr="http://www.hr-xml.org/3"
+     xmlns:oa="http://www.openapplications.org/oagis/9">
+  <div itemscope="" itemtype="http://schema.org/JobPosting">
+    {% include components/joa/v1.3/banner.html %}
+    <section class="usajobs-shell">
+      <section class="usajobs-canvas">
+        <div class="usajobs-content-gutter">
+          {% include components/joa/v1.3/intro.html %}
+          {% include components/joa/actions.html %}
+          <main class="usajobs-content-well" id="main-content" role="main" aria-label="Main Job annoucement content">
+            <div class="usa-accordion" data-object="joa-accordion">
+              <ul class="usa-unstyled-list">
+                <li>{% include components/joa/v1.2/overview.html %}</li>
+                <li>{% include components/joa/requirements.html %}</li>
+                <li>{% include components/joa/v1.2/additional-information.html %}</li>
+              </ul>
+            </div>
+          </main>
+          <aside class="usajobs-rightrail" role="complimentary" aria-label="How to apply and required documents">
+            <div class="usa-accordion" data-object="joa-accordion">
+              <ul class="usa-unstyled-list">
+                <li>{% include components/joa/how-to-apply.html %}</li>
+                <li>{% include components/joa/required-documents.html %}</li>
+              </ul>
+            </div>
+          </aside>
+        </div>
+        <div class="usajobs-joa-actions-container">
+          {% include components/joa/actions.html %}
+        </div>
+        <div class="usajobs-joa-agency-container">
+          {% include components/joa/agency.html %}
+        </div>
+      </section>
+    </section>
+  </div>
+</div>

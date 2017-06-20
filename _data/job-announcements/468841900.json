@@ -130,19 +130,18 @@
       "Relocation": "False",
       "HiringPath": [
         "public",
+        "interchange",
         "fed",
         "internal",
-        "interchange",
         "vet",
-        "student",
-        "disability",
-        "overseas",
-        "land",
-        "mspouse",
         "nguard",
+        "disability",
         "native",
+        "mspouse",
+        "student",
+        "ses",
         "peace",
-        "ses"
+        "overseas"
       ]
     },
     "IsRadialSearch": false
