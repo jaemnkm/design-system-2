@@ -164,6 +164,17 @@
 }
 
 .usajobs-joa-section {
+  &__help {
+    position: absolute;
+    top: $size-base;
+    right: $size-base;
+    font-size: $small-font-size;
+
+    @include media($M) {
+      top: $size-default;
+      right: $size-default;
+    }
+  }
 }
 
 .usajobs-joa-sub-section {
@@ -195,6 +206,7 @@
   }
 
   &__accordion-content {
+    position: relative;
     padding-left: $size-default;
     padding-right: $size-default;
 
@@ -225,6 +237,19 @@
 
     @include media($M) {
       display: block;
+    }
+  }
+
+  &__disclaimer-inset {
+    padding: $size-default;
+    background-color: $color-cool-blue-light;
+    color: $color-white;
+
+    a,
+    a:active,
+    a:hover,
+    a:visited {
+      color: $color-white;
     }
   }
 }
