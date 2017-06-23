@@ -246,3 +246,16 @@ $body-padding: $size-default;
     }
   }
 }
+
+.usajobs-joa-closing-types {
+  padding: $size-S;
+  font-size: $small-font-size;
+  background-color: $color-gold-lighter;
+
+  a,
+  a:active,
+  a:hover,
+  a:visited {
+    color: $color-base;
+  }
+}

@@ -21137,6 +21137,19 @@ html {
   }
 }
 
+.usajobs-joa-closing-types {
+  padding: 1rem;
+  font-size: 1.4rem;
+  background-color: #fad980;
+}
+
+.usajobs-joa-closing-types a,
+.usajobs-joa-closing-types a:active,
+.usajobs-joa-closing-types a:hover,
+.usajobs-joa-closing-types a:visited {
+  color: #212121;
+}
+
 html {
   box-sizing: border-box;
 }
