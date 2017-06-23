@@ -1,0 +1,74 @@
+<div class="usajobs-joa-locations usajobs-joa-locations--v1-5">
+  <h3 class="usajobs-joa-locations__title">Locations</h3>
+  <p class="usajobs-joa-locations__sub-title">Many vacancies in the following locations:</p>
+  <ul class="usajobs-joa-locations__list">
+  {% for position in job.PositionLocation  limit: 4 %}
+    <li class="usajobs-joa-locations__item">
+      <a class="usajobs-joa-locations__link" href="#map" itemtype="http://schema.org/PostalAddress">
+        <div class="usajobs-joa-locations__figure">
+          <i class="fa fa-map-marker"></i>
+        </div>
+        <div class="usajobs-joa-locations__body">
+          <span class="usajobs-joa-locations__street" itemprop="streetAddress">
+            {{ position.AddressLine }}
+          </span>
+          <span class="usajobs-joa-locations__city" itemprop="addressLocality">
+            {{ position.LocationName }}
+          </span>
+          <span class="usajobs-joa-locations__vacancies">
+            {% if position.Vacancies == '1' %}
+              1 vacancy
+            {% else %}
+              {{ position.Vacancies }} vacancies
+            {% endif %}
+          </span>
+        </div>
+      </a>
+    </li>
+  {% endfor %}
+  </ul>
+  {% if job.PositionLocation.size > 4 %}
+    {% assign more_count = job.PositionLocation.size | minus: 4 %}
+  <div data-object="reveal">
+    <a class="usajobs-joa-locations__reveal-link usajobs-show-more__trigger" aria-expanded="false" aria-controls="more-locations" data-behavior="reveal.show-toggle" href="#more-locations">
+      Show <span data-toggle-text="less">more</span> locations ({{ more_count }})
+    </a>
+    <div id="more-locations" aria-hidden="true" class="usajobs-joa-locations__more-locations">
+      <ul class="usajobs-joa-locations__list">
+      {% for position in job.PositionLocation  offset: 4 %}
+        <li class="usajobs-joa-locations__item">
+          <a class="usajobs-joa-locations__link" href="#map" itemtype="http://schema.org/PostalAddress">
+            <div class="usajobs-joa-locations__figure">
+              <i class="fa fa-map-marker"></i>
+            </div>
+            <div class="usajobs-joa-locations__body">
+              <span class="usajobs-joa-locations__street" itemprop="streetAddress">
+                {{ position.AddressLine }}
+              </span>
+              <span class="usajobs-joa-locations__city" itemprop="addressLocality">
+                {{ position.LocationName }}
+              </span>
+              <span class="usajobs-joa-locations__vacancies">
+                {% if position.Vacancies == '1' %}
+                  1 vacancy
+                {% else %}
+                  {{ position.Vacancies }} vacancies
+                {% endif %}
+              </span>
+            </div>
+          </a>
+        </li>
+      {% endfor %}
+      </ul>
+    </div>
+  </div>
+  {% endif %}
+  {% if job.PositionLocationWithinArea %}
+  <div id="commuting-distance">
+    <!-- Handle new SIF values PositionLocationWithinArea and PositionLocationWithinArea -->
+    <p class="usajobs-joa-locations--v1-5__commuting-distance">
+      <span class="fa fa-info-circle"></span> To apply for this job, you must live within a {{ job.PositionLocationRadius }} mile radius of one of these locations.
+    </p>
+  </div>
+  {% endif %}
+</div>

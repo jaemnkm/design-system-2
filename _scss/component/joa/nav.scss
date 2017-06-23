@@ -3,7 +3,12 @@
 @import '../base-shared';
 
 .usajobs-joa-nav {
+  display: none;
   @include boxShadow(1);
+
+  @include media($M) {
+    display: block;
+  }
 
   &__body {
     padding: 0 $size-default;

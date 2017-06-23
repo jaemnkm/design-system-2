@@ -164,28 +164,67 @@
 }
 
 .usajobs-joa-section {
-  background-color: $color-white;
+}
 
-  @include media($M) {
-    padding: $size-default;
-    @include boxShadow(1);
-  }
+.usajobs-joa-sub-section {
+  @include row();
 
-  &__header {
-    display: none;
-    margin-top: 0;
-    color: $color-primary-alt-darkest;
-
+  &__container {
     @include media($M) {
-      display: block;
+      @include span-columns(3, 6);
     }
   }
+}
+
+// Fighting Standards specificity
+.usajobs-joa-sub-section .usajobs-joa-sub-section__text {
+  margin-top: 0;
 }
 
 .usajobs-joa--v1-5 {
   &__shell {
     @include media($M) {
       background-color: $color-gray-lightest;
+    }
+  }
+
+  &__accordion-trigger {
+    @include media($M) {
+      @include hide();
+    }
+  }
+
+  &__accordion-content {
+    padding-left: $size-default;
+    padding-right: $size-default;
+
+    @include media($M) {
+      margin: 0 $size-default $size-default;
+      padding: $size-default;
+      @include boxShadow(1);
+
+      &[aria-hidden=true] {
+        display: block !important;
+      }
+    }
+
+    @include media($ML) {
+      margin-left: 0;
+      margin-right: 0;
+    }
+
+    @include media($L) {
+      padding: $size-M;
+    }
+  }
+
+  &__section-header {
+    display: none;
+    margin-top: 0;
+    color: $color-primary-alt-darkest;
+
+    @include media($M) {
+      display: block;
     }
   }
 }

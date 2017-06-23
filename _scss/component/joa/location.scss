@@ -8,7 +8,7 @@
   $body-padding: $size-S;
 
   &__sub-title {
-    margin-top: $size-base; 
+    margin-top: $size-base;
   }
 
   &__list {
@@ -112,5 +112,15 @@
   &__body {
     @include flex(1);
     min-width: 0;
+  }
+}
+
+.usajobs-joa-locations--v1-5 {
+  &__commuting-distance {
+    margin-top: 0;
+
+    .fa {
+      color: $color-primary;
+    }
   }
 }
