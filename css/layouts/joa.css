@@ -205,6 +205,20 @@ html {
   }
 }
 
+.usajobs-joa-section__help {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  font-size: 1.4rem;
+}
+
+@media screen and (min-width: 37.5em) {
+  .usajobs-joa-section__help {
+    top: 1.5rem;
+    right: 1.5rem;
+  }
+}
+
 .usajobs-joa-sub-section {
   display: block;
 }
@@ -251,6 +265,7 @@ html {
 }
 
 .usajobs-joa--v1-5__accordion-content {
+  position: relative;
   padding-left: 1.5rem;
   padding-right: 1.5rem;
 }
@@ -289,6 +304,19 @@ html {
   .usajobs-joa--v1-5__section-header {
     display: block;
   }
+}
+
+.usajobs-joa--v1-5__disclaimer-inset {
+  padding: 1.5rem;
+  background-color: #4773aa;
+  color: #ffffff;
+}
+
+.usajobs-joa--v1-5__disclaimer-inset a,
+.usajobs-joa--v1-5__disclaimer-inset a:active,
+.usajobs-joa--v1-5__disclaimer-inset a:hover,
+.usajobs-joa--v1-5__disclaimer-inset a:visited {
+  color: #ffffff;
 }
 
 /*# sourceMappingURL=joa.css.map */

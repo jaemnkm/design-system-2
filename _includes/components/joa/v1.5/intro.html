@@ -1,5 +1,8 @@
 <div class="usajobs-joa-intro usajobs-joa-intro--v1-5">
   <div class="usajobs-joa-summary usajobs-joa-summary--v1-5">
+    <a href="http://usajobs.github.io/Help/how-to/job-announcement/overview/" class="usajobs-joa-section__help">
+      <span class="fa fa-question-circle"></span> Help
+    </a>
     <h2 class="usajobs-joa-summary--v1-5__header">Overview</h2>
     <ul class="usajobs-joa-summary__list">
       <li class="usajobs-joa-summary__item">
@@ -14,7 +17,7 @@
         </p>
         {% if job.ApplicationClosingType == 'application-cut-off' %}
         <div class="usajobs-joa-closing-types usajobs-joa-closing-types--cut-off">
-          This job will close when we have received <strong>{{ job.ApplicationCutOff }} applications</strong> which may be sooner then the closing date. <a href="http://usajobs.github.io/Help/how-to/job-announcement/closing-types/#applicant-cut-off">Learn more</a>
+          This job will close when we have received <strong>{{ job.ApplicationCutOff }} applications</strong> which may be sooner then the closing date. <a href="http://usajobs.github.io/Help/how-to/job-announcement/closing-types/#applicant-cut-off" target="_blank">Learn more</a>
         </div>
         {% endif %}
       </li>
@@ -30,7 +33,9 @@
       </li>
       <li class="usajobs-joa-summary__item">
         <h5 class="usajobs-joa-summary__label">
-          Pay scale &amp; grade
+          <span rel="tooltip" title="A grade refers to the General Schedule (GS) pay scale – it’s the pay level for the job.">
+            Pay scale &amp; grade
+          </span>
         </h5>
         <p class="usajobs-joa-summary__grades">
           {{ job.JobGrade.first.Code }}
@@ -43,7 +48,9 @@
       </li>
       <li class="usajobs-joa-summary__item">
         <h5 class="usajobs-joa-summary__label">
-          Salary
+          <span rel="tooltip" title="The salary range for the position.">
+            Salary
+          </span>
         </h5>
         <p class="usajobs-joa-summary__salary">
           <span itemprop="baseSalary">${{ job.PositionRemuneration.first.MinimumRange }}</span> -
@@ -52,7 +59,9 @@
       </li>
       <li class="usajobs-joa-summary__item">
         <h5 class="usajobs-joa-summary__label">
-          Appointment type
+          <span rel="tooltip" title="The Federal Government employs permanent and temporary employees.">
+            Appointment type
+          </span>
         </h5>
         <p class="usajobs-joa-summary__value">
           {{ job.PositionOfferingType.first.Name }}
@@ -60,7 +69,9 @@
       </li>
       <li class="usajobs-joa-summary__item">
         <h5 class="usajobs-joa-summary__label">
-          Work schedule
+          <span rel="tooltip" title="The hours of a day (daily tour of duty) and the days of an administrative workweek (weekly tour of duty) that are scheduled in advance and during which an employee is required to perform work on a regularly recurring basis.">
+            Work schedule
+          </span>
         </h5>
         <p class="usajobs-joa-summary__value" itemprop="employmentType">
           {{ job.PositionSchedule.first.Name }}
@@ -72,7 +83,11 @@
 
     <div class="usajobs-joa-sub-section">
       <div id="relocationauthorized" class="usajobs-joa-sub-section__container">
-        <h5 class="usajobs-joa-sub-section__small-title">Relocation authorized</h5>
+        <h5 class="usajobs-joa-sub-section__small-title">
+          <span rel="tooltip" title="Whether or not you will be reimbursed for relocating expenses.">
+            Relocation authorized
+          </span>
+        </h5>
         <p class="usajobs-joa-sub-section__text">
           {% if job.UserArea.Details.Relocation %}
           Yes
@@ -83,7 +98,11 @@
       </div>
 
       <div id="telework-eligble" class="usajobs-joa-sub-section__container">
-        <h5 class="usajobs-joa-sub-section__small-title">Telework eligible</h5>
+        <h5 class="usajobs-joa-sub-section__small-title">
+          <span rel="tooltip" title="Whether or not you may be able to work from home on some days.">
+            Telework eligible
+          </span>
+        </h5>
         <p class="usajobs-joa-sub-section__text">
           Yes
         </p>

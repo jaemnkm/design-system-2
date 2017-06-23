@@ -225,6 +225,7 @@ $body-padding: $size-default;
 }
 
 .usajobs-joa-summary--v1-5 {
+  position: relative;
   background-color: $color-white;
 
   @include media($M) {

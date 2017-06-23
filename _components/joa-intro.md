@@ -46,9 +46,10 @@ control-number: '468841900'
     </ul>
 
     <h5>Application closing types</h5>
-    <p>There are three ways that an application can close. The following lists those types and provides the text that should be shown:</p>
+    <p>There are four ways that an application can close. The following lists those types and provides the text that should be shown:</p>
     <ul class="usa-content-list">
       <li>Closing date: No additional text is shown.</li>
+      <li>Closing time: You must complete this application process and submit any required documents by xx:xx pm. Eastern Time on the closing date of this announcement.</li>
       <li>Open continuous: This job is open continuously and will remain open for an extended period of time. We wil fil jobs as they become available. <a href="http://usajobs.github.io/Help/how-to/job-announcement/closing-types/#open-continuous">Learn more</a>.</li>
       <li>Applicant cut-off: This job will close when we have received <strong>[ApplicationCutOff #] applications</strong> which may be sooner then the closing date. <a href="http://usajobs.github.io/Help/how-to/job-announcement/closing-types/#applicant-cut-off">Learn more</a>. (This variation is shown above.)</li>
     </ul>
