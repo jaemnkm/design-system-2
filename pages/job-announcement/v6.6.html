@@ -18,30 +18,22 @@ control-number: '469480700'
       <section class="usajobs-canvas">
         <div class="usajobs-content-gutter">
           {% include components/joa/v1.5/intro.html %}
-          {% include components/joa/v1.5/actions.html %}
           <main class="usajobs-content-well" id="main-content" role="main" aria-label="Main Job annoucement content">
             <div class="usa-accordion" data-object="joa-accordion">
               <ul class="usa-unstyled-list">
-                <li>{% include components/joa/v1.2/overview.html %}</li>
-                <li>{% include components/joa/requirements.html %}</li>
-                <li>{% include components/joa/v1.2/additional-information.html %}</li>
+                <li>{% include components/joa/v1.5/duties.html %}</li>
+                <li>{% include components/joa/v1.5/requirements.html %}</li>
+                <li>{% include components/joa/v1.5/required-documents.html %}</li>
+                <li>{% include components/joa/v1.5/benefits.html %}</li>
+                <li>{% include components/joa/v1.5/how-to-apply.html %}</li>
+                <li>{% include components/joa/v1.5/what-to-expect-next.html %}</li>
+                <li>{% include components/joa/v1.5/additional-information.html %}</li>
               </ul>
             </div>
           </main>
-          <aside class="usajobs-rightrail" role="complimentary" aria-label="How to apply and required documents">
-            <div class="usa-accordion" data-object="joa-accordion">
-              <ul class="usa-unstyled-list">
-                <li>{% include components/joa/how-to-apply.html %}</li>
-                <li>{% include components/joa/required-documents.html %}</li>
-              </ul>
-            </div>
-          </aside>
         </div>
         <div class="usajobs-joa-actions-container">
           {% include components/joa/actions.html %}
-        </div>
-        <div class="usajobs-joa-agency-container">
-          {% include components/joa/agency.html %}
         </div>
       </section>
     </section>

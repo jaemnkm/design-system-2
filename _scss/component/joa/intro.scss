@@ -102,6 +102,13 @@ $body-padding: $size-default;
   }
 }
 
+.usajobs-joa-aside {
+  @include media($L) {
+    @include span-columns(4, 12);
+    @include omega();
+  }
+}
+
 .usajobs-joa-intro-hiring-paths {
   padding: $size-default;
   background-color: $color-gray-cool-light;
@@ -162,6 +169,13 @@ $body-padding: $size-default;
   }
 }
 
+.usajobs-joa--v1-5__intro-hiring-paths {
+  @include media($L) {
+    float: none;
+    width: 100%;
+  }
+}
+
 // Fix for documentation only
 .main-content .usajobs-joa-intro-hiring-paths {
   .usajobs-joa-intro-hiring-paths__link {
@@ -208,4 +222,27 @@ $body-padding: $size-default;
 
 .usajobs-joa-intro--v1-5 {
   padding-top: 0;
+}
+
+.usajobs-joa-summary--v1-5 {
+  background-color: $color-white;
+
+  @include media($M) {
+    padding: $size-default;
+    @include boxShadow(1);
+  }
+
+  @include media($L) {
+    padding: $size-M;
+  }
+
+  &__header {
+    display: none;
+    margin-top: 0;
+    color: $color-primary-alt-darkest;
+
+    @include media($M) {
+      display: block;
+    }
+  }
 }

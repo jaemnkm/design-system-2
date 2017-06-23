@@ -108,14 +108,41 @@
 }
 
 .usajobs-joa-actions--v1-5 {
+  margin: $size-default 0;
+  background-color: $color-white;
+
+  &__col-apply,
+  &__col-sub-actions {
+    @include media($L) {
+      float: none;
+      width: 100%;
+    }
+  }
+
   &__col-sub-actions,
   &__numbers {
     @include row();
   }
 
+  &__numbers {
+    @include media($L) {
+      margin-top: $size-default;
+      border-top: 1px solid $color-gray-lighter;
+    }
+  }
+
   &__number-container {
     @include media($SM) {
       @include span-columns(1,2);
+    }
+
+    @include media($M) {
+      @include span-columns(3, 6);
+    }
+
+    @include media($L) {
+      float: none;
+      width: 100%;
     }
   }
 
