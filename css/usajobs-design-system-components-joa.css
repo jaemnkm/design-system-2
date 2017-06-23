@@ -30,7 +30,6 @@ html {
   -moz-box-lines: multiple;
   box-lines: multiple;
   -webkit-flex-wrap: wrap;
-  -moz-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   font-size: 1.4rem;
@@ -41,8 +40,6 @@ html {
 
 .usajobs-joa-prev-next__prev, .usajobs-joa-prev-next__back, .usajobs-joa-prev-next__next {
   display: block;
-  -webkit-box-flex: 1;
-  -moz-box-flex: 1;
   box-flex: 1;
   -webkit-flex: 1;
   -moz-flex: 1;
@@ -637,7 +634,6 @@ html {
 }
 
 .no-flexbox .usajobs-joa-intro-hiring-paths__body {
-  width: -webkit-calc(100% -  6.1rem);
   width: calc(100% -  6.1rem);
 }
 
@@ -653,8 +649,6 @@ html {
   display: -moz-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: top;
-  -moz-box-align: top;
   box-align: top;
   -webkit-align-items: top;
   -moz-align-items: top;
@@ -666,14 +660,11 @@ html {
 
 .flexbox .usajobs-joa-intro-hiring-paths__figure {
   -webkit-flex-shrink: 0;
-  -moz-flex-shrink: 0;
-  flex-shrink: 0;
+          flex-shrink: 0;
   -ms-flex-negative: 0;
 }
 
 .flexbox .usajobs-joa-intro-hiring-paths__body {
-  -webkit-box-flex: 1;
-  -moz-box-flex: 1;
   box-flex: 1;
   -webkit-flex: 1;
   -moz-flex: 1;
@@ -858,7 +849,6 @@ html {
 }
 
 .no-flexbox .usajobs-joa-locations__body {
-  width: -webkit-calc(100% -  6.1rem);
   width: calc(100% -  6.1rem);
 }
 
@@ -874,8 +864,6 @@ html {
   display: -moz-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: top;
-  -moz-box-align: top;
   box-align: top;
   -webkit-align-items: top;
   -moz-align-items: top;
@@ -887,14 +875,11 @@ html {
 
 .flexbox .usajobs-joa-locations__figure {
   -webkit-flex-shrink: 0;
-  -moz-flex-shrink: 0;
-  flex-shrink: 0;
+          flex-shrink: 0;
   -ms-flex-negative: 0;
 }
 
 .flexbox .usajobs-joa-locations__body {
-  -webkit-box-flex: 1;
-  -moz-box-flex: 1;
   box-flex: 1;
   -webkit-flex: 1;
   -moz-flex: 1;
@@ -1146,7 +1131,8 @@ html {
 :root .fa-rotate-270,
 :root .fa-flip-horizontal,
 :root .fa-flip-vertical {
-  filter: none;
+  -webkit-filter: none;
+          filter: none;
 }
 
 .fa-stack {
@@ -4028,7 +4014,8 @@ html {
 :root .fa-rotate-270,
 :root .fa-flip-horizontal,
 :root .fa-flip-vertical {
-  filter: none;
+  -webkit-filter: none;
+          filter: none;
 }
 
 .fa-stack {
@@ -7146,5 +7133,4 @@ html {
 .usajobs-joa .usajobs-joa-agency--v1-5 .fa {
   color: #0071bc;
 }
-
 /*# sourceMappingURL=usajobs-design-system-components-joa.css.map */
