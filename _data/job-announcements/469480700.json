@@ -50,6 +50,8 @@
   ],
   "PositionLocationWithinArea": true,
   "PositionLocationRadius": "100",
+  "ApplicationClosingType": "application-cut-off",
+  "ApplicationCutOff": "200",
   "OrganizationName": "Field Operating Offices of the Office of the Secretary of the Army",
   "DepartmentName": "Department of the Army",
   "JobCategory": [
