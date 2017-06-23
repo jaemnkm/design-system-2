@@ -13,7 +13,7 @@ control-number: '468841900'
 </a>
 
 <div class="preview">
-  {% include components/joa/v1.4/intro.html %}
+  {% include components/joa/v1.5/intro.html %}
 </div>
 
 <div class="usa-accordion-bordered usa-accordion-docs">
@@ -44,6 +44,15 @@ control-number: '468841900'
       <li>4 locations are displayed at all view points with any additional locations hidden behind a <a href="{{ site.baseurl }}/reveal/">reveal</a> show more/less toggle. Expanding the toggle reveals all additional locations. Collapsing the toggle hides those additional locations.</li>
       <li>The number of vacancies is required via section 1105 of Title 5, U.S.C. and thus must be specified and displayed next to each duty location.</li>
     </ul>
+
+    <h5>Application closing types</h5>
+    <p>There are three ways that an application can close. The following lists those types and provides the text that should be shown:</p>
+    <ul class="usa-content-list">
+      <li>Closing date: No additional text is shown.</li>
+      <li>Open continuous: This job is open continuously and will remain open for an extended period of time. We wil fil jobs as they become available. <a href="http://usajobs.github.io/Help/how-to/job-announcement/closing-types/#open-continuous">Learn more</a>.</li>
+      <li>Applicant cut-off: This job will close when we have received <strong>[ApplicationCutOff #] applications</strong> which may be sooner then the closing date. <a href="http://usajobs.github.io/Help/how-to/job-announcement/closing-types/#applicant-cut-off">Learn more</a>. (This variation is shown above.)</li>
+    </ul>
+
 
     <h4 class="usa-heading">Usability</h4>
     <h5>When to use</h5>
