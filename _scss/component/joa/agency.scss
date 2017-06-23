@@ -33,3 +33,23 @@
     }
   }
 }
+
+.usajobs-joa .usajobs-joa-agency--v1-5 {
+  @include row();
+  position: relative;
+  margin-top: $size-default;
+  padding: $size-default;
+  background-color: $color-gray-lightest;
+
+  &__contact-info {
+    margin-top: 0;
+  }
+
+  &__contact-name {
+    font-weight: normal;
+  }
+
+  .fa {
+    color: $color-primary;
+  }
+}

@@ -1,0 +1,11 @@
+
+      <li class="usajobs-joa-summary__item">
+        <h5 class="usajobs-joa-summary__label">
+          Series
+        </h5>
+        {% for series in job.JobCategory %}
+        <p class="usajobs-joa-summary__series">
+          {{ series.Code  }} {{ series.Name }}
+        </p>
+        {% endfor %}
+      </li>
