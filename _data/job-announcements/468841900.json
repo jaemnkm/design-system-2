@@ -58,6 +58,10 @@
       "Vacancies": "5"
     }
   ],
+  "PositionLocationWithinArea": true,
+  "PositionLocationRadius": "100",
+  "ApplicationClosingType": "application-cut-off",
+  "ApplicationCutOff": "200",
   "OrganizationName": "Bureau of Reclamation",
   "DepartmentName": "Department of the Interior",
   "JobCategory": [
@@ -130,7 +134,6 @@
       "Relocation": "False",
       "HiringPath": [
         "public",
-        "interchange",
         "fed",
         "internal",
         "vet",
