@@ -160,6 +160,10 @@
 .usajobs-joa-bground {
   @include media($M) {
     background-color: $color-gray-lightest;
+
+    + .usajobs-footer--v2 .usa-footer-return-to-top {
+      background-color: $color-gray-lightest;
+    }
   }
 }
 
@@ -251,5 +255,18 @@
     a:visited {
       color: $color-white;
     }
+  }
+}
+
+.usajobs-joa--v1-5__accordion-content .usajobs-joa__read-more-content {
+  @include media($M) {
+    &[aria-expanded=false],
+    &[aria-expanded=true] {
+      background-image: none;
+    }
+  }
+
+  > ul {
+    margin-top: 0;
   }
 }

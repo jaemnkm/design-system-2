@@ -62,7 +62,7 @@ lead: Components for revealing more content.
 
     <h5>Implementation</h5>
     <ul class="usa-content-list">
-      <li>The trigger button should be pushed down by page by the content it reveals.</li> 
+      <li>The trigger button should be pushed down by page by the content it reveals.</li>
       <li>If there are not N more items to show, where N is 10 or 25, then the trigger button does not appear as there are no more items to reveal.</li>
       <li>The browser should scroll down to the first item in the list.</li>
     </ul>
@@ -97,7 +97,7 @@ lead: Components for revealing more content.
     <h4 class="usa-heading">Usability</h4>
     <h5>When to use</h5>
     <ul class="usa-content-list">
-      <li>Use this pattern to allow the visibility of the content should be toggled.</li>
+      <li>Use this pattern to allow the visibility of the content to be toggled.</li>
     </ul>
 
     <h5>Implementation</h5>
@@ -107,3 +107,33 @@ lead: Components for revealing more content.
   </div>
 </div>
 
+<div class="preview">
+  <h6 class="usa-heading-alt">Read more/close with faded text</h6>
+  <div class="usajobs-read-more" data-object="reveal-more">
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </p>
+    <p>
+      More Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </p>
+  </div>
+</div>
+
+<div class="usa-accordion-bordered usa-accordion-docs">
+  <button class="usa-button-unstyled usa-accordion-button"
+      aria-expanded="true" aria-controls="collapsible-0">
+    Documentation
+  </button>
+  <div id="collapsible-0" aria-hidden="false" class="usa-accordion-content">
+    <h4 class="usa-heading">Usability</h4>
+    <h5>When to use</h5>
+    <ul class="usa-content-list">
+      <li>Use this pattern to show some of the content and indicate to the user that there is more content to be revealed.</li>
+    </ul>
+
+    <h5>Implementation</h5>
+    <ul class="usa-content-list">
+      <li>Depends upon <a href="http://jedfoster.com/Readmore.js/">Readmore.js</a>.</li>
+    </ul>
+  </div>
+</div>
