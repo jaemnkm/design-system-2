@@ -30,5 +30,15 @@
         </a>
       </li>
     </ul>
+    {% if job.UserArea.Details.Benefits %}
+    <!--
+      Ideally, agencies will stop adding benefits text and let the text above suffice.
+      But for now, we'll include what they provide in a Read more pattern.
+    -->
+    <div class="usajobs-read-more usajobs-joa__read-more-content" data-object="reveal-more" data-behavior="joa-read-more">
+      <p>
+        {{ job.UserArea.Details.Benefits }}
+      </p>
+    {% endif %}
   </div>
 </div>
