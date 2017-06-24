@@ -13,7 +13,7 @@
         </h5>
         <p class="usajobs-joa-summary__value">
           <i class="fa fa-clock-o usajobs-joa-summary__closing-clock--is-warning"></i>
-          <span itemprop="datePosted">{{ job.PublicationStartDate }}</span> to {{ job.ApplicationCloseDate }}
+          <span itemprop="datePosted">{{ job.PublicationStartDate }}</span> to <span itemprop="validThrough">{{ job.ApplicationCloseDate }}</span>
         </p>
         {% if job.ApplicationClosingType == 'application-cut-off' %}
         <div class="usajobs-joa-closing-types usajobs-joa-closing-types--cut-off">

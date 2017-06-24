@@ -203,6 +203,9 @@ html {
   .usajobs-joa-bground {
     background-color: #f1f1f1;
   }
+  .usajobs-joa-bground + .usajobs-footer--v2 .usa-footer-return-to-top {
+    background-color: #f1f1f1;
+  }
 }
 
 .usajobs-joa-section__help {
@@ -319,4 +322,13 @@ html {
   color: #ffffff;
 }
 
+@media screen and (min-width: 37.5em) {
+  .usajobs-joa--v1-5__accordion-content .usajobs-joa__read-more-content[aria-expanded=false], .usajobs-joa--v1-5__accordion-content .usajobs-joa__read-more-content[aria-expanded=true] {
+    background-image: none;
+  }
+}
+
+.usajobs-joa--v1-5__accordion-content .usajobs-joa__read-more-content > ul {
+  margin-top: 0;
+}
 /*# sourceMappingURL=joa.css.map */
