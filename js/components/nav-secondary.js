@@ -1,6 +1,7 @@
 // Secondary Nav
 
 var $nav_secondary = $('[data-object="nav-secondary"]'),
+  $fixed_nav = $('[data-behavior="is-fixed-nav"]'),
 
   // The majority of this function is used courtesty of
   // Brad Frost's responsive design patterns:
@@ -89,3 +90,33 @@ $nav_secondary.on('nav-secondary.open', function(event, opts) {
 $nav_secondary.on('nav-secondary.close', function(event, opts) {
   opts.target.attr('data-state', 'is-closed');
 });
+
+$nav_secondary.on('nav-secondary.make-active', function(event, opts) {
+  var $siblings = opts.object.find('.is-active');
+
+  $siblings.removeClass('is-active');
+  opts.el.addClass('is-active');
+});
+
+$nav_secondary.on('nav-secondary.scroll-to-top', function(event, opts) {
+  var $target = $('body').find(opts.el.attr('href')),
+    offset_height = 0;
+
+  if (opts.object.attr('data-behavior') === 'is-fixed-nav') {
+    if ($(window).scrollTop() < opts.object.height()) {
+      // Determining this height has proven to be illogical. it's not the offeset.top value. Why not?
+      offset_height = (opts.object.height() * 2.5) + 15;
+    } else {
+      offset_height = opts.object.height();
+    }
+  }
+
+  $('html, body').animate({
+    scrollTop: $target.offset().top - offset_height
+  });
+});
+
+// Fixed secondary nav on scroll
+$(window).scroll($.throttle(250, function () {
+  $fixed_nav.toggleClass('is-fixed', $(this).scrollTop() > $fixed_nav.height());
+}));

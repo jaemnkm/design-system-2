@@ -23557,6 +23557,14 @@ html {
   .usajobs-joa-nav {
     display: block;
   }
+  .usajobs-joa-nav.is-fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 900;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  }
 }
 
 .usajobs-joa-nav__body {
@@ -23567,7 +23575,7 @@ html {
 @media screen and (min-width: 48em) {
   .usajobs-joa-nav__body {
     padding-left: 3rem;
-    padding-right: 3rem;
+    padding-right: 0;
   }
 }
 

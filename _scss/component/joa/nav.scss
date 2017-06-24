@@ -8,6 +8,15 @@
 
   @include media($M) {
     display: block;
+
+    &.is-fixed {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: $layer-panel;
+      @include boxShadow(2);
+    }
   }
 
   &__body {
@@ -16,7 +25,7 @@
 
     @include media($ML) {
       padding-left: $size-M;
-      padding-right: $size-M;
+      padding-right: 0;
     }
   }
 
