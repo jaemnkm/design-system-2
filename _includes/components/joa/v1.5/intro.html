@@ -1,130 +1,96 @@
 <div class="usajobs-joa-intro usajobs-joa-intro--v1-5">
-  <div class="usajobs-joa-summary usajobs-joa-summary--v1-5">
-    <a href="http://usajobs.github.io/Help/how-to/job-announcement/overview/" class="usajobs-joa-section__help">
-      <span class="fa fa-question-circle"></span> Help
-    </a>
-    <h2 id="overview" class="usajobs-joa-summary--v1-5__header">Overview</h2>
-    <ul class="usajobs-joa-summary__list">
-      <li class="usajobs-joa-summary__item">
-        <h5 class="usajobs-joa-summary__label">
-          <span rel="tooltip" title="The open date indicates when the job was posted and the closing date when the job will close.">
-            Open &amp; closing dates
-          </span>
-        </h5>
-        <p class="usajobs-joa-summary__value">
-          <i class="fa fa-clock-o usajobs-joa-summary__closing-clock--is-warning"></i>
-          <span itemprop="datePosted">{{ job.PublicationStartDate }}</span> to <span itemprop="validThrough">{{ job.ApplicationCloseDate }}</span>
-        </p>
-        {% if job.ApplicationClosingType == 'application-cut-off' %}
-        <div class="usajobs-joa-closing-types usajobs-joa-closing-types--cut-off">
-          This job will close when we have received <strong>{{ job.ApplicationCutOff }} applications</strong> which may be sooner then the closing date. <a href="http://usajobs.github.io/Help/how-to/job-announcement/closing-types/#applicant-cut-off" target="_blank">Learn more</a>
-        </div>
-        {% endif %}
-      </li>
-      <li class="usajobs-joa-summary__item">
-        <h5 class="usajobs-joa-summary__label">
-          <span rel="tooltip" title="Services are how the Federal Government describes categories of jobs that provide different options and benefits to the future employee.">
-            Service
-          </span>
-        </h5>
-        <p class="usajobs-joa-summary__value">
-          Competitive
-        </p>
-      </li>
-      <li class="usajobs-joa-summary__item">
-        <h5 class="usajobs-joa-summary__label">
-          <span rel="tooltip" title="A grade refers to the General Schedule (GS) pay scale – it’s the pay level for the job.">
-            Pay scale &amp; grade
-          </span>
-        </h5>
-        <p class="usajobs-joa-summary__grades">
-          {{ job.JobGrade.first.Code }}
-          {% if job.UserArea.Details.LowGrade == job.UserArea.Details.HighGrade %}
-            {{ job.UserArea.Details.LowGrade }}
-          {% else %}
-          {{ job.UserArea.Details.LowGrade }} - {{ job.UserArea.Details.HighGrade }}
+  <div class="usajobs-joa-intro--v1-5__container">
+    <div class="usajobs-joa-overview">
+      <a href="http://usajobs.github.io/Help/how-to/job-announcement/overview/" class="usajobs-joa-section__help">
+        <span class="fa fa-question-circle"></span> Help
+      </a>
+      <h2 id="overview" class="usajobs-joa-overview__header">Overview</h2>
+      <ul class="usajobs-joa-summary__list">
+        <li class="usajobs-joa-summary__item">
+          <h5 class="usajobs-joa-summary__label">
+            <span rel="tooltip" title="The open date indicates when the job was posted and the closing date when the job will close.">
+              Open &amp; closing dates
+            </span>
+          </h5>
+          <p class="usajobs-joa-summary__value">
+            <i class="fa fa-clock-o usajobs-joa-summary__closing-clock--is-warning"></i>
+            <span itemprop="datePosted">{{ job.PublicationStartDate }}</span> to <span itemprop="validThrough">{{ job.ApplicationCloseDate }}</span>
+          </p>
+          {% if job.ApplicationClosingType == 'application-cut-off' %}
+          <div class="usajobs-joa-closing-types usajobs-joa-closing-types--cut-off">
+            This job will close when we have received <strong>{{ job.ApplicationCutOff }} applications</strong> which may be sooner then the closing date. <a href="http://usajobs.github.io/Help/how-to/job-announcement/closing-types/#applicant-cut-off" target="_blank">Learn more</a>
+          </div>
           {% endif %}
-        </p>
-      </li>
-      <li class="usajobs-joa-summary__item">
-        <h5 class="usajobs-joa-summary__label">
-          <span rel="tooltip" title="The salary range for the position.">
-            Salary
-          </span>
-        </h5>
-        <p class="usajobs-joa-summary__salary">
-          <span itemprop="baseSalary">${{ job.PositionRemuneration.first.MinimumRange }}</span> -
-          ${{ job.PositionRemuneration.first.MaximumRange}} {{job.PositionRemuneration.first.RateIntervalCode }}
-        </p>
-      </li>
-      <li class="usajobs-joa-summary__item">
-        <h5 class="usajobs-joa-summary__label">
-          <span rel="tooltip" title="The Federal Government employs permanent and temporary employees.">
-            Appointment type
-          </span>
-        </h5>
-        <p class="usajobs-joa-summary__value">
-          {{ job.PositionOfferingType.first.Name }}
-        </p>
-      </li>
-      <li class="usajobs-joa-summary__item">
-        <h5 class="usajobs-joa-summary__label">
-          <span rel="tooltip" title="The hours of a day (daily tour of duty) and the days of an administrative workweek (weekly tour of duty) that are scheduled in advance and during which an employee is required to perform work on a regularly recurring basis.">
-            Work schedule
-          </span>
-        </h5>
-        <p class="usajobs-joa-summary__value" itemprop="employmentType">
-          {{ job.PositionSchedule.first.Name }}
-        </p>
-      </li>
-    </ul>
-
-    {% include components/joa/v1.5/locations.html %}
-
-    <div class="usajobs-joa-sub-section">
-      <div id="relocationauthorized" class="usajobs-joa-sub-section__container">
-        <h5 class="usajobs-joa-sub-section__small-title">
-          <span rel="tooltip" title="Whether or not you will be reimbursed for relocating expenses.">
-            Relocation authorized
-          </span>
-        </h5>
-        <p class="usajobs-joa-sub-section__text">
-          {% if job.UserArea.Details.Relocation %}
-          Yes
-          {% else %}
-          No
+        </li>
+        <li class="usajobs-joa-summary__item">
+          <h5 class="usajobs-joa-summary__label">
+            <span rel="tooltip" title="Services are how the Federal Government describes categories of jobs that provide different options and benefits to the future employee.">
+              Service
+            </span>
+          </h5>
+          <p class="usajobs-joa-summary__value">
+            Competitive
+          </p>
+        </li>
+        <li class="usajobs-joa-summary__item">
+          <h5 class="usajobs-joa-summary__label">
+            <span rel="tooltip" title="A grade refers to the General Schedule (GS) pay scale – it’s the pay level for the job.">
+              Pay scale &amp; grade
+            </span>
+          </h5>
+          <p class="usajobs-joa-summary__grades">
+            {{ job.JobGrade.first.Code }}
+            {% if job.UserArea.Details.LowGrade == job.UserArea.Details.HighGrade %}
+              {{ job.UserArea.Details.LowGrade }}
+            {% else %}
+            {{ job.UserArea.Details.LowGrade }} - {{ job.UserArea.Details.HighGrade }}
+            {% endif %}
+          </p>
+        </li>
+        <li class="usajobs-joa-summary__item">
+          <h5 class="usajobs-joa-summary__label">
+            <span rel="tooltip" title="The salary range for the position.">
+              Salary
+            </span>
+          </h5>
+          <p class="usajobs-joa-summary__salary">
+            <span itemprop="baseSalary">${{ job.PositionRemuneration.first.MinimumRange }}</span> -
+            ${{ job.PositionRemuneration.first.MaximumRange}} {{job.PositionRemuneration.first.RateIntervalCode }}
+          </p>
+        </li>
+        <li class="usajobs-joa-summary__item">
+          <h5 class="usajobs-joa-summary__label">
+            <span rel="tooltip" title="The Federal Government employs permanent and temporary employees.">
+              Appointment type
+            </span>
+          </h5>
+          <p class="usajobs-joa-summary__value">
+            {{ job.PositionOfferingType.first.Name }}
+          {% if job.PositionOfferingType.first.OverrideText %}
+            - {{ job.PositionOfferingType.first.OverrideText }}
           {% endif %}
-        </p>
-      </div>
-
-      <div id="telework-eligble" class="usajobs-joa-sub-section__container">
-        <h5 class="usajobs-joa-sub-section__small-title">
-          <span rel="tooltip" title="Whether or not you may be able to work from home on some days.">
-            Telework eligible
-          </span>
-        </h5>
-        <p class="usajobs-joa-sub-section__text">
-          Yes
-        </p>
-      </div>
-    </div>
-
-    <h3>Summary</h3>
-    <div itemprop="description">
-      <p>
-        {{ job.UserArea.Details.JobSummary }}
-      </p>
-
-      <ul>
-        <li>Moving expenses are NOT authorized, based on a determination that a move is not in the Government's interest.</li>
-        <li>Recruitment relocation and/or retention incentives MAY be offered for this position.</li>
-        <li>This position has been designated as a primary/rigorous and is eligible for Law Enforcement (LEO) retirement coverage under the provisions of title 5 USC 8336(c) and 8412(d) by DoD memorandum dated 19 August 2010. The maximum entry age for positions covered under this retirement is 37 years old. Retirement from this position is mandatory at age 57 with 20 years of LEO service. The maximum entry age may be waived under certain circumstances. Individuals who are past the maximum entry age limit, but previously served in a primary position, MAY be reinstated.</li>
+          </p>
+        </li>
+        <li class="usajobs-joa-summary__item">
+          <h5 class="usajobs-joa-summary__label">
+            <span rel="tooltip" title="The hours of a day (daily tour of duty) and the days of an administrative workweek (weekly tour of duty) that are scheduled in advance and during which an employee is required to perform work on a regularly recurring basis.">
+              Work schedule
+            </span>
+          </h5>
+          <p class="usajobs-joa-summary__value" itemprop="employmentType">
+            {{ job.PositionSchedule.first.Name }}
+          </p>
+        </li>
       </ul>
     </div>
+    {% include components/joa/v1.5/locations.html %}
   </div>
 
   <aside class="usajobs-joa-aside">
     <div id="hiring-paths" class="usajobs-joa-intro-hiring-paths usajobs-joa--v1-5__intro-hiring-paths">
+      <a href="http://usajobs.github.io/Help/how-to/job-announcement/this-job-is-open-to/" class="usajobs-joa-section__help">
+        <span class="fa fa-question-circle"></span> Help
+      </a>
       <h3 class="usajobs-joa-intro-hiring-paths__section-title">This job is open to</h3>
       <ul class="usajobs-joa-intro-hiring-paths__list">
         {% for hiring_path in job.UserArea.Details.HiringPath %}
@@ -373,12 +339,12 @@
     <!-- In production we'd need to look up the eligibility of the second announcement.
          For the prototype I'm just hardcoding this to open to the public -->
     <div class="usajobs-joa-intro-second-announcement">
+      <a href="http://usajobs.github.io/Help/how-to/job-announcement/second-announcement/" class="usajobs-joa-section__help">
+        <span class="fa fa-question-circle"></span> Help
+      </a>
       <ul class="usajobs-joa-intro-hiring-paths__list">
         <li class="usajobs-joa-intro-hiring-paths__item">
-          <a href="http://usajobs.github.io/Help/how-to/job-announcement/second-announcement/" class="usajobs-joa-section__help">
-            <span class="fa fa-question-circle"></span> Help
-          </a>
-          <a href="http://usajobs.github.io/Help/working-in-government/unique-hiring-paths/public/" class="usajobs-joa-intro-hiring-paths__link" target="_blank">
+          <a href="{{ job.ApplyURI[1] }}" class="usajobs-joa-intro-hiring-paths__link" target="_blank">
             <div class="usajobs-joa-intro-hiring-paths__figure">
               <div class="usajobs-joa-intro-hiring-paths__icon public">
                 <span class="fa fa-group"></span>

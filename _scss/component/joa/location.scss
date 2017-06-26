@@ -116,6 +116,24 @@
 }
 
 .usajobs-joa-locations--v1-5 {
+  position: relative;
+  margin-bottom: $size-default;
+  background-color: $color-white;
+
+  @include media($M) {
+    padding: $size-default;
+    @include boxShadow(1);
+  }
+
+  @include media($L) {
+    padding: $size-M;
+  }
+
+  &__header {
+    margin-top: 0;
+    color: $color-primary-alt-darkest;
+  }
+
   &__commuting-distance {
     margin-top: 0;
 
