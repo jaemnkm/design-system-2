@@ -369,6 +369,32 @@
         {% endfor %}
       </ul>
     </div>
+    {% if job.ApplyURI.size > 1 %}
+    <!-- In production we'd need to look up the eligibility of the second announcement.
+         For the prototype I'm just hardcoding this to open to the public -->
+    <div class="usajobs-joa-intro-second-announcement">
+      <ul class="usajobs-joa-intro-hiring-paths__list">
+        <li class="usajobs-joa-intro-hiring-paths__item">
+          <a href="http://usajobs.github.io/Help/how-to/job-announcement/second-announcement/" class="usajobs-joa-section__help">
+            <span class="fa fa-question-circle"></span> Help
+          </a>
+          <a href="http://usajobs.github.io/Help/working-in-government/unique-hiring-paths/public/" class="usajobs-joa-intro-hiring-paths__link" target="_blank">
+            <div class="usajobs-joa-intro-hiring-paths__figure">
+              <div class="usajobs-joa-intro-hiring-paths__icon public">
+                <span class="fa fa-group"></span>
+              </div>
+            </div>
+            <div class="usajobs-joa-intro-hiring-paths__body">
+              This position is also being announced for
+              <span class="usajobs-joa-intro-hiring-paths__title">
+                The public
+              </span>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </div>
+    {% endif %}
 
     {% include components/joa/v1.5/actions.html %}
   </aside>
