@@ -695,22 +695,25 @@ lead: A main function of USAJOBS is to provide a clear and effective search. Our
           <li>Bioinformatics Scientists</li>
           <li>Bioinformatics Technicians</li>
           <li>Business Intelligence Specialist</li>
-          <li>Chief Data Officer</li>
           <li>Computer and Information Research Scientists</li>
+          <li>Computer and Information System Managers</li>
           <li>Data Analyst</li>
-          <li>Data Engineer</li>
+          <li>Data Engineers</li>
+          <li>Data Warehousing Specialists</li>
           <li>Economic Research Analyst</li>
           <li>Enterprise Data Manager</li>
-          <li>Health Insurance Analyst</li>
+          <li>Health Data Analyst</li>
           <li>IT Specialist</li>
-          <li>Management and Program Analyst </li>
-          <li>Mathematical Analyst</li>
+          <li>Management Analysts</li>
+          <li>Mathematical Technicians</li>
           <li>Operations Research Analyst</li>
           <li>Policy Advisor</li>
           <li>Procurement Analyst</li>
           <li>Public Health Analyst</li>
           <li>Research Analyst</li>
-          <li>Social Science Analyst</li>
+          <li>Research Assistants, Social Science</li>
+          <li>Senior Data Analyst/Programmer</li>
+          <li>Statistical Assistants</li>
         </ol>
         <h6>Data Science: Departments &amp; Agencies</h6>
         <ol class="usa-content-list">
