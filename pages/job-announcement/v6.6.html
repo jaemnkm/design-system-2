@@ -12,13 +12,13 @@ control-number: '469480700'
      xmlns:hr="http://www.hr-xml.org/3"
      xmlns:oa="http://www.openapplications.org/oagis/9" class="usajobs-joa-bground">
   <div itemscope="" itemtype="http://schema.org/JobPosting">
-    {% include components/joa/v1.3/banner.html %}
+    {% include components/joa/v1.5/banner.html %}
     {% include components/joa/v1.5/nav.html %}
     <section class="usajobs-shell usajobs-joa--v1-5__shell">
       <section class="usajobs-canvas">
         <div class="usajobs-content-gutter">
           {% include components/joa/v1.5/intro.html %}
-          <main class="usajobs-content-well" id="main-content" role="main" aria-label="Main Job annoucement content">
+          <main class="usajobs-content-well" id="main-content" role="main" aria-label="Main Job announcement content">
             <div class="usa-accordion" data-object="joa-accordion">
               <ul class="usa-unstyled-list">
                 <li>{% include components/joa/v1.5/duties.html %}</li>
@@ -38,4 +38,5 @@ control-number: '469480700'
     </section>
   </div>
 </div>
+{% include components/joa/v1.5/agency-modal.html %}
 {% include components/joa/v1.5/fair-and-transparent.html %}

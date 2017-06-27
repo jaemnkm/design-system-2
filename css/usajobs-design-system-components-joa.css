@@ -7210,4 +7210,25 @@ html {
 .usajobs-joa .usajobs-joa-agency--v1-5 .fa {
   color: #0071bc;
 }
+
+.usajobs-joa-agency-modal__sub-title {
+  font-size: 24px;
+  margin: 0;
+}
+
+.usajobs-joa-agency-modal__lead {
+  margin-top: 0;
+}
+
+.usajobs-joa-agency-modal__contact-info .usajobs-joa-agency--v1-5 {
+  background-color: #ffffff;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.usajobs-joa-agency-modal__url {
+  padding: 1.5rem;
+  background-color: #dce4ef;
+  text-align: left;
+}
 /*# sourceMappingURL=usajobs-design-system-components-joa.css.map */
