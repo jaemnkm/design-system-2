@@ -167,35 +167,6 @@
   }
 }
 
-.usajobs-joa-section {
-  &__help {
-    position: absolute;
-    top: $size-base;
-    right: $size-base;
-    font-size: $small-font-size;
-
-    @include media($M) {
-      top: $size-default;
-      right: $size-default;
-    }
-  }
-}
-
-.usajobs-joa-sub-section {
-  @include row();
-
-  &__container {
-    @include media($M) {
-      @include span-columns(3, 6);
-    }
-  }
-}
-
-// Fighting Standards specificity
-.usajobs-joa-sub-section .usajobs-joa-sub-section__text {
-  margin-top: 0;
-}
-
 .usajobs-joa--v1-5 {
   &__shell {
     @include media($M) {
