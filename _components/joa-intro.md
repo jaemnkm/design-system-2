@@ -12,7 +12,7 @@ control-number: '468841900'
   Under Review
 </a>
 
-<div class="preview">
+<div class="preview" style="background-color: #f1f1f1;">
   {% include components/joa/v1.5/intro.html %}
 </div>
 
@@ -52,6 +52,14 @@ control-number: '468841900'
       <li>Closing time: You must complete this application process and submit any required documents by xx:xx pm. Eastern Time on the closing date of this announcement.</li>
       <li>Open continuous: This job is open continuously and will remain open for an extended period of time. We wil fil jobs as they become available. <a href="http://usajobs.github.io/Help/how-to/job-announcement/closing-types/#open-continuous">Learn more</a>.</li>
       <li>Applicant cut-off: This job will close when we have received <strong>[ApplicationCutOff #] applications</strong> which may be sooner then the closing date. <a href="http://usajobs.github.io/Help/how-to/job-announcement/closing-types/#applicant-cut-off">Learn more</a>. (This variation is shown above.)</li>
+    </ul>
+
+    <h5>Second announcement type</h5>
+    <p>
+      If a second announcement is also open to different set of hiring paths then that announcement is indicated below the "This job is open to" section.
+    </p>
+    <ul class="usa-content-list">
+      <li>If the second announcement is open to multiple hiring paths then the top most in the list is selected. For example, if a job is open to only merit promotion eligible Federal Employees and is currently being displayed and that same job is open to the public and an addition hiring path the second announcement link would indicate the open to the public icon and text. The ordering for selection is as shown above.</li>
     </ul>
 
 

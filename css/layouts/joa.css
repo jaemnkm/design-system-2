@@ -208,46 +208,6 @@ html {
   }
 }
 
-.usajobs-joa-section__help {
-  position: absolute;
-  top: 0.5rem;
-  right: 0.5rem;
-  font-size: 1.4rem;
-}
-
-@media screen and (min-width: 37.5em) {
-  .usajobs-joa-section__help {
-    top: 1.5rem;
-    right: 1.5rem;
-  }
-}
-
-.usajobs-joa-sub-section {
-  display: block;
-}
-
-.usajobs-joa-sub-section::after {
-  clear: both;
-  content: "";
-  display: block;
-}
-
-@media screen and (min-width: 37.5em) {
-  .usajobs-joa-sub-section__container {
-    float: left;
-    display: block;
-    margin-right: 4.8291588071%;
-    width: 47.5854205965%;
-  }
-  .usajobs-joa-sub-section__container:last-child {
-    margin-right: 0;
-  }
-}
-
-.usajobs-joa-sub-section .usajobs-joa-sub-section__text {
-  margin-top: 0;
-}
-
 @media screen and (min-width: 37.5em) {
   .usajobs-joa--v1-5__shell {
     margin-top: 3rem;

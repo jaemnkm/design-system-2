@@ -130,7 +130,7 @@ $body-padding: $size-default;
     @include UHPIcons();
   }
 
-  &__link {
+  &__item > &__link {
     width: 100%;
     padding: $size-S 0;
     color: $color-base;

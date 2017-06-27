@@ -66,6 +66,12 @@
     color: $color-primary;
   }
 
+  &__reveal-link {
+    margin: $size-S 0 $size-default;
+    background-color: $color-white;
+    text-align: left;
+  }
+
   &__more-locations {
     padding: $size-default 0;
 
