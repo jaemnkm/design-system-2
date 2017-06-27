@@ -41,6 +41,17 @@
       <p>NOTE: Only degrees from an accredited college or university recognized by the Department of Education are acceptable to meet positive education requirements or to substitute education for experience.&nbsp; For additional information, please go to the Office of Personnel Management (OPM) and U.S. Department of Education websites at: <a href="http://www.opm.gov/qualifications">http://www.opm.gov/qualifications</a> and <a href="https://www.ed.gov/admins/finaid/accred/index.html">https://www.ed.gov/admins/finaid/accred/index.html</a>. Foreign Education: <a href="http://www2.ed.gov/about/offices/list/ous/international/usnei/us/edlite-visitus-forrecog.html">Click Here</a></p>
     </div>
 
+    {% if job.PreviewQuestionnaireURL %}
+    <div id="preview-questionnaire" class="usajobs-joa-preview-questionnaire">
+      <a href="{{ job.PreviewQuestionnaireURL }}" class="usa-button usa-button-outline usajobs-joa-preview-questionnaire__link">
+        Preview Job Questionnaire
+      </a>
+      <p class="usajobs-joa-preview-questionnaire__recommendation">
+        Make sure your resume includes detailed information to support your qualifications and answers to the job questionnaire.
+      </p>
+    </div>
+    {% endif %}
+
     <div id="additional-information">
       <h3>Additional information</h3>
       <div class="usajobs-read-more usajobs-joa__read-more-content" data-object="reveal-more" data-behavior="joa-read-more">

@@ -332,4 +332,13 @@ html {
 .usajobs-joa--v1-5__accordion-content .usajobs-joa__read-more-content > ul {
   margin-top: 0;
 }
+
+.usajobs-joa--v1-5__accordion-content .usajobs-joa-preview-questionnaire {
+  margin: 3rem 0;
+}
+
+.usajobs-joa--v1-5__accordion-content .usajobs-joa-preview-questionnaire__recommendation {
+  font-size: 1.4rem;
+  font-style: italic;
+}
 /*# sourceMappingURL=joa.css.map */
