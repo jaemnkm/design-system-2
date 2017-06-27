@@ -5,7 +5,7 @@ var $reveal = $('[data-object="reveal"]'),
       speed: 500,
       moreLink: '<a class="usajobs-read-more__link" href="#">Read more</a>',
       lessLink: '<a class="usajobs-read-more__link" href="#">Close</a>',
-      heightMargin: 17,// Add the class 'transitioning' before toggling begins.
+      heightMargin: 17, // Add the class 'transitioning' before toggling begins.
       beforeToggle: function(trigger, element) {
         element.addClass('transitioning');
       },

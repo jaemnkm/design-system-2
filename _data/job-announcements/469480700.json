@@ -61,6 +61,18 @@
       "Code": "1740"
     }
   ],
+  "JobOccupation": [
+    {
+      "Name": "Consultants, Educational",
+      "Code": "Consultants%2C+Educational",
+      "Count": "1"
+    },
+    {
+      "Name": "Health Educators",
+      "Code": "Health+Educators",
+      "Count": "2"
+    }
+  ],
   "JobGrade": [
     {
       "Code": "GL"

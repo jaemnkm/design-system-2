@@ -23546,6 +23546,7 @@ html {
 
 .usajobs-joa-nav {
   display: none;
+  margin-bottom: 0;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 }
 
@@ -30629,6 +30630,86 @@ html {
 
 .usajobs-joa .usajobs-joa-agency--v1-5 .fa {
   color: #0071bc;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *::after, *::before {
+  box-sizing: inherit;
+}
+
+.usajobs-assistive-text {
+  position: absolute !important;
+  margin: -1px !important;
+  border: 0 !important;
+  padding: 0 !important;
+  width: 1px !important;
+  height: 1px !important;
+  overflow: hidden !important;
+  clip: rect(0 0 0 0) !important;
+}
+
+.usajobs-joa-occupations {
+  position: relative;
+  padding: 1.5rem;
+  background-color: #4773aa;
+}
+
+@media screen and (min-width: 37.5em) {
+  .usajobs-joa-occupations {
+    margin: 0 1.5rem 1.5rem;
+  }
+}
+
+@media screen and (min-width: 48em) {
+  .usajobs-joa-occupations {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+.usajobs-joa-occupations__title, .usajobs-joa-occupations__series {
+  color: #ffffff;
+}
+
+.usajobs-joa-occupations__title:hover, .usajobs-joa-occupations__title:active, .usajobs-joa-occupations__title:visited, .usajobs-joa-occupations__series:hover, .usajobs-joa-occupations__series:active, .usajobs-joa-occupations__series:visited {
+  color: #ffffff;
+}
+
+.usajobs-joa-occupations__list {
+  display: block;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.usajobs-joa-occupations__list > li {
+  display: list-item;
+  margin: 0;
+}
+
+.usajobs-joa-occupations__list > li:before {
+  display: none;
+}
+
+.usajobs-joa-occupations__list > li:after {
+  display: none;
+}
+
+@media screen and (min-width: 30em) {
+  .usajobs-joa-occupations__list {
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+  }
+}
+
+@media screen and (min-width: 30em) {
+  .usajobs-joa-occupations__item {
+    margin-right: 1rem;
+  }
 }
 
 html {
