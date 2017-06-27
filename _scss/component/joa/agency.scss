@@ -53,3 +53,26 @@
     color: $color-primary;
   }
 }
+
+.usajobs-joa-agency-modal {
+  &__sub-title {
+    font-size: $h3-font-size;
+    margin: 0;
+  }
+
+  &__lead {
+    margin-top: 0;
+  }
+
+  &__contact-info .usajobs-joa-agency--v1-5 {
+    background-color: $color-white;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  &__url {
+    padding: $size-default;
+    background-color: $color-gray-cool-light;
+    text-align: left;
+  }
+}

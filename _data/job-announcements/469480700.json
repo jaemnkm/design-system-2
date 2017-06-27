@@ -54,6 +54,8 @@
   "ApplicationClosingType": "application-cut-off",
   "ApplicationCutOff": "200",
   "OrganizationName": "Field Operating Offices of the Office of the Secretary of the Army",
+  "OrganizationDetails": "The U.S. Army’s mission is to fight and win our Nation’s wars by providing prompt, sustained land dominance across the full range of military operations and spectrum of conflict in support of combatant commanders. We do this by: Executing Title 10 and Title 32 United States Code directives, to include organizing, equipping, and training forces for the conduct of prompt and sustained combat operations on land. Accomplishing missions assigned by the President, Secretary of Defense and combatant commanders, and Transforming for the future.",
+  "OrganizationURL": "https://www.army.mil/info/organization/",
   "DepartmentName": "Department of the Army",
   "JobCategory": [
     {
