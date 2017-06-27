@@ -250,6 +250,7 @@ html {
 
 @media screen and (min-width: 37.5em) {
   .usajobs-joa--v1-5__shell {
+    margin-top: 3rem;
     background-color: #f1f1f1;
   }
 }

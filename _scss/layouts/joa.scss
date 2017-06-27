@@ -199,6 +199,7 @@
 .usajobs-joa--v1-5 {
   &__shell {
     @include media($M) {
+      margin-top: $size-M;
       background-color: $color-gray-lightest;
     }
   }

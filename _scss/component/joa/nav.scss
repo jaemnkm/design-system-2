@@ -4,6 +4,7 @@
 
 .usajobs-joa-nav {
   display: none;
+  margin-bottom: 0;
   @include boxShadow(1);
 
   @include media($M) {

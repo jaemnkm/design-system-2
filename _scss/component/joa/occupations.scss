@@ -1,0 +1,43 @@
+// JOA - Occupations
+
+@import '../base-shared';
+
+.usajobs-joa-occupations {
+  position: relative;
+  padding: $size-default;
+  background-color: $color-cool-blue-light;
+
+  @include media($M) {
+    margin: 0 $size-default $size-default;
+  }
+
+  @include media($ML) {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  &__title,
+  &__series {
+    color: $color-white;
+
+    &:hover,
+    &:active,
+    &:visited {
+      color: $color-white;
+    }
+  }
+
+  &__list {
+    @include unstyledList();
+
+    @include media($SM) {
+      display: inline-flex;
+    }
+  }
+
+  &__item {
+    @include media($SM) {
+      margin-right: $size-S;
+    }
+  }
+}
