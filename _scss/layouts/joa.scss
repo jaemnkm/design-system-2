@@ -271,3 +271,12 @@
     margin-top: 0;
   }
 }
+
+.usajobs-joa--v1-5__accordion-content .usajobs-joa-preview-questionnaire {
+  margin: $size-M 0;
+
+  &__recommendation {
+    font-size: $small-font-size;
+    font-style: italic;
+  }
+}
