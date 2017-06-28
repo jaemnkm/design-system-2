@@ -157,7 +157,9 @@
         "disability",
         "mspouse",
         "peace"
-      ]
+      ],
+      "GOVT_SecurityClearanceRequired": "Public Trust- Background Investigation",
+      "GOVT_DrugTestRequired": "No"
     },
     "IsRadialSearch": false
   }

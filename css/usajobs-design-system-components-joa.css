@@ -7217,6 +7217,19 @@ html {
   color: #0071bc;
 }
 
+.usajobs-joa .usajobs-joa-agency--v1-5__learn-more {
+  clear: both;
+  display: block;
+  width: 100%;
+  padding: 1.5rem 0;
+}
+
+.usajobs-joa .usajobs-joa-agency--v1-5__learn-more::after {
+  clear: both;
+  content: "";
+  display: block;
+}
+
 .usajobs-joa-agency-modal__sub-title {
   font-size: 24px;
   margin: 0;
@@ -7236,5 +7249,9 @@ html {
   padding: 1.5rem;
   background-color: #dce4ef;
   text-align: left;
+}
+
+.usajobs-joa-agency-modal .usajobs-joa-agency--v1-5__learn-more {
+  display: none;
 }
 /*# sourceMappingURL=usajobs-design-system-components-joa.css.map */

@@ -52,6 +52,14 @@
   .fa {
     color: $color-primary;
   }
+
+  &__learn-more {
+    clear: both;
+    @include clearfix();
+    display: block;
+    width: 100%;
+    padding: $size-default 0;
+  }
 }
 
 .usajobs-joa-agency-modal {
@@ -74,5 +82,9 @@
     padding: $size-default;
     background-color: $color-gray-cool-light;
     text-align: left;
+  }
+
+  .usajobs-joa-agency--v1-5__learn-more {
+    display: none;
   }
 }

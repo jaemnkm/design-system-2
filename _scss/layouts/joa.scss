@@ -159,6 +159,7 @@
 
 .usajobs-joa-bground {
   @include media($M) {
+    padding-bottom: $size-M;
     background-color: $color-gray-lightest;
 
     + .usajobs-footer--v2 .usa-footer-return-to-top {
@@ -181,41 +182,6 @@
     }
   }
 
-  &__accordion-content {
-    position: relative;
-    padding-left: $size-default;
-    padding-right: $size-default;
-
-    @include media($M) {
-      margin: 0 $size-default $size-default;
-      padding: $size-default;
-      @include boxShadow(1);
-
-      &[aria-hidden=true] {
-        display: block !important;
-      }
-    }
-
-    @include media($ML) {
-      margin-left: 0;
-      margin-right: 0;
-    }
-
-    @include media($L) {
-      padding: $size-M;
-    }
-  }
-
-  &__section-header {
-    display: none;
-    margin-top: 0;
-    color: $color-primary-alt-darkest;
-
-    @include media($M) {
-      display: block;
-    }
-  }
-
   &__disclaimer-inset {
     padding: $size-default;
     background-color: $color-cool-blue-light;
@@ -227,27 +193,5 @@
     a:visited {
       color: $color-white;
     }
-  }
-}
-
-.usajobs-joa--v1-5__accordion-content .usajobs-joa__read-more-content {
-  @include media($M) {
-    &[aria-expanded=false],
-    &[aria-expanded=true] {
-      background-image: none;
-    }
-  }
-
-  > ul {
-    margin-top: 0;
-  }
-}
-
-.usajobs-joa--v1-5__accordion-content .usajobs-joa-preview-questionnaire {
-  margin: $size-M 0;
-
-  &__recommendation {
-    font-size: $small-font-size;
-    font-style: italic;
   }
 }

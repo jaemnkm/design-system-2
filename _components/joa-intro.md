@@ -59,7 +59,9 @@ control-number: '468841900'
       If a second announcement is also open to different set of hiring paths then that announcement is indicated below the "This job is open to" section.
     </p>
     <ul class="usa-content-list">
-      <li>If the second announcement is open to multiple hiring paths then the top most in the list is selected. For example, if a job is open to only merit promotion eligible Federal Employees and is currently being displayed and that same job is open to the public and an addition hiring path the second announcement link would indicate the open to the public icon and text. The ordering for selection is as shown above.</li>
+      <li>
+        If the second announcement is open to multiple hiring paths then the top most in the list is selected. For example, if a job is open to only merit promotion eligible Federal Employees and is currently being displayed and that same job is open to the public and an addition hiring path the second announcement link would indicate the open to the public icon and text. The ordering for selection is as shown above.
+      </li>
     </ul>
 
 
