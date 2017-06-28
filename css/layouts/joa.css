@@ -201,6 +201,7 @@ html {
 
 @media screen and (min-width: 37.5em) {
   .usajobs-joa-bground {
+    padding-bottom: 3rem;
     background-color: #f1f1f1;
   }
   .usajobs-joa-bground + .usajobs-footer--v2 .usa-footer-return-to-top {
@@ -228,48 +229,6 @@ html {
   }
 }
 
-.usajobs-joa--v1-5__accordion-content {
-  position: relative;
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
-}
-
-@media screen and (min-width: 37.5em) {
-  .usajobs-joa--v1-5__accordion-content {
-    margin: 0 1.5rem 1.5rem;
-    padding: 1.5rem;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-  }
-  .usajobs-joa--v1-5__accordion-content[aria-hidden=true] {
-    display: block !important;
-  }
-}
-
-@media screen and (min-width: 48em) {
-  .usajobs-joa--v1-5__accordion-content {
-    margin-left: 0;
-    margin-right: 0;
-  }
-}
-
-@media screen and (min-width: 62em) {
-  .usajobs-joa--v1-5__accordion-content {
-    padding: 3rem;
-  }
-}
-
-.usajobs-joa--v1-5__section-header {
-  display: none;
-  margin-top: 0;
-  color: #046b99;
-}
-
-@media screen and (min-width: 37.5em) {
-  .usajobs-joa--v1-5__section-header {
-    display: block;
-  }
-}
-
 .usajobs-joa--v1-5__disclaimer-inset {
   padding: 1.5rem;
   background-color: #4773aa;
@@ -281,24 +240,5 @@ html {
 .usajobs-joa--v1-5__disclaimer-inset a:hover,
 .usajobs-joa--v1-5__disclaimer-inset a:visited {
   color: #ffffff;
-}
-
-@media screen and (min-width: 37.5em) {
-  .usajobs-joa--v1-5__accordion-content .usajobs-joa__read-more-content[aria-expanded=false], .usajobs-joa--v1-5__accordion-content .usajobs-joa__read-more-content[aria-expanded=true] {
-    background-image: none;
-  }
-}
-
-.usajobs-joa--v1-5__accordion-content .usajobs-joa__read-more-content > ul {
-  margin-top: 0;
-}
-
-.usajobs-joa--v1-5__accordion-content .usajobs-joa-preview-questionnaire {
-  margin: 3rem 0;
-}
-
-.usajobs-joa--v1-5__accordion-content .usajobs-joa-preview-questionnaire__recommendation {
-  font-size: 1.4rem;
-  font-style: italic;
 }
 /*# sourceMappingURL=joa.css.map */

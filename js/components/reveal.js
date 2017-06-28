@@ -3,6 +3,7 @@ var $reveal = $('[data-object="reveal"]'),
   hideReadMoreContent = function () {
     $reveal_more.readmore({
       speed: 500,
+      collapsedHeight: 100,
       moreLink: '<a class="usajobs-read-more__link" href="#">Read more</a>',
       lessLink: '<a class="usajobs-read-more__link" href="#">Close</a>',
       heightMargin: 17, // Add the class 'transitioning' before toggling begins.
