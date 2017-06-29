@@ -30594,6 +30594,10 @@ html {
   }
 }
 
+.usajobs-joa-section p {
+  word-break: break-all;
+}
+
 .usajobs-joa-section__header {
   display: none;
   margin-top: 0;
