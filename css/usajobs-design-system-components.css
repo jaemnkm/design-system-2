@@ -50214,7 +50214,7 @@ html {
 
 .usajobs-tooltip {
   position: absolute;
-  text-align: center;
+  text-align: left;
   color: #ffffff;
   background: rgba(50, 58, 69, 0.9);
   z-index: 910;
