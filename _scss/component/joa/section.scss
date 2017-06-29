@@ -24,6 +24,10 @@
     padding: $size-M;
   }
 
+  p {
+    word-break: break-all;
+  }
+
   &__header {
     display: none;
     margin-top: 0;
