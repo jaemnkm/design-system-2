@@ -42,9 +42,10 @@ html {
   .usajobs-joa .usajobs-nav,
   .usajobs-joa .usajobs-site-header,
   .usajobs-joa .usajobs-joa-header,
-  .usajobs-joa .usajobs-joa-intro__agency-contact,
+  .usajobs-joa .usajobs-joa-prev-next,
   .usajobs-joa .usajobs-joa-actions,
-  .usajobs-joa .usa-footer {
+  .usajobs-joa .usa-footer,
+  .usajobs-joa .usajobs-joa__authenticity-note {
     display: none;
   }
   .usajobs-joa .usajobs-joa-accordion-trigger {
@@ -224,6 +225,39 @@ html {
   }
   .usajobs-joa #jobinfo1 {
     margin-bottom: 1rem;
+  }
+  .usajobs-joa--v1-5__shell .usajobs-joa--v1-5__accordion-trigger,
+  .usajobs-joa--v1-5__shell .usajobs-joa-occupations,
+  .usajobs-joa--v1-5__shell .usajobs-joa-preview-questionnaire {
+    display: none;
+  }
+  .usajobs-joa--v1-5__shell [data-object="reveal-more"][data-readmore][aria-expanded=false] {
+    display: block !important;
+  }
+  .usajobs-joa--v1-5__shell .usajobs-joa-overview,
+  .usajobs-joa--v1-5__shell .usajobs-joa-locations--v1-5,
+  .usajobs-joa--v1-5__shell .usajobs-joa-section {
+    margin: 0;
+    padding: 0;
+    box-shadow: none;
+  }
+  .usajobs-joa--v1-5__shell .usajobs-joa-overview__cta, .usajobs-joa--v1-5__shell .usajobs-joa-overview__help,
+  .usajobs-joa--v1-5__shell .usajobs-joa-locations--v1-5__cta,
+  .usajobs-joa--v1-5__shell .usajobs-joa-locations--v1-5__help,
+  .usajobs-joa--v1-5__shell .usajobs-joa-section__cta,
+  .usajobs-joa--v1-5__shell .usajobs-joa-section__help {
+    display: none;
+  }
+  .usajobs-joa--v1-5__shell .usajobs-joa-overview__header,
+  .usajobs-joa--v1-5__shell .usajobs-joa-locations--v1-5__header,
+  .usajobs-joa--v1-5__shell .usajobs-joa-section__header {
+    font-family: "Source Sans Pro", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+    font-weight: 700;
+    line-height: 1.3;
+    margin-bottom: 0.5rem;
+    margin-top: 1.5rem;
+    font-size: 24px;
+    font-size: 2.4rem;
   }
 }
 /*# sourceMappingURL=joa-print.css.map */
