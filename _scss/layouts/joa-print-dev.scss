@@ -11,9 +11,10 @@
   .usajobs-nav,
   .usajobs-site-header,
   .usajobs-joa-header,
-  .usajobs-joa-intro__agency-contact,
+  .usajobs-joa-prev-next,
   .usajobs-joa-actions,
-  .usa-footer {
+  .usa-footer,
+  .usajobs-joa__authenticity-note {
     display: none;
   }
 
@@ -151,5 +152,34 @@
 
   #jobinfo1 {
     margin-bottom: $size-S;
+  }
+}
+
+.usajobs-joa--v1-5__shell {
+  .usajobs-joa--v1-5__accordion-trigger,
+  .usajobs-joa-occupations,
+  .usajobs-joa-preview-questionnaire {
+    display: none;
+  }
+
+  [data-object="reveal-more"][data-readmore][aria-expanded=false] {
+    display: block !important;
+  }
+
+  .usajobs-joa-overview,
+  .usajobs-joa-locations--v1-5,
+  .usajobs-joa-section {
+    margin: 0;
+    padding: 0;
+    box-shadow: none;
+
+    &__cta,
+    &__help {
+      display: none;
+    }
+
+    &__header {
+      @include h3();
+    }
   }
 }
