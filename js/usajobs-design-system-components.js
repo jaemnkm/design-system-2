@@ -512,6 +512,26 @@ var $nav_secondary = $('[data-object="nav-secondary"]'),
     } else {
       $more_menu.css('display','none');
     }
+  },
+  updateActiveNav = function () {
+    var scroll_position = $(document).scrollTop(),
+      fixed_nav = $fixed_nav.length > 0,
+      $links = $nav_secondary.find('[data-behavior="nav-secondary.scroll-to-top nav-secondary.make-active"]');
+
+    if (fixed_nav) {
+      $links.each(function () {
+        var $link = $(this),
+          $section = $($link.attr('href'));
+
+        if ($section.position().top <= scroll_position &&
+            $section.position().top + $section.height() > scroll_position) {
+          $links.removeClass('is-active');
+          $link.addClass('is-active');
+        } else {
+          $link.removeClass('is-active');
+        }
+      });
+    }
   };
 
 // Toggle Secondary Nav items on load
@@ -568,8 +588,12 @@ $nav_secondary.on('nav-secondary.make-active', function(event, opts) {
 });
 
 $nav_secondary.on('nav-secondary.scroll-to-top', function(event, opts) {
-  var $target = $('body').find(opts.el.attr('href')),
+  var target = opts.el.attr('href'),
+//    $target = $('body').find(opts.el.attr('href')),
+    $target = $('body').find(target),
     offset_height = 0;
+
+  $(document).off('scroll');
 
   if (opts.object.attr('data-behavior') === 'is-fixed-nav') {
     if ($(window).scrollTop() < opts.object.height()) {
@@ -580,59 +604,18 @@ $nav_secondary.on('nav-secondary.scroll-to-top', function(event, opts) {
     }
   }
 
-  $('html, body').animate({
-    scrollTop: $target.offset().top - offset_height
+  $('html, body').stop().animate({
+    'scrollTop': $target.offset().top - offset_height
+  }, 500, 'swing', function () {
+    window.location.hash = target;
   });
 });
 
 // Fixed secondary nav on scroll
 $(window).scroll($.throttle(250, function () {
   $fixed_nav.toggleClass('is-fixed', $(this).scrollTop() > $fixed_nav.height());
+  updateActiveNav();
 }));
-
-function onScroll() {
-  var scrollPos = $(document).scrollTop();
-
-  $('#menu-center a').each(function () {
-      var currLink = $(this),
-        refElement = $(currLink.attr('href'));
-
-      if (refElement.position().top <= scrollPos &&
-          refElement.position().top + refElement.height() > scrollPos) {
-        $nav_secondary.find('ul li a').removeClass('active');
-        currLink.addClass('active');
-      }
-      else{
-        currLink.removeClass('active');
-      }
-  });
-}
-
-$(document).ready(function () {
-  $(document).on('scroll', onScroll);
-
-  //smoothscroll
-  $('a[href^="#"]').on('click', function (e) {
-      e.preventDefault();
-      $(document).off('scroll');
-
-      $('a').each(function () {
-        $(this).removeClass('active');
-      });
-
-      $(this).addClass('active');
-
-      var target = this.hash,
-        $target = $(target);
-
-      $('html, body').stop().animate({
-        'scrollTop': $target.offset().top+2
-      }, 500, 'swing', function () {
-        window.location.hash = target;
-        $(document).on('scroll', onScroll);
-      });
-    });
-});
 
 // Navigation (top-level-nav)
 
