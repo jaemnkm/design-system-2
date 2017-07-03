@@ -120,7 +120,6 @@ $nav_secondary.on('nav-secondary.make-active', function(event, opts) {
 
 $nav_secondary.on('nav-secondary.scroll-to-top', function(event, opts) {
   var target = opts.el.attr('href'),
-//    $target = $('body').find(opts.el.attr('href')),
     $target = $('body').find(target),
     offset_height = 0;
 

@@ -8,6 +8,21 @@
   margin-bottom: $size-M;
   background-color: $color-white;
 
+  &.is-fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: $layer-panel;
+    @include boxShadow(2);
+  }
+
+  // http://caniuse.com/#feat=css-sticky
+  // Long story short, once IE11 supports sticky we can get rid of the is-fixed class
+  &[data-behavior=is-fixed-nav] {
+    position: sticky;
+  }
+
   &__body {
     @include outer-container();
     max-width: $site-max-width;
@@ -90,6 +105,7 @@
     right: 0;
     margin: 0.4rem 0 0;
     background-color: $color-gray-warm-light;
+    @include boxShadow(1);
     z-index: 1;
 
     &[data-state="is-open"] {
