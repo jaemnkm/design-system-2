@@ -215,8 +215,7 @@ html {
 :root .fa-rotate-270,
 :root .fa-flip-horizontal,
 :root .fa-flip-vertical {
-  -webkit-filter: none;
-          filter: none;
+  filter: none;
 }
 
 .fa-stack {
@@ -3117,8 +3116,7 @@ html {
 :root .fa-rotate-270,
 :root .fa-flip-horizontal,
 :root .fa-flip-vertical {
-  -webkit-filter: none;
-          filter: none;
+  filter: none;
 }
 
 .fa-stack {
@@ -5883,4 +5881,5 @@ html {
   font-size: 1.4rem;
   color: #e31c3d;
 }
+
 /*# sourceMappingURL=profile.css.map */
