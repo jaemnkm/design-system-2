@@ -1,0 +1,120 @@
+<button class="usa-accordion-button usajobs-joa-accordion-trigger usajobs-joa--v1-5__accordion-trigger" aria-expanded="false" aria-controls="requirements" data-behavior="joa_accordion.toggle">
+  Requirements
+</button>
+<div id="requirements" aria-hidden="true" class="usa-accordion-content usajobs-joa-section">
+  <a href="http://usajobs.github.io/Help/how-to/job-announcement/requirements/" class="usajobs-joa-section__help" target="_blank">
+    <span class="fa fa-question-circle"></span> Help
+  </a>
+  <h2 class="usajobs-joa-section__header">Requirements</h2>
+  <h3>Conditions of Employment</h3>
+  <p>
+    If you apply to this job and we hire you, you must meet and agree to the following conditions:
+  </p>
+  <ul class="usajobs-list-bullets">
+    {% for req in job.UserArea.Details.ConditionsOfEmployment %}
+    <li>{{ req }}</li>
+    {% endfor %}
+  </ul>
+
+  <div id="qualifications" itemprop="qualifications">
+    <!-- Use "Qualifications for all levels" when the job is open to more than one level -->
+    <!-- h3>Qualifications for all levels</h3 -->
+    <h3>Qualifications</h3>
+    <p>
+      Your experience must include:
+    </p>
+
+    <div itemprop="qualifications">
+      <ul class="usajobs-list-bullets">
+        <li>Developing enterprise or agency-wide strategic plans, strategy development processes, and supporting materials (e.g. analyses, project plans, meeting materials, ultimate strategy document outputs)</li>
+        <li>
+          Using quantitative analysis to develop and apply metrics to measure organizational performance; and
+        </li>
+        <li>
+          Applying project management methodologies, practices, tools and techniques to lead enterprise level projects spanning multiple business units throughout the project lifecycle.
+        </li>
+        <li>
+          Gathering and analyzing information, identifying and addressing problems or issues, and making informed decisions or recommendations.
+        </li>
+        <li>
+          Managing cross-functional projects - planning the work, prioritizing tasks, setting milestones, adjusting work approaches in response to obstacles, and completing assignments within deadlines.
+        </li>
+        <li>
+          Developing your own skills, supporting others’ growth and learning, and helping the Bureau to better serve consumers by identifying improvements to products, processes, or services.
+        </li>
+        <li>
+          Building strong work relationships with others (e.g., colleagues, institutional staff, partners, consumers). Working with others to get their input, showing respect in interactions, valuing differences, contributing to team efforts, and handling conflicts appropriately.
+        </li>
+        <li>
+          Providing quality service and results to stakeholders (e.g., employees, consumers, staff from regulated entities or other partner organizations) to accomplish our mission.
+        </li>
+        <li>
+          Showing integrity, reliability, and a commitment to the CFPB’s mission.
+        </li>
+        <li>
+          Being responsible for your own actions, following through on promises, following organizational systems and rules, and efficiently and responsibly using available resources to maintain public trust.
+        </li>
+      </ul>
+      <p>
+        In addition, you must have:
+      </p>
+      <ul class="usajobs-list-bullets">
+        <li>Excellent verbal communication skills.</li>
+        <li>Excellent written communication skills – your writing must be accurate, clear, concise, organized and follow proper style and format.</li>
+      </ul>
+    </div>
+  </div>
+
+  {% if job.PreviewQuestionnaireURL %}
+  <div id="preview-questionnaire" class="usajobs-joa-preview-questionnaire">
+    <a href="{{ job.PreviewQuestionnaireURL }}" class="usa-button usa-button-outline usajobs-joa-preview-questionnaire__link">
+      Preview Job Questionnaire
+    </a>
+    <p class="usajobs-joa-preview-questionnaire__recommendation">
+      Make sure your resume includes detailed information to support your qualifications and answers to the job questionnaire.
+    </p>
+  </div>
+  {% endif %}
+
+  <div id="evaluation" class="usajobs-joa-evaluation">
+    <h3>How You Will Be Evaluated</h3>
+    <div class="usajobs-read-more usajobs-joa__read-more-content" data-object="reveal-more" data-behavior="joa-read-more">
+      <p>
+        You will be evaluated for this job based on:
+      </p>
+      <ul class="usajobs-list-bullets">
+        <li>The experience listed in your resume and whether your experience and skills match what we’re looking for.</li>
+        <li>A work related assessment – we’ll give you a sample job task that you need to complete.</li>
+        <li>An in-person interview.</li>
+      </ul>
+      <h4>Work related assessment</h4>
+      <p>
+        If you meet the minimum qualification requirements and receive a score within the top tier of applicants on the self-assessment questions, you must participate in a work related assessment. The assessment will be a sample job task that you’ll need to complete.
+      </p>
+      <p>
+        You’ll receive an email from a CFPB representative to participate in this assessment. You must respond within three business days or we’ll remove you from consideration for this job.  We recommend you occasionally check your “junk mail”/SPAM folders within your email to make sure you don’t miss a message.  The CFPB representative will schedule a time for you to receive instructions and complete and/or submit the assessment.  You must complete the entire process within two weeks from the initial contact from a CFPB representative or we’ll remove you from consideration for this job.
+      </p>
+    </div>
+  </div>
+
+  <div id="security">
+    <h3>Background checks and security clearance</h3>
+    <div class="usajobs-joa-sub-section">
+      <div id="security-clearance" class="usajobs-joa-sub-section__container">
+        <h5 class="usajobs-joa-sub-section__small-title">Security clearance</h5>
+        <p class="usajobs-joa-sub-section__text">
+          <a href="https://usajobs.github.io/Help/faq/job-announcement/security-clearances/">
+            {{ job.UserArea.Details.GOVT_SecurityClearanceRequired }}
+          </a>
+        </p>
+      </div>
+
+      <div id="telework-eligble" class="usajobs-joa-sub-section__container">
+        <h5 class="usajobs-joa-sub-section__small-title">Drug test required</h5>
+        <p class="usajobs-joa-sub-section__text">
+          {{ job.UserArea.Details.GOVT_DrugTestRequired }}
+        </p>
+      </div>
+    </div>
+  </div>
+</div>

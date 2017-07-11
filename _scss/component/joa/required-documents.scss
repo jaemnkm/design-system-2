@@ -1,0 +1,91 @@
+// JOA - Required Documents
+
+@import '../base-shared';
+
+.usajobs-joa-required-documents {
+  &__container {
+    padding: $size-base $size-S;
+  }
+
+  &__sub-head {
+    margin-left: -#{$size-default};
+    margin-right: -#{$size-default};
+    padding: $size-S;
+    background-color: $color-gray-cool-light;
+  }
+}
+
+.usajobs-joa-required-documents-rtable {
+  display: block;
+  position: relative;
+
+  @include media($M) {
+    margin-bottom: $size-M;
+  }
+
+  &__column-header {
+    margin-top: 0;
+
+    @include media($M) {
+      display: none;
+    }
+  }
+
+  &__cell {
+    width: 100%;
+    padding: $size-S;
+
+    @include media($M) {
+      display: block;
+      width: 50%;
+      flex-grow: 1;
+      order: 0;
+    }
+
+    &:nth-child(2n) {
+      @include media($M) {
+        order: 1;
+        border-left: 1px solid $color-gray-light;
+      }
+    }
+
+    .usajobs-list-bullets {
+      margin: 0;
+    }
+  }
+
+  &__row {
+    margin: $size-S 0 $size-default;
+
+    @include media($M) {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0;
+    }
+
+    &.is-striped {
+      border-top: 1px solid $color-gray-light;
+      background-color: $color-gray-lightest;
+
+      @include media($M) {
+        border-top: 0;
+      }
+    }
+  }
+
+  &__head {
+    display: none;
+    border-bottom: 1px solid $color-gray-light;
+
+    @include media($M) {
+      display: block;
+      width: 50%;
+    }
+  }
+
+  &__head &__column-header {
+    @include media($M) {
+      display: block;
+    }
+  }
+}
