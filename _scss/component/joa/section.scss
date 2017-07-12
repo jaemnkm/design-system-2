@@ -85,6 +85,14 @@
   }
 }
 
+.usajobs-joa-sub-section--three-columns {
+  &__container {
+    @include media($M) {
+      @include span-columns(2, 6);
+    }
+  }
+}
+
 // Fighting Standards specificity
 .usajobs-joa-sub-section .usajobs-joa-sub-section__text,
 .usajobs-joa-agency--v1-5 .usajobs-joa-sub-section__text {
