@@ -30688,6 +30688,18 @@ html {
   }
 }
 
+@media screen and (min-width: 37.5em) {
+  .usajobs-joa-sub-section--three-columns__container {
+    float: left;
+    display: block;
+    margin-right: 4.8291588071%;
+    width: 30.1138941286%;
+  }
+  .usajobs-joa-sub-section--three-columns__container:last-child {
+    margin-right: 0;
+  }
+}
+
 .usajobs-joa-sub-section .usajobs-joa-sub-section__text,
 .usajobs-joa-agency--v1-5 .usajobs-joa-sub-section__text {
   margin-top: 0;
