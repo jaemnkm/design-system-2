@@ -43,7 +43,8 @@ html {
   .usajobs-joa .usajobs-site-header,
   .usajobs-joa .usajobs-joa-header,
   .usajobs-joa .usajobs-joa-prev-next,
-  .usajobs-joa .usajobs-joa-actions,
+  .usajobs-joa .usajobs-joa-actions__col-apply,
+  .usajobs-joa .usajobs-joa-actions__col-sub-actions,
   .usajobs-joa .usa-footer,
   .usajobs-joa .usajobs-joa__authenticity-note {
     display: none;
@@ -168,6 +169,7 @@ html {
   }
   .usajobs-joa .usajobs-content-well p,
   .usajobs-joa .usajobs-rightrail p {
+    font-size: 1.3rem;
     line-height: 1.2;
   }
   .usajobs-joa .usajobs-content-well br,
@@ -227,7 +229,7 @@ html {
     margin-bottom: 1rem;
   }
   .usajobs-joa--v1-5__shell .usajobs-joa--v1-5__accordion-trigger,
-  .usajobs-joa--v1-5__shell .usajobs-joa-occupations,
+  .usajobs-joa--v1-5__shell .usajobs-joa-occupations__similar-jobs,
   .usajobs-joa--v1-5__shell .usajobs-joa-preview-questionnaire {
     display: none;
   }
@@ -258,6 +260,16 @@ html {
     margin-top: 1.5rem;
     font-size: 24px;
     font-size: 2.4rem;
+  }
+  .usajobs-joa--v1-5__shell .usajobs-joa-occupations {
+    padding: 0;
+    background-color: #ffffff;
+  }
+  .usajobs-joa--v1-5__shell .usajobs-joa-occupations__title {
+    color: #212121;
+  }
+  .usajobs-joa--v1-5__shell .usajobs-joa-occupations__series {
+    color: #0071bc;
   }
 }
 /*# sourceMappingURL=joa-print.css.map */

@@ -24187,10 +24187,77 @@ html {
   background-color: #ffffff;
 }
 
-@media screen and (min-width: 62em) {
-  .usajobs-joa-intro-second-announcement .usajobs-joa-intro-hiring-paths__link {
-    padding-bottom: 0;
-  }
+.usajobs-joa-intro-second-announcement__item {
+  padding: 0.5rem 0;
+  color: #212121;
+  text-decoration: none;
+}
+
+.usajobs-joa-intro-second-announcement__link {
+  display: block;
+}
+
+.usajobs-joa-intro-second-announcement__link:hover {
+  text-decoration: none;
+  box-shadow: 0 0 3px #3e94cf, 0 0 7px #3e94cf;
+}
+
+.usajobs-joa-intro-second-announcement .usajobs-joa-intro-second-announcement__link {
+  text-decoration: none;
+}
+
+.no-flexbox .usajobs-joa-intro-second-announcement__item {
+  display: table;
+}
+
+.no-flexbox .usajobs-joa-intro-second-announcement__item::after {
+  clear: both;
+  content: "";
+  display: block;
+}
+
+.no-flexbox .usajobs-joa-intro-second-announcement__figure, .no-flexbox .usajobs-joa-intro-second-announcement__body {
+  display: table-cell;
+}
+
+.no-flexbox .usajobs-joa-intro-second-announcement__body {
+  width: calc(100% -  6.1rem);
+}
+
+.lt-ie9 .no-flexbox .usajobs-joa-intro-second-announcement__body {
+  width: 75%;
+}
+
+.flexbox .usajobs-joa-intro-second-announcement__item {
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  box-align: top;
+  -webkit-align-items: top;
+  -moz-align-items: top;
+  -ms-align-items: top;
+  -o-align-items: top;
+  align-items: top;
+  -ms-flex-align: top;
+}
+
+.flexbox .usajobs-joa-intro-second-announcement__figure {
+  -webkit-flex-shrink: 0;
+          flex-shrink: 0;
+  -ms-flex-negative: 0;
+}
+
+.flexbox .usajobs-joa-intro-second-announcement__body {
+  box-flex: 1;
+  -webkit-flex: 1;
+  -moz-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  min-width: 0;
 }
 
 html {

@@ -12,7 +12,8 @@
   .usajobs-site-header,
   .usajobs-joa-header,
   .usajobs-joa-prev-next,
-  .usajobs-joa-actions,
+  .usajobs-joa-actions__col-apply,
+  .usajobs-joa-actions__col-sub-actions,
   .usa-footer,
   .usajobs-joa__authenticity-note {
     display: none;
@@ -108,6 +109,7 @@
     }
 
     p {
+      font-size: rem(13);
       line-height: 1.2;
     }
 
@@ -157,7 +159,7 @@
 
 .usajobs-joa--v1-5__shell {
   .usajobs-joa--v1-5__accordion-trigger,
-  .usajobs-joa-occupations,
+  .usajobs-joa-occupations__similar-jobs,
   .usajobs-joa-preview-questionnaire {
     display: none;
   }
@@ -180,6 +182,18 @@
 
     &__header {
       @include h3();
+    }
+  }
+
+  .usajobs-joa-occupations {
+    padding: 0;
+    background-color: $color-white;
+
+    &__title {
+      color: $color-base;
+    }
+    &__series {
+      color: $color-primary;
     }
   }
 }

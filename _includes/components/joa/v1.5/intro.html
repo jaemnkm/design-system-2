@@ -342,23 +342,31 @@
       <a href="http://usajobs.github.io/Help/how-to/job-announcement/second-announcement/" class="usajobs-joa-section__help">
         <span class="fa fa-question-circle"></span> Help
       </a>
-      <ul class="usajobs-joa-intro-hiring-paths__list">
-        <li class="usajobs-joa-intro-hiring-paths__item">
-          <a href="{{ job.ApplyURI[1] }}" class="usajobs-joa-intro-hiring-paths__link" target="_blank">
+      <a href="{{ job.ApplyURI[1] }}" class="usajobs-joa-intro-second-announcement__link" target="_blank">
+        This job is also open in another announcement to:
+        <ul class="usajobs-joa-intro-hiring-paths__list">
+          <li class="usajobs-joa-intro-hiring-paths__item usajobs-joa-intro-second-announcement__item">
             <div class="usajobs-joa-intro-hiring-paths__figure">
               <div class="usajobs-joa-intro-hiring-paths__icon public">
                 <span class="fa fa-group"></span>
               </div>
             </div>
             <div class="usajobs-joa-intro-hiring-paths__body">
-              This job is also open to
-              <span class="usajobs-joa-intro-hiring-paths__title">
-                the public
-              </span>.
+              The Public
             </div>
-          </a>
-        </li>
-      </ul>
+          </li>
+          <li class="usajobs-joa-intro-hiring-paths__item usajobs-joa-intro-second-announcement__item">
+            <div class="usajobs-joa-intro-hiring-paths__figure">
+              <span class="usajobs-joa-intro-hiring-paths__icon ses">
+                <span class="fa fa-briefcase"></span>
+              </span>
+            </div>
+            <div class="usajobs-joa-intro-hiring-paths__body">
+              Senior Executives
+            </div>
+          </li>
+        </ul>
+      </a>
     </div>
     {% endif %}
 

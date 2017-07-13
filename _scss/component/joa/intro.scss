@@ -283,9 +283,60 @@ $body-padding: $size-default;
   padding: $size-M $size-default $size-default;
   background-color: $color-white;
 
-  .usajobs-joa-intro-hiring-paths__link {
-    @include media($L) {
-      padding-bottom: 0;
+  &__item {
+    padding: $size-base 0;
+    color: $color-base;
+    text-decoration: none;
+  }
+
+  &__link {
+    display: block;
+
+    &:hover {
+      text-decoration: none;
+      box-shadow: $focus-shadow;
     }
+  }
+}
+
+// Fighting design standards specificity
+.usajobs-joa-intro-second-announcement .usajobs-joa-intro-second-announcement__link {
+  text-decoration: none;
+}
+
+
+.no-flexbox .usajobs-joa-intro-second-announcement {
+  &__item {
+    @include clearfix();
+    display: table;
+  }
+
+  &__figure,
+  &__body {
+    display: table-cell;
+  }
+
+  &__body {
+    @include calc(width, "100% - " ($icon-width + $icon-padding + $body-padding));
+
+    .lt-ie9 & {
+      width: 75%;
+    }
+  }
+}
+
+.flexbox .usajobs-joa-intro-second-announcement {
+  &__item {
+    @include display(flex);
+    @include align-items(top);
+  }
+
+  &__figure {
+    @include flex-shrink(0);
+  }
+
+  &__body {
+    @include flex(1);
+    min-width: 0;
   }
 }
