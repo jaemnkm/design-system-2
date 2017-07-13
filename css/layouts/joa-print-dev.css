@@ -246,8 +246,7 @@ html {
 }
 
 .usajobs-joa--v1-5__shell .usajobs-joa--v1-5__accordion-trigger,
-.usajobs-joa--v1-5__shell .usajobs-joa-occupations__similar-jobs,
-.usajobs-joa--v1-5__shell .usajobs-joa-preview-questionnaire {
+.usajobs-joa--v1-5__shell .usajobs-joa-occupations__similar-jobs {
   display: none;
 }
 
