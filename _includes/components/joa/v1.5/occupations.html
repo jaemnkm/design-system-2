@@ -7,14 +7,16 @@
     </a>
   </p>
   {% endfor %}
-  <h4 class="usajobs-joa-occupations__title">Similar jobs</h4>
-  <ul class="usajobs-joa-occupations__list">
-  {% for occupation in job.JobOccupation %}
-    <li class="usajobs-joa-occupations__item">
-      <a href="https://test.usajobs.gov/Search?soc={{ occupation.Code }}" class="usa-button usa-button-outline-inverse usajobs-joa-occupations__link">
-        {{ occupation.Name }} ({{ occupation.Count }})
-      </a>
-    </li>
-  {% endfor %}
-  </ul>
+  <div class="usajobs-joa-occupations__similar-jobs">
+    <h4 class="usajobs-joa-occupations__title">Similar jobs</h4>
+    <ul class="usajobs-joa-occupations__list">
+    {% for occupation in job.JobOccupation %}
+      <li class="usajobs-joa-occupations__item">
+        <a href="https://test.usajobs.gov/Search?soc={{ occupation.Code }}" class="usa-button usa-button-outline-inverse usajobs-joa-occupations__link">
+          {{ occupation.Name }} ({{ occupation.Count }})
+        </a>
+      </li>
+    {% endfor %}
+    </ul>
+  </div>
 </div>
