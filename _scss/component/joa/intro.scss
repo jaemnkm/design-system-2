@@ -291,6 +291,7 @@ $body-padding: $size-default;
 
   &__link {
     display: block;
+    margin-top: $size-S;
 
     &:hover {
       text-decoration: none;
