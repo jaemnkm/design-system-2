@@ -180,6 +180,13 @@ html {
   .usajobs-joa .usajobs-rightrail p + br + p {
     margin-top: 0;
   }
+  .usajobs-joa .usajobs-content-well a:after,
+  .usajobs-joa .usajobs-rightrail a:after {
+    display: block;
+    content: " (" attr(href) ") ";
+    font-size: 1.1rem;
+    font-weight: normal;
+  }
   .usajobs-joa .usajobs-joa-agency__details,
   .usajobs-joa .usajobs-joa-agency__address {
     margin-bottom: 1.5rem;
