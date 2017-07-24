@@ -17,6 +17,8 @@
   }
 
   &__title,
+  &__sub-title, // New in v1.6 but did not exist before so adding it straight in
+  &__career-field,
   &__series {
     color: $color-white;
 

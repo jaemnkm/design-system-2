@@ -1,0 +1,93 @@
+<div class="usajobs-joa-occupations">
+  <h3 class="usajobs-joa-occupations__title">Similar Jobs</h3>
+  <h4 class="usajobs-joa-occupations__title">Job family (Series)</h4>
+  {% for series in job.JobCategory %}
+  <p class="usajobs-joa-summary__series">
+    <a href="https://test.usajobs.gov/Search/?j={{ series.Code }}" class="usajobs-joa-occupations__series">
+      {{ series.Code  }} {{ series.Name }}
+    </a>
+  </p>
+  {% endfor %}
+  <div class="usajobs-joa-occupations__mco">
+    <h4 class="usajobs-joa-occupations__title">Related careers in high demand</h4>
+    {% for tag in job.MCOTags %}
+      {% if tag == 'STEM' %}
+      <h5 class="usajobs-joa-occupations__sub-title">Science, Technology, Engineering, and Mathematics</h5>
+      <p class="usajobs-joa-summary__series">
+        <a href="https://www.usajobs.gov/Search/ExploreOpportunities/?Series=1550" class="usajobs-joa-occupations__series">
+          1150 Computer Science
+        </a>
+      </p>
+      <p class="usajobs-joa-summary__series">
+        <a href="https://www.usajobs.gov/Search/ExploreOpportunities/?Series=0810" class="usajobs-joa-occupations__series">
+          0810 Civil Engineering
+        </a>
+      </p>
+      <p class="usajobs-joa-summary__series">
+        <a href="https://www.usajobs.gov/Search/ExploreOpportunities/?Series=1529" class="usajobs-joa-occupations__series">
+          1529 Mathematical Statistics
+        </a>
+      </p>
+      <p class="usajobs-joa-summary__series">
+        <a href="https://www.usajobs.gov/Search/ExploreOpportunities/?Series=0830" class="usajobs-joa-occupations__series">
+          0830 Mechanical Engineering
+        </a>
+      </p>
+      <p class="usajobs-joa-summary__series">
+        <a href="https://www.usajobs.gov/Search/ExploreOpportunities/?Series=1530" class="usajobs-joa-occupations__series">
+          1530 Statistics
+        </a>
+      </p>
+      <p class="usajobs-joa-summary__series">
+        <a href="https://www.usajobs.gov/Search/ExploreOpportunities/?Series=2210" class="usajobs-joa-occupations__series">
+          2210 Information Technology Management
+        </a>
+      </p>
+      {% endif %}
+      {% if tag == 'Economist' %}
+      <h5 class="usajobs-joa-occupations__sub-title">Social Science</h5>
+      <p class="usajobs-joa-summary__series">
+        <a href="https://www.usajobs.gov/Search/ExploreOpportunities/?Series=0110" class="usajobs-joa-occupations__series">
+          0110 Economist
+        </a>
+      </p>
+      {% endif %}
+      {% if tag == 'Cybersecurity' %}
+      <h5 class="usajobs-joa-occupations__sub-title">Explore a career in Cyber security</h5>
+      <p class="usajobs-joa-summary__series">
+        <a href="https://www.cybercareers.gov/" class="usajobs-joa-occupations__career-field">
+          Cyber security
+        </a>
+      </p>
+      {% endif %}
+      {% if tag == 'Data Science' %}
+      <h5 class="usajobs-joa-occupations__sub-title">Explore a career in Data Science</h5>
+      <p class="usajobs-joa-summary__series">
+        <a href="https://www.usajobs.gov/careerfields/data-science/" class="usajobs-joa-occupations__career-field">
+          Data Science
+        </a>
+      </p>
+      {% endif %}
+      {% if tag == 'Privacy' %}
+      <h5 class="usajobs-joa-occupations__sub-title">Explore a career in Privacy</h5>
+      <p class="usajobs-joa-summary__series">
+        <a href="https://www.fpc.gov/" class="usajobs-joa-occupations__career-field">
+          Privacy
+        </a>
+      </p>
+      {% endif %}
+    {% endfor %}
+  </div>
+  <div class="usajobs-joa-occupations__similar-jobs">
+    <h4 class="usajobs-joa-occupations__title">Occupations</h4>
+    <ul class="usajobs-joa-occupations__list">
+    {% for occupation in job.JobOccupation %}
+      <li class="usajobs-joa-occupations__item">
+        <a href="https://test.usajobs.gov/Search?soc={{ occupation.Code }}" class="usa-button usa-button-outline-inverse usajobs-joa-occupations__link">
+          {{ occupation.Name }} ({{ occupation.Count }})
+        </a>
+      </li>
+    {% endfor %}
+    </ul>
+  </div>
+</div>
