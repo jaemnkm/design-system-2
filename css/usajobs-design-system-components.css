@@ -30928,11 +30928,11 @@ html {
   }
 }
 
-.usajobs-joa-occupations__title, .usajobs-joa-occupations__series {
+.usajobs-joa-occupations__title, .usajobs-joa-occupations__sub-title, .usajobs-joa-occupations__career-field, .usajobs-joa-occupations__series {
   color: #ffffff;
 }
 
-.usajobs-joa-occupations__title:hover, .usajobs-joa-occupations__title:active, .usajobs-joa-occupations__title:visited, .usajobs-joa-occupations__series:hover, .usajobs-joa-occupations__series:active, .usajobs-joa-occupations__series:visited {
+.usajobs-joa-occupations__title:hover, .usajobs-joa-occupations__title:active, .usajobs-joa-occupations__title:visited, .usajobs-joa-occupations__sub-title:hover, .usajobs-joa-occupations__sub-title:active, .usajobs-joa-occupations__sub-title:visited, .usajobs-joa-occupations__career-field:hover, .usajobs-joa-occupations__career-field:active, .usajobs-joa-occupations__career-field:visited, .usajobs-joa-occupations__series:hover, .usajobs-joa-occupations__series:active, .usajobs-joa-occupations__series:visited {
   color: #ffffff;
 }
 
