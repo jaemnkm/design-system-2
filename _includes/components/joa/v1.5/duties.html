@@ -34,10 +34,7 @@
 
   <div id="travelrequired">
     <h3>Travel Required</h3>
-    <ul>
-      <li>Occasional travel.</li>
-      <li>Expected temporary duty travel is 5% or less.</li>
-    </ul>
+    <p>Occasional travel - Expected temporary duty travel is 5% or less.</p>
   </div>
 
   <div class="usajobs-joa-sub-section">
@@ -63,7 +60,11 @@
         </span>
       </h5>
       <p class="usajobs-joa-sub-section__text">
-        The selectee may be promoted to the full performance level without further competition when all regulatory, qualification, and performance requirements are met. Selection at a lower grade level does not guarantee promotion to the full performance level.
+      {% if job.PromotionPotential %}
+        Yes
+      {% else %}
+        No
+      {% endif %}
       </p>
     </div>
   </div>
