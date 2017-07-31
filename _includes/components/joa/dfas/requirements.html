@@ -1,0 +1,117 @@
+<button class="usa-accordion-button usajobs-joa-accordion-trigger usajobs-joa--v1-5__accordion-trigger" aria-expanded="false" aria-controls="requirements" data-behavior="joa_accordion.toggle">
+  Requirements
+</button>
+<div id="requirements" aria-hidden="true" class="usa-accordion-content usajobs-joa-section">
+  <a href="http://usajobs.github.io/Help/how-to/job-announcement/requirements/" class="usajobs-joa-section__help" target="_blank">
+    <span class="fa fa-question-circle"></span> Help
+  </a>
+  <h2 class="usajobs-joa-section__header">Requirements</h2>
+  <h3>Conditions of Employment</h3>
+  <p>
+    If you apply to this job and we hire you, you must meet and agree to the following conditions:
+  </p>
+  <ul class="usajobs-list-bullets">
+    {% for req in job.UserArea.Details.ConditionsOfEmployment %}
+    <li>{{ req }}</li>
+    {% endfor %}
+  </ul>
+
+  <div id="qualifications" itemprop="qualifications">
+    <!-- Use "Qualifications for all levels" when the job is open to more than one level -->
+    <!-- h3>Qualifications for all levels</h3 -->
+    <h3>Qualifications</h3>
+    <h4>All applicants</h4>
+    <p>
+      You must have at least one year of the following specialized experience, which is equivalent to the difficulty and responsibility of the GS-04 level within the federal service:
+    </p>
+
+    <div itemprop="qualifications">
+      <ul class="usajobs-list-bullets">
+        <li>Providing administrative, technical or clerical support to a Human Resources (HR) office.</li>
+        <li>Entering and/or extracting data into an automated Human Resources (HR) system.</li>
+        <li>Verifying and updating training, benefits or personnel and position data and records.</li>
+        <li>Processing a variety of personnel actions related to employment, or providing basic HR information to customers.</li>
+      </ul>
+    </div>
+
+    <h4>For former/current federal employees</h4>
+    <p>
+      We may consider your application if you’re a current or former employee who has held a GS-03 position or higher in the preceding 52 weeks on a permanent competitive appointment.
+    </p>
+
+    <h5>Time after Competitive Appointment</h5>
+    <p>
+      Candidates must have served 3 months after latest competitive appointment in the Federal service.
+    </p>
+  </div>
+
+  <div id="education" itemprop="eduction">
+    <h3>Education</h3>
+    <p>
+      {{ job.UserArea.Details.Eduction }}
+    </p>
+    <p>If using education to qualify, you must have:</p>
+    <ul class="usajobs-list-bullets">
+      <li>Successfully completed four years of education above the high school level, in any field for which high school graduation, or the equivalent, is a prerequisite.</li>
+      <li>Successfully completed post-high school education and equivalent experience.</li>
+    </ul>
+  </div>
+
+  {% if job.PreviewQuestionnaireURL %}
+  <div id="preview-questionnaire" class="usajobs-joa-preview-questionnaire">
+    <a href="{{ job.PreviewQuestionnaireURL }}" class="usa-button usa-button-outline usajobs-joa-preview-questionnaire__link" target="_blank">
+      Preview Job Questionnaire
+    </a>
+    <p class="usajobs-joa-preview-questionnaire__recommendation">
+      Make sure your resume includes detailed information to support your qualifications and answers to the job questionnaire.
+    </p>
+  </div>
+  {% endif %}
+
+  <div id="evaluation" class="usajobs-joa-evaluation">
+    <h3>How You Will Be Evaluated</h3>
+    <p>
+      You will be evaluated for this job based on how well you meet the qualifications above and based on:
+    </p>
+    <ul class="usajobs-list-bullets">
+      <li>The experience listed in your resume and whether your experience and skills match what we’re looking for.</li>
+      <li>An online assessment tool.</li>
+    </ul>
+    <div class="usajobs-joa--v1-5__disclaimer-inset">
+      <h4>Pre-employment requirements</h4>
+      <p>
+        A tentative offer of employment will be rescinded if the selectee fails to meet the pre-employment requirements, including failure to report to any of the scheduled appointments.
+      </p>
+    </div>
+  </div>
+
+  <div id="security">
+    <h3>Background checks and security clearance</h3>
+    <div class="usajobs-joa-sub-section usajobs-joa-sub-section--three-columns">
+      <div id="background-check" class="usajobs-joa-sub-section__container usajobs-joa-sub-section--three-columns__container">
+        <h5 class="usajobs-joa-sub-section__small-title">Background check</h5>
+        <p class="usajobs-joa-sub-section__text">
+          <a href="https://usajobs.github.io/Help/faq/job-announcement/security-clearances/" target="_blank">
+            {{ job.UserArea.Details.GOVT_BackgroundCheck }}
+          </a>
+        </p>
+      </div>
+
+      <div id="security-clearance" class="usajobs-joa-sub-section__container usajobs-joa-sub-section--three-columns__container">
+        <h5 class="usajobs-joa-sub-section__small-title">Security clearance</h5>
+        <p class="usajobs-joa-sub-section__text">
+          <a href="https://usajobs.github.io/Help/faq/job-announcement/security-clearances/" target="_blank">
+            {{ job.UserArea.Details.GOVT_SecurityClearanceRequired }}
+          </a>
+        </p>
+      </div>
+
+      <div id="telework-eligble" class="usajobs-joa-sub-section__container usajobs-joa-sub-section--three-columns__container">
+        <h5 class="usajobs-joa-sub-section__small-title">Drug test required</h5>
+        <p class="usajobs-joa-sub-section__text">
+          {{ job.UserArea.Details.GOVT_DrugTestRequired }}
+        </p>
+      </div>
+    </div>
+  </div>
+</div>

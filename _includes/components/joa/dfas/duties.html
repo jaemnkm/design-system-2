@@ -11,30 +11,23 @@
     <p>
       {{ job.UserArea.Details.JobSummary }}
     </p>
-
-    <ul>
-      <li>Moving expenses are NOT authorized, based on a determination that a move is not in the Government's interest.</li>
-      <li>Recruitment relocation and/or retention incentives MAY be offered for this position.</li>
-      <li>This position has been designated as a primary/rigorous and is eligible for Law Enforcement (LEO) retirement coverage under the provisions of title 5 USC 8336(c) and 8412(d) by DoD memorandum dated 19 August 2010. The maximum entry age for positions covered under this retirement is 37 years old. Retirement from this position is mandatory at age 57 with 20 years of LEO service. The maximum entry age may be waived under certain circumstances. Individuals who are past the maximum entry age limit, but previously served in a primary position, MAY be reinstated.</li>
+    <p>
+      In this role you will:
+    </p>
+    <ul class="usajobs-list-bullets">
+    {% for duty in job.UserArea.Details.MajorDuties %}
+      <li>{{ duty }}</li>
+    {% endfor %}
     </ul>
 
     <a href="#agency-modal-trigger" class="usa-button usa-button-outline usajobs-joa-section__cta" href="#agencycontact" data-object-trigger="modal" data-target="#agency-modal">
       Learn more about this agency
     </a>
   </div>
-  <h3>Responsibilities</h3>
-  <div id="duties" itemprop="responsibilities">
-    <p>As an {{ job.PositionTitle }}, you will perform the following duties:</p>
-    <ul>
-      {% for duty in job.UserArea.Details.MajorDuties %}
-      <li>{{ duty }}</li>
-      {% endfor %}
-    </ul>
-  </div>
 
   <div id="travelrequired">
     <h3>Travel Required</h3>
-    <p>Occasional travel - Expected temporary duty travel is 5% or less.</p>
+    <p>Occasional - 25% or less</p>
   </div>
 
   <div class="usajobs-joa-sub-section">
@@ -45,8 +38,8 @@
         </span>
       </h5>
       <p class="usajobs-joa-sub-section__text">
-      {% if jobs.SupervisoryStatus %}
-        {{ job.SupervisoryStatus }}
+      {% if job.SupervisoryStatus %}
+      Yes
       {% else %}
       No
       {% endif %}
@@ -63,11 +56,9 @@
       {% if job.PromotionPotential %}
         {{ job.PromotionPotential }}
       {% else %}
-        No
+      No
       {% endif %}
       </p>
     </div>
   </div>
-
-  {% include components/joa/v1.5/who-may-apply.html %}
 </div>
