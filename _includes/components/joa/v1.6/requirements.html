@@ -12,6 +12,14 @@
     <li>{{ req }}</li>
     {% endfor %}
   </ul>
+  <div class="usajobs-joa--v1-5__disclaimer-inset">
+    <h4>
+      Pre-employment requirements
+    </h4>
+    <p>
+      A tentative offer of employment will be rescinded if the selectee fails to meet the pre-employment requirements, including failure to report to any of the scheduled appointments.
+    </p>
+  </div>
 
   <div id="qualifications" itemprop="qualifications">
     <h3>Qualifications</h3>
@@ -80,17 +88,26 @@
 
   <div id="security">
     <h3>Background checks and security clearance</h3>
-    <div class="usajobs-joa-sub-section">
-      <div id="security-clearance" class="usajobs-joa-sub-section__container">
+    <div class="usajobs-joa-sub-section usajobs-joa-sub-section--three-columns">
+      <div id="background-check" class="usajobs-joa-sub-section__container usajobs-joa-sub-section--three-columns__container">
+        <h5 class="usajobs-joa-sub-section__small-title">Background check</h5>
+        <p class="usajobs-joa-sub-section__text">
+          <a href="https://usajobs.github.io/Help/faq/job-announcement/security-clearances/" target="_blank">
+            {{ job.UserArea.Details.GOVT_BackgroundCheck }}
+          </a>
+        </p>
+      </div>
+
+      <div id="security-clearance" class="usajobs-joa-sub-section__container usajobs-joa-sub-section--three-columns__container">
         <h5 class="usajobs-joa-sub-section__small-title">Security clearance</h5>
         <p class="usajobs-joa-sub-section__text">
-          <a href="https://usajobs.github.io/Help/faq/job-announcement/security-clearances/">
+          <a href="https://usajobs.github.io/Help/faq/job-announcement/security-clearances/" target="_blank">
             {{ job.UserArea.Details.GOVT_SecurityClearanceRequired }}
           </a>
         </p>
       </div>
 
-      <div id="telework-eligble" class="usajobs-joa-sub-section__container">
+      <div id="telework-eligble" class="usajobs-joa-sub-section__container usajobs-joa-sub-section--three-columns__container">
         <h5 class="usajobs-joa-sub-section__small-title">Drug test required</h5>
         <p class="usajobs-joa-sub-section__text">
           {{ job.UserArea.Details.GOVT_DrugTestRequired }}

@@ -165,7 +165,8 @@
         "mspouse",
         "peace"
       ],
-      "GOVT_SecurityClearanceRequired": "Public Trust- Background Investigation",
+      "GOVT_BackgroundCheck": "Public Trust",
+      "GOVT_SecurityClearanceRequired": "None",
       "GOVT_DrugTestRequired": "No"
     },
     "IsRadialSearch": false
