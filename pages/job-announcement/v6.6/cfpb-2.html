@@ -1,0 +1,42 @@
+---
+permalink: /job-announcement/v6.6/cfpb-2/
+layout: joa
+title: Job Announcement
+control-number: 'cfpb-2'
+---
+{% assign job = site.data.job-announcements[page.control-number] %}
+
+{% include components/nav-logged_in.html %}
+{% include components/joa/v1.2/prev-next.html %}
+<div xmlns:soap-env="http://schemas.xmlsoap.org/soap/envelope/"
+     xmlns:hr="http://www.hr-xml.org/3"
+     xmlns:oa="http://www.openapplications.org/oagis/9" class="usajobs-joa-bground">
+  <div itemscope="" itemtype="http://schema.org/JobPosting">
+    {% include components/joa/v1.5/banner.html %}
+    {% include components/joa/v1.5/nav.html %}
+    <section class="usajobs-shell usajobs-joa--v1-5__shell">
+      <section class="usajobs-canvas">
+        <div class="usajobs-content-gutter">
+          {% include components/joa/cfpb/intro-second.html %}
+          <main class="usajobs-content-well" id="main-content" role="main" aria-label="Main Job announcement content">
+            <div class="usa-accordion" data-object="joa-accordion">
+              <ul class="usa-unstyled-list">
+                <li>{% include components/joa/cfpb/duties.html %}</li>
+                <li>{% include components/joa/cfpb/occupations.html %}</li>
+                <li>{% include components/joa/cfpb/requirements.html %}</li>
+                <li>{% include components/joa/cfpb/required-documents.html %}</li>
+                <li>{% include components/joa/cfpb/benefits.html %}</li>
+                <li>{% include components/joa/cfpb/how-to-apply.html %}</li>
+                <li>{% include components/joa/cfpb/fair-and-transparent.html %}</li>
+              </ul>
+            </div>
+            <p class="usajobs-joa__authenticity-note">
+              This job originated on <a href="https://www.usajobs.gov/">www.usajobs.gov</a>. For the full announcement and to apply, visit <a href="https://www.usajobs.gov/GetJob/ViewDetails/{{ page.control-number }}">www.usajobs.gov/GetJob/ViewDetails/{{ page.control-number }}</a>. Only resumes submitted according to the instructions on the job announcement listed at <a href="https://www.usajobs.gov/">www.usajobs.gov</a> will be considered.
+            </p>
+          </main>
+        </div>
+      </section>
+    </section>
+  </div>
+</div>
+{% include components/joa/cfpb/agency-modal.html %}
