@@ -3,7 +3,8 @@
   "PositionTitle": "Strategic Planning Manager",
   "PositionURI": "https://www.usajobs.gov:443/GetJob/ViewDetails/512345678",
   "ApplyURI": [
-    "https://www.usajobs.gov:443/GetJob/ViewDetails/512345678?PostingChannelID=RESTAPI"
+    "https://www.usajobs.gov:443/GetJob/ViewDetails/123456789?PostingChannelID=RESTAPI",
+    "https://www.usajobs.gov:443/GetJob/ViewDetails/987654321?PostingChannelID=RESTAPI"
   ],
   "PositionLocationDisplay": "Washington, DC",
   "PositionLocation": [
@@ -57,17 +58,17 @@
   "QualificationSummary": "",
   "PositionRemuneration": [
     {
-      "MinimumRange": "111,683",
-      "MaximumRange": "203,632",
+      "MinimumRange": "111,684",
+      "MaximumRange": "203,633",
       "RateIntervalCode": "per year"
     }
   ],
   "SupervisoryStatus": true,
   "PromotionPotential": false,
-  "PositionStartDate": "2017-08-01",
-  "PositionEndDate": "2017-08-30",
-  "PublicationStartDate": "2017-07-31",
-  "ApplicationCloseDate": "2017-08-30",
+  "PositionStartDate": "2017-08-02",
+  "PositionEndDate": "2017-08-16",
+  "PublicationStartDate": "08/02/17",
+  "ApplicationCloseDate": "08/16/17",
   "UserArea": {
     "Details": {
       "MajorDuties": [
@@ -103,8 +104,7 @@
       "Relocation": false,
       "Telework": true,
       "HiringPath": [
-        "public",
-        "fed"
+        "public"
       ],
       "GOVT_BackgroundCheck": "Public Trust",
       "GOVT_SecurityClearanceRequired": "None",
