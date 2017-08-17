@@ -21,6 +21,7 @@
   // Long story short, once IE11 supports sticky we can get rid of the is-fixed class
   &[data-behavior=is-fixed-nav] {
     position: sticky;
+    z-index: $layer-panel;
   }
 
   &__body {
@@ -103,7 +104,7 @@
     position: absolute;
     top: 100%;
     right: 0;
-    margin: 0.4rem 0 0;
+    margin: 0;
     background-color: $color-gray-warm-light;
     @include boxShadow(1);
     z-index: 1;
