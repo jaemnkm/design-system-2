@@ -13574,6 +13574,7 @@ html {
 .usajobs-nav-secondary[data-behavior=is-fixed-nav] {
   position: -webkit-sticky;
   position: sticky;
+  z-index: 900;
 }
 
 .usajobs-nav-secondary__body {
@@ -13661,7 +13662,7 @@ html {
   position: absolute;
   top: 100%;
   right: 0;
-  margin: 0.4rem 0 0;
+  margin: 0;
   background-color: #e4e2e0;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   z-index: 1;
