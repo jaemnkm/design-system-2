@@ -301,7 +301,8 @@
 
 // Inputs
 input[disabled],
-input[readonly] {
+input[readonly],
+select[disabled] {
   color: $color-gray;
   border-color: $color-gray-lighter;
   cursor: not-allowed;
