@@ -9026,7 +9026,8 @@ img {
 }
 
 input[disabled],
-input[readonly] {
+input[readonly],
+select[disabled] {
   color: #5b616b;
   border-color: #d6d7d9;
   cursor: not-allowed;

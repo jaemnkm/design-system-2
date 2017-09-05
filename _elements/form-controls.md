@@ -923,9 +923,9 @@ lead: USAJOBS adds or clarifies design for labels, contextual help, required/opt
   </div>
 </div>
 
-<h2 class="usa-heading" id="inputs">Inputs</h2>
+<h2 class="usa-heading" id="inputs">Disabled</h2>
 <p class="usa-font-lead">
-  Guidance and styling on disabled and readonly inputs.
+  Guidance and styling on disabled and readonly inputs and select elements.
 </p>
 <div class="preview">
   <h6 id="usajobs-form-input-disabled" class="usa-heading-alt">Disabled</h6>
@@ -933,6 +933,13 @@ lead: USAJOBS adds or clarifies design for labels, contextual help, required/opt
     <fieldset class="usajobs-fieldset">
       <label for="last-name">Last name <span class="usa-additional_text">Required</span></label>
       <input id="last-name" name="last-name" type="text" required="" aria-required="true" disabled>
+
+      <label for="phone-type">Phone type</label>
+      <select id="phone-type" name="phone-type" disabled>
+        <option selected="selected" value="-1">Please Select</option>
+        <option value="Mobile">Mobile</option>
+        <option value="Other">Other</option>
+      </select>
     </fieldset>
 
     <fieldset class="usajobs-fieldset">
