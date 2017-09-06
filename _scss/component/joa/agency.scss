@@ -62,6 +62,31 @@
   }
 }
 
+.usajobs-joa .usajobs-joa-agency-contact--v1-6 {
+  &__sub-title {
+    // color: $color-primary-alt-darkest;
+  }
+
+  &__list-thumbs {
+    @include unstyledList();
+  }
+
+  &__item {
+    .fa-thumbs-o-up {
+      color: $color-green;
+    }
+
+    .fa-thumbs-o-down {
+      color: $color-secondary;
+    }
+  }
+
+  &__timeframe {
+    margin-top: $size-base;
+    font-style: italic;
+  }
+}
+
 .usajobs-joa-agency-modal {
   &__sub-title {
     font-size: $h3-font-size;
