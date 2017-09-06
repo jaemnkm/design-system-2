@@ -7298,6 +7298,39 @@ html {
   display: block;
 }
 
+.usajobs-joa .usajobs-joa-agency-contact--v1-6__list-thumbs {
+  display: block;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.usajobs-joa .usajobs-joa-agency-contact--v1-6__list-thumbs > li {
+  display: list-item;
+  margin: 0;
+}
+
+.usajobs-joa .usajobs-joa-agency-contact--v1-6__list-thumbs > li:before {
+  display: none;
+}
+
+.usajobs-joa .usajobs-joa-agency-contact--v1-6__list-thumbs > li:after {
+  display: none;
+}
+
+.usajobs-joa .usajobs-joa-agency-contact--v1-6__item .fa-thumbs-o-up {
+  color: #2e8540;
+}
+
+.usajobs-joa .usajobs-joa-agency-contact--v1-6__item .fa-thumbs-o-down {
+  color: #e31c3d;
+}
+
+.usajobs-joa .usajobs-joa-agency-contact--v1-6__timeframe {
+  margin-top: 0.5rem;
+  font-style: italic;
+}
+
 .usajobs-joa-agency-modal__sub-title {
   font-size: 24px;
   margin: 0;

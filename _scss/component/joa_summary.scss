@@ -19,7 +19,13 @@
   }
 
   .detail {
-    margin: 0;
+    list-style-type: none;
+    margin: 0 0 $size-S 0;
+    padding-left: 0;
+
+    li {
+      margin-bottom: 0;
+    }
 
     li::before {
       content: '';
