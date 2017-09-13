@@ -165,35 +165,30 @@ html {
 
 .usajobs-ds-home-research-pillars__icon.p2 .fa {
   color: #02bfe7;
-  -webkit-transform: rotate(60deg);
   -ms-transform: rotate(60deg);
   transform: rotate(60deg);
 }
 
 .usajobs-ds-home-research-pillars__icon.p3 .fa {
   color: #2e8540;
-  -webkit-transform: rotate(120deg);
   -ms-transform: rotate(120deg);
   transform: rotate(120deg);
 }
 
 .usajobs-ds-home-research-pillars__icon.p4 .fa {
   color: #fdb81e;
-  -webkit-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
   transform: rotate(180deg);
 }
 
 .usajobs-ds-home-research-pillars__icon.p5 .fa {
   color: #0071bc;
-  -webkit-transform: rotate(240deg);
   -ms-transform: rotate(240deg);
   transform: rotate(240deg);
 }
 
 .usajobs-ds-home-research-pillars__icon.p6 .fa {
   color: #112e51;
-  -webkit-transform: rotate(300deg);
   -ms-transform: rotate(300deg);
   transform: rotate(300deg);
 }
@@ -229,12 +224,10 @@ html {
   display: -webkit-box;
   display: -moz-box;
   display: box;
-  display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flexbox;
   display: flex;
   box-align: start;
-  -webkit-align-items: flex-start;
   -moz-align-items: flex-start;
   -ms-align-items: flex-start;
   -o-align-items: flex-start;
@@ -243,14 +236,12 @@ html {
 }
 
 .flexbox .usajobs-ds-home-research-pillars__figure {
-  -webkit-flex-shrink: 0;
-          flex-shrink: 0;
+  flex-shrink: 0;
   -ms-flex-negative: 0;
 }
 
 .flexbox .usajobs-ds-home-research-pillars__body {
   box-flex: 1;
-  -webkit-flex: 1;
   -moz-flex: 1;
   -ms-flex: 1;
   flex: 1;
