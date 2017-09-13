@@ -12328,6 +12328,7 @@ ul.ui-autocomplete > li:after {
     right: 320px;
     max-width: 400px;
     margin: 0.5rem 0;
+    border-radius: 0.3rem;
   }
 }
 
@@ -12366,9 +12367,11 @@ ul.ui-autocomplete > li:after {
   color: #5b616b;
   background-color: transparent;
   text-decoration: none;
+  width: auto;
 }
 
 .usajobs-nav .usajobs-nav-login-gov-banner__indicator {
+  display: none;
   position: absolute;
   right: -15px;
   top: 25%;
@@ -12377,6 +12380,12 @@ ul.ui-autocomplete > li:after {
   border-top: 15px solid transparent;
   border-left: 30px solid #fdb81e;
   border-bottom: 15px solid transparent;
+}
+
+@media screen and (min-width: 62em) {
+  .usajobs-nav .usajobs-nav-login-gov-banner__indicator {
+    display: inherit;
+  }
 }
 
 html {
