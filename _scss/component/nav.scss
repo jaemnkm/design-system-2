@@ -589,6 +589,7 @@ ul.ui-autocomplete {
     right: 320px;
     max-width: 400px;
     margin: $size-base 0;
+    border-radius: $border-radius;
   }
 
   &__body {
@@ -625,9 +626,11 @@ ul.ui-autocomplete {
     color: $color-gray;
     background-color: transparent;
     text-decoration: none;
+    width: auto;
   }
 
   &__indicator {
+    display: none;
     position: absolute;
     right: -15px;
     top: 25%;
@@ -636,5 +639,9 @@ ul.ui-autocomplete {
 	  border-top: 15px solid transparent;
 	  border-left: 30px solid $color-gold;
 	  border-bottom: 15px solid transparent;
+
+    @include media($L) {
+      display: inherit;
+    }
   }
 }
