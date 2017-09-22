@@ -93,15 +93,16 @@
         "Name": "Current or Former Permanent Federal Employees, 30% or More Disabled Veterans, Veterans Recruitment Appointment (VRA) eligibles , Veterans Employment Opportunities Act (VEOA) eligibles, Schedule A eligibles, Military Spouses Preference eligibles in the local area, Peace Corps eligibles, and other individuals eligible under Special Appointment Authorities",
         "Code": "15513"
       },
-      "LowGrade": "05",
-      "HighGrade": "05",
+      "LowGrade": "06",
+      "HighGrade": "06",
       "OrganizationCodes": "DD/DD35",
       "Relocation": false,
       "Telework": true,
       "HiringPath": [
         "fed",
         "vet",
-        "disability"
+        "disability",
+        "mspouse"
       ],
       "GOVT_BackgroundCheck": "Public Trust",
       "GOVT_SecurityClearanceRequired": "None",

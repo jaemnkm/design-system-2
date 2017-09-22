@@ -34,7 +34,8 @@
   }
 }
 
-.usajobs-joa .usajobs-joa-agency--v1-5 {
+.usajobs-joa .usajobs-joa-agency--v1-5,
+.usajobs-joa-agency--v1-5 {
   @include row();
   position: relative;
   margin-top: $size-default;
@@ -62,7 +63,8 @@
   }
 }
 
-.usajobs-joa .usajobs-joa-agency-contact--v1-6 {
+.usajobs-joa .usajobs-joa-agency-contact--v1-6,
+.usajobs-joa-agency-contact--v1-6 {
   &__sub-title {
     // color: $color-primary-alt-darkest;
   }
