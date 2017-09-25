@@ -18,14 +18,13 @@ lead: USAJOBS has an updated logo as part of the next generation redesign of the
   <img src="../img/logo/png/black-2x.png" />
 
   <h6 class="usa-heading-alt">White</h6>
-  <div class="usa-color-text usa-color-primary-darkest"> 
+  <div class="usa-color-text usa-color-primary-darkest">
     <img src="../img/logo/png/white-2x.png" />
   </div>
 </div>
 
 <h3 class="usa-heading">Logo - SVG</h3>
 <div class="preview">
-
   <h6 class="usa-heading-alt">Red</h6>
   <img src="../img/logo/svg/red-2x.svg" class="usajobs-img-2x-doc" />
 
@@ -33,17 +32,17 @@ lead: USAJOBS has an updated logo as part of the next generation redesign of the
   <img src="../img/logo/svg/black-2x.svg" class="usajobs-img-2x-doc" />
 
   <h6 class="usa-heading-alt">White</h6>
-  <div class="usa-color-text usa-color-primary-darkest"> 
+  <div class="usa-color-text usa-color-primary-darkest">
     <img src="../img/logo/svg/white-2x.svg" class="usajobs-img-2x-doc" />
   </div>
 </div>
 
 <div class="usa-accordion-bordered usa-accordion-docs">
   <button class="usa-button-unstyled usa-accordion-button"
-      aria-expanded="true" aria-controls="collapsible-0">
+      aria-expanded="true" aria-controls="doc-0">
     Documentation
   </button>
-  <div id="collapsible-0" aria-hidden="false" class="usa-accordion-content">
+  <div id="doc-0" aria-hidden="false" class="usa-accordion-content">
     <h4 class="usa-heading">Accessibility</h4>
     <ul class="usa-content-list">
       <li>

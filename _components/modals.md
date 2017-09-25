@@ -45,8 +45,8 @@ lead: USAJOBS uses the modal component to draw attention to actions that require
 </div>
 
 <div class="usa-accordion-bordered usa-accordion-docs">
-  <button class="usa-button-unstyled usa-accordion-button" aria-expanded="true" aria-controls="collapsible-0">Documentation</button>
-  <div id="collapsible-0" aria-hidden="false" class="usa-accordion-content">
+  <button class="usa-button-unstyled usa-accordion-button" aria-expanded="true" aria-controls="doc-0">Documentation</button>
+  <div id="doc-0" aria-hidden="false" class="usa-accordion-content">
     <h4 class="usa-heading">Accessibility</h4>
     <ul class="usa-content-list">
       <li>Modal should have the <code>role="dialog"</code> attribute.</li>
@@ -89,13 +89,13 @@ lead: USAJOBS uses the modal component to draw attention to actions that require
 </div>
 
 <div class="usa-accordion-bordered usa-accordion-docs">
-  <button class="usa-button-unstyled usa-accordion-button" aria-expanded="true" aria-controls="collapsible-0">Documentation</button>
-  <div id="collapsible-0" aria-hidden="false" class="usa-accordion-content">
+  <button class="usa-button-unstyled usa-accordion-button" aria-expanded="true" aria-controls="doc-1">Documentation</button>
+  <div id="doc-1" aria-hidden="false" class="usa-accordion-content">
     <h4 class="usa-heading">Usability</h4>
     <h5>When to use</h5>
     <ul class="usa-content-list">
       <li>When an action is required by the user before they may continue.</li>
-      <li>When it is necessary to redirect the user to another part of the site.</li> 
+      <li>When it is necessary to redirect the user to another part of the site.</li>
     </ul>
 
     <h4 class="usa-heading">Guidelines</h4>
@@ -114,10 +114,10 @@ lead: USAJOBS uses the modal component to draw attention to actions that require
 
 <div class="usa-accordion-bordered usa-accordion-docs">
   <button class="usa-button-unstyled usa-accordion-button"
-      aria-expanded="true" aria-controls="collapsible-0">
+      aria-expanded="true" aria-controls="doc-2">
     Documentation
   </button>
-  <div id="collapsible-0" aria-hidden="false" class="usa-accordion-content">
+  <div id="doc-2" aria-hidden="false" class="usa-accordion-content">
     <h4 class="usa-heading">Accessibility</h4>
     <ul class="usa-content-list">
       <li>Unfortunately, we have a number of these modals and we should excise them as quickly as possible. Content behind these modal has to scroll to support the egregious form lengths on mobile devices.</li>
@@ -136,4 +136,3 @@ lead: USAJOBS uses the modal component to draw attention to actions that require
     </ul>
   </div>
 </div>
-
