@@ -37,10 +37,10 @@ lead: A main function of USAJOBS is to provide a clear and effective search. Our
 </div>
 <div class="usa-accordion-bordered usa-accordion-docs">
   <button class="usa-button-unstyled usa-accordion-button"
-      aria-expanded="true" aria-controls="collapsible-0">
+      aria-expanded="true" aria-controls="doc-0">
     Documentation
   </button>
-  <div id="collapsible-0" aria-hidden="false" class="usa-accordion-content">
+  <div id="doc-0" aria-hidden="false" class="usa-accordion-content">
     <h4 class="usa-heading">Usability</h4>
     <h5>When to use</h5>
     <ul class="usa-content-list">
@@ -65,10 +65,10 @@ lead: A main function of USAJOBS is to provide a clear and effective search. Our
 
 <div class="usa-accordion-bordered usa-accordion-docs">
   <button class="usa-button-unstyled usa-accordion-button"
-      aria-expanded="true" aria-controls="collapsible-0">
+      aria-expanded="true" aria-controls="doc-1">
     Documentation
   </button>
-  <div id="collapsible-0" aria-hidden="false" class="usa-accordion-content">
+  <div id="doc-1" aria-hidden="false" class="usa-accordion-content">
     <h4 class="usa-heading">Guidelines</h4>
     <ul class="usa-content-list">
       <li>Do not show search controls or pagination when no results are displayed.</li>
@@ -167,10 +167,10 @@ lead: A main function of USAJOBS is to provide a clear and effective search. Our
 
 <div class="usa-accordion-bordered usa-accordion-docs">
   <button class="usa-button-unstyled usa-accordion-button"
-      aria-expanded="true" aria-controls="collapsible-0">
+      aria-expanded="true" aria-controls="doc-2">
     Documentation
   </button>
-  <div id="collapsible-0" aria-hidden="false" class="usa-accordion-content">
+  <div id="doc-2" aria-hidden="false" class="usa-accordion-content">
     <h4 class="usa-heading">Accessibility</h4>
     <ul class="usa-content-list">
       <li>The previous and next buttons are hidden with aria-hidden when they are non-functional.</li>
@@ -371,10 +371,10 @@ lead: A main function of USAJOBS is to provide a clear and effective search. Our
 
 <div class="usa-accordion-bordered usa-accordion-docs">
   <button class="usa-button-unstyled usa-accordion-button"
-      aria-expanded="true" aria-controls="collapsible-0">
+      aria-expanded="true" aria-controls="doc-3">
     Documentation
   </button>
-  <div id="collapsible-0" aria-hidden="false" class="usa-accordion-content">
+  <div id="doc-3" aria-hidden="false" class="usa-accordion-content">
     <h4 class="usa-heading">Requirements</h4>
     <p>The search card component MUST include the following:</p>
     <ul class="usa-content-list">
@@ -458,10 +458,10 @@ lead: A main function of USAJOBS is to provide a clear and effective search. Our
 
 <div class="usa-accordion-bordered usa-accordion-docs">
   <button class="usa-button-unstyled usa-accordion-button"
-      aria-expanded="true" aria-controls="collapsible-mco">
+      aria-expanded="true" aria-controls="doc-mco">
     Documentation
   </button>
-  <div id="collapsible-mco" aria-hidden="false" class="usa-accordion-content">
+  <div id="doc-mco" aria-hidden="false" class="usa-accordion-content">
     <h5>When to use</h5>
     <ul class="usa-content-list">
       <li>To represent a job announcement an a Mission Critical Occupation page.</li>
@@ -587,10 +587,10 @@ lead: A main function of USAJOBS is to provide a clear and effective search. Our
 
 <div class="usa-accordion-bordered usa-accordion-docs">
   <button class="usa-button-unstyled usa-accordion-button"
-      aria-expanded="true" aria-controls="collapsible-mco">
+      aria-expanded="true" aria-controls="doc-joa">
     Documentation
   </button>
-  <div id="collapsible-mco" aria-hidden="false" class="usa-accordion-content">
+  <div id="doc-joa" aria-hidden="false" class="usa-accordion-content">
     <h5>When to use</h5>
     <ul class="usa-content-list">
       <li>To represent a job announcement in the recruitment tool.</li>
@@ -652,10 +652,10 @@ lead: A main function of USAJOBS is to provide a clear and effective search. Our
 </div>
 <div class="usa-accordion-bordered usa-accordion-docs">
   <button class="usa-button-unstyled usa-accordion-button"
-      aria-expanded="true" aria-controls="collapsible-mco">
+      aria-expanded="true" aria-controls="doc-teaser">
     Documentation
   </button>
-  <div id="collapsible-mco" aria-hidden="false" class="usa-accordion-content">
+  <div id="doc-teaser" aria-hidden="false" class="usa-accordion-content">
     <h5>Guidelines</h5>
     <ul class="usa-content-list">
       <li>The teaser, when it appears, should appear between the 5th and 6th job result. Ideally it would be loaded via an asynchronous request after results are displayed so that it does not negatively impact search performance.</li>

@@ -95,6 +95,18 @@ module.exports = function(grunt) {
         dest: 'css/layouts/'
       }
     },
+    browserify: {
+      client: {
+        src: [
+          'node_modules/uswds/src/js/start.js',
+          'js/components/*.js'
+        ],
+        dest: 'js/usajobs-design-system-components.js',
+        options: {
+          external: ['jquery'],
+        }
+      }
+    },
     concat: {
       js_base: {
         src: [
@@ -107,12 +119,6 @@ module.exports = function(grunt) {
           'js/base.js'
         ],
         dest: 'js/usajobs-design-system-base.js'
-      },
-      js_components: {
-        src: [
-          'js/components/*.js'
-        ],
-        dest: 'js/usajobs-design-system-components.js'
       },
       js_docs: {
         src: [
@@ -222,6 +228,6 @@ module.exports = function(grunt) {
   grunt.registerTask('serve', ['concurrent:serve']);
   grunt.registerTask('build', ['shell:jekyllBuild', 'base64', 'css', 'js']);
   grunt.registerTask('css', ['base64', 'sass', 'autoprefixer', 'cssmin']);
-  grunt.registerTask('js', ['jshint:all', 'concat']);
+  grunt.registerTask('js', ['jshint:all', 'browserify', 'concat']);
   grunt.registerTask('test', ['jshint:all', 'scsslint']);
 };

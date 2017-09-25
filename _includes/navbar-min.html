@@ -1,13 +1,7 @@
-<a class="skipnav" href="#main-content">Skip to main content</a>
+<a class="usa-skipnav" href="#main-content">Skip to main content</a>
 
-<header class="usajobs-site-header" role="banner">
-  <div class="usa-disclaimer">
-    <span class="usa-disclaimer-official">
-      <img class="usa-flag_icon" alt="U.S. flag signifying that this is a United States federal government website" src="{{ site.baseurl }}/img/us_flag_small.png">
-      An official website of the United States Government
-    </span>
-    <span class="usa-disclaimer-stage">This site is currently in beta.</span>
-  </div>
+<header class="usajobs-site-header" role="banner" aria-label="header">
+  {% include components/nav/_gov-banner.html %}
   <nav class="usajobs-site-navbar">
     <div class="logo" id="logo">
       <a class="logo-link" href="{{ site.baseurl }}/" title="Home" aria-label="Home">
