@@ -30842,7 +30842,7 @@ html {
 .usajobs-joa-occupations {
   position: relative;
   padding: 1.5rem;
-  background-color: #4773aa;
+  background-color: #e1f3f8;
 }
 
 @media screen and (min-width: 37.5em) {
@@ -30858,12 +30858,8 @@ html {
   }
 }
 
-.usajobs-joa-occupations__title, .usajobs-joa-occupations__sub-title, .usajobs-joa-occupations__career-field, .usajobs-joa-occupations__series {
-  color: #ffffff;
-}
-
-.usajobs-joa-occupations__title:hover, .usajobs-joa-occupations__title:active, .usajobs-joa-occupations__title:visited, .usajobs-joa-occupations__sub-title:hover, .usajobs-joa-occupations__sub-title:active, .usajobs-joa-occupations__sub-title:visited, .usajobs-joa-occupations__career-field:hover, .usajobs-joa-occupations__career-field:active, .usajobs-joa-occupations__career-field:visited, .usajobs-joa-occupations__series:hover, .usajobs-joa-occupations__series:active, .usajobs-joa-occupations__series:visited {
-  color: #ffffff;
+.usajobs-joa-occupations__title {
+  margin-top: 0;
 }
 
 .usajobs-joa-occupations__list {
@@ -30897,6 +30893,46 @@ html {
   .usajobs-joa-occupations__item {
     margin-right: 1rem;
   }
+}
+
+.usajobs-joa-occupations__mco-tag {
+  font-family: "Source Sans Pro", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+  font-weight: 700;
+  line-height: 1.3;
+  margin-bottom: 0.5rem;
+  margin-top: 1.5rem;
+  font-size: 19px;
+  font-size: 1.9rem;
+  display: block;
+  padding: 0.5rem 0;
+  margin: 1.5rem 0;
+}
+
+.usajobs-joa-occupations__series {
+  display: block;
+  padding: 0.5rem 0;
+}
+
+.usajobs-joa-occupations .is-mco {
+  text-decoration: none;
+}
+
+.usajobs-joa-occupations .is-mco .usajobs-joa-occupations__series-link {
+  text-decoration: underline;
+}
+
+.usajobs-joa-occupations .is-mco::before {
+  content: '\2022';
+  padding-right: 0.5rem;
+  vertical-align: middle;
+  color: #02bfe7;
+  font-size: 34px;
+  line-height: 1;
+}
+
+.usajobs-joa-occupations__mco-desc {
+  font-style: italic;
+  font-size: 1.4rem;
 }
 
 html {

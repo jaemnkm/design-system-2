@@ -5,7 +5,7 @@
 .usajobs-joa-occupations {
   position: relative;
   padding: $size-default;
-  background-color: $color-cool-blue-light;
+  background-color: $color-primary-alt-lightest;
 
   @include media($M) {
     margin: 0 $size-default $size-default;
@@ -16,17 +16,8 @@
     margin-right: 0;
   }
 
-  &__title,
-  &__sub-title, // New in v1.6 but did not exist before so adding it straight in
-  &__career-field,
-  &__series {
-    color: $color-white;
-
-    &:hover,
-    &:active,
-    &:visited {
-      color: $color-white;
-    }
+  &__title {
+    margin-top: 0;
   }
 
   &__list {
@@ -41,5 +32,39 @@
     @include media($SM) {
       margin-right: $size-S;
     }
+  }
+
+  &__mco-tag {
+    @include h4();
+    display: block;
+    padding: $size-base 0;
+    margin: $size-default 0;
+  }
+
+  &__series {
+    display: block;
+    padding: $size-base 0;
+  }
+
+  .is-mco {
+    text-decoration: none;
+
+    .usajobs-joa-occupations__series-link {
+      text-decoration: underline;
+    }
+
+    &::before {
+      content: '\2022';
+      padding-right: $size-base;
+      vertical-align: middle;
+      color: $color-primary-alt;
+      font-size: $h2-font-size;
+      line-height: 1;
+    }
+  }
+
+  &__mco-desc {
+    font-style: italic;
+    font-size: $small-font-size;
   }
 }

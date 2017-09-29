@@ -59,8 +59,9 @@
   "DepartmentName": "Department of the Army",
   "JobCategory": [
     {
-      "Name": "Education Services",
-      "Code": "1740"
+      "Name": "Information Technology Management",
+      "Code": "2210",
+      "MissionCritical": true
     }
   ],
   "JobOccupation": [
@@ -76,11 +77,7 @@
     }
   ],
   "MCOTags": [
-    "STEM",
-    "Economist",
-    "Cybersecurity",
-    "Privacy",
-    "Data Science"
+    "STEM"
   ],
   "JobGrade": [
     {
