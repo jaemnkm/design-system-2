@@ -29,8 +29,24 @@
   "JobCategory": [
     {
       "Name": "Information Technology Management",
-      "Code": "2210"
+      "Code": "2210",
+      "MissionCritical": true
     }
+  ],
+  "JobOccupation": [
+    {
+      "Name": "Database Administrators",
+      "Code": "Database%20Administrators",
+      "Count": "3"
+    },
+    {
+      "Name": "Software Systems Developers",
+      "Code": "Software%20Systems%20Developers",
+      "Count": "6"
+    }
+  ],
+  "MCOTags": [
+    "STEM"
   ],
   "JobGrade": [
     {
