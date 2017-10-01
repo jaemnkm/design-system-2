@@ -31032,6 +31032,12 @@ html {
   background-color: #dce4ef;
 }
 
+@media screen and (min-width: 37.5em) {
+  .usajobs-joa-required-documents__icon.usajobs-unique-hiring-paths__icon {
+    display: block;
+  }
+}
+
 .usajobs-joa-required-documents-rtable {
   display: block;
   position: relative;

@@ -13,6 +13,12 @@
     padding: $size-S;
     background-color: $color-gray-cool-light;
   }
+
+  &__icon.usajobs-unique-hiring-paths__icon {
+    @include media($M) {
+      display: block;
+    }
+  }
 }
 
 .usajobs-joa-required-documents-rtable {
