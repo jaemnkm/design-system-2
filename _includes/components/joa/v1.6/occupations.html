@@ -1,13 +1,13 @@
 <div class="usajobs-joa-occupations">
-  <h3 class="usajobs-joa-occupations__title">Similar Jobs</h3>
-  <h4>Job family (Series)</h4>
+  <h2 class="usajobs-joa-occupations__title">Similar Jobs</h2>
+  <h3>Job family (Series)</h3>
   {% for series in job.JobCategory %}
   <a href="https://test.usajobs.gov/Search/?j={{ series.Code }}" class="usajobs-joa-occupations__series {% if series.MissionCritical %}is-mco{% endif %}">
     <span class="usajobs-joa-occupations__series-link">{{ series.Code  }} {{ series.Name }}</span>
   </a>
   {% endfor %}
   <div class="usajobs-joa-occupations__similar-jobs">
-    <h4>Related occupations</h4>
+    <h3>Related occupations</h3>
     <ul class="usajobs-joa-occupations__list">
     {% for occupation in job.JobOccupation %}
       <li class="usajobs-joa-occupations__item">
@@ -20,19 +20,9 @@
   </div>
   <div class="usajobs-joa-occupations__mco">
     {% for tag in job.MCOTags %}
-      {% if tag == 'STEM' %}
-      <a href="#search-results-for-mco-tag" class="usajobs-joa-occupations__mco-tag">
-        Explore STEM careers
-      </a>
-      {% endif %}
-      {% if tag == 'Economist' %}
-      <a href="#search-results-for-mco-tag" class="usajobs-joa-occupations__mco-tag">
-        Explore Economist careers
-      </a>
-      {% endif %}
       {% if tag == 'Cybersecurity' %}
       <a href="https://www.cybercareers.gov/" class="usajobs-joa-occupations__mco-tag">
-        Explore a career in Cyber security
+        Explore a career in Cybersecurity
       </a>
       {% endif %}
       {% if tag == 'Data Science' %}
@@ -40,9 +30,29 @@
         Explore a career in Data Science
       </a>
       {% endif %}
+      {% if tag == 'Economist' %}
+      <a href="https://www.usajobs.gov/Search/ExploreOpportunities/?Series=0110" class="usajobs-joa-occupations__mco-tag">
+        Explore Economist careers
+      </a>
+      {% endif %}
+      {% if tag == 'Grants Management' %}
+      <a href="https://www.usajobs.gov/Search?j=1109" class="usajobs-joa-occupations__mco-tag">
+        Explore a career in Grants Management
+      </a>
+      {% endif %}
       {% if tag == 'Privacy' %}
       <a href="https://www.fpc.gov/" class="usajobs-joa-occupations__mco-tag">
         Explore a career in Privacy
+      </a>
+      {% endif %}
+      {% if tag == 'Program/Project Management' %}
+      <a href="https://www.usajobs.gov/Search?j=0340" class="usajobs-joa-occupations__mco-tag">
+        Explore a career in Program/Project Management
+      </a>
+      {% endif %}
+      {% if tag == 'STEM' %}
+      <a href="#search-results-for-mco-tag" class="usajobs-joa-occupations__mco-tag">
+        Explore STEM careers
       </a>
       {% endif %}
     {% endfor %}
