@@ -35,15 +35,20 @@
   }
 
   &__mco-tag {
-    @include h4();
+    @include h3();
     display: block;
     padding: $size-base 0;
     margin: $size-default 0;
   }
 
+  &__link {
+    border-radius: .5rem;
+  }
+
   &__series {
     display: block;
     padding: $size-base 0;
+    font-size: $h4-font-size;
   }
 
   .is-mco {
