@@ -1,5 +1,5 @@
-<div class="usajobs-joa-intro usajobs-joa-intro--v1-5">
-  <div class="usajobs-joa-intro--v1-5__container">
+<div class="usajobs-joa-intro usajobs-joa-intro--v1-6">
+  <div class="usajobs-joa-intro--v1-6__container">
     <div class="usajobs-joa-overview">
       <a href="http://usajobs.github.io/Help/how-to/job-announcement/overview/" class="usajobs-joa-section__help" target="_blank">
         <span class="fa fa-question-circle"></span> Help
@@ -87,7 +87,7 @@
   </div>
 
   <aside class="usajobs-joa-aside">
-    <div id="hiring-paths" class="usajobs-joa-intro-hiring-paths usajobs-joa--v1-5__intro-hiring-paths">
+    <div id="hiring-paths" class="usajobs-joa-intro-hiring-paths usajobs-joa--v1-6__intro-hiring-paths">
       <a href="http://usajobs.github.io/Help/how-to/job-announcement/this-job-is-open-to/" class="usajobs-joa-section__help">
         <span class="fa fa-question-circle"></span> Help
       </a>
@@ -148,24 +148,6 @@
                 </h4>
                 <p class="usajobs-joa-intro-hiring-paths__detail">
                   This job is only open to current employees of this agency.
-                </p>
-              </div>
-            </a>
-          </li>
-          {% elsif hiring_path == 'interchange' %}
-          <li class="usajobs-joa-intro-hiring-paths__item usajobs-joa-intro-hiring_paths--subitem">
-            <a href="http://usajobs.github.io/Help/working-in-government/unique-hiring-paths/federal-employees/interchange-agreements/" class="usajobs-joa-intro-hiring-paths__link" target="_blank">
-              <div class="usajobs-joa-intro-hiring-paths__figure">
-                <span class="usajobs-joa-intro-hiring-paths__icon interchange">
-                  <span class="fa fa-exchange"></span>
-                </span>
-              </div>
-              <div class="usajobs-joa-intro-hiring-paths__body">
-                <h4 class="usajobs-joa-intro-hiring-paths__title">
-                  Interchange agreement
-                </h4>
-                <p class="usajobs-joa-intro-hiring-paths__detail">
-                  This job is open to excepted service employees looking to move into the competitive service.
                 </p>
               </div>
             </a>
@@ -231,7 +213,7 @@
               </div>
               <div class="usajobs-joa-intro-hiring-paths__body">
                 <h4 class="usajobs-joa-intro-hiring-paths__title">
-                  Former Overseas Employees
+                  Family of overseas employees
                 </h4>
                 <p class="usajobs-joa-intro-hiring-paths__detail">
                   Family members of a federal employee or uniformed service member who worked overseas.
@@ -333,6 +315,12 @@
           {% endif %}
         {% endfor %}
       </ul>
+      <div class="usajobs-joa-intro-hiring-paths__explanation">
+        <h4>Clarification from the agency</h4>
+        <p class="usajobs-joa-intro-hiring-paths__explanation-text">
+          Also includes but is not limited to permanent Farm Service Agency county employees.
+        </p>
+      </div>
     </div>
     {% if job.ApplyURI.size > 1 %}
     <!-- In production we'd need to look up the eligibility of the second announcement.
