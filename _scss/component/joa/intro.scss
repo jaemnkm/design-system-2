@@ -169,7 +169,8 @@ $body-padding: $size-default;
   }
 }
 
-.usajobs-joa--v1-5__intro-hiring-paths {
+.usajobs-joa--v1-5__intro-hiring-paths,
+.usajobs-joa--v1-6__intro-hiring-paths {
   position: relative;
 
   @include media($L) {
@@ -221,9 +222,15 @@ $body-padding: $size-default;
     @include flex(1);
     min-width: 0;
   }
+
+  // Added in v1-6
+  &__explanation-text {
+    margin-top: 0;
+  }
 }
 
-.usajobs-joa-intro--v1-5 {
+.usajobs-joa-intro--v1-5,
+.usajobs-joa-intro--v1-6 {
   padding-top: 0;
 
   @include media($L) {
