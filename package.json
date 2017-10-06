@@ -27,6 +27,7 @@
   },
   "homepage": "http://usajobs.github.io/design-system/",
   "devDependencies": {
+    "babelify": "^7.3.0",
     "chosen-js": "^1.8.2",
     "clean-css": "^4.1.4",
     "grunt": "^1.0.1",
