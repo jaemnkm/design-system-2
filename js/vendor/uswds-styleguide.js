@@ -10,7 +10,8 @@ $(function(){
       event.preventDefault();
     });
   }
-  handleDisabledLinks()
+
+  handleDisabledLinks();
 
   // TODO restructure function so the use of "this" makes sense.
   var generateCodeSnippets = function(content, previewBox) {
@@ -19,27 +20,27 @@ $(function(){
 
     this.parseCode = function(previewBox) {
       var sampleCode = $('<div>');
-      $(sampleCode).html($(previewBox).html())
+      $(sampleCode).html($(previewBox).html());
       $(sampleCode).find('.is-peripheral').remove();
       return sampleCode;
-    }
+    };
 
     this.render = function(previewBox, sampleCode) {
-
-      var sampleCodeBox = $(''+
-        '<div class="usa-accordion-bordered usa-code-sample">' +
-          '<ul class="usa-unstyled-list">' +
-            '<li>' +
-              '<button class="usa-accordion-button usa-button-unstyled" aria-expanded="false" aria-controls="collapsible-0">Code</button>' +
-              '<div id="collapsible-0" aria-hidden="true" class="usa-accordion-content">' +
-                '<pre><code class="language-markup"></code></pre>' +
-              '</div>' +
-            '</li>' +
-          '</ul>' +
-        '</div>');
+      var previewBoxName = $(previewBox).attr('id') + '-code',
+        sampleCodeBox = $(''+
+          '<div class="usa-accordion-bordered usa-code-sample">' +
+            '<ul class="usa-unstyled-list">' +
+              '<li>' +
+                '<button class="usa-accordion-button usa-button-unstyled" aria-expanded="false" aria-controls="' + previewBoxName + '">Code</button>' +
+                '<div id="'+ previewBoxName + '" aria-hidden="true" class="usa-accordion-content">' +
+                  '<pre><code class="language-markup"></code></pre>' +
+                '</div>' +
+              '</li>' +
+            '</ul>' +
+          '</div>');
       $(sampleCodeBox).find('code').text($(sampleCode).html());
       $(previewBox).after(sampleCodeBox);
-    }
+    };
 
     $(content).find(previewBox).each(function(index, previewBox) {
 
@@ -47,8 +48,7 @@ $(function(){
       self.render(previewBox, sampleCode);
 
     });
-
-  }
+  };
 
   generateCodeSnippets('.main-content', '.preview');
 
@@ -75,7 +75,7 @@ var calculateAnchorPosition = function (hash) {
 
   //anchor should now align with first item inside nav
   return anchor.offset().top - topOffset;
-}
+};
 
 
 /* When user lands on a page with a hash in the url

@@ -12,7 +12,7 @@ lead: USAJOBS alters the disabled button and adds a secondary button style.
 <p>USAJOBS extends the <a href="https://playbook.cio.gov/designstandards/buttons">U.S. Web Design Standards buttons</a> with an alteration to the disabled button and an additional secondary button style.</p>
 
 <h3 class="usa-heading">Disabled Button</h3>
-<div class="preview">
+<div class="preview" id="disabled-button">
   <h6 class="usa-heading-alt">Revised disabled button</h6>
   <div class="button_wrapper">
     <button class="usa-button-disabled" disabled>Default</button>
@@ -54,7 +54,7 @@ lead: USAJOBS alters the disabled button and adds a secondary button style.
 </div>
 
 <h3 class="usa-heading">Secondary Button</h3>
-<div class="preview">
+<div class="preview" id="secondary-button">
   <h6>Alert variation</h6>
   <div class="button_wrapper">
     <button class="usa-button-big usajobs-button-secondary-alert">Default</button>
@@ -82,7 +82,7 @@ lead: USAJOBS alters the disabled button and adds a secondary button style.
 <p class="lead">
   A call-to-action button that reveals a select menu and then executes an action.
 </p>
-<div class="preview">
+<div class="preview" id="button-select">
     <select id="atp-projects" name="atp-projects" class="usajobs-button-select" data-placeholder="Save to project">
       <option value=""></option>
       <option value="1">Project ABC</option>

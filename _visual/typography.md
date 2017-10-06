@@ -15,11 +15,10 @@ order: 01
   <ul class="usa-unstyled-list">
     <li>
       <button class="usa-accordion-button usa-button-unstyled"
-          aria-expanded="false" aria-controls="collapsible-0">
+          aria-expanded="false" aria-controls="typography-0">
         <h5>Source Sans Pro headings and body</h5>
       </button>
-      <div id="collapsible-0" aria-hidden="true" class="usa-accordion-content">
-
+      <div id="typography-0" aria-hidden="true" class="usa-accordion-content">
         <div class="usa-grid-full">
           <div class="usa-width-two-thirds">
             <p>Inspired by the growth of simple and welcoming type in modern web UI design, this suite uses Source Sans Pro exclusively. With a range of weights designed to fit into heading styles to clearly communicate hierarchy of information, this pairing can support both extremely simple designs and more polished, promotional sites.</p>
@@ -164,7 +163,7 @@ order: 01
 
 <p>USAJOBS introduces several section headers which separate and describe blocks of content.</p>
 
-<div class="preview">
+<div class="preview" id="typesetting-code">
   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. End of previous section content.</p>
   <h3 class="section-header">Your Documents</h3>
   <p>Start of the next section.</p>
@@ -179,10 +178,10 @@ order: 01
 
 <div class="usa-accordion-bordered usa-accordion-docs">
   <button class="usa-button-unstyled usa-accordion-button"
-      aria-expanded="true" aria-controls="doc-0">
+      aria-expanded="true" aria-controls="section-header">
     Documentation
   </button>
-  <div id="doc-0" aria-hidden="false" class="usa-accordion-content">
+  <div id="section-header" aria-hidden="false" class="usa-accordion-content">
     <h4 class="usa-heading">Usability</h4>
     <ul class="usa-content-list">
       <li>The section header separates blocks of content and associates the header with the content that follows.</li>
@@ -195,7 +194,7 @@ order: 01
 <!-- Links section begin -->
 <h3 class="usa-heading" id="links">Links</h3>
 
-<div class="preview">
+<div class="preview" id="links-code">
   <p>
     <a href="#link">This is a link without surrounding text and it is underlined.</a>
   </p>
@@ -203,10 +202,10 @@ order: 01
 
 <div class="usa-accordion-bordered usa-accordion-docs">
   <button class="usa-button-unstyled usa-accordion-button"
-      aria-expanded="true" aria-controls="doc-1">
+      aria-expanded="true" aria-controls="links-doc">
     Documentation
   </button>
-  <div id="doc-1" aria-hidden="false" class="usa-accordion-content">
+  <div id="links-doc" aria-hidden="false" class="usa-accordion-content">
     <h4 class="usa-heading">Implementation</h4>
     <ul class="usa-content-list">
       <li>The U.S. Web Design Standards already underline links within a paragraph element.</li>

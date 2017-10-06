@@ -205,7 +205,7 @@ module.exports = function(grunt) {
         files: [
           'js/components/*.js'
         ],
-        tasks: ['jshint:components', 'concat:js_components'],
+        tasks: ['jshint:components', 'browserify'],
         options: {
           debounceDelay: 250,
           livereload: true

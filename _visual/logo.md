@@ -9,8 +9,8 @@ lead: USAJOBS has an updated logo as part of the next generation redesign of the
   Design Complete
 </a>
 
-<h3 class="usa-heading">Logo - PNG</h3>
-<div class="preview">
+<h3 class="usa-heading">USAJOBS Logo - PNG</h3>
+<div class="preview" id="logo-png">
   <h6 class="usa-heading-alt">Red</h6>
   <img src="../img/logo/png/red-2x.png" />
 
@@ -23,8 +23,8 @@ lead: USAJOBS has an updated logo as part of the next generation redesign of the
   </div>
 </div>
 
-<h3 class="usa-heading">Logo - SVG</h3>
-<div class="preview">
+<h3 class="usa-heading">USAJOBS Logo - SVG</h3>
+<div class="preview" id="logo-svg">
   <h6 class="usa-heading-alt">Red</h6>
   <img src="../img/logo/svg/red-2x.svg" class="usajobs-img-2x-doc" />
 
@@ -39,10 +39,10 @@ lead: USAJOBS has an updated logo as part of the next generation redesign of the
 
 <div class="usa-accordion-bordered usa-accordion-docs">
   <button class="usa-button-unstyled usa-accordion-button"
-      aria-expanded="true" aria-controls="doc-0">
+      aria-expanded="true" aria-controls="logo-0">
     Documentation
   </button>
-  <div id="doc-0" aria-hidden="false" class="usa-accordion-content">
+  <div id="logo-0" aria-hidden="false" class="usa-accordion-content">
     <h4 class="usa-heading">Accessibility</h4>
     <ul class="usa-content-list">
       <li>
@@ -74,4 +74,14 @@ lead: USAJOBS has an updated logo as part of the next generation redesign of the
       </li>
     </ul>
   </div>
+</div>
+
+<h3 class="usa-heading">Open Opportunities Logo - PNG</h3>
+<div class="preview" id="open-opps-png">
+  <img src="../img/logo/png/open-opportunities-2x.png" />
+</div>
+
+<h3 class="usa-heading">Open Opportunities Logo - SVG</h3>
+<div class="preview" id="open-opps-svg">
+  <img src="../img/logo/svg/open-opportunities-2x.svg" class="usajobs-img-2x-doc" />
 </div>
