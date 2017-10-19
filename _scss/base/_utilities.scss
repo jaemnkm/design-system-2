@@ -372,7 +372,8 @@
     @include makeCircle($size, none, $color-visited);
   }
 
-  &.former-overseas-employees {
+  &.former-overseas-employees,
+  &.family-of-overseas-employees {
     @include makeCircle($size, none, $color-primary-alt-darkest);
   }
 
