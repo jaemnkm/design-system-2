@@ -3,7 +3,7 @@ layout: styleguide
 type: component
 title: Job announcement introduction
 lead: Users can get an overview of a job announcement including clarification on who is eligible to apply to this announcement.
-control-number: '469480700'
+control-number: '468841900'
 ---
 
 {% assign job = site.data.job-announcements[page.control-number] %}
