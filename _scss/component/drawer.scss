@@ -1,0 +1,53 @@
+// USAJOBS Drawer
+// For now this simply extends .usa-accordion yet let's us use our own JS.
+// Eventually, it will also enable us to define our own behaviors.
+
+//@import 'lib/addons/margin';
+//@import 'lib/helpers/directional-values';
+//@import 'core/utilities';
+//@import 'elements/buttons';
+@import 'components/accordions';
+@import 'base-shared';
+
+.usajobs-drawer
+.usajobs-drawer-bordered {
+  @include accordion-list-styles;
+  @include accordion-nested-list;
+
+  + .usajobs-drawer,
+  + .usajobs-drawer-bordered {
+    margin-top: 1rem;
+  }
+
+  > li {
+    @include accordion-list-item-styles;
+  }
+}
+
+.usajobs-drawer-button {
+  @include accordion-button-styles;
+}
+
+.usajobs-drawer-button[aria-expanded=false] {
+  @include accordion-button-unopened-styles;
+}
+
+.usajobs-drawer-content {
+  background-color: $color-white;
+  overflow: auto;
+  padding: 3rem;
+
+  > *:first-child {
+    margin-top: 0;
+  }
+
+  > *:last-child {
+    margin-bottom: 0;
+  }
+
+  &:not([aria-hidden]) {
+    @include sr-only();
+  }
+
+  @include accessibly-hidden();
+}
