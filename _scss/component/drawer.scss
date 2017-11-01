@@ -9,7 +9,7 @@
 @import 'components/accordions';
 @import 'base-shared';
 
-.usajobs-drawer
+.usajobs-drawer,
 .usajobs-drawer-bordered {
   @include accordion-list-styles;
   @include accordion-nested-list;

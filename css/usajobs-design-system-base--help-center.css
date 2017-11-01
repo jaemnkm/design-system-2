@@ -8370,7 +8370,8 @@ html {
   clip: rect(0 0 0 0) !important;
 }
 
-.usajobs-drawer .usajobs-drawer-bordered {
+.usajobs-drawer,
+.usajobs-drawer-bordered {
   margin-top: 0;
   margin-bottom: 0;
   list-style-type: none;
@@ -8381,28 +8382,35 @@ html {
   width: 100%;
 }
 
-.usajobs-drawer .usajobs-drawer-bordered > li {
+.usajobs-drawer > li,
+.usajobs-drawer-bordered > li {
   margin-bottom: 0;
 }
 
-.usajobs-drawer .usajobs-drawer-bordered > ul li ul {
+.usajobs-drawer > ul li ul,
+.usajobs-drawer-bordered > ul li ul {
   list-style: disc;
 }
 
-.usajobs-drawer .usajobs-drawer-bordered > ul li ul > li > ul {
+.usajobs-drawer > ul li ul > li > ul,
+.usajobs-drawer-bordered > ul li ul > li > ul {
   list-style: circle;
 }
 
-.usajobs-drawer .usajobs-drawer-bordered > ul li ul > li > ul > li > ul {
+.usajobs-drawer > ul li ul > li > ul > li > ul,
+.usajobs-drawer-bordered > ul li ul > li > ul > li > ul {
   list-style: square;
 }
 
-.usajobs-drawer .usajobs-drawer-bordered + .usajobs-drawer,
-.usajobs-drawer .usajobs-drawer-bordered + .usajobs-drawer-bordered {
+.usajobs-drawer + .usajobs-drawer,
+.usajobs-drawer + .usajobs-drawer-bordered,
+.usajobs-drawer-bordered + .usajobs-drawer,
+.usajobs-drawer-bordered + .usajobs-drawer-bordered {
   margin-top: 1rem;
 }
 
-.usajobs-drawer .usajobs-drawer-bordered > li {
+.usajobs-drawer > li,
+.usajobs-drawer-bordered > li {
   background-color: #f1f1f1;
   font-family: "Source Sans Pro", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
   list-style: none;
