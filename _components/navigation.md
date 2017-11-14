@@ -49,31 +49,6 @@ lead: USAJOBS features a consistent header for top-level navigation across the s
   </div>
 </div>
 
-<!-- h6 class="usa-heading-alt">Unauthenticated - Banner - pre-transition</h6>
-<div class="preview">
-  {% include components/nav/unauthenticated-banner.html %}
-</div>
-<div class="usa-accordion-bordered usa-accordion-docs">
-  <button class="usa-button-unstyled usa-accordion-button"
-      aria-expanded="true" aria-controls="doc-1">
-    Documentation
-  </button>
-  <div id="doc-1" aria-hidden="false" class="usa-accordion-content">
-    <h4 class="usa-heading">Accessibility</h4>
-    <ul class="usa-content-list">
-      <li>
-        When the banner is in focus it should be dismissible via the keyboard.
-      </li>
-    </ul>
-
-    <h4 class="usa-heading">Usability</h4>
-    <h5>When to use</h5>
-    <ul class="usa-content-list">
-      <li>Use the unauthenticated banner variation to notify users our intent to move authentication to login.gov.</li>
-    </ul>
-  </div>
-</div -->
-
 <h6 class="usa-heading-alt">Unauthenticated - Banner - post-transition</h6>
 <div class="preview">
   {% include components/nav/unauthenticated-banner-post-release.html %}
