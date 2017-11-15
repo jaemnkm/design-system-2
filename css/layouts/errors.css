@@ -2892,13 +2892,28 @@ html {
   }
 }
 
+@media screen and (min-width: 62em) {
+  .usajobs-error {
+    min-height: 80vh;
+  }
+}
+
 .usajobs-error__container {
   margin-left: auto;
   margin-right: auto;
   max-width: 62rem;
 }
 
-.usajobs-error__title, .usajobs-error__text,
+.usajobs-error__tip {
+  margin-top: 7.5rem;
+}
+
+.usajobs-error__tip .usajobs-error__sub-title,
+.usajobs-error__tip .usajobs-error__text {
+  text-align: left;
+}
+
+.usajobs-error__title, .usajobs-error__sub-title, .usajobs-error__text,
 .usajobs-error__text a,
 .usajobs-error__text a:visited, .usajobs-error__item,
 .usajobs-error__item a,
@@ -2990,5 +3005,10 @@ html {
 .usajobs-error__img--session-expired {
   background-image: url("../../img/errors/session.png");
   background-image: url("../../img/errors/session.svg");
+}
+
+.usajobs-error__img--signed-out {
+  background-image: url("../../img/errors/signed-out.png");
+  background-image: url("../../img/errors/signed-out.svg");
 }
 /*# sourceMappingURL=errors.css.map */

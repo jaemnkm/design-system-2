@@ -12,13 +12,27 @@
     padding: $size-XXL $size-default;
   }
 
+  @include media($L) {
+    min-height: 80vh;
+  }
+
   &__container {
     margin-left: auto;
     margin-right: auto;
     max-width: $text-max-width;
   }
 
+  &__tip {
+    margin-top: $size-XXL;
+  }
+
+  &__tip &__sub-title,
+  &__tip &__text {
+    text-align: left;
+  }
+
   &__title,
+  &__sub-title,
   &__text,
   &__text a,
   &__text a:visited,
@@ -81,4 +95,8 @@
     background-image: url('../../img/errors/session.svg');
   }
 
+  &__img--signed-out {
+    background-image: url('../../img/errors/signed-out.png');
+    background-image: url('../../img/errors/signed-out.svg');
+  }
 }
