@@ -81,8 +81,8 @@ lead: USAJOBS uses the modal component to draw attention to actions that require
   <h6 class="usa-heading-alt">Modal - Info variation</h6>
   <a href="#modal-trigger" class="usa-button usajobs-button" data-object-trigger="modal" data-target="#modal-info-demo">Open info modal</a>
 
-  <h6 class="usa-heading-alt">Modal - Delete account variation</h6>
-  <a href="#modal-trigger" class="usa-button usajobs-button usa-button-secondary" data-object-trigger="modal" data-target="#modal-delete-account">Delete Account</a>
+  <h6 class="usa-heading-alt">Modal - Delete profile variation</h6>
+  <a href="#modal-trigger" class="usa-button usajobs-button usa-button-secondary" data-object-trigger="modal" data-target="#modal-delete-account">Delete profile</a>
 
   <h6 class="usa-heading-alt">Modal - Delete document variation</h6>
   <a href="#modal-trigger" class="usa-button usajobs-button usa-button-secondary" data-object-trigger="modal" data-target="#modal-delete-document">Delete Document</a>
