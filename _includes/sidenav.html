@@ -133,22 +133,6 @@
     </ul>
 
     <h4>Layouts</h4>
-    <h5>Account</h5>
-    <ul class="usa-sidenav-list">
-      <li>
-        <a {% if current[1] == 'account' %}class="usa-current"{% endif %} href="{{ site.baseurl }}/account/">Create</a>
-      </li>
-      <li>
-        <a {% if current[1] == 'account' %}class="usa-current"{% endif %} href="{{ site.baseurl }}/account/activate/">Activate</a>
-      </li>
-      <li>
-        <a {% if current[1] == 'sign-in' %}class="usa-current"{% endif %} href="{{ site.baseurl }}/account/sign-in/">Sign In</a>
-      </li>
-      <li>
-        <a {% if current[1] == 'locked' %}class="usa-current"{% endif %} href="{{ site.baseurl }}/account/sign-in/locked/">Sign In - Locked</a>
-      </li>
-    </ul>
-
     <h5>Agency Talent Portal</h5>
     <ul class="usa-sidenav-list">
       <li>
@@ -167,8 +151,15 @@
       <li>
         <a {% if current[1] == '500' %}class="usa-current"{% endif %} href="{{ site.baseurl }}/errors/500/">500</a>
       </li>
+    </ul>
+
+    <h5>Session</h5>
+    <ul class="usa-sidenav-list">
       <li>
-        <a {% if current[1] == 'session-timeout' %}class="usa-current"{% endif %} href="{{ site.baseurl }}/errors/session-timeout/">Session timeout</a>
+        <a {% if current[1] == 'timeout' %}class="usa-current"{% endif %} href="{{ site.baseurl }}/session/timeout/">Session timeout</a>
+      </li>
+      <li>
+        <a {% if current[1] == 'sign-out' %}class="usa-current"{% endif %} href="{{ site.baseurl }}/session/signed-out/">Signed out</a>
       </li>
     </ul>
 
