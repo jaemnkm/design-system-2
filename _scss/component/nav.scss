@@ -127,7 +127,7 @@ $nav_item_height: 17px + 26.5px;
       display: inherit;
       max-width: rem(140px);
       text-overflow: ellipsis;
-      overflow: hidden;
+      // overflow: hidden;
     }
   }
 
@@ -197,6 +197,30 @@ $nav_item_height: 17px + 26.5px;
       font-size: $h3-font-size;
       padding-bottom: $size-XS;
     }
+  }
+
+  &__icon {
+     display: block;
+     height: rem(27px);
+     width: rem(27px);
+     background-repeat: no-repeat;
+     vertical-align: middle;
+
+     &.user {
+       background-image: url('../img/icons/nav/user@2x.png');
+       background-image: url('../img/icons/nav/user.svg');
+       width: rem(23px);
+     }
+
+     &.help {
+       background-image: url('../img/icons/nav/question-circle@2x.png');
+       background-image: url('../img/icons/nav/question-circle.svg');
+     }
+
+     &.search {
+       background-image: url('../img/icons/nav/search@2x.png');
+       background-image: url('../img/icons/nav/search.svg');
+     }
   }
 
   ul.usajobs-nav__secondary-menu {

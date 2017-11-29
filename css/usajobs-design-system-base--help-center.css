@@ -12117,7 +12117,6 @@ html {
     display: inherit;
     max-width: 14rem;
     text-overflow: ellipsis;
-    overflow: hidden;
   }
 }
 
@@ -12194,6 +12193,30 @@ html {
   display: block;
   font-size: 24px;
   padding-bottom: 0.25rem;
+}
+
+.usajobs-nav__icon {
+  display: block;
+  height: 2.7rem;
+  width: 2.7rem;
+  background-repeat: no-repeat;
+  vertical-align: middle;
+}
+
+.usajobs-nav__icon.user {
+  background-image: url("../img/icons/nav/user@2x.png");
+  background-image: url("../img/icons/nav/user.svg");
+  width: 2.3rem;
+}
+
+.usajobs-nav__icon.help {
+  background-image: url("../img/icons/nav/question-circle@2x.png");
+  background-image: url("../img/icons/nav/question-circle.svg");
+}
+
+.usajobs-nav__icon.search {
+  background-image: url("../img/icons/nav/search@2x.png");
+  background-image: url("../img/icons/nav/search.svg");
 }
 
 .usajobs-nav ul.usajobs-nav__secondary-menu {
