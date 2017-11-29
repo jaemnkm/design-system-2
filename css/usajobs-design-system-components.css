@@ -10022,6 +10022,8 @@ html {
   .usajobs-nav__first_name {
     display: inherit;
     max-width: 14rem;
+    text-overflow: ellipsis;
+    overflow: hidden;
   }
 }
 
