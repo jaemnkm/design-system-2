@@ -226,8 +226,8 @@ module.exports = function(grunt) {
   });
 
   grunt.registerTask('serve', ['concurrent:serve']);
-  grunt.registerTask('build', ['shell:jekyllBuild', 'base64', 'css', 'js']);
-  grunt.registerTask('css', ['base64', 'sass', 'autoprefixer', 'cssmin']);
+  grunt.registerTask('build', ['shell:jekyllBuild', 'css', 'js']);
+  grunt.registerTask('css', ['sass', 'autoprefixer', 'cssmin']);
   grunt.registerTask('js', ['jshint:all', 'browserify', 'concat']);
   grunt.registerTask('test', ['jshint:all', 'scsslint']);
 };

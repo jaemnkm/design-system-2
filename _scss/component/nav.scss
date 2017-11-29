@@ -126,6 +126,8 @@ $nav_item_height: 17px + 26.5px;
     @include media($SM) {
       display: inherit;
       max-width: rem(140px);
+      text-overflow: ellipsis;
+      overflow: hidden;
     }
   }
 
