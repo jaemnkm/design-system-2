@@ -1,22 +1,18 @@
-@font-face {
-  font-family: 'Merriweather';
-  font-style: normal;
-  font-weight: 400;
-  src: url('../fonts/merriweather-regular-webfont.woff2') format('woff2'),
-       url('../fonts/merriweather-regular-webfont.woff') format('woff'),
-       url('../fonts/merriweather-regular-webfont.ttf') format('truetype');
-}
-
 // Let's see if it's just our copy of the font
-@import url(//fonts.googleapis.com/css?family=Source+Sans+Pro);
+// @import url(//fonts.googleapis.com/css?family=Source+Sans+Pro);
 
-/*
-@font-face {
-  font-family: "Source Sans Pro";
-  font-style: normal;
-  font-weight: 400;
-  src: url('../fonts/sourcesanspro-regular-webfont.woff2') format('woff2'),
-       url('../fonts/sourcesanspro-regular-webfont.woff') format('woff'),
-       url('../fonts/sourcesanspro-regular-webfont.ttf') format('truetype');
-}
-*/
+@include font-face(
+  'Merriweather',
+  '#{$font-path}/merriweather-regular-webfont',
+  400,
+  normal,
+  $file-formats: eot woff2 woff ttf
+);
+
+@include font-face(
+  'Source Sans Pro',
+  '#{$font-path}/sourcesanspro-regular-webfont',
+  400,
+  normal,
+  $file-formats: eot woff2 woff ttf
+);
