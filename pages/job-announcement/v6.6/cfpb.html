@@ -6,7 +6,7 @@ control-number: 'cfpb'
 ---
 {% assign job = site.data.job-announcements[page.control-number] %}
 
-{% include components/nav-logged_in.html %}
+{% include components/nav/authenticated.html %}
 {% include components/joa/v1.2/prev-next.html %}
 <div xmlns:soap-env="http://schemas.xmlsoap.org/soap/envelope/"
      xmlns:hr="http://www.hr-xml.org/3"
