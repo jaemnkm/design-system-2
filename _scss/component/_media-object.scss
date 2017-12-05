@@ -54,8 +54,6 @@ $body-padding: $size-M;
       top: 15%;
       left: 50%;
       margin-left: rem(-5px);
-      @include fa-icon();
-      font-size: rem(30px);
     }
   }
 

@@ -6,9 +6,12 @@
   background-color: $color;
   border-color: $color;
 
-  .usajobs-alert__icon::after {
-    content: $icon;
+  .usajobs-alert__icon:after {
+    display: inline-block;
     color: $color;
+    content: url("../img/icons/alerts/#{$icon}.svg");
+    background-size: 30px 30px;
+    width: rem(30px);
   }
 }
 
@@ -21,7 +24,7 @@
 }
 
 .usajobs-alert--success {
-  @include alert($color-green-dark, $fa-var-check);
+  @include alert($color-green-dark, 'check');
 
   .usajobs-alert__icon::after {
     margin-left: -#{$size-default};
@@ -29,19 +32,19 @@
 }
 
 .usajobs-alert--info {
-  @include alert($color-primary-darker, $fa-var-info);
+  @include alert($color-primary-darker, 'info');
 }
 
 .usajobs-alert--warning {
-  @include alert($color-gold, $fa-var-exclamation);
+  @include alert($color-gold, 'exclamation-yellow');
 }
 
 .usajobs-alert--error {
-  @include alert($color-secondary-dark, $fa-var-exclamation);
+  @include alert($color-secondary-dark, 'exclamation-red');
 }
 
 .usajobs-alert--tip {
-  @include alert($color-primary-alt-dark, $fa-var-lightbulb-o);
+  @include alert($color-primary-alt-dark, 'lightbulb');
 
   .usajobs-alert__icon::after {
     margin-left: -0.8rem;
@@ -50,5 +53,9 @@
   .usajobs-alert__count {
     margin: 0;
     font-size: $small-font-size;
+  }
+
+  .usa-button-primary {
+    color: $color-white;
   }
 }

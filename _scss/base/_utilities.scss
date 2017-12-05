@@ -104,12 +104,12 @@
 
   &:after {
     position: relative;
-    width: rem(10px);
-    height: rem(10px);
-    margin-left: -#{rem(2px)};
-    margin-top: rem(6px);
-    @include fa-icon();
-    content: $fa-var-times;
+    display: inline-block;
+    width: rem(12px);
+    height: rem(12px);
+    background-size: 12px 12px;
+    margin-left: rem(2px);
+    content: url("../img/icons/close/times.svg");
     color: $color-white;
     // Safari puts the icon slightly too low, Chrome slightly too high
     // line-height corrects the issue in Chrome but makes it way too low in Safari
