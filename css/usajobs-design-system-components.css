@@ -6500,17 +6500,12 @@ html {
 
 .usajobs-modal__close:after {
   position: relative;
-  width: 1rem;
-  height: 1rem;
-  margin-left: -0.2rem;
-  margin-top: 0.6rem;
   display: inline-block;
-  font: normal normal normal 14px/1 FontAwesome;
-  font-size: inherit;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  content: "";
+  width: 1.2rem;
+  height: 1.2rem;
+  background-size: 12px 12px;
+  margin-left: 0.2rem;
+  content: url("../img/icons/close/times.svg");
   color: #ffffff;
 }
 
