@@ -417,3 +417,22 @@
     border-color: $color-secondary;
   }
 }
+
+// Mixins to replace the use of font awesome
+@mixin icon-image($file, $height, $width) {
+  display: inline-block;
+  height: $height;
+  width: $width;
+  background-image: url("../img/icons/#{$file}@2x.png");
+  background-image: url("../img/icons/#{file}.svg");
+  background-repeat: no-repeat;
+  vertical-align: middle;
+}
+
+@mixin icon-content($file, $height, $width, $color) {
+  display: inline-block;
+  color: $color;
+  content: url("../img/icons/#{$file}.svg");
+  background-size: $height $width;
+  width: $width;
+}

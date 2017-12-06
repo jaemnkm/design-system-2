@@ -9,7 +9,7 @@ lead: USAJOBS has adopted a different visual style to our alerts that deviate fr
   Design Complete
 </a>
 
-<div class="preview">
+<div class="preview" id="code-0">
   <h6 class="usa-heading-alt">Success</h6>
   <div class="usa-alert usajobs-alert usajobs-alert--success" role="alert" data-object="alert">
     <div class="usajobs-alert__figure">
@@ -124,7 +124,7 @@ lead: USAJOBS has adopted a different visual style to our alerts that deviate fr
   </div>
 </div>
 
-<div class="preview">
+<div class="preview" id="code-1">
   <h6 class="usa-heading-alt" id="alert-tip-single">Tip (Single)</h6>
   <div class="usa-alert usajobs-alert usajobs-alert--tip" role="alert" data-object="alert">
     <div class="usajobs-alert__figure">

@@ -1,10 +1,10 @@
 // Footer
 
 @import '../base-shared';
-@import 'font-awesome/font-awesome';
 
 .usajobs-footer--v1,
 .usajobs-footer--v2,
+.usajobs-footer--v3,
 .usajobs-footer--joa {
   a,
   a:visited {
@@ -38,28 +38,33 @@
     position: relative;
   }
 
+  .usa-footer-primary-section .usa-footer-primary-content {
+    padding-left: $size-default;
+    padding-right: $size-default;
+
+    @include media($M) {
+      padding: 0;
+    }
+  }
+
+  .usa-footer-primary-section .usa-footer-primary-content &__menu-item {
+    margin-left: $size-M;
+
+    @include media($M) {
+      margin-left: 0;
+    }
+  }
+
   // Fix headers inside of unordered lists
   .usa-footer-primary-section .usa-footer-primary-content .usa-footer-primary-link {
     @include h4();
-    margin-left: 0;
-    padding-left: $size-S;
+    margin: 0;
+    padding: $size-M 0;
     background: none;
 
     @include media($M) {
       @include h3();
-      padding-left: 0;
-    }
-
-    &::before {
-      @include fa-icon();
-      @include transition(all $duration-fast ease);
-      @include transform-style(preserve-3d);
-      overflow: hidden;
-      position: absolute;
-
-      @include media($M) {
-        display: none;
-      }
+      padding: 0;
     }
 
     &:hover {
@@ -69,14 +74,15 @@
         cursor: inherit;
       }
     }
-  }
 
-  .usa-footer-primary-section .usa-footer-primary-content .usa-footer-primary-link[data-state="is-closed"] {
-    &::before {
-      @include fa-icon();
-      content: $fa-var-chevron-right;
-      top: rem(37px);
-      left: rem(12px);
+    .usajobs-icon {
+      width: rem(9px);
+      height: rem(28px);
+      margin-right: $size-M;
+      color: $color-base;
+      vertical-align: middle;
+      @include transition(all $duration-fast ease);
+      @include transform-style(preserve-3d);
 
       @include media($M) {
         display: none;
@@ -85,17 +91,23 @@
   }
 
   .usa-footer-primary-section .usa-footer-primary-content .usa-footer-primary-link[data-state="is-open"] {
-    &::before {
-      @include fa-icon();
-      content: $fa-var-chevron-right;
-      @include fa-icon-rotate(90deg, 1);
-      top: rem(40px);
-      left: rem(10px);
+    padding-bottom: $size-S;
 
-      @include media($M) {
-        display: none;
-      }
+    .usajobs-icon {
+      @include transform(rotate(90deg));
     }
+  }
+  .usa-footer-primary-section .usa-footer-primary-content.hidden .usa-footer-primary-link[data-state="is-open"] {
+    // Standards JS is interferring
+    padding-bottom: $size-M;
+
+    .usajobs-icon {
+      @include transform(none);
+    }
+  }
+
+  .usajobs-social-link .usajobs-icon {
+    color: $color-white;
   }
 
   .usa-footer-primary-content {
@@ -104,6 +116,7 @@
 
   .usa-footer-primary-content:last-child.usajobs-footer--v1__account,
   .usa-footer-primary-content:last-child.usajobs-footer--v2__account,
+  .usa-footer-primary-content:last-child.usajobs-footer--v3__account,
   .usa-footer-primary-content:last-child.usajobs-footer--joa__account {
     @include media($L) {
       // grrr, the Neat grid automatically sets the last child to margin-right: 0
@@ -178,6 +191,7 @@
 
   ul.usajobs-footer--v1__subsection-horizontal,
   ul.usajobs-footer--v2__subsection-horizontal,
+  ul.usajobs-footer--v3__subsection-horizontal,
   ul.usajobs-footer--joa__subsection-horizontal {
     margin-top: $size-S;
     margin-bottom: 0;
@@ -257,7 +271,8 @@
   }
 }
 
-.usajobs-footer--v2 {
+.usajobs-footer--v2,
+.usajobs-footer--v3 {
   a,
   a:visited {
     color: $color-primary;
