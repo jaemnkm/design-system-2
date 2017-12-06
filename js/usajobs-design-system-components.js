@@ -109,62 +109,6 @@ $doc_multiselect.on('change', function() {
 });
 
 },{}],3:[function(require,module,exports){
-// Footer
-
-var $footer = $('[data-object="footer"]'),
-  window_width = window.innerWidth;
-
-$footer.on('click', '[data-behavior]', function () {
-  var $el = $(this),
-    $object = $el.closest('[data-object="footer"]'),
-    state = $el.attr('data-state'),
-    behavior = $el.attr('data-behavior'),
-    $target = $object.find($el.attr('data-target'));
-
-  $el.blur(); // Removes focus
-
-  // Each behavior attached to the element should be triggered
-  $.each(behavior.split(' '), function (idx, action) {
-    $object.trigger(action, { el: $el, object: $object, state: state, target: $target });
-  });
-});
-
-$footer.on('footer.toggle', function(event, opts) {
-  event.preventDefault();
-
-  if (opts.state === 'is-closed') {
-    opts.object.trigger('footer.open', opts);
-  } else if (opts.state === 'is-open') {
-    opts.object.trigger('footer.close', opts);
-  }
-});
-
-$footer.on('footer.open', function(event, opts) {
-    // Hide all siblings
-    /*
-    opts.object
-      .find('[data-behavior="footer.toggle"][data-state="is-open"]')
-      .trigger('close', { });
-    */
-
-  opts.target.removeClass('is-hidden');
-  opts.target.attr('aria-expanded', 'true');
-  opts.el.attr('aria-expanded', 'true');
-  opts.el.attr('data-state', 'is-open');
-});
-
-$footer.on('footer.close', function(event, opts) {
-  if (window_width < 600) {
-    event.preventDefault();
-
-    opts.target.addClass('is-hidden');
-    opts.target.attr('aria-expanded', 'false');
-    opts.el.attr('aria-expanded', 'false');
-    opts.el.attr('data-state', 'is-closed');
-  }
-});
-
-},{}],4:[function(require,module,exports){
 // All select menus or select buttons with either of these classes
 // get converted to the chosen style
 $('.usajobs-form-select--entry').chosen();
@@ -174,7 +118,7 @@ $('.usajobs-button-select').chosen({
   inherit_select_classes: true
 });
 
-},{}],5:[function(require,module,exports){
+},{}],4:[function(require,module,exports){
 // JOA Actions
 var $joa_actions = $('[data-object="joa-actions"]'),
   cleanUpShare = function ($list) {
@@ -278,7 +222,7 @@ $joa_actions.on('joa-actions.shorten-link', function(event, opts) {
   });
 });
 
-},{}],6:[function(require,module,exports){
+},{}],5:[function(require,module,exports){
 // JOA Sections
 
 var $reveal_more = $('[data-object="reveal-more"]'),
@@ -313,7 +257,7 @@ $(window).resize($.throttle(250, function() {
   }
 }));
 
-},{}],7:[function(require,module,exports){
+},{}],6:[function(require,module,exports){
 // Modal
 
 var $modal = $('[data-object="modal"]'),
@@ -396,7 +340,7 @@ $modal.on('modal.close', function(event, opts) {
   opts.object.data('previous_focus').focus();
 });
 
-},{}],8:[function(require,module,exports){
+},{}],7:[function(require,module,exports){
 // Secondary Nav
 
 var $nav_secondary = $('[data-object="nav-secondary"]'),
@@ -546,7 +490,7 @@ $(window).scroll($.throttle(250, function () {
   updateActiveNav();
 }));
 
-},{}],9:[function(require,module,exports){
+},{}],8:[function(require,module,exports){
 // Navigation (top-level-nav)
 
 var $nav = $('[data-object="nav"]'),
@@ -691,7 +635,7 @@ $(window).resize($.throttle(250, function() {
   }
 }));
 
-},{}],10:[function(require,module,exports){
+},{}],9:[function(require,module,exports){
 // Notification
 
 var $notification = $('[data-object="notification"]'),
@@ -755,7 +699,7 @@ $notification.on('notification.delayed-close', function(event, opts) {
   }, 5000);
 });
 
-},{}],11:[function(require,module,exports){
+},{}],10:[function(require,module,exports){
 var $reveal = $('[data-object="reveal"]'),
   $reveal_more = $('[data-object="reveal-more"]'),
   hideReadMoreContent = function () {
@@ -841,7 +785,7 @@ $reveal.on('reveal.show-next', function(event, opts) {
   });
 });
 
-},{}],12:[function(require,module,exports){
+},{}],11:[function(require,module,exports){
 // Search results
 var $search_results = $('[data-object="search-results"]');
 
@@ -875,7 +819,7 @@ $search_results.on('search-results.toggle-save', function(event, opts) {
   }
 });
 
-},{}],13:[function(require,module,exports){
+},{}],12:[function(require,module,exports){
 // Search
 
 // Search autocomplete locations
@@ -919,7 +863,7 @@ $('#search-location').autocomplete({
   }
 });
 
-},{}],14:[function(require,module,exports){
+},{}],13:[function(require,module,exports){
 var $show_all = $('[data-object="show-all"]');
 
 $show_all.on('click', '[data-behavior]', function (event) {
@@ -959,7 +903,7 @@ $show_all.on('show-all.trigger', function(event, opts) {
   }
 });
 
-},{}],15:[function(require,module,exports){
+},{}],14:[function(require,module,exports){
 // Tooltips
 // From: https://osvaldas.info/elegant-css-and-jquery-tooltip-responsive-mobile-friendly
 
@@ -1037,7 +981,7 @@ $targets.on('mouseenter', function () {
   $tooltip.on('click', removeTooltip );
 });
 
-},{}],16:[function(require,module,exports){
+},{}],15:[function(require,module,exports){
 
 /**
  * Array#filter.
@@ -1064,7 +1008,7 @@ module.exports = function (arr, fn, self) {
 
 var hasOwn = Object.prototype.hasOwnProperty;
 
-},{}],17:[function(require,module,exports){
+},{}],16:[function(require,module,exports){
 /**
  * array-foreach
  *   Array#forEach ponyfill for older browsers
@@ -1088,7 +1032,7 @@ module.exports = function forEach (ary, callback, thisArg) {
     }
 };
 
-},{}],18:[function(require,module,exports){
+},{}],17:[function(require,module,exports){
 /*
  * classList.js: Cross-browser full element.classList implementation.
  * 1.1.20170427
@@ -1330,7 +1274,7 @@ if (objCtr.defineProperty) {
 
 }
 
-},{}],19:[function(require,module,exports){
+},{}],18:[function(require,module,exports){
 /*!
   * domready (c) Dustin Diaz 2014 - License MIT
   */
@@ -1362,7 +1306,7 @@ if (objCtr.defineProperty) {
 
 });
 
-},{}],20:[function(require,module,exports){
+},{}],19:[function(require,module,exports){
 'use strict';
 
 // <3 Modernizr
@@ -1421,7 +1365,7 @@ module.exports = useNative() ? nativeDataset : function (element) {
 };
 
 
-},{}],21:[function(require,module,exports){
+},{}],20:[function(require,module,exports){
 // element-closest | CC0-1.0 | github.com/jonathantneal/closest
 
 (function (ElementProto) {
@@ -1456,7 +1400,7 @@ module.exports = useNative() ? nativeDataset : function (element) {
 	}
 })(window.Element.prototype);
 
-},{}],22:[function(require,module,exports){
+},{}],21:[function(require,module,exports){
 (function (global){
 /**
  * lodash (Custom Build) <https://lodash.com/>
@@ -1837,7 +1781,7 @@ function toNumber(value) {
 module.exports = debounce;
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{}],23:[function(require,module,exports){
+},{}],22:[function(require,module,exports){
 /*
 object-assign
 (c) Sindre Sorhus
@@ -1929,7 +1873,7 @@ module.exports = shouldUseNative() ? Object.assign : function (target, source) {
 	return to;
 };
 
-},{}],24:[function(require,module,exports){
+},{}],23:[function(require,module,exports){
 const assign = require('object-assign');
 const delegate = require('../delegate');
 const delegateAll = require('../delegateAll');
@@ -2008,7 +1952,7 @@ module.exports = function behavior(events, props) {
   }, props);
 };
 
-},{"../delegate":26,"../delegateAll":27,"object-assign":23}],25:[function(require,module,exports){
+},{"../delegate":25,"../delegateAll":26,"object-assign":22}],24:[function(require,module,exports){
 module.exports = function compose(functions) {
   return function(e) {
     return functions.some(function(fn) {
@@ -2017,7 +1961,7 @@ module.exports = function compose(functions) {
   };
 };
 
-},{}],26:[function(require,module,exports){
+},{}],25:[function(require,module,exports){
 // polyfill Element.prototype.closest
 require('element-closest');
 
@@ -2030,7 +1974,7 @@ module.exports = function delegate(selector, fn) {
   }
 };
 
-},{"element-closest":21}],27:[function(require,module,exports){
+},{"element-closest":20}],26:[function(require,module,exports){
 const delegate = require('../delegate');
 const compose = require('../compose');
 
@@ -2053,7 +1997,7 @@ module.exports = function delegateAll(selectors) {
   return compose(delegates);
 };
 
-},{"../compose":25,"../delegate":26}],28:[function(require,module,exports){
+},{"../compose":24,"../delegate":25}],27:[function(require,module,exports){
 module.exports = function ignore(element, fn) {
   return function ignorance(e) {
     if (element !== e.target && !element.contains(e.target)) {
@@ -2062,7 +2006,7 @@ module.exports = function ignore(element, fn) {
   };
 };
 
-},{}],29:[function(require,module,exports){
+},{}],28:[function(require,module,exports){
 module.exports = function once(listener, options) {
   var wrapped = function wrappedOnce(e) {
     e.currentTarget.removeEventListener(e.type, wrapped, options);
@@ -2072,7 +2016,7 @@ module.exports = function once(listener, options) {
 };
 
 
-},{}],30:[function(require,module,exports){
+},{}],29:[function(require,module,exports){
 'use strict';
 
 var RE_TRIM = /(^\s+)|(\s+$)/g;
@@ -2118,7 +2062,7 @@ module.exports = function resolveIds(ids, doc) {
     });
 };
 
-},{}],31:[function(require,module,exports){
+},{}],30:[function(require,module,exports){
 'use strict';
 const behavior = require('../utils/behavior');
 const filter = require('array-filter');
@@ -2240,7 +2184,7 @@ Accordion.prototype.remove = function () {
 
 module.exports = Accordion;
 
-},{"../config":40,"../events":41,"../utils/behavior":45,"../utils/is-in-viewport":46,"../utils/toggle":50,"array-filter":16,"array-foreach":17,"object-assign":23}],32:[function(require,module,exports){
+},{"../config":39,"../events":40,"../utils/behavior":44,"../utils/is-in-viewport":45,"../utils/toggle":49,"array-filter":15,"array-foreach":16,"object-assign":22}],31:[function(require,module,exports){
 'use strict';
 const behavior = require('../utils/behavior');
 const toggle = require('../utils/toggle');
@@ -2263,7 +2207,7 @@ module.exports = behavior({
   },
 });
 
-},{"../config":40,"../events":41,"../utils/behavior":45,"../utils/toggle":50}],33:[function(require,module,exports){
+},{"../config":39,"../events":40,"../utils/behavior":44,"../utils/toggle":49}],32:[function(require,module,exports){
 'use strict';
 const accordion = require('./accordion');
 const behavior = require('../utils/behavior');
@@ -2325,7 +2269,7 @@ module.exports = behavior({
   },
 });
 
-},{"../config":40,"../events":41,"../utils/behavior":45,"../utils/select":47,"./accordion":31,"array-foreach":17,"lodash.debounce":22}],34:[function(require,module,exports){
+},{"../config":39,"../events":40,"../utils/behavior":44,"../utils/select":46,"./accordion":30,"array-foreach":16,"lodash.debounce":21}],33:[function(require,module,exports){
 module.exports = {
   accordion:  require('./accordion'),
   banner:     require('./banner'),
@@ -2338,7 +2282,7 @@ module.exports = {
 };
 
 
-},{"./accordion":31,"./banner":32,"./footer":33,"./navigation":35,"./password":36,"./search":37,"./skipnav":38,"./validator":39}],35:[function(require,module,exports){
+},{"./accordion":30,"./banner":31,"./footer":32,"./navigation":34,"./password":35,"./search":36,"./skipnav":37,"./validator":38}],34:[function(require,module,exports){
 'use strict';
 const behavior = require('../utils/behavior');
 const forEach = require('array-foreach');
@@ -2416,7 +2360,7 @@ module.exports = assign(
   navigation
 );
 
-},{"../config":40,"../events":41,"../utils/behavior":45,"../utils/select":47,"./accordion":31,"array-foreach":17,"object-assign":23}],36:[function(require,module,exports){
+},{"../config":39,"../events":40,"../utils/behavior":44,"../utils/select":46,"./accordion":30,"array-foreach":16,"object-assign":22}],35:[function(require,module,exports){
 'use strict';
 const behavior = require('../utils/behavior');
 const toggleFormInput = require('../utils/toggle-form-input');
@@ -2437,7 +2381,7 @@ module.exports = behavior({
   },
 });
 
-},{"../config":40,"../events":41,"../utils/behavior":45,"../utils/toggle-form-input":49}],37:[function(require,module,exports){
+},{"../config":39,"../events":40,"../utils/behavior":44,"../utils/toggle-form-input":48}],36:[function(require,module,exports){
 'use strict';
 const behavior = require('../utils/behavior');
 const forEach = require('array-foreach');
@@ -2533,7 +2477,7 @@ module.exports = assign(
   search
 );
 
-},{"../config":40,"../events":41,"../utils/behavior":45,"../utils/select":47,"array-foreach":17,"object-assign":23,"receptor/ignore":28}],38:[function(require,module,exports){
+},{"../config":39,"../events":40,"../utils/behavior":44,"../utils/select":46,"array-foreach":16,"object-assign":22,"receptor/ignore":27}],37:[function(require,module,exports){
 'use strict';
 const behavior = require('../utils/behavior');
 const once = require('receptor/once');
@@ -2563,7 +2507,7 @@ module.exports = behavior({
   },
 });
 
-},{"../config":40,"../events":41,"../utils/behavior":45,"receptor/once":29}],39:[function(require,module,exports){
+},{"../config":39,"../events":40,"../utils/behavior":44,"receptor/once":28}],38:[function(require,module,exports){
 'use strict';
 const behavior = require('../utils/behavior');
 const validate = require('../utils/validate-input');
@@ -2590,12 +2534,12 @@ module.exports = assign(
   validator
 );
 
-},{"../utils/behavior":45,"../utils/validate-input":51,"lodash.debounce":22,"object-assign":23}],40:[function(require,module,exports){
+},{"../utils/behavior":44,"../utils/validate-input":50,"lodash.debounce":21,"object-assign":22}],39:[function(require,module,exports){
 module.exports = {
   prefix: 'usa',
 };
 
-},{}],41:[function(require,module,exports){
+},{}],40:[function(require,module,exports){
 module.exports = {
   // This used to be conditionally dependent on whether the
   // browser supported touch events; if it did, `CLICK` was set to
@@ -2612,7 +2556,7 @@ module.exports = {
   CLICK: 'click',
 };
 
-},{}],42:[function(require,module,exports){
+},{}],41:[function(require,module,exports){
 'use strict';
 const elproto = window.HTMLElement.prototype;
 const HIDDEN = 'hidden';
@@ -2632,14 +2576,14 @@ if (!(HIDDEN in elproto)) {
   });
 }
 
-},{}],43:[function(require,module,exports){
+},{}],42:[function(require,module,exports){
 'use strict';
 // polyfills HTMLElement.prototype.classList and DOMTokenList
 require('classlist-polyfill');
 // polyfills HTMLElement.prototype.hidden
 require('./element-hidden');
 
-},{"./element-hidden":42,"classlist-polyfill":18}],44:[function(require,module,exports){
+},{"./element-hidden":41,"classlist-polyfill":17}],43:[function(require,module,exports){
 'use strict';
 const domready = require('domready');
 
@@ -2664,7 +2608,7 @@ domready(() => {
 
 module.exports = uswds;
 
-},{"./components":34,"./config":40,"./polyfills":43,"domready":19}],45:[function(require,module,exports){
+},{"./components":33,"./config":39,"./polyfills":42,"domready":18}],44:[function(require,module,exports){
 'use strict';
 const assign = require('object-assign');
 const forEach = require('array-foreach');
@@ -2697,7 +2641,7 @@ module.exports = (events, props) => {
   }, props));
 };
 
-},{"array-foreach":17,"object-assign":23,"receptor/behavior":24}],46:[function(require,module,exports){
+},{"array-foreach":16,"object-assign":22,"receptor/behavior":23}],45:[function(require,module,exports){
 // https://stackoverflow.com/a/7557433
 function isElementInViewport (el, win=window,
                               docEl=document.documentElement) {
@@ -2713,7 +2657,7 @@ function isElementInViewport (el, win=window,
 
 module.exports = isElementInViewport;
 
-},{}],47:[function(require,module,exports){
+},{}],46:[function(require,module,exports){
 'use strict';
 
 /**
@@ -2748,7 +2692,7 @@ module.exports = function select (selector, context) {
   return Array.prototype.slice.call(selection);
 };
 
-},{}],48:[function(require,module,exports){
+},{}],47:[function(require,module,exports){
 /**
  * Flips given INPUT elements between masked (hiding the field value) and unmasked
  * @param {Array.HTMLElement} fields - An array of INPUT elements
@@ -2760,7 +2704,7 @@ module.exports = (field, mask) => {
   field.setAttribute('type', mask ? 'password' : 'text');
 };
 
-},{}],49:[function(require,module,exports){
+},{}],48:[function(require,module,exports){
 'use strict';
 const forEach = require('array-foreach');
 const resolveIdRefs = require('resolve-id-refs');
@@ -2814,7 +2758,7 @@ module.exports = el => {
   return pressed;
 };
 
-},{"./select":47,"./toggle-field-mask":48,"array-foreach":17,"resolve-id-refs":30}],50:[function(require,module,exports){
+},{"./select":46,"./toggle-field-mask":47,"array-foreach":16,"resolve-id-refs":29}],49:[function(require,module,exports){
 'use strict';
 const EXPANDED = 'aria-expanded';
 const CONTROLS = 'aria-controls';
@@ -2839,7 +2783,7 @@ module.exports = (button, expanded) => {
   return expanded;
 };
 
-},{}],51:[function(require,module,exports){
+},{}],50:[function(require,module,exports){
 'use strict';
 const dataset = require('elem-dataset');
 
@@ -2879,4 +2823,4 @@ module.exports = function validate (el) {
   }
 };
 
-},{"../config":40,"elem-dataset":20}]},{},[44,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]);
+},{"../config":39,"elem-dataset":19}]},{},[43,1,2,3,4,5,6,7,8,9,10,11,12,13,14]);
