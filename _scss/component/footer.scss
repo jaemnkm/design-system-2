@@ -20,14 +20,6 @@
     padding-bottom: $size-M;
   }
 
-  &__menu-item.is-hidden {
-    display: none;
-
-    @include media($M) {
-      display: list-item;
-    }
-  }
-
   .usa-footer-return-to-top a {
     color: $color-primary;
   }
@@ -48,7 +40,7 @@
   }
 
   .usa-footer-primary-section .usa-footer-primary-content &__menu-item {
-    margin-left: $size-M;
+    margin-left: 2.5rem;
 
     @include media($M) {
       margin-left: 0;
@@ -59,7 +51,7 @@
   .usa-footer-primary-section .usa-footer-primary-content .usa-footer-primary-link {
     @include h4();
     margin: 0;
-    padding: $size-M 0;
+    padding-bottom: $size-M;
     background: none;
 
     @include media($M) {
@@ -78,7 +70,7 @@
     .usajobs-icon {
       width: rem(9px);
       height: rem(28px);
-      margin-right: $size-M;
+      margin-right: $size-default;
       color: $color-base;
       vertical-align: middle;
       @include transition(all $duration-fast ease);
@@ -90,16 +82,17 @@
     }
   }
 
-  .usa-footer-primary-section .usa-footer-primary-content .usa-footer-primary-link[data-state="is-open"] {
+  .usa-footer-primary-section .usa-footer-primary-content .usa-footer-primary-link {
+    padding-left: 0;
     padding-bottom: $size-S;
 
     .usajobs-icon {
       @include transform(rotate(90deg));
     }
   }
-  .usa-footer-primary-section .usa-footer-primary-content.hidden .usa-footer-primary-link[data-state="is-open"] {
-    // Standards JS is interferring
-    padding-bottom: $size-M;
+
+  .usa-footer-primary-section .usa-footer-primary-content.hidden .usa-footer-primary-link {
+    padding: $size-M 0;
 
     .usajobs-icon {
       @include transform(none);

@@ -7097,22 +7097,6 @@ html {
   padding-bottom: 3rem;
 }
 
-.usajobs-footer--v1__menu-item.is-hidden,
-.usajobs-footer--v2__menu-item.is-hidden,
-.usajobs-footer--v3__menu-item.is-hidden,
-.usajobs-footer--joa__menu-item.is-hidden {
-  display: none;
-}
-
-@media screen and (min-width: 37.5em) {
-  .usajobs-footer--v1__menu-item.is-hidden,
-  .usajobs-footer--v2__menu-item.is-hidden,
-  .usajobs-footer--v3__menu-item.is-hidden,
-  .usajobs-footer--joa__menu-item.is-hidden {
-    display: list-item;
-  }
-}
-
 .usajobs-footer--v1 .usa-footer-return-to-top a,
 .usajobs-footer--v2 .usa-footer-return-to-top a,
 .usajobs-footer--v3 .usa-footer-return-to-top a,
@@ -7154,7 +7138,7 @@ html {
 .usajobs-footer--v2__menu-item, .usa-footer-primary-section .usa-footer-primary-content
 .usajobs-footer--v3__menu-item, .usa-footer-primary-section .usa-footer-primary-content
 .usajobs-footer--joa__menu-item {
-  margin-left: 3rem;
+  margin-left: 2.5rem;
 }
 
 @media screen and (min-width: 37.5em) {
@@ -7178,7 +7162,7 @@ html {
   font-size: 19px;
   font-size: 1.9rem;
   margin: 0;
-  padding: 3rem 0;
+  padding-bottom: 3rem;
   background: none;
 }
 
@@ -7220,7 +7204,7 @@ html {
 .usajobs-footer--joa .usa-footer-primary-section .usa-footer-primary-content .usa-footer-primary-link .usajobs-icon {
   width: 0.9rem;
   height: 2.8rem;
-  margin-right: 3rem;
+  margin-right: 1.5rem;
   color: #212121;
   vertical-align: middle;
   transition: all 0.3s ease;
@@ -7238,32 +7222,33 @@ html {
   }
 }
 
-.usajobs-footer--v1 .usa-footer-primary-section .usa-footer-primary-content .usa-footer-primary-link[data-state="is-open"],
-.usajobs-footer--v2 .usa-footer-primary-section .usa-footer-primary-content .usa-footer-primary-link[data-state="is-open"],
-.usajobs-footer--v3 .usa-footer-primary-section .usa-footer-primary-content .usa-footer-primary-link[data-state="is-open"],
-.usajobs-footer--joa .usa-footer-primary-section .usa-footer-primary-content .usa-footer-primary-link[data-state="is-open"] {
+.usajobs-footer--v1 .usa-footer-primary-section .usa-footer-primary-content .usa-footer-primary-link,
+.usajobs-footer--v2 .usa-footer-primary-section .usa-footer-primary-content .usa-footer-primary-link,
+.usajobs-footer--v3 .usa-footer-primary-section .usa-footer-primary-content .usa-footer-primary-link,
+.usajobs-footer--joa .usa-footer-primary-section .usa-footer-primary-content .usa-footer-primary-link {
+  padding-left: 0;
   padding-bottom: 1rem;
 }
 
-.usajobs-footer--v1 .usa-footer-primary-section .usa-footer-primary-content .usa-footer-primary-link[data-state="is-open"] .usajobs-icon,
-.usajobs-footer--v2 .usa-footer-primary-section .usa-footer-primary-content .usa-footer-primary-link[data-state="is-open"] .usajobs-icon,
-.usajobs-footer--v3 .usa-footer-primary-section .usa-footer-primary-content .usa-footer-primary-link[data-state="is-open"] .usajobs-icon,
-.usajobs-footer--joa .usa-footer-primary-section .usa-footer-primary-content .usa-footer-primary-link[data-state="is-open"] .usajobs-icon {
+.usajobs-footer--v1 .usa-footer-primary-section .usa-footer-primary-content .usa-footer-primary-link .usajobs-icon,
+.usajobs-footer--v2 .usa-footer-primary-section .usa-footer-primary-content .usa-footer-primary-link .usajobs-icon,
+.usajobs-footer--v3 .usa-footer-primary-section .usa-footer-primary-content .usa-footer-primary-link .usajobs-icon,
+.usajobs-footer--joa .usa-footer-primary-section .usa-footer-primary-content .usa-footer-primary-link .usajobs-icon {
   -ms-transform: rotate(90deg);
   transform: rotate(90deg);
 }
 
-.usajobs-footer--v1 .usa-footer-primary-section .usa-footer-primary-content.hidden .usa-footer-primary-link[data-state="is-open"],
-.usajobs-footer--v2 .usa-footer-primary-section .usa-footer-primary-content.hidden .usa-footer-primary-link[data-state="is-open"],
-.usajobs-footer--v3 .usa-footer-primary-section .usa-footer-primary-content.hidden .usa-footer-primary-link[data-state="is-open"],
-.usajobs-footer--joa .usa-footer-primary-section .usa-footer-primary-content.hidden .usa-footer-primary-link[data-state="is-open"] {
-  padding-bottom: 3rem;
+.usajobs-footer--v1 .usa-footer-primary-section .usa-footer-primary-content.hidden .usa-footer-primary-link,
+.usajobs-footer--v2 .usa-footer-primary-section .usa-footer-primary-content.hidden .usa-footer-primary-link,
+.usajobs-footer--v3 .usa-footer-primary-section .usa-footer-primary-content.hidden .usa-footer-primary-link,
+.usajobs-footer--joa .usa-footer-primary-section .usa-footer-primary-content.hidden .usa-footer-primary-link {
+  padding: 3rem 0;
 }
 
-.usajobs-footer--v1 .usa-footer-primary-section .usa-footer-primary-content.hidden .usa-footer-primary-link[data-state="is-open"] .usajobs-icon,
-.usajobs-footer--v2 .usa-footer-primary-section .usa-footer-primary-content.hidden .usa-footer-primary-link[data-state="is-open"] .usajobs-icon,
-.usajobs-footer--v3 .usa-footer-primary-section .usa-footer-primary-content.hidden .usa-footer-primary-link[data-state="is-open"] .usajobs-icon,
-.usajobs-footer--joa .usa-footer-primary-section .usa-footer-primary-content.hidden .usa-footer-primary-link[data-state="is-open"] .usajobs-icon {
+.usajobs-footer--v1 .usa-footer-primary-section .usa-footer-primary-content.hidden .usa-footer-primary-link .usajobs-icon,
+.usajobs-footer--v2 .usa-footer-primary-section .usa-footer-primary-content.hidden .usa-footer-primary-link .usajobs-icon,
+.usajobs-footer--v3 .usa-footer-primary-section .usa-footer-primary-content.hidden .usa-footer-primary-link .usajobs-icon,
+.usajobs-footer--joa .usa-footer-primary-section .usa-footer-primary-content.hidden .usa-footer-primary-link .usajobs-icon {
   -ms-transform: none;
   transform: none;
 }
