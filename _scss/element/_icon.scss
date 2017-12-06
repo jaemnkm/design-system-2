@@ -20,3 +20,13 @@
     @include UHPIcons();
   }
 }
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+.usajob-icon {
+  display: inline-block;
+  vertical-align: bottom;
+  fill: currentColor;
+}

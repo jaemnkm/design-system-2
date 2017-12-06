@@ -7,11 +7,7 @@
   border-color: $color;
 
   .usajobs-alert__icon:after {
-    display: inline-block;
-    color: $color;
-    content: url("../img/icons/alerts/#{$icon}.svg");
-    background-size: 30px 30px;
-    width: rem(30px);
+    @include icon-content("alerts/#{$icon}", rem(30px), rem(30px), $color);
   }
 }
 
