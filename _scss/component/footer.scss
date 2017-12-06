@@ -83,8 +83,7 @@
   }
 
   .usa-footer-primary-section .usa-footer-primary-content .usa-footer-primary-link {
-    padding-left: 0;
-    padding-bottom: $size-S;
+    padding: $size-M 0 $size-S;
 
     .usajobs-icon {
       @include transform(rotate(90deg));
