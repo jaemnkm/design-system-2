@@ -180,6 +180,99 @@
 }
 
 
+// This combines all the best bits and
+// is the current version to use as as a base for a list as of 12/2017
+@mixin card-v3() {
+  position: relative;
+  padding: $size-default;
+  border-bottom: 1px solid $color-gray-lighter;
+
+  &__body {
+    text-decoration: none;
+  }
+
+  &__title {
+    @include h3();
+    margin-top: 0;
+    color: $color-primary;
+    overflow-wrap: break-word; // This prevents whack titles from breaking the card
+    text-decoration: none;
+  }
+
+  &__body,
+  &__footer {
+    @include row();
+  }
+
+  &__summary {
+    @include row();
+  }
+
+  &__summary,
+  &__footer-item {
+    @include media($L) {
+      @include span-columns(8, 12);
+    }
+  }
+
+  &__footer-item {
+    margin-bottom: 0;
+
+    @include media($ML) {
+      @include span-columns(3, 6);
+    }
+
+    @include media($L) {
+      @include span-columns(8, 12);
+    }
+  }
+
+  &__footer-item.right {
+    @include media($ML) {
+      @include omega();
+    }
+  }
+
+  &__details,
+  &__footer-item.right {
+    @include media($L) {
+      @include span-columns(4, 12);
+      @include omega();
+    }
+  }
+
+  &__details-list {
+    @include unstyledList();
+    margin: 0;
+  }
+}
+
+// This combines all the best bits and
+// is the current version to use as as a single card as of 12/2017
+@mixin card-v4() {
+  position: relative;
+  background-color: $color-white;
+  margin: $size-default 0;
+  padding: $size-default;
+  @include boxShadow(1);
+
+  @include media($M) {
+    margin: $size-default;
+  }
+
+  @include media($L) {
+    padding: $size-M;
+  }
+
+  &__header {
+    display: block;
+    margin-top: 0;
+    color: $color-primary-alt-darkest;
+  }
+}
+
+
+
 @mixin card-core-v1() {
   position: relative;
   padding: $size-default;
