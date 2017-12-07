@@ -117,16 +117,27 @@
     max-width: $input-max-width;
   }
 
+  &__help-extended {
+    margin: $size-S 0;
+    padding: $size-default;
+    background-color: $color-primary-alt-lightest;
+    max-width: $input-max-width;
+  }
+
   &__help-detailed {
     margin-top: $size-default;
     max-width: $input-max-width;
 
     .usajobs-form__help-detailed-trigger {
-      background-color: $color-primary-alt;
+      background-color: $color-primary-alt-lightest;
 
       &:hover {
-        background-color: $color-primary-alt-dark;
+        background-color: $color-primary-alt-light;
       }
+    }
+
+    .usajobs-form__help-detailed-content {
+      border-color: $color-primary-alt-lightest;
     }
   }
 

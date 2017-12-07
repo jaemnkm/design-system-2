@@ -14,7 +14,7 @@ lead: USAJOBS adds or clarifies design for labels, contextual help, required/opt
   Contextual help provides assistance in clarifying the intent of a question or form input.
 </p>
 
-<div class="preview">
+<div class="preview" id="code-1">
   <h6 class="usa-heading-alt">Brief help</h6>
   <form class="usajobs-form">
     <label for="input-type-text">Text input label</label>
@@ -27,10 +27,10 @@ lead: USAJOBS adds or clarifies design for labels, contextual help, required/opt
 
 <div class="usa-accordion-bordered usa-accordion-docs">
   <button class="usa-button-unstyled usa-accordion-button"
-      aria-expanded="true" aria-controls="collapsible-0">
+      aria-expanded="true" aria-controls="doc-1">
     Documentation
   </button>
-  <div id="collapsible-0" aria-hidden="false" class="usa-accordion-content">
+  <div id="doc-1" aria-hidden="false" class="usa-accordion-content">
     <h4 class="usa-heading">Usability</h4>
     <h5>When to use</h5>
     <ul class="usa-content-list">
@@ -49,23 +49,34 @@ lead: USAJOBS adds or clarifies design for labels, contextual help, required/opt
   </div>
 </div>
 
-<div class="preview">
+<div class="preview" id="code-2">
   <h6 class="usa-heading-alt" id="detailed-help">Detailed Help</h6>
   <form class="usajobs-form">
     <label for="input-type-text">Text input label</label>
     <input id="input-type-text" name="input-type-text" type="text">
-    <div class="usa-accordion-bordered usajobs-form__help-detailed">
-      <ul class="usa-unstyled-list">
-        <li>
-          <div class="usajobs-accordion">
-            <button class="usa-accordion-button usajobs-form__help-detailed-trigger" aria-expanded="false" aria-controls="collapsible-0">
-              <span class="fa fa-question-circle"></span> Help me answer
-            </button>
-            <div id="collapsible-0" aria-hidden="true" class="usa-accordion-content">
-              <p>[Detailed help explaining the intent of the data request.]</p>
-            </div>
-          </div>
-        </li>
+    <ul class="usa-accordion-bordered usajobs-form__help-detailed">
+      <li>
+        <button class="usa-accordion-button usajobs-form__help-detailed-trigger" aria-expanded="false" aria-controls="help-detailed-1">
+          <span class="fa fa-question-circle"></span> Help me answer
+        </button>
+        <div id="help-detailed-1" aria-hidden="true" class="usa-accordion-content usajobs-form__help-detailed-content">
+          <p>[Detailed help explaining the intent of the data request.]</p>
+        </div>
+      </li>
+    </ul>
+  </form>
+
+  <h6 class="usa-heading-alt">Extended help</h6>
+  <form class="usajobs-form">
+    <label for="input-type-text">Text input label</label>
+    <input id="input-type-text" name="input-type-text" type="text">
+    <div class="usajobs-form__help-extended">
+      <h5>Make an inspiring Opportunity by including&hellip;</h5>
+      <ul class="usajobs-unstyled-list">
+        <li>Why is this important?</li>
+        <li>What does success look like?</li>
+        <li>Who will benefit?</li>
+        <li>How does this fit into the bigger picture?</li>
       </ul>
     </div>
   </form>
@@ -79,16 +90,15 @@ lead: USAJOBS adds or clarifies design for labels, contextual help, required/opt
 
 <div class="usa-accordion-bordered usa-accordion-docs">
   <button class="usa-button-unstyled usa-accordion-button"
-      aria-expanded="true" aria-controls="collapsible-0">
+      aria-expanded="true" aria-controls="doc-2">
     Documentation
   </button>
-  <div id="collapsible-0" aria-hidden="false" class="usa-accordion-content">
+  <div id="doc-2" aria-hidden="false" class="usa-accordion-content">
     <h4 class="usa-heading">Usability</h4>
     <h5>When to use</h5>
     <ul class="usa-content-list">
       <li>A detailed explanation of the data being requested is necessary.</li>
       <li>Additional context for why the request is being made is desired.</li>
-      <li>To replace the existing help icon treatment that links to Help. It is preferred to bring the help onto the page, ideally with an AJAX request to pull the content from the Help Center into this help section.</li>
     </ul>
     <h5>When to consider something else</h5>
     <ul class="usa-content-list">

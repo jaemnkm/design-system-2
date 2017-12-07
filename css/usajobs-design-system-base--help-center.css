@@ -4563,6 +4563,14 @@ img {
   max-width: 46rem;
 }
 
+.usajobs-form__help-extended,
+.usajobs-content-well .usajobs-form__help-extended {
+  margin: 1rem 0;
+  padding: 1.5rem;
+  background-color: #e1f3f8;
+  max-width: 46rem;
+}
+
 .usajobs-form__help-detailed,
 .usajobs-content-well .usajobs-form__help-detailed {
   margin-top: 1.5rem;
@@ -4571,12 +4579,17 @@ img {
 
 .usajobs-form__help-detailed .usajobs-form__help-detailed-trigger,
 .usajobs-content-well .usajobs-form__help-detailed .usajobs-form__help-detailed-trigger {
-  background-color: #02bfe7;
+  background-color: #e1f3f8;
 }
 
 .usajobs-form__help-detailed .usajobs-form__help-detailed-trigger:hover,
 .usajobs-content-well .usajobs-form__help-detailed .usajobs-form__help-detailed-trigger:hover {
-  background-color: #00a6d2;
+  background-color: #9bdaf1;
+}
+
+.usajobs-form__help-detailed .usajobs-form__help-detailed-content,
+.usajobs-content-well .usajobs-form__help-detailed .usajobs-form__help-detailed-content {
+  border-color: #e1f3f8;
 }
 
 .usajobs-form__help-details,

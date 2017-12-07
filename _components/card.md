@@ -37,7 +37,7 @@ lead: A sub-component used in many components in the system, the card is a usefu
       <li>The uses of cards are too numerous to mention.</li>
     </ul>
 
-    <h5>When not to use</h5>
+    <h5>When to consider something else</h5>
     <ul class="usa-content-list">
       <li>Avoid cards for long content. If the focus is reading the content then the card will likely just get in the way and be visual noise.</li>
     </ul>
