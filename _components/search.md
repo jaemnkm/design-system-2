@@ -10,7 +10,7 @@ lead: A main function of USAJOBS is to provide a clear and effective search. Our
 </a>
 
 <h4 class="usa-heading-alt" id="controls">Controls</h4>
-<div class="preview">
+<div class="preview" id="code-1">
   <h6 class="usa-heading-alt">Results found</h6>
   <div class="usajobs-grid usajobs-search-controls">
     <div class="usajobs-search-controls__results-count-container">
@@ -56,7 +56,7 @@ lead: A main function of USAJOBS is to provide a clear and effective search. Our
 </div>
 
 <h4 class="usa-heading-alt" id="no-results">No results found</h4>
-<div class="preview">
+<div class="preview" id="code-2">
   <div class="usajobs-search-no-params-highlight">
     <h4 class="usajobs-search-no-params-highlight__title">Please refine your search</h4>
     <p>We want to help you find the right job. Try entering a keyword or location, or use the filters on the right.</p>
@@ -83,7 +83,7 @@ lead: A main function of USAJOBS is to provide a clear and effective search. Our
 </div>
 
 <h4 class="usa-heading-alt" id="pagination">Pagination</h4>
-<div class="preview compact">
+<div class="preview compact" id="code-3">
   <h6 class="usa-heading-alt">First page</h6>
   <ul class="usajobs-search-pagination">
     <li class="usajobs-search-pagination__previous-page-container is-disabled">
@@ -205,7 +205,7 @@ lead: A main function of USAJOBS is to provide a clear and effective search. Our
 </div>
 
 <h4 class="usa-heading-alt" id="results">Results</h4>
-<div class="preview compact">
+<div class="preview compact" id="code-4">
   <div class="usajobs-search">
     <h6 class="usa-heading-alt">Core variation</h6>
     <div class="usajobs-search-results" data-object="search-results">
@@ -419,7 +419,7 @@ lead: A main function of USAJOBS is to provide a clear and effective search. Our
   </div>
 </div>
 
-<div class="preview compact">
+<div class="preview compact" id="code-5">
   <div class="usajobs-search">
     <h6 class="usa-heading-alt">Mission Critical Occupation variation</h6>
     <div class="usajobs-search-result--card">
@@ -470,7 +470,7 @@ lead: A main function of USAJOBS is to provide a clear and effective search. Our
   </div>
 </div>
 
-<div class="preview compact">
+<div class="preview compact" id="code-6">
   <div class="usajobs-search">
     <h6 class="usa-heading-alt">Agency Talent Portal variation</h6>
     <div class="usajobs-search-result--atp__container">
@@ -599,7 +599,7 @@ lead: A main function of USAJOBS is to provide a clear and effective search. Our
 </div>
 
 <h4 class="usa-heading-alt" id="teasers">Teasers</h4>
-<div class="preview compact">
+<div class="preview compact" id="code-7">
   <h6 class="usa-heading-alt">Data Science variation</h6>
   <div class="usajobs-search">
     <div class="usajobs-search-results" data-object="search-results">
