@@ -7210,6 +7210,7 @@ select {
 .usajobs-unique-hiring-paths__list > .usajobs-unique-hiring-paths__item {
   position: relative;
   margin-bottom: 1.5rem;
+  vertical-align: middle;
 }
 
 .usajobs-unique-hiring-paths__icon {
@@ -7352,7 +7353,13 @@ select {
   box-shadow: 0 0 0 2px none inset;
 }
 
+.usajobs-unique-hiring-paths__icon svg {
+  vertical-align: middle;
+}
+
 svg:not(:root) {
+  width: 100%;
+  height: auto;
   overflow: hidden;
 }
 

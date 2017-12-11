@@ -14,14 +14,21 @@
   &__list > &__item {
     position: relative;
     margin-bottom: $size-default;
+    vertical-align: middle;
   }
 
   &__icon {
     @include UHPIcons();
+
+    svg {
+      vertical-align: middle;
+    }
   }
 }
 
 svg:not(:root) {
+  width: 100%;
+  height: auto;
   overflow: hidden;
 }
 

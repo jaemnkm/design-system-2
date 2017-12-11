@@ -4070,6 +4070,254 @@ html {
   clip: rect(0 0 0 0) !important;
 }
 
+.usajobs-search-pills {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 0.5rem;
+}
+
+@media screen and (min-width: 37.5em) {
+  .usajobs-search-pills {
+    overflow: inherit;
+    height: inherit;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 62em) {
+  .usajobs-search-pills {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.usajobs-search-pills__fade-out-layer {
+  position: absolute;
+  top: 0;
+  width: 1.5rem;
+  height: 100%;
+  z-index: 1;
+}
+
+@media screen and (min-width: 37.5em) {
+  .usajobs-search-pills__fade-out-layer {
+    display: none;
+  }
+}
+
+.usajobs-search-pills__fade-out-layer.is-left {
+  left: 0;
+  background-image: linear-gradient(270deg, rgba(241, 241, 241, 0), #f1f1f1);
+}
+
+.usajobs-search-pills__fade-out-layer.is-right {
+  right: 0;
+  background-image: linear-gradient(90deg, rgba(241, 241, 241, 0), #f1f1f1);
+}
+
+.usajobs-search-pills__list {
+  display: block;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  width: 100%;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.usajobs-search-pills__list > li {
+  display: list-item;
+  margin: 0;
+}
+
+.usajobs-search-pills__list > li:before {
+  display: none;
+}
+
+.usajobs-search-pills__list > li:after {
+  display: none;
+}
+
+@media screen and (min-width: 37.5em) {
+  .usajobs-search-pills__list {
+    overflow-x: inherit;
+    overflow-y: auto;
+    white-space: inherit;
+    max-height: 21.5rem;
+  }
+}
+
+@media screen and (min-width: 75em) {
+  .usajobs-search-pills__list {
+    max-height: 17.5rem;
+  }
+}
+
+@media screen and (min-width: 37.5em) {
+  .usajobs-search-pills__list.is-active {
+    box-shadow: 0 3px 3px -3px rgba(0, 0, 0, 0.12) inset, 0 -3px 3px -3px rgba(0, 0, 0, 0.24) inset;
+  }
+}
+
+.usajobs-search-pills__list > .usajobs-search-pills__item {
+  display: inline-block;
+  margin: 1rem 1rem 1rem 0;
+  background-color: #5b616b;
+  border-radius: 0.5rem;
+}
+
+.usajobs-search-pills__list > .usajobs-search-pills__item:nth-child(2) {
+  margin-left: 1.5rem;
+}
+
+@media screen and (min-width: 37.5em) {
+  .usajobs-search-pills__list > .usajobs-search-pills__item:nth-child(2) {
+    margin-left: 0;
+  }
+}
+
+.usajobs-search-pills__list > .usajobs-search-pills__item[aria-hidden=true], .usajobs-search-pills__remove-all[aria-hidden=true] {
+  display: none;
+}
+
+.usajobs-search-pills__list .usajobs-search-pills__pill,
+.usajobs-search-pills__list .usajobs-search-pills__pill:visited {
+  display: block;
+  padding: 0.5rem 1rem;
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.usajobs-search-pills__list > .usajobs-search-pills__item--profile {
+  background-color: #94bfa2;
+}
+
+.usajobs-search-pills__list > .usajobs-search-pills__item--profile .usajobs-search-pills__pill {
+  color: #212121;
+}
+
+.usajobs-search-pills__list .usajobs-search-pills__pill:hover, .usajobs-search-pills__remove-all:hover {
+  cursor: pointer;
+}
+
+.usajobs-search-pills__remove-all, .usajobs-search-pills__remove-all:visited {
+  display: block;
+  margin-left: 1.5rem;
+  padding: 0.5rem 1rem 0.5rem 0;
+  font-size: 1.4rem;
+}
+
+@media screen and (min-width: 37.5em) {
+  .usajobs-search-pills__remove-all, .usajobs-search-pills__remove-all:visited {
+    margin: 0;
+  }
+}
+
+.usajobs-search-pills__remove-icon {
+  padding-left: 0.5rem;
+}
+
+.usajobs-search-pills__remove-all-icon {
+  color: #981b1e;
+}
+
+.usajobs-pill--application-status {
+  display: block;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.usajobs-pill--application-status__item {
+  display: inline-block;
+  width: 100%;
+  max-width: 17.5rem;
+  margin-bottom: 1rem;
+  padding: 0 1rem;
+  background-color: #323a45;
+  color: #ffffff;
+  border: 1px solid #323a45;
+  border-radius: 3rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+.usajobs-pill--application-status__item.status-hired, .usajobs-pill--application-status__item.status-received, .usajobs-pill--application-status__item.status-referred, .usajobs-pill--application-status__item.status-reviewed, .usajobs-pill--application-status__item.status-selected {
+  background-color: #2d8700;
+  border-color: #2d8700;
+  color: #ffffff;
+}
+
+.usajobs-pill--application-status__item.status-incomplete, .usajobs-pill--application-status__item.status-in-progress {
+  background-color: #fdb81e;
+  border-color: #fdb81e;
+  color: #212121;
+}
+
+.usajobs-pill--application-status__item.status-canceled, .usajobs-pill--application-status__item.status-not-hired, .usajobs-pill--application-status__item.status-not-referred, .usajobs-pill--application-status__item.status-not-selected {
+  background-color: #e31c3d;
+  border-color: #e31c3d;
+  color: #ffffff;
+}
+
+.usajobs-pill--application-status__item .grade {
+  font-weight: normal;
+}
+
+.usajobs-pill--application-status__item .grade-all {
+  display: none;
+}
+
+.usajobs-pill--opportunity-status {
+  margin-bottom: 1rem;
+  padding: 0 1rem;
+  max-width: 11rem;
+  background-color: #aeb0b5;
+  border: 1px solid #aeb0b5;
+  border-radius: 1.15rem;
+  color: #212121;
+  text-align: center;
+  font-weight: bold;
+}
+
+.usajobs-pill--opportunity-status.status-open {
+  background-color: #2d8700;
+  border-color: #2d8700;
+  color: #ffffff;
+}
+
+.usajobs-pill--opportunity-status.status-in-progress {
+  background-color: #fdb81e;
+  border-color: #fdb81e;
+}
+
+.usajobs-pill--opportunity-status.status-completed {
+  background-color: #02bfe7;
+  border-color: #02bfe7;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *::after, *::before {
+  box-sizing: inherit;
+}
+
+.usajobs-assistive-text {
+  position: absolute !important;
+  margin: -1px !important;
+  border: 0 !important;
+  padding: 0 !important;
+  width: 1px !important;
+  height: 1px !important;
+  overflow: hidden !important;
+  clip: rect(0 0 0 0) !important;
+}
+
 /*!
  *  Font Awesome 4.6.3 by @davegandy - http://fontawesome.io - @fontawesome
  *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
