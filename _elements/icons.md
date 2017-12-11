@@ -9,12 +9,12 @@ lead: USAJOBS leverages Font Awesome via the U.S. Standards and in addition defi
   Design Complete
 </a>
 
-<h2 class="usa-heading">Unique hiring path icons</h2>
+<h2 class="usa-heading">Hiring path icons</h2>
 <p>
   We use a consistent set of icons to identify users with a particular type of experience. For example, individuals who have served in the military or who have a disability. These icons are often used to help users identify with a particular unique hiring path, often tied to a special hiring authority, which they may be eligible for depending on their experience.
 </p>
 
-<div class="preview">
+<div class="preview" id="code-1">
   <ul class="usajobs-unique-hiring-paths__list">
     <li class="usajobs-unique-hiring-paths__item">
       <div class="usajobs-unique-hiring-paths__icon public">
