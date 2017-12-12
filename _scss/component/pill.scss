@@ -197,7 +197,7 @@ $color-completed: $color-primary-alt;
 .usajobs-pill--opportunity-status {
   margin-bottom: $size-S;
   padding: 0 $size-S;
-  max-width: 11rem;
+  max-width: 12rem;
   background-color: $color-gray-light;
   border: 1px solid $color-gray-light;
   border-radius: rem(11.5px);
@@ -205,9 +205,21 @@ $color-completed: $color-primary-alt;
   text-align: center;
   font-weight: bold;
 
+  &.status-draft {
+    background-color: $color-gray-dark;
+    border-color: $color-gray-dark;
+    color: $color-white;
+  }
+
   &.status-open {
     background-color: $color-advancing;
     border-color: $color-advancing;
+    color: $color-white;
+  }
+
+  &.status-submitted {
+    background-color: $color-primary-alt-darkest;
+    border-color:  $color-primary-alt-darkest;
     color: $color-white;
   }
 

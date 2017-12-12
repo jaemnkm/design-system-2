@@ -4272,7 +4272,7 @@ html {
 .usajobs-pill--opportunity-status {
   margin-bottom: 1rem;
   padding: 0 1rem;
-  max-width: 11rem;
+  max-width: 12rem;
   background-color: #aeb0b5;
   border: 1px solid #aeb0b5;
   border-radius: 1.15rem;
@@ -4281,9 +4281,21 @@ html {
   font-weight: bold;
 }
 
+.usajobs-pill--opportunity-status.status-draft {
+  background-color: #323a45;
+  border-color: #323a45;
+  color: #ffffff;
+}
+
 .usajobs-pill--opportunity-status.status-open {
   background-color: #2d8700;
   border-color: #2d8700;
+  color: #ffffff;
+}
+
+.usajobs-pill--opportunity-status.status-submitted {
+  background-color: #046b99;
+  border-color: #046b99;
   color: #ffffff;
 }
 
