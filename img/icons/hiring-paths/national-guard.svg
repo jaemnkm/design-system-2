@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="46px" height="46px" viewBox="0 0 46 46" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47 (45396) - http://www.bohemiancoding.com/sketch -->
+    <title>national-guard</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="national-guard">
+            <g id="Group" transform="translate(1.000000, 1.000000)">
+                <path d="M44,22 C44,34.1506076 34.1502514,44 21.9992043,44 C9.84974862,44 0,34.1506076 0,22 C0,9.84939236 9.84974862,0 21.9992043,0 C34.1502514,0 44,9.84939236 44,22" id="Fill-1-Copy-5" fill="#E31C3D"></path>
+                <g id="flag" transform="translate(9.000000, 10.000000)" fill-rule="nonzero" fill="#FFFFFF">
+                    <path d="M4,2 C4,2.719 3.609,3.359 3,3.719 L3,23.5 C3,23.766 2.766,24 2.5,24 L1.5,24 C1.234,24 1,23.766 1,23.5 L1,3.719 C0.391,3.36 0,2.719 0,2 C0,0.891 0.891,0 2,0 C3.109,0 4,0.891 4,2 Z M27,3 L27,14.922 C27,15.5 26.641,15.719 26.188,15.953 C24.422,16.906 22.469,17.766 20.422,17.766 C17.547,17.766 16.172,15.578 12.766,15.578 C10.282,15.578 7.672,16.703 5.516,17.859 C5.344,17.953 5.188,18 5,18 C4.453,18 4,17.547 4,17 L4,5.406 C4,5.031 4.187,4.765 4.484,4.547 C4.859,4.297 5.312,4.078 5.718,3.875 C7.687,2.875 10.077,2 12.296,2 C14.749,2 16.671,2.812 18.843,3.828 C19.281,4.047 19.734,4.125 20.218,4.125 C22.671,4.125 25.312,2 25.999,2 C26.546,2 26.999,2.453 26.999,3 L27,3 Z" id="Shape"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
