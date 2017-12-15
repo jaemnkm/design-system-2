@@ -166,6 +166,23 @@ module.exports = function(grunt) {
         }
       }
     },
+    svgstore: {
+      options: {
+        formatting : {
+          indent_size : 2
+        }
+      },
+      default: {
+        files: {
+          '_includes/icons/defs.svg': ['img/icons/*.svg']
+        }
+      },
+      hiring_paths: {
+        files: {
+          '_includes/icons/hiring-paths.svg': ['img/icons/hiring-paths/*.svg']
+        }
+      }
+    },
     notify_hooks: {
       options: {
         enabled: true,
@@ -227,6 +244,7 @@ module.exports = function(grunt) {
 
   grunt.registerTask('serve', ['concurrent:serve']);
   grunt.registerTask('build', ['shell:jekyllBuild', 'css', 'js']);
+  grunt.registerTask('img', ['svgstore']);
   grunt.registerTask('css', ['sass', 'autoprefixer', 'cssmin']);
   grunt.registerTask('js', ['jshint:all', 'browserify', 'concat']);
   grunt.registerTask('test', ['jshint:all', 'scsslint']);

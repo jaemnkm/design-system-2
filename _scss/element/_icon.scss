@@ -1,5 +1,36 @@
 // Unique Hiring Paths
 
+svg:not(:root) {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+@mixin usajobsIcon () {
+  display: inline-block;
+  vertical-align: bottom;
+}
+
+.usajobs-icon {
+  @include usajobsIcon();
+  fill: $color-base;
+}
+
+.usajobs-icon--white {
+  @include usajobsIcon();
+  fill: $color-white;
+  color: $color-white;
+}
+
+.usajobs-icon--primary {
+  @include usajobsIcon();
+  color: $color-primary;
+}
+
+.usajobs-icon__path {
+  fill: currentColor;
+}
+
 .usajobs-unique-hiring-paths {
   &__list {
     @include unstyledList();
@@ -18,22 +49,14 @@
   }
 
   &__icon {
-    @include UHPIcons();
+    display: inline-block;
+    text-align: center;
+    margin-right: $size-base;
 
     svg {
+      width: rem(44px);
+      height: rem(44px);
       vertical-align: middle;
     }
   }
-}
-
-svg:not(:root) {
-  width: 100%;
-  height: auto;
-  overflow: hidden;
-}
-
-.usajob-icon {
-  display: inline-block;
-  vertical-align: bottom;
-  fill: currentColor;
 }

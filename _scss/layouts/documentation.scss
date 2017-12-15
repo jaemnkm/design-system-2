@@ -120,12 +120,6 @@
   z-index: 201;
 }
 
-.usa-site-navbar {
-}
-
-.usajobs-site-navbar {
-}
-
 .menu-btn {
   @include media($medium-screen + $width-nav-sidebar) {
     display: none;
@@ -982,4 +976,10 @@ $font-light: 300;
       margin-bottom: 1rem;
     }
   }
+}
+
+// Iconography examples --------- //
+svg:not(:root).usajobs-icon--example {
+  height: 2rem;
+  width: 2rem;
 }

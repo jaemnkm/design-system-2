@@ -1007,4 +1007,9 @@ code[class*="language-"], pre[class*="language-"] {
 .navigation .preview .usajobs-nav--v2 {
   margin-bottom: 1rem;
 }
+
+svg:not(:root).usajobs-icon--example {
+  height: 2rem;
+  width: 2rem;
+}
 /*# sourceMappingURL=documentation.css.map */
