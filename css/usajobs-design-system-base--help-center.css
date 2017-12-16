@@ -4894,6 +4894,12 @@ body {
   font-size: 17px !important;
 }
 
+@media screen and (max-width: 61.999em) and (-webkit-min-device-pixel-ratio: 1.25), screen and (max-width: 61.999em) and (min-resolution: 120dpi) {
+  .usa-display {
+    letter-spacing: -0.1rem;
+  }
+}
+
 h1 {
   font-family: "Source Sans Pro", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
   font-weight: 700;
@@ -4905,6 +4911,12 @@ h1 {
   color: #112e51;
 }
 
+@media screen and (max-width: 61.999em) and (-webkit-min-device-pixel-ratio: 1.25), screen and (max-width: 61.999em) and (min-resolution: 120dpi) {
+  h1 {
+    letter-spacing: -0.1rem;
+  }
+}
+
 h2 {
   font-family: "Source Sans Pro", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
   font-weight: 700;
@@ -4914,6 +4926,12 @@ h2 {
   font-size: 34px;
   font-size: 3.4rem;
   color: #112e51;
+}
+
+@media screen and (max-width: 61.999em) and (-webkit-min-device-pixel-ratio: 1.25), screen and (max-width: 61.999em) and (min-resolution: 120dpi) {
+  h2 {
+    letter-spacing: -0.1rem;
+  }
 }
 
 h3 {
@@ -6832,6 +6850,13 @@ html {
   color: #00a6d2;
   line-height: 0;
   display: none;
+}
+
+@media screen and (max-width: 61.999em) and (-webkit-min-device-pixel-ratio: 1.25), screen and (max-width: 61.999em) and (min-resolution: 120dpi) {
+  .usajobs-nav--vTest__brand .test,
+  .usajobs-nav--vTest__brand .test:visited {
+    letter-spacing: -0.1rem;
+  }
 }
 
 @media screen and (min-width: 48em) {
