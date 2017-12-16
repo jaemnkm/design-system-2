@@ -14,6 +14,12 @@
   font-size: $h1-font-size;
   font-size: rem($h1-font-size);
   color: $color-primary-darkest;
+
+  @include media($L-down) {
+    @media (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {
+      letter-spacing: rem(-1px);
+    }
+  }
 }
 
 @mixin h2 {
@@ -21,6 +27,12 @@
   font-size: $h2-font-size;
   font-size: rem($h2-font-size);
   color: $color-primary-darkest;
+
+  @include media($L-down) {
+    @media (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {
+      letter-spacing: rem(-1px);
+    }
+  }
 }
 
 @mixin h3 {

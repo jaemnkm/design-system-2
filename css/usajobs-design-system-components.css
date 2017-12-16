@@ -8203,6 +8203,13 @@ html {
   display: none;
 }
 
+@media screen and (max-width: 61.999em) and (-webkit-min-device-pixel-ratio: 1.25), screen and (max-width: 61.999em) and (min-resolution: 120dpi) {
+  .usajobs-nav--vTest__brand .test,
+  .usajobs-nav--vTest__brand .test:visited {
+    letter-spacing: -0.1rem;
+  }
+}
+
 @media screen and (min-width: 48em) {
   .usajobs-nav--vTest__brand .test,
   .usajobs-nav--vTest__brand .test:visited {
@@ -21208,6 +21215,12 @@ html {
   color: #ffffff;
 }
 
+@media screen and (max-width: 61.999em) and (-webkit-min-device-pixel-ratio: 1.25), screen and (max-width: 61.999em) and (min-resolution: 120dpi) {
+  .usajobs-joa-banner__title {
+    letter-spacing: -0.1rem;
+  }
+}
+
 @media screen and (min-width: 48em) {
   .usajobs-joa-banner__title {
     font-family: "Source Sans Pro", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
@@ -21220,6 +21233,12 @@ html {
     color: #112e51;
     margin: 0;
     color: #ffffff;
+  }
+}
+
+@media screen and (min-width: 48em) and (max-width: 61.999em) and (-webkit-min-device-pixel-ratio: 1.25), screen and (min-width: 48em) and (max-width: 61.999em) and (min-resolution: 120dpi) {
+  .usajobs-joa-banner__title {
+    letter-spacing: -0.1rem;
   }
 }
 
