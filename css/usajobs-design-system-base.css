@@ -433,7 +433,7 @@ body {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
-  max-width: 120rem;
+  max-width: 160rem;
 }
 
 .usa-grid::after,
@@ -2347,7 +2347,7 @@ dfn {
   margin-right: auto;
   padding-right: 1.5rem;
   padding-left: 1.5rem;
-  max-width: 120rem;
+  max-width: 160rem;
 }
 
 .usa-banner-inner::after {
@@ -3390,7 +3390,7 @@ input.usa-input-medium {
     padding-left: 3rem;
     display: block;
     height: auto;
-    max-width: 120rem;
+    max-width: 160rem;
   }
   .usa-header-extended .usa-navbar::after {
     clear: both;
@@ -3416,7 +3416,7 @@ input.usa-input-medium {
     padding-right: 3rem;
     padding-left: 2rem;
     margin-top: -1px;
-    max-width: 120rem;
+    max-width: 160rem;
     position: relative;
   }
   .usa-header-extended .usa-nav-inner::after {
@@ -3589,7 +3589,7 @@ input.usa-input-medium {
     margin-right: auto;
     padding-right: 3rem;
     padding-left: 3rem;
-    max-width: 120rem;
+    max-width: 160rem;
   }
   .usa-nav-container::after {
     clear: both;
@@ -4425,7 +4425,7 @@ html {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
-  max-width: 120rem;
+  max-width: 160rem;
   background: #ffffff;
 }
 
@@ -4435,13 +4435,9 @@ html {
   display: block;
 }
 
-.usajobs-shell--L {
-  max-width: 160rem;
-}
-
 .usa-grid,
 .usa-grid-full {
-  max-width: 120rem;
+  max-width: 160rem;
 }
 
 .usajobs-content-gutter {
@@ -4527,7 +4523,7 @@ html {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
-  max-width: 120rem;
+  max-width: 160rem;
 }
 
 .container::after {
@@ -5355,7 +5351,7 @@ html {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
-  max-width: 120rem;
+  max-width: 160rem;
 }
 
 .usajobs-grid::after,

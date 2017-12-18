@@ -3815,7 +3815,7 @@ html {
 .usajobs-site-header .usajobs-disclaimer-official {
   display: inline-block;
   padding: 0;
-  max-width: 120rem;
+  max-width: 160rem;
 }
 
 .usajobs-site-header .usajobs-disclaimer-official .usa-flag_icon {
@@ -7649,7 +7649,7 @@ html {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
-  max-width: 120rem;
+  max-width: 160rem;
   border-bottom: 1px solid #d6d7d9;
 }
 
@@ -11360,7 +11360,7 @@ html {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
-  max-width: 120rem;
+  max-width: 160rem;
   border-bottom: 1px solid #aeb0b5;
 }
 
@@ -20997,7 +20997,7 @@ html {
 
 .usajobs-button_bar__body,
 .usajobs-button-bar__body {
-  max-width: 120rem;
+  max-width: 160rem;
   margin: 0 auto;
   padding: 3rem;
 }
@@ -21045,7 +21045,7 @@ html {
 
 .usajobs-button_bar--slim__body,
 .usajobs-button-bar--slim__body {
-  max-width: 120rem;
+  max-width: 160rem;
   margin: 0 auto;
   padding: 3rem;
 }
@@ -21119,7 +21119,7 @@ html {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   font-size: 1.4rem;
-  max-width: 120rem;
+  max-width: 160rem;
   margin-left: auto;
   margin-right: auto;
 }
@@ -21189,7 +21189,7 @@ html {
 }
 
 .usajobs-joa-banner__body {
-  max-width: 120rem;
+  max-width: 160rem;
   margin-left: auto;
   margin-right: auto;
   padding: 1.5rem;

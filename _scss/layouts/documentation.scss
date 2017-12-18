@@ -488,6 +488,47 @@
   }
 }
 
+// Custom styles to illustrate spacing
+.usajobs-spacing-example {
+  &__item {
+    font-size: $small-font-size;
+    color: $color-gray-dark;
+    margin-bottom: $size-default;
+  }
+
+  &__space {
+    background-color: $color-primary-alt;
+
+    &.XS {
+      width: $size-XS;
+    }
+    &.base {
+      width: $size-base;
+    }
+    &.S {
+      width: $size-S;
+    }
+    &.default {
+      width: $size-default;
+    }
+    &.SM {
+      width: $size-SM;
+    }
+    &.M {
+      width: $size-M;
+    }
+    &.L {
+      width: $size-L;
+    }
+    &.XL {
+      width: $size-XL;
+    }
+    &.XXL {
+      width: $size-XXL;
+    }
+  }
+}
+
 h3 + .button_wrapper {
   margin-top: -.5em
 }

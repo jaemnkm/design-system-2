@@ -403,7 +403,7 @@ $nav_item_height: 17px + 26.5px;
   &__header,
   &__search-body,
   &__create-account-container {
-    max-width: $site-max-width-L;
+    max-width: $site-max-width;
     margin-left: auto;
     margin-right: auto;
   }
@@ -492,7 +492,7 @@ $nav_item_height: 17px + 26.5px;
   &__banner-inner,
   &__header,
   &__search-body {
-    max-width: $site-max-width-L;
+    max-width: $site-max-width;
     margin-left: auto;
     margin-right: auto;
   }

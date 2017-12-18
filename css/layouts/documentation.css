@@ -303,7 +303,7 @@ html {
 
 .styleguide-content {
   position: relative;
-  max-width: 120rem;
+  max-width: 160rem;
   margin-bottom: 5em;
   padding: 1.5rem;
 }
@@ -515,6 +515,52 @@ html {
 
 .usa-grid-text p {
   margin-bottom: 0;
+}
+
+.usajobs-spacing-example__item {
+  font-size: 1.4rem;
+  color: #323a45;
+  margin-bottom: 1.5rem;
+}
+
+.usajobs-spacing-example__space {
+  background-color: #02bfe7;
+}
+
+.usajobs-spacing-example__space.XS {
+  width: 0.25rem;
+}
+
+.usajobs-spacing-example__space.base {
+  width: 0.5rem;
+}
+
+.usajobs-spacing-example__space.S {
+  width: 1rem;
+}
+
+.usajobs-spacing-example__space.default {
+  width: 1.5rem;
+}
+
+.usajobs-spacing-example__space.SM {
+  width: 2rem;
+}
+
+.usajobs-spacing-example__space.M {
+  width: 3rem;
+}
+
+.usajobs-spacing-example__space.L {
+  width: 4.5rem;
+}
+
+.usajobs-spacing-example__space.XL {
+  width: 6rem;
+}
+
+.usajobs-spacing-example__space.XXL {
+  width: 7.5rem;
 }
 
 h3 + .button_wrapper {
