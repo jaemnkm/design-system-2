@@ -31,7 +31,7 @@ html {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   font-size: 1.4rem;
-  max-width: 120rem;
+  max-width: 160rem;
   margin-left: auto;
   margin-right: auto;
 }
@@ -101,7 +101,7 @@ html {
 }
 
 .usajobs-joa-banner__body {
-  max-width: 120rem;
+  max-width: 160rem;
   margin-left: auto;
   margin-right: auto;
   padding: 1.5rem;
