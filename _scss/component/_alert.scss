@@ -6,6 +6,10 @@
   background-color: $color;
   border-color: $color;
 
+  &:before {
+    content: none;
+  }
+
   .usajobs-alert__icon:after {
     @include icon-content("alerts/#{$icon}", rem(30px), rem(30px), $color);
   }

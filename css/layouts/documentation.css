@@ -100,7 +100,7 @@ html {
   padding: 1rem 0;
   color: #5b616b;
   text-decoration: none;
-  font-size: 24px;
+  font-size: 2.4rem;
   font-weight: bold;
 }
 
@@ -357,7 +357,7 @@ html {
 
 .usa-styleguide-footer p, .usa-styleguide-footer a {
   color: #ffffff;
-  font-size: 16px;
+  font-size: 1.6rem;
   margin-bottom: 1.5rem;
   margin-top: 0;
 }
@@ -893,7 +893,7 @@ code[class*="language-"], pre[class*="language-"] {
 }
 
 .serif-robust .usa-display-alt {
-  font-size: 44px;
+  font-size: 4.4rem;
   font-weight: 300;
 }
 
@@ -913,7 +913,7 @@ code[class*="language-"], pre[class*="language-"] {
 }
 
 .serif-robust.serif-body .usa-font-example .usa-font-lead {
-  font-size: 24px;
+  font-size: 2.4rem;
 }
 
 .serif-robust.serif-body .usa-font-example .usa-font-lead.usa-font-lead-alt {

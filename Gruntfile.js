@@ -29,8 +29,6 @@ module.exports = function(grunt) {
           sassDir: '_scss',
           cssDir: '_site/css',
           includePaths: [
-            'node_modules/bourbon/app/assets/stylesheets/',
-            'node_modules/bourbon-neat/app/assets/stylesheets/',
             'node_modules/uswds/src/stylesheets/',
             'node_modules/uswds/src/stylesheets/lib/',
             '_scss/'

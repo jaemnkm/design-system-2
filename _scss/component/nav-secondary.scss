@@ -1,7 +1,6 @@
 // Navigation
 
 @import '../base-shared';
-@import 'font-awesome/font-awesome';
 
 .usajobs-nav-secondary {
   position: relative;
@@ -92,6 +91,12 @@
 
     .fa-check {
       color: $color-green;
+    }
+
+    .usajobs-icon {
+      width: 1.7rem;
+      height: 1.7rem;
+      color: $color-primary;
     }
   }
 

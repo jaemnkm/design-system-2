@@ -5,11 +5,11 @@ order: 01
 ---
 
 <!-- Typography section begin -->
-<p>USAJOBS uses the two open-source font families from the <a href="https://playbook.cio.gov/designstandards/visual-style/#typography">U.S. Web Design Standards</a>: Source Sans Pro and Merriweather. We use only the regular font weight files, relying on CSS to adjust font weight for bold and lighter text treatments.
+<p>USAJOBS uses the two open-source font families from the <a href="https://playbook.cio.gov/designstandards/visual-style/#typography">U.S. Web Design Standards</a>: Source Sans Pro and Merriweather. We use only the regular and bold font weight files, relying on CSS to adjust the typesetting for italic.
 </p>
 
 <h3 class="usa-heading" id="pairings">Pairings + Styles</h3>
-<p>The first redesigned section of the site, the Application Guide, uses only the Source Sans Pro family. Future sections will add the Merriweather family.</p>
+<p>For the most part we stick to just using the Source Sans Pro family for headings and body. In a few select instances we've used Merriweather.</p>
 
 <div class="usa-accordion-bordered usa-typography-example usa-accordion-docs">
   <ul class="usa-unstyled-list">

@@ -169,7 +169,13 @@ lead:  A responsive grid, with a sensible number of breakpoints, provides struct
               <td>XL</td><td>75em/1200px</td><td>12</td><td>USDS standard</td>
             </tr>
             <tr>
-              <td>XXL</td><td>120em/1920px</td><td>12</td><td>USAJOBS specific. Most common viewport width of visitors to USAJOBS.</td>
+              <td>XXL</td><td>85.375em/1366px</td><td>12</td><td>USAJOBS specific. Not currently used.</td>
+            </tr>
+            <tr>
+              <td>XXXL</td><td>100em/1600px</td><td>16</td><td>USAJOBS specific. New shell width.</td>
+            </tr>
+            <tr>
+              <td>XXXXL</td><td>120em/1920px</td><td>16</td><td>USAJOBS specific. Most common viewport width of visitors to USAJOBS.</td>
             </tr>
           </tbody>
         </table>
