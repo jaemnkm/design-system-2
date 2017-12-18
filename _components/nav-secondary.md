@@ -43,7 +43,11 @@ lead: Secondary navigation allows for movement within a section or page.
             </a>
           </li>
           <li class="usajobs-nav-secondary__container more is-hidden">
-            <a class="usajobs-nav-secondary__more-toggle" href="#more" data-behavior="nav-secondary.toggle" data-target="#usajobs-nav-secondary-menu--profile"><i class="fa fa-plus"></i></a>
+            <a class="usajobs-nav-secondary__more-toggle" href="#more" data-behavior="nav-secondary.toggle" data-target="#usajobs-nav-secondary-menu--profile">
+              <svg class="usajobs-icon">
+                <use xlink:href="#plus"></use>
+              </svg>
+            </a>
             <ul class="usajobs-nav-secondary__more-container" id="usajobs-nav-secondary-menu--profile" data-state="is-closed">
             </ul>
           </li>

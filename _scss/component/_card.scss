@@ -2,7 +2,6 @@
 //         These mixins handle the LAYOUT of the card only, not the display of individual data
 
 @import 'base-shared';
-@import 'font-awesome/font-awesome';
 
 @import '../home-variables';
 
@@ -384,19 +383,15 @@
   }
 
   &__save-job-link[data-state=is-saved]::before {
-    @include fa-icon();
-    padding-right: $size-XS;
-    color: $color-gold;
+    @include icon-content("job/star", 1.83rem, 1.7rem, $color-gold);
     vertical-align: middle;
-    content: $fa-var-star;
+    padding-right: $size-XS;
   }
 
   &__save-job-link[data-state=is-unsaved]::before {
-    @include fa-icon();
+    @include icon-content("job/star-o", 1.83rem, 1.7rem, $color-gold);
     padding-right: $size-XS;
-    color: $color-gold;
     vertical-align: middle;
-    content: $fa-var-star-o;
   }
 }
 

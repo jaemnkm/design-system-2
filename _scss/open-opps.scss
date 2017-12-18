@@ -1,4 +1,4 @@
-// USAJOBS Help Center build
+// USAJOBS Open Opportunitites build
 
 @import 'uswds';
 
@@ -24,8 +24,11 @@
 
 
 // Components ------------- //
-@import 'component/drawer';
+@import 'component/component-card';
+@import 'component/footer';
 @import 'component/header';
 @import 'component/modal';
 @import 'component/nav';
-@import 'component/footer';
+@import 'component/nav-secondary';
+@import 'component/pill';
+@import 'component/search/pagination';

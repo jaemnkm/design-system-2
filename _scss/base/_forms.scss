@@ -130,6 +130,12 @@
     padding: $size-default;
     background-color: $color-primary-alt-lightest;
     max-width: $input-max-width;
+
+    h3,
+    h4,
+    h5 {
+      margin-top: 0;
+    }
   }
 
   &__help-detailed {

@@ -120,17 +120,10 @@ html {
   line-height: 1.3;
   margin-bottom: 0.5rem;
   margin-top: 1.5rem;
-  font-size: 34px;
   font-size: 3.4rem;
   color: #112e51;
   margin: 0 0 0.5rem 0;
   color: #ffffff;
-}
-
-@media screen and (max-width: 61.999em) and (-webkit-min-device-pixel-ratio: 1.25), screen and (max-width: 61.999em) and (min-resolution: 120dpi) {
-  .usajobs-joa-banner__title {
-    letter-spacing: -0.1rem;
-  }
 }
 
 @media screen and (min-width: 48em) {
@@ -140,17 +133,10 @@ html {
     line-height: 1.3;
     margin-bottom: 0.5rem;
     margin-top: 1.5rem;
-    font-size: 44px;
     font-size: 4.4rem;
     color: #112e51;
     margin: 0;
     color: #ffffff;
-  }
-}
-
-@media screen and (min-width: 48em) and (max-width: 61.999em) and (-webkit-min-device-pixel-ratio: 1.25), screen and (min-width: 48em) and (max-width: 61.999em) and (min-resolution: 120dpi) {
-  .usajobs-joa-banner__title {
-    letter-spacing: -0.1rem;
   }
 }
 
@@ -167,7 +153,6 @@ html {
   line-height: 1.3;
   margin-bottom: 0.5rem;
   margin-top: 1.5rem;
-  font-size: 19px;
   font-size: 1.9rem;
   display: block;
   margin: 0 0 1.5rem 0;
@@ -921,7 +906,6 @@ html {
   line-height: 1.3;
   margin-bottom: 0.5rem;
   margin-top: 1.5rem;
-  font-size: 19px;
   font-size: 1.9rem;
   margin: 0;
   font-weight: normal;
@@ -6935,7 +6919,7 @@ html {
   -moz-osx-font-smoothing: grayscale;
   padding-right: 0.25rem;
   color: #fdb81e;
-  font-size: 24px;
+  font-size: 2.4rem;
   vertical-align: middle;
 }
 
@@ -7139,7 +7123,7 @@ html {
 }
 
 .usajobs-joa-actions-share__link .fa {
-  font-size: 24px;
+  font-size: 2.4rem;
 }
 
 .usajobs-joa-actions-share__link.email {
@@ -7312,12 +7296,12 @@ html {
 }
 
 .usajobs-joa-agency-modal__sub-title {
-  font-size: 24px;
+  font-size: 2.4rem;
   margin: 0;
 }
 
 .usajobs-joa-agency-modal__lead {
-  font-size: 19px;
+  font-size: 1.9rem;
   line-height: 1.7;
   margin-top: 0;
 }

@@ -1,58 +1,12 @@
-// U.S. Web Design Standards ****************************** //
-// Below is the contents of node_modules/uswds/src/stylesheets/all.scss
-// minus core/fonts because we don't want all fonts to be loaded.
 
-@import 'lib/bourbon';
-@import 'lib/neat';
-@import 'lib/normalize';
-
-// Our variables come first, we don't mess with defaults because that relationship did not work out.
-@import 'base/variables';
-
-// Core -------------- //
-@import 'core/base';
-@import 'core/grid-settings';
-@import 'core/grid';
-@import 'core/utilities';
-
-
-// Elements -------------- //
-@import 'elements/buttons';
-@import 'elements/embed';
-@import 'elements/figure';
-@import 'elements/inputs';
-@import 'elements/labels';
-@import 'elements/list';
-@import 'elements/table';
-@import 'elements/typography';
-
-
-// Components -------------- //
-@import 'components/accordions';
-@import 'components/alerts';
-@import 'components/banner';
-@import 'components/footer';
-@import 'components/forms';
-@import 'components/graphic-list';
-@import 'components/header';
-@import 'components/hero';
-@import 'components/layout';
-@import 'components/media-block';
-@import 'components/navigation';
-@import 'components/search';
-@import 'components/section';
-@import 'components/sidenav';
-@import 'components/skipnav';
-
-// USAJOBS ****************************** //
+@import 'uswds';
 
 // Base -------------- //
+@import 'base/variables';
 @import 'base/utilities';
-@import 'base/fonts';
 @import 'base/breakpoints';
 @import 'base/accessibility';
 @import 'base/shell';
-@import 'base/bootstrap_to_neat';
 @import 'base/grid';
 @import 'base/images';
 @import 'base/list';
@@ -71,3 +25,5 @@
 // Shared Components -------------- //
 // Universal components that are promoted into base
 @import 'component/alert';
+
+// All other components are either in site-specific builds (Help Center: help.scss, Open Opps: open-opps.scss) or you can find/grab them all in components.scss.

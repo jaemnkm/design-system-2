@@ -111,7 +111,7 @@ lead: USAJOBS adds or clarifies design for labels, contextual help, required/opt
 <p class="usa-font-lead">
   Our dropdown adds protection from the text running into the dropdown arrow. We also have adopted the <a href="https://github.com/harvesthq/chosen">Chosen plugin</a> for long dropdown menus.
 </p>
-<div class="preview">
+<div class="preview" id="code-2">
   <form class="usajobs-form">
     <label for="options">Dropdown label</label>
     <select name="options" id="options">
@@ -917,10 +917,10 @@ lead: USAJOBS adds or clarifies design for labels, contextual help, required/opt
 </div>
 <div class="usa-accordion-bordered usa-accordion-docs">
   <button class="usa-button-unstyled usa-accordion-button"
-      aria-expanded="true" aria-controls="collapsible-0">
+      aria-expanded="true" aria-controls="doc-2">
     Documentation
   </button>
-  <div id="collapsible-0" aria-hidden="false" class="usa-accordion-content">
+  <div id="doc-2" aria-hidden="false" class="usa-accordion-content">
     <h4 class="usa-heading">Usability</h4>
     <h5>When to use</h5>
     <ul class="usa-content-list">
@@ -937,14 +937,14 @@ lead: USAJOBS adds or clarifies design for labels, contextual help, required/opt
 <p class="usa-font-lead">
   Guidance and styling on disabled and readonly inputs and select elements.
 </p>
-<div class="preview">
+<div class="preview" id="code-3">
   <h6 id="usajobs-form-input-disabled" class="usa-heading-alt">Disabled</h6>
   <form name="example" aria-labelled-by="usajobs-form-heading-0" class="usajobs-form">
     <fieldset class="usajobs-fieldset">
-      <label for="last-name">Last name <span class="usa-additional_text">Required</span></label>
+      <label for="last-name">Last name</label>
       <input id="last-name" name="last-name" type="text" required="" aria-required="true" disabled>
 
-      <label for="phone-type">Phone type</label>
+      <label for="phone-type" class="usa-input-optional">Phone type</label>
       <select id="phone-type" name="phone-type" disabled>
         <option selected="selected" value="-1">Please Select</option>
         <option value="Mobile">Mobile</option>
@@ -954,7 +954,7 @@ lead: USAJOBS adds or clarifies design for labels, contextual help, required/opt
 
     <fieldset class="usajobs-fieldset">
       <h6 id="usajobs-form-input-readonly" class="usa-heading-alt">Read only</h6>
-      <label for="last-name">Last name <span class="usa-additional_text">Required</span></label>
+      <label for="last-name">Last name</label>
       <input id="last-name" name="last-name" type="text" required="" aria-required="true" value="Mahoney" readonly>
     </fieldset>
   </form>
@@ -968,10 +968,10 @@ lead: USAJOBS adds or clarifies design for labels, contextual help, required/opt
 
 <div class="usa-accordion-bordered usa-accordion-docs">
   <button class="usa-button-unstyled usa-accordion-button"
-      aria-expanded="true" aria-controls="collapsible-0">
+      aria-expanded="true" aria-controls="doc-4">
     Documentation
   </button>
-  <div id="collapsible-0" aria-hidden="false" class="usa-accordion-content">
+  <div id="doc-4" aria-hidden="false" class="usa-accordion-content">
     <h4 class="usa-heading">Usability</h4>
     <h5>Guidance</h5>
     <ul>
@@ -987,36 +987,38 @@ lead: USAJOBS adds or clarifies design for labels, contextual help, required/opt
 <h6 id="usajobs-form-field-indicator-documentation" class="usa-heading-alt">
   Required/Optional Field Indicator
 </h6>
-<div class="preview">
-  <label for="first-name">First name <span class="usa-additional_text">Optional</span></label>
+<div class="preview" id="code-4">
+  <label for="first-name" class="usa-input-optional">First name</label>
   <input id="first-name" name="first-name" type="text">
-  <label for="last-name">Last name <span class="usa-additional_text">Required</span></label>
+  <label for="last-name">Last name</label>
   <input id="last-name" name="last-name" type="text" required="" aria-required="true">
 </div>
 
 <div class="usa-accordion-bordered usa-accordion-docs">
   <button class="usa-button-unstyled usa-accordion-button"
-      aria-expanded="true" aria-controls="collapsible-0">
+      aria-expanded="true" aria-controls="doc-4">
     Documentation
   </button>
-  <div id="collapsible-0" aria-hidden="false" class="usa-accordion-content">
+  <div id="doc-4" aria-hidden="false" class="usa-accordion-content">
     <h4 class="usa-heading">Usability</h4>
+    <p>
+      The US Standards have been <a href="https://standards.usa.gov/whats-new/releases/#version-140">updated to only indicate optional fields</a> and we will be following their guidance.
+    </p>
 
     <h5>When to use</h5>
     <ul class="usa-content-list">
-      <li>When the majority of form fields are either required or optional and thus specific fields must be identified as the opposite (optional or required).</li>
-      <li>In place of a red asterisk.</li>
+      <li>To identify optional fields only.</li>
     </ul>
 
     <h5>When to consider something else</h5>
     <ul class="usa-content-list">
-      <li>If all fields are required or optional consider the <a href="#usajobs-form-legend-documentation">form legend</a> to communicate that to the user.</li>
+      <li>If all fields are required consider the <a href="#usajobs-form-legend-documentation">form legend</a> to communicate that to the user.</li>
     </ul>
   </div>
 </div>
 
 <h6 id="usajobs-form-legend-documentation" class="usa-heading-alt">Legend</h6>
-<div class="preview">
+<div class="preview" id="code-6">
   <form name="example" aria-labelled-by="usajobs-form-heading-0" class="usajobs-form">
     <h2 id="usajobs-form-heading-0" class="usajobs-form__title">
       [Form Title]
@@ -1032,10 +1034,10 @@ lead: USAJOBS adds or clarifies design for labels, contextual help, required/opt
 </div>
 <div class="usa-accordion-bordered usa-accordion-docs">
   <button class="usa-button-unstyled usa-accordion-button"
-      aria-expanded="true" aria-controls="collapsible-0">
+      aria-expanded="true" aria-controls="doc-6">
     Documentation
   </button>
-  <div id="collapsible-0" aria-hidden="false" class="usa-accordion-content">
+  <div id="doc-6" aria-hidden="false" class="usa-accordion-content">
     <h4 class="usa-heading">Usability</h4>
     <h5>When to use</h5>
     <ul class="usa-content-list">
@@ -1046,7 +1048,6 @@ lead: USAJOBS adds or clarifies design for labels, contextual help, required/opt
     <h5>When not to use</h5>
     <ul class="usa-content-list">
       <li>The form legend may be omitted in cases where the form is extremely short or the fields are obviously required. For example, a form that consists of one checkbox or a sign in form.</li>
-      <li>When most of the form fields are optional omit the legend and use the <a href="#usajobs-form-field-indicator-documentation">Required Field Indicator</a> to indicate the required fields.</li>
     </ul>
   </div>
 </div>
@@ -1057,13 +1058,13 @@ lead: USAJOBS adds or clarifies design for labels, contextual help, required/opt
 </p>
 <div class="usa-accordion-bordered usa-accordion-docs">
   <button class="usa-button-unstyled usa-accordion-button"
-      aria-expanded="true" aria-controls="collapsible-0">
+      aria-expanded="true" aria-controls="doc-7">
     Documentation
   </button>
-  <div id="collapsible-0" aria-hidden="false" class="usa-accordion-content">
+  <div id="doc-7" aria-hidden="false" class="usa-accordion-content">
     <h4 class="usa-heading">Visual</h4>
     <ul class="usa-content-list">
-      <li>Input boxes and dropdowns in error should be <a href="https://standards.usa.gov/form-controls/#text-inputs">outlined in red</a>/</li>
+      <li>Input boxes and dropdowns in error should be <a href="https://standards.usa.gov/form-controls/#text-inputs">outlined in red</a>.</li>
       <li>A <a href="https://standards.usa.gov/form-controls/#text-inputs">vertical red bar</a> should run along the left side of all failed form fields. The red bar should run the length of each individual question, including the radio buttons or answer options.</li>
       <li>Input boxes and dropdowns no longer in error should be outlined in green.</li>
       <li>The <a href="https://standards.usa.gov/form-controls/#text-inputs">styling should follow the U.S. Design Standards</a>.</li>
@@ -1104,7 +1105,7 @@ lead: USAJOBS adds or clarifies design for labels, contextual help, required/opt
 </div>
 
 <h2 class="usa-heading" id="layout">Alternative Layouts</h2>
-<div class="preview">
+<div class="preview" id="code-8">
   <h6 id="usajobs-form-legend-documentation" class="usa-heading-alt">Horizontal layout</h6>
   <form name="layout-example" class="usajobs-form">
     <div class="usajobs-search-save__scroll-container">
@@ -1114,7 +1115,6 @@ lead: USAJOBS adds or clarifies design for labels, contextual help, required/opt
           <div class="usajobs-fieldset--horizontal__col usajobs-search-save__input">
             <label for="search-save-name">
               Name
-              <span class="usa-additional_text">Required</span>
             </label>
             <input name="search-save-name" class="usajobs-search-save__name" type="text" value="" autocomplete="false" required aria-required="true" />
           </div>
@@ -1147,7 +1147,6 @@ lead: USAJOBS adds or clarifies design for labels, contextual help, required/opt
           <div class="usajobs-fieldset--horizontal__col usa-input-error">
             <label for="search-save-name" class="usa-input-error-label" for="search-save-name">
               Name
-              <span class="usa-additional_text">Required</span>
             </label>
             <input name="search-save-name" class="usajobs-search-save__name" type="text" value="" autocomplete="false" required aria-required="true" aria-described-by="input-error-message" />
             <span class="usa-input-error-message" id="input-error-message" role="alert">
@@ -1183,7 +1182,6 @@ lead: USAJOBS adds or clarifies design for labels, contextual help, required/opt
           <div class="usajobs-fieldset--horizontal__col">
             <label for="search-save-name" class="" for="search-save-name">
               Name
-              <span class="usa-additional_text">Required</span>
             </label>
             <input name="search-save-name" class="usajobs-search-save__name" type="text" value="" autocomplete="false" required aria-required="true" aria-described-by="input-error-message" />
           </div>

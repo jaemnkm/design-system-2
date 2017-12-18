@@ -48,7 +48,6 @@ lead: USAJOBS alters the disabled button and adds a secondary button style.
     <h5>When to use</h5>
     <ul class="usa-content-list">
       <li>Use the default style for all disabled buttons.</li>
-      </li>
     </ul>
   </div>
 </div>
