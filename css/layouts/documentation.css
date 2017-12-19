@@ -252,6 +252,11 @@ html {
   }
 }
 
+.usa-sidenav-list {
+  margin-bottom: 1rem;
+  border-bottom: 0;
+}
+
 .visual-style .sidenav .visual-style-sublist,
 .document .sidenav .document-sublist,
 .search .sidenav .search-sublist,

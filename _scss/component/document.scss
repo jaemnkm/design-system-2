@@ -1,7 +1,6 @@
 // Document
 
 @import '../base-shared';
-@import 'font-awesome/font-awesome';
 
 // Desired aspect ratio is 2:3 but in reality most thumbnails are only 208px tall
 // Retina dimensions: 318x
@@ -242,7 +241,7 @@ $figure-height: $thumbnail-img-height - $view-height + rem(1px) + 1rem; // 1px b
 .usajobs-document--placeholder-resume {
   .usajobs-document__figure {
     display: block;
-    padding: $size-S 0 0 0;
+    padding: 0;
     background-color: $color-primary-darker;
     text-align: center;
     text-decoration: none;
@@ -256,31 +255,31 @@ $figure-height: $thumbnail-img-height - $view-height + rem(1px) + 1rem; // 1px b
     line-height: $figure-height - 0.7rem - $view-height;
 
     &::before {
-      @include fa-icon();
-      content: $fa-var-file;
+      @include icon-content("document/file-alt", 8rem, 8rem);
       color: $color-white;
       font-size: 8rem;
+      vertical-align: middle;
     }
   }
 
   &__icon.pdf::before {
-    content: $fa-var-file-pdf-o;
+    @include icon-content("document/file-pdf", 8rem, 8rem);
   }
 
   &__icon.image::before {
-    content: $fa-var-file-image-o;
+    @include icon-content("document/file-image", 8rem, 8rem);
   }
 
   &__icon.word::before {
-    content: $fa-var-file-word-o;
+    @include icon-content("document/file-word", 8rem, 8rem);
   }
 
   &__icon.text::before {
-    content: $fa-var-file-text-o;
+    @include icon-content("document/file-alt-o", 8rem, 8rem);
   }
 
   &__icon.builder::before {
-    content: $fa-var-file-text;
+    @include icon-content("document/file-alt", 8rem, 8rem);
   }
 
   &__view {
@@ -342,9 +341,9 @@ $figure-height: $thumbnail-img-height - $view-height + rem(1px) + 1rem; // 1px b
       top: 50%;
       left: 50%;
       margin-left: rem(-25px);
-      @include fa-icon();
+      // @include fa-icon();
       font-size: rem(50px);
-      content: $fa-var-circle-o-notch;
+      // content: $fa-var-circle-o-notch;
       color: $color-green;
       @include animation(fa-spin 2s infinite linear);
     }
@@ -376,9 +375,9 @@ $figure-height: $thumbnail-img-height - $view-height + rem(1px) + 1rem; // 1px b
       top: 35%;
       left: 50%;
       margin-left: rem(-25px);
-      @include fa-icon();
+      // @include fa-icon();
       font-size: rem(50px);
-      content: $fa-var-chain-broken;
+      // content: $fa-var-chain-broken;
       color: $color-secondary;
     }
 

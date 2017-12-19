@@ -56,6 +56,10 @@ module.exports = function(grunt) {
             dest: 'css/usajobs-design-system-base--help-center.css'
           },
           {
+            src: '_scss/open-opps.scss',
+            dest: 'css/usajobs-design-system-base--open-opps.css'
+          },
+          {
             expand: true,
             cwd: '_scss/layouts/',
             src: '*.scss',
@@ -154,32 +158,6 @@ module.exports = function(grunt) {
         '!js/usajobs-design-system-components.js',
       ],
       gruntfile: 'Gruntfile.js'
-    },
-    base64: {
-      fonts: {
-        files: {
-          'fonts/fontawesome-webfont.woff.b64': 'fonts/fontawesome-webfont.woff',
-          'fonts/sourcesanspro-regular-webfont.woff.b64': 'fonts/sourcesanspro-regular-webfont.woff',
-          'fonts/merriweather-regular-webfont.woff.b64': 'fonts/merriweather-regular-webfont.woff'
-        }
-      }
-    },
-    svgstore: {
-      options: {
-        formatting : {
-          indent_size : 2
-        }
-      },
-      default: {
-        files: {
-          '_includes/icons/defs.svg': ['img/icons/*.svg']
-        }
-      },
-      hiring_paths: {
-        files: {
-          '_includes/icons/hiring-paths.svg': ['img/icons/hiring-paths/*.svg']
-        }
-      }
     },
     notify_hooks: {
       options: {

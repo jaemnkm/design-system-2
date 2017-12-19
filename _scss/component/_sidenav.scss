@@ -1,7 +1,6 @@
 // Side navigation - Shared between Home and Profile
 
 @import 'base-shared';
-@import 'font-awesome/font-awesome';
 
 @import '../home-variables';
 
@@ -156,15 +155,11 @@
     }
 
     &.is-complete::before {
-      @include fa-icon();
-      content: $fa-var-check-circle;
-      color: $color-green;
+      @include icon-content("nav/check-circle", rem(17px), rem(17px));
     }
 
     &.is-incomplete::before {
-      @include fa-icon();
-      content: $fa-var-circle-o;
-      color: $color-base;
+      @include icon-content("nav/circle", rem(17px), rem(17px));
     }
 
     .fa {

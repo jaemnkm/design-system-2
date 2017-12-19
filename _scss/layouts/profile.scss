@@ -1,7 +1,6 @@
 // Profile (including layouts or Documents and Username & Password)
 
 @import 'base-shared';
-@import 'font-awesome/font-awesome';
 
 @import 'account';
 @import '../home-variables';
@@ -27,9 +26,8 @@
     max-width: $input-max-width;
 
     &.is-complete::before {
-      @include fa-icon();
-      content: $fa-var-check-circle;
-      color: $color-green;
+      @include icon-content("", rem(30px), rem(30px), "../../img/icons/profile/check-circle.svg");
+      vertical-align: text-top;
     }
   }
 

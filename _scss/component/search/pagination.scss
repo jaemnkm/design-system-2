@@ -44,8 +44,7 @@
 
       &:hover {
         color: $color-primary-darker;
-        font-weight: bold;
-        text-decoration: none;
+        text-decoration: underline;
       }
     }
 
@@ -108,8 +107,7 @@
 
       &:hover {
         color: $color-primary-darker;
-        text-decoration: none;
-        font-weight: bold;
+        text-decoration: underline;
       }
     }
   }
@@ -155,14 +153,15 @@
   }
 
   &__previous-page::before {
-    @include fa-icon();
-    content: $fa-var-chevron-left;
+    color: $color-primary;
+    @include icon-content("pagination/chevron-left", rem(15px), rem(15px));
     padding-right: $size-base;
+    vertical-align: middle;
   }
 
   &__next-page::after {
-    @include fa-icon();
-    content: $fa-var-chevron-right;
+    @include icon-content("pagination/chevron-right", rem(15px), rem(15px));
     padding-left: $size-base;
+    vertical-align: middle;
   }
 }

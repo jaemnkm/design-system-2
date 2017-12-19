@@ -2,7 +2,6 @@
 
 @import '../base-shared';
 @import '../actions';
-@import 'font-awesome/font-awesome';
 
 .usajobs-joa-actions {
   @include clearfix();
@@ -86,23 +85,22 @@
     min-width: rem(73px);
 
     &::before {
-      @include fa-icon();
       padding-right: $size-XS;
       color: $color-gold;
-      font-size: $h3-font-size;
-      vertical-align: middle;
+      font-size: $base-font-size;
+      vertical-align: top;
     }
   }
 
   &__save[data-state=is-saved] {
     &::before {
-      content: $fa-var-star;
+      @include icon-content("job/star", 2.4rem, 2.4rem);
     }
   }
 
   &__save[data-state=is-unsaved] {
     &::before {
-      content: $fa-var-star-o;
+      @include icon-content("job/star-o", 2.4rem, 2.4rem);
     }
   }
 }

@@ -1,7 +1,6 @@
 // Home - Reveal - Show all, more, next
 
 @import '../base-shared';
-@import 'font-awesome/font-awesome';
 @import '../home-variables';
 
 .usajobs-show-more,
@@ -20,19 +19,18 @@
     }
 
     &::after {
-      @include fa-icon();
-      font-weight: bold;
+      vertical-align: middle;
     }
 
     &[aria-expanded=false] {
       &::after {
-        content: $fa-var-angle-down;
+        @include icon-content("solid/angle-down", 1.7rem, 1.094rem);
       }
     }
 
     &[aria-expanded=true] {
       &::after {
-        content: $fa-var-angle-up;
+        @include icon-content("solid/angle-up", 1.7rem, 1.094rem);
       }
     }
   }

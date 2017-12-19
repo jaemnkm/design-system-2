@@ -79,43 +79,42 @@ $pillar-body-padding: $size-default;
     }
   }
 
+  &__description {
+    margin-bottom: $size-L;
+  }
+
   &__body {
     padding: 0 $pillar-body-padding $pillar-body-padding;
   }
 
-  &__icon .fa {
+  &__icon .svg-inline--fa {
     display: inline-block;
     font-size: $pillar-icon-width;
     text-align: center;
   }
 
-  &__icon.p1 .fa {
+  &__icon.p1 .fa-compass {
     color: $color-secondary-darkest;
   }
 
-  &__icon.p2 .fa {
+  &__icon.p2 .fa-compass {
     color: $color-primary-alt;
-    @include transform(rotate(60deg));
   }
 
-  &__icon.p3 .fa {
+  &__icon.p3 .fa-compass {
     color: $color-green;
-    @include transform(rotate(120deg));
   }
 
-  &__icon.p4 .fa {
+  &__icon.p4 .fa-compass {
     color: $color-gold;
-    @include transform(rotate(180deg));
   }
 
-  &__icon.p5 .fa {
+  &__icon.p5 .fa-compass {
     color: $color-primary;
-    @include transform(rotate(240deg));
   }
 
-  &__icon.p6 .fa {
+  &__icon.p6 .fa-compass {
     color: $color-primary-darkest;
-    @include transform(rotate(300deg));
   }
 
   &__pillar-title {

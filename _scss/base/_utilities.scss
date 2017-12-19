@@ -114,44 +114,65 @@
   }
 }
 
-@mixin makePrimaryButton() {
-  @include margin(0.5em 0.5em 0.5em null);
+@mixin makeButton($bg-color, $hover-color, $active-color, $big: false, $color: $color-white) {
   display: inline-block;
   appearance: none;
-  background-color: $color-primary;
+  background-color: $bg-color;
   border: 0;
-  border-radius: $border-radius;
-  color: $color-white;
+  color: $color;
   cursor: pointer;
   font-family: $font-sans;
   font-size: $base-font-size;
   font-weight: $font-bold;
   line-height: 1;
   outline: none;
-  padding: 1rem 2rem;
+  @include margin(0.5em 0.5em 0.5em null);
   text-align: center;
   text-decoration: none;
   width: 100%;
   -webkit-font-smoothing: antialiased;
 
+  .main-content & {
+    text-decoration: none;
+  }
+
+  @if ($big) {
+    padding: $size-default $size-M;
+    border-radius: 8px;
+    font-size: 2.4rem;
+  } @else {
+    padding: 1rem 2rem;
+    border-radius: $border-radius;
+  }
+
   @include media($SM) {
     width: auto;
   }
 
-  &:hover {
-    background-color: $color-primary-darker;
+  &:visited {
+    color: $color;
+  }
+
+  &:hover,
+  &.usa-button-hover {
+    background-color: $hover-color;
+    color: $color;
     border-bottom: 0;
-    color: $color-white;
     text-decoration: none;
+  }
+
+  &:active,
+  &.usa-button-active {
+    background-color: $active-color;
   }
 
   &:focus {
     box-shadow: $focus-shadow;
   }
+}
 
-  &:active {
-    background-color: $color-primary-darkest;
-  }
+@mixin makePrimaryButton() {
+  @include makeButton($color-primary, $color-primary-darker, $color-primary-darkest, 'big');
 }
 
 @mixin bulletList() {
@@ -411,22 +432,15 @@
   }
 }
 
-// Mixins to replace the use of font awesome
-@mixin icon-image($file, $height, $width) {
+// Mixin to replace the use of font awesome
+@mixin icon-content($file, $height, $width, $path: null) {
   display: inline-block;
-  height: $height;
-  width: $width;
-  background-image: url("../img/icons/#{$file}@2x.png");
-  background-image: url("../img/icons/#{file}.svg");
-  background-repeat: no-repeat;
-  vertical-align: middle;
-}
-
-@mixin icon-content($file, $height, $width, $color) {
-  display: inline-block;
-  color: $color;
-  content: url("../img/icons/#{$file}.svg");
   background-size: $height $width;
   height: $height;
   width: $width;
+  @if $path == null {
+    content: url("../img/icons/#{$file}.svg");
+  } @else {
+    content: url($path);
+  }
 }
