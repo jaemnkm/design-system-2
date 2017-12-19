@@ -6,13 +6,12 @@ lead: USAJOBS leverages Font Awesome (converted to SVG) and defines specific ico
 ---
 
 <h2 class="usa-heading">Hiring path icons</h2>
-<a href="{{ site.baseurl }}/getting-started/#maturity" class="usa-label maturity design_complete">
-  Design Complete
+<a href="{{ site.baseurl }}/getting-started/#maturity" class="usa-label maturity incomplete">
+  Incomplete
 </a>
 <p>
   We use a consistent set of icons to identify users with a particular type of experience. For example, individuals who have served in the military or who have a disability. These icons are often used to help users identify with a particular hiring path, often tied to a special hiring authority, which they may be eligible for depending on their experience.
 </p>
-
 {% include icons/hiring-paths.svg %}
 
 <div class="preview" id="code-1">
@@ -157,84 +156,6 @@ lead: USAJOBS leverages Font Awesome (converted to SVG) and defines specific ico
   Incomplete
 </a>
 
-
-<div class="preview" id="code-2">
-  <ul class="usajobs-unstyled-list">
-    <li>
-      <svg class="usajobs-icon usajobs-icon--example">
-        <use xlink:href="#angle-down"></use>
-      </svg>
-      angle-down
-    </li>
-    <li>
-      <svg class="usajobs-icon usajobs-icon--example">
-        <use xlink:href="#angle-left"></use>
-      </svg>
-      angle-left
-    </li>
-    <li>
-      <svg class="usajobs-icon usajobs-icon--example">
-        <use xlink:href="#angle-up"></use>
-      </svg>
-      angle-up
-    </li>
-    <li>
-      <svg class="usajobs-icon usajobs-icon--example">
-        <use xlink:href="#archive"></use>
-      </svg>
-      archive
-    </li>
-    <li>
-      <svg class="usajobs-icon usajobs-icon--example">
-        <use xlink:href="#arrow-down"></use>
-      </svg>
-      arrow-down
-    </li>
-    <li>
-      <svg class="usajobs-icon usajobs-icon--example">
-        <use xlink:href="#arrow-left"></use>
-      </svg>
-      arrow-left
-    </li>
-    <li>
-      <svg class="usajobs-icon usajobs-icon--example">
-        <use xlink:href="#arrow-right"></use>
-      </svg>
-      arrow-right
-    </li>
-    <li>
-      <svg class="usajobs-icon usajobs-icon--example">
-        <use xlink:href="#asterisk"></use>
-      </svg>
-      asterisk
-    </li>
-    <li>
-      <svg class="usajobs-icon usajobs-icon--example">
-        <use xlink:href="#bank"></use>
-      </svg>
-      bank
-    </li>
-    <li>
-      <svg class="usajobs-icon usajobs-icon--example">
-        <use xlink:href="#book"></use>
-      </svg>
-      book
-    </li>
-    <li>
-      <svg class="usajobs-icon usajobs-icon--example">
-        <use xlink:href="#plus"></use>
-      </svg>
-      Plus
-    </li>
-    <li>
-      <svg class="usajobs-icon usajobs-icon--example">
-        <use xlink:href="#minus"></use>
-      </svg>
-      Minus
-    </li>
-  </ul>
-</div>
-
 <div class="usa-accordion-bordered usa-accordion-docs">
   <button class="usa-button-unstyled usa-accordion-button"
       aria-expanded="true" aria-controls="doc-1">
@@ -244,13 +165,7 @@ lead: USAJOBS leverages Font Awesome (converted to SVG) and defines specific ico
     <h5>Implementation</h5>
     <ul class="usa-content-list">
       <li>
-        These icons are all defined in a single SVG defs file at <code>incudes/icons/defs.svg</code> which should be included near the top of the page with an inline style to hide those SVGs. This is faster than making a request for each SVG and gives us something similar to an SVG sprite.
-      </li>
-      <li>
-        Open the code drawer above to see how to use the SVGs on the page.
-      </li>
-      <li>
-        This icon file and usage replaces use of the icon font file.
+        We've swapped in <a href="https://fontawesome.com/how-to-use/svg-with-js">Font Awesome version 5</a> which is backward compatible with version 4 (with a JS shim) and uses SVG inline instead of an icon font file.
       </li>
     </ul>
   </div>
