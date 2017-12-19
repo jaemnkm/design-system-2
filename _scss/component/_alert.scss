@@ -11,7 +11,7 @@
   }
 
   .usajobs-alert__icon:after {
-    @include icon-content("alerts/#{$icon}", rem(30px), rem(30px), $color);
+    @include icon-content("alerts/#{$icon}", rem(30px), rem(30px));
   }
 }
 

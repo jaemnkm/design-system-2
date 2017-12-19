@@ -383,15 +383,13 @@
   }
 
   &__save-job-link[data-state=is-saved]::before {
-    @include icon-content("job/star", 1.83rem, 1.7rem, $color-gold);
-    vertical-align: middle;
+    @include icon-content("job/star", 1.83rem, 1.7rem);
     padding-right: $size-XS;
   }
 
   &__save-job-link[data-state=is-unsaved]::before {
-    @include icon-content("job/star-o", 1.83rem, 1.7rem, $color-gold);
+    @include icon-content("job/star-o", 1.83rem, 1.7rem);
     padding-right: $size-XS;
-    vertical-align: middle;
   }
 }
 
