@@ -1,5 +1,5 @@
 ---
-layout: styleguide
+layout: styleguide-full-bleed
 type: component
 title: Footer
 lead: USAJOBS uses a large footer that incorporates navigation.
@@ -9,8 +9,8 @@ lead: USAJOBS uses a large footer that incorporates navigation.
   Design Complete
 </a>
 
-<h6 class="usa-heading-alt">Version 3 - Authenticated</h6>
-<div class="preview" id="code-1">
+<h6 class="usa-heading-alt">Core - Authenticated (v3)</h6>
+<div class="preview full-bleed" id="code-1">
   {% include components/footer/v3/authenticated.html %}
 </div>
 
@@ -50,8 +50,8 @@ lead: USAJOBS uses a large footer that incorporates navigation.
   </div>
 </div>
 
-<h6 class="usa-heading-alt">Version 3 - Job Announcement variation</h6>
-<div class="preview" id="code-2">
+<h6 class="usa-heading-alt">Core - Job Announcement variation (v3)</h6>
+<div class="preview full-bleed" id="code-2">
   {% include components/footer/v3/authenticated-joa.html %}
 </div>
 
@@ -65,6 +65,25 @@ lead: USAJOBS uses a large footer that incorporates navigation.
     <h5>When to use</h5>
     <ul class="usa-content-list">
       <li>This variation of the footer is used on the job announcement page as it contains a different set of small links at the bottom of the page which are required to include.</li>
+    </ul>
+  </div>
+</div>
+
+<h6 class="usa-heading-alt">Open Opportunities (v3)</h6>
+<div class="preview full-bleed" id="code-2">
+  {% include components/footer/v3/open-opps.html %}
+</div>
+
+<div class="usa-accordion-bordered usa-accordion-docs">
+  <button class="usa-button-unstyled usa-accordion-button"
+      aria-expanded="true" aria-controls="doc-1">
+    Documentation
+  </button>
+  <div id="doc-1" aria-hidden="false" class="usa-accordion-content">
+    <h4 class="usa-heading">Usability</h4>
+    <h5>When to use</h5>
+    <ul class="usa-content-list">
+      <li>This variation of the footer is used in the Open Opportunities application.</li>
     </ul>
   </div>
 </div>
