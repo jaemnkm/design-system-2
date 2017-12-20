@@ -6882,7 +6882,6 @@ select {
 svg:not(:root) {
   width: 100%;
   height: auto;
-  overflow: hidden;
 }
 
 .usajobs-icon {
