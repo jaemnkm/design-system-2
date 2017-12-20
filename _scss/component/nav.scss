@@ -9,7 +9,7 @@ $logo_img_height-S: 36px;
 $logo_img_height-L: 45px;
 $logo_height-S: $logo_img_height-S + 15px + 10px;
 $logo_height-L: $logo_img_height-L + 15px + 10px;
-$nav_item_height: 17px + 26.5px;
+$nav_item_height: 17px + 24px;
 
 @mixin activeNavElement() {
   position: relative;
@@ -107,10 +107,10 @@ $nav_item_height: 17px + 26.5px;
   &__menu {
     display: block;
     float: right;
-    height: rem($logo_height-S);
+    // height: rem($logo_height-S);
 
     @include media($L) {
-      height: rem($logo_height-L);
+      // height: rem($logo_height-L);
     }
 
     ul {
@@ -164,7 +164,7 @@ $nav_item_height: 17px + 26.5px;
 
   &__section-link {
     display: block;
-    padding: (($logo_height-S - 44px) / 2) $size-S;
+    padding: (($logo_height-S - 40px) / 2) $size-S;
     line-height: 1;
     text-align: center;
     @include transition(all $duration-fast linear);
@@ -176,7 +176,7 @@ $nav_item_height: 17px + 26.5px;
     }
 
     @include media($ML) {
-      padding: rem(($logo_height-L - 44px) / 2) $size-M;
+      padding: rem(($logo_height-L - 40px) / 2) $size-M;
     }
 
     &:visited {
@@ -192,10 +192,19 @@ $nav_item_height: 17px + 26.5px;
       @include activeNavElement();
     }
 
-    .fa {
+    svg {
       display: block;
+      height: 1em;
       font-size: $h3-font-size;
       padding-bottom: $size-XS;
+    }
+
+    .usajobs-icon--center {
+      width: 100%;
+    }
+
+    &.menu-toggle {
+      padding-top: $size-default + .4rem; // This accounts for using the data-fa-transform on the SVG to move it up 4 pixels
     }
   }
 

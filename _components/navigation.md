@@ -10,7 +10,7 @@ lead: USAJOBS features a consistent header for top-level navigation across the s
 </a>
 
 <h6 class="usa-heading-alt">Unauthenticated - Full bleed</h6>
-<div class="preview" id="code-1">
+<div class="preview full-bleed" id="code-1">
   {% include components/nav/unauthenticated-full-bleed.html %}
 </div>
 <div class="usa-accordion-bordered usa-accordion-docs">
@@ -50,7 +50,7 @@ lead: USAJOBS features a consistent header for top-level navigation across the s
 </div>
 
 <h6 class="usa-heading-alt">Unauthenticated - Banner - post-transition</h6>
-<div class="preview" id="code-2">
+<div class="preview full-bleed" id="code-2">
   {% include components/nav/unauthenticated-banner-post-release.html %}
 </div>
 <div class="usa-accordion-bordered usa-accordion-docs">
@@ -76,7 +76,7 @@ lead: USAJOBS features a consistent header for top-level navigation across the s
 
 
 <h6 class="usa-heading-alt">Authenticated - Active state variation</h6>
-<div class="preview" id="code-3">
+<div class="preview full-bleed" id="code-3">
   {% include components/nav/authenticated-active-state.html %}
 </div>
 <div class="usa-accordion-bordered usa-accordion-docs">

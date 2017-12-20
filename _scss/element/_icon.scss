@@ -31,6 +31,38 @@ svg:not(:root) {
   fill: currentColor;
 }
 
+.usajobs-icon--center {
+  display: inline-flex;
+  align-self: center;
+  position: relative;
+  height: 1em;
+  width: 1em;
+
+  svg {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    height: 1em;
+    width: 1em;
+  }
+}
+
+.usajobs-icon--baseline {
+  display: inline-flex;
+  align-self: center;
+  position: relative;
+  height: 1em;
+  width: 1em;
+
+  svg {
+    position: absolute;
+    bottom: -0.125em;
+    height: 1em;
+    width: 1em;
+  }
+}
+
 .usajobs-unique-hiring-paths {
   &__list {
     @include unstyledList();

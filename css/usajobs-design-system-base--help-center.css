@@ -6440,6 +6440,42 @@ svg:not(:root) {
   fill: currentColor;
 }
 
+.usajobs-icon--center {
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -ms-flex-item-align: center;
+      align-self: center;
+  position: relative;
+  height: 1em;
+  width: 1em;
+}
+
+.usajobs-icon--center svg {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  height: 1em;
+  width: 1em;
+}
+
+.usajobs-icon--baseline {
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -ms-flex-item-align: center;
+      align-self: center;
+  position: relative;
+  height: 1em;
+  width: 1em;
+}
+
+.usajobs-icon--baseline svg {
+  position: absolute;
+  bottom: -0.125em;
+  height: 1em;
+  width: 1em;
+}
+
 .usajobs-unique-hiring-paths__list {
   display: block;
   margin: 0;
@@ -7561,13 +7597,6 @@ html {
 .usajobs-nav__menu {
   display: block;
   float: right;
-  height: 6.1rem;
-}
-
-@media screen and (min-width: 62em) {
-  .usajobs-nav__menu {
-    height: 7rem;
-  }
 }
 
 .usajobs-nav__menu ul {
@@ -7620,7 +7649,7 @@ html {
 
 .usajobs-nav__section-link {
   display: block;
-  padding: 8.5px 1rem;
+  padding: 10.5px 1rem;
   line-height: 1;
   text-align: center;
   transition: all 0.3s linear;
@@ -7636,7 +7665,7 @@ html {
 
 @media screen and (min-width: 48em) {
   .usajobs-nav__section-link {
-    padding: 1.3rem 3rem;
+    padding: 1.5rem 3rem;
   }
 }
 
@@ -7657,10 +7686,19 @@ html {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12) inset, 0 1px 2px rgba(0, 0, 0, 0.24) inset;
 }
 
-.usajobs-nav__section-link .fa {
+.usajobs-nav__section-link svg {
   display: block;
+  height: 1em;
   font-size: 2.4rem;
   padding-bottom: 0.25rem;
+}
+
+.usajobs-nav__section-link .usajobs-icon--center {
+  width: 100%;
+}
+
+.usajobs-nav__section-link.menu-toggle {
+  padding-top: 1.9rem;
 }
 
 .usajobs-nav__icon {
