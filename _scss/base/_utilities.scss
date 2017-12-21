@@ -444,3 +444,20 @@
     content: url($path);
   }
 }
+
+@mixin iconCenter($size: 1em) {
+  display: inline-flex;
+  align-self: center;
+  position: relative;
+  height: $size;
+  width: $size;
+
+  svg {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    height: 1em;
+    width: 1em;
+  }
+}

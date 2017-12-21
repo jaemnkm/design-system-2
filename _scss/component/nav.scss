@@ -204,7 +204,12 @@ $nav_item_height: 17px + 24px;
     }
 
     &.menu-toggle {
-      padding-top: $size-default + .4rem; // This accounts for using the data-fa-transform on the SVG to move it up 4 pixels
+      padding-top: $size-default;
+
+      @include media($SM) {
+        // This accounts for using the data-fa-transform on the SVG to move it up 4 pixels
+        padding-top: $size-default + .4rem;
+      }
     }
   }
 
@@ -403,7 +408,9 @@ $nav_item_height: 17px + 24px;
   }
 }
 
-.usajobs-nav--full_bleed {
+.usajobs-nav--full_bleed,
+.usajobs-nav--core-v2,
+.usajobs-nav--open-opps {
   &__body {
     max-width: inherit;
   }
@@ -442,6 +449,277 @@ $nav_item_height: 17px + 24px;
   &__brand {
     @include media($XXXXL) {
       padding-left: 0;
+    }
+  }
+}
+
+.usajobs-nav--core-v2 {
+  &__brand &__logo {
+    width: 10.5rem;
+    height: 2.4rem;
+
+    @include media($SM) {
+      width: 15.8rem;
+      height: 3.6rem;
+    }
+  }
+
+  &__help {
+    display: inline-block;
+  }
+
+  &__brand-container {
+    margin-right: 0;
+  }
+
+  &__brand {
+    padding: $size-default 0 $size-default $size-default;
+
+    @include media($SM) {
+      padding-bottom: $size-S;
+    }
+
+    @include media($M) {
+      // padding: $size-S 0 $size-S $size-default;
+    }
+
+    @include media($ML) {
+      padding-left: $size-M;
+    }
+  }
+
+  &__help &__section-link svg {
+    @include media($M) {
+    }
+  }
+
+  &__section-link {
+    font-size: $small-font-size;
+    padding: 1.3rem $size-S $size-S;
+
+    @include media($SM) {
+      font-size: $base-font-size;
+      padding-top: 1.7rem;
+    }
+
+    @include media($M) {
+      display: inline-block;
+      padding-top: 2.2rem;
+      padding-bottom: 2.2rem;
+    }
+
+    @include media($ML) {
+      padding-left: $size-M;
+      padding-right: $size-M;
+    }
+
+    &.menu-toggle {
+      padding-top: 1.3rem;
+
+      @include media($SM) {
+        padding-top: 1.7rem;
+      }
+
+      @include media($M) {
+        padding-top: 2.2rem;
+      }
+    }
+
+    &.is-active {
+      box-shadow: none;
+      background-color: inherit;
+    }
+
+    svg {
+      height: 1.7rem;
+
+      @include media($M) {
+        display: inline-block;
+      }
+    }
+
+    &__first_name {
+      @include media($M) {
+        display: inline-block;
+      }
+    }
+  }
+
+  &__section-link.is-active &__section-active {
+    border-bottom: 0.7rem solid $color-primary;
+    padding-bottom: 0.2rem;
+
+    @include media($M) {
+      padding-bottom: 1.4rem;
+    }
+  }
+}
+
+.usajobs-nav--openopps {
+  &__brand {
+    padding: $size-default 0 $size-default $size-default;
+
+    @include media($SM) {
+      padding-bottom: $size-S;
+    }
+
+    @include media($ML) {
+      padding-left: $size-M;
+    }
+
+    @include media($L) {
+      padding-top: 1.2rem;
+    }
+
+    svg {
+      width: 17.0rem;
+
+      @include media($ML) {
+        width: 22.8rem;
+      }
+
+      @include media($L) {
+        width: 29.8rem;
+      }
+    }
+  }
+
+  &__help {
+    display: inline-block;
+  }
+
+  &__brand-container {
+    margin-right: 0;
+  }
+
+  &__help &__section-link svg {
+    @include media($M) {
+    }
+  }
+
+  &__section-link {
+    font-size: $small-font-size;
+    padding: 1.3rem $size-S $size-S;
+
+    @include media($SM) {
+      font-size: $base-font-size;
+      padding-top: 1.7rem;
+    }
+
+    @include media($M) {
+      display: inline-block;
+      padding-top: 2.2rem;
+      padding-bottom: 2.2rem;
+    }
+
+    @include media($ML) {
+      padding-left: $size-M;
+      padding-right: $size-M;
+    }
+
+    &.menu-toggle {
+      padding-top: 1.3rem;
+
+      @include media($SM) {
+        padding-top: 1.7rem;
+      }
+
+      @include media($M) {
+        padding-top: 2.2rem;
+      }
+    }
+
+    &.is-active {
+      box-shadow: none;
+      background-color: inherit;
+    }
+
+    svg {
+      height: 1.7rem;
+
+      @include media($M) {
+        display: inline-block;
+        padding-bottom: 0;
+      }
+    }
+
+    &__first_name {
+      @include media($M) {
+        display: inline-block;
+      }
+    }
+  }
+
+
+  &__section-link.is-active &__section-active,
+  &__menu-container[data-state="is-open"] &__first-name {
+    border-bottom: 0.7rem solid $color-primary;
+    padding-bottom: 0.2rem;
+
+    @include media($M) {
+      padding-bottom: 1.4rem;
+    }
+  }
+
+  &__menu-container[data-state="is-open"] &__section-link.menu-toggle {
+    padding-bottom: 0;
+    background-color: $color-primary-darkest;
+    box-shadow: none;
+  }
+
+  &__people {
+    display: none;
+
+    @include media($SM) {
+      display: inline-block;
+    }
+
+
+    svg {
+      @include media($M) {
+        // These icons are awfully fiddly
+        transform-origin: inherit;
+        padding-right: 1.3rem;
+      }
+    }
+  }
+
+  &__first-name {
+    /* this continues to screw up the line logo_height
+       I suggest we truncate the first name to 12 characters on the way out of the DB
+    display: inherit;
+    max-width: 5.4rem;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    */
+  }
+
+  &__icon-center {
+    @include media($SM) {
+      @include iconCenter(1.5em);
+      height: 1em;
+
+      svg {
+        height: $base-font-size;
+      }
+    }
+  }
+
+  &__title {
+    display: inherit;
+  }
+
+  ul.usajobs-nav__secondary-menu {
+    background-color: $color-primary-darkest;
+
+    li a,
+    li a:hover,
+    li a:visited {
+      color: $color-white;
+    }
+
+    li a:hover {
+      text-decoration: underline;
     }
   }
 }
