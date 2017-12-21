@@ -32,20 +32,7 @@ svg:not(:root) {
 }
 
 .usajobs-icon--center {
-  display: inline-flex;
-  align-self: center;
-  position: relative;
-  height: 1em;
-  width: 1em;
-
-  svg {
-    position: absolute;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-    height: 1em;
-    width: 1em;
-  }
+  @include iconCenter();
 }
 
 .usajobs-icon--baseline {

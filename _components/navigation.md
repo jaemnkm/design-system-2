@@ -74,6 +74,61 @@ lead: USAJOBS features a consistent header for top-level navigation across the s
   </div>
 </div>
 
+<h6 class="usa-heading-alt"><span class="usa-label">New</span> Unauthenticated (v2)</h6>
+<div class="preview full-bleed" id="code-8">
+  {% include components/nav/v2/unauth.html %}
+</div>
+<div class="usa-accordion-bordered usa-accordion-docs">
+  <button class="usa-button-unstyled usa-accordion-button"
+      aria-expanded="true" aria-controls="doc-8">
+    Documentation
+  </button>
+  <div id="doc-8" aria-hidden="false" class="usa-accordion-content">
+    <h4 class="usa-heading">Usability</h4>
+    <h5>When to use</h5>
+    <ul class="usa-content-list">
+      <li>Use this new version to replace the original navigation seen above.</li>
+      <li>This variation is full bleed and conforms to the larger 1600px site wide max width. It also shows help at narrow view ports.</li>
+    </ul>
+  </div>
+</div>
+
+<h6 class="usa-heading-alt"><span class="usa-label">New</span> Open Opportunities - Unauthenticated</h6>
+<div class="preview full-bleed" id="code-8">
+  {% include components/nav/v2/open-opps-unauth.html %}
+</div>
+<div class="usa-accordion-bordered usa-accordion-docs">
+  <button class="usa-button-unstyled usa-accordion-button"
+      aria-expanded="true" aria-controls="doc-8">
+    Documentation
+  </button>
+  <div id="doc-8" aria-hidden="false" class="usa-accordion-content">
+    <h4 class="usa-heading">Usability</h4>
+    <h5>When to use</h5>
+    <ul class="usa-content-list">
+      <li>Use this variation for the Open Opportunities application.</li>
+    </ul>
+  </div>
+</div>
+
+<h6 class="usa-heading-alt"><span class="usa-label">New</span> Open Opportunities - Authenticated</h6>
+<div class="preview full-bleed" id="code-8">
+  {% include components/nav/v2/open-opps-auth.html %}
+</div>
+<div class="usa-accordion-bordered usa-accordion-docs">
+  <button class="usa-button-unstyled usa-accordion-button"
+      aria-expanded="true" aria-controls="doc-8">
+    Documentation
+  </button>
+  <div id="doc-8" aria-hidden="false" class="usa-accordion-content">
+    <h4 class="usa-heading">Usability</h4>
+    <h5>When to use</h5>
+    <ul class="usa-content-list">
+      <li>Use this variation for the Open Opportunities application.</li>
+    </ul>
+  </div>
+</div>
+
 
 <h6 class="usa-heading-alt">Authenticated - Active state variation</h6>
 <div class="preview full-bleed" id="code-3">
