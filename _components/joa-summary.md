@@ -11,18 +11,7 @@ lead: Summary of the Job Opportunity Announcement (JOA)
 
 <div class="preview">
   <h6 class="usa-heading-alt">Variation (v1)</h6>
-  <div class="usajobs-joa_summary v1">
-    <div class="usajobs-joa_summary-body">
-      <p class="intro">Applying to:</p>
-      <ul class="detail">
-        <li class="job_title"><a href="#joa">Animal Caretaker</a></li>
-        <li class="attr">Department of Veteran Affairs</li>
-        <li class="attr">Closes 10/15/2015</li>
-      </ul>
-      <!-- a class="joa-save">Save Job</a -->
-      <a class="joa-anchor" href="#joa-who_may_apply">Who may apply</a>
-    </div>
-  </div>
+  {% include components/joa/joa-summary.html %}
 
   <h6 class="usa-heading-alt">Text wrap demonstration</h6>
   <div class="usajobs-joa_summary v1">

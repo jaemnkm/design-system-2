@@ -24,11 +24,6 @@ lead: USAJOBS leverages Font Awesome (converted to SVG) and defines specific ico
       </div>
       Public
     </li>
-    <!-- li class="usajobs-unique-hiring-paths__item">
-      <div class="usajobs-unique-hiring-paths__icon interchange">
-      </div>
-      Interchange agreement
-    </li -->
     <li class="usajobs-unique-hiring-paths__item">
       <div class="usajobs-unique-hiring-paths__icon">
         <svg class="usajobs-icon--hiring-path">
