@@ -13,7 +13,8 @@ control-number: '468841900'
 </a>
 
 <div class="preview" style="background-color: #f1f1f1;">
-  {% include components/joa/v1.6/intro.html %}
+  {% include icons/hiring-paths.svg %}
+  {% include components/joa/v1.7/intro.html %}
 </div>
 
 <div class="usa-accordion-bordered usa-accordion-docs">

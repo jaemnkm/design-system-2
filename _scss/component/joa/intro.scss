@@ -127,7 +127,15 @@ $body-padding: $size-default;
   }
 
   &__icon {
-    @include UHPIcons();
+    display: inline-block;
+    text-align: center;
+    margin-right: $size-base;
+
+    svg {
+      width: 3rem;
+      height: 3rem;
+      vertical-align: middle;
+    }
   }
 
   &__item > &__link {
@@ -170,13 +178,20 @@ $body-padding: $size-default;
 }
 
 .usajobs-joa--v1-5__intro-hiring-paths,
-.usajobs-joa--v1-6__intro-hiring-paths {
+.usajobs-joa--v1-6__intro-hiring-paths,
+.usajobs-joa--v1-7__intro-hiring-paths {
   position: relative;
 
   @include media($L) {
     float: none;
     width: 100%;
     padding: $size-M $size-default $size-default;
+  }
+}
+
+.usajobs-joa--v1-7-intro-hiring-paths {
+  &__body {
+    padding: 0 0 0 $size-base;
   }
 }
 
@@ -230,7 +245,8 @@ $body-padding: $size-default;
 }
 
 .usajobs-joa-intro--v1-5,
-.usajobs-joa-intro--v1-6 {
+.usajobs-joa-intro--v1-6,
+.usajobs-joa-intro--v1-7 {
   padding-top: 0;
 
   @include media($L) {

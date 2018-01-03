@@ -428,142 +428,14 @@ html {
 
 .usajobs-joa-intro-hiring-paths__icon {
   display: inline-block;
-  width: 31px;
-  height: 31px;
-  line-height: 31px;
-  border-radius: 50%;
-  color: #ffffff;
-  background-color: #e31c3d;
-  box-shadow: 0 0 0 2px none inset;
-  display: inline-block;
-  padding-bottom: 1.5rem;
-  font-size: 1.7rem;
   text-align: center;
   margin-right: 0.5rem;
 }
 
-.usajobs-joa-intro-hiring-paths__icon.public, .usajobs-joa-intro-hiring-paths__icon.interchange {
-  display: inline-block;
-  width: 31px;
-  height: 31px;
-  line-height: 31px;
-  border-radius: 50%;
-  color: #ffffff;
-  background-color: #02bfe7;
-  box-shadow: 0 0 0 2px none inset;
-}
-
-.usajobs-joa-intro-hiring-paths__icon.federal-employees, .usajobs-joa-intro-hiring-paths__icon.internal, .usajobs-joa-intro-hiring-paths__icon.ses {
-  display: inline-block;
-  width: 31px;
-  height: 31px;
-  line-height: 31px;
-  border-radius: 50%;
-  color: #ffffff;
-  background-color: #112e51;
-  box-shadow: 0 0 0 2px none inset;
-}
-
-.usajobs-joa-intro-hiring-paths__icon.federal-employees .fa::before {
-  margin-top: -0.3rem;
-  margin-right: -0.2rem;
-}
-
-.usajobs-joa-intro-hiring-paths__icon.internal .fa {
-  padding-top: 0.5rem;
-}
-
-.usajobs-joa-intro-hiring-paths__icon.internal .fa::before {
-  margin-left: 0.1rem;
-}
-
-.usajobs-joa-intro-hiring-paths__icon.veterans, .usajobs-joa-intro-hiring-paths__icon.military-spouses {
-  display: inline-block;
-  width: 31px;
-  height: 31px;
-  line-height: 31px;
-  border-radius: 50%;
-  color: #ffffff;
-  background-color: #2e8540;
-  box-shadow: 0 0 0 2px none inset;
-}
-
-.usajobs-joa-intro-hiring-paths__icon.military-spouses .fa.is-first {
-  text-indent: 0;
-  top: -2px;
-  left: -4px;
-  opacity: 0.8;
-}
-
-.usajobs-joa-intro-hiring-paths__icon.military-spouses .fa.is-second {
-  text-indent: 0;
-  left: 3px;
-}
-
-.usajobs-joa-intro-hiring-paths__icon.students {
-  display: inline-block;
-  width: 31px;
-  height: 31px;
-  line-height: 31px;
-  border-radius: 50%;
-  color: #ffffff;
-  background-color: #fdb81e;
-  box-shadow: 0 0 0 2px none inset;
-}
-
-.usajobs-joa-intro-hiring-paths__icon.disability, .usajobs-joa-intro-hiring-paths__icon.individuals-with-disabilities {
-  display: inline-block;
-  width: 31px;
-  height: 31px;
-  line-height: 31px;
-  border-radius: 50%;
-  color: #ffffff;
-  background-color: #205493;
-  box-shadow: 0 0 0 2px none inset;
-}
-
-.usajobs-joa-intro-hiring-paths__icon.peace-corps {
-  display: inline-block;
-  width: 31px;
-  height: 31px;
-  line-height: 31px;
-  border-radius: 50%;
-  color: #ffffff;
-  background-color: #4c2c92;
-  box-shadow: 0 0 0 2px none inset;
-}
-
-.usajobs-joa-intro-hiring-paths__icon.former-overseas-employees, .usajobs-joa-intro-hiring-paths__icon.family-of-overseas-employees {
-  display: inline-block;
-  width: 31px;
-  height: 31px;
-  line-height: 31px;
-  border-radius: 50%;
-  color: #ffffff;
-  background-color: #046b99;
-  box-shadow: 0 0 0 2px none inset;
-}
-
-.usajobs-joa-intro-hiring-paths__icon.native-americans {
-  display: inline-block;
-  width: 31px;
-  height: 31px;
-  line-height: 31px;
-  border-radius: 50%;
-  color: #ffffff;
-  background-color: #5b616b;
-  box-shadow: 0 0 0 2px none inset;
-}
-
-.usajobs-joa-intro-hiring-paths__icon.land-mgmt, .usajobs-joa-intro-hiring-paths__icon.land-management {
-  display: inline-block;
-  width: 31px;
-  height: 31px;
-  line-height: 31px;
-  border-radius: 50%;
-  color: #ffffff;
-  background-color: #494440;
-  box-shadow: 0 0 0 2px none inset;
+.usajobs-joa-intro-hiring-paths__icon svg {
+  width: 3rem;
+  height: 3rem;
+  vertical-align: middle;
 }
 
 .usajobs-joa-intro-hiring-paths__item > .usajobs-joa-intro-hiring-paths__link {
@@ -602,17 +474,23 @@ html {
 }
 
 .usajobs-joa--v1-5__intro-hiring-paths,
-.usajobs-joa--v1-6__intro-hiring-paths {
+.usajobs-joa--v1-6__intro-hiring-paths,
+.usajobs-joa--v1-7__intro-hiring-paths {
   position: relative;
 }
 
 @media screen and (min-width: 62em) {
   .usajobs-joa--v1-5__intro-hiring-paths,
-  .usajobs-joa--v1-6__intro-hiring-paths {
+  .usajobs-joa--v1-6__intro-hiring-paths,
+  .usajobs-joa--v1-7__intro-hiring-paths {
     float: none;
     width: 100%;
     padding: 3rem 1.5rem 1.5rem;
   }
+}
+
+.usajobs-joa--v1-7-intro-hiring-paths__body {
+  padding: 0 0 0 0.5rem;
 }
 
 .main-content .usajobs-joa-intro-hiring-paths .usajobs-joa-intro-hiring-paths__link {
@@ -674,32 +552,37 @@ html {
 }
 
 .usajobs-joa-intro--v1-5,
-.usajobs-joa-intro--v1-6 {
+.usajobs-joa-intro--v1-6,
+.usajobs-joa-intro--v1-7 {
   padding-top: 0;
 }
 
 @media screen and (min-width: 62em) {
   .usajobs-joa-intro--v1-5,
-  .usajobs-joa-intro--v1-6 {
+  .usajobs-joa-intro--v1-6,
+  .usajobs-joa-intro--v1-7 {
     padding-bottom: 0;
   }
 }
 
 .usajobs-joa-intro--v1-5__container,
-.usajobs-joa-intro--v1-6__container {
+.usajobs-joa-intro--v1-6__container,
+.usajobs-joa-intro--v1-7__container {
   position: relative;
 }
 
 @media screen and (min-width: 62em) {
   .usajobs-joa-intro--v1-5__container,
-  .usajobs-joa-intro--v1-6__container {
+  .usajobs-joa-intro--v1-6__container,
+  .usajobs-joa-intro--v1-7__container {
     float: left;
     display: block;
     margin-right: 2.3576520234%;
     width: 65.8807826589%;
   }
   .usajobs-joa-intro--v1-5__container:last-child,
-  .usajobs-joa-intro--v1-6__container:last-child {
+  .usajobs-joa-intro--v1-6__container:last-child,
+  .usajobs-joa-intro--v1-7__container:last-child {
     margin-right: 0;
   }
 }
@@ -891,7 +774,7 @@ html {
   color: #212121;
 }
 
-.usajobs-joa-locations__link .fa, .usajobs-joa-locations__link:visited .fa {
+.usajobs-joa-locations__link .fa-map-marker-alt, .usajobs-joa-locations__link:visited .fa-map-marker-alt {
   color: #02bfe7;
 }
 
@@ -1023,7 +906,7 @@ html {
   margin-top: 0;
 }
 
-.usajobs-joa-locations--v1-5__commuting-distance .fa {
+.usajobs-joa-locations--v1-5__commuting-distance .fa-info-circle {
   color: #0071bc;
 }
 
