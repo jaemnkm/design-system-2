@@ -27,10 +27,18 @@ lead: USAJOBS leverages Font Awesome (converted to SVG) and defines specific ico
     <li class="usajobs-unique-hiring-paths__item">
       <div class="usajobs-unique-hiring-paths__icon">
         <svg class="usajobs-icon--hiring-path">
-          <use xlink:href="#federal-employees"></use>
+          <use xlink:href="#federal-employees-competitive"></use>
         </svg>
       </div>
-      Federal employees
+      Federal employees - Competitive
+    </li>
+    <li class="usajobs-unique-hiring-paths__item">
+      <div class="usajobs-unique-hiring-paths__icon">
+        <svg class="usajobs-icon--hiring-path">
+          <use xlink:href="#federal-employees-excepted"></use>
+        </svg>
+      </div>
+      Federal employees - Excepted
     </li>
     <li class="usajobs-unique-hiring-paths__item">
       <div class="usajobs-unique-hiring-paths__icon">
@@ -43,34 +51,10 @@ lead: USAJOBS leverages Font Awesome (converted to SVG) and defines specific ico
     <li class="usajobs-unique-hiring-paths__item">
       <div class="usajobs-unique-hiring-paths__icon">
         <svg class="usajobs-icon--hiring-path">
-          <use xlink:href="#veterans"></use>
+          <use xlink:href="#federal-employees-transition"></use>
         </svg>
       </div>
-      Veterans
-    </li>
-    <li class="usajobs-unique-hiring-paths__item">
-      <div class="usajobs-unique-hiring-paths__icon">
-        <svg class="usajobs-icon--hiring-path">
-          <use xlink:href="#students"></use>
-        </svg>
-      </div>
-      Students &amp; recent graduates
-    </li>
-    <li class="usajobs-unique-hiring-paths__item">
-      <div class="usajobs-unique-hiring-paths__icon">
-        <svg class="usajobs-icon--hiring-path">
-          <use xlink:href="#individuals-with-disabilities"></use>
-        </svg>
-      </div>
-      Individuals with disabilities
-    </li>
-    <li class="usajobs-unique-hiring-paths__item">
-      <div class="usajobs-unique-hiring-paths__icon">
-        <svg class="usajobs-icon--hiring-path">
-          <use xlink:href="#family-of-overseas-employees"></use>
-        </svg>
-      </div>
-      Family of overseas employees
+      Career transition (ICTAP, RPL)
     </li>
     <li class="usajobs-unique-hiring-paths__item">
       <div class="usajobs-unique-hiring-paths__icon land-mgmt">
@@ -79,6 +63,14 @@ lead: USAJOBS leverages Font Awesome (converted to SVG) and defines specific ico
         </svg>
       </div>
       Land Management
+    </li>
+    <li class="usajobs-unique-hiring-paths__item">
+      <div class="usajobs-unique-hiring-paths__icon">
+        <svg class="usajobs-icon--hiring-path">
+          <use xlink:href="#veterans"></use>
+        </svg>
+      </div>
+      Veterans
     </li>
     <li class="usajobs-unique-hiring-paths__item">
       <div class="usajobs-unique-hiring-paths__icon">
@@ -99,6 +91,62 @@ lead: USAJOBS leverages Font Awesome (converted to SVG) and defines specific ico
     <li class="usajobs-unique-hiring-paths__item">
       <div class="usajobs-unique-hiring-paths__icon">
         <svg class="usajobs-icon--hiring-path">
+          <use xlink:href="#students"></use>
+        </svg>
+      </div>
+      Students
+    </li>
+    <li class="usajobs-unique-hiring-paths__item">
+      <div class="usajobs-unique-hiring-paths__icon">
+        <svg class="usajobs-icon--hiring-path">
+          <use xlink:href="#graduates"></use>
+        </svg>
+      </div>
+      Recent graduates
+    </li>
+    <li class="usajobs-unique-hiring-paths__item">
+      <div class="usajobs-unique-hiring-paths__icon">
+        <svg class="usajobs-icon--hiring-path">
+          <use xlink:href="#se-civil"></use>
+        </svg>
+      </div>
+      Senior Executives - Civil service
+    </li>
+    <li class="usajobs-unique-hiring-paths__item">
+      <div class="usajobs-unique-hiring-paths__icon">
+        <svg class="usajobs-icon--hiring-path">
+          <use xlink:href="#se-public"></use>
+        </svg>
+      </div>
+      Senior Executives - Public
+    </li>
+    <li class="usajobs-unique-hiring-paths__item">
+      <div class="usajobs-unique-hiring-paths__icon">
+        <svg class="usajobs-icon--hiring-path">
+          <use xlink:href="#ses"></use>
+        </svg>
+      </div>
+      Senior Executives
+    </li>
+    <li class="usajobs-unique-hiring-paths__item">
+      <div class="usajobs-unique-hiring-paths__icon">
+        <svg class="usajobs-icon--hiring-path">
+          <use xlink:href="#individuals-with-disabilities"></use>
+        </svg>
+      </div>
+      Individuals with disabilities
+    </li>
+    <li class="usajobs-unique-hiring-paths__item">
+      <div class="usajobs-unique-hiring-paths__icon">
+        <svg class="usajobs-icon--hiring-path">
+          <use xlink:href="#family-of-overseas-employees"></use>
+        </svg>
+      </div>
+      Family of overseas employees
+    </li>
+    <li class="usajobs-unique-hiring-paths__item">
+      <div class="usajobs-unique-hiring-paths__icon">
+        <svg class="usajobs-icon--hiring-path">
           <use xlink:href="#native-americans"></use>
         </svg>
       </div>
@@ -115,10 +163,10 @@ lead: USAJOBS leverages Font Awesome (converted to SVG) and defines specific ico
     <li class="usajobs-unique-hiring-paths__item">
       <div class="usajobs-unique-hiring-paths__icon">
         <svg class="usajobs-icon--hiring-path">
-          <use xlink:href="#ses"></use>
+          <use xlink:href="#special-authorities"></use>
         </svg>
       </div>
-      Senior Executives
+      Speical authorities
     </li>
   </ul>
 </div>
