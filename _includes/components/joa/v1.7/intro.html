@@ -114,27 +114,47 @@
               </div>
             </a>
           </li>
-          {% elsif hiring_path == 'fed' %}
+          {% elsif hiring_path == 'fed-competitive' %}
           <li class="usajobs-joa-intro-hiring-paths__item">
             <a href="http://usajobs.github.io/Help/working-in-government/unique-hiring-paths/federal-employees/" class="usajobs-joa-intro-hiring-paths__link" target="_blank">
               <div class="usajobs-joa-intro-hiring-paths__figure">
                 <span class="usajobs-joa-intro-hiring-paths__icon">
                   <svg class="usajobs-icon--hiring-path">
-                    <use xlink:href="#federal-employees"></use>
+                    <use xlink:href="#federal-employees-competitive"></use>
                   </svg>
                 </span>
               </div>
               <div class="usajobs-joa--v1-7-intro-hiring-paths__body">
                 <h4 class="usajobs-joa-intro-hiring-paths__title">
-                  Federal employees
+                  Federal employees - Competitive service
                 </h4>
                 <p class="usajobs-joa-intro-hiring-paths__detail">
-                  Current or former competitive service employees, including merit promotion.
+                  Current or former competitive service federal employees, including merit promotion.
                 </p>
               </div>
             </a>
           </li>
-          {% elsif hiring_path == 'internal' %}
+          {% elsif hiring_path == 'fed-excepted' %}
+          <li class="usajobs-joa-intro-hiring-paths__item">
+            <a href="http://usajobs.github.io/Help/working-in-government/unique-hiring-paths/federal-employees/" class="usajobs-joa-intro-hiring-paths__link" target="_blank">
+              <div class="usajobs-joa-intro-hiring-paths__figure">
+                <span class="usajobs-joa-intro-hiring-paths__icon">
+                  <svg class="usajobs-icon--hiring-path">
+                    <use xlink:href="#federal-employees-excepted"></use>
+                  </svg>
+                </span>
+              </div>
+              <div class="usajobs-joa--v1-7-intro-hiring-paths__body">
+                <h4 class="usajobs-joa-intro-hiring-paths__title">
+                  Federal employees - Excepted service
+                </h4>
+                <p class="usajobs-joa-intro-hiring-paths__detail">
+                  Current or former excepted service federal employees.
+                </p>
+              </div>
+            </a>
+          </li>
+          {% elsif hiring_path == 'fed-internal' %}
           <li class="usajobs-joa-intro-hiring-paths__item usajobs-joa-intro-hiring_paths--subitem">
             <a href="http://usajobs.github.io/Help/working-in-government/unique-hiring-paths/federal-employees/#internal" class="usajobs-joa-intro-hiring-paths__link" target="_blank">
               <div class="usajobs-joa-intro-hiring-paths__figure">
@@ -149,7 +169,107 @@
                   Internal to an agency
                 </h4>
                 <p class="usajobs-joa-intro-hiring-paths__detail">
-                  This job is open to current employees of this agency.
+                  This job is open to current federal employees of this agency.
+                </p>
+              </div>
+            </a>
+          </li>
+          {% elsif hiring_path == 'fed-transition' %}
+          <li class="usajobs-joa-intro-hiring-paths__item usajobs-joa-intro-hiring_paths--subitem">
+            <a href="http://usajobs.github.io/Help/working-in-government/unique-hiring-paths/federal-employees/#transition" class="usajobs-joa-intro-hiring-paths__link" target="_blank">
+              <div class="usajobs-joa-intro-hiring-paths__figure">
+                <span class="usajobs-joa-intro-hiring-paths__icon">
+                  <svg class="usajobs-icon--hiring-path">
+                    <use xlink:href="#federal-employees-transition"></use>
+                  </svg>
+                </span>
+              </div>
+              <div class="usajobs-joa--v1-7-intro-hiring-paths__body">
+                <h4 class="usajobs-joa-intro-hiring-paths__title">
+                  Career transition (ICTAP, RPL)
+                </h4>
+                <p class="usajobs-joa-intro-hiring-paths__detail">
+                  This job is open to federal employees who meet the definition of a “surplus” or “displaced” employee.
+                </p>
+              </div>
+            </a>
+          </li>
+          {% elsif hiring_path == 'fed-land-mgmt' %}
+          <li class="usajobs-joa-intro-hiring-paths__item usajobs-joa-intro-hiring_paths--subitem">
+            <a href="http://usajobs.github.io/Help/working-in-government/unique-hiring-paths/federal-employees/land-management/" class="usajobs-joa-intro-hiring-paths__link" target="_blank">
+              <div class="usajobs-joa-intro-hiring-paths__figure">
+                <span class="usajobs-joa-intro-hiring-paths__icon">
+                  <svg class="usajobs-icon--hiring-path">
+                    <use xlink:href="#federal-employees-land-mgmt"></use>
+                  </svg>
+                </span>
+              </div>
+              <div class="usajobs-joa--v1-7-intro-hiring-paths__body">
+                <h4 class="usajobs-joa-intro-hiring-paths__title">
+                  Land &amp; base management
+                </h4>
+                <p class="usajobs-joa-intro-hiring-paths__detail">
+                  This job is open to certain current or former term or temporary federal employees of a Land or Base Management agency.
+                </p>
+              </div>
+            </a>
+          </li>
+          {% elsif hiring_path == 'se-civil' %}
+          <li class="usajobs-joa-intro-hiring-paths__item">
+            <a href="http://usajobs.github.io/Help/working-in-government/unique-hiring-paths/senior-executives/" class="usajobs-joa-intro-hiring-paths__link" target="_blank">
+              <div class="usajobs-joa-intro-hiring-paths__figure">
+                <span class="usajobs-joa-intro-hiring-paths__icon">
+                  <svg class="usajobs-icon--hiring-path">
+                    <use xlink:href="#se-civil"></use>
+                  </svg>
+                </span>
+              </div>
+              <div class="usajobs-joa--v1-7-intro-hiring-paths__body">
+                <h4 class="usajobs-joa-intro-hiring-paths__title">
+                  Senior Executives - Civil Service
+                </h4>
+                <p class="usajobs-joa-intro-hiring-paths__detail">
+                  This job is open to federal employees who meet the five Executive Core Qualifications (ECQs).
+                </p>
+              </div>
+            </a>
+          </li>
+          {% elsif hiring_path == 'se-public' %}
+          <li class="usajobs-joa-intro-hiring-paths__item">
+            <a href="http://usajobs.github.io/Help/working-in-government/unique-hiring-paths/senior-executives/" class="usajobs-joa-intro-hiring-paths__link" target="_blank">
+              <div class="usajobs-joa-intro-hiring-paths__figure">
+                <span class="usajobs-joa-intro-hiring-paths__icon">
+                  <svg class="usajobs-icon--hiring-path">
+                    <use xlink:href="#se-public"></use>
+                  </svg>
+                </span>
+              </div>
+              <div class="usajobs-joa--v1-7-intro-hiring-paths__body">
+                <h4 class="usajobs-joa-intro-hiring-paths__title">
+                  Senior Executives - Public
+                </h4>
+                <p class="usajobs-joa-intro-hiring-paths__detail">
+                  This job is open to the public who meet the five Executive Core Qualifications (ECQs).
+                </p>
+              </div>
+            </a>
+          </li>
+          {% elsif hiring_path == 'ses' %}
+          <li class="usajobs-joa-intro-hiring-paths__item">
+            <a href="http://usajobs.github.io/Help/working-in-government/unique-hiring-paths/senior-executives/" class="usajobs-joa-intro-hiring-paths__link" target="_blank">
+              <div class="usajobs-joa-intro-hiring-paths__figure">
+                <span class="usajobs-joa-intro-hiring-paths__icon">
+                  <svg class="usajobs-icon--hiring-path">
+                    <use xlink:href="#ses"></use>
+                  </svg>
+                </span>
+              </div>
+              <div class="usajobs-joa--v1-7-intro-hiring-paths__body">
+                <h4 class="usajobs-joa-intro-hiring-paths__title">
+                  Senior Executives - SES
+                </h4>
+                <p class="usajobs-joa-intro-hiring-paths__detail">
+                  This job is open to federal employees already in the Senior Executive Service only.
                 </p>
               </div>
             </a>
@@ -171,63 +291,6 @@
                 <!-- p class="usajobs-joa-intro-hiring-paths__detail">
                   Includes VRA, VEOA, and 30% disabled.
                 </p -->
-              </div>
-            </a>
-          </li>
-          {% elsif hiring_path == 'student' %}
-          <li class="usajobs-joa-intro-hiring-paths__item">
-            <a href="http://usajobs.github.io/Help/working-in-government/unique-hiring-paths/students/" class="usajobs-joa-intro-hiring-paths__link" target="_blank">
-              <div class="usajobs-joa-intro-hiring-paths__figure">
-                <span class="usajobs-joa-intro-hiring-paths__icon">
-                  <svg class="usajobs-icon--hiring-path">
-                    <use xlink:href="#students"></use>
-                  </svg>
-                </span>
-              </div>
-              <div class="usajobs-joa--v1-7-intro-hiring-paths__body">
-                <h4 class="usajobs-joa-intro-hiring-paths__title">
-                  Students &amp; recent graduates
-                </h4>
-                <!-- p class="usajobs-joa-intro-hiring-paths__detail">
-                  Current high school, undergraduate, graduate or other students and recent graduates. Includes internships, pathways and other student programs.
-                </p -->
-              </div>
-            </a>
-          </li>
-          {% elsif hiring_path == 'disability' %}
-          <li class="usajobs-joa-intro-hiring-paths__item">
-            <a href="http://usajobs.github.io/Help/working-in-government/unique-hiring-paths/individuals-with-disabilities/" class="usajobs-joa-intro-hiring-paths__link" target="_blank">
-              <div class="usajobs-joa-intro-hiring-paths__figure">
-                <span class="usajobs-joa-intro-hiring-paths__icon">
-                  <svg class="usajobs-icon--hiring-path">
-                    <use xlink:href="#individuals-with-disabilities"></use>
-                  </svg>
-                </span>
-              </div>
-              <div class="usajobs-joa--v1-7-intro-hiring-paths__body">
-                <h4 class="usajobs-joa-intro-hiring-paths__title">
-                  Individuals with a disability
-                </h4>
-              </div>
-            </a>
-          </li>
-          {% elsif hiring_path == 'overseas' %}
-          <li class="usajobs-joa-intro-hiring-paths__item">
-            <a href="http://usajobs.github.io/Help/working-in-government/unique-hiring-paths/family-of-overseas-employees/" class="usajobs-joa-intro-hiring-paths__link" target="_blank">
-              <div class="usajobs-joa-intro-hiring-paths__figure">
-                <span class="usajobs-joa-intro-hiring-paths__icon">
-                  <svg class="usajobs-icon--hiring-path">
-                    <use xlink:href="#family-of-overseas-employees"></use>
-                  </svg>
-                </span>
-              </div>
-              <div class="usajobs-joa--v1-7-intro-hiring-paths__body">
-                <h4 class="usajobs-joa-intro-hiring-paths__title">
-                  Family of overseas employees
-                </h4>
-                <p class="usajobs-joa-intro-hiring-paths__detail">
-                  Family members of a federal employee or uniformed service member who is, or was, working overseas.
-                </p>
               </div>
             </a>
           </li>
@@ -267,6 +330,83 @@
                 </h4>
                 <p class="usajobs-joa-intro-hiring-paths__detail">
                   Current members, those who want to join, or transitioning military members.
+                </p>
+              </div>
+            </a>
+          </li>
+          {% elsif hiring_path == 'student' %}
+          <li class="usajobs-joa-intro-hiring-paths__item">
+            <a href="http://usajobs.github.io/Help/working-in-government/unique-hiring-paths/students/" class="usajobs-joa-intro-hiring-paths__link" target="_blank">
+              <div class="usajobs-joa-intro-hiring-paths__figure">
+                <span class="usajobs-joa-intro-hiring-paths__icon">
+                  <svg class="usajobs-icon--hiring-path">
+                    <use xlink:href="#students"></use>
+                  </svg>
+                </span>
+              </div>
+              <div class="usajobs-joa--v1-7-intro-hiring-paths__body">
+                <h4 class="usajobs-joa-intro-hiring-paths__title">
+                  Students
+                </h4>
+                <p class="usajobs-joa-intro-hiring-paths__detail">
+                  This job is open to current students enrolled in educational institutions from high school to graduate level. Includes internships, pathways and other student programs.
+                </p>
+              </div>
+            </a>
+          </li>
+          {% elsif hiring_path == 'graduates' %}
+          <li class="usajobs-joa-intro-hiring-paths__item">
+            <a href="http://usajobs.github.io/Help/working-in-government/unique-hiring-paths/students/" class="usajobs-joa-intro-hiring-paths__link" target="_blank">
+              <div class="usajobs-joa-intro-hiring-paths__figure">
+                <span class="usajobs-joa-intro-hiring-paths__icon">
+                  <svg class="usajobs-icon--hiring-path">
+                    <use xlink:href="#graduates"></use>
+                  </svg>
+                </span>
+              </div>
+              <div class="usajobs-joa--v1-7-intro-hiring-paths__body">
+                <h4 class="usajobs-joa-intro-hiring-paths__title">
+                  Recent graduates
+                </h4>
+                <p class="usajobs-joa-intro-hiring-paths__detail">
+                  This job is open to those who have graduated within the last 2 years.
+                </p>
+              </div>
+            </a>
+          </li>
+          {% elsif hiring_path == 'disability' %}
+          <li class="usajobs-joa-intro-hiring-paths__item">
+            <a href="http://usajobs.github.io/Help/working-in-government/unique-hiring-paths/individuals-with-disabilities/" class="usajobs-joa-intro-hiring-paths__link" target="_blank">
+              <div class="usajobs-joa-intro-hiring-paths__figure">
+                <span class="usajobs-joa-intro-hiring-paths__icon">
+                  <svg class="usajobs-icon--hiring-path">
+                    <use xlink:href="#individuals-with-disabilities"></use>
+                  </svg>
+                </span>
+              </div>
+              <div class="usajobs-joa--v1-7-intro-hiring-paths__body">
+                <h4 class="usajobs-joa-intro-hiring-paths__title">
+                  Individuals with a disability
+                </h4>
+              </div>
+            </a>
+          </li>
+          {% elsif hiring_path == 'overseas' %}
+          <li class="usajobs-joa-intro-hiring-paths__item">
+            <a href="http://usajobs.github.io/Help/working-in-government/unique-hiring-paths/family-of-overseas-employees/" class="usajobs-joa-intro-hiring-paths__link" target="_blank">
+              <div class="usajobs-joa-intro-hiring-paths__figure">
+                <span class="usajobs-joa-intro-hiring-paths__icon">
+                  <svg class="usajobs-icon--hiring-path">
+                    <use xlink:href="#family-of-overseas-employees"></use>
+                  </svg>
+                </span>
+              </div>
+              <div class="usajobs-joa--v1-7-intro-hiring-paths__body">
+                <h4 class="usajobs-joa-intro-hiring-paths__title">
+                  Family of overseas employees
+                </h4>
+                <p class="usajobs-joa-intro-hiring-paths__detail">
+                  Family members of a federal employee or uniformed service member who is, or was, working overseas.
                 </p>
               </div>
             </a>
@@ -311,22 +451,22 @@
               </div>
             </a>
           </li>
-          {% elsif hiring_path == 'ses' %}
+          {% elsif hiring_path == 'special-authorities' %}
           <li class="usajobs-joa-intro-hiring-paths__item">
-            <a href="http://usajobs.github.io/Help/working-in-government/unique-hiring-paths/senior-executives/" class="usajobs-joa-intro-hiring-paths__link" target="_blank">
+            <a href="http://usajobs.github.io/Help/working-in-government/unique-hiring-paths/special-authorities" class="usajobs-joa-intro-hiring-paths__link" target="_blank">
               <div class="usajobs-joa-intro-hiring-paths__figure">
                 <span class="usajobs-joa-intro-hiring-paths__icon">
                   <svg class="usajobs-icon--hiring-path">
-                    <use xlink:href="#ses"></use>
+                    <use xlink:href="#special-authorities"></use>
                   </svg>
                 </span>
               </div>
               <div class="usajobs-joa--v1-7-intro-hiring-paths__body">
                 <h4 class="usajobs-joa-intro-hiring-paths__title">
-                  Senior Executives
+                  Special authorities
                 </h4>
                 <p class="usajobs-joa-intro-hiring-paths__detail">
-                  Those who meet the five Executive Core Qualifications (ECQs).
+                  This job is open to those who are eligible under an authority not covered above but detailed in 5 CFR Part 315, Subpart F or G.
                 </p>
               </div>
             </a>

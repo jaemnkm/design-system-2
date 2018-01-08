@@ -135,17 +135,24 @@
       "Relocation": "False",
       "HiringPath": [
         "public",
-        "fed",
-        "internal",
+        "fed-competitive",
+        "fed-excepted",
+        "fed-internal",
+        "fed-transition",
+        "fed-land-mgmt",
         "vet",
-        "nguard",
-        "disability",
-        "native",
         "mspouse",
+        "nguard",
         "student",
+        "graduates",
+        "se-civil",
+        "se-public",
         "ses",
+        "disability",
+        "overseas",
+        "native",
         "peace",
-        "overseas"
+        "special-authorities"
       ]
     },
     "IsRadialSearch": false
