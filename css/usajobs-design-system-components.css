@@ -238,6 +238,170 @@ html {
   clip: rect(0 0 0 0) !important;
 }
 
+html {
+  box-sizing: border-box;
+}
+
+*, *::after, *::before {
+  box-sizing: inherit;
+}
+
+.usajobs-assistive-text {
+  position: absolute !important;
+  margin: -1px !important;
+  border: 0 !important;
+  padding: 0 !important;
+  width: 1px !important;
+  height: 1px !important;
+  overflow: hidden !important;
+  clip: rect(0 0 0 0) !important;
+}
+
+.usajobs-open-opps-opportunity {
+  position: relative;
+  background-color: #ffffff;
+  margin: 1.5rem 0;
+  padding: 1.5rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+@media screen and (min-width: 37.5em) {
+  .usajobs-open-opps-opportunity {
+    margin: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 62em) {
+  .usajobs-open-opps-opportunity {
+    padding: 3rem;
+  }
+}
+
+.usajobs-open-opps-opportunity__header {
+  display: block;
+  margin-top: 0;
+  color: #046b99;
+}
+
+.usajobs-open-opps-opportunity .usajobs-open-opps-opportunity__title {
+  font-family: "Source Sans Pro", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+  font-weight: 700;
+  line-height: 1.3;
+  margin-bottom: 0.5rem;
+  margin-top: 1.5rem;
+  font-size: 2.4rem;
+  display: block;
+  margin: 0;
+  font-weight: normal;
+  color: #0071bc;
+  text-decoration: none;
+}
+
+.usajobs-open-opps-opportunity__desc {
+  margin: 0.5rem 0;
+}
+
+@media screen and (min-width: 48em) {
+  .usajobs-open-opps-opportunity__desc {
+    margin: 1rem 0;
+  }
+}
+
+.usajobs-open-opps-opportunity__agency-only {
+  margin-top: 0;
+  font-weight: bold;
+  font-style: italic;
+}
+
+@media screen and (min-width: 48em) {
+  .usajobs-open-opps-opportunity__agency-only {
+    margin: 1rem 0 1.5rem;
+  }
+}
+
+.usajobs-open-opps-opportunity__details {
+  display: block;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.usajobs-open-opps-opportunity__details > li {
+  display: list-item;
+  margin: 0;
+}
+
+.usajobs-open-opps-opportunity__details > li:before {
+  display: none;
+}
+
+.usajobs-open-opps-opportunity__details > li:after {
+  display: none;
+}
+
+.usajobs-open-opps-opportunity__detail-item {
+  color: #5b616b;
+}
+
+.usajobs-open-opps-opportunity-requestor {
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 3rem;
+  -ms-flex-align: center;
+      align-items: center;
+}
+
+.usajobs-open-opps-opportunity-requestor__figure {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  padding: 0 0 0.5rem 0;
+}
+
+.usajobs-open-opps-opportunity-requestor__body {
+  -ms-flex: 1;
+      flex: 1;
+  min-width: 0;
+  padding: 0 1rem;
+}
+
+.usajobs-open-opps-opportunity-requestor__by {
+  margin: 0;
+  font-size: 1.4rem;
+  color: #5b616b;
+}
+
+.usajobs-open-opps-opportunity-requestor__name {
+  margin: 0;
+}
+
+.usajobs-open-opps-opportunity-requestor__status {
+  -ms-flex: 1;
+      flex: 1;
+}
+
+.usajobs-open-opps-opportunity-requestor__status .usajobs-pill--opportunity-status {
+  margin: 0 auto;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *::after, *::before {
+  box-sizing: inherit;
+}
+
+.usajobs-assistive-text {
+  position: absolute !important;
+  margin: -1px !important;
+  border: 0 !important;
+  padding: 0 !important;
+  width: 1px !important;
+  height: 1px !important;
+  overflow: hidden !important;
+  clip: rect(0 0 0 0) !important;
+}
+
 .usajobs-footer--v1 a,
 .usajobs-footer--v1 a:visited,
 .usajobs-footer--v2 a,
@@ -8713,7 +8877,7 @@ html {
   }
 }
 
-.usa-content p.usajobs-search-teaser__desc {
+.usa-content .usajobs-search-teaser p.usajobs-search-teaser__desc {
   max-width: 75%;
 }
 
