@@ -1,0 +1,41 @@
+{
+  "@context": "http://schema.org/",
+  "@type": "JobPosting",
+  "employmentType": "temporary",
+  "title": "Developer needed for space science citizen science website/app maintenance",
+  "url": "https://openopps.usajobs.gov/tasks/643",
+  "hiringOrganization": {
+    "@type": "GovernmentOrganization",
+    "name": "National Aeronautics and Space Administration (NASA)",
+    "url": "https://www.nasa.gov/",
+    "employee": "Liz MacDonald",
+    "agency-only": false
+  },
+  "workHours": "2-4 hours weekly",
+  "duration": "Ongoing",
+  "status": "Open",
+  "jobLocation": {
+    "@type": "Place",
+    "name": "Virtual",
+    "vacancies": "1"
+  },
+  "relevantOccupation": "Software developer",
+  "description": [
+    "The Aurorasaurus.org project is a successful citizen science project where people can report the Northern and Southern Lights. Our project is looking for part-time developer support to keep the site and apps running in good shape. Additional features could also be added working with the project team based at NASA Goddard."
+  ],
+  "responsibilities": [
+    "Maintenance for the site will require a developer with knowledge in the following languages and frameworks: Python (and the various tools needed for web development: pip, virtualenv, etc) Django JavaScript (Backbone, Marionette, Handlebars) JavaScript module loader (ie webpack or browserify) CSS/LESS HTML SQL(Postgres) PostGIS Phonegap Grunt Supervisor Amazon Web Services (S3, EC2, ElasticBeanstalk, RDS, ElasticCache(Redis)) Java (CLAVIN) Git (version control)."
+  ],
+  "skills": [
+    "SQL",
+    "Python",
+    "Javascript",
+    "Social media",
+    "Java",
+    "Django",
+    "iOS development",
+    "web development",
+    "citizen science",
+    "space science"
+  ]
+}

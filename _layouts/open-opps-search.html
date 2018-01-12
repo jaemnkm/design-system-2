@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<!--[if lt IE 9]><html class="lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!--><html lang="en"><!--<![endif]-->
+  <head>
+    {% include prod-head.html %}
+    <link rel="stylesheet" href="{{ "/css/layouts/open-opps-search.css" | prepend: site.baseurl }}">
+  </head>
+  <body class="{{ page.title | slugify }}">
+    {{ content }}
+    {% include components/footer/v3/open-opps.html %}
+    {% include scripts.html %}
+  </body>
+</html>

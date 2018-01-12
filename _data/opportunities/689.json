@@ -1,0 +1,35 @@
+{
+  "@context": "http://schema.org/",
+  "@type": "JobPosting",
+  "employmentType": "temporary",
+  "title": "Research digital information - what and how are Federal agencies sharing about their digital work?",
+  "url": "https://openopps.usajobs.gov/tasks/689",
+  "hiringOrganization": {
+    "@type": "GovernmentOrganization",
+    "name": "Department of Health and Human Services",
+    "url": "https://www.hhs.gov/",
+    "employee": "Debra Harris",
+    "agency-only": true
+  },
+  "workHours": "16-34 hours",
+  "duration": "One time",
+  "status": "Open",
+  "jobLocation": {
+    "@type": "Place",
+    "name": "Virtual",
+    "vacancies": "1"
+  },
+  "relevantOccupation": "Research",
+  "description": [
+    "HHS’ Digital Communications Division in the Assistant Secretary for Public Affairs Office (ASPA Digital) is seeking help for an online research project. We are updating our website, HHS.gov/web."
+  ],
+  "responsibilities": [
+    "As part of this effort, we’d like to take a look at what others in the Federal community are doing to share their digital information. This task is a one-time research project to search online for Federal agency digital hub websites and to catalog major features/benefits of them. This project is not looking at what other agencies are using to reach their end users (Facebook, Twitter, mobile, etc.) but seeks to find agency websites that share their agency’s digital communication strategy, tools, lessons learned, policies/guidance, case studies, and other information with others working in the digital field. Specifically, we would like to look at all Cabinet-level Federal agencies and other highly trafficked and/or relevant Federal agency websites to collect the following data: Name/URL of Federal agency (Cabinet level agencies: DoD, Treasury, Commerce, etc.) Name/URL of website that centralizes the agency’s digital work Mission/goals/audiences of that site (if stated) Key structure of that website (example: policies, resources available, lessons learned, about this site, etc.) How the agency communicates this information to audiences (do they just post information this website or do they also do email updates, tweet, or communicate via other means about the work they are doing in the digital space) How does the agency collect feedback from users about these pages/information? (example: standard email box, feedback form, ideation tool, Facebook page, etc.) Other useful information/features of the site Contact name/information (name, email, phone) Also collect the same information for popular, highly trafficked and/or relevant sub-agency or other Federal websites (CDC, NIH, FDA, CMS, GSA, FBI, Smithsonian, HIV.gov, Cancer.gov, WhiteHouse.gov, US Digital Service (usds.gov), Digitalgov.gov, 18F.gov, etc.). Pull usage metrics to identify highly trafficked Federal sub-agencies or organizations."
+  ],
+  "skills": [
+    "Best practices",
+    "Research",
+    "Digital policy",
+    "Standards"
+  ]
+}
