@@ -206,167 +206,8 @@ lead: A main function of USAJOBS is to provide a clear and effective search. Our
 
 <h4 class="usa-heading-alt" id="results">Results</h4>
 <div class="preview compact" id="code-4">
-  <div class="usajobs-search">
-    <h6 class="usa-heading-alt">Core variation</h6>
-    <div class="usajobs-search-results" data-object="search-results">
-      <div class="usajobs-search-result--core">
-        <a href="https://www.usajobs.gov/GetJob/ViewDetails/450087700" class="usajobs-search-result--core__title" itemprop="title">
-          Registered Nurse -5A Medical / Surgical unit
-        </a>
-        <div class="usajobs-search-result--core__body">
-          <div class="usajobs-search-result--core__summary">
-            <h4 class="usajobs-search-result--core__agency">
-              Veterans Affairs, Veterans Health Administration
-            </h4>
-            <h5 class="usajobs-search-result--core__department">
-              Department of Veterans Affairs
-            </h5>
-            <h4 class="usajobs-search-result--core__location" itemprop="addressLocality">
-              <span class="usajobs-search-result--core__location-link viewmap" data-object-trigger="modal" data-target="#modal-job-map" data-coord-lat="38.89051" data-coord-long="-77.086295" itemprop="addressLocality">
-                <i class="fa fa-map-marker"></i> Fremont, CA
-              </span>
-            </h4>
-          </div>
-          <div class="usajobs-search-result--core__details">
-            <ul class="usajobs-search-result--core__details-list">
-              <li class="usajobs-search-result--core__item">
-                Starting at $47,065 (GS 9-10)
-              </li>
-              <li class="usajobs-search-result--core__item usajobs-search-result--core__appt-type">
-                Permanent &bull; Full-time
-              </li>
-              <li class="usajobs-search-result--core__item open-to">
-                <p class="usajobs-search-result--core__hiring-path">
-                  This job is open to:
-                </p>
-                <span class="usajobs-search-result--core__uhp-icon public" rel="tooltip" title="This job is open to the public">
-                  <i class="fa fa-users"></i>
-                </span>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="usajobs-search-result--core__footer">
-          <p class="usajobs-search-result--core__footer-item usajobs-search-result--core__closing-date" title="Opening and closing dates" aria-label="Opening and closing dates">
-            <i class="fa fa-clock-o"></i> Open 09/09/2016 to 10/30/2016
-          </p>
-          <!-- p class="usajobs-search-result--core__footer-item right">
-            <a href="#more" class="usajobs-search-result--core__more-jobs-like-this">
-              <i class="fa fa-bullhorn"></i> More jobs like this
-            </a>
-          </p -->
-          <p class="usajobs-search-result--core__footer-item usajobs-search-result--core__save-job">
-            <a href="#save" class="usajobs-search-result--core__save-job-link" data-behavior="search-results.toggle-save" data-target=".usajobs-search-result--core__save-job-text" data-state="is-unsaved">
-              <span class="usajobs-search-result--core__save-job-text">Save job</span>
-            </a>
-          </p>
-        </div>
-      </div>
-      <div class="usajobs-search-result--core">
-        <a href="https://www.usajobs.gov/GetJob/ViewDetails/450087700" class="usajobs-search-result--core__title" itemprop="title">
-          Science and Research Director, Northwest Region
-        </a>
-        <div class="usajobs-search-result--core__body">
-          <div class="usajobs-search-result--core__summary">
-            <h4 class="usajobs-search-result--core__agency">
-              National Oceanic and Atmospheric Administration
-            </h4>
-            <h5 class="usajobs-search-result--core__department">
-              Department of Commerce
-            </h5>
-            <h4 class="usajobs-search-result--core__location" itemprop="addressLocality">
-              <span class="usajobs-search-result--core__location-link viewmap" data-object-trigger="modal" data-target="#modal-job-map" data-name="Seattle, Washington " data-coord-lat="47.60358" data-coord-long="-122.329453" itemprop="addressLocality">
-                <i class="fa fa-map-marker"></i> Seattle, Washington
-              </span>
-            </h4>
-          </div>
-          <div class="usajobs-search-result--core__details">
-            <ul class="usajobs-search-result--core__details-list">
-              <li class="usajobs-search-result--core__item">
-                Starting at $123,175 (ES 00)
-              </li>
-              <li class="usajobs-search-result--core__item usajobs-search-result--core__appt-type">
-                Permanent &bull; Full-time
-              </li>
-              <li class="usajobs-search-result--core__item open-to">
-                <p class="usajobs-search-result--core__hiring-path">
-                  This job is open to:
-                </p>
-                <span class="usajobs-search-result--core__uhp-icon federal-employees" title="This job is open to current or former federal employees" rel="tooltip">
-                  <i class="fa fa-institution"></i>
-                </span>
-                <span class="usajobs-search-result--core__uhp-icon veterans" title="This jobs is open to veterans" rel="tooltip">
-                  <i class="fa fa-shield"></i>
-                </span>
-                <span class="usajobs-search-result--core__uhp-icon individuals-with-disabilities" title="This job is open to individuals with disabilities" rel="tooltip">
-                  <i class="fa fa-wheelchair-alt"></i>
-                </span>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="usajobs-search-result--core__footer">
-          <p class="usajobs-search-result--core__footer-item usajobs-search-result--core__closing-date" title="Opening and closing dates" aria-label="Opening and closing dates">
-            <i class="fa fa-clock-o"></i> Open 10/24/2016 to 12/03/2016
-          </p>
-          <!-- p class="usajobs-search-result--core__footer-item right">
-            <a href="#more" class="usajobs-search-result--core__more-jobs-like-this">
-              <i class="fa fa-bullhorn"></i> More jobs like this
-            </a>
-          </p -->
-          <p class="usajobs-search-result--core__footer-item usajobs-search-result--core__save-job">
-            <a href="#save" class="usajobs-search-result--core__save-job-link" data-behavior="search-results.toggle-save" data-target=".usajobs-search-result--core__save-job-text" data-state="is-saved">
-              <span class="usajobs-search-result--core__save-job-text">Saved</span>
-            </a>
-          </p>
-        </div>
-      </div>
-      <div class="usajobs-search-result--core">
-        <a href="https://www.usajobs.gov/GetJob/ViewDetails/390086900" class="usajobs-search-result--core__title" itemprop="title">
-          Transportation Security Officer (TSO)
-        </a>
-        <div class="usajobs-search-result--core__body">
-          <div class="usajobs-search-result--core__summary">
-            <h4 class="usajobs-search-result--core__agency">
-              Transportation Security Administration
-            </h4>
-            <h5 class="usajobs-search-result--core__department">
-              Department of Homeland Security
-            </h5>
-            <h4 class="usajobs-search-result--core__location" itemprop="addressLocality">
-              Multiple Locations
-            </h4>
-          </div>
-          <div class="usajobs-search-result--core__details">
-            <ul class="usajobs-search-result--core__details-list">
-              <li class="usajobs-search-result--core__item">
-                Starting at $15.37 (SV D)
-              </li>
-              <li class="usajobs-search-result--core__item usajobs-search-result--core__appt-type">
-                Permanent &bull; Part-time
-              </li>
-              <li class="usajobs-search-result--core__item open-to">
-                <p class="usajobs-search-result--core__hiring-path">
-                  This job is open to:
-                </p>
-                <span class="usajobs-search-result--core__uhp-icon public" rel="tooltip" title="This job is open to the public">
-                  <i class="fa fa-users"></i>
-                </span>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="usajobs-search-result--core__footer">
-          <p class="usajobs-search-result--core__footer-item usajobs-search-result--core__closing-date" title="Opening and closing dates" aria-label="Opening and closing dates">
-            <i class="fa fa-clock-o"></i> Open 04/12/2017 to 06/30/2017
-          </p>
-          <a href="https://www.test.usajobs.gov/Applicant/ProfileDashboard/Home" class="usajobs-search-result--core__footer-item right application-status status-received">
-            Application: Received
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
+  <h6 class="usa-heading-alt">Core variation</h6>
+  {% include components/card/search-results-core.html %}
 </div>
 
 <div class="usa-accordion-bordered usa-accordion-docs">
@@ -420,40 +261,8 @@ lead: A main function of USAJOBS is to provide a clear and effective search. Our
 </div>
 
 <div class="preview compact" id="code-5">
-  <div class="usajobs-search">
-    <h6 class="usa-heading-alt">Mission Critical Occupation variation</h6>
-    <div class="usajobs-search-result--card">
-      <a href="https://www.usajobs.gov/GetJob/ViewDetails/435870100?PostingChannelID=RESTAPI" class="usajobs-search-result--card__body">
-        <h3 class="usajobs-search-result__title" itemprop="title">
-            Interdisciplinary (Ecologist/Botanist)
-        </h3>
-        <div class="usajobs-search-result__summary">
-          <div class="usajobs-search-result__summary-body--single-col">
-            <h4 class="usajobs-search-result__department">
-              Department of the Interior
-            </h4>
-            <h5 class="usajobs-search-result__agency">
-              US Fish and Wildlife Service
-            </h5>
-            <h4 class="usajobs-search-result__location" itemprop="addressLocality">
-
-              <span class="usajobs-search-result__location-link viewmap" data-object-trigger="modal" data-target="#modal-job-map" data-name=" " data-coord-lat="38.89051" data-coord-long="-77.086295" itemprop="addressLocality">
-                <i class="fa fa-map-marker"></i> Fremont, CA
-              </span>
-
-            </h4>
-            <p class="usajobs-search-result__multi-line">
-              Permanent &bull; Full Time &bull;
-              Starting at $47,525 &bull; GS07 - 09
-            </p>
-            <p class="usajobs-search-result__closing-date">
-              <i class="fa fa-clock-o is-near-closing"></i> Closes 6/3/2016
-            </p>
-          </div>
-        </div>
-      </a>
-    </div>
-  </div>
+  <h6 class="usa-heading-alt">Mission Critical Occupation variation</h6>
+  {% include components/card/job-mco.html %}
 </div>
 
 <div class="usa-accordion-bordered usa-accordion-docs">
@@ -471,132 +280,42 @@ lead: A main function of USAJOBS is to provide a clear and effective search. Our
 </div>
 
 <div class="preview compact" id="code-6">
-  <div class="usajobs-search">
-    <h6 class="usa-heading-alt">Agency Talent Portal variation</h6>
-    <div class="usajobs-search-result--atp__container">
-      <div class="usajobs-search-result--atp">
-        <a href="#user-detail" class="usajobs-search-result--atp__body">
-          <h3 class="usajobs-search-result--atp__title" itemprop="title">
-            Tony Stark
-          </h3>
-          <div class="usajobs-search-result--atp__summary">
-            <div class="usajobs-search-result--atp__summary-body">
-              <h4 class="usajobs-search-result--atp__agency">
-                Air Force C2 & Intelligence, Surveillance & Reconnaissance
-              </h4>
-              <h5 class="usajobs-search-result--atp__department">
-                Department of the Air Force
-              </h5>
-              <p class="usajobs-search-result--atp__grade">
-                GS-15
-              </p>
-              <h4 class="usajobs-search-result--atp__location" itemprop="addressLocality">
-                <span class="usajobs-search-result--atp__location-link viewmap" data-object-trigger="modal" data-target="#modal-job-map" data-name=" " data-coord-lat="40.7146" data-coord-long="-74.0071" itemprop="addressLocality">
-                  <i class="fa fa-map-marker"></i> New York, NY
-                </span>
-              </h4>
-              <p class="usajobs-search-result--atp__last-updated">
-                <i class="fa fa-clock-o"></i> Last updated 10/01/2016
-              </p>
-            </div>
-            <div class="usajobs-search-result--atp__eligibility">
-              <div class="usajobs-search-result--atp__uhp-row">
-                <div class="usajobs-search-result--atp__uhp">
-                  <span class="usajobs-search-result--atp__uhp-icon federal-employees">
-                    <i class="fa fa-institution"></i>
-                  </span> Federal employee
-                </div>
-                <div class="usajobs-search-result--atp__doc-pill federal-employees">
-                  <i class="fa fa-file"></i> SF-50
-                </div>
-              </div>
-              <div class="usajobs-search-result--atp__uhp-row">
-                <div class="usajobs-search-result--atp__uhp">
-                  <span class="usajobs-search-result--atp__uhp-icon veterans">
-                    <i class="fa fa-shield"></i>
-                  </span> Veteran
-                </div>
-                <div class="usajobs-search-result--atp__doc-pill veterans">
-                  <i class="fa fa-file"></i> DD-214
-                </div>
-              </div>
-              <div class="usajobs-search-result--atp__uhp-row">
-                <div class="usajobs-search-result--atp__uhp">
-                  <span class="usajobs-search-result--atp__uhp-icon individuals-with-disabilities">
-                    <i class="fa fa-wheelchair-alt"></i>
-                  </span> Individuals with disabilities
-                </div>
-              </div>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="usajobs-search-result--atp">
-        <a href="#user-detail" class="usajobs-search-result--atp__body">
-          <h3 class="usajobs-search-result--atp__title" itemprop="title">
-            Steve Rogers
-          </h3>
-          <div class="usajobs-search-result--atp__summary">
-            <div class="usajobs-search-result--atp__summary-body">
-              <h4 class="usajobs-search-result--atp__agency">
-                  U.S. Army Intelligence and Security Command
-              </h4>
-              <h5 class="usajobs-search-result--atp__department">
-                Department of the Army
-              </h5>
-              <p class="usajobs-search-result--atp__grade">
-                GS-15
-              </p>
-              <h4 class="usajobs-search-result--atp__location" itemprop="addressLocality">
-                <span class="usajobs-search-result--atp__location-link viewmap" data-object-trigger="modal" data-target="#modal-job-map" data-name=" " data-coord-lat="40.7146" data-coord-long="-74.0071" itemprop="addressLocality">
-                  <i class="fa fa-map-marker"></i> New York, NY
-                </span>
-              </h4>
-              <p class="usajobs-search-result--atp__last-updated">
-                <i class="fa fa-clock-o"></i> Last updated 10/01/2016
-              </p>
-            </div>
-            <div class="usajobs-search-result--atp__eligibility">
-              <div class="usajobs-search-result--atp__uhp-row">
-                <div class="usajobs-search-result--atp__uhp">
-                  <span class="usajobs-search-result--atp__uhp-icon federal-employees">
-                    <i class="fa fa-institution"></i>
-                  </span> Federal employee
-                </div>
-                <div class="usajobs-search-result--atp__doc-pill federal-employees">
-                  <i class="fa fa-file"></i> SF-50
-                </div>
-              </div>
-              <div class="usajobs-search-result--atp__uhp-row">
-                <div class="usajobs-search-result--atp__uhp">
-                  <span class="usajobs-search-result--atp__uhp-icon veterans">
-                    <i class="fa fa-shield"></i>
-                  </span> Veteran
-                </div>
-                <div class="usajobs-search-result--atp__doc-pill veterans">
-                  <i class="fa fa-file"></i> DD-214
-                </div>
-              </div>
-            </div>
-          </div>
-        </a>
-      </div>
-    </div>
-  </div>
+  <h6 class="usa-heading-alt">Agency Talent Portal variation</h6>
+  {% include components/card/search-results-atp.html %}
 </div>
 
 <div class="usa-accordion-bordered usa-accordion-docs">
   <button class="usa-button-unstyled usa-accordion-button"
-      aria-expanded="true" aria-controls="doc-joa">
+      aria-expanded="true" aria-controls="doc-seeker">
     Documentation
   </button>
-  <div id="doc-joa" aria-hidden="false" class="usa-accordion-content">
+  <div id="doc-seeker" aria-hidden="false" class="usa-accordion-content">
     <h5>When to use</h5>
     <ul class="usa-content-list">
       <li>To represent a job announcement in the recruitment tool.</li>
     </ul>
   </div>
 </div>
+
+<div class="preview compact" id="code-8">
+  <h6 class="usa-heading-alt">Opportunity variation</h6>
+  {% include components/card/opportunity.html %}
+</div>
+
+<div class="usa-accordion-bordered usa-accordion-docs">
+  <button class="usa-button-unstyled usa-accordion-button"
+      aria-expanded="true" aria-controls="doc-opp">
+    Documentation
+  </button>
+  <div id="doc-opp" aria-hidden="false" class="usa-accordion-content">
+    <h5>When to use</h5>
+    <ul class="usa-content-list">
+      <li>To represent an opportunity in Open Opportunitites.</li>
+    </ul>
+  </div>
+</div>
+
+
 
 <h4 class="usa-heading-alt" id="teasers">Teasers</h4>
 <div class="preview compact" id="code-7">
