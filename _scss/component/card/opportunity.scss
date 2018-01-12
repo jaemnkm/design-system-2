@@ -5,6 +5,10 @@
 .usajobs-open-opps-opportunity {
   @include card-v4();
 
+  @include media($L) {
+    padding: $size-default;
+  }
+
   & &__title {
     @include h3();
     display: block;
@@ -14,7 +18,7 @@
     text-decoration: none;
   }
 
-  &__desc {
+  & &__desc {
     margin: $size-base 0;
 
     @include media($ML) {
@@ -22,7 +26,7 @@
     }
   }
 
-  &__agency-only {
+  & &__agency-only {
     margin-top: 0;
     font-weight: bold;
     font-style: italic;
@@ -49,6 +53,10 @@
   &__figure {
     flex-shrink: 0;
     padding: 0 0 $size-base 0;
+
+    @include media($L) {
+      padding-bottom: 0;
+    }
   }
 
   &__body {
@@ -63,7 +71,7 @@
     color: $color-gray;
   }
 
-  &__name {
+  & &__name {
     margin: 0;
   }
 

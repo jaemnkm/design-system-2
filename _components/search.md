@@ -299,7 +299,7 @@ lead: A main function of USAJOBS is to provide a clear and effective search. Our
 
 <div class="preview compact" id="code-8">
   <h6 class="usa-heading-alt">Opportunity variation</h6>
-  {% include components/card/opportunity.html %}
+  {% include components/card/opportunity.html opp-id="689" %}
 </div>
 
 <div class="usa-accordion-bordered usa-accordion-docs">
