@@ -6880,8 +6880,8 @@ select {
 }
 
 svg:not(:root) {
-  width: 100%;
-  height: auto;
+  width: 1em;
+  height: 1em;
 }
 
 .usajobs-icon {

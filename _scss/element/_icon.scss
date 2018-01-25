@@ -1,9 +1,8 @@
 // Unique Hiring Paths
 
 svg:not(:root) {
-  width: 100%;
-  height: auto;
-  // overflow: hidden; This comes from normalize
+  width: 1em;
+  height: 1em;
 }
 
 @mixin usajobsIcon () {
