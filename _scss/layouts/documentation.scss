@@ -67,12 +67,12 @@
 // Header overrides --------- //
 .usajobs-documentation-header__dslink {
   svg {
-    max-width: 10rem;
+    width: 10rem;
     vertical-align: middle;
     color: $color-secondary-darkest;
 
     @media screen and (min-width: $nav-width) {
-      max-width: 18.8rem;
+      max-width: 13.8rem;
     }
   }
 }
