@@ -80,14 +80,14 @@ html {
 }
 
 .usajobs-documentation-header__dslink svg {
-  max-width: 10rem;
+  width: 10rem;
   vertical-align: middle;
   color: #981b1e;
 }
 
 @media screen and (min-width: 951px) {
   .usajobs-documentation-header__dslink svg {
-    max-width: 18.8rem;
+    max-width: 13.8rem;
   }
 }
 
