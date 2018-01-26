@@ -6,8 +6,8 @@ lead: USAJOBS leverages Font Awesome (converted to SVG) and defines specific ico
 ---
 
 <h2 class="usa-heading">Hiring path icons</h2>
-<a href="{{ site.baseurl }}/getting-started/#maturity" class="usa-label maturity incomplete">
-  Incomplete
+<a href="{{ site.baseurl }}/getting-started/#maturity" class="usa-label maturity design_complete">
+  Design complete
 </a>
 <p>
   We use a consistent set of icons to identify users with a particular type of experience. For example, individuals who have served in the military or who have a disability. These icons are often used to help users identify with a particular hiring path, often tied to a special hiring authority, which they may be eligible for depending on their experience.
@@ -187,10 +187,6 @@ lead: USAJOBS leverages Font Awesome (converted to SVG) and defines specific ico
 </div>
 
 <h2 class="usa-heading">SVG icon set</h2>
-<a href="{{ site.baseurl }}/getting-started/#maturity" class="usa-label maturity incomplete">
-  Incomplete
-</a>
-
 <div class="usa-accordion-bordered usa-accordion-docs">
   <button class="usa-button-unstyled usa-accordion-button"
       aria-expanded="true" aria-controls="doc-1">
