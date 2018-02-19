@@ -1263,10 +1263,6 @@ html {
   }
 }
 
-.usajobs-footer--openopps__logo {
-  max-width: 32.0rem;
-}
-
 .usajobs-footer--openopps__contact-email {
   display: block;
   padding: 0.5rem 0;
@@ -1323,6 +1319,12 @@ html {
 .usajobs-footer--openopps ul.usajobs-footer--openopps__subsection-large li a {
   font-size: 1.4rem;
   line-height: 1.5;
+}
+
+svg.usajobs-footer--openopps__logo {
+  width: auto;
+  height: auto;
+  max-width: 32.0rem;
 }
 
 html {
