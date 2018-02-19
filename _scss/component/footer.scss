@@ -361,10 +361,6 @@
     }
   }
 
-  &__logo {
-    max-width: 32.0rem;
-  }
-
   & &__link-large {
     // text-decoration: underline;
   }
@@ -410,4 +406,10 @@
       line-height: $base-line-height;
     }
   }
+}
+
+svg.usajobs-footer--openopps__logo {
+  width: auto;
+  height: auto;
+  max-width: 32.0rem;
 }
