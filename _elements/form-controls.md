@@ -1029,6 +1029,8 @@ lead: USAJOBS adds or clarifies design for labels, contextual help, required/opt
       <input id="first-name" name="first-name" type="text">
       <label for="last-name">Last name</label>
       <input id="last-name" name="last-name" type="text">
+      <label for="details">Details</label>
+      <textarea id="details" name="details"></textarea> 
     </fieldset>
   </form>
 </div>
