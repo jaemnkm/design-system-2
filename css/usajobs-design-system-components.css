@@ -2991,6 +2991,7 @@ html {
 
 .usajobs-nav--openopps__brand svg {
   width: 17.0rem;
+  height: auto;
 }
 
 @media screen and (min-width: 48em) {

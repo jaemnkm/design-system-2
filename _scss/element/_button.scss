@@ -1,8 +1,9 @@
 // Button
 
 // Replacing some of the secondary buttons that were unceremoniously removed
-.usajobs-button-secondary {
-  @include makeButton($color-secondary, $color-secondary-dark, $color-red-darkest, 'big');
+.usajobs-button-secondary,
+.usajobs-button-destructive-action {
+  @include makeButton($color-secondary, $color-secondary-dark, $color-red-darkest);
 }
 
 .usajobs-button-secondary-alert {

@@ -573,6 +573,7 @@ $nav_item_height: 17px + 24px;
 
     svg {
       width: 17.0rem;
+      height: auto;
 
       @include media($ML) {
         width: 22.8rem;
