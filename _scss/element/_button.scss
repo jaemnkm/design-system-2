@@ -6,6 +6,12 @@
   @include makeButton($color-secondary, $color-secondary-dark, $color-red-darkest);
 }
 
+.usa-button-big.usajobs-button-secondary {
+  border-radius: 8px;
+  font-size: $h3-font-size;
+  padding: $size-default $size-M;
+}
+
 .usajobs-button-secondary-alert {
   background-color: $color-secondary-darkest;
 

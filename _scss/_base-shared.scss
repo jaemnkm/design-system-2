@@ -9,7 +9,3 @@
 @import 'base/utilities';
 @import 'base/accessibility';
 @import 'base/breakpoints';
-
-// NOTE: We deliberately don't include font-awesome in here because
-//       not every component needs it and the Help Center needs a build
-//       that does not include it.
