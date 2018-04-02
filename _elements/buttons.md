@@ -56,10 +56,10 @@ lead: USAJOBS alters the disabled button and adds a secondary button style.
 <div class="preview" id="secondary-button">
   <h6>Alert variation</h6>
   <div class="button_wrapper">
-    <button class="usa-button-big usajobs-button-secondary-alert">Default</button>
-    <button class="usa-button-big usajobs-button-secondary-alert usa-button-active">Active</button>
-    <button class="usa-button-big usajobs-button-secondary-alert usa-button-hover">Hover</button>
-    <button class="usa-button-big usajobs-button-secondary-alert usa-button-focus">Focus</button>
+    <button class="usa-button usajobs-button-secondary-alert">Default</button>
+    <button class="usa-button usajobs-button-secondary-alert usa-button-active">Active</button>
+    <button class="usa-button usajobs-button-secondary-alert usa-button-hover">Hover</button>
+    <button class="usa-button usajobs-button-secondary-alert usa-button-focus">Focus</button>
   </div>
 </div>
 
@@ -76,6 +76,29 @@ lead: USAJOBS alters the disabled button and adds a secondary button style.
     </ul>
   </div>
 </div>
+
+<h3 class="usa-heading">Links as buttons</h3>
+<div class="preview" id="links-as-buttons">
+  <h6>Alert variation</h6>
+  <div class="button_wrapper">
+    <a href="#" class="usa-button usa-button-primary">Default</a>
+  </div>
+</div>
+
+<div class="usa-accordion-bordered usa-accordion-docs">
+  <button class="usa-button-unstyled usa-accordion-button"
+      aria-expanded="true" aria-controls="doc-1">
+    Documentation
+  </button>
+  <div id="doc-1" aria-hidden="false" class="usa-accordion-content">
+    <h4 class="usa-heading">Usability</h4>
+    <h5>When to use</h5>
+    <ul class="usa-content-list">
+      <li>Use the <code>.usa-button-primary</code> class to style a link like a button.</li>
+    </ul>
+  </div>
+</div>
+
 
 <h3 id="button-select" class="usa-heading">Button select</h3>
 <p class="lead">
