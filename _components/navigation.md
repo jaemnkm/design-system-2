@@ -59,6 +59,7 @@ lead: USAJOBS features a consistent header for top-level navigation across the s
     <h5>When to use</h5>
     <ul class="usa-content-list">
       <li>Use this variation when the user is authenticated via login.gov.</li>
+      <li>NOTE: This variation is depicting secondary navigation as well for when the user is on their home, profile, documents, or preferences pages.</li>
     </ul>
   </div>
 </div>

@@ -564,6 +564,7 @@ $nav_item_height: 17px + 24px;
         color: $color-primary-darker;
         background-color: $color-white;
         box-shadow: none;
+        border-bottom-color: inherit; // This makes the border bottom appear
       }
     }
   }
