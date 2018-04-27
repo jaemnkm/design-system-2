@@ -1,9 +1,9 @@
 <header class="usajobs-site-header" role="banner" aria-label="header">
   {% include components/nav/_gov-banner.html %}
-  <nav class="usajobs-nav usajobs-nav--core-v2" role="navigation" aria-label="main navigation" data-object="nav">
-    <div class="usajobs-nav__body usajobs-nav--core-v2">
+  <nav class="usajobs-nav usajobs-nav--core-v2 has-secondary-nav" role="navigation" aria-label="main navigation" data-object="nav">
+    <div class="usajobs-nav__body usajobs-nav--core-v2__body">
       <div class="usajobs-nav__header-container">
-        <div class="usajobs-nav__header usajobs-nav--core-v2">
+        <div class="usajobs-nav__header usajobs-nav--core-v2__header">
           <div class="usajobs-nav__brand-container usajobs-nav--core-v2__brand-container">
             <a class="usajobs-nav__brand usajobs-nav--core-v2__brand" href="/">
               <span class="logo usajobs-nav--core-v2__logo" title="USAJOBS logo"></span>
@@ -31,11 +31,11 @@
             </ul>
           </div>
         </div>
-        {% include components/secondary-nav/v3/account.html %}
-        <div id="usajobs-search-form--core-v2-auth" class="usajobs-nav__search" aria-expanded="false" role="menu">
-          {% include components/nav/_search-form.html %}
-        </div>
       </div>
+    </div>
+    {% include components/secondary-nav/v3/account.html %}
+    <div id="usajobs-search-form--core-v2-auth" class="usajobs-nav__search" aria-expanded="false" role="menu">
+      {% include components/nav/_search-form.html %}
     </div>
   </nav>
 </header>

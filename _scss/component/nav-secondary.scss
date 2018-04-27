@@ -139,6 +139,10 @@
   margin-bottom: $size-M;
   background-color: $color-primary-darker;
 
+  @include media($L) {
+    margin-bottom: $size-L;
+  }
+
   // http://caniuse.com/#feat=css-sticky
   &[data-behavior=is-fixed-nav] {
     position: sticky;
