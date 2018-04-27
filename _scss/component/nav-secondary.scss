@@ -154,6 +154,11 @@
     @include outer-container();
     max-width: $site-max-width;
 
+    @include media($L) {
+      padding-left: $size-M;
+      padding-right: $size-M;
+    }
+
     a {
       // Another override of the base styles just to be certain we don't have
       // underlined links in the nav
@@ -167,6 +172,10 @@
     padding: 0;
     font-size: 0;
     text-align: center;
+
+    @include media($L) {
+      text-align: left;
+    }
   }
 
   &__item {
