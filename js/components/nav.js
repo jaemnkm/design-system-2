@@ -20,7 +20,8 @@ $nav.on('click', '[data-behavior]', function (event) {
     $object = $el.closest('[data-object="nav"]'),
     behavior = $el.attr('data-behavior'),
     $target = $(window.document).find('#' + $el.attr('aria-controls')),
-    state = $target.attr('aria-expanded');
+    state = $target.attr('aria-expanded'),
+    $sibling = $target.siblings('[role="menu"]');
 
   event.preventDefault();
   $el.blur(); // Removes focus
@@ -28,7 +29,7 @@ $nav.on('click', '[data-behavior]', function (event) {
   // Each behavior attached to the element should be triggered
   $.each(behavior.split(' '), function (idx, action) {
     if (action.match(/^nav/)) {
-      $el.trigger(action, { el: $el, object: $object, state: state, target: $target });
+      $el.trigger(action, { el: $el, object: $object, state: state, target: $target, sibling: $sibling });
     }
   });
 });
@@ -96,6 +97,11 @@ $nav.on('nav.menu.search-toggle', function(event, opts) {
   event.preventDefault();
 
   if (opts.state === 'false') {
+    if (opts.sibling !== undefined && opts.sibling.length > 0) {
+      opts.sibling.hide();
+      // Find active menu siblings
+      opts.el.parent().siblings().find('.is-active').removeClass('is-active');
+    }
     $nav.trigger('nav.menu.slide-open', { parent: $parent, menu: opts.target });
   } else if (opts.state === 'true') {
     $nav.trigger('nav.menu.slide-close', { parent: $parent, menu: opts.target });

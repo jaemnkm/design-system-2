@@ -2986,6 +2986,7 @@ html {
   color: #205493;
   background-color: #ffffff;
   box-shadow: none;
+  border-bottom-color: inherit;
 }
 
 .usajobs-nav--core-v2__section-link.is-active .usajobs-nav--core-v2__section-active {
@@ -3709,7 +3710,7 @@ html {
   }
 }
 
-.usajobs-profile-secondary-nav[data-behavior=is-fixed-nav] {
+.usajobs-profile-secondary-nav[data-behavior="is-fixed-nav"] {
   position: -webkit-sticky;
   position: sticky;
   z-index: 900;

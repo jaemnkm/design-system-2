@@ -144,7 +144,7 @@
   }
 
   // http://caniuse.com/#feat=css-sticky
-  &[data-behavior=is-fixed-nav] {
+  &[data-behavior="is-fixed-nav"] {
     position: sticky;
     z-index: $layer-panel;
     @include boxShadow(2);
