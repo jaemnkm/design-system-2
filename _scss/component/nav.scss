@@ -453,6 +453,14 @@ $nav_item_height: 17px + 24px;
 }
 
 .usajobs-nav--core-v2 {
+  &.has-secondary-nav &__body {
+    border-bottom: 0;
+  }
+
+  &__header {
+    position: relative;
+  }
+
   &__brand &__logo {
     width: 10.5rem;
     height: 2.4rem;
@@ -480,6 +488,10 @@ $nav_item_height: 17px + 24px;
 
     @include media($ML) {
       padding-left: $size-M;
+    }
+
+    @include media($XXXXL) {
+      padding-left: 0;
     }
   }
 
@@ -936,7 +948,6 @@ ul.ui-autocomplete {
     top: 0;
     right: 405px;
     max-width: 400px;
-    margin: $size-base 0;
     border-radius: $border-radius;
   }
 
