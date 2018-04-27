@@ -133,3 +133,82 @@
     }
   }
 }
+
+.usajobs-profile-secondary-nav {
+  position: relative;
+  margin-bottom: $size-M;
+  background-color: $color-primary-darker;
+
+  // http://caniuse.com/#feat=css-sticky
+  &[data-behavior=is-fixed-nav] {
+    position: sticky;
+    z-index: $layer-panel;
+    @include boxShadow(2);
+  }
+
+  &__body {
+    @include outer-container();
+    max-width: $site-max-width;
+
+    a {
+      // Another override of the base styles just to be certain we don't have
+      // underlined links in the nav
+      text-decoration: none;
+    }
+  }
+
+  &__menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+    text-align: center;
+  }
+
+  &__item {
+    display: inline-table;
+    text-align: center;
+    border-color: $color-white;
+    padding: 0 $size-default;
+  }
+
+  &__link {
+    display: block;
+    padding: $size-default 0 .9375rem;
+    line-height: 1.25;
+    font-size: $base-font-size;
+    border-bottom: .3125rem solid transparent;
+    color: $color-white;
+    @include transition(all .25s ease-in-out);
+    text-decoration: none;
+
+    &:visited {
+      color: $color-white;
+    }
+
+    &:hover {
+      color: $color-white;
+      text-decoration: none;
+      border-bottom-color: inherit;
+    }
+
+    &.is-active,
+    &[data-state="is-active"] {
+      font-weight: bold;
+      border-bottom-color: inherit;
+    }
+  }
+
+  &__short-name {
+    @include media($SM) {
+      display: none;
+    }
+  }
+  &__long-name {
+    display: none;
+
+    @include media($SM) {
+      display: inherit;
+    }
+  }
+}
