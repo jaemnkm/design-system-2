@@ -92,19 +92,32 @@ $nav.on('nav.menu.slide-close', function(event, opts) {
 });
 
 $nav.on('nav.menu.search-toggle', function(event, opts) {
-  var $parent = opts.el.parent();
+  var $parent = opts.el.parent(),
+    $sibling_trigger;
 
   event.preventDefault();
 
   if (opts.state === 'false') {
     if (opts.sibling !== undefined && opts.sibling.length > 0) {
-      opts.sibling.hide();
+      opts.sibling
+        .hide()
+        .attr('aria-expanded', 'false');
+
       // Find active menu siblings
       opts.el.parent().siblings().find('.is-active').removeClass('is-active');
     }
     $nav.trigger('nav.menu.slide-open', { parent: $parent, menu: opts.target });
   } else if (opts.state === 'true') {
     $nav.trigger('nav.menu.slide-close', { parent: $parent, menu: opts.target });
+
+    if (opts.sibling !== undefined && opts.sibling.length > 0) {
+      opts.sibling
+        .show()
+        .attr('aria-expanded', 'true');
+
+      $sibling_trigger = opts.el.parent().siblings().find('[aria-controls="' + opts.sibling.attr('id') + '"]');
+      $sibling_trigger.addClass('is-active');
+    }
   }
 });
 
