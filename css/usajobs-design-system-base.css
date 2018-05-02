@@ -4635,7 +4635,7 @@ fieldset {
   }
 }
 
-input[type=search] {
+input[type="search"] {
   /* stylelint-disable-line selector-no-qualifying-type */
   box-sizing: border-box;
   -webkit-appearance: none;
