@@ -1967,7 +1967,7 @@ html {
   left: 0;
   bottom: 0;
   display: block;
-  background: linear-gradient(transparent, white);
+  background: linear-gradient(rgba(0, 0, 0, 0), white);
   transition: height .5s;
 }
 
@@ -1989,7 +1989,7 @@ html {
 }
 
 .usajobs-read-more--bg::before {
-  background: linear-gradient(transparent, #f1f1f1);
+  background: linear-gradient(rgba(0, 0, 0, 0), #f1f1f1);
 }
 
 html {
