@@ -1,8 +1,8 @@
 // Profile Status
 
-@import '../../base-shared';
+@import '../base-shared';
 
-@import '../../home-variables';
+@import '../home-variables';
 
 @mixin profileStatus() {
   &__profile-container {
