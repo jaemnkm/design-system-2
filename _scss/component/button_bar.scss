@@ -1,6 +1,6 @@
 // Button Bar
 
-@import '../base-shared';
+@import '../../base-shared';
 
 @mixin buttonBar () {
   @include outer-container();
