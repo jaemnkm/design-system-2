@@ -1,9 +1,9 @@
 // Job (JOA) -- Used in Applications and Saved Jobs
 //              These mixins handle individual parts of a job, usually used within a card
 
-@import '../../base-shared';
+@import '../base-shared';
 
-@import '../../home-variables';
+@import '../home-variables';
 
 @mixin job() {
   &__department {
