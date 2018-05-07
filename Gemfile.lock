@@ -248,8 +248,10 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  ffi (= 1.9.18)
   github-pages (~> 175)
   html-proofer
+  nokogiri (~> 1.8.1)
   rouge
   scss_lint
 
