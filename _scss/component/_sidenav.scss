@@ -1,8 +1,8 @@
 // Side navigation - Shared between Home and Profile
 
-@import '../../base-shared';
+@import '../base-shared';
 
-@import '../../home-variables';
+@import '../home-variables';
 
 @mixin sidenav() {
   width: 100%;
