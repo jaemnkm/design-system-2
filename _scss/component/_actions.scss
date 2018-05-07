@@ -1,6 +1,6 @@
 // Actions - Shared actions across components
 
-@import '../base-shared';
+@import '../../base-shared';
 
 @mixin actionShare() {
   position: relative;
