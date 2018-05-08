@@ -5,14 +5,15 @@
       <div class="usajobs-nav__header-container">
         <div class="usajobs-nav__header usajobs-nav--core-v2__header">
           <div class="usajobs-nav__brand-container usajobs-nav--core-v2__brand-container">
-            <a class="usajobs-nav__brand usajobs-nav--core-v2__brand" href="/">
+            <a class="usajobs-nav__brand usajobs-nav--core-v2__brand usajobs-nav--vTest__brand" href="/">
               <span class="logo usajobs-nav--core-v2__logo" title="USAJOBS logo"></span>
+              <span class="test">FAKE <i class="fa fa-exclamation-circle"></i></span>
             </a>
           </div>
           <div class="usajobs-nav__menu" id="usajobs-menu">
             <ul>
               <li class="usajobs-nav__menu-container usajobs-nav__account usajobs-nav--core-v2__menu-container">
-                <a class="usajobs-nav__section-link usajobs-nav--core-v2__section-link menu-toggle is-active" href="https://www.usajobs.gov/Applicant/MyAccount/Home/" data-behavior="nav.menu.toggle" aria-controls="usajobs-profile-secondary-nav" href="#account-menu" title="Account">
+                <a class="usajobs-nav__section-link usajobs-nav--core-v2__section-link menu-toggle" href="https://www.usajobs.gov/Applicant/MyAccount/Home/" data-behavior="nav.menu.toggle" aria-controls="usajobs-profile-secondary-nav" href="#account-menu" title="Account">
                   <span class="fas fa-user fa-fw"></span>
                   <span class="usajobs-nav__account_name">CR</span>
                   <span class="usajobs-nav__first_name usajobs-nav--core-v2__first-name">Christopher</span>
@@ -33,7 +34,6 @@
         </div>
       </div>
     </div>
-    {% include components/secondary-nav/v3/account.html %}
     <div id="usajobs-search-form--core-v2-auth" class="usajobs-nav__search" aria-expanded="false" role="menu">
       {% include components/nav/_search-form.html %}
     </div>

@@ -123,27 +123,8 @@ lead: USAJOBS features a consistent header for top-level navigation across the s
   </div>
 </div>
 
-<h6 class="usa-heading-alt">Search variation</h6>
-<div class="preview" id="code-4">
-  {% include components/nav/search.html %}
-</div>
-<div class="usa-accordion-bordered usa-accordion-docs">
-  <button class="usa-button-unstyled usa-accordion-button"
-      aria-expanded="true" aria-controls="doc-3">
-    Documentation
-  </button>
-  <div id="doc-3" aria-hidden="false" class="usa-accordion-content">
-    <h4 class="usa-heading">Usability</h4>
-    <h5>When to use</h5>
-    <ul class="usa-content-list">
-      <li>Use the Search variation on the search results page.</li>
-    </ul>
-  </div>
-</div>
-
-
 <h6 class="usa-heading-alt">Logo-only</h6>
-<div class="preview" id="code-5">
+<div class="preview full-bleed" id="code-5">
   {% include components/nav/logo-only.html %}
 </div>
 
@@ -162,8 +143,8 @@ lead: USAJOBS features a consistent header for top-level navigation across the s
 </div>
 
 <h6 class="usa-heading-alt">Test &amp; UAT environments</h6>
-<div class="preview" id="code-6">
-  {% include components/nav/test.html %}
+<div class="preview full-bleed" id="code-6">
+  {% include components/nav/v2/test.html %}
 </div>
 <div class="usa-accordion-bordered usa-accordion-docs">
   <button class="usa-button-unstyled usa-accordion-button"

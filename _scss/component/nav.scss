@@ -806,7 +806,7 @@ $nav_item_height: 17px + 24px;
   &__brand {
     .test,
     .test:visited {
-      @include h2();
+      @include h3();
       margin: rem(-2px) 0 0;
       color: $color-primary-alt-dark;
       line-height: 0;
