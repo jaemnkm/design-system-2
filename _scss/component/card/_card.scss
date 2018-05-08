@@ -1,9 +1,9 @@
 // Card -- Used in Applications, Saved Jobs, and Saved Searches
 //         These mixins handle the LAYOUT of the card only, not the display of individual data
 
-@import 'base-shared';
+@import '../../base-shared';
 
-@import '../home-variables';
+@import '../../home-variables';
 
 @mixin card() {
   &__body {
