@@ -10,10 +10,13 @@ lead: Secondary navigation allows for movement within a section or page.
   Design Complete
 </a>
 
-<h6 class="usa-heading-alt"><span class="usa-label">New</span> Horizontal (Profile v3)</h6>
 <div class="preview compact">
   <section class="usajobs-canvas">
+    <h6 class="usa-heading-alt"><span class="usa-label">New</span> Horizontal (Profile v3)</h6>
     {% include components/secondary-nav/v3/account.html %}
+
+    <h6 class="usa-heading-alt"><span class="usa-label">New</span> Horizontal (Help v3)</h6>
+    {% include components/secondary-nav/v3/help.html %}
   </section>
 </div>
 
@@ -26,13 +29,13 @@ lead: Secondary navigation allows for movement within a section or page.
     <h4 class="usa-heading">Usability</h4>
     <h5>When to use</h5>
     <ul class="usa-content-list">
-      <li>
+      <li>Use when the Account name (Profile v3 variation) or Help (Help v3 variation) are selected in the <a href="{{ site.baseurl }}/navigation/">top navigation</a>, respectively.
       </li>
     </ul>
 
     <h5>When NOT to use</h5>
     <ul class="usa-content-list">
-      <li>Do not use this specific variation outside of Account.</li>
+      <li>Do not use this specific variation outside of Account and Help.</li>
     </ul>
   </div>
 </div>
