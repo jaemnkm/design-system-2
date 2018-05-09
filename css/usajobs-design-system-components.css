@@ -3709,8 +3709,8 @@ html {
   }
 }
 
-.usajobs-profile-secondary-nav[data-behavior="is-fixed-nav"],
-.usajobs-help-secondary-nav[data-behavior="is-fixed-nav"] {
+.usajobs-profile-secondary-nav.is-fixed-nav,
+.usajobs-help-secondary-nav.is-fixed-nav {
   position: -webkit-sticky;
   position: sticky;
   z-index: 900;
@@ -3817,6 +3817,10 @@ html {
   .usajobs-help-secondary-nav__long-name {
     display: inherit;
   }
+}
+
+.usajobs-help-secondary-nav {
+  margin-bottom: 0;
 }
 
 .usajobs-help-secondary-nav__item.glossary {
