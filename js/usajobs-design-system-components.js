@@ -528,8 +528,6 @@ $nav.on('click', '[data-behavior]', function (event) {
 });
 
 $nav.on('nav.toggle', function(event, opts) {
-  event.preventDefault();
-
   if (opts.state === 'is-closed') {
     opts.object.trigger('nav.open', opts);
   } else if (opts.state === 'is-open') {
@@ -559,8 +557,6 @@ $nav.on('nav.menu.toggle', function(event, opts) {
     $menu = $parent.find('[role="menu"]'),
     $sibling = $parent.siblings().find('[aria-expanded="true"]');
 
-  event.preventDefault();
-
   $nav.trigger('nav.menu.slide-close', { parent: $sibling.parent(), menu: $sibling });
 
   if (parent_state === 'is-closed') {
@@ -587,8 +583,6 @@ $nav.on('nav.menu.slide-close', function(event, opts) {
 $nav.on('nav.menu.search-toggle', function(event, opts) {
   var $parent = opts.el.parent(),
     $sibling_trigger;
-
-  event.preventDefault();
 
   if (opts.state === 'false') {
     if (opts.sibling !== undefined && opts.sibling.length > 0) {
