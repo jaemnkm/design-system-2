@@ -31,6 +31,7 @@ lead: Secondary navigation allows for movement within a section or page.
     <ul class="usa-content-list">
       <li>Use when the Account name (Profile v3 variation) or Help (Help v3 variation) are selected in the <a href="{{ site.baseurl }}/navigation/">top navigation</a>, respectively.
       </li>
+      <li>Both variations should be fixed to the top of the viewport as the user scrolls.</li>
     </ul>
 
     <h5>When NOT to use</h5>

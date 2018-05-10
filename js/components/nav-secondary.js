@@ -1,7 +1,7 @@
 // Secondary Nav
 
 var $nav_secondary = $('[data-object="nav-secondary"]'),
-  $fixed_nav = $('[data-behavior="is-fixed-nav"]'),
+  $fixed_nav = $('.is-fixed-nav'),
 
   // The majority of this function is used courtesty of
   // Brad Frost's responsive design patterns:
