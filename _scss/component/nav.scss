@@ -120,9 +120,9 @@ $nav_item_height: 17px + 24px;
 
     @include media($SM) {
       display: inline-block;
-      max-width: rem(140px);
+      max-width: rem(130px);
       text-overflow: ellipsis;
-      // overflow: hidden;
+      overflow: hidden;
     }
   }
 
@@ -511,7 +511,9 @@ $nav_item_height: 17px + 24px;
 
   &__section-link {
     font-size: $small-font-size;
-    padding: 1.3rem $size-S $size-S;
+    padding: $size-S $size-S .5375rem;
+    line-height: 1.25;
+    border-bottom: .7125rem solid transparent;
 
     @include media($SM) {
       font-size: $base-font-size;
@@ -730,16 +732,6 @@ $nav_item_height: 17px + 24px;
     @include media($M) {
       padding-right: $size-S;
     }
-  }
-
-  &__first-name {
-    /* this continues to screw up the line logo_height
-       I suggest we truncate the first name to 12 characters on the way out of the DB
-    display: inherit;
-    max-width: 5.4rem;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    */
   }
 
   &__icon-center {
