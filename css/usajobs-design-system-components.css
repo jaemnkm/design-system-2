@@ -2453,8 +2453,6 @@ html {
   .usajobs-nav__first_name {
     display: inline-block;
     max-width: 13rem;
-    text-overflow: ellipsis;
-    overflow: hidden;
   }
 }
 
@@ -2926,6 +2924,13 @@ html {
   .usajobs-nav--core-v2__menu-container {
     padding: 0 3rem;
   }
+}
+
+.usajobs-nav--core-v2__header-container {
+  position: relative;
+  max-width: 160rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .usajobs-nav--core-v2__section-link {
