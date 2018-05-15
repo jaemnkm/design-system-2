@@ -106,6 +106,7 @@ module.exports = function(grunt) {
         dest: 'js/usajobs-design-system-components.js',
         options: {
           external: ['jquery'],
+          transform: [['babelify', { 'presets': ['es2015'], 'global' : true }]]
         }
       }
     },
