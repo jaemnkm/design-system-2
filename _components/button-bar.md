@@ -13,10 +13,10 @@ lead: A container for buttons, links, and calls-to-action.
   <h6 class="usa-heading-alt">Default</h6>
   <div class="usajobs-button_bar">
     <div class="usajobs-button_bar__body">
-       <button id="save_and_continue" class="usa-button-big usa-button-primary usajobs-button_bar__save">
+       <button id="save_and_continue" class="usa-button usajobs-button_bar__save">
         Save &amp; Continue
       </button>
-      <button id="previous" class="usa-button usa-button-big usa-button-gray">
+      <button id="previous" class="usa-button usa-button-gray">
         Previous
       </button>
     </div>
@@ -37,7 +37,7 @@ lead: A container for buttons, links, and calls-to-action.
       <a class="usa-button usa-button-secondary" href="#profile">
         Cancel and return to Profile
       </a>
-      <button class="usajobs-button-bar__save">Save</button>
+      <button class="usa-button usajobs-button-bar__save">Save</button>
     </div>
   </div>
 </div>

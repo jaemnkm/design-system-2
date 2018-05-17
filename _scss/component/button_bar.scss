@@ -13,13 +13,16 @@
 
     .usa-button,
     .usa-button-big {
-      margin: 0;
+      margin-right: 0;
+
+      @include media($SM) {
+        margin: 0;
+      }
     }
   }
 
   &__save {
     float: right;
-    margin: 0;
   }
 }
 
@@ -65,15 +68,5 @@
   .usajobs-button_bar__body,
   .usajobs-button-bar__body {
     padding: 0;
-
-    .usa-button,
-    .usa-button-big {
-      margin: 0;
-    }
-  }
-
-  .usajobs-button_bar__save,
-  .usajobs-button-bar__save {
-    float: right;
   }
 }
