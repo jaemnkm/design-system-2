@@ -30,6 +30,16 @@ lead: A container for buttons, links, and calls-to-action.
       </a>
     </div>
   </div>
+
+  <h6 class="usa-heading-alt">Split</h6>
+  <div class="usajobs-button-bar--split">
+    <div class="usajobs-button-bar__body">
+      <a class="usa-button usa-button-secondary" href="#profile">
+        Cancel and return to Profile
+      </a>
+      <button class="usajobs-button-bar__save">Save</button>
+    </div>
+  </div>
 </div>
 
 <div class="usa-accordion-bordered usa-accordion-docs">
