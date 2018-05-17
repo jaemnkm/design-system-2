@@ -107,18 +107,10 @@ lead: USAJOBS leverages Font Awesome (converted to SVG) and defines specific ico
     <li class="usajobs-unique-hiring-paths__item">
       <div class="usajobs-unique-hiring-paths__icon">
         <svg class="usajobs-icon--hiring-path">
-          <use xlink:href="#se-other"></use>
-        </svg>
-      </div>
-      Senior Executives - Other
-    </li>
-    <li class="usajobs-unique-hiring-paths__item">
-      <div class="usajobs-unique-hiring-paths__icon">
-        <svg class="usajobs-icon--hiring-path">
           <use xlink:href="#ses"></use>
         </svg>
       </div>
-      Senior Executives - Senior Executive Service only
+      Senior Executives
     </li>
     <li class="usajobs-unique-hiring-paths__item">
       <div class="usajobs-unique-hiring-paths__icon">
