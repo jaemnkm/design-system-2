@@ -56,3 +56,24 @@
     float: none;
   }
 }
+
+.usajobs-button_bar--split,
+.usajobs-button-bar--split {
+  @include buttonBar();
+  margin: $size-M 0;
+
+  .usajobs-button_bar__body,
+  .usajobs-button-bar__body {
+    padding: 0;
+
+    .usa-button,
+    .usa-button-big {
+      margin: 0;
+    }
+  }
+
+  .usajobs-button_bar__save,
+  .usajobs-button-bar__save {
+    float: right;
+  }
+}
