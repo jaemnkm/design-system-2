@@ -4822,13 +4822,21 @@ html {
 .usajobs-button_bar__body .usa-button-big,
 .usajobs-button-bar__body .usa-button,
 .usajobs-button-bar__body .usa-button-big {
-  margin: 0;
+  margin-right: 0;
+}
+
+@media screen and (min-width: 30em) {
+  .usajobs-button_bar__body .usa-button,
+  .usajobs-button_bar__body .usa-button-big,
+  .usajobs-button-bar__body .usa-button,
+  .usajobs-button-bar__body .usa-button-big {
+    margin: 0;
+  }
 }
 
 .usajobs-button_bar__save,
 .usajobs-button-bar__save {
   float: right;
-  margin: 0;
 }
 
 .usajobs-button_bar__instructions,
@@ -4870,13 +4878,21 @@ html {
 .usajobs-button_bar--slim__body .usa-button-big,
 .usajobs-button-bar--slim__body .usa-button,
 .usajobs-button-bar--slim__body .usa-button-big {
-  margin: 0;
+  margin-right: 0;
+}
+
+@media screen and (min-width: 30em) {
+  .usajobs-button_bar--slim__body .usa-button,
+  .usajobs-button_bar--slim__body .usa-button-big,
+  .usajobs-button-bar--slim__body .usa-button,
+  .usajobs-button-bar--slim__body .usa-button-big {
+    margin: 0;
+  }
 }
 
 .usajobs-button_bar--slim__save,
 .usajobs-button-bar--slim__save {
   float: right;
-  margin: 0;
 }
 
 .usajobs-button_bar--slim .usajobs-button_bar__body,
@@ -4929,13 +4945,21 @@ html {
 .usajobs-button_bar--split__body .usa-button-big,
 .usajobs-button-bar--split__body .usa-button,
 .usajobs-button-bar--split__body .usa-button-big {
-  margin: 0;
+  margin-right: 0;
+}
+
+@media screen and (min-width: 30em) {
+  .usajobs-button_bar--split__body .usa-button,
+  .usajobs-button_bar--split__body .usa-button-big,
+  .usajobs-button-bar--split__body .usa-button,
+  .usajobs-button-bar--split__body .usa-button-big {
+    margin: 0;
+  }
 }
 
 .usajobs-button_bar--split__save,
 .usajobs-button-bar--split__save {
   float: right;
-  margin: 0;
 }
 
 .usajobs-button_bar--split .usajobs-button_bar__body,
@@ -4943,24 +4967,6 @@ html {
 .usajobs-button-bar--split .usajobs-button_bar__body,
 .usajobs-button-bar--split .usajobs-button-bar__body {
   padding: 0;
-}
-
-.usajobs-button_bar--split .usajobs-button_bar__body .usa-button,
-.usajobs-button_bar--split .usajobs-button_bar__body .usa-button-big,
-.usajobs-button_bar--split .usajobs-button-bar__body .usa-button,
-.usajobs-button_bar--split .usajobs-button-bar__body .usa-button-big,
-.usajobs-button-bar--split .usajobs-button_bar__body .usa-button,
-.usajobs-button-bar--split .usajobs-button_bar__body .usa-button-big,
-.usajobs-button-bar--split .usajobs-button-bar__body .usa-button,
-.usajobs-button-bar--split .usajobs-button-bar__body .usa-button-big {
-  margin: 0;
-}
-
-.usajobs-button_bar--split .usajobs-button_bar__save,
-.usajobs-button_bar--split .usajobs-button-bar__save,
-.usajobs-button-bar--split .usajobs-button_bar__save,
-.usajobs-button-bar--split .usajobs-button-bar__save {
-  float: right;
 }
 
 html {
