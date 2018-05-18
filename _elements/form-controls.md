@@ -988,7 +988,7 @@ lead: USAJOBS adds or clarifies design for labels, contextual help, required/opt
   Required/Optional Field Indicator
 </h6>
 <div class="preview" id="code-4">
-  <label for="first-name" class="usa-input-optional">First name</label>
+  <label for="first-name">First name <span class="usa-input-label-helper">(optional)</span></label>
   <input id="first-name" name="first-name" type="text">
   <label for="last-name">Last name</label>
   <input id="last-name" name="last-name" type="text" required="" aria-required="true">
@@ -1017,20 +1017,39 @@ lead: USAJOBS adds or clarifies design for labels, contextual help, required/opt
   </div>
 </div>
 
-<h6 id="usajobs-form-legend-documentation" class="usa-heading-alt">Legend</h6>
+<h2 class="usa-heading" id="legends">Legends</h2>
+<p class="usa-font-lead">
+  There are two types of legends: Form and fieldset.
+</p>
 <div class="preview" id="code-6">
+  <h6 id="usajobs-form-legend-documentation" class="usa-heading-alt">.usajobs-form__legend</h6>
   <form name="example" aria-labelled-by="usajobs-form-heading-0" class="usajobs-form">
     <h2 id="usajobs-form-heading-0" class="usajobs-form__title">
       [Form Title]
-      <span class="usajobs-form__legend">All fields are required</span>
     </h2>
+    <span class="usajobs-form__legend">All fields are required</span>
     <fieldset>
       <label for="first-name">First name</label>
       <input id="first-name" name="first-name" type="text">
       <label for="last-name">Last name</label>
       <input id="last-name" name="last-name" type="text">
       <label for="details">Details</label>
-      <textarea id="details" name="details"></textarea> 
+      <textarea id="details" name="details"></textarea>
+    </fieldset>
+  </form>
+  <h6 id="usajobs-form-legend-documentation" class="usa-heading-alt">.usajobs-fieldset legend</h6>
+  <form name="example2" aria-labelled-by="usajobs-form-heading-1" class="usajobs-form">
+    <fieldset class="usajobs-fieldset">
+      <legend>Email and password</legend>
+      <label for="email">Email</label>
+      <input id="email" name="email" type="email">
+      <label for="pwd">Password</label>
+      <input id="pwd" name="pwd" type="password">
+    </fieldset>
+    <fieldset class="usajobs-fieldset">
+      <legend>Telephone</legend>
+      <label for="telephone">Telephone</label>
+      <input id="telephone" name="telephone" type="tel">
     </fieldset>
   </form>
 </div>
@@ -1040,16 +1059,25 @@ lead: USAJOBS adds or clarifies design for labels, contextual help, required/opt
     Documentation
   </button>
   <div id="doc-6" aria-hidden="false" class="usa-accordion-content">
-    <h4 class="usa-heading">Usability</h4>
+    <h4 class="usa-heading">Form legend</h4>
     <h5>When to use</h5>
     <ul class="usa-content-list">
       <li>When all fields for a form are required use the text "All fields are required".</li>
       <li>When all fields for a form are optional use the text "All fields are optional".</li>
       <li>When most of the form fields are required use the text "All fields are required unless otherwise noted" in conjunction with the <a href="#usajobs-form-field-indicator-documentation">Optional Field Indicator</a> to indicate the optional fields.</li>
     </ul>
-    <h5>When not to use</h5>
+    <h5>When not to use form legend</h5>
     <ul class="usa-content-list">
       <li>The form legend may be omitted in cases where the form is extremely short or the fields are obviously required. For example, a form that consists of one checkbox or a sign in form.</li>
+    </ul>
+    <h5>Guidance</h5>
+    <ul>
+      <li>The form title is often long enough to cause a collision with the legend, thus it was moved to be on the line below the form title.</li>
+    </ul>
+    <h4 class="usa-heading">Fieldset legend</h4>
+    <h5>When to use</h5>
+    <ul class="usa-content-list">
+      <li>When multiple fieldsets are in use within a form.</li>
     </ul>
   </div>
 </div>

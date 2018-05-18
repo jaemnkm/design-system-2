@@ -5507,10 +5507,8 @@ img {
   margin-bottom: 0.5rem;
   margin-top: 1.5rem;
   font-size: 2.4rem;
-  margin: 3rem 0;
-  padding: 0 0 1rem;
-  color: #112e51;
-  border-bottom: 1px solid #112e51;
+  margin: 3rem 0 1.5rem;
+  color: #205493;
 }
 
 .usajobs-form .usajobs-fieldset legend + label,
@@ -5779,6 +5777,10 @@ select[disabled] {
 
 .usa-input-error .usa-datefield input {
   width: 100%;
+}
+
+.usa-input-label-helper {
+  color: #757575;
 }
 
 /*!
