@@ -53,16 +53,15 @@
 
     legend {
       @include h3();
-      margin: $size-M 0;
-      padding: 0 0 $size-S;
-      color: $color-primary-darkest;
-      border-bottom: 1px solid $color-primary-darkest;
+      margin: $size-M 0 $size-default;
+      color: $color-primary-darker;
 
       & + label,
       & + p {
         margin-top: 0;
       }
     }
+
   }
 
   .usajobs-fieldset--horizontal {
@@ -242,4 +241,9 @@ select[disabled] {
 
 .usa-input-error .usa-datefield input {
   width: 100%;
+}
+
+// this will come from the Standards once we catch up
+.usa-input-label-helper {
+  color: #757575;
 }
