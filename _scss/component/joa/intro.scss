@@ -106,6 +106,7 @@ $body-padding: $size-default;
   @include media($L) {
     @include span-columns(4, 12);
     @include omega();
+    max-height: 65rem; // We need a max height (even though it isn't really "enforced" to keep from pushing the main section down)
   }
 }
 
