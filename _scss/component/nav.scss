@@ -480,10 +480,14 @@ $nav_item_height: 17px + 24px;
   }
 
   &__brand {
-    padding: $size-default 0 $size-default $size-default;
+    padding: 1.7rem 0 1.3rem $size-default;
 
     @include media($SM) {
       padding-bottom: $size-S;
+    }
+
+    @include media($M) {
+      padding-top: $size-default;
     }
 
     @include media($ML) {
@@ -496,6 +500,8 @@ $nav_item_height: 17px + 24px;
   }
 
   &__menu-container {
+    line-height: 1;
+
     @include media($M) {
       display: inline-table;
       text-align: center;
@@ -506,7 +512,6 @@ $nav_item_height: 17px + 24px;
     @include media($ML) {
       padding: 0 $size-M;
     }
-
   }
 
   &__header-container {
@@ -545,8 +550,14 @@ $nav_item_height: 17px + 24px;
     }
 
     &.menu-toggle {
+      // This is just overriding the original variation
+      padding: $size-S $size-S .5375rem;
+
+      @include media($SM) {
+        padding-top: 1.7rem;
+      }
+
       @include media($M) {
-        // This is just overriding the original variation
         padding: 2.7rem .5rem .5375rem 0;
       }
     }
