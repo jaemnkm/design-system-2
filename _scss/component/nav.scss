@@ -962,6 +962,10 @@ ul.ui-autocomplete {
     border-radius: $border-radius;
   }
 
+  &[aria-hidden=true] {
+    display: none;
+  }
+
   &__body {
     position: relative;
     padding: $size-S $size-default;
