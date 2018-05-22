@@ -84,34 +84,42 @@ $nav.on('nav.menu.slide-close', function(event, opts) {
   opts.parent.attr('data-state', 'is-closed');
   opts.menu.slideUp(300, function () {
     opts.menu.attr('aria-expanded', 'false');
+    if (opts.callback !== undefined) {
+      opts.callback(opts);
+    }
   });
 });
 
 $nav.on('nav.menu.search-toggle', function(event, opts) {
   var $parent = opts.el.parent(),
-    $sibling_trigger;
+    $triggering_menu,
+    reinstateActiveMenu = function (menuOpts) {
+      var $sibling_trigger;
+
+      if (menuOpts.sibling !== undefined && menuOpts.sibling.length > 0) {
+        menuOpts.sibling.slideDown(300, function () {
+          menuOpts.sibling.attr('aria-expanded', 'true');
+        });
+
+        $sibling_trigger = menuOpts.object.find('#' + menuOpts.el.attr('data-state-triggering-menu'));
+        $sibling_trigger.addClass('is-active');
+      }
+    };
 
   if (opts.state === 'false') {
     if (opts.sibling !== undefined && opts.sibling.length > 0) {
-      opts.sibling
-        .hide()
-        .attr('aria-expanded', 'false');
+      opts.sibling.slideUp(300, function () {
+        opts.sibling.attr('aria-expanded', 'false');
+      });
 
-      // Find active menu siblings
-      opts.el.parent().siblings().find('.is-active').removeClass('is-active');
+      // Find active menu siblings, retain them for making them active again on next toggle
+      $triggering_menu = opts.el.parent().siblings().find('.is-active');
+      $triggering_menu.removeClass('is-active');
+      opts.el.attr('data-state-triggering-menu', $triggering_menu.attr('id'));
     }
     $nav.trigger('nav.menu.slide-open', { parent: $parent, menu: opts.target });
   } else if (opts.state === 'true') {
-    $nav.trigger('nav.menu.slide-close', { parent: $parent, menu: opts.target });
-
-    if (opts.sibling !== undefined && opts.sibling.length > 0) {
-      opts.sibling
-        .show()
-        .attr('aria-expanded', 'true');
-
-      $sibling_trigger = opts.el.parent().siblings().find('[aria-controls="' + opts.sibling.attr('id') + '"]');
-      $sibling_trigger.addClass('is-active');
-    }
+    $nav.trigger('nav.menu.slide-close', { parent: $parent, menu: opts.target, el: opts.el, sibling: opts.sibling, object: opts.object, callback: reinstateActiveMenu });
   }
 });
 

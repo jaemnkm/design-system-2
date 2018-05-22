@@ -3502,6 +3502,10 @@ ul.ui-autocomplete > li:after {
   }
 }
 
+.usajobs-nav .usajobs-nav-login-gov-banner[aria-hidden=true] {
+  display: none;
+}
+
 .usajobs-nav .usajobs-nav-login-gov-banner__body {
   position: relative;
   padding: 1rem 1.5rem;
