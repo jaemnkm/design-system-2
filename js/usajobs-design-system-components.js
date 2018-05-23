@@ -523,8 +523,7 @@ $nav.on('click', '[data-behavior]', function (event) {
       $object = $el.closest('[data-object="nav"]'),
       behavior = $el.attr('data-behavior'),
       $target = $(window.document).find('#' + $el.attr('aria-controls')),
-      state = $target.attr('aria-expanded'),
-      $sibling = $target.siblings('[role="menu"]');
+      state = $target.attr('aria-expanded');
 
   event.preventDefault();
   $el.blur(); // Removes focus
@@ -532,7 +531,7 @@ $nav.on('click', '[data-behavior]', function (event) {
   // Each behavior attached to the element should be triggered
   $.each(behavior.split(' '), function (idx, action) {
     if (action.match(/^nav/)) {
-      $el.trigger(action, { el: $el, object: $object, state: state, target: $target, sibling: $sibling });
+      $el.trigger(action, { el: $el, object: $object, state: state, target: $target });
     }
   });
 });
@@ -596,27 +595,33 @@ $nav.on('nav.menu.slide-close', function (event, opts) {
 $nav.on('nav.menu.search-toggle', function (event, opts) {
   var $parent = opts.el.parent(),
       $triggering_menu,
+      $secondary_nav,
       reinstateActiveMenu = function reinstateActiveMenu(menuOpts) {
-    var $sibling_trigger;
+    var $sibling_trigger, $sibling_secondary_nav;
 
-    if (menuOpts.sibling !== undefined && menuOpts.sibling.length > 0) {
-      menuOpts.sibling.slideDown(300, function () {
-        menuOpts.sibling.attr('aria-expanded', 'true');
+    $sibling_trigger = menuOpts.object.find('#' + menuOpts.el.attr('data-state-triggering-menu'));
+    $sibling_secondary_nav = $(window.document).find('#' + $sibling_trigger.attr('aria-controls'));
+
+    if ($sibling_secondary_nav !== undefined && $sibling_secondary_nav.length > 0) {
+      $sibling_secondary_nav.slideDown(300, function () {
+        $sibling_secondary_nav.attr('aria-expanded', 'true');
       });
 
-      $sibling_trigger = menuOpts.object.find('#' + menuOpts.el.attr('data-state-triggering-menu'));
       $sibling_trigger.addClass('is-active');
     }
   };
 
   if (opts.state === 'false') {
-    if (opts.sibling !== undefined && opts.sibling.length > 0) {
-      opts.sibling.slideUp(300, function () {
-        opts.sibling.attr('aria-expanded', 'false');
+    // Find active menu siblings, find their secondary nav,
+    // retain them for making them active again on next toggle
+    $triggering_menu = opts.el.parent().siblings().find('.is-active');
+    $secondary_nav = $(window.document).find('#' + $triggering_menu.attr('aria-controls'));
+
+    if ($secondary_nav !== undefined && $secondary_nav.length > 0) {
+      $secondary_nav.slideUp(300, function () {
+        $secondary_nav.attr('aria-expanded', 'false');
       });
 
-      // Find active menu siblings, retain them for making them active again on next toggle
-      $triggering_menu = opts.el.parent().siblings().find('.is-active');
       $triggering_menu.removeClass('is-active');
       opts.el.attr('data-state-triggering-menu', $triggering_menu.attr('id'));
     }
