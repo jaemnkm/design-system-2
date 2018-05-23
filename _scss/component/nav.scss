@@ -523,7 +523,7 @@ $nav_item_height: 17px + 24px;
 
   &__section-link {
     font-size: $small-font-size;
-    padding: $size-S $size-S .5375rem;
+    padding: $size-S $size-S .2875rem;
     line-height: 1.25;
     border-bottom: .7125rem solid transparent;
 
@@ -534,7 +534,7 @@ $nav_item_height: 17px + 24px;
 
     @include media($M) {
       display: block;
-      padding: 2.7rem .5rem .5375rem 0;
+      padding: 2rem .5rem 1.2875rem 0;
       line-height: 1.25;
       font-size: $base-font-size;
       border-bottom: .7125rem solid transparent;
@@ -558,7 +558,7 @@ $nav_item_height: 17px + 24px;
       }
 
       @include media($M) {
-        padding: 2.7rem .5rem .5375rem 0;
+        padding: 2rem .5rem 1.2875rem 0;
       }
     }
 
@@ -957,7 +957,7 @@ ul.ui-autocomplete {
   @include media($L) {
     position: absolute;
     top: 0;
-    right: 405px;
+    right: 410px;
     max-width: 400px;
     border-radius: $border-radius;
   }
