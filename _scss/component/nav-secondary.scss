@@ -184,10 +184,10 @@
 
   &__link {
     display: block;
-    padding: $size-default 0 .9375rem;
+    padding: $size-default 0 .8975rem;
     line-height: 1.25;
     font-size: $base-font-size;
-    border-bottom: .3125rem solid transparent;
+    border-bottom: .3525rem solid transparent;
     color: $color-white;
     @include transition(all .25s ease-in-out);
     text-decoration: none;
