@@ -884,11 +884,6 @@ $font-light: 300;
     @include media($L) {
       min-width: rem(992px);
     }
-
-    .usajobs-nav,
-    .usajobs-nav--v2 {
-      margin-bottom: 1rem;
-    }
   }
 }
 
