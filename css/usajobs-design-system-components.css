@@ -501,7 +501,7 @@ html {
 .usajobs-card-buttons .usajobs-card-button--square [type=checkbox]:checked + label {
   border: 1px inset #2e8540;
   background-color: #e7f4e4;
-  margin: -2px;
+  margin: -2px 0;
 }
 
 .usajobs-card-buttons .usajobs-card-button--square [type=radio]:checked + label::before,
@@ -561,7 +561,7 @@ html {
 .usajobs-card-buttons .usajobs-card-button--triad [type=checkbox]:checked + label {
   border: 1px inset #2e8540;
   background-color: #e7f4e4;
-  margin: -2px;
+  margin: -2px 0;
 }
 
 .usajobs-card-buttons .usajobs-card-button--square.is-yes [type=radio] + label::before,
@@ -571,7 +571,7 @@ html {
 
 .usajobs-card-buttons .usajobs-card-button--square.is-yes [type=radio]:checked + label,
 .usajobs-card-buttons .usajobs-card-button__answer-long.is-check [type=radio]:checked + label {
-  border: 1px solid #2e8540;
+  border: 1px inset #2e8540;
   background-color: #e7f4e4;
 }
 
@@ -582,7 +582,7 @@ html {
 
 .usajobs-card-buttons .usajobs-card-button--square.is-no [type=radio]:checked + label,
 .usajobs-card-buttons .usajobs-card-button--long.is-cross [type=radio]:checked + label {
-  border: 1px solid #981b1e;
+  border: 1px inset #981b1e;
   background-color: #f9dede;
 }
 

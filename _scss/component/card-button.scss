@@ -81,7 +81,7 @@
     [type=checkbox]:checked + label {
       border: 1px inset $color-green;
       background-color: $color-green-lightest;
-      margin: -2px; // Tries to prevent the card from appearing to move when selected
+      margin: -2px 0; // Tries to prevent the card from appearing to move when selected
     }
 
     [type=radio]:checked + label::before,
@@ -127,7 +127,7 @@
     [type=checkbox]:checked + label {
       border: 1px inset $color-green;
       background-color: $color-green-lightest;
-      margin: -2px; // Tries to prevent the card from appearing to move when selected
+      margin: -2px 0; // Tries to prevent the card from appearing to move when selected
     }
   }
 
@@ -138,7 +138,7 @@
 
   &--square.is-yes [type=radio]:checked + label,
   &__answer-long.is-check [type=radio]:checked + label {
-    border: 1px solid $color-green;
+    border: 1px inset $color-green;
     background-color: $color-green-lightest;
   }
 
@@ -149,7 +149,7 @@
 
   &--square.is-no [type=radio]:checked + label,
   &--long.is-cross [type=radio]:checked + label {
-    border: 1px solid $color-secondary-darkest;
+    border: 1px inset $color-secondary-darkest;
     background-color: $color-secondary-lightest;
   }
 
