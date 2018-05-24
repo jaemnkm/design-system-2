@@ -414,6 +414,207 @@ html {
   clip: rect(0 0 0 0) !important;
 }
 
+.usajobs-card-buttons {
+  display: block;
+  display: block;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.usajobs-card-buttons::after {
+  clear: both;
+  content: "";
+  display: block;
+}
+
+.usajobs-card-buttons > li {
+  display: list-item;
+  margin: 0;
+}
+
+.usajobs-card-buttons > li:before {
+  display: none;
+}
+
+.usajobs-card-buttons > li:after {
+  display: none;
+}
+
+.usajobs-card-buttons .usajobs-card-button--square, .usajobs-card-buttons .usajobs-card-button--slim, .usajobs-card-buttons .usajobs-card-button--long, .usajobs-card-buttons .usajobs-card-button--triad {
+  position: relative;
+  background-color: #ffffff;
+  margin: 1.5rem 0;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.usajobs-card-buttons .usajobs-card-button--square [type=radio] + label,
+.usajobs-card-buttons .usajobs-card-button--square [type=checkbox] + label, .usajobs-card-buttons .usajobs-card-button--slim [type=radio] + label,
+.usajobs-card-buttons .usajobs-card-button--slim [type=checkbox] + label, .usajobs-card-buttons .usajobs-card-button--long [type=radio] + label,
+.usajobs-card-buttons .usajobs-card-button--long [type=checkbox] + label, .usajobs-card-buttons .usajobs-card-button--triad [type=radio] + label,
+.usajobs-card-buttons .usajobs-card-button--triad [type=checkbox] + label {
+  width: 100%;
+  height: 100%;
+  max-width: inherit;
+  margin: 0;
+  padding: 1.5rem;
+  font-size: 1.9rem;
+}
+
+.usajobs-card-buttons .usajobs-card-button--square [type=radio]:checked + label::before,
+.usajobs-card-buttons .usajobs-card-button--square [type=checkbox]:checked + label::before, .usajobs-card-buttons .usajobs-card-button--slim [type=radio]:checked + label::before,
+.usajobs-card-buttons .usajobs-card-button--slim [type=checkbox]:checked + label::before, .usajobs-card-buttons .usajobs-card-button--long [type=radio]:checked + label::before,
+.usajobs-card-buttons .usajobs-card-button--long [type=checkbox]:checked + label::before, .usajobs-card-buttons .usajobs-card-button--triad [type=radio]:checked + label::before,
+.usajobs-card-buttons .usajobs-card-button--triad [type=checkbox]:checked + label::before {
+  box-shadow: inherit;
+}
+
+@media screen and (min-width: 62em) {
+  .usajobs-card-buttons .usajobs-card-button--square {
+    float: left;
+    display: block;
+    margin-right: 2.3576520234%;
+    width: 48.8211739883%;
+  }
+  .usajobs-card-buttons .usajobs-card-button--square:last-child {
+    margin-right: 0;
+  }
+}
+
+.usajobs-card-buttons .usajobs-card-button--square [type=radio] + label::before,
+.usajobs-card-buttons .usajobs-card-button--square [type=checkbox] + label::before {
+  display: block;
+  content: ' ';
+  background-size: 6rem 6rem;
+  height: 6rem;
+  width: 6rem;
+  margin: 0 auto 0.5rem auto;
+  box-shadow: inherit;
+  background-color: #ffffff;
+}
+
+.usajobs-card-buttons .usajobs-card-button--square [type=radio] + label {
+  text-align: center;
+}
+
+.usajobs-card-buttons .usajobs-card-button--square [type=radio]:checked + label,
+.usajobs-card-buttons .usajobs-card-button--square [type=checkbox]:checked + label {
+  border: 1px inset #2e8540;
+  background-color: #e7f4e4;
+  margin: -2px;
+}
+
+.usajobs-card-buttons .usajobs-card-button--square [type=radio]:checked + label::before,
+.usajobs-card-buttons .usajobs-card-button--square [type=checkbox]:checked + label::before {
+  background-color: #e7f4e4;
+}
+
+.usajobs-card-buttons .usajobs-card-button--slim [type=radio] + label::before,
+.usajobs-card-buttons .usajobs-card-button--slim [type=checkbox] + label::before {
+  display: none;
+}
+
+.usajobs-card-buttons .usajobs-card-button--slim__sub-text-with-icon {
+  margin-left: 5.4rem;
+}
+
+.usajobs-card-buttons .usajobs-card-button--long [type=radio] + label::before,
+.usajobs-card-buttons .usajobs-card-button--long [type=checkbox] + label::before {
+  content: ' ';
+  background-size: 6rem 6rem;
+  height: 6rem;
+  width: 6rem;
+  margin: 0 1.5rem 0 0;
+  box-shadow: inherit;
+  background-color: #ffffff;
+  vertical-align: middle;
+}
+
+@media screen and (min-width: 62em) {
+  .usajobs-card-buttons .usajobs-card-button--triad {
+    float: left;
+    display: block;
+    margin-right: 2.3576520234%;
+    width: 31.7615653177%;
+  }
+  .usajobs-card-buttons .usajobs-card-button--triad:last-child {
+    margin-right: 0;
+  }
+}
+
+.usajobs-card-buttons .usajobs-card-button--triad [type=radio] + label::before,
+.usajobs-card-buttons .usajobs-card-button--triad [type=checkbox] + label::before {
+  display: block;
+  content: ' ';
+  background-size: 6rem 6rem;
+  height: 6rem;
+  width: 6rem;
+  margin: 0 auto 0.5rem auto;
+  box-shadow: inherit;
+  background-color: #ffffff;
+  margin-top: 1.5rem;
+}
+
+.usajobs-card-buttons .usajobs-card-button--slim [type=radio]:checked + label,
+.usajobs-card-buttons .usajobs-card-button--slim [type=checkbox]:checked + label, .usajobs-card-buttons .usajobs-card-button--long [type=radio]:checked + label,
+.usajobs-card-buttons .usajobs-card-button--long [type=checkbox]:checked + label, .usajobs-card-buttons .usajobs-card-button--triad [type=radio]:checked + label,
+.usajobs-card-buttons .usajobs-card-button--triad [type=checkbox]:checked + label {
+  border: 1px inset #2e8540;
+  background-color: #e7f4e4;
+  margin: -2px;
+}
+
+.usajobs-card-buttons .usajobs-card-button--square.is-yes [type=radio] + label::before,
+.usajobs-card-buttons .usajobs-card-button--long.is-check [type=radio] + label::before {
+  background-image: url("/assets/images/icons/yes.svg");
+}
+
+.usajobs-card-buttons .usajobs-card-button--square.is-yes [type=radio]:checked + label,
+.usajobs-card-buttons .usajobs-card-button__answer-long.is-check [type=radio]:checked + label {
+  border: 1px solid #2e8540;
+  background-color: #e7f4e4;
+}
+
+.usajobs-card-buttons .usajobs-card-button--square.is-no [type=radio] + label::before,
+.usajobs-card-buttons .usajobs-card-button--long.is-cross [type=radio] + label::before {
+  background-image: url("/assets/images/icons/no.svg");
+}
+
+.usajobs-card-buttons .usajobs-card-button--square.is-no [type=radio]:checked + label,
+.usajobs-card-buttons .usajobs-card-button--long.is-cross [type=radio]:checked + label {
+  border: 1px solid #981b1e;
+  background-color: #f9dede;
+}
+
+.usajobs-card-buttons .usajobs-card-button--square.is-no [type=radio]:checked + label::before,
+.usajobs-card-buttons .usajobs-card-button--long.is-cross [type=radio]:checked + label::before {
+  background-color: #f9dede;
+}
+
+.usajobs-card-buttons .usajobs-card-button__sub-text {
+  display: block;
+  font-size: 1.4rem;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *::after, *::before {
+  box-sizing: inherit;
+}
+
+.usajobs-assistive-text {
+  position: absolute !important;
+  margin: -1px !important;
+  border: 0 !important;
+  padding: 0 !important;
+  width: 1px !important;
+  height: 1px !important;
+  overflow: hidden !important;
+  clip: rect(0 0 0 0) !important;
+}
+
 .usajobs-footer--v1 a,
 .usajobs-footer--v1 a:visited,
 .usajobs-footer--v2 a,

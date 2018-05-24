@@ -1,0 +1,165 @@
+// Card Button
+
+@import '../../base-shared';
+
+@mixin cardButton() {
+  position: relative;
+  background-color: $color-white;
+  margin: $size-default 0;
+  @include boxShadow(1);
+}
+
+@mixin cardButtonLarge($icon-size) {
+  display: block;
+  content: ' ';
+  background-size: $icon-size $icon-size;
+  height: $icon-size;
+  width: $icon-size;
+  margin: 0 auto $size-base auto;
+  box-shadow: inherit;
+  background-color: $color-white;
+}
+
+@mixin cardButtonLargeHorizontal($icon-size) {
+  content: ' ';
+  background-size: $icon-size $icon-size;
+  height: $icon-size;
+  width: $icon-size;
+  margin: 0 $size-default 0 0;
+  box-shadow: inherit;
+  background-color: $color-white;
+  vertical-align: middle;
+}
+
+@mixin cardButtonSlim() {
+  display: none;
+}
+
+.usajobs-card-buttons {
+  @include row();
+  @include unstyledList();
+}
+
+.usajobs-card-buttons .usajobs-card-button {
+  &--square,
+  &--slim,
+  &--long,
+  &--triad {
+    @include cardButton();
+
+    [type=radio] + label,
+    [type=checkbox] + label {
+      width: 100%;
+      height: 100%;
+      max-width: inherit;
+      margin: 0;
+      padding: $size-default;
+      font-size: $h4-font-size;
+    }
+
+    [type=radio]:checked + label::before,
+    [type=checkbox]:checked + label::before {
+      box-shadow: inherit;
+    }
+  }
+
+  &--square {
+    @include media($L) {
+      @include span-columns(6, 12);
+    }
+
+    [type=radio] + label::before,
+    [type=checkbox] + label::before {
+      @include cardButtonLarge(6rem);
+    }
+
+    [type=radio] + label {
+      text-align: center;
+    }
+
+    [type=radio]:checked + label,
+    [type=checkbox]:checked + label {
+      border: 1px inset $color-green;
+      background-color: $color-green-lightest;
+      margin: -2px; // Tries to prevent the card from appearing to move when selected
+    }
+
+    [type=radio]:checked + label::before,
+    [type=checkbox]:checked + label::before {
+      background-color: $color-green-lightest;
+    }
+  }
+
+  &--slim {
+    [type=radio] + label::before,
+    [type=checkbox] + label::before {
+      @include cardButtonSlim();
+    }
+
+    &__sub-text-with-icon {
+      margin-left: 5.4rem;
+    }
+  }
+
+  &--long {
+    [type=radio] + label::before,
+    [type=checkbox] + label::before {
+      @include cardButtonLargeHorizontal(6rem);
+    }
+  }
+
+  &--triad {
+    @include media($L) {
+      @include span-columns(4, 12);
+    }
+
+    [type=radio] + label::before,
+    [type=checkbox] + label::before {
+      @include cardButtonLarge(6rem);
+      margin-top: $size-default;
+    }
+  }
+
+  &--slim,
+  &--long,
+  &--triad {
+    [type=radio]:checked + label,
+    [type=checkbox]:checked + label {
+      border: 1px inset $color-green;
+      background-color: $color-green-lightest;
+      margin: -2px; // Tries to prevent the card from appearing to move when selected
+    }
+  }
+
+  &--square.is-yes [type=radio] + label::before,
+  &--long.is-check [type=radio] + label::before {
+    background-image: url('/assets/images/icons/yes.svg');
+  }
+
+  &--square.is-yes [type=radio]:checked + label,
+  &__answer-long.is-check [type=radio]:checked + label {
+    border: 1px solid $color-green;
+    background-color: $color-green-lightest;
+  }
+
+  &--square.is-no [type=radio] + label::before,
+  &--long.is-cross [type=radio] + label::before {
+    background-image: url('/assets/images/icons/no.svg');
+  }
+
+  &--square.is-no [type=radio]:checked + label,
+  &--long.is-cross [type=radio]:checked + label {
+    border: 1px solid $color-secondary-darkest;
+    background-color: $color-secondary-lightest;
+  }
+
+  &--square.is-no [type=radio]:checked + label::before,
+  &--long.is-cross [type=radio]:checked + label::before {
+    background-color: $color-secondary-lightest;
+  }
+
+  &__sub-text {
+    display: block;
+    font-size: $small-font-size;
+  }
+}
