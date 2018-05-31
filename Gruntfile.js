@@ -117,7 +117,7 @@ module.exports = function(grunt) {
           'node_modules/jquery/dist/jquery.min.js',
           'js/vendor/jquery.ba-throttle-debounce.min.js',
           'js/vendor/jquery-ui.min.js',
-          'node_modules/chosen-js/chosen.jquery.js',
+          'js/vendor/select2.min.js',
           'node_modules/readmore-js/readmore.js',
           'js/vendor/fontawesome-all.min.js',
           'js/vendor/fa-v4-shims.min.js',
