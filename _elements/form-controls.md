@@ -109,7 +109,7 @@ lead: USAJOBS adds or clarifies design for labels, contextual help, required/opt
 
 <h2 class="usa-heading" id="dropdown">Dropdown</h2>
 <p class="usa-font-lead">
-  Our dropdown adds protection from the text running into the dropdown arrow. We also have adopted the <a href="https://github.com/harvesthq/chosen">Chosen plugin</a> for long dropdown menus.
+  Our dropdown adds protection from the text running into the dropdown arrow. We also have adopted the <a href="https://select2.org/">select2 plugin</a> for long dropdown menus.
 </p>
 <div class="preview" id="code-2">
   <form class="usajobs-form">
@@ -122,7 +122,7 @@ lead: USAJOBS adds or clarifies design for labels, contextual help, required/opt
 
     <h6 class="usa-heading-alt">Single select</h6>
     <label for="ParentOrganizationID" class="labeltext">Department &amp; Agency</label>
-    <select data-val="true" data-val-number="This field must be a number." id="ParentOrganizationID" name="ParentOrganizationID" class="usajobs-form-select--entry" data-placeholder="Please Select">
+    <select id="ParentOrganizationID" name="ParentOrganizationID" class="usajobs-form-select--entry" data-placeholder="- Select -">
       <option value=""></option>
       <optgroup label="Court Services and Offender Supervision Agency for DC">
         <option value="577">Court Services and Offender Supervision Agency for DC - Agency Wide</option>
@@ -480,7 +480,7 @@ lead: USAJOBS adds or clarifies design for labels, contextual help, required/opt
         <option value="626">Occupational Safety and Health Review Commission</option>
         <option value="586">Office of Government Ethics</option>
         <option value="633">Office of Navajo and Hopi Indian Relocation</option>
-        <option selected="selected" value="625">Office of Personnel Management</option>
+        <option value="625">Office of Personnel Management</option>
         <option value="582">Office of Special Counsel</option>
         <option value="724">Office of the Director of National Intelligence</option>
         <option value="743">Office of the Federal Coordinator for Alaska Natural Gas Transportation Projects</option>

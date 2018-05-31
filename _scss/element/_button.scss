@@ -90,26 +90,6 @@ button:disabled,
   @include media($SM) {
     width: 100%;
   }
-
-  // This component works in concert with the Chosen.js plugin
-  &.chosen-container-active.chosen-with-drop .chosen-single {
-    background-color: inherit;
-    background-image: url('../img/arrow-up-white.svg');
-    background-repeat: no-repeat;
-    background-position: right;
-    box-shadow: inherit;
-  }
-
-  &.chosen-container-single .chosen-single {
-    border: 0;
-    background-color: inherit;
-    color: $color-white;
-    font-weight: bold;
-    background-image: url('../img/arrow-down-white.svg');
-    background-repeat: no-repeat;
-    background-position: right;
-    box-shadow: inherit;
-  }
 }
 
 // Toggle is a setup of two buttons to toggle a view or whatever you like
