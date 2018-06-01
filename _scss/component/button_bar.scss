@@ -21,7 +21,8 @@
     }
   }
 
-  &__save {
+  &__save,
+  &__edit {
     float: right;
   }
 }
@@ -37,6 +38,16 @@
 
   &__instructions {
     font-style: italic;
+  }
+
+  &__delete {
+    display: inline-block;
+    padding: .6rem $size-default .6rem 2.5rem;
+    font-weight: bold;
+    background-image: url('../img/icons/button-bar/times-circle.svg');
+    background-size: 2rem 2rem;
+    background-position: left center;
+    background-repeat: no-repeat;
   }
 }
 

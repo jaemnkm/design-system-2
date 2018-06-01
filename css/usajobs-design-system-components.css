@@ -412,6 +412,159 @@ html {
   clip: rect(0 0 0 0) !important;
 }
 
+html {
+  box-sizing: border-box;
+}
+
+*, *::after, *::before {
+  box-sizing: inherit;
+}
+
+.usajobs-assistive-text {
+  position: absolute !important;
+  margin: -1px !important;
+  border: 0 !important;
+  padding: 0 !important;
+  width: 1px !important;
+  height: 1px !important;
+  overflow: hidden !important;
+  clip: rect(0 0 0 0) !important;
+}
+
+.usajobs-drawers {
+  border-bottom: 1px solid #d6d7d9;
+}
+
+.usajobs-drawers .usajobs-drawer {
+  margin-bottom: 0;
+  background-color: #ffffff;
+  border-top: 1px solid #d6d7d9;
+}
+
+.usajobs-drawer-button {
+  font-size: 1.9rem;
+  font-weight: normal;
+  background-color: #ffffff;
+  background-image: url(../img/icons/drawer/minus-circle.svg);
+  background-position: 2rem 1.5rem;
+  background-size: 2rem;
+  padding: 1.5rem 1.5rem 0.5rem 4.5rem;
+  color: #0071bc;
+  text-decoration: underline;
+}
+
+.usajobs-drawer-button[aria-expanded="false"] {
+  background-image: url(../img/icons/drawer/plus-circle.svg);
+  background-size: 2rem;
+}
+
+.usajobs-drawer-button:hover {
+  background-color: #ffffff;
+  color: #205493;
+}
+
+.usajobs-drawer-button.has-no-face {
+  padding-bottom: 1.5rem;
+}
+
+.usajobs-drawer-face {
+  background-color: #ffffff;
+  margin: 0;
+  padding-left: 4.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.usajobs-drawer-face dt {
+  font-weight: bold;
+}
+
+.usajobs-drawer-face dd {
+  margin: 0;
+}
+
+.usajobs-drawers .usajobs-drawer-content {
+  background-color: #ffffff;
+  overflow: auto;
+  padding: 1.5rem 3rem 3rem 4.5rem;
+  border: 0;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16) inset, 0 3px 6px rgba(0, 0, 0, 0.23) inset;
+}
+
+.usajobs-drawers .usajobs-drawer-content > *:first-child {
+  margin-top: 0;
+}
+
+.usajobs-drawers .usajobs-drawer-content > *:last-child {
+  margin-bottom: 0;
+}
+
+.usajobs-drawers .usajobs-drawer-content__list {
+  display: block;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.usajobs-drawers .usajobs-drawer-content__list > li {
+  display: list-item;
+  margin: 0;
+}
+
+.usajobs-drawers .usajobs-drawer-content__list > li:before {
+  display: none;
+}
+
+.usajobs-drawers .usajobs-drawer-content__list > li:after {
+  display: none;
+}
+
+@media screen and (min-width: 37.5em) {
+  .usajobs-drawers .usajobs-drawer-content__list {
+    padding-bottom: 1.5rem;
+  }
+}
+
+.usajobs-drawers .usajobs-drawer-content__list p,
+.usajobs-drawers .usajobs-drawer-content__list dd {
+  margin: 0;
+}
+
+.usajobs-drawers .usajobs-drawer-content__item-label {
+  margin-top: 1.5rem;
+  margin-bottom: 0;
+  font-size: 1.5rem;
+  font-weight: normal;
+  color: #5b616b;
+}
+
+.usajobs-drawers .usajobs-drawer-content__item-content {
+  margin-top: 0;
+}
+
+.usajobs-drawers .usajobs-drawer-content .usajobs-grid,
+.usajobs-drawers .usajobs-drawer-content .usa-grid {
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *::after, *::before {
+  box-sizing: inherit;
+}
+
+.usajobs-assistive-text {
+  position: absolute !important;
+  margin: -1px !important;
+  border: 0 !important;
+  padding: 0 !important;
+  width: 1px !important;
+  height: 1px !important;
+  overflow: hidden !important;
+  clip: rect(0 0 0 0) !important;
+}
+
 .usajobs-card-buttons {
   display: block;
   display: block;
@@ -5057,14 +5210,26 @@ html {
   }
 }
 
-.usajobs-button_bar__save,
-.usajobs-button-bar__save {
+.usajobs-button_bar__save, .usajobs-button_bar__edit,
+.usajobs-button-bar__save,
+.usajobs-button-bar__edit {
   float: right;
 }
 
 .usajobs-button_bar__instructions,
 .usajobs-button-bar__instructions {
   font-style: italic;
+}
+
+.usajobs-button_bar__delete,
+.usajobs-button-bar__delete {
+  display: inline-block;
+  padding: 0.6rem 1.5rem 0.6rem 2.5rem;
+  font-weight: bold;
+  background-image: url("../img/icons/button-bar/times-circle.svg");
+  background-size: 2rem 2rem;
+  background-position: left center;
+  background-repeat: no-repeat;
 }
 
 .usajobs-button_bar--slim,
@@ -5113,8 +5278,9 @@ html {
   }
 }
 
-.usajobs-button_bar--slim__save,
-.usajobs-button-bar--slim__save {
+.usajobs-button_bar--slim__save, .usajobs-button_bar--slim__edit,
+.usajobs-button-bar--slim__save,
+.usajobs-button-bar--slim__edit {
   float: right;
 }
 
@@ -5180,8 +5346,9 @@ html {
   }
 }
 
-.usajobs-button_bar--split__save,
-.usajobs-button-bar--split__save {
+.usajobs-button_bar--split__save, .usajobs-button_bar--split__edit,
+.usajobs-button-bar--split__save,
+.usajobs-button-bar--split__edit {
   float: right;
 }
 
