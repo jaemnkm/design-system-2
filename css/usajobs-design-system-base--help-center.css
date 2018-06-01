@@ -6354,217 +6354,23 @@ svg:not(:root) {
   vertical-align: middle;
 }
 
-.usa-accordion,
-.usa-accordion-bordered {
-  margin-top: 0;
-  margin-bottom: 0;
-  list-style-type: none;
-  padding-left: 0;
-  color: #212121;
-  margin: 0;
-  padding: 0;
-  width: 100%;
+html {
+  box-sizing: border-box;
 }
 
-.usa-accordion > li,
-.usa-accordion-bordered > li {
-  margin-bottom: 0;
+*, *::after, *::before {
+  box-sizing: inherit;
 }
 
-.usa-accordion > ul li ul,
-.usa-accordion-bordered > ul li ul {
-  list-style: disc;
-}
-
-.usa-accordion > ul li ul > li > ul,
-.usa-accordion-bordered > ul li ul > li > ul {
-  list-style: circle;
-}
-
-.usa-accordion > ul li ul > li > ul > li > ul,
-.usa-accordion-bordered > ul li ul > li > ul > li > ul {
-  list-style: square;
-}
-
-.usa-accordion + .usa-accordion,
-.usa-accordion + .usa-accordion-bordered,
-.usa-accordion-bordered + .usa-accordion,
-.usa-accordion-bordered + .usa-accordion-bordered {
-  margin-top: 1rem;
-}
-
-.usa-accordion > ul,
-.usa-accordion-bordered > ul {
-  margin-top: 0;
-  margin-bottom: 0;
-  list-style-type: none;
-  padding-left: 0;
-  color: #212121;
-  margin: 0;
-  padding: 0;
-  width: 100%;
-}
-
-.usa-accordion > ul > li,
-.usa-accordion-bordered > ul > li {
-  margin-bottom: 0;
-}
-
-.usa-accordion > ul > li,
-.usa-accordion-bordered > ul > li {
-  background-color: #f1f1f1;
-  font-family: "Source Sans Pro", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
-  list-style: none;
-  margin-bottom: 0.5rem;
-  width: 100%;
-}
-
-.usa-accordion > ul button,
-.usa-accordion-bordered > ul button {
-  background-color: transparent;
-  border: 0;
-  border-radius: 0;
-  font-weight: 400;
-  margin: 0;
-  padding: 0;
-  text-align: left;
-  -webkit-font-smoothing: auto;
-  background-color: #f1f1f1;
-  background-image: url("../img/minus.png");
-  background-image: url("../img/minus.svg");
-  background-position: right 2rem center;
-  background-repeat: no-repeat;
-  background-size: 1.5rem;
-  color: #212121;
-  cursor: pointer;
-  display: inline-block;
-  font-family: "Source Sans Pro", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
-  font-weight: 700;
-  margin: 0;
-  padding: 1.5rem 5.5rem 1.5rem 2rem;
-  width: 100%;
-}
-
-.usa-accordion > ul button:hover,
-.usa-accordion-bordered > ul button:hover {
-  background-color: transparent;
-}
-
-.usa-accordion > ul button:hover,
-.usa-accordion-bordered > ul button:hover {
-  background-color: #d6d7d9;
-  color: #212121;
-}
-
-.usa-accordion > ul button h1,
-.usa-accordion > ul button h2,
-.usa-accordion > ul button h3,
-.usa-accordion > ul button h4,
-.usa-accordion > ul button h5,
-.usa-accordion > ul button h6,
-.usa-accordion-bordered > ul button h1,
-.usa-accordion-bordered > ul button h2,
-.usa-accordion-bordered > ul button h3,
-.usa-accordion-bordered > ul button h4,
-.usa-accordion-bordered > ul button h5,
-.usa-accordion-bordered > ul button h6 {
-  margin: 0;
-}
-
-.usa-accordion > ul [aria-expanded=false],
-.usa-accordion-bordered > ul [aria-expanded=false] {
-  background-image: url("../img/plus.png");
-  background-image: url("../img/plus.svg");
-  background-repeat: no-repeat;
-  background-size: 1.5rem;
-}
-
-.usa-accordion > li,
-.usa-accordion-bordered > li {
-  background-color: #f1f1f1;
-  font-family: "Source Sans Pro", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
-  list-style: none;
-  margin-bottom: 0.5rem;
-  width: 100%;
-}
-
-.usa-accordion-bordered .usa-accordion-content {
-  border-bottom: 3px solid #f1f1f1;
-  border-left: 3px solid #f1f1f1;
-  border-right: 3px solid #f1f1f1;
-}
-
-.usa-accordion-content {
-  background-color: #ffffff;
-  overflow: auto;
-  padding: 1.5rem 2rem;
-}
-
-.usa-accordion-content > *:first-child {
-  margin-top: 0;
-}
-
-.usa-accordion-content > *:last-child {
-  margin-bottom: 0;
-}
-
-.usa-accordion-content:not([aria-hidden]) {
-  position: absolute;
-  left: -999em;
-}
-
-.usa-accordion-content[aria-hidden=true] {
-  display: none;
-}
-
-.usa-accordion-button {
-  background-color: transparent;
-  border: 0;
-  border-radius: 0;
-  font-weight: 400;
-  margin: 0;
-  padding: 0;
-  text-align: left;
-  -webkit-font-smoothing: auto;
-  background-color: #f1f1f1;
-  background-image: url("../img/minus.png");
-  background-image: url("../img/minus.svg");
-  background-position: right 2rem center;
-  background-repeat: no-repeat;
-  background-size: 1.5rem;
-  color: #212121;
-  cursor: pointer;
-  display: inline-block;
-  font-family: "Source Sans Pro", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
-  font-weight: 700;
-  margin: 0;
-  padding: 1.5rem 5.5rem 1.5rem 2rem;
-  width: 100%;
-}
-
-.usa-accordion-button:hover {
-  background-color: transparent;
-}
-
-.usa-accordion-button:hover {
-  background-color: #d6d7d9;
-  color: #212121;
-}
-
-.usa-accordion-button h1,
-.usa-accordion-button h2,
-.usa-accordion-button h3,
-.usa-accordion-button h4,
-.usa-accordion-button h5,
-.usa-accordion-button h6 {
-  margin: 0;
-}
-
-.usa-accordion-button[aria-expanded=false] {
-  background-image: url("../img/plus.png");
-  background-image: url("../img/plus.svg");
-  background-repeat: no-repeat;
-  background-size: 1.5rem;
+.usajobs-assistive-text {
+  position: absolute !important;
+  margin: -1px !important;
+  border: 0 !important;
+  padding: 0 !important;
+  width: 1px !important;
+  height: 1px !important;
+  overflow: hidden !important;
+  clip: rect(0 0 0 0) !important;
 }
 
 html {
@@ -6586,125 +6392,119 @@ html {
   clip: rect(0 0 0 0) !important;
 }
 
-.usajobs-drawer,
-.usajobs-drawer-bordered {
-  margin-top: 0;
+.usajobs-drawers {
+  border-bottom: 1px solid #d6d7d9;
+}
+
+.usajobs-drawers .usajobs-drawer {
   margin-bottom: 0;
-  list-style-type: none;
-  padding-left: 0;
-  color: #212121;
-  margin: 0;
-  padding: 0;
-  width: 100%;
-}
-
-.usajobs-drawer > li,
-.usajobs-drawer-bordered > li {
-  margin-bottom: 0;
-}
-
-.usajobs-drawer > ul li ul,
-.usajobs-drawer-bordered > ul li ul {
-  list-style: disc;
-}
-
-.usajobs-drawer > ul li ul > li > ul,
-.usajobs-drawer-bordered > ul li ul > li > ul {
-  list-style: circle;
-}
-
-.usajobs-drawer > ul li ul > li > ul > li > ul,
-.usajobs-drawer-bordered > ul li ul > li > ul > li > ul {
-  list-style: square;
-}
-
-.usajobs-drawer + .usajobs-drawer,
-.usajobs-drawer + .usajobs-drawer-bordered,
-.usajobs-drawer-bordered + .usajobs-drawer,
-.usajobs-drawer-bordered + .usajobs-drawer-bordered {
-  margin-top: 1rem;
-}
-
-.usajobs-drawer > li,
-.usajobs-drawer-bordered > li {
-  background-color: #f1f1f1;
-  font-family: "Source Sans Pro", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
-  list-style: none;
-  margin-bottom: 0.5rem;
-  width: 100%;
+  background-color: #ffffff;
+  border-top: 1px solid #d6d7d9;
 }
 
 .usajobs-drawer-button {
-  background-color: transparent;
-  border: 0;
-  border-radius: 0;
-  font-weight: 400;
-  margin: 0;
-  padding: 0;
-  text-align: left;
-  -webkit-font-smoothing: auto;
-  background-color: #f1f1f1;
-  background-image: url("../img/minus.png");
-  background-image: url("../img/minus.svg");
-  background-position: right 2rem center;
-  background-repeat: no-repeat;
-  background-size: 1.5rem;
-  color: #212121;
-  cursor: pointer;
-  display: inline-block;
-  font-family: "Source Sans Pro", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
-  font-weight: 700;
-  margin: 0;
-  padding: 1.5rem 5.5rem 1.5rem 2rem;
-  width: 100%;
+  font-size: 1.9rem;
+  font-weight: normal;
+  background-color: #ffffff;
+  background-image: url(../img/icons/drawer/minus-circle.svg);
+  background-position: 2rem 1.5rem;
+  background-size: 2rem;
+  padding: 1.5rem 1.5rem 0.5rem 4.5rem;
+  color: #0071bc;
+  text-decoration: underline;
+}
+
+.usajobs-drawer-button[aria-expanded="false"] {
+  background-image: url(../img/icons/drawer/plus-circle.svg);
+  background-size: 2rem;
 }
 
 .usajobs-drawer-button:hover {
-  background-color: transparent;
+  background-color: #ffffff;
+  color: #205493;
 }
 
-.usajobs-drawer-button:hover {
-  background-color: #d6d7d9;
-  color: #212121;
+.usajobs-drawer-button.has-no-face {
+  padding-bottom: 1.5rem;
 }
 
-.usajobs-drawer-button h1,
-.usajobs-drawer-button h2,
-.usajobs-drawer-button h3,
-.usajobs-drawer-button h4,
-.usajobs-drawer-button h5,
-.usajobs-drawer-button h6 {
+.usajobs-drawer-face {
+  background-color: #ffffff;
+  margin: 0;
+  padding-left: 4.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.usajobs-drawer-face dt {
+  font-weight: bold;
+}
+
+.usajobs-drawer-face dd {
   margin: 0;
 }
 
-.usajobs-drawer-button[aria-expanded=false] {
-  background-image: url("../img/plus.png");
-  background-image: url("../img/plus.svg");
-  background-repeat: no-repeat;
-  background-size: 1.5rem;
-}
-
-.usajobs-drawer-content {
+.usajobs-drawers .usajobs-drawer-content {
   background-color: #ffffff;
   overflow: auto;
-  padding: 3rem;
+  padding: 1.5rem 3rem 3rem 4.5rem;
+  border: 0;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16) inset, 0 3px 6px rgba(0, 0, 0, 0.23) inset;
 }
 
-.usajobs-drawer-content > *:first-child {
+.usajobs-drawers .usajobs-drawer-content > *:first-child {
   margin-top: 0;
 }
 
-.usajobs-drawer-content > *:last-child {
+.usajobs-drawers .usajobs-drawer-content > *:last-child {
   margin-bottom: 0;
 }
 
-.usajobs-drawer-content:not([aria-hidden]) {
-  position: absolute;
-  left: -999em;
+.usajobs-drawers .usajobs-drawer-content__list {
+  display: block;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
 }
 
-.usajobs-drawer-content[aria-hidden=true] {
+.usajobs-drawers .usajobs-drawer-content__list > li {
+  display: list-item;
+  margin: 0;
+}
+
+.usajobs-drawers .usajobs-drawer-content__list > li:before {
   display: none;
+}
+
+.usajobs-drawers .usajobs-drawer-content__list > li:after {
+  display: none;
+}
+
+@media screen and (min-width: 37.5em) {
+  .usajobs-drawers .usajobs-drawer-content__list {
+    padding-bottom: 1.5rem;
+  }
+}
+
+.usajobs-drawers .usajobs-drawer-content__list p,
+.usajobs-drawers .usajobs-drawer-content__list dd {
+  margin: 0;
+}
+
+.usajobs-drawers .usajobs-drawer-content__item-label {
+  margin-top: 1.5rem;
+  margin-bottom: 0;
+  font-size: 1.5rem;
+  font-weight: normal;
+  color: #5b616b;
+}
+
+.usajobs-drawers .usajobs-drawer-content__item-content {
+  margin-top: 0;
+}
+
+.usajobs-drawers .usajobs-drawer-content .usajobs-grid,
+.usajobs-drawers .usajobs-drawer-content .usa-grid {
+  padding: 0;
 }
 
 html {

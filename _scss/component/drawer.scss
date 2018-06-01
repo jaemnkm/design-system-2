@@ -1,41 +1,65 @@
 // USAJOBS Drawer
-// For now this simply extends .usa-accordion yet let's us use our own JS.
-// Eventually, it will also enable us to define our own behaviors.
 
-//@import 'lib/addons/margin';
-//@import 'lib/helpers/directional-values';
-//@import 'core/utilities';
-//@import 'elements/buttons';
-@import 'components/accordions';
 @import '../base-shared';
+@import 'card/card';
 
-.usajobs-drawer,
-.usajobs-drawer-bordered {
-  @include accordion-list-styles;
-  @include accordion-nested-list;
+.usajobs-drawers {
+  border-bottom: 1px solid $color-gray-lighter;
+}
 
-  + .usajobs-drawer,
-  + .usajobs-drawer-bordered {
-    margin-top: 1rem;
-  }
-
-  > li {
-    @include accordion-list-item-styles;
-  }
+.usajobs-drawers .usajobs-drawer {
+  margin-bottom: 0;
+  background-color: $color-white;
+  border-top: 1px solid $color-gray-lighter;
 }
 
 .usajobs-drawer-button {
-  @include accordion-button-styles;
+  font-size: $h4-font-size;
+  font-weight: normal;
+  background-color: $color-white;
+  background-image: url(../img/icons/drawer/minus-circle.svg);
+  background-position: 2rem $size-default;
+  background-size: 2rem;
+  padding: $size-default $size-default $size-base $size-L;
+  color: $color-primary;
+  text-decoration: underline;
+
+  &[aria-expanded="false"] {
+    background-image: url(../img/icons/drawer/plus-circle.svg);
+    background-size: 2rem;
+  }
+
+  &:hover {
+    background-color: $color-white;
+    color: $color-primary-darker;
+  }
+
+  &.has-no-face {
+    padding-bottom: $size-default;
+  }
 }
 
-.usajobs-drawer-button[aria-expanded=false] {
-  @include accordion-button-unopened-styles;
+.usajobs-drawer-face {
+  background-color: $color-white;
+  margin: 0;
+  padding-left: $size-L;
+  padding-bottom: $size-default;
+
+  dt {
+    font-weight: bold;
+  }
+
+  dd {
+    margin: 0;
+  }
 }
 
-.usajobs-drawer-content {
+.usajobs-drawers .usajobs-drawer-content {
   background-color: $color-white;
   overflow: auto;
-  padding: 3rem;
+  padding: $size-default $size-M $size-M $size-L;
+  border: 0;
+  @include boxShadow(2, true);
 
   > *:first-child {
     margin-top: 0;
@@ -45,9 +69,33 @@
     margin-bottom: 0;
   }
 
-  &:not([aria-hidden]) {
-    @include sr-only();
+  &__list {
+    @include unstyledList();
+
+    @include media($M) {
+      padding-bottom: $size-default;
+    }
+
+    p,
+    dd {
+      margin: 0;
+    }
   }
 
-  @include accessibly-hidden();
+  &__item-label {
+    margin-top: $size-default;
+    margin-bottom: 0;
+    font-size: 1.5rem; // Matching JOA label header size
+    font-weight: normal;
+    color: $color-gray;
+  }
+
+  &__item-content {
+    margin-top: 0; // For content that appears outside of a list
+  }
+
+  .usajobs-grid,
+  .usa-grid {
+    padding: 0; // get rid of outer padding we don't need given that we're already in a padded drawer
+  }
 }
