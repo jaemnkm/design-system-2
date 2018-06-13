@@ -48,6 +48,7 @@
     background-size: 2rem 2rem;
     background-position: left center;
     background-repeat: no-repeat;
+    @include permaLink();
   }
 }
 

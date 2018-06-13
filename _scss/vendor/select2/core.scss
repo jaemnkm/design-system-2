@@ -48,6 +48,10 @@
 // @import "theme/classic/layout";
 
 // Overrides to make select2 appear correctly
+.select2-container {
+  margin: 0.2em 0;
+}
+
 .select2-container--default .select2-selection--single,
 .select2-container--default .select2-selection--multiple {
   border-radius: inherit;
