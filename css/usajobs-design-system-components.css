@@ -5230,6 +5230,12 @@ html {
   background-size: 2rem 2rem;
   background-position: left center;
   background-repeat: no-repeat;
+  color: #0071bc;
+}
+
+.usajobs-button_bar__delete:visited,
+.usajobs-button-bar__delete:visited {
+  color: #0071bc;
 }
 
 .usajobs-button_bar--slim,
