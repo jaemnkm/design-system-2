@@ -2245,6 +2245,16 @@ html {
   clip: rect(0 0 0 0) !important;
 }
 
+[data-object="reveal-more"][data-readmore] {
+  transition: height 500ms;
+  overflow: hidden;
+}
+
+[data-object="reveal-more"] + [data-readmore-toggle], [data-object="reveal-more"][data-readmore] {
+  display: block;
+  width: 100%;
+}
+
 .usajobs-show-more__trigger,
 .usajobs-show-next__trigger {
   display: block;
