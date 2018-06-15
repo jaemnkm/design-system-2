@@ -267,6 +267,10 @@ html {
   padding: 0;
 }
 
+.preview .usajobs-joa-intro .usajobs-joa-aside {
+  max-height: inherit;
+}
+
 .code-snippets .code-snippet-button:after {
   content: "\25be  hide code";
 }

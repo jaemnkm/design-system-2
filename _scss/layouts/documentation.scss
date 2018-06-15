@@ -246,6 +246,12 @@
   padding: 0;
 }
 
+// Specific overried to revert a fix we have in production in the JOA
+.preview .usajobs-joa-intro .usajobs-joa-aside {
+  // This is only for display purposes in the documentation! Do not copy to production!!!
+  max-height: inherit;
+}
+
 // Code Sample Boxes --------- //
 .code-snippets {
 
