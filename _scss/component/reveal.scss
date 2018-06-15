@@ -3,6 +3,16 @@
 @import '../base-shared';
 @import '../home-variables';
 
+[data-object="reveal-more"][data-readmore] {
+  transition: height 500ms;
+  overflow: hidden;
+}
+
+[data-object="reveal-more"]+[data-readmore-toggle], [data-object="reveal-more"][data-readmore] {
+  display: block;
+  width: 100%;
+}
+
 .usajobs-show-more,
 .usajobs-show-next {
   &__trigger {
