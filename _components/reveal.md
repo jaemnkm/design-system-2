@@ -2,7 +2,7 @@
 layout: styleguide
 type: component
 title: Reveal
-lead: Components for revealing more content.
+lead: Component for revealing more content.
 ---
 
 <a href="{{ site.baseurl }}/getting-started/#maturity" class="usa-label maturity under_review">

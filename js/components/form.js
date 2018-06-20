@@ -10,3 +10,28 @@ $('.usajobs-button-select').select2({
 });
 */
 });
+
+
+var $form = $('[data-object="usajobs-form"]'),
+  $form_reveal_fields = $form.find('input[type="radio"][data-behavior="usajobs-form.reveal-fields"]'),
+  $form_hide_fields = $form.find('input[type="radio"][data-behavior="usajobs-form.hide-fields"]');
+
+$form_reveal_fields.on('change', function() {
+  var $input = $(this),
+    $object = $input.parent().closest('[data-object="usajobs-form"]'),
+    $target = $object.find('#' + $input.attr('aria-controls'));
+
+  $target.slideDown(function () {
+    $target.attr('aria-hidden', 'false');
+  });
+});
+
+$form_hide_fields.on('change', function() {
+  var $input = $(this),
+    $object = $input.parent().closest('[data-object="usajobs-form"]'),
+    $target = $object.find('#' + $input.attr('aria-controls'));
+
+  $target.slideUp(function () {
+    $target.attr('aria-hidden', 'true');
+  });
+});

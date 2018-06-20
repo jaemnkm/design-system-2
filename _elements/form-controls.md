@@ -52,8 +52,8 @@ lead: USAJOBS adds or clarifies design for labels, contextual help, required/opt
 <div class="preview" id="code-2">
   <h6 class="usa-heading-alt" id="detailed-help">Detailed Help</h6>
   <form class="usajobs-form">
-    <label for="input-type-text">Text input label</label>
-    <input id="input-type-text" name="input-type-text" type="text">
+    <label for="input-type-text2">Text input label</label>
+    <input id="input-type-text2" name="input-type-text2" type="text">
     <ul class="usa-accordion-bordered usajobs-form__help-detailed">
       <li>
         <button class="usa-accordion-button usajobs-form__help-detailed-trigger" aria-expanded="false" aria-controls="help-detailed-1">
@@ -68,8 +68,8 @@ lead: USAJOBS adds or clarifies design for labels, contextual help, required/opt
 
   <h6 class="usa-heading-alt">Extended help</h6>
   <form class="usajobs-form">
-    <label for="input-type-text">Text input label</label>
-    <input id="input-type-text" name="input-type-text" type="text">
+    <label for="input-type-text3">Text input label</label>
+    <input id="input-type-text3" name="input-type-text3" type="text">
     <div class="usajobs-form__help-extended">
       <h5>Make an inspiring Opportunity by including&hellip;</h5>
       <ul class="usajobs-unstyled-list">
@@ -83,8 +83,8 @@ lead: USAJOBS adds or clarifies design for labels, contextual help, required/opt
 
   <h6 class="usa-heading-alt is-deprecated">Outside help - DEPRECATED</h6>
   <form class="usajobs-form">
-    <label for="input-type-text">Text input label <i class="help-icon fa fa-question-circle"></i></label>
-    <input id="input-type-text" name="input-type-text" type="text">
+    <label for="input-type-text4">Text input label <i class="help-icon fa fa-question-circle"></i></label>
+    <input id="input-type-text4" name="input-type-text4" type="text">
   </form>
 </div>
 
@@ -518,8 +518,8 @@ lead: USAJOBS adds or clarifies design for labels, contextual help, required/opt
     </select>
 
     <h6 class="usa-heading-alt">Multi select</h6>
-    <label for="ParentOrganizationID" class="labeltext">Department &amp; Agency</label>
-    <select data-val="true" data-val-number="This field must be a number." id="ParentOrganizationID" name="ParentOrganizationID" class="usajobs-form-select--entry" multiple="true" data-placeholder="Please Select">
+    <label for="ParentOrganizationID2" class="labeltext">Department &amp; Agency</label>
+    <select data-val="true" data-val-number="This field must be a number." id="ParentOrganizationID2" name="ParentOrganizationID2" class="usajobs-form-select--entry" multiple="true" data-placeholder="Please Select">
       <option value=""></option>
       <optgroup label="Court Services and Offender Supervision Agency for DC">
         <option value="577">Court Services and Offender Supervision Agency for DC - Agency Wide</option>
@@ -941,8 +941,8 @@ lead: USAJOBS adds or clarifies design for labels, contextual help, required/opt
   <h6 id="usajobs-form-input-disabled" class="usa-heading-alt">Disabled</h6>
   <form name="example" aria-labelled-by="usajobs-form-heading-0" class="usajobs-form">
     <fieldset class="usajobs-fieldset">
-      <label for="last-name">Last name</label>
-      <input id="last-name" name="last-name" type="text" required="" aria-required="true" disabled>
+      <label for="last-name3">Last name</label>
+      <input id="last-name3" name="last-name3" type="text" required="" aria-required="true" disabled>
 
       <label for="phone-type" class="usa-input-optional">Phone type</label>
       <select id="phone-type" name="phone-type" disabled>
@@ -954,8 +954,8 @@ lead: USAJOBS adds or clarifies design for labels, contextual help, required/opt
 
     <fieldset class="usajobs-fieldset">
       <h6 id="usajobs-form-input-readonly" class="usa-heading-alt">Read only</h6>
-      <label for="last-name">Last name</label>
-      <input id="last-name" name="last-name" type="text" required="" aria-required="true" value="Mahoney" readonly>
+      <label for="last-name4">Last name</label>
+      <input id="last-name4" name="last-name4" type="text" required="" aria-required="true" value="Mahoney" readonly>
     </fieldset>
   </form>
 </div>
@@ -1029,10 +1029,10 @@ lead: USAJOBS adds or clarifies design for labels, contextual help, required/opt
     </h2>
     <span class="usajobs-form__legend">All fields are required</span>
     <fieldset>
-      <label for="first-name">First name</label>
-      <input id="first-name" name="first-name" type="text">
-      <label for="last-name">Last name</label>
-      <input id="last-name" name="last-name" type="text">
+      <label for="first-name2">First name</label>
+      <input id="first-name2" name="first-name2" type="text">
+      <label for="last-name2">Last name</label>
+      <input id="last-name2" name="last-name2" type="text">
       <label for="details">Details</label>
       <textarea id="details" name="details"></textarea>
     </fieldset>
@@ -1195,7 +1195,7 @@ lead: USAJOBS adds or clarifies design for labels, contextual help, required/opt
             </select>
           </div>
           <div class="usajobs-fieldset--horizontal__row usajobs-search-save__button">
-            <button id="search-save-cta" class="usa-button usa-button-primary usajobs-search-save__create">Save</button>
+            <button id="search-save-cta2" class="usa-button usa-button-primary usajobs-search-save__create">Save</button>
             <button class="usa-button usa-button-outline usajobs-search-save__cancel" data-behavior="search-save.close" aria-controls="search-save">Cancel</button>
           </div>
         </fieldset>
@@ -1230,11 +1230,73 @@ lead: USAJOBS adds or clarifies design for labels, contextual help, required/opt
             </span>
           </div>
           <div class="usajobs-fieldset--horizontal__row usajobs-search-save__button">
-            <button id="search-save-cta" class="usa-button usa-button-primary usajobs-search-save__create">Save</button>
+            <button id="search-save-cta3" class="usa-button usa-button-primary usajobs-search-save__create">Save</button>
             <button class="usa-button usa-button-outline usajobs-search-save__cancel" data-behavior="search-save.close" aria-controls="search-save">Cancel</button>
           </div>
         </fieldset>
       </div>
     </div>
   </form>
+</div>
+<div class="usa-accordion-bordered usa-accordion-docs">
+  <button class="usa-button-unstyled usa-accordion-button"
+      aria-expanded="true" aria-controls="doc-8">
+    Documentation
+  </button>
+  <div id="doc-8" aria-hidden="false" class="usa-accordion-content">
+    <h4 class="usa-heading">Usability</h4>
+    <h5>When to use</h5>
+    <ul class="usa-content-list">
+      <li>Use this layout sparingly as the standard error handling was not designed to be used in side-by-side columns. Our only current approved use is in Saved search which is depicted above.</li>
+    </ul>
+  </div>
+</div>
+
+<h2 class="usa-heading" id="reveal-fields">Reveal fields</h2>
+<p class="usa-font-lead">
+  Selecting certain form elements can reveal additional elements. This allows for hiding complexity from users that don't need to see it.
+</p>
+
+<div class="preview" id="code-9">
+  <h6 class="usa-heading-alt">Reveal hidden form fields</h6>
+  <form id="experienceForm" method="post" action="{{ site.baseurl }}/submit/" class="usajobs-form" novalidate="novalidate" data-object="usajobs-form">
+    <fieldset class="usajobs-fieldset">
+      <h5 class="usajobs-form__label-header">May we contact your supervisor? <span class="usa-input-label-helper">(optional)</span></h5>
+      <ul class="usa-unstyled-list usa-fieldset-inputs">
+        <li>
+          <input id="radContactYes" name="ContactSupervisor" title="Yes" type="radio" value="Y" data-behavior="usajobs-form.reveal-fields" aria-controls="Supervisor">
+          <label for="radContactYes" class="radio-inline">Yes</label>
+        </li>
+        <li>
+          <input id="radContactNo" name="ContactSupervisor" title="No" type="radio" value="N" data-behavior="usajobs-form.hide-fields" aria-controls="Supervisor">
+          <label for="radContactNo" class="radio-inline">No</label>
+        </li>
+        <li>
+          <input id="radContactMe" name="ContactSupervisor" title="Contact me first" type="radio" value="M" data-behavior="usajobs-form.hide-fields" aria-controls="Supervisor">
+          <label for="radContactMe" class="radio-inline">Contact me first</label>
+        </li>
+      </ul>
+
+      <div id="Supervisor" class="usajobs-form-reveal-fields" aria-hidden="true">
+        <label for="SupervisorName">Supervisor name</label>
+        <input id="SupervisorName" name="SupervisorName" type="text" value="">
+
+        <label for="SupervisorPhone">Supervisor phone</label>
+        <input id="SupervisorPhone" name="SupervisorPhone" type="text" value="">
+      </div>
+    </fieldset>
+  </form>
+</div>
+<div class="usa-accordion-bordered usa-accordion-docs">
+  <button class="usa-button-unstyled usa-accordion-button"
+      aria-expanded="true" aria-controls="doc-9">
+    Documentation
+  </button>
+  <div id="doc-9" aria-hidden="false" class="usa-accordion-content">
+    <h4 class="usa-heading">Usability</h4>
+    <h5>When to use</h5>
+    <ul class="usa-content-list">
+      <li>Use this pattern to reveal form fields based on user input.</li>
+    </ul>
+  </div>
 </div>

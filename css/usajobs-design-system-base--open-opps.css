@@ -5707,6 +5707,11 @@ img {
   margin-bottom: 6rem;
 }
 
+.usajobs-form-reveal-fields[aria-hidden="true"],
+.usajobs-form-reveal-field[aria-hidden="true"] {
+  display: none;
+}
+
 .usajobs-form-grid {
   max-width: 1200px;
   margin-left: auto;
@@ -5794,6 +5799,7 @@ select[disabled] {
 
 .usa-input-label-helper {
   color: #757575;
+  font-weight: normal;
 }
 
 body {

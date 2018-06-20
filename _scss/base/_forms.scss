@@ -177,7 +177,13 @@
   &__field-group {
     margin-bottom: $size-XL;
   }
+}
 
+.usajobs-form-reveal-fields,
+.usajobs-form-reveal-field {
+  &[aria-hidden="true"] {
+    display: none;
+  }
 }
 
 .usajobs-form-grid {
@@ -246,4 +252,5 @@ select[disabled] {
 // this will come from the Standards once we catch up
 .usa-input-label-helper {
   color: #757575;
+  font-weight: normal;
 }
