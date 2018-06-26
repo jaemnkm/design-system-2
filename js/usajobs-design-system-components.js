@@ -135,7 +135,10 @@ var $form = $('[data-object="usajobs-form"]'),
 $form_reveal_fields.on('change', function () {
   var $input = $(this),
       $object = $input.parent().closest('[data-object="usajobs-form"]'),
-      $target = $object.find('#' + $input.attr('aria-controls'));
+      $target = $object.find('#' + $input.attr('aria-controls')),
+      $siblings = $object.find('.usajobs-form-reveal-fields');
+
+  $siblings.slideUp();
 
   $target.slideDown(function () {
     $target.attr('aria-hidden', 'false');
@@ -145,10 +148,12 @@ $form_reveal_fields.on('change', function () {
 $form_hide_fields.on('change', function () {
   var $input = $(this),
       $object = $input.parent().closest('[data-object="usajobs-form"]'),
-      $target = $object.find('#' + $input.attr('aria-controls'));
+      $targets = $object.find('.usajobs-form-reveal-fields');
 
-  $target.slideUp(function () {
-    $target.attr('aria-hidden', 'true');
+  // A bit of cheating. aria-controls can have multiple targets but, this is easier.
+
+  $targets.slideUp(function () {
+    $targets.attr('aria-hidden', 'true');
   });
 });
 
