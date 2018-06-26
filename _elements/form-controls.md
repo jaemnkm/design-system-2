@@ -1268,11 +1268,11 @@ lead: USAJOBS adds or clarifies design for labels, contextual help, required/opt
           <label for="radContactYes" class="radio-inline">Yes</label>
         </li>
         <li>
-          <input id="radContactNo" name="ContactSupervisor" title="No" type="radio" value="N" data-behavior="usajobs-form.hide-fields" aria-controls="Supervisor">
+          <input id="radContactNo" name="ContactSupervisor" title="No" type="radio" value="N" data-behavior="usajobs-form.hide-fields" aria-controls="Supervisor Contact">
           <label for="radContactNo" class="radio-inline">No</label>
         </li>
         <li>
-          <input id="radContactMe" name="ContactSupervisor" title="Contact me first" type="radio" value="M" data-behavior="usajobs-form.hide-fields" aria-controls="Supervisor">
+          <input id="radContactMe" name="ContactSupervisor" title="Contact me first" type="radio" value="M" data-behavior="usajobs-form.reveal-fields" aria-controls="Contact">
           <label for="radContactMe" class="radio-inline">Contact me first</label>
         </li>
       </ul>
@@ -1283,6 +1283,12 @@ lead: USAJOBS adds or clarifies design for labels, contextual help, required/opt
 
         <label for="SupervisorPhone">Supervisor phone</label>
         <input id="SupervisorPhone" name="SupervisorPhone" type="text" value="">
+      </div>
+      <div id="Contact" class="usajobs-form-reveal-fields" aria-hidden="true">
+      <!-- This is just an example of having two different areas to reveal. -->
+      <!-- This is not how this actual question functions in production. -->
+        <label for="Email">Email</label>
+        <input id="Email" name="Email" type="text" value="">
       </div>
     </fieldset>
   </form>
