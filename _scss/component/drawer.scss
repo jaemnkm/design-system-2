@@ -39,6 +39,47 @@
   }
 }
 
+.usajobs-drawer-button--alt-handle {
+  background-image: url(../img/icons/drawer/angle-down.svg);
+  background-position: 95% center;
+  background-size: 2.5rem;
+  padding: $size-default $size-L $size-base $size-default;
+
+  &[aria-expanded="false"] {
+    background-image: url(../img/icons/drawer/angle-right.svg);
+    background-size: 2rem;
+  }
+
+  &.has-no-face {
+    padding-bottom: $size-default;
+  }
+}
+
+.usajobs-drawer-button--with-icon {
+  display: flex;
+  align-items: center;
+
+  &__figure {
+    flex-shrink: 0;
+    padding-right: $size-S;
+
+    @include media($L) {
+      padding-right: $size-M;
+    }
+
+    svg {
+      width: rem(52px);
+      height: rem(52px);
+      vertical-align: middle;
+    }
+  }
+
+  &__button-text {
+    @include flex(1);
+    min-width: 0;
+  }
+}
+
 .usajobs-drawer-face {
   background-color: $color-white;
   margin: 0;
