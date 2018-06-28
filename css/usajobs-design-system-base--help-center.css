@@ -6417,7 +6417,6 @@ html {
   background-size: 2rem;
   padding: 1.5rem 1.5rem 0.5rem 4.5rem;
   color: #0071bc;
-  text-decoration: underline;
 }
 
 .usajobs-drawer-button[aria-expanded="false"] {
@@ -6435,15 +6434,13 @@ html {
 }
 
 .usajobs-drawer-button--alt-handle {
-  background-image: url(../img/icons/drawer/angle-down.svg);
+  background-image: url(../img/icons/drawer/minus.svg);
   background-position: 95% center;
-  background-size: 2.5rem;
   padding: 1.5rem 4.5rem 0.5rem 1.5rem;
 }
 
 .usajobs-drawer-button--alt-handle[aria-expanded="false"] {
-  background-image: url(../img/icons/drawer/angle-right.svg);
-  background-size: 2rem;
+  background-image: url(../img/icons/drawer/plus.svg);
 }
 
 .usajobs-drawer-button--alt-handle.has-no-face {
