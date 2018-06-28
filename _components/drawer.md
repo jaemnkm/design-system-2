@@ -134,8 +134,8 @@ lead: A component that extends the standard multi-selectable accordion with dist
   <div id="doc-1" aria-hidden="false" class="usa-accordion-content">
     <h4 class="usa-heading">Usability</h4>
     <ul class="usa-content-list">
-      <li><strong>Affordance</strong>: The drawer trigger needs to have sufficient affordance. That is achieved by the combination of the drawer handle (plus/minus button) and the drawer title (blue link) in close proximity to one another. That combination should be retained otherwise the drawer may lack the affordance for users to know that this component is a drawer that will reveal additional content.</li>
-      <li><strong>Title</strong>: The title of the drawer in a list is often a title of the object it describes. Titles and names can be long thus in a drawer, as in a card, they span the full width of the component. Titles should be truncated coming out of the database rather than inserted into the component and allowed to line wrap.</li>
+      <li><strong>Affordance</strong>: The drawer trigger needs to have sufficient affordance. That is achieved by the combination of the drawer handle (plus/minus button) and the drawer title (primary blue to match links) in close proximity to one another (same line) in a list of similar items (other drawers). This combination of elements should be retained otherwise the drawer may lack the affordance for users to know that this component will reveal additional content.</li>
+      <li><strong>Title</strong>: The title of the drawer in a list is often a title of the object it describes. Titles and names can be long thus in a drawer, as in a card, they span the full width of the component. Titles should be truncated coming out of the database rather than inserted into the component and allowed to line wrap. Because titles can wrap due to their length they should not be underlined.</li>
       <li><strong>Shadow</strong>: The drawer content has an inset shadow to strengthen the relationship between the drawer button plus face and the drawer contents.</li>
     </ul>
 
@@ -146,7 +146,7 @@ lead: A component that extends the standard multi-selectable accordion with dist
 
     <h5>When to consider something else</h5>
     <ul class="usa-content-list">
-      <li>Avoid drawers when the details are vast. For example, we specifically did not employ this pattern in search results where the details of a job are too numerous to include within a drawer.</li>
+      <li>Avoid drawers when the details are vast. For example, we specifically did not employ this pattern in search results where the details of a job are too numerous to include within a drawer. It's less about number of items revealed and more about the length of the content within the drawer. If the drawer contents could be in their own view/page then perhaps a list of links would be preferred.</li>
     </ul>
   </div>
 </div>
@@ -229,7 +229,6 @@ lead: A component that extends the standard multi-selectable accordion with dist
     <h5>When to use</h5>
     <ul class="usa-content-list">
       <li>This variation of drawers can be used when you have clear actions supported by iconography.</li>
-      <li>The alt drawer handle should be used sparingly.</li>
     </ul>
   </div>
 </div>

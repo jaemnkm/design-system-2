@@ -22,7 +22,6 @@
   background-size: 2rem;
   padding: $size-default $size-default $size-base $size-L;
   color: $color-primary;
-  text-decoration: underline;
 
   &[aria-expanded="false"] {
     background-image: url(../img/icons/drawer/plus-circle.svg);
@@ -40,14 +39,12 @@
 }
 
 .usajobs-drawer-button--alt-handle {
-  background-image: url(../img/icons/drawer/angle-down.svg);
+  background-image: url(../img/icons/drawer/minus.svg);
   background-position: 95% center;
-  background-size: 2.5rem;
   padding: $size-default $size-L $size-base $size-default;
 
   &[aria-expanded="false"] {
-    background-image: url(../img/icons/drawer/angle-right.svg);
-    background-size: 2rem;
+    background-image: url(../img/icons/drawer/plus.svg);
   }
 
   &.has-no-face {
