@@ -159,17 +159,17 @@ lead: A component that extends the standard multi-selectable accordion with dist
 <div class="preview compact" id="code-2">
   <ul class="usa-accordion usajobs-drawers">
     <li class="usajobs-drawer">
-      <button class="usa-accordion-button usajobs-drawer-button usajobs-drawer-button--with-icon usajobs-drawer-button--alt-handle has-no-face" aria-expanded="true" aria-controls="apply">
+      <button class="usa-accordion-button usajobs-drawer-button usajobs-drawer-button--with-icon usajobs-drawer-button--alt-handle has-no-face" aria-expanded="true" aria-controls="apply-to-job">
         <div class="usajobs-drawer-button--with-icon__figure">
           <svg class="usajobs-icon">
-            <use xlink:href="#apply-to-a-job-ive-already-found"></use>
+            <use xlink:href="#apply"></use>
           </svg>
         </div>
         <div class="usajobs-drawer-button--with-icon__button-text">
           Apply to a job I've already found
         </div>
       </button>
-      <div id="apply" class="usa-accordion-content usajobs-drawer-content">
+      <div id="apply-to-job" class="usa-accordion-content usajobs-drawer-content usajobs-drawer-content--with-icon">
         <h4>Did you know you can save up to 25 jobs?</h4>
         <p>
           You can also sign up to get an email when a saved job is about to close.
@@ -194,10 +194,10 @@ lead: A component that extends the standard multi-selectable accordion with dist
           </svg>
         </div>
         <div class="usajobs-drawer-button--with-icon__button-text">
-          Finish my profile &amp; make it searchable so agencies can find me
+          Finish my profile so agencies can find me
         </div>
       </button>
-      <div id="finish" class="usa-accordion-content usajobs-drawer-content">
+      <div id="finish" class="usa-accordion-content usajobs-drawer-content usajobs-drawer-content--with-icon">
         <p>
           If you make your resume searchable, your profile is automatically searchable too.
         </p>

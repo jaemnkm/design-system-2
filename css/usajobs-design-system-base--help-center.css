@@ -6435,12 +6435,14 @@ html {
 
 .usajobs-drawer-button--alt-handle {
   background-image: url(../img/icons/drawer/minus.svg);
-  background-position: 95% center;
+  background-position: 98% center;
+  background-size: 1.5rem;
   padding: 1.5rem 4.5rem 0.5rem 1.5rem;
 }
 
 .usajobs-drawer-button--alt-handle[aria-expanded="false"] {
   background-image: url(../img/icons/drawer/plus.svg);
+  background-size: 1.5rem;
 }
 
 .usajobs-drawer-button--alt-handle.has-no-face {
@@ -6452,6 +6454,7 @@ html {
   display: flex;
   -ms-flex-align: center;
       align-items: center;
+  line-height: 1.5;
 }
 
 .usajobs-drawer-button--with-icon__figure {
@@ -6462,13 +6465,13 @@ html {
 
 @media screen and (min-width: 62em) {
   .usajobs-drawer-button--with-icon__figure {
-    padding-right: 3rem;
+    padding-right: 1.5rem;
   }
 }
 
 .usajobs-drawer-button--with-icon__figure svg {
-  width: 5.2rem;
-  height: 5.2rem;
+  width: 4.4rem;
+  height: 4.4rem;
   vertical-align: middle;
 }
 
@@ -6557,6 +6560,16 @@ html {
 .usajobs-drawers .usajobs-drawer-content .usajobs-grid,
 .usajobs-drawers .usajobs-drawer-content .usa-grid {
   padding: 0;
+}
+
+.usajobs-drawers .usajobs-drawer-content--with-icon {
+  padding: 1.5rem;
+}
+
+@media screen and (min-width: 37.5em) {
+  .usajobs-drawers .usajobs-drawer-content--with-icon {
+    padding: 3rem;
+  }
 }
 
 html {
