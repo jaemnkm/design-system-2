@@ -40,11 +40,13 @@
 
 .usajobs-drawer-button--alt-handle {
   background-image: url(../img/icons/drawer/minus.svg);
-  background-position: 95% center;
+  background-position: 98% center;
+  background-size: $size-default;
   padding: $size-default $size-L $size-base $size-default;
 
   &[aria-expanded="false"] {
     background-image: url(../img/icons/drawer/plus.svg);
+    background-size: $size-default;
   }
 
   &.has-no-face {
@@ -55,18 +57,19 @@
 .usajobs-drawer-button--with-icon {
   display: flex;
   align-items: center;
+  line-height: $base-line-height;
 
   &__figure {
     flex-shrink: 0;
     padding-right: $size-S;
 
     @include media($L) {
-      padding-right: $size-M;
+      padding-right: $size-default;
     }
 
     svg {
-      width: rem(52px);
-      height: rem(52px);
+      width: rem(44px);
+      height: rem(44px);
       vertical-align: middle;
     }
   }
@@ -135,5 +138,14 @@
   .usajobs-grid,
   .usa-grid {
     padding: 0; // get rid of outer padding we don't need given that we're already in a padded drawer
+  }
+}
+
+.usajobs-drawers .usajobs-drawer-content--with-icon {
+  // Doesn't try to align the contents with the size of the icon
+  padding: $size-default;
+
+  @include media($M) {
+    padding: $size-M;
   }
 }
