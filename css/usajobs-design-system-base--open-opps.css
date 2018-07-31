@@ -5920,6 +5920,10 @@ h6 {
   text-decoration: none;
 }
 
+a.usa-button:hover {
+  color: #ffffff;
+}
+
 .usajobs-button-secondary,
 .usajobs-button-destructive-action {
   display: inline-block;
@@ -7904,7 +7908,6 @@ html {
   width: 1.2rem;
   height: 1.2rem;
   background-size: 12px 12px;
-  margin-left: 0.1rem;
   content: url("../img/icons/close/times.svg");
   color: #ffffff;
 }

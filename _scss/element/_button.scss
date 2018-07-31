@@ -1,5 +1,10 @@
 // Button
 
+// Using a link with usa-button works except for the hover state
+a.usa-button:hover {
+  color: $color-white;
+}
+
 // Replacing some of the secondary buttons that were unceremoniously removed
 .usajobs-button-secondary,
 .usajobs-button-destructive-action {

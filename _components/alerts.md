@@ -2,7 +2,7 @@
 layout: styleguide
 type: component
 title: Alerts
-lead: USAJOBS has adopted a different visual style to our alerts that deviate from the U.S. Web Design Standards.
+lead: USAJOBS alerts augment the U.S. Design System with the addition of a tip style, handling for multiple messages, and making the alerts dismissable. 
 ---
 
 <a href="{{ site.baseurl }}/getting-started/#maturity" class="usa-label maturity design_complete">
@@ -98,12 +98,7 @@ lead: USAJOBS has adopted a different visual style to our alerts that deviate fr
     </div>
     <div class="usajobs-alert__body">
       <p class="usa-alert-text">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        We can’t save your information because there are one or more errors. Please correct the information below and then save your changes.
       </p>
     </div>
   </div>
@@ -163,7 +158,7 @@ lead: USAJOBS has adopted a different visual style to our alerts that deviate fr
           If so, we recommend you upload your DD-214 - it's required if you want to claim veterans' preference.
         </p>
         <div class="usajobs-alert__footer">
-          <a href="#next-tip" class="usa-button usa-button-outline" data-behavior="alert.skip" aria-controls="alert-1" data-target-next="alert-2">Skip</a>
+          <a href="#next-tip" class="usa-button usa-button-secondary" data-behavior="alert.skip" aria-controls="alert-1" data-target-next="alert-2">Skip</a>
           <a href="#add-doc" class="usa-button usa-button-primary">Upload Documents</a>
         </div>
       </div>
@@ -176,7 +171,7 @@ lead: USAJOBS has adopted a different visual style to our alerts that deviate fr
           If so, we recommend you upload your SF-15 - it's required if you want to claim veterans' preference.
         </p>
         <div class="usajobs-alert__footer">
-          <a href="#next-tip" class="usa-button usa-button-outline" data-behavior="alert.back" aria-controls="alert-2" data-target-previous="alert-1">Back</a>
+          <a href="#next-tip" class="usa-button usa-button-secondary" data-behavior="alert.back" aria-controls="alert-2" data-target-previous="alert-1">Back</a>
           <a href="#add-doc" class="usa-button usa-button-primary">Upload Documents</a>
         </div>
       </div>

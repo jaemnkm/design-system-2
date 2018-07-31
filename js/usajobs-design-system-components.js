@@ -23,8 +23,10 @@ $alert.on('click', '[data-behavior]', function (event) {
 });
 
 $alert.on('alert.close', function (event, opts) {
-  opts.object.attr('data-state', 'is-closed');
-  opts.object.attr('aria-hidden', 'true');
+  opts.object.fadeOut(300, function () {
+    opts.object.attr('data-state', 'is-closed');
+    opts.object.attr('aria-hidden', 'true');
+  });
 });
 
 $alert.on('alert.skip', function (event, opts) {
