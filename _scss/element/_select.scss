@@ -10,3 +10,20 @@ select {
   padding-right: 3.5rem;
   background-image: url("../img/arrow-both.png");
 }
+
+// select2 plugin overrides
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+  background-image: url("../img/arrow-both.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 50%;
+  right: 8px;
+
+  b {
+    display: none;
+  }
+}
+
+.select2-container .select2-selection--single .select2-selection__rendered {
+  padding-right: 28px;
+}

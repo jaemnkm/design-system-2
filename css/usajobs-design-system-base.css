@@ -6689,6 +6689,22 @@ select {
   background-image: url("../img/arrow-both.png");
 }
 
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+  background-image: url("../img/arrow-both.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 50%;
+  right: 8px;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow b {
+  display: none;
+}
+
+.select2-container .select2-selection--single .select2-selection__rendered {
+  padding-right: 28px;
+}
+
 svg:not(:root) {
   width: 1em;
   height: 1em;
