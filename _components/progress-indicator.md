@@ -10,7 +10,7 @@ lead: The progress indicator provides the user with context for where they are w
 </a>
 
 <p>
-  The progress indicator is currently in use only within the application guide process. However, it could be reused in other contexts.
+  This progress indicator is currently in use only within the application guide process. However, it could be reused in other contexts.
 </p>
 
 <div class="preview" id="code-1">
@@ -51,6 +51,39 @@ lead: The progress indicator provides the user with context for where they are w
     <h5>When to use</h5>
     <ul class="usa-content-list">
       <li>Use this variation in the application guide process in conjunction with the JOA summary component.</li>
+    </ul>
+  </div>
+</div>
+
+<p>
+  This progress bar will be used in the new user on-boarding experience.
+</p>
+
+<div class="preview" id="code-3">
+  <h6 class="usa-heading-alt">Step 1</h6>
+  {% include components/progress-indicator/progress-bar.html step="1" %}
+
+  <h6 class="usa-heading-alt">Step 2</h6>
+  {% include components/progress-indicator/progress-bar.html step="2" %}
+
+  <h6 class="usa-heading-alt">Step 3</h6>
+  {% include components/progress-indicator/progress-bar.html step="3" %}
+</div>
+
+<div class="usa-accordion-bordered usa-accordion-docs">
+  <button class="usa-button-unstyled usa-accordion-button"
+      aria-expanded="true" aria-controls="doc-3">
+    Documentation
+  </button>
+  <div id="doc-3" aria-hidden="false" class="usa-accordion-content">
+    <h4 class="usa-heading">Usability</h4>
+    <h5>When to use</h5>
+    <ul class="usa-content-list">
+      <li>Use this progress indicator when the number of steps is small (less than 3 ideally) and there is not a need for the user to go back.</li>
+    </ul>
+    <h5>When to consider something else</h5>
+    <ul class="usa-content-list">
+      <li>Do not use this progress indicator for a process with more than 3 steps.</li>
     </ul>
   </div>
 </div>

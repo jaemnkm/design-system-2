@@ -1,0 +1,14 @@
+<div class="usajobs-progress-bar__container">
+  <h1 class="usajobs-progress-bar__title">[Page title]</h1>
+  <div class="usajobs-progress-bar usajobs-progress-bar--three">
+    <span class="usajobs-progress-bar__step {% if include.step == "1" %}is-current{% endif %} {% if include.step == "2" or include.step == "3"%}is-complete{% endif %}">
+      &nbsp;
+    </span>
+    <span class="usajobs-progress-bar__step {% if include.step == "2" %}is-current{% endif %} {% if include.step == "3"%}is-complete{% endif %}">
+      &nbsp;
+    </span>
+    <span class="usajobs-progress-bar__step {% if include.step == "3" %}is-current{% endif %}">
+      &nbsp;
+    </span>
+  </div>
+</div>

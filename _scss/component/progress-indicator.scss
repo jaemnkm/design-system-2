@@ -200,3 +200,45 @@
     @include span-columns(9);
   }
 }
+
+// New user on-boarding edition
+.usajobs-progress-bar {
+  display: flex;
+  width: 100%;
+  height: $size-default;
+  background-color: $color-white;
+  border-top: 1px solid $color-gray-lighter;
+
+  &__container {
+    @include boxShadow(1);
+  }
+
+  &__title {
+    margin: 0;
+    padding: $size-default 0 $size-S $size-default;
+
+    @include media($L) {
+      padding: $size-M 0 $size-default $size-M;
+    }
+  }
+
+  &__step {
+    display: block;
+    flex: 1;
+    height: 100%;
+  }
+
+  &__step.is-current {
+    background-color: rgba(253,184,30,0.5);
+  }
+
+  &__step.is-complete {
+    background-color: $color-gold;
+  }
+}
+
+.usajobs-progress-bar--three {
+  .usajobs-progress-bar__step {
+    width: 33%;
+  }
+}
