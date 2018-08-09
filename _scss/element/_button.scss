@@ -31,6 +31,21 @@ a.usa-button:hover {
   }
 }
 
+.usajobs-button-gray {
+  background-color: $color-gray;
+
+  &:hover,
+  &.usa-button-hover {
+    background-color: $color-gray-dark;
+  }
+
+  &:active,
+  &.usa-button-active {
+    color: $color-white;
+    background-color: $color-base;
+  }
+}
+
 // The U.S. Standards disabled button is a little light on the "disabled"
 button:disabled,
 [type="button"]:disabled,

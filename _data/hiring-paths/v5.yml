@@ -12,7 +12,7 @@ public:
 federal-employees:
   title: Federal Employees
   text: "If you are a current or former federal employee, there are different hiring options available to you, depending on your eligibility."
-  subtext: Current or former, includes the competitive and excepted services
+  subtext: Current or former federal employees in the competitive or excepted services.
   image-alt: "A women typing on a laptop."
   icon: federal-employees-competitive
   link-path: federal-employees
@@ -25,6 +25,7 @@ federal-employees:
 veterans:
   title: Veterans
   text: "If you’re a Veteran who served on active duty in the U.S. Armed Forces and were separated under honorable conditions, you may be eligible for veterans’ preference, as well as other veteran specific hiring options."
+  subtext: Veterans of the U.S. Armed Forces.
   image-alt: "Soldier saluting the American flag."
   icon: veterans
   link-path: veterans
@@ -35,6 +36,7 @@ veterans:
 military-spouses:
   title: Military Spouses
   text: "If you're a military spouse, you may be eligible to apply using a non-competitive process designed to help you get a job in the federal government."
+  subtext: Military spouses relocating under PCS orders, or whose spouse is 100% disabled or died while on active duty.
   image-alt: "Military service member hugging his spouse."
   link-path: military-spouses
   icon: military-spouses
@@ -45,7 +47,7 @@ military-spouses:
 national-guard:
   title: National Guard & Reserves
   text: "If you’re a member of the National Guard, or are willing and able to join the National Guard, you may be eligible to apply for federal jobs located within a National Guard unit. "
-  subtext: Current or prospective members
+  subtext: Current members, those who want to join or transitioning military members.
   image-alt: "National guradsman"
   icon: national-guard
   link-path: national-guard
@@ -53,9 +55,10 @@ national-guard:
   search-filter-value: "nguard"
   include-in-index: true
 
-students:
+students-and-recent-graduates:
   title: Students & recent graduates
   text: "If you’re a current student or recent graduate, you may be eligible for federal internships and job opportunities through the Pathways and other student programs."
+  subtext: Current students or recent graduates enrolled in an accredited high schoool, college, or graduate institution.
   image-alt: "Students at a picnic table reading."
   icon: graduates
   banner-icon: graduates2
@@ -64,21 +67,45 @@ students:
   search-filter-value: "student"
   include-in-index: true
 
+students:
+  title: Students
+  text: "If you’re a current student or recent graduate, you may be eligible for federal internships and job opportunities through the Pathways and other student programs."
+  subtext: Current students enrolled in an accredited high schoool, college, or graduate institution.
+  image-alt: "Students at a picnic table reading."
+  icon: students
+  banner-icon: students
+  link-path: students
+  search-filter-desc: "Jobs open to students."
+  search-filter-value: "student"
+  include-in-index: false
+
+recent-graduates:
+  title: Recent graduate
+  text: "If you’re a recent graduate you may be eligible for federal internships and job opportunities through the Pathways and other student programs."
+  subtext: Individuals who have graduated from an accredited educational institute or certificate program within the last 2 years, or 6 years for Veterans.
+  image-alt: "Students at a picnic table reading."
+  icon: graduates
+  banner-icon: graduates
+  link-path: students
+  search-filter-desc: "Jobs open to students."
+  search-filter-value: "student"
+  include-in-index: true
+
 ses:
   title: Senior Executives
   text: "You may be eligible for a Senior Executive Service position if you meet the five Executive Core Qualifications (ECQs)."
+  subtext: Individuals looking for an executive level job.
   image-alt: "A pen resting on an open notebook."
   icon: ses
   link-path: senior-executive-service
   search-filter-desc: "Jobs open to individuals who meet the five Executive Core Qualifications (ECQs)."
-  search-filter-value:
-    - "ses"
-    - "se-other"
+  search-filter-value: "ses"
   include-in-index: true
 
 individuals-with-disabilities:
   title: Individuals with disabilities
   text: "If you're an individual with a disability, you can apply and compete for any job for which you are eligible and meet the qualifications, but you also may be eligible for a special hiring authority."
+  subtext: Individuals who are eligible under Schedule A.
   image-alt: "Male writing with mechanical pencil on paper document."
   link-path: individuals-with-disabilities
   icon: individuals-with-disabilities
@@ -89,6 +116,7 @@ individuals-with-disabilities:
 family-of-overseas-employees:
   title: Family of overseas employees
   text: "The Federal Government offers several hiring programs for family members of federal employees, or uniformed service members, who are working or have worked overseas."
+  subtext: Family members of a federal employee or uniformed service member who is, or was, working overseas.
   image-alt: "Fighter jets"
   icon: family-of-overseas-employees
   link-path: family-of-overseas-employees
@@ -99,7 +127,7 @@ family-of-overseas-employees:
 native-americans:
   title: Native Americans
   text: "If you're an American Indian or an Alaskan Native who is a member of one of the federally recognized tribes, you may be eligible for Indian Preference."
-  subtext: American Indian or Alaskan Native
+  subtext: Native Americans or Alaskan Natives with a tribal affiliation.
   image-alt: "Flags of the Native American Nations."
   icon: native-americans
   link-path: native-americans
@@ -110,6 +138,7 @@ native-americans:
 peace-corps:
   title: "Peace Corps & AmeriCorps VISTA"
   text: "If you served with the Peace Corps or AmeriCorps VISTA, you may qualify for non-competitive eligibility. This means that a federal agency can hire you outside of the formal competitive job announcement process."
+  subtext: Individuals who have served at least 2 years with the Peace Corps or 1 year with AmeriCorps VISTA.
   image-alt: "One individual helps another up a mountain."
   icon: peace-corps
   link-path: peace-corps
@@ -120,6 +149,7 @@ peace-corps:
 special-authorities:
   title: "Special authorities"
   text: "The Federal Government offers other special hiring paths (also known as a hiring authority) to help hire individuals that represent our diverse society."
+  subtext: Individuals eligible under a special authority not listed above, but defined in the federal hiring regulations.
   icon-no-image: true
   icon: special-authorities
   link-path: special-authorities
@@ -130,6 +160,7 @@ special-authorities:
 base-management:
   title: Base Management
   text: "If you’re a current or former term or temporary employee of a Base Management agency, you may be eligible to apply for merit promotion jobs at any federal agency."
+  subtext: Certain current or former term or temporary federal employees of a land or base management agency.
   icon-no-image: true
   icon: land-mgmt
   link-path: base-management
@@ -139,6 +170,7 @@ base-management:
 land-management:
   title: Land Management
   text: "If you’re a current or former term or temporary employee of a Land Management agency, you may be eligible to apply for merit promotion jobs at any federal agency."
+  subtext: Certain current or former term or temporary federal employees of a land or base management agency.
   icon-no-image: true
   icon: land-mgmt
   link-path: land-management
