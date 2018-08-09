@@ -13,8 +13,8 @@ lead: The progress indicator provides the user with context for where they are w
   This progress indicator is currently in use only within the application guide process. However, it could be reused in other contexts.
 </p>
 
+<h6 class="usa-heading-alt">Progress indicator v1</h6>
 <div class="preview" id="code-1">
-  <h6 class="usa-heading-alt">Steps</h6>
   {% include components/progress-indicator/step.html %}
 </div>
 
@@ -36,8 +36,8 @@ lead: The progress indicator provides the user with context for where they are w
   </div>
 </div>
 
+<h6 class="usa-heading-alt">Progress indicator v1 in context of the Application guide</h6>
 <div class="preview" id="code-2">
-  <h6 class="usa-heading-alt">Application guide</h6>
   {% include components/progress-indicator/app-guide.html %}
 </div>
 
@@ -55,6 +55,7 @@ lead: The progress indicator provides the user with context for where they are w
   </div>
 </div>
 
+<h6 class="usa-heading-alt">Progress indicator alt v1</h6>
 <p>
   This progress bar will be used in the new user on-boarding experience.
 </p>
@@ -84,6 +85,36 @@ lead: The progress indicator provides the user with context for where they are w
     <h5>When to consider something else</h5>
     <ul class="usa-content-list">
       <li>Do not use this progress indicator for a process with more than 3 steps.</li>
+    </ul>
+  </div>
+</div>
+
+<h6 class="usa-heading-alt">Steps v1</h6>
+<div class="preview" id="code-4">
+  {% include components/progress-indicator/step-indicator.html %}
+</div>
+<div class="usa-accordion-bordered usa-accordion-docs">
+  <button class="usa-button-unstyled usa-accordion-button"
+      aria-expanded="true" aria-controls="doc-4">
+    Documentation
+  </button>
+  <div id="doc-4" aria-hidden="false" class="usa-accordion-content">
+    <h4 class="usa-heading">Usability</h4>
+    <h5>When to use</h5>
+    <ul class="usa-content-list">
+      <li>
+        Use the step indicators when you want to highlight steps but don't need a full progress indicator in the current context. For example, these step indicators are used in new user onboarding when showing an initial summary of the steps the user will go through on subsequent pages.
+      </li>
+    </ul>
+    <h5>When to consider something else</h5>
+    <ul class="usa-content-list">
+      <li>Do not use step indicators for other numbering contexts. An ordered list will suffice in most instances.</li>
+      <li>Do not use step indicators instead of one of the progress indicators above.</li>
+    </ul>
+
+    <h4 class="usa-heading">Implementation</h4>
+    <ul class="usa-content-list">
+      <li>The steps utilize an ordered list to stick to semantic UI standards.</li>
     </ul>
   </div>
 </div>

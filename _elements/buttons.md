@@ -61,6 +61,14 @@ lead: USAJOBS alters the disabled button and adds a secondary button style.
     <button class="usa-button usajobs-button-secondary-alert usa-button-hover">Hover</button>
     <button class="usa-button usajobs-button-secondary-alert usa-button-focus">Focus</button>
   </div>
+
+  <h6>Alt - Gray variation</h6>
+  <div class="button_wrapper">
+    <button class="usa-button usajobs-button-gray">Default</button>
+    <button class="usa-button usajobs-button-gray usa-button-active">Active</button>
+    <button class="usa-button usajobs-button-gray usa-button-hover">Hover</button>
+    <button class="usa-button usajobs-button-gray usa-button-focus">Focus</button>
+  </div>
 </div>
 
 <div class="usa-accordion-bordered usa-accordion-docs">
@@ -73,6 +81,9 @@ lead: USAJOBS alters the disabled button and adds a secondary button style.
     <h5>When to use</h5>
     <ul class="usa-content-list">
       <li>The alert secondary button is intended for destructive actions or actions that will take the user outside of USAJOBS.</li>
+      <li>
+        The gray button retains a button that had been in the U.S. Design System but was dropped. It's still in use on the site and we'll continue to support use when deemed appropriate.
+      </li>
     </ul>
   </div>
 </div>

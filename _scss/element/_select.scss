@@ -27,3 +27,8 @@ select {
 .select2-container .select2-selection--single .select2-selection__rendered {
   padding-right: 28px;
 }
+
+.select2-container--default .select2-results__option--highlighted[aria-selected] {
+  color: $color-base;
+  background-color: $color-primary-alt-lightest;
+}

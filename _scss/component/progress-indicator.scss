@@ -143,7 +143,33 @@
 	}
 }
 
+.usajobs-progress_indicator,
+.usajobs-step-indicator {
+	.circle {
+		margin: $size-base auto $size-XS;
+		text-align: center;
+
+		@include media($L) {
+			font-size: $lead-font-size;
+			text-decoration: none;
+			margin-bottom: $size-base;
+		}
+
+		&:hover {
+			cursor: pointer;
+		}
+	}
+}
+
 .usajobs-progress_indicator {
+	.circle {
+		@include makeCircle(35px, $color-gray-light, none, $color-gray-light);
+
+		@include media($L) {
+			@include makeCircle(45px, $color-gray-light, none, $color-gray-light);
+		}
+	}
+
   &__step.is-current {
     .circle {
       color: $color-white;
@@ -169,6 +195,17 @@
   }
 }
 
+.usajobs-step-indicator {
+  @include unstyledList();
+
+	.circle {
+		@include makeCircle(35px, $color-primary-darkest, none, $color-primary-darkest);
+
+		@include media($L) {
+		  @include makeCircle(45px, $color-primary-darkest, none, $color-primary-darkest);
+		}
+	}
+}
 
 // Applicaiton guide layout
 // Odd place for this but, wanted to show it in context of the app guide banner
