@@ -32,3 +32,11 @@ select {
   color: $color-base;
   background-color: $color-primary-alt-lightest;
 }
+
+.select2-container {
+  width: 100% !important;
+
+  @include media($SM) {
+    width: 460px !important;
+  }
+}

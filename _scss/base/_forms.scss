@@ -254,3 +254,34 @@ select[disabled] {
   color: #757575;
   font-weight: normal;
 }
+
+.usajobs-form-autocomplete--single {
+  &__list {
+    @include unstyledList();
+  }
+
+  &__list > &__selected {
+    // Mimics a text input
+    height: 4.4rem;
+    margin: 0.2em 0;
+    padding: $size-S 0.7em;
+    border: 0.1rem solid $color-gray;
+    max-width: $input-max-width;
+  }
+
+  &__remove-selection {
+    padding: $size-S $size-XS;
+    color: $color-secondary;
+    font-size: $h4-font-size;
+    vertical-align: middle;
+    line-height: 1;
+
+    &:visited {
+      color: $color-secondary;
+    }
+
+    &:hover {
+      color: $color-secondary-darkest;
+    }
+  }
+}

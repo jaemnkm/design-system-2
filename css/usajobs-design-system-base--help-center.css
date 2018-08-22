@@ -5802,6 +5802,50 @@ select[disabled] {
   font-weight: normal;
 }
 
+.usajobs-form-autocomplete--single__list {
+  display: block;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.usajobs-form-autocomplete--single__list > li {
+  display: list-item;
+  margin: 0;
+}
+
+.usajobs-form-autocomplete--single__list > li:before {
+  display: none;
+}
+
+.usajobs-form-autocomplete--single__list > li:after {
+  display: none;
+}
+
+.usajobs-form-autocomplete--single__list > .usajobs-form-autocomplete--single__selected {
+  height: 4.4rem;
+  margin: 0.2em 0;
+  padding: 1rem 0.7em;
+  border: 0.1rem solid #5b616b;
+  max-width: 46rem;
+}
+
+.usajobs-form-autocomplete--single__remove-selection {
+  padding: 1rem 0.25rem;
+  color: #e31c3d;
+  font-size: 1.9rem;
+  vertical-align: middle;
+  line-height: 1;
+}
+
+.usajobs-form-autocomplete--single__remove-selection:visited {
+  color: #e31c3d;
+}
+
+.usajobs-form-autocomplete--single__remove-selection:hover {
+  color: #981b1e;
+}
+
 body {
   font-size: 17px;
 }
@@ -6288,6 +6332,16 @@ select {
 .select2-container--default .select2-results__option--highlighted[aria-selected] {
   color: #212121;
   background-color: #e1f3f8;
+}
+
+.select2-container {
+  width: 100% !important;
+}
+
+@media screen and (min-width: 30em) {
+  .select2-container {
+    width: 460px !important;
+  }
 }
 
 svg:not(:root) {
