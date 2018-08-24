@@ -5461,6 +5461,15 @@ img {
   -webkit-appearance: none;
 }
 
+.usajobs-form input[type=number]::-webkit-inner-spin-button,
+.usajobs-form input[type=number]::-webkit-outer-spin-button,
+.usajobs-content-well .usajobs-form input[type=number]::-webkit-inner-spin-button,
+.usajobs-content-well .usajobs-form input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+
 .usajobs-form legend,
 .usajobs-content-well .usajobs-form legend {
   width: 100%;
@@ -5485,6 +5494,21 @@ img {
     display: inline-block;
     float: right;
   }
+}
+
+.usajobs-form__label-header,
+.usajobs-content-well .usajobs-form__label-header {
+  margin-top: 3rem;
+}
+
+.usajobs-form__label-header .usa-input-label-helper,
+.usajobs-content-well .usajobs-form__label-header .usa-input-label-helper {
+  font-weight: normal;
+}
+
+.usajobs-form__divider,
+.usajobs-content-well .usajobs-form__divider {
+  border-top: 1px solid #d6d7d9;
 }
 
 .usajobs-form .usajobs-fieldset,
@@ -5536,6 +5560,15 @@ img {
     margin-top: 0;
     padding-left: 1.5rem;
   }
+}
+
+.usajobs-form .usajobs-fieldset--horizontal__col-in-group,
+.usajobs-content-well .usajobs-form .usajobs-fieldset--horizontal__col-in-group {
+  clear: none;
+  display: block;
+  float: left;
+  margin-right: 1.5rem;
+  width: 9rem;
 }
 
 @media screen and (min-width: 48em) {
@@ -5631,6 +5664,14 @@ img {
   margin-top: 0.5rem;
   font-size: 1.4rem;
   max-width: 46rem;
+}
+
+.usajobs-form__help-brief + .usajobs-form__sub-title,
+.usajobs-content-well .usajobs-form__help-brief + .usajobs-form__sub-title, .usajobs-form__help-brief +
+.usajobs-content-well .usajobs-form__sub-title,
+.usajobs-content-well .usajobs-form__help-brief +
+.usajobs-content-well .usajobs-form__sub-title {
+  margin-top: 3rem;
 }
 
 .usajobs-form__help-extended,
