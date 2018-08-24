@@ -22,6 +22,14 @@
     -webkit-appearance: none;
   }
 
+  // Defeat Chrome's number spinner
+  input[type=number]::-webkit-inner-spin-button,
+  input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    appearance: none;
+    margin: 0;
+  }
+
   legend {
     width: 100%;
     font-size: $h3-font-size;
@@ -41,6 +49,18 @@
       display: inline-block;
       float: right;
     }
+  }
+
+  &__label-header {
+    margin-top: $size-M;
+
+    .usa-input-label-helper {
+      font-weight: normal;
+    }
+  }
+
+  &__divider {
+    border-top: 1px solid $color-gray-lighter;
   }
 
   .usajobs-fieldset {
@@ -79,6 +99,14 @@
         margin-top: 0;
         padding-left: $size-default;
       }
+    }
+
+    &__col-in-group {
+      clear: none;
+      display: block;
+      float: left;
+      margin-right: $size-default;
+      width: 9rem;
     }
 
     &__col,
@@ -128,6 +156,10 @@
     margin-top: $size-base;
     font-size: $small-font-size;
     max-width: $input-max-width;
+  }
+
+  &__help-brief + &__sub-title {
+    margin-top: $size-M;
   }
 
   &__help-extended {
