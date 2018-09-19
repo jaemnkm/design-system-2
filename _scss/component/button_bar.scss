@@ -72,6 +72,15 @@
   }
 }
 
+.usajobs-button_bar--slim-left,
+.usajobs-button-bar--slim-left{
+
+  .usajobs-button_bar__body,
+  .usajobs-button-bar__body {
+    text-align:left;
+  }
+}
+
 .usajobs-button_bar--split,
 .usajobs-button-bar--split {
   @include buttonBar();
