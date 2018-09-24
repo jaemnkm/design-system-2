@@ -10,3 +10,5 @@ _archive
 npm-debug.log
 node_modules
 visual_design_assets
+.ruby-gemset
+.ruby-version
