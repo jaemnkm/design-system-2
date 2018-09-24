@@ -31,6 +31,15 @@ lead: A container for buttons, links, and calls-to-action.
     </div>
   </div>
 
+  <h6 class="usa-heading-alt">Slim, left aligned</h6>
+  <div class="usajobs-button_bar--slim usajobs-button_bar--slim-left">
+    <div class="usajobs-button_bar__body">
+      <a href="#success" class="usa-button-big usa-button-primary usajobs-button_bar__save">
+        Save
+      </a>
+    </div>
+  </div>
+
   <h6 class="usa-heading-alt">Split</h6>
   <div class="usajobs-button-bar--split">
     <div class="usajobs-button-bar__body">
@@ -59,6 +68,12 @@ lead: A container for buttons, links, and calls-to-action.
       </li>
       <li>
         Use the slim variation when there is only one button.
+      </li>
+      <li>
+        Use the slim, left-aligned variation in edge cases when there is only one button and the content on a process step is heavily left-aligned. (See <a href="https://en.wikipedia.org/wiki/Fitts%27s_law" title="Definition of Fitts's Law on Wikipedia" target="_blank">Fitts's Law</a>).
+        <ul>
+          <li>Do not use this variation if using the other button-bar variations within a flow. While it is okay to use this variation at the start or end, don't switch variations mid-stream.</li>
+        </ul>
       </li>
     </ul>
   </div>
