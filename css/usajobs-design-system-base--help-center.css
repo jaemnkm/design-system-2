@@ -3217,6 +3217,12 @@ li.usa-footer-primary-content:last-child {
   display: none;
 }
 
+@media screen and (min-width: 600px) {
+  .usa-footer-big ul.hidden li {
+    display: block;
+  }
+}
+
 .usa-footer-big ul.hidden .usa-footer-primary-link {
   /* stylelint-disable-line selector-no-qualifying-type */
   background-image: url("../img/arrow-right.png");
@@ -9079,7 +9085,7 @@ html {
 
 .usajobs-footer--v1 .usa-footer-primary-section .usa-footer-primary-content.hidden .usa-footer-primary-link,
 .usajobs-footer--v2 .usa-footer-primary-section .usa-footer-primary-content.hidden .usa-footer-primary-link,
-.usajobs-footer--v3 .usa-footer-primary-section .usa-footer-primary-content.hidden .usa-footer-primary-link,
+.usajobs-footer--v3 .usa-footer-primary-section .usa-footer-primary-link,
 .usajobs-footer--joa .usa-footer-primary-section .usa-footer-primary-content.hidden .usa-footer-primary-link,
 .usajobs-footer--openopps .usa-footer-primary-section .usa-footer-primary-content.hidden .usa-footer-primary-link {
   padding: 3rem 0;
