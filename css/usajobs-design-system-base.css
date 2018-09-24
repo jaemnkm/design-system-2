@@ -3217,17 +3217,6 @@ li.usa-footer-primary-content:last-child {
   display: none;
 }
 
-@media screen and (min-width: 600px) {
-  .usa-footer-big ul.hidden li {
-    display: block;
-  }
-
-  .usa-footer-big ul.hidden {
-    /* stylelint-disable-line selector-no-qualifying-type */
-    padding-bottom: 0;
-  }
-}
-
 .usa-footer-big ul.hidden .usa-footer-primary-link {
   /* stylelint-disable-line selector-no-qualifying-type */
   background-image: url("../img/arrow-right.png");

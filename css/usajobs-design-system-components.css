@@ -1011,7 +1011,7 @@ html {
 
 .usajobs-footer--v1 .usa-footer-primary-section .usa-footer-primary-content.hidden .usa-footer-primary-link,
 .usajobs-footer--v2 .usa-footer-primary-section .usa-footer-primary-content.hidden .usa-footer-primary-link,
-.usajobs-footer--v3 .usa-footer-primary-section .usa-footer-primary-link,
+.usajobs-footer--v3 .usa-footer-primary-section .usa-footer-primary-content.hidden .usa-footer-primary-link,
 .usajobs-footer--joa .usa-footer-primary-section .usa-footer-primary-content.hidden .usa-footer-primary-link,
 .usajobs-footer--openopps .usa-footer-primary-section .usa-footer-primary-content.hidden .usa-footer-primary-link {
   padding: 3rem 0;
@@ -5373,6 +5373,13 @@ html {
 .usajobs-button-bar--slim .usajobs-button-bar__save {
   display: inline-block;
   float: none;
+}
+
+.usajobs-button_bar--slim-left .usajobs-button_bar__body,
+.usajobs-button_bar--slim-left .usajobs-button-bar__body,
+.usajobs-button-bar--slim-left .usajobs-button_bar__body,
+.usajobs-button-bar--slim-left .usajobs-button-bar__body {
+  text-align: left;
 }
 
 .usajobs-button_bar--split,
