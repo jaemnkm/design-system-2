@@ -94,6 +94,10 @@
   .usa-footer-primary-section .usa-footer-primary-content.hidden .usa-footer-primary-link {
     padding: $size-M 0;
 
+    @include media($M) {
+      padding: $size-M 0 $size-S;
+    }
+
     .usajobs-icon {
       @include transform(none);
     }
@@ -223,6 +227,12 @@
       @include media($SM) {
         padding-left: 0;
       }
+    }
+  }
+
+  &.usa-footer-big .usa-footer-primary-section .usa-footer-primary-content li {
+    @include media($M) {
+      display: block;
     }
   }
 }
