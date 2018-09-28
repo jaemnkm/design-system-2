@@ -28,8 +28,6 @@
 }
 
 @mixin buttonBarSlim ($align) {
-
-
   .usajobs-button_bar__body,
   .usajobs-button-bar__body {
     padding-left: 0;
@@ -73,6 +71,7 @@
 .usajobs-button-bar--slim {
   @include buttonBar();
   @include buttonBarSlim(right);
+  // top horizontal rule
   margin: $size-M 0 $size-XL;
   border-top: 1px solid $color-gray-lighter;
 }
