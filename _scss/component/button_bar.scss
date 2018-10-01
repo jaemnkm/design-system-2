@@ -27,6 +27,21 @@
   }
 }
 
+@mixin buttonBarSlim ($align) {
+  .usajobs-button_bar__body,
+  .usajobs-button-bar__body {
+    padding-left: 0;
+    padding-right: 0;
+    text-align: $align;
+  }
+
+  .usajobs-button_bar__save,
+  .usajobs-button-bar__save {
+    display: inline-block;
+    float: none;
+  }
+};
+
 // It should have been named button-bar and not button_bar but, I goofed so
 // I added the correct one and kept the underscore version to be backward compatible
 .usajobs-button_bar,
@@ -55,30 +70,16 @@
 .usajobs-button_bar--slim,
 .usajobs-button-bar--slim {
   @include buttonBar();
+  @include buttonBarSlim(right);
+  // top horizontal rule
   margin: $size-M 0 $size-XL;
   border-top: 1px solid $color-gray-lighter;
-
-  .usajobs-button_bar__body,
-  .usajobs-button-bar__body {
-    padding-left: 0;
-    padding-right: 0;
-    text-align: right;
-  }
-
-  .usajobs-button_bar__save,
-  .usajobs-button-bar__save {
-    display: inline-block;
-    float: none;
-  }
 }
 
 .usajobs-button_bar--slim-left,
 .usajobs-button-bar--slim-left{
-
-  .usajobs-button_bar__body,
-  .usajobs-button-bar__body {
-    text-align:left;
-  }
+  @include buttonBar();
+  @include buttonBarSlim(left);
 }
 
 .usajobs-button_bar--split,
