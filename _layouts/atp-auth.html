@@ -3,17 +3,18 @@
 <!--[if gt IE 8]><!--><html lang="en"><!--<![endif]-->
   <head>
     {% include prod-head.html %}
-    <link rel="stylesheet" href="{{ site.baseurl }}/css/layouts/atp.css" />
+    <link rel="stylesheet" href="{{ site.baseurl }}/css/layouts/auth.css" />
   </head>
-  <body class="{{ page.title | slugify }} ">
-    {% include components/nav-atp.html %}
+  <body class="{{ page.title | slugify }} usajobs-auth">
+    {% include components/nav/atp-auth.html %}
     <section class="usajobs-shell">
       <section class="usajobs-canvas">
-        <div class="usajobs-content-gutter">
+        <div class="usajobs-content-gutter usajobs-auth--tall">
           {{ content }}
         </div>
       </section>
     </section>
+    {% include components/footer/v3/minimal.html %}
     {% include scripts.html %}
   </body>
 </html>

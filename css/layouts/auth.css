@@ -17,6 +17,18 @@ html {
   clip: rect(0 0 0 0) !important;
 }
 
+@media screen and (min-width: 37.5em) {
+  .usajobs-auth {
+    background-color: #f1f1f1;
+  }
+}
+
+@media screen and (min-width: 37.5em) {
+  .usajobs-auth .usajobs-shell {
+    background-color: #f1f1f1;
+  }
+}
+
 .usajobs-auth .usajobs-button_bar--slim,
 .usajobs-auth .usajobs-login-terms {
   max-width: 60rem;
@@ -37,6 +49,22 @@ html {
   font-size: 1.4rem;
 }
 
+.usajobs-auth__content-well {
+  background-color: #ffffff;
+  padding: 1.5rem;
+}
+
+@media screen and (min-width: 37.5em) {
+  .usajobs-auth__content-well {
+    margin-top: 3rem;
+  }
+}
+
+.usajobs-auth__return-home {
+  margin-top: 3rem;
+  font-size: 1.4rem;
+}
+
 .usajobs-login-terms-accordion {
   width: 100%;
 }
@@ -45,4 +73,7 @@ html {
   font-size: 1.4rem;
 }
 
+.usajobs-auth--tall {
+  min-height: 80vh;
+}
 /*# sourceMappingURL=auth.css.map */
