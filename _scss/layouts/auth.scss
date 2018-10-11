@@ -3,6 +3,16 @@
 @import '../base-shared';
 
 .usajobs-auth {
+  @include media($M) {
+    background-color: $color-gray-lightest;
+  }
+
+  .usajobs-shell {
+    @include media($M) {
+      background-color: $color-gray-lightest;
+    }
+  }
+
   .usajobs-button_bar--slim,
   .usajobs-login-terms {
     max-width: $article-max-width;
@@ -26,6 +36,20 @@
       font-size: $small-font-size;
     }
   }
+
+  &__content-well {
+    background-color: $color-white;
+    padding: $size-default;
+
+    @include media($M) {
+      margin-top: $size-M;
+    }
+  }
+
+  &__return-home {
+    margin-top: $size-M;
+    font-size: $small-font-size;
+  }
 }
 
 .usajobs-login-terms-accordion {
@@ -36,4 +60,8 @@
   p {
     font-size: $small-font-size;
   }
+}
+
+.usajobs-auth--tall {
+  min-height: 80vh;
 }

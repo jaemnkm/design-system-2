@@ -87,3 +87,22 @@ lead: USAJOBS uses a large footer that incorporates navigation.
     </ul>
   </div>
 </div>
+
+<h6 class="usa-heading-alt">Minimal (v3)</h6>
+<div class="preview full-bleed" id="code-2">
+  {% include components/footer/v3/minimal.html %}
+</div>
+
+<div class="usa-accordion-bordered usa-accordion-docs">
+  <button class="usa-button-unstyled usa-accordion-button"
+      aria-expanded="true" aria-controls="doc-1">
+    Documentation
+  </button>
+  <div id="doc-1" aria-hidden="false" class="usa-accordion-content">
+    <h4 class="usa-heading">Usability</h4>
+    <h5>When to use</h5>
+    <ul class="usa-content-list">
+      <li>This variation of the footer is used on pages where navigation away from the page is not desired such as authentication pages.</li>
+    </ul>
+  </div>
+</div>

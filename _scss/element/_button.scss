@@ -155,3 +155,27 @@ button:disabled,
 .usajobs-toggle--search-view {
   float: right;
 }
+
+.usajobs-button--link {
+  display: inline-block;
+  margin: auto;
+  padding: 0;
+  background-color: $color-white;
+  border-radius: 0;
+  color: $color-primary;
+  font-size: $base-font-size;
+  line-height: $base-line-height;
+  text-align: inherit;
+  font-weight: normal;
+  text-decoration: underline;
+
+  &:hover {
+    background-color: $color-white;
+    color: $color-primary-darker;
+    text-decoration: underline;
+  }
+}
+
+input[type="submit"].usajobs-button--link {
+  @include appearance(none);
+}
