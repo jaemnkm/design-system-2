@@ -65,6 +65,38 @@ html {
   font-size: 1.4rem;
 }
 
+.usajobs-auth p.usajobs-auth__agree-to-terms {
+  margin-top: 1.5rem;
+  font-size: 1.4rem;
+}
+
+.usajobs-auth__piv {
+  border-top: 1px solid #aeb0b5;
+}
+
+@media screen and (min-width: 37.5em) {
+  .usajobs-auth__piv {
+    border-top: 0px;
+    border-left: 1px solid #aeb0b5;
+    padding-left: 3rem;
+  }
+}
+
+@media screen and (min-width: 62em) {
+  .usajobs-auth__piv {
+    padding-left: 4.5rem;
+  }
+}
+
+.usajobs-auth__piv-card {
+  display: block;
+  margin-top: 3rem;
+}
+
+.usajobs-auth__piv-first-time {
+  margin-top: 3rem;
+}
+
 .usajobs-login-terms-accordion {
   width: 100%;
 }
@@ -77,4 +109,9 @@ html {
   min-height: 80vh;
 }
 
+@media screen and (min-width: 62em) {
+  .usajobs-auth--wide {
+    min-width: 900px;
+  }
+}
 /*# sourceMappingURL=auth.css.map */
