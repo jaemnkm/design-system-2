@@ -21,15 +21,12 @@ html {
   display: -webkit-box;
   display: -moz-box;
   display: box;
-  display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-lines: multiple;
   -moz-box-lines: multiple;
   box-lines: multiple;
-  -webkit-flex-wrap: wrap;
-  -moz-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   font-size: 1.4rem;
@@ -40,10 +37,7 @@ html {
 
 .usajobs-joa-prev-next__prev, .usajobs-joa-prev-next__back, .usajobs-joa-prev-next__next {
   display: block;
-  -webkit-box-flex: 1;
-  -moz-box-flex: 1;
   box-flex: 1;
-  -webkit-flex: 1;
   -moz-flex: 1;
   -ms-flex: 1;
   flex: 1;
@@ -519,7 +513,6 @@ html {
 }
 
 .no-flexbox .usajobs-joa-intro-hiring-paths__body {
-  width: -webkit-calc(100% -  6.1rem);
   width: calc(100% -  6.1rem);
 }
 
@@ -531,14 +524,10 @@ html {
   display: -webkit-box;
   display: -moz-box;
   display: box;
-  display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: top;
-  -moz-box-align: top;
   box-align: top;
-  -webkit-align-items: top;
   -moz-align-items: top;
   -ms-align-items: top;
   -o-align-items: top;
@@ -547,17 +536,12 @@ html {
 }
 
 .flexbox .usajobs-joa-intro-hiring-paths__figure {
-  -webkit-flex-shrink: 0;
-  -moz-flex-shrink: 0;
   flex-shrink: 0;
   -ms-flex-negative: 0;
 }
 
 .flexbox .usajobs-joa-intro-hiring-paths__body {
-  -webkit-box-flex: 1;
-  -moz-box-flex: 1;
   box-flex: 1;
-  -webkit-flex: 1;
   -moz-flex: 1;
   -ms-flex: 1;
   flex: 1;
@@ -690,7 +674,6 @@ html {
 }
 
 .no-flexbox .usajobs-joa-intro-second-announcement__body {
-  width: -webkit-calc(100% -  6.1rem);
   width: calc(100% -  6.1rem);
 }
 
@@ -702,14 +685,10 @@ html {
   display: -webkit-box;
   display: -moz-box;
   display: box;
-  display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: top;
-  -moz-box-align: top;
   box-align: top;
-  -webkit-align-items: top;
   -moz-align-items: top;
   -ms-align-items: top;
   -o-align-items: top;
@@ -718,17 +697,12 @@ html {
 }
 
 .flexbox .usajobs-joa-intro-second-announcement__figure {
-  -webkit-flex-shrink: 0;
-  -moz-flex-shrink: 0;
   flex-shrink: 0;
   -ms-flex-negative: 0;
 }
 
 .flexbox .usajobs-joa-intro-second-announcement__body {
-  -webkit-box-flex: 1;
-  -moz-box-flex: 1;
   box-flex: 1;
-  -webkit-flex: 1;
   -moz-flex: 1;
   -ms-flex: 1;
   flex: 1;
@@ -870,7 +844,6 @@ html {
 }
 
 .no-flexbox .usajobs-joa-locations__body {
-  width: -webkit-calc(100% -  6.1rem);
   width: calc(100% -  6.1rem);
 }
 
@@ -882,14 +855,10 @@ html {
   display: -webkit-box;
   display: -moz-box;
   display: box;
-  display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: top;
-  -moz-box-align: top;
   box-align: top;
-  -webkit-align-items: top;
   -moz-align-items: top;
   -ms-align-items: top;
   -o-align-items: top;
@@ -898,17 +867,12 @@ html {
 }
 
 .flexbox .usajobs-joa-locations__figure {
-  -webkit-flex-shrink: 0;
-  -moz-flex-shrink: 0;
   flex-shrink: 0;
   -ms-flex-negative: 0;
 }
 
 .flexbox .usajobs-joa-locations__body {
-  -webkit-box-flex: 1;
-  -moz-box-flex: 1;
   box-flex: 1;
-  -webkit-flex: 1;
   -moz-flex: 1;
   -ms-flex: 1;
   flex: 1;
@@ -1518,5 +1482,4 @@ html {
 .usajobs-joa-agency-modal .usajobs-joa-agency--v1-5__learn-more {
   display: none;
 }
-
 /*# sourceMappingURL=usajobs-design-system-components-joa.css.map */

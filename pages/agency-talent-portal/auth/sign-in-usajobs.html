@@ -4,13 +4,13 @@ layout: atp-auth
 title: Sign in USAJOBS
 ---
 
-<main class="usajobs-content-well usajobs-auth__content-well" id="main-content" role="main" aria-label="Forgot password">
+<main class="usajobs-content-well usajobs-auth__content-well usajobs-auth--wide" id="main-content" role="main" aria-label="Forgot password">
   <div class="usajobs-grid">
     <h1>Sign in</h1>
   </div>
   <div class="usajobs-grid">
     <div class="usa-width-two-thirds">
-      <p><strong>Sign in with a USAJOBS account</strong></p>
+      <h4>Sign in with a USAJOBS account</h4>
       <form class="usajobs-form usajobs-form" action="/account/signin" method="post" novalidate="novalidate">
         <fieldset class="usajobs-fieldset">
           <label for="input-01">Email</label>
@@ -22,23 +22,33 @@ title: Sign in USAJOBS
               <a href="{{ site.baseurl }}/agency-talent-portal/auth/check-email/" class="usa-button usa-button-primary usajobs-button_bar__save">
                 Sign in
               </a>
+              <p class="usajobs-auth__agree-to-terms">
+                By clicking "Sign in" you agree to our <a href="https://www.usajobs.gov/Help/terms-and-conditions/" target="_blank">terms and conditions</a>.
+              </p>
             </div>
           </div>
         </fieldset>
       </form>
     </div>
-    <div class="usa-width-one-third">
-      <p><strong>Sign in with PIV card</strong></p>
-      <a href="#" title="Sign in with PIV card"><i class="far fa-id-badge fa-9x" alt="Sign in with PIV card"></i></a>
-      <p>First time signing in? Register your PIV card by first signing in with your email and password.</p>
+    <div class="usa-width-one-third usajobs-auth__piv">
+      <h4>Sign in with PIV card</h4>
+      <a class="usajobs-auth__piv-card" href="#" title="Sign in with PIV card">
+        <i class="far fa-id-badge fa-9x" alt="Sign in with PIV card"></i>
+      </a>
+      <h5 class="usajobs-auth__piv-first-time">First time signing in?</h5> 
+      <p class="usajobs-form__help-brief">
+        Register your PIV card by first signing in with your email and password.
+      </p>
     </div>
   </div>
   <div class="usajobs-grid">
-    <p class="usajobs-landing--login-transition-terms">
-       By clicking "Sign in" you agree to our <a href="https://www.usajobs.gov/Help/terms-and-conditions/" target="_blank">terms and conditions</a>.
-     </p>
-     <p><a href="{{ site.baseurl }}/agency-talent-portal/auth/forgot-password/">Forgot your password?</a><br />Contact you agency adminstrator or <a href="mailto:recruiter-help@usajobs.gov">recruiter-help@usajobs.gov</a> to create an account.</p>
-   </div>
+    <p>
+      <a href="{{ site.baseurl }}/agency-talent-portal/auth/forgot-password/">Forgot your password?</a>
+    </p>
+    <p>
+      Need to create an account? Contact you agency adminstrator or <a href="mailto:recruiter-help@usajobs.gov">recruiter-help@usajobs.gov</a>.
+    </p>
+  </div>
 </main>
 
 <!-- aside class="usajobs-rightrail usajobs-auth__terms">
