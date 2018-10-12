@@ -207,6 +207,7 @@ html {
 }
 
 .no-flexbox .usajobs-ds-home-research-pillars__body {
+  width: -webkit-calc(100% -  11.3rem);
   width: calc(100% -  11.3rem);
 }
 
@@ -218,10 +219,14 @@ html {
   display: -webkit-box;
   display: -moz-box;
   display: box;
+  display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: start;
+  -moz-box-align: start;
   box-align: start;
+  -webkit-align-items: flex-start;
   -moz-align-items: flex-start;
   -ms-align-items: flex-start;
   -o-align-items: flex-start;
@@ -230,15 +235,21 @@ html {
 }
 
 .flexbox .usajobs-ds-home-research-pillars__figure {
+  -webkit-flex-shrink: 0;
+  -moz-flex-shrink: 0;
   flex-shrink: 0;
   -ms-flex-negative: 0;
 }
 
 .flexbox .usajobs-ds-home-research-pillars__body {
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
   box-flex: 1;
+  -webkit-flex: 1;
   -moz-flex: 1;
   -ms-flex: 1;
   flex: 1;
   min-width: 0;
 }
+
 /*# sourceMappingURL=design-system-home.css.map */
