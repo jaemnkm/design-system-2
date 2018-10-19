@@ -660,6 +660,11 @@ html {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 }
 
+.usajobs-card-buttons .usajobs-card-button--square:focus-within, .usajobs-card-buttons .usajobs-card-button--slim:focus-within, .usajobs-card-buttons .usajobs-card-button--long:focus-within, .usajobs-card-buttons .usajobs-card-button--triad:focus-within {
+  outline: 2px dotted #aeb0b5;
+  outline-offset: 3px;
+}
+
 .usajobs-card-buttons .usajobs-card-button--square [type=radio] + label,
 .usajobs-card-buttons .usajobs-card-button--square [type=checkbox] + label, .usajobs-card-buttons .usajobs-card-button--slim [type=radio] + label,
 .usajobs-card-buttons .usajobs-card-button--slim [type=checkbox] + label, .usajobs-card-buttons .usajobs-card-button--long [type=radio] + label,
