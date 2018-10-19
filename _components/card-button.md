@@ -21,7 +21,7 @@ lead: A component used in forms to augment the tap/clickable area of checkboxes 
       {%  assign id = forloop.index0 %}
     <li class="usajobs-card-button--slim">
       <input type="checkbox" value="{{ id }}" name="hiring_paths[]" id="hiring_path_ids_{{ id }}">
-      <label for="hiring_path_ids_{{ id }}">
+      <label for="hiring_path_ids_{{ id }}" tabindex="{{id}}">
         <div class="usajobs-unique-hiring-paths__icon">
           <svg class="usajobs-icon--hiring-path">
             <use xlink:href="#{{ section.icon }}"></use>
