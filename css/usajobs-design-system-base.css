@@ -1548,7 +1548,7 @@ legend {
 [type=checkbox],
 [type=radio] {
   position: absolute;
-  left: -999em;
+  opacity: 0;
 }
 
 .lt-ie9 [type=checkbox], .lt-ie9
