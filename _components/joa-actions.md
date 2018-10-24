@@ -34,11 +34,6 @@ lead: Users can print, share, or save a job announcement.
             </a>
           </li>
           <li class="usajobs-joa-actions-share__item">
-            <a href="https://plus.google.com/share?url=https%3A%2F%2Fwww.usajobs.gov%2FGetJob%2FViewDetails%2F444821100" class="usajobs-joa-actions-share__link google" target="_blank" data-behavior="joa-actions.close-share" data-target="#joa-share-menu">
-              <i class="fa fa-google-plus-square"></i> <span class="sr-only">Google+</span>
-            </a>
-          </li>
-          <li class="usajobs-joa-actions-share__item">
             <a href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fwww.usajobs.gov%2FGetJob%2FViewDetails%2F444821100%2F%3Fshare%3Dlinkedin&title=USAJOBS%20-%20Job%20Announcement&ro=false&summary=&source=" class="usajobs-joa-actions-share__link linkedin" target="_blank" data-behavior="joa-actions.close-share" data-target="#joa-share-menu">
               <i class="fa fa-linkedin-square"></i> <span class="sr-only">LinkedIn</span>
             </a>
