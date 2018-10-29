@@ -1,12 +1,12 @@
-**Type:** foo
+**Type:** What kind of issue is this?
 
-**Timeline:** Month 20XX
+**Timeline:** MM/DD/YY
 
 -----
 
 **Description:**
 
-Enter your description ...
+Enter a description for the issue ...
 
 -----
 
