@@ -10,7 +10,7 @@ Enter a description for the issue ...
 
 -----
 
-**To do:***
+**To do:**
 
 - [ ] Step 1
 - [ ] Step 2
