@@ -44,6 +44,7 @@ $ rbenv global
 Now that you have verified that you have Ruby and Node installed, run the following commands to install the packages that the design system depends upon:
 
 ```shell
+$ bundle install
 $ npm install -g grunt-cli
 $ npm install
 $ npm run build
@@ -65,7 +66,7 @@ Questions or need help with setup? Feel free to open an issue here [https://gith
 
 ### How to use this repo in projects
 
-We will create a new repo for each project that will incrementally redesign a portion of the USAJOBS site. Those project repos will depend on the usajobs-design-system node module. 
+We will create a new repo for each project that will incrementally redesign a portion of the USAJOBS site. Those project repos will depend on the usajobs-design-system node module.
 
 If you have node installed on your machine, you can use npm to install the design system. Add usajobs-design-system to your project's package.json as a dependency:
 
