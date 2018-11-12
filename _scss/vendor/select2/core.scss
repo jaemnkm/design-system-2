@@ -52,6 +52,8 @@
   margin: 0.2em 0;
 }
 
+@import "../../base/var/colors"
+
 .select2-container--default .select2-selection--single,
 .select2-container--default .select2-selection--multiple {
   border-radius: inherit;
