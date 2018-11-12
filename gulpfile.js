@@ -1,4 +1,4 @@
-var gulp = require('gulp');
+﻿var gulp = require('gulp');
 var log = require('fancy-log');
 var del = require('del');
 var sass = require('gulp-sass');
@@ -6,6 +6,7 @@ var sourcemaps = require('gulp-sourcemaps');
 var autoprefixer = require('gulp-autoprefixer');
 var concat = require('gulp-concat');
 var cssnano = require('gulp-cssnano');
+var sh = require('gulp-sh');
 
 var options = {
   sassInputLocationGlob: '_scss/**/*.scss',
@@ -20,21 +21,24 @@ var options = {
       'node_modules/uswds/src/stylesheets',
       'node_modules/uswds/src/stylesheets/lib/'
     ]
-  }
+  },
+  logConcurrentOutput: true
 }
 
-gulp.task('default', ['clean']);
+gulp.task('default', ['clean', 'css']);
 
-gulp.task('clean-css', function(){
-  return del([options.cssOutputLocation, options.sassSourcemapsOutputLocation]);
-});
+gulp.task('clean', ['clean-js', 'clean-css']);
 
 gulp.task('clean-js', function(){
   return del([options.jsOutputLocation]);
 });
 
-gulp.task('clean', ['clean-js', 'clean-css']);
+gulp.task('clean-css', function(){
+  return del([options.cssOutputLocation, options.sassSourcemapsOutputLocation]);
+});
 
+
+// grunt.registerTask('css', ['sass', 'autoprefixer', 'cssmin']);
 gulp.task('css', ['sass', 'autoprefixer', 'css-min']);
 
 gulp.task('sass', ['clean-css'], function(){
@@ -64,6 +68,14 @@ gulp.task('css-min', ['autoprefixer'], function(){
     .pipe(gulp.dest(options.cssOutputLocation))
 });
 
-gulp.task('watch:sass', function(){
+gulp.task('watch-sass', function(){
   gulp.watch(options.sassInputLocationGlob, ['sass']);
 });
+
+// grunt.registerTask('serve', ['concurrent:serve']);
+// gulp.task('serve', function(){
+//   return gulp.src(options.logConcurrentOutput)
+//     .pipe(sass())
+//     .pipe(watch-sass())
+    // .pipe(jekyllServe(command: "bundle exec jekyll serve --baseurl ''"))
+// })
