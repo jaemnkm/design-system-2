@@ -1,12 +1,13 @@
 ﻿var gulp = require('gulp');
-var log = require('fancy-log');
+// var log = require('fancy-log');
 var del = require('del');
 var sass = require('gulp-sass');
 var sourcemaps = require('gulp-sourcemaps');
 var autoprefixer = require('gulp-autoprefixer');
-var concat = require('gulp-concat');
+// var concat = require('gulp-concat');
 var cssnano = require('gulp-cssnano');
 var sh = require('gulp-sh');
+var jshint = require('gulp-jshint');
 
 var options = {
   sassInputLocationGlob: '_scss/**/*.scss',
@@ -25,7 +26,7 @@ var options = {
   logConcurrentOutput: true
 }
 
-gulp.task('default', ['clean', 'css']);
+gulp.task('default', ['clean', 'css', 'build']);
 
 gulp.task('clean', ['clean-js', 'clean-css']);
 
@@ -72,10 +73,24 @@ gulp.task('watch-sass', function(){
   gulp.watch(options.sassInputLocationGlob, ['sass']);
 });
 
-// grunt.registerTask('serve', ['concurrent:serve']);
-// gulp.task('serve', function(){
-//   return gulp.src(options.logConcurrentOutput)
-//     .pipe(sass())
-//     .pipe(watch-sass())
-    // .pipe(jekyllServe(command: "bundle exec jekyll serve --baseurl ''"))
-// })
+gulp.task('jekyll-build', sh`bundle exec jekyll build`);
+gulp.task('jekyll-serve', sh`bundle exec jekyll serve --baseurl ''`);
+
+// grunt.registerTask('js', ['jshint:all', 'browserify', 'concat']);
+gulp.task('js', ['jshint']);
+
+gulp.task('jshint', function(){
+  return gulp.src([
+    'Gruntfile.js',
+    'js/**/*.js',
+    '!js/vendor/*.js',
+    '!js/usajobs-design-system-base.js',
+    '!js/usajobs-design-system-components.js',
+    '!js/usajobs-design-system-documentation.js'
+  ])
+    .pipe(jshint())
+    .pipe(jshint.reporter(require('jshint-stylish')));
+})
+
+// grunt.registerTask('build', ['shell:jekyllBuild', 'css', 'js']);
+gulp.task('build', ['jekyll-build', 'css', 'js'])
