@@ -8,8 +8,9 @@ var concat = require('gulp-concat');
 var cssnano = require("gulp-cssnano");
 var sh = require("gulp-sh");
 var jshint = require("gulp-jshint");
-var browserify = require("browserify");
-var babelify = require("babelify");
+// var browserify = require("browserify");
+// var babelify = require("babelify");
+var scsslint = require('gulp-scss-lint');
 
 var options = {
   sassInputLocationGlob: "_scss/**/*.scss",
@@ -37,7 +38,7 @@ var options = {
   }
 };
 
-gulp.task("default", ["clean", "css", "serve", "build"]);
+gulp.task("default", ["clean", "css", "js", "test"]);
 
 gulp.task("clean", ["clean-js", "clean-css"]);
 
@@ -146,3 +147,11 @@ gulp.task("concat_docs", function() {
 
 // grunt.registerTask('build', ['shell:jekyllBuild', 'css', 'js']);
 gulp.task("build", ["jekyll-build", "css", "js"]);
+
+// grunt.registerTask('test', ['jshint:all', 'scsslint']);
+gulp.task("test", ["jshint", "scsslint"])
+
+gulp.task("scsslint", function(){
+  return gulp.src('/scss/*.scss')
+    .pipe(scsslint());
+});
