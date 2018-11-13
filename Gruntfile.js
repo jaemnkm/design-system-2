@@ -221,7 +221,6 @@ module.exports = function(grunt) {
     }
   });
 
-  grunt.registerTask('default', ['css']);
   grunt.registerTask('serve', ['concurrent:serve']);
   grunt.registerTask('build', ['shell:jekyllBuild', 'css', 'js']);
   grunt.registerTask('css', ['sass', 'autoprefixer', 'cssmin']);
