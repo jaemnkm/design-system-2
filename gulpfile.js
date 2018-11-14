@@ -25,19 +25,39 @@ var options = {
     ]
   },
   logConcurrentOutput: true,
-  browserifyOptions: {
+  jshintSrc: [
+    "Gruntfile.js",
+    "js/**/*.js",
+    "!js/vendor/*.js",
+    "!js/usajobs-design-system-base.js",
+    "!js/usajobs-design-system-components.js",
+    "!js/usajobs-design-system-documentation.js"
+  ],
+  browserifyParams: {
     external: ['jquery'],
-    transform: [
-      ['babelify', {
-        'presets': ['es2015'],
-        'global': true
-      }]
-    ]
-  }
+    transform: [['babelify', { 'presets': ['es2015'], 'global' : true }]],
+    debug: true
+  },
+  concatBaseSrc: [
+    'js/vendor/modernizr.js',
+    'node_modules/jquery/dist/jquery.min.js',
+    'js/vendor/jquery.ba-throttle-debounce.min.js',
+    'js/vendor/jquery-ui.min.js',
+    'js/vendor/select2.min.js',
+    'node_modules/readmore-js/readmore.js',
+    'js/vendor/fontawesome-all.min.js',
+    'js/vendor/fa-v4-shims.min.js',
+    'js/base.js'
+  ],
+  concatDocsSrc: [
+    'js/vendor/prism.js',
+    'js/vendor/uswds-styleguide.js'
+  ]
 };
 
-gulp.task("default", ["clean", "css", "js", "test"]);
+gulp.task("default", ["clean", "serve", "build", "css", "js", "test"]);
 
+// CLEAN
 gulp.task("clean", ["clean-js", "clean-css"]);
 
 gulp.task("clean-js", function () {
@@ -48,7 +68,15 @@ gulp.task("clean-css", function () {
   return del([options.cssOutputLocation, options.sassSourcemapsOutputLocation]);
 });
 
-// grunt.registerTask('css', ['sass', 'autoprefixer', 'cssmin']);
+// SERVE
+gulp.task("serve", sh `bundle exec jekyll serve --baseurl ''`);
+
+// BUILD
+gulp.task("build", ["jekyll-build", "css", "js"]);
+
+gulp.task("jekyll-build", sh `bundle exec jekyll build`);
+
+// CSS
 gulp.task("css", ["sass", "autoprefixer", "css-min"]);
 
 gulp.task("sass", ["clean-css"], function () {
@@ -82,75 +110,46 @@ gulp.task("css-min", ["autoprefixer"], function () {
     .pipe(gulp.dest(options.cssOutputLocation));
 });
 
-gulp.task("watch-sass", function () {
-  gulp.watch(options.sassInputLocationGlob, ["sass"]);
-});
-
-gulp.task("jekyll-build", sh `bundle exec jekyll build`);
-
-// grunt.registerTask('serve', ['concurrent:serve']);
-gulp.task("serve", sh `bundle exec jekyll serve --baseurl ''`);
-
-// grunt.registerTask('js', ['jshint:all', 'browserify', 'concat']);
+// JS
 gulp.task("js", ["jshint", "browserify", "concat_base", "concat_docs"]);
 
 gulp.task("jshint", function () {
   return gulp
-    .src([
-      "Gruntfile.js",
-      "js/**/*.js",
-      "!js/vendor/*.js",
-      "!js/usajobs-design-system-base.js",
-      "!js/usajobs-design-system-components.js",
-      "!js/usajobs-design-system-documentation.js"
-    ])
+    .src(options.jshintSrc)
     .pipe(jshint())
     .pipe(jshint.reporter(require("jshint-stylish")));
 });
 
 gulp.task("browserify", function() {
-  browserify({
-    external: ['jquery'],
-    transform: [['babelify', { 'presets': ['es2015'], 'global' : true }]],
-    debug: true
-    })
+  browserify(options.browserifyParams)
   return gulp
     .src(['node_modules/uswds/src/js/start.js','js/components/*.js'])
     .pipe(gulp.dest("js/usajobs-design-system-components.js"));
 });
 
 gulp.task("concat_base", function () {
-  return gulp.src([
-      'js/vendor/modernizr.js',
-      'node_modules/jquery/dist/jquery.min.js',
-      'js/vendor/jquery.ba-throttle-debounce.min.js',
-      'js/vendor/jquery-ui.min.js',
-      'js/vendor/select2.min.js',
-      'node_modules/readmore-js/readmore.js',
-      'js/vendor/fontawesome-all.min.js',
-      'js/vendor/fa-v4-shims.min.js',
-      'js/base.js'
-    ])
+  return gulp.src(options.concatBaseSrc)
     .pipe(concat('all.js'))
     .pipe(gulp.dest('js/usajobs-design-system-base.js'));
 });
 
 gulp.task("concat_docs", function() {
-  return gulp.src([
-    'js/vendor/prism.js',
-    'js/vendor/uswds-styleguide.js'
-  ])
+  return gulp.src(options.concatDocsSrc)
   .pipe(concat('all.js'))
   .pipe(gulp.dest('js/usajobs-design-system-documentation.js'));
 })
 
-// grunt.registerTask('build', ['shell:jekyllBuild', 'css', 'js']);
-gulp.task("build", ["jekyll-build", "css", "js"]);
-
-// grunt.registerTask('test', ['jshint:all', 'scsslint']);
-gulp.task("test", ["jshint", "scsslint"])
+// TEST
+gulp.task("test", ["jshint", "scsslint"]);
 
 gulp.task("scsslint", function(){
   return gulp.src('/scss/*.scss')
     .pipe(scsslint());
 });
+
+gulp.task("watch-sass", function () {
+  gulp.watch(options.sassInputLocationGlob, ["sass"]);
+});
+
+
+
