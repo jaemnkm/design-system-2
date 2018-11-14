@@ -23,7 +23,7 @@ $show_all.on('show-all.trigger', function(event, opts) {
 
   event.preventDefault();
 
-  if (opts.state == "true") {
+  if (opts.state === 'true') {
     opts.target.attr('aria-hidden', 'false');
 
     opts.target.slideDown(function () {
