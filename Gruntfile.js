@@ -17,7 +17,7 @@ module.exports = function(grunt) {
         command: 'bundle exec jekyll build'
       },
       jekyllServe: {
-        command: "bundle exec jekyll serve --baseurl ''"
+        command: 'bundle exec jekyll serve --baseurl "" '
       }
     },
     sass: {

@@ -1,5 +1,4 @@
 ﻿var gulp = require("gulp");
-// var log = require('fancy-log');
 var del = require("del");
 var sass = require("gulp-sass");
 var sourcemaps = require("gulp-sourcemaps");
@@ -8,8 +7,7 @@ var concat = require('gulp-concat');
 var cssnano = require("gulp-cssnano");
 var sh = require("gulp-sh");
 var jshint = require("gulp-jshint");
-// var browserify = require("browserify");
-// var babelify = require("babelify");
+var browserify = require("browserify");
 var scsslint = require('gulp-scss-lint');
 
 var options = {
@@ -94,7 +92,7 @@ gulp.task("jekyll-build", sh `bundle exec jekyll build`);
 gulp.task("serve", sh `bundle exec jekyll serve --baseurl ''`);
 
 // grunt.registerTask('js', ['jshint:all', 'browserify', 'concat']);
-gulp.task("js", ["jshint", "concat_base", "concat_docs"]);
+gulp.task("js", ["jshint", "browserify", "concat_base", "concat_docs"]);
 
 gulp.task("jshint", function () {
   return gulp
@@ -110,15 +108,16 @@ gulp.task("jshint", function () {
     .pipe(jshint.reporter(require("jshint-stylish")));
 });
 
-// gulp.task("browserify", function() {
-//   return gulp
-//     .src(["node_modules/uswds/src/js/start.js", "js/components/*.js"])
-//     .pipe(browserify({
-//       external: ['jquery'],
-//       transform: [['babelify', { 'presets': ['es2015'], 'global' : true }]]
-//     }))
-//     .pipe(gulp.dest("js/usajobs-design-system-components.js"));
-// });
+gulp.task("browserify", function() {
+  browserify({
+    external: ['jquery'],
+    transform: [['babelify', { 'presets': ['es2015'], 'global' : true }]],
+    debug: true
+    })
+  return gulp
+    .src(['node_modules/uswds/src/js/start.js','js/components/*.js'])
+    .pipe(gulp.dest("js/usajobs-design-system-components.js"));
+});
 
 gulp.task("concat_base", function () {
   return gulp.src([
