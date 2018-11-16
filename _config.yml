@@ -5,7 +5,7 @@ subtitle: The design system for the next generation of USAJOBS which describes t
 exclude:
 - Gemfile
 - Gemfile.lock
-- Gruntfile.js
+- gulp.js
 - package.json
 - README.md
 - LICENSE.md

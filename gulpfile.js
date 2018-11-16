@@ -26,7 +26,7 @@ var options = {
   },
   logConcurrentOutput: true,
   jshintSrc: [
-    "Gruntfile.js",
+    // "Gruntfile.js",
     "js/**/*.js",
     "!js/vendor/*.js",
     "!js/usajobs-design-system-base.js",
