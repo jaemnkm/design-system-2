@@ -14,7 +14,7 @@ The USAJOBS design system starts with the The [U.S. Web Design Standards](https:
 
 ### Requirements
 
-This repo uses [Jekyll](https://jekyllrb.com/) to serve and build the markup of the site. CSS and JS are managed by [Grunt](http://gruntjs.com/).
+This repo uses [Jekyll](https://jekyllrb.com/) to serve and build the markup of the site. CSS and JS are managed by [Gulp](https://gulpjs.com/).
 
 Thus you will need [Ruby](https://www.ruby-lang.org) ( > version 2.2.3 ) and [Node](https://nodejs.org/en/download/) ( > 4.1.2 ). The Node install will also provide npm, the Node package manager.
 
@@ -45,7 +45,7 @@ Now that you have verified that you have Ruby and Node installed, run the follow
 
 ```shell
 $ bundle install
-$ npm install -g grunt-cli
+$ npm install -g gulp
 $ npm install
 $ npm run build
 ```
