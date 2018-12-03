@@ -26,7 +26,7 @@ var options = {
   },
   logConcurrentOutput: true,
   jshintSrc: [
-    // "Gruntfile.js",
+    "gulp.js",
     "js/**/*.js",
     "!js/vendor/*.js",
     "!js/usajobs-design-system-base.js",
@@ -123,20 +123,17 @@ gulp.task("jshint", function () {
 gulp.task("browserify", function() {
   browserify(options.browserifyParams)
   return gulp
-    .src(['node_modules/uswds/src/js/start.js','js/components/*.js'])
-    .pipe(gulp.dest("js/usajobs-design-system-components.js"));
+    .src(['node_modules/uswds/src/js/start.js','js/components/*.js']);
 });
 
 gulp.task("concat_base", function () {
   return gulp.src(options.concatBaseSrc)
-    .pipe(concat('all.js'))
-    .pipe(gulp.dest('js/usajobs-design-system-base.js'));
+    .pipe(concat('all.js'));
 });
 
 gulp.task("concat_docs", function() {
   return gulp.src(options.concatDocsSrc)
-  .pipe(concat('all.js'))
-  .pipe(gulp.dest('js/usajobs-design-system-documentation.js'));
+  .pipe(concat('all.js'));
 })
 
 // TEST
