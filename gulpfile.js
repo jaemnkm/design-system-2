@@ -236,7 +236,7 @@ function browserifyComponentJS() {
   // .pipe(source("js/base.js"))
   var stream = defaultStream
     .bundle()
-    .pipe(source(paths.scripts.entryPoints))
+    .pipe(source(paths.scripts.entryPoint))
     .pipe(buffer())
     .pipe(rename({ basename: "usajobs-design-system-" }))
     .pipe(gulp.dest("js"));
