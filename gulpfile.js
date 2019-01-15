@@ -153,7 +153,7 @@ function cssBuild() {
       })
     )
     .pipe(postcss(processors))
-    .pipe(rename({ prefix: "usajob-design-system-" }))
+    .pipe(rename({ prefix: "usajobs-design-system-" }))
     .pipe(gulp.dest(paths.styles.dest))
     .pipe(browserSync.reload({ stream: true }))
     .pipe(sourcemaps.write("."))
