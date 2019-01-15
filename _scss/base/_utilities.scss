@@ -50,7 +50,6 @@
   margin: $size-S 0;
 }
 
-
 @mixin hide() {
   position: absolute !important;
   margin: -1px !important;
@@ -62,7 +61,12 @@
   clip: rect(0 0 0 0) !important;
 }
 
-@mixin makeCircle($size, $border: none, $bg-color: inherit, $color: $color-white) {
+@mixin makeCircle(
+  $size,
+  $border: none,
+  $bg-color: inherit,
+  $color: $color-white
+) {
   display: inline-block;
   width: $size;
   height: $size;
@@ -76,7 +80,7 @@
 @mixin makeSemiCircle($size, $bg-color: inherit, $color: $color-white) {
   display: inline-block;
   width: $size;
-  height: $size /2;
+  height: $size / 2;
   line-height: $size;
   -moz-border-radius: $size $size 0 0;
   -webkit-border-radius: $size $size 0 0;
@@ -113,7 +117,13 @@
   }
 }
 
-@mixin makeButton($bg-color, $hover-color, $active-color, $big: false, $color: $color-white) {
+@mixin makeButton(
+  $bg-color,
+  $hover-color,
+  $active-color,
+  $big: false,
+  $color: $color-white
+) {
   display: inline-block;
   appearance: none;
   background-color: $bg-color;
@@ -171,7 +181,12 @@
 }
 
 @mixin makePrimaryButton() {
-  @include makeButton($color-primary, $color-primary-darker, $color-primary-darkest, 'big');
+  @include makeButton(
+    $color-primary,
+    $color-primary-darker,
+    $color-primary-darkest,
+    "big"
+  );
 }
 
 @mixin bulletList() {
@@ -247,11 +262,17 @@
 // From http://www.ryanscherler.com/notes/entry/omega-reset-for-bourbon-neat/
 @mixin omega-reset($nth, $context: null) {
   @if $context == null {
-    &:nth-child(#{$nth}) { margin-right: flex-gutter(); }
+    &:nth-child(#{$nth}) {
+      margin-right: flex-gutter();
+    }
   } @else {
-    &:nth-child(#{$nth}) { margin-right: flex-gutter($context); }
+    &:nth-child(#{$nth}) {
+      margin-right: flex-gutter($context);
+    }
   }
-  &:nth-child(#{$nth}+1) { clear: none; }
+  &:nth-child(#{$nth} + 1) {
+    clear: none;
+  }
 }
 
 @mixin contentGutter() {
@@ -265,36 +286,47 @@
 
 // A variation on a mixin created to reproduce Google's Material Design Card shadows
 // https://gist.github.com/paulmelnikow/7fcfbe4f68e5df7fe326
-@mixin boxShadow ($level, $inset: false) {
+@mixin boxShadow($level, $inset: false) {
   @if $level == 1 {
     @if ($inset) {
-      box-shadow: 0 1px 3px rgba(0,0,0,0.12) inset, 0 1px 2px rgba(0,0,0,0.24) inset;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12) inset,
+        0 1px 2px rgba(0, 0, 0, 0.24) inset;
     } @else if {
-      box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
     }
   } @else if $level == 2 {
     @if ($inset) {
-      box-shadow: 0 3px 6px rgba(0,0,0,0.16) inset, 0 3px 6px rgba(0,0,0,0.23) inset;
-    } @elseif {
-      box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16) inset,
+        0 3px 6px rgba(0, 0, 0, 0.23) inset;
+    }
+    @elseif {
+      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
     }
   } @else if $level == 3 {
     @if ($inset) {
-      box-shadow: 0 10px 20px rgba(0,0,0,0.19) inset, 0 6px 6px rgba(0,0,0,0.23) inset;
-    } @elseif {
-      box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19) inset,
+        0 6px 6px rgba(0, 0, 0, 0.23) inset;
+    }
+    @elseif {
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
     }
   } @else if $level == 4 {
     @if ($inset) {
-      box-shadow: 0 14px 28px rgba(0,0,0,0.25) inset, 0 10px 10px rgba(0,0,0,0.22) inset;
-    } @elseif {
-      box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+      box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25) inset,
+        0 10px 10px rgba(0, 0, 0, 0.22) inset;
+    }
+    @elseif {
+      box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
+        0 10px 10px rgba(0, 0, 0, 0.22);
     }
   } @else if $level == 5 {
     @if ($inset) {
-      box-shadow: 0 19px 38px rgba(0,0,0,0.30) inset, 0 15px 12px rgba(0,0,0,0.22) inset;
-    } @elseif {
-      box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+      box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3) inset,
+        0 15px 12px rgba(0, 0, 0, 0.22) inset;
+    }
+    @elseif {
+      box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3),
+        0 15px 12px rgba(0, 0, 0, 0.22);
     }
   }
 }

@@ -1,7 +1,7 @@
 // JOA - Actions (Apply, print, share, save)
 
-@import '../../base-shared';
-@import '../actions';
+@import "../../base-shared";
+@import "../actions";
 
 .usajobs-joa-actions {
   @include clearfix();
@@ -92,13 +92,13 @@
     }
   }
 
-  &__save[data-state=is-saved] {
+  &__save[data-state="is-saved"] {
     &::before {
       @include icon-content("job/star", 2.4rem, 2.4rem);
     }
   }
 
-  &__save[data-state=is-unsaved] {
+  &__save[data-state="is-unsaved"] {
     &::before {
       @include icon-content("job/star-o", 2.4rem, 2.4rem);
     }
@@ -138,7 +138,7 @@
 
   &__number-container {
     @include media($SM) {
-      @include span-columns(1,2);
+      @include span-columns(1, 2);
     }
 
     @include media($M) {

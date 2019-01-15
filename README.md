@@ -46,6 +46,7 @@ Now that you have verified that you have Ruby and Node installed, run the follow
 ```shell
 $ bundle install
 $ npm install -g gulp
+$ npm install -g gulp-cli
 $ npm install
 $ npm run build
 ```
@@ -74,7 +75,7 @@ If you have node installed on your machine, you can use npm to install the desig
 npm install usajobs-design-system --save
 ```
 
-The package will be installed in ```node_modules/usajobs-design-system```.
+The package will be installed in `node_modules/usajobs-design-system`.
 
 The main Sass (SCSS) source file is here:
 

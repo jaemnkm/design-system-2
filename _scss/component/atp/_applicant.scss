@@ -1,8 +1,8 @@
 // Applicant (ATP) -- Used in resume mining search results
 
-@import '../../base-shared';
+@import "../../base-shared";
 
-@import '../../home-variables';
+@import "../../home-variables";
 
 @mixin applicant() {
   &__department {

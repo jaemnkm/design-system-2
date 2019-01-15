@@ -1,6 +1,6 @@
 // JOA - Occupations
 
-@import '../../base-shared';
+@import "../../base-shared";
 
 .usajobs-joa-occupations {
   position: relative;
@@ -42,7 +42,7 @@
   }
 
   &__link {
-    border-radius: .5rem;
+    border-radius: 0.5rem;
   }
 
   &__series {
@@ -59,7 +59,7 @@
     }
 
     &::before {
-      content: '\2022';
+      content: "\2022";
       padding-right: $size-base;
       vertical-align: middle;
       color: $color-primary-alt;

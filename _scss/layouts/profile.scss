@@ -1,9 +1,9 @@
 // Profile (including layouts or Documents and Username & Password)
 
-@import '../base-shared';
+@import "../base-shared";
 
-@import 'account';
-@import '../home-variables';
+@import "account";
+@import "../home-variables";
 
 .usajobs-profile {
   @include accountLayout(true);
@@ -26,7 +26,12 @@
     max-width: $input-max-width;
 
     &.is-complete::before {
-      @include icon-content("", rem(30px), rem(30px), "../../img/icons/profile/check-circle.svg");
+      @include icon-content(
+        "",
+        rem(30px),
+        rem(30px),
+        "../../img/icons/profile/check-circle.svg"
+      );
       vertical-align: text-top;
     }
   }

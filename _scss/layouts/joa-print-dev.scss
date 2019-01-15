@@ -1,6 +1,6 @@
 // JOA Print styles
 
-@import '../base-shared';
+@import "../base-shared";
 
 .usajobs-joa {
   // Go small so it can possibly fit within 5 pages.
@@ -24,7 +24,7 @@
     display: none;
   }
 
-  .usajobs-joa-accordion-content[aria-hidden=true] {
+  .usajobs-joa-accordion-content[aria-hidden="true"] {
     display: block !important;
   }
 
@@ -69,7 +69,7 @@
   .usajobs-joa-intro__location,
   .usajobs-joa-intro__label {
     font-size: $small-font-size;
-    margin-top: .8rem;
+    margin-top: 0.8rem;
   }
 
   .usajobs-content-well,
@@ -91,7 +91,7 @@
       margin: $size-S 0 $size-base;
 
       & + p {
-       margin-top: 0;
+        margin-top: 0;
       }
     }
 
@@ -170,7 +170,7 @@
     display: none;
   }
 
-  [data-object="reveal-more"][data-readmore][aria-expanded=false] {
+  [data-object="reveal-more"][data-readmore][aria-expanded="false"] {
     display: block !important;
   }
 

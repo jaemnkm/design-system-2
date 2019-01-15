@@ -1,9 +1,9 @@
 // Navigation
 
-@import '../base-shared';
+@import "../base-shared";
 
-@import '../vendor/jquery-ui/jquery-ui';
-@import '../vendor/jquery-ui/jquery-ui.structure';
+@import "../vendor/jquery-ui/jquery-ui";
+@import "../vendor/jquery-ui/jquery-ui.structure";
 
 $logo_img_height-S: 36px;
 $logo_img_height-L: 45px;
@@ -74,8 +74,8 @@ $nav_item_height: 17px + 24px;
       display: inline-block;
       height: rem(36px);
       width: rem(150px);
-      background-image: url('../img/logo/png/red-2x.png');
-      background-image: url('../img/logo/svg/red-2x.svg');
+      background-image: url("../img/logo/png/red-2x.png");
+      background-image: url("../img/logo/svg/red-2x.svg");
       background-repeat: no-repeat;
       vertical-align: middle;
 
@@ -207,33 +207,33 @@ $nav_item_height: 17px + 24px;
 
       @include media($SM) {
         // This accounts for using the data-fa-transform on the SVG to move it up 4 pixels
-        padding-top: $size-default + .4rem;
+        padding-top: $size-default + 0.4rem;
       }
     }
   }
 
   &__icon {
-     display: block;
-     height: rem(27px);
-     width: rem(27px);
-     background-repeat: no-repeat;
-     vertical-align: middle;
+    display: block;
+    height: rem(27px);
+    width: rem(27px);
+    background-repeat: no-repeat;
+    vertical-align: middle;
 
-     &.user {
-       background-image: url('../img/icons/nav/user@2x.png');
-       background-image: url('../img/icons/nav/user.svg');
-       width: rem(23px);
-     }
+    &.user {
+      background-image: url("../img/icons/nav/user@2x.png");
+      background-image: url("../img/icons/nav/user.svg");
+      width: rem(23px);
+    }
 
-     &.help {
-       background-image: url('../img/icons/nav/question-circle@2x.png');
-       background-image: url('../img/icons/nav/question-circle.svg');
-     }
+    &.help {
+      background-image: url("../img/icons/nav/question-circle@2x.png");
+      background-image: url("../img/icons/nav/question-circle.svg");
+    }
 
-     &.search {
-       background-image: url('../img/icons/nav/search@2x.png');
-       background-image: url('../img/icons/nav/search.svg');
-     }
+    &.search {
+      background-image: url("../img/icons/nav/search@2x.png");
+      background-image: url("../img/icons/nav/search.svg");
+    }
   }
 
   ul.usajobs-nav__secondary-menu {
@@ -523,9 +523,9 @@ $nav_item_height: 17px + 24px;
 
   &__section-link {
     font-size: $small-font-size;
-    padding: $size-S $size-S .2875rem;
+    padding: $size-S $size-S 0.2875rem;
     line-height: 1.25;
-    border-bottom: .7125rem solid transparent;
+    border-bottom: 0.7125rem solid transparent;
 
     @include media($SM) {
       font-size: $base-font-size;
@@ -534,11 +534,11 @@ $nav_item_height: 17px + 24px;
 
     @include media($M) {
       display: block;
-      padding: 2rem .5rem 1.2875rem 0;
+      padding: 2rem 0.5rem 1.2875rem 0;
       line-height: 1.25;
       font-size: $base-font-size;
-      border-bottom: .7125rem solid transparent;
-      @include transition(all .25s ease-in-out);
+      border-bottom: 0.7125rem solid transparent;
+      @include transition(all 0.25s ease-in-out);
       text-decoration: none;
     }
 
@@ -551,14 +551,14 @@ $nav_item_height: 17px + 24px;
 
     &.menu-toggle {
       // This is just overriding the original variation
-      padding: $size-S $size-S .5375rem;
+      padding: $size-S $size-S 0.5375rem;
 
       @include media($SM) {
         padding-top: 1.7rem;
       }
 
       @include media($M) {
-        padding: 2rem .5rem 1.2875rem 0;
+        padding: 2rem 0.5rem 1.2875rem 0;
       }
     }
 
@@ -633,7 +633,7 @@ $nav_item_height: 17px + 24px;
     }
 
     svg {
-      width: 17.0rem;
+      width: 17rem;
       height: auto;
 
       @include media($ML) {
@@ -712,7 +712,6 @@ $nav_item_height: 17px + 24px;
     }
   }
 
-
   &__section-link.is-active &__section-active,
   &__menu-container[data-state="is-open"] &__first-name {
     border-bottom: 0.7rem solid $color-primary;
@@ -735,7 +734,6 @@ $nav_item_height: 17px + 24px;
     @include media($SM) {
       display: inline-block;
     }
-
 
     svg {
       @include media($M) {
@@ -962,7 +960,7 @@ ul.ui-autocomplete {
     border-radius: $border-radius;
   }
 
-  &[aria-hidden=true] {
+  &[aria-hidden="true"] {
     display: none;
   }
 
@@ -1009,10 +1007,10 @@ ul.ui-autocomplete {
     right: -15px;
     top: 25%;
     width: 0;
-	  height: 0;
-	  border-top: 15px solid transparent;
-	  border-left: 30px solid $color-gold;
-	  border-bottom: 15px solid transparent;
+    height: 0;
+    border-top: 15px solid transparent;
+    border-left: 30px solid $color-gold;
+    border-bottom: 15px solid transparent;
 
     @include media($L) {
       display: inherit;

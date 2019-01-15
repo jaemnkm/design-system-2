@@ -1,11 +1,11 @@
 // Search - Result card + no results card
 
-@import '../../base-shared';
+@import "../../base-shared";
 
-@import '../../home-variables';
-@import '../card/card';
-@import '../job';
-@import '../atp/applicant';
+@import "../../home-variables";
+@import "../card/card";
+@import "../job";
+@import "../atp/applicant";
 
 .usajobs-content-well .usajobs-search-result,
 .usajobs-search-result {
@@ -43,7 +43,7 @@
 .usajobs-search-no-params-highlight {
   @include boxShadow(1);
   background-color: $color-white;
-  margin: $size-default 0 ;
+  margin: $size-default 0;
   padding: $size-default;
 
   &__title {

@@ -2,16 +2,16 @@
 // @import url(//fonts.googleapis.com/css?family=Source+Sans+Pro);
 
 @include font-face(
-  'Merriweather',
-  '#{$font-path}/merriweather-regular-webfont',
+  "Merriweather",
+  "#{$font-path}/merriweather-regular-webfont",
   400,
   normal,
   $file-formats: eot woff2 woff ttf
 );
 
 @include font-face(
-  'Source Sans Pro',
-  '#{$font-path}/sourcesanspro-regular-webfont',
+  "Source Sans Pro",
+  "#{$font-path}/sourcesanspro-regular-webfont",
   400,
   normal,
   $file-formats: eot woff2 woff ttf

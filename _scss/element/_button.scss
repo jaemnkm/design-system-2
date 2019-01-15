@@ -8,7 +8,11 @@ a.usa-button:hover {
 // Replacing some of the secondary buttons that were unceremoniously removed
 .usajobs-button-secondary,
 .usajobs-button-destructive-action {
-  @include makeButton($color-secondary, $color-secondary-dark, $color-red-darkest);
+  @include makeButton(
+    $color-secondary,
+    $color-secondary-dark,
+    $color-red-darkest
+  );
 }
 
 .usa-button-big.usajobs-button-secondary {
@@ -53,7 +57,6 @@ button:disabled,
 .usa-button-disabled {
   opacity: $layer-disabled;
 }
-
 
 // In Application Guide, our button bar background matches the disabled state of a button
 // Thus we make the button darker
@@ -135,11 +138,11 @@ button:disabled,
     }
   }
 
-  &__button[aria-pressed=true] {
+  &__button[aria-pressed="true"] {
     @include boxShadow(2, inset);
   }
 
-  &__button[aria-pressed=false] {
+  &__button[aria-pressed="false"] {
     background-color: $color-white;
     color: $color-gray;
 

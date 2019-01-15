@@ -1,6 +1,6 @@
 // JOA Layout
 
-@import '../base-shared';
+@import "../base-shared";
 
 .usajobs-joa {
   .usajobs-joa-summary-title {
@@ -141,7 +141,7 @@
         @include media($M) {
           padding-top: 0;
 
-          &[aria-hidden=true] {
+          &[aria-hidden="true"] {
             display: block !important;
           }
         }

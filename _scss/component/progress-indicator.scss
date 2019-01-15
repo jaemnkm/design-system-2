@@ -1,6 +1,6 @@
 // Progress Indicator
 
-@import '../base-shared';
+@import "../base-shared";
 
 .usajobs-progress_indicator .usajobs-progress_indicator__step {
   text-decoration: none;
@@ -10,165 +10,165 @@
   background-color: $color-primary-darkest;
 
   @include media($L) {
-  	display: table;
-  	width: 100%;
-		padding: 0 $size-M;
+    display: table;
+    width: 100%;
+    padding: 0 $size-M;
   }
 
   &__body {
-		padding: 0 $size-default;
+    padding: 0 $size-default;
 
     @include media($ML) {
       padding: $size-default $size-M;
     }
 
-	  @include media($L) {
-	  	display: table-row;
-	  	width: 100%;
-	  	padding: 0;
-	  }
+    @include media($L) {
+      display: table-row;
+      width: 100%;
+      padding: 0;
+    }
   }
 
   &__step {
-  	display: inline-block;
-  	width: 18%;
-  	height: 100%;
-  	padding: $size-default 0;
+    display: inline-block;
+    width: 18%;
+    height: 100%;
+    padding: $size-default 0;
     text-decoration: none;
 
-  	&:hover {
-  		text-decoration: none;
-  	}
+    &:hover {
+      text-decoration: none;
+    }
 
-  	@include media($ML-only) {
-  		@include clearfix();
-  		display: block;
-  		width: 100%;
-  		padding: $size-XS;
-  	}
+    @include media($ML-only) {
+      @include clearfix();
+      display: block;
+      width: 100%;
+      padding: $size-XS;
+    }
 
-  	@include media($L) {
-  		position: relative;
-  		display: table-cell;
-  		width: auto;
-  		padding: $size-L $size-default;
-  	}
+    @include media($L) {
+      position: relative;
+      display: table-cell;
+      width: auto;
+      padding: $size-L $size-default;
+    }
 
-  	&:after {
-  		@include media($XL) {
-	  		content: ' ';
-	  		position: absolute;
-	  		top: 36%;
-	  		left: 58%;
-	  		border-bottom: 1px solid $color-gray-light;
-	  		width: rem(50px);
-	  	}
-  	}
+    &:after {
+      @include media($XL) {
+        content: " ";
+        position: absolute;
+        top: 36%;
+        left: 58%;
+        border-bottom: 1px solid $color-gray-light;
+        width: rem(50px);
+      }
+    }
 
-  	&:last-child:after {
-  		border-bottom: 0;
-  	}
+    &:last-child:after {
+      border-bottom: 0;
+    }
   }
 
   &__number {
-  	text-align: center;
+    text-align: center;
 
-  	@include media($ML-only) {
-  		@include span-columns(1 of 4);
-  		margin-right: 0;
-  	}
+    @include media($ML-only) {
+      @include span-columns(1 of 4);
+      margin-right: 0;
+    }
 
-  	@include media($ML) {
-  		text-align: left;
-			font-weight: $font-bold;
-  	}
+    @include media($ML) {
+      text-align: left;
+      font-weight: $font-bold;
+    }
 
-  	@include media($L) {
-  		display: table-row;
-  		height: 50%;
-  		width: 100%;
-  	}
+    @include media($L) {
+      display: table-row;
+      height: 50%;
+      width: 100%;
+    }
   }
 
   &__step-desc {
-  	@include media($ML-only) {
-  		@include span-columns(3 of 4);
-  	}
+    @include media($ML-only) {
+      @include span-columns(3 of 4);
+    }
 
-		h5 {
-			color: $color-gray-light;
-			font-size: $small-font-size;
-			font-weight: $font-normal;
-			text-align: center;
-			margin-top: $size-base;
+    h5 {
+      color: $color-gray-light;
+      font-size: $small-font-size;
+      font-weight: $font-normal;
+      text-align: center;
+      margin-top: $size-base;
 
-  		@include media($ML) {
-				margin-top: $size-S;
-				margin-bottom: $size-S;
-				font-size: $base-font-size;
-  			text-align: left;
-  		}
-		}
+      @include media($ML) {
+        margin-top: $size-S;
+        margin-bottom: $size-S;
+        font-size: $base-font-size;
+        text-align: left;
+      }
+    }
 
-		.short-desc {
-			@include media($ML) {
-				display: none;
-			}
-		}
+    .short-desc {
+      @include media($ML) {
+        display: none;
+      }
+    }
 
-		.long-desc {
-			display: none;
+    .long-desc {
+      display: none;
 
-			@include media($ML) {
-				display: inherit;
-			}
-		}
+      @include media($ML) {
+        display: inherit;
+      }
+    }
   }
 
-	.circle {
-		@include makeCircle(35px, $color-gray-light, none, $color-gray-light);
-		margin: $size-base auto $size-XS;
-		text-align: center;
+  .circle {
+    @include makeCircle(35px, $color-gray-light, none, $color-gray-light);
+    margin: $size-base auto $size-XS;
+    text-align: center;
 
-		@include media($L) {
-			@include makeCircle(45px, $color-gray-light, none, $color-gray-light);
-			font-size: $lead-font-size;
-			text-decoration: none;
-			margin-bottom: $size-base;
-		}
+    @include media($L) {
+      @include makeCircle(45px, $color-gray-light, none, $color-gray-light);
+      font-size: $lead-font-size;
+      text-decoration: none;
+      margin-bottom: $size-base;
+    }
 
-		&:hover {
-			cursor: pointer;
-		}
-	}
+    &:hover {
+      cursor: pointer;
+    }
+  }
 }
 
 .usajobs-progress_indicator,
 .usajobs-step-indicator {
-	.circle {
-		margin: $size-base auto $size-XS;
-		text-align: center;
+  .circle {
+    margin: $size-base auto $size-XS;
+    text-align: center;
 
-		@include media($L) {
-			font-size: $lead-font-size;
-			text-decoration: none;
-			margin-bottom: $size-base;
-		}
+    @include media($L) {
+      font-size: $lead-font-size;
+      text-decoration: none;
+      margin-bottom: $size-base;
+    }
 
-		&:hover {
-			cursor: pointer;
-		}
-	}
+    &:hover {
+      cursor: pointer;
+    }
+  }
 }
 
 .usajobs-progress_indicator {
-	.circle {
-		@include makeCircle(35px, $color-gray-light, none, $color-gray-light);
+  .circle {
+    @include makeCircle(35px, $color-gray-light, none, $color-gray-light);
 
-		@include media($L) {
-			@include makeCircle(45px, $color-gray-light, none, $color-gray-light);
-		}
-	}
+    @include media($L) {
+      @include makeCircle(45px, $color-gray-light, none, $color-gray-light);
+    }
+  }
 
   &__step.is-current {
     .circle {
@@ -198,13 +198,23 @@
 .usajobs-step-indicator {
   @include unstyledList();
 
-	.circle {
-		@include makeCircle(35px, $color-primary-darkest, none, $color-primary-darkest);
+  .circle {
+    @include makeCircle(
+      35px,
+      $color-primary-darkest,
+      none,
+      $color-primary-darkest
+    );
 
-		@include media($L) {
-		  @include makeCircle(45px, $color-primary-darkest, none, $color-primary-darkest);
-		}
-	}
+    @include media($L) {
+      @include makeCircle(
+        45px,
+        $color-primary-darkest,
+        none,
+        $color-primary-darkest
+      );
+    }
+  }
 }
 
 // Applicaiton guide layout
@@ -212,7 +222,13 @@
 .usajobs-app_guide-banner {
   @include outer-container();
   max-width: none;
-  @include linear-gradient(to right, $color-primary-darker 0%, $color-primary-darker 50%, $color-primary-darkest 60%, $color-primary-darkest 100%);
+  @include linear-gradient(
+    to right,
+    $color-primary-darker 0%,
+    $color-primary-darker 50%,
+    $color-primary-darkest 60%,
+    $color-primary-darkest 100%
+  );
 }
 
 .usajobs-app_guide-banner-container {
@@ -266,7 +282,7 @@
   }
 
   &__step.is-current {
-    background-color: rgba(253,184,30,0.5);
+    background-color: rgba(253, 184, 30, 0.5);
   }
 
   &__step.is-complete {

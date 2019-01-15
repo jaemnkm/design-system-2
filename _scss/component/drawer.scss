@@ -1,7 +1,7 @@
 // USAJOBS Drawer
 
-@import '../base-shared';
-@import 'card/card';
+@import "../base-shared";
+@import "card/card";
 
 .usajobs-drawers {
   border-bottom: 1px solid $color-gray-lighter;
@@ -17,14 +17,14 @@
   font-size: $h4-font-size;
   font-weight: normal;
   background-color: $color-white;
-  background-image: url(../img/icons/drawer/minus-circle.svg);
+  background-image: url("../img/icons/drawer/minus-circle.svg");
   background-position: 2rem $size-default;
   background-size: 2rem;
   padding: $size-default $size-default $size-base $size-L;
   color: $color-primary;
 
   &[aria-expanded="false"] {
-    background-image: url(../img/icons/drawer/plus-circle.svg);
+    background-image: url("../img/icons/drawer/plus-circle.svg");
     background-size: 2rem;
   }
 
@@ -39,13 +39,13 @@
 }
 
 .usajobs-drawer-button--alt-handle {
-  background-image: url(../img/icons/drawer/minus.svg);
+  background-image: url("../img/icons/drawer/minus.svg");
   background-position: 98% center;
   background-size: $size-default;
   padding: $size-default $size-L $size-base $size-default;
 
   &[aria-expanded="false"] {
-    background-image: url(../img/icons/drawer/plus.svg);
+    background-image: url("../img/icons/drawer/plus.svg");
     background-size: $size-default;
   }
 

@@ -3,26 +3,30 @@ highlighter: rouge
 name: USAJOBS Design System
 subtitle: The design system for the next generation of USAJOBS which describes the base visual language upon which the site can be built.
 exclude:
-- Gemfile
-- Gemfile.lock
-- gulp.js
-- package.json
-- README.md
-- LICENSE.md
-- CONTRIBUTING.md
-- ".sass-cache"
-- ".ruby-version"
-- npm-debug.log
-- node_modules
-- library
-keep_files: ['css', 'js']
+  - ".DS_Store"
+  - ".jekyll-metadata"
+  - ".publish"
+  - ".sass-cache"
+  - ".ruby-version"
+  - CONTRIBUTING.md
+  - Gemfile
+  - Gemfile.lock
+  - gulpfile.js
+  - ISSUE_TEMPLATE.md
+  - LICENSE.md
+  - npm-debug.log
+  - node_modules
+  - package.json
+  - package-lock.json
+  - README.md
+keep_files: ["css", "js"]
 
 # Creative Cloud uses port 4000? Setting a unique port number
 port: 4001
 
-# destination: ./_site
+#destination: ./_site
 # layouts: ./_layouts
-baseurl: '/design-system'
+baseurl: "/design-system"
 
 permalink: pretty
 
@@ -35,12 +39,6 @@ repository:
   url: https://github.com/USAJOBS/design-system
 
 # google_analytics_ua: UA-48605964-33
-
-sass:
-  sass_dir: assets/_scss
-  load_paths:
-    - assets/_scss
-    - library/assets/_scss
 
 collections:
   components:

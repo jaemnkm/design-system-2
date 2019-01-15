@@ -1,56 +1,10 @@
 // Layouts: Documentation
 // Based off of U.S. Web Design Standards Styleguide
 
-@import '../base-shared';
-@import 'shared';
+@import "../base-shared";
+@import "shared";
 
 // Navigation ------------- //
-/*
-.usa-site-header,
-.usajobs-site-header {
-  background-color: $color-white;
-  border-bottom: 1px solid $color-gray-light;
-
-  a {
-    border-bottom: none;
-  }
-
-  .disclaimer {
-    padding: .5rem 2rem;
-    color: $color-white;
-    text-align: center;
-    font-size: $base-font-size / 1.25;
-    border-bottom: 1px solid #616161;
-    font-weight: 100;
-
-    .us-official {
-      margin: 0;
-    }
-
-    .stage {
-      float: none;
-      display: block;
-      padding-top: 5px;
-
-      a {
-        text-decoration: underline;
-      }
-    }
-
-    @include media($medium-screen + $width-nav-sidebar) {
-      .us-official {
-        margin-left: 177px;
-      }
-
-      .stage {
-        float: right;
-        padding: 0;
-      }
-    }
-  }
-}
-*/
-
 .overlay {
   @include position(fixed, 0 0 0 0);
   @include transition;
@@ -175,10 +129,11 @@
     top: 3rem;
   }
 
-// This is a styleguide-only rule and is not needed in the main library code for
-// the footer component which uses different styles
-// TODO investigate why it's not needed in the main library CSS
-  p, a {
+  // This is a styleguide-only rule and is not needed in the main library code for
+  // the footer component which uses different styles
+  // TODO investigate why it's not needed in the main library CSS
+  p,
+  a {
     @include media($medium-screen) {
       margin-bottom: 0;
     }
@@ -233,7 +188,7 @@
   }
 
   .is-peripheral {
-    opacity: .2;
+    opacity: 0.2;
   }
 }
 
@@ -254,7 +209,6 @@
 
 // Code Sample Boxes --------- //
 .code-snippets {
-
   .code-snippet-button:after {
     content: "\25be  hide code";
   }
@@ -298,7 +252,8 @@
       text-align: left;
     }
 
-    pre, code {
+    pre,
+    code {
       direction: ltr;
       text-align: left;
       white-space: pre;
@@ -331,8 +286,8 @@
     padding: 1em;
     background: $color-grid-dark;
     margin: {
-      top: .5em;
-      bottom: .5em;
+      top: 0.5em;
+      bottom: 0.5em;
     }
   }
 
@@ -354,8 +309,8 @@
   background: $color-grid-dark;
 
   > * {
-  background: $color-grid-light;
-  color: #000;
+    background: $color-grid-light;
+    color: #000;
   }
 
   h3 {
@@ -409,7 +364,7 @@
 }
 
 h3 + .button_wrapper {
-  margin-top: -.5em
+  margin-top: -0.5em;
 }
 
 .button_wrapper {
@@ -419,8 +374,8 @@ h3 + .button_wrapper {
   padding: 0rem 1rem;
 
   &:after {
-    content:"\A";
-    white-space:pre;
+    content: "\A";
+    white-space: pre;
   }
 
   button:last-child {
@@ -429,7 +384,7 @@ h3 + .button_wrapper {
 }
 
 .button_wrapper-dark {
-  background: #323a45
+  background: #323a45;
 }
 
 .usa-heading {
@@ -474,7 +429,7 @@ h3 + .button_wrapper {
   }
 
   p {
-    font-family:  monospace, monospace;
+    font-family: monospace, monospace;
   }
 }
 
@@ -528,7 +483,7 @@ h3 + .button_wrapper {
 
 .usa-color-text {
   font-weight: $font-bold;
-  margin-bottom: .4rem;
+  margin-bottom: 0.4rem;
   padding: {
     bottom: 1rem;
     left: 2rem;
@@ -591,7 +546,7 @@ h3 + .button_wrapper {
 
 .usa-heading-alt {
   border-bottom: 1px solid $color-gray;
-  padding-bottom: .8rem;
+  padding-bottom: 0.8rem;
 
   &.is-deprecated {
     color: $color-gray;
@@ -603,7 +558,13 @@ h6.usa-heading-alt {
 }
 
 .usa-typography-example-font {
-  h1, h2, h3, h4, h5, h6, .usa-font-example p {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  .usa-font-example p {
     margin: 0;
   }
 }
@@ -631,28 +592,43 @@ h6.usa-heading-alt {
   font-size: 1.2rem;
 }
 
-:not(pre) > code[class*="language-"], pre[class*="language-"] {
-    background: none;
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+  background: none;
 }
 
-code[class*="language-"], pre[class*="language-"] {
+code[class*="language-"],
+pre[class*="language-"] {
   color: $color-base;
 }
 
-.token.property, .token.tag, .token.boolean, .token.number, .token.constant, .token.symbol, .token.deleted {
+.token.property,
+.token.tag,
+.token.boolean,
+.token.number,
+.token.constant,
+.token.symbol,
+.token.deleted {
   color: $color-primary-alt-darkest;
 }
 
-.token.selector, .token.attr-name, .token.string, .token.char, .token.builtin, .token.inserted {
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
   color: $color-secondary;
 }
 
-.token.atrule, .token.attr-value, .token.keyword {
+.token.atrule,
+.token.attr-value,
+.token.keyword {
   color: $color-green;
 }
 
 .token.punctuation {
-    color: $color-primary-alt-darkest;
+  color: $color-primary-alt-darkest;
 }
 
 .usa-code-sample .usa-accordion-content {
@@ -766,7 +742,12 @@ $font-light: 300;
 }
 
 .sans-style {
-  h1, h2, h3, h4, h5, h6 {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     font-family: $font-sans;
   }
 

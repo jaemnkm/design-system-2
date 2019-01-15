@@ -1,6 +1,6 @@
 // Actions - Shared actions across components
 
-@import '../base-shared';
+@import "../base-shared";
 
 @mixin actionShare() {
   position: relative;
@@ -26,13 +26,13 @@
     }
   }
 
-  &__list[aria-hidden=true] {
+  &__list[aria-hidden="true"] {
     display: none;
   }
 
   &__list::before,
   &__list::after {
-    content: '';
+    content: "";
     display: block;
     position: absolute;
     left: 35%;

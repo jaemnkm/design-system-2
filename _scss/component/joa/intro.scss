@@ -1,6 +1,6 @@
 // JOA - Intro (Overview)
 
-@import '../../base-shared';
+@import "../../base-shared";
 
 $icon-width: rem(31px);
 $icon-padding: $size-default;
@@ -203,7 +203,6 @@ $body-padding: $size-default;
   }
 }
 
-
 .no-flexbox .usajobs-joa-intro-hiring-paths {
   &__link {
     @include clearfix();
@@ -216,7 +215,10 @@ $body-padding: $size-default;
   }
 
   &__body {
-    @include calc(width, "100% - " ($icon-width + $icon-padding + $body-padding));
+    @include calc(
+      width,
+      "100% - " ($icon-width + $icon-padding + $body-padding)
+    );
 
     .lt-ie9 & {
       width: 75%;
@@ -325,10 +327,10 @@ $body-padding: $size-default;
 }
 
 // Fighting design standards specificity
-.usajobs-joa-intro-second-announcement .usajobs-joa-intro-second-announcement__link {
+.usajobs-joa-intro-second-announcement
+.usajobs-joa-intro-second-announcement__link {
   text-decoration: none;
 }
-
 
 .no-flexbox .usajobs-joa-intro-second-announcement {
   &__item {
@@ -342,7 +344,10 @@ $body-padding: $size-default;
   }
 
   &__body {
-    @include calc(width, "100% - " ($icon-width + $icon-padding + $body-padding));
+    @include calc(
+      width,
+      "100% - " ($icon-width + $icon-padding + $body-padding)
+    );
 
     .lt-ie9 & {
       width: 75%;

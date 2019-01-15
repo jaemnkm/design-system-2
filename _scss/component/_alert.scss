@@ -1,6 +1,6 @@
 // Alerts
 
-@import 'media-object';
+@import "media-object";
 
 @mixin alert($dark_color, $light_color, $icon) {
   background-color: $light_color;
@@ -38,10 +38,12 @@
   }
 
   &__body {
-    min-height: rem(77px);  // I no longer recall why this was put here -- taking it out in the next go round
+    min-height: rem(
+      77px
+    ); // I no longer recall why this was put here -- taking it out in the next go round
     padding-left: $size-base;
 
-    &[aria-hidden=true] {
+    &[aria-hidden="true"] {
       display: none;
     }
   }
@@ -74,7 +76,7 @@
   @include clearfix();
   display: table;
 
-  &[aria-hidden=true] {
+  &[aria-hidden="true"] {
     display: none;
   }
 
@@ -84,7 +86,10 @@
   }
 
   &__body {
-    @include calc(width, '100% - ' ($icon-width + $icon-padding + $body-padding));
+    @include calc(
+      width,
+      "100% - " ($icon-width + $icon-padding + $body-padding)
+    );
   }
 
   &__body .lt-ie9 & {
@@ -96,7 +101,7 @@
   @include display(flex);
   @include align-items(flex-start);
 
-  &[aria-hidden=true] {
+  &[aria-hidden="true"] {
     display: none;
   }
 
@@ -111,23 +116,27 @@
 }
 
 .usajobs-alert--success {
-  @include alert($color-green-dark, $color-green-lightest, 'success');
+  @include alert($color-green-dark, $color-green-lightest, "success");
 }
 
 .usajobs-alert--info {
-  @include alert($color-primary-alt, $color-primary-alt-lightest, 'info');
+  @include alert($color-primary-alt, $color-primary-alt-lightest, "info");
 }
 
 .usajobs-alert--warning {
-  @include alert($color-gold, $color-gold-lightest, 'warning');
+  @include alert($color-gold, $color-gold-lightest, "warning");
 }
 
 .usajobs-alert--error {
-  @include alert($color-secondary-dark, $color-secondary-lightest, 'error');
+  @include alert($color-secondary-dark, $color-secondary-lightest, "error");
 }
 
 .usajobs-alert--tip {
-  @include alert($color-primary-alt-dark, $color-primary-alt-lightest, 'lightbulb');
+  @include alert(
+    $color-primary-alt-dark,
+    $color-primary-alt-lightest,
+    "lightbulb"
+  );
 
   .usajobs-alert__icon {
     background-size: 75%;

@@ -1,6 +1,6 @@
 // JOA - Section
 
-@import '../../base-shared';
+@import "../../base-shared";
 
 .usajobs-joa-section {
   position: relative;
@@ -13,7 +13,7 @@
     padding: $size-default;
     @include boxShadow(1);
 
-    &[aria-hidden=true] {
+    &[aria-hidden="true"] {
       display: block !important;
     }
   }
@@ -54,8 +54,8 @@
 // Fighting Standards specificity
 .usajobs-joa-section .usajobs-joa__read-more-content {
   @include media($M) {
-    &[aria-expanded=false],
-    &[aria-expanded=true] {
+    &[aria-expanded="false"],
+    &[aria-expanded="true"] {
       background-image: none;
     }
   }

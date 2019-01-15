@@ -1,6 +1,6 @@
 // Footer
 
-@import '../base-shared';
+@import "../base-shared";
 
 .usajobs-footer--v1,
 .usajobs-footer--v2,
@@ -49,7 +49,9 @@
   }
 
   // Fix headers inside of unordered lists
-  .usa-footer-primary-section .usa-footer-primary-content .usa-footer-primary-link {
+  .usa-footer-primary-section
+    .usa-footer-primary-content
+    .usa-footer-primary-link {
     @include h4();
     margin: 0;
     padding-bottom: $size-M;
@@ -83,7 +85,9 @@
     }
   }
 
-  .usa-footer-primary-section .usa-footer-primary-content .usa-footer-primary-link {
+  .usa-footer-primary-section
+    .usa-footer-primary-content
+    .usa-footer-primary-link {
     padding: $size-M 0 $size-S;
 
     .usajobs-icon {
@@ -91,7 +95,9 @@
     }
   }
 
-  .usa-footer-primary-section .usa-footer-primary-content.hidden .usa-footer-primary-link {
+  .usa-footer-primary-section
+    .usa-footer-primary-content.hidden
+    .usa-footer-primary-link {
     padding: $size-M 0;
 
     @include media($M) {
@@ -162,8 +168,8 @@
     display: inline-block;
     height: rem(36px);
     width: rem(150px);
-    background-image: url('../img/logo/png/white-2x.png');
-    background-image: url('../img/logo/svg/white-2x.svg');
+    background-image: url("../img/logo/png/white-2x.png");
+    background-image: url("../img/logo/svg/white-2x.svg");
     background-repeat: no-repeat;
 
     @include media($ML) {
@@ -278,8 +284,14 @@
     text-decoration: none;
   }
 
-  .usa-footer-primary-section .usa-footer-primary-content .usa-footer-primary-link a,
-  .usa-footer-primary-section .usa-footer-primary-content .usa-footer-primary-link a:visited {
+  .usa-footer-primary-section
+    .usa-footer-primary-content
+    .usa-footer-primary-link
+    a,
+  .usa-footer-primary-section
+    .usa-footer-primary-content
+    .usa-footer-primary-link
+    a:visited {
     color: $color-base;
     font-weight: bold;
   }
@@ -360,13 +372,13 @@
 
   &__col {
     @include media($L) {
-      @include span-columns(8,12);
+      @include span-columns(8, 12);
     }
   }
 
   &__col.usajobs-footer--openopps__contact {
     @include media($L) {
-      @include span-columns(4,12);
+      @include span-columns(4, 12);
       @include omega();
     }
   }
@@ -421,5 +433,5 @@
 svg.usajobs-footer--openopps__logo {
   width: auto;
   height: auto;
-  max-width: 32.0rem;
+  max-width: 32rem;
 }
