@@ -196,25 +196,6 @@ function watch() {
   );
 }
 
-/**
- * Delete .publish directory
- */
-gulp.task("clean", () => del(".publish/**/*"));
-
-/**
- * Rebuild Jekyll & do page reload
- */
-gulp.task("jekyll-rebuild", gulp.series(jekyllBuild, reload));
-
-/**
- * Default task, running just `gulp` will compile the sass,
- * compile the jekyll site, launch BrowserSync & watch files.
- * To run locally:
- * $ NODE_ENV=dev gulp
- * or use `npm start`
- */
-gulp.task("default", gulp.parallel(jekyllBuild, browserSyncServe, watch));
-
 // Override for build to always be setting the env to prod just in case
 function prepForProd() {
   process.env.NODE_ENV = "prod";
@@ -298,6 +279,25 @@ gulp.task(
   "build",
   gulp.series(jekyllBuild, gulp.parallel(cssBuild, gulp.task("buildJS")))
 );
+
+/**
+ * Delete .publish directory
+ */
+gulp.task("clean", () => del(".publish/**/*"));
+
+/**
+ * Rebuild Jekyll & do page reload
+ */
+gulp.task("jekyll-rebuild", gulp.series(jekyllBuild, reload));
+
+/**
+ * Default task, running just `gulp` will compile the sass,
+ * compile the jekyll site, launch BrowserSync & watch files.
+ * To run locally:
+ * $ NODE_ENV=dev gulp
+ * or use `npm start`
+ */
+gulp.task("default", gulp.series(gulp.task("build"), browserSyncServe, watch));
 
 // TEST
 function scssLint() {

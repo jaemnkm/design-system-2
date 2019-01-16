@@ -3,9 +3,7 @@
   "htmlWhitespaceSensitivity": "strict",
   "printWidth": 80,
   "requirePragma": false,
-  "semi": true,
   "tabWidth": 2,
-  "trailingComma": "es5",
   "useTabs": false,
   "overrides": [
     {
