@@ -17,7 +17,7 @@ const gulpStylelint = require("gulp-stylelint");
 const { formatters } = require("stylelint");
 const jshint = require("gulp-jshint");
 const neat = require("bourbon-neat").includePaths;
-const packCSS = require("css-mqpacker");
+// const packCSS = require("css-mqpacker");
 const postcss = require("gulp-postcss");
 const prefix = require("autoprefixer");
 const rename = require("gulp-rename");
@@ -68,9 +68,8 @@ var paths = {
     ]
   },
   scripts: {
-    src: "js/*.js",
     dest: "_site/js",
-    jshintSrc: [
+    watch: [
       "gulpfile.js",
       "js/**/*.js",
       "!js/vendor/*.js",
@@ -104,7 +103,7 @@ var paths = {
 var options = {
   autoprefixer: ["> 1%", "Last 2 versions", "IE 11"],
   browserify: {
-    entries: paths.scripts.entryPoints,
+    entries: paths.scripts.entryPoint,
     external: ["jquery"],
     transform: [["babelify", { presets: ["es2015"], global: true }]],
     debug: true
@@ -135,7 +134,8 @@ function jekyllBuild() {
 function cssBuild() {
   const processors = [
     prefix({ browsers: options.autoprefixer }),
-    packCSS({ sort: true }),
+    // We can't re-order our media-queries the way we are currently writing them
+    //    packCSS({ sort: false }),
     csswring,
     cssnano({ autoprefixer: { browsers: options.autoprefixer } })
   ];
@@ -179,17 +179,18 @@ function browserSyncServe() {
 
 function watch() {
   gulp.watch(paths.styles.watch, cssBuild);
+  gulp.watch(paths.scripts.watch, gulp.task("buildJS"));
   gulp.watch(
     [
-      "*.html",
+      "*/**/*.html",
       "_layouts/*.html",
       "_page-layouts/*.html",
       "pages/*",
       "_data/*",
       "_includes/*",
-      "js/*.js",
-      "img/*.*"
-      // './**/*.md' // causes infinite loop
+      "img/*.*",
+      "./**/*.md",
+      "!_site/**/*.html"
     ],
     gulp.series(jekyllBuild, reload)
   );
@@ -214,6 +215,11 @@ gulp.task("jekyll-rebuild", gulp.series(jekyllBuild, reload));
  */
 gulp.task("default", gulp.parallel(jekyllBuild, browserSyncServe, watch));
 
+// Override for build to always be setting the env to prod just in case
+function prepForProd() {
+  process.env.NODE_ENV = "prod";
+}
+
 /**
  * Deploy to GitHub Pages
  */
@@ -221,12 +227,12 @@ function deploy() {
   return gulp.src("./_site/**/*").pipe(ghpages());
 }
 
-gulp.task("deploy", gulp.series(jekyllBuild, gulp.parallel(deploy)));
+gulp.task("deploy", gulp.series(prepForProd, jekyllBuild, deploy));
 
 // JS
 function jsHint() {
   return gulp
-    .src(paths.scripts.jshintSrc)
+    .src(paths.scripts.watch)
     .pipe(jshint())
     .pipe(jshint.reporter(require("jshint-stylish")));
 }
@@ -278,14 +284,6 @@ function copyJS() {
     .pipe(gulp.dest(paths.scripts.dest));
 }
 
-function jsBuild() {
-  jsHint();
-  concatBase();
-  concatComponents();
-  concatDocs();
-  copyJS();
-}
-
 gulp.task(
   "buildJS",
   gulp.series(
@@ -296,7 +294,10 @@ gulp.task(
 );
 
 // BUILD
-gulp.task("build", gulp.series(jekyllBuild, cssBuild, jsBuild));
+gulp.task(
+  "build",
+  gulp.series(jekyllBuild, gulp.parallel(cssBuild, gulp.task("buildJS")))
+);
 
 // TEST
 function scssLint() {

@@ -66,6 +66,7 @@
     "jshint-stylish": "^2.2.0",
     "node-sass": "^4.11.0",
     "opener": "^1.5.1",
+    "prettier": "^1.15.3",
     "prettier-stylelint": "^0.4.2",
     "readmore-js": "^2.2.1",
     "stylelint": "^9.5.0",

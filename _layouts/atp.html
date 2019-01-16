@@ -3,15 +3,16 @@
 <!--[if gt IE 8]><!--><html lang="en"><!--<![endif]-->
   <head>
     {% include prod-head.html %}
-    <link rel="stylesheet" href="{{ site.baseurl }}/css/layouts/atp.css" />
+    <link
+      rel="stylesheet"
+      href="{{ site.baseurl }}/css/usajobs-design-system-atp.css"
+    />
   </head>
   <body class="{{ page.title | slugify }} ">
     {% include components/nav-atp.html %}
     <section class="usajobs-shell">
       <section class="usajobs-canvas">
-        <div class="usajobs-content-gutter">
-          {{ content }}
-        </div>
+        <div class="usajobs-content-gutter">{{ content }}</div>
       </section>
     </section>
     {% include scripts.html %}
