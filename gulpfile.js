@@ -3,9 +3,9 @@
 
 const gulp = require("gulp");
 const bourbon = require("bourbon").includePaths;
-const browserify = require("browserify");
+// const browserify = require("browserify");
 const browserSync = require("browser-sync").create();
-const buffer = require("vinyl-buffer");
+// const buffer = require("vinyl-buffer");
 const concat = require("gulp-concat");
 const cp = require("child_process");
 const cssnano = require("cssnano");
@@ -22,9 +22,9 @@ const postcss = require("gulp-postcss");
 const prefix = require("autoprefixer");
 const rename = require("gulp-rename");
 const sass = require("gulp-sass");
-const source = require("vinyl-source-stream");
+// const source = require("vinyl-source-stream");
 const sourcemaps = require("gulp-sourcemaps");
-const uglify = require("gulp-uglify");
+// const uglify = require("gulp-uglify");
 
 // gulp-sass uses node-sass by default but strongly recommends we set
 // it explicitly for forwards-compatibility in case the default ever changes.
@@ -36,7 +36,7 @@ const ignoreStylelintIgnoreWarnings = lintResults =>
     lintResults.reduce((memo, result) => {
       const { warnings } = result;
       const fileIsIgnored = warnings.some(warning => {
-        return RegExp(IGNORE_STRING, "i").test(warning.text);
+        return new RegExp(IGNORE_STRING, "i").test(warning.text);
       });
 
       if (!fileIsIgnored) {
@@ -87,6 +87,7 @@ var paths = {
       "node_modules/readmore-js/readmore.js",
       "js/vendor/fontawesome-all.min.js",
       "js/vendor/fa-v4-shims.min.js",
+      "node_modules/uswds/dist/js/uswds.min.js",
       "js/base.js"
     ],
     concatComponents: "js/components/*.js",
@@ -101,7 +102,8 @@ var paths = {
 };
 
 var options = {
-  browserifyParams: {
+  autoprefixer: ["> 1%", "Last 2 versions", "IE 11"],
+  browserify: {
     entries: paths.scripts.entryPoints,
     external: ["jquery"],
     transform: [["babelify", { presets: ["es2015"], global: true }]],
@@ -132,10 +134,10 @@ function jekyllBuild() {
 
 function cssBuild() {
   const processors = [
-    prefix({ browsers: ["> 5%", "last 3 versions"] }),
+    prefix({ browsers: options.autoprefixer }),
     packCSS({ sort: true }),
     csswring,
-    cssnano
+    cssnano({ autoprefixer: { browsers: options.autoprefixer } })
   ];
 
   return gulp
@@ -211,7 +213,6 @@ gulp.task("jekyll-rebuild", gulp.series(jekyllBuild, reload));
  * or use `npm start`
  */
 gulp.task("default", gulp.parallel(jekyllBuild, browserSyncServe, watch));
-// gulp.task("default", ["clean", "build", "css", "js", "test"]);
 
 /**
  * Deploy to GitHub Pages
@@ -230,38 +231,12 @@ function jsHint() {
     .pipe(jshint.reporter(require("jshint-stylish")));
 }
 
-function browserifyComponentJS() {
-  var defaultStream = browserify(options.browserifyParams);
-
-  // .pipe(source("js/base.js"))
-  var stream = defaultStream
-    .bundle()
-    .pipe(source(paths.scripts.entryPoint))
-    .pipe(buffer())
-    .pipe(rename({ basename: "usajobs-design-system-" }))
-    .pipe(gulp.dest("js"));
-
-  stream.pipe(sourcemaps.init({ loadMaps: true }));
-
-  if (process.env.NODE_ENV !== "dev") {
-    stream.pipe(uglify());
-  }
-
-  stream
-    .on("error", log.error)
-    .pipe(
-      rename({
-        suffix: ".min"
-      })
-    )
-    .pipe(sourcemaps.write("."))
-    .pipe(gulp.dest("js"));
-
-  return stream;
-}
-
+/*
+// We will use this once we convert our js/components into ES6
+// This example was compiling the JS for uswds but, they already provide
+// that in node_modules/uswds/dist/js/uswds.min.js so easier to just copy it
 function browserifyLite() {
-  var bundler = browserify(options.browserifyParams);
+  var bundler = browserify(options.browserify);
 
   return bundler
     .bundle()
@@ -274,6 +249,7 @@ function browserifyLite() {
     .pipe(rename("uswds-components.js"))
     .pipe(gulp.dest("./js"));
 }
+*/
 
 function concatBase() {
   return gulp
@@ -304,7 +280,6 @@ function copyJS() {
 
 function jsBuild() {
   jsHint();
-  browserifyComponentJS();
   concatBase();
   concatComponents();
   concatDocs();
@@ -315,7 +290,7 @@ gulp.task(
   "buildJS",
   gulp.series(
     jsHint,
-    gulp.parallel(browserifyLite, concatBase, concatComponents, concatDocs),
+    gulp.parallel(concatBase, concatComponents, concatDocs),
     copyJS
   )
 );
