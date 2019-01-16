@@ -1,10 +1,10 @@
 // Shared Account Layout
 
-@import 'base-shared';
+@import "../base-shared";
 
-@import '../home-variables';
+@import "../home-variables";
 
-@mixin accountLayout ($hasChildren: false) {
+@mixin accountLayout($hasChildren: false) {
   @include clearfix();
 
   @include media($home-switch-to-tabs) {

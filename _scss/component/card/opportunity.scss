@@ -1,6 +1,5 @@
-
-@import '../../base-shared';
-@import 'card';
+@import "../../base-shared";
+@import "card";
 
 .usajobs-open-opps-opportunity {
   @include card-v4();

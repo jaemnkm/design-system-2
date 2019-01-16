@@ -3,12 +3,10 @@
 <!--[if gt IE 8]><!--><html lang="en"><!--<![endif]-->
   <head>
     {% include prod-head.html %}
-    <link rel="stylesheet" href="{{ site.baseurl }}{{ page.css }}">
+    <link rel="stylesheet" href="{{ site.baseurl }}{{ page.css }}" />
   </head>
   <body>
-    {% include components/nav-logged_in.html %}
-    {{ content }}
-    {% include components/footer-no-return.html %}
-    {% include scripts.html %}
+    {% include components/nav/v2/auth.html %} {{ content }} {% include
+    components/footer-no-return.html %} {% include scripts.html %}
   </body>
 </html>

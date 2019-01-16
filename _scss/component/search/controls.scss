@@ -1,6 +1,6 @@
 // Search - Controls
 
-@import '../../base-shared';
+@import "../../base-shared";
 
 .usajobs-search-controls {
   margin-bottom: $size-base;
@@ -11,7 +11,7 @@
   }
 
   @include media($L) {
-    padding: .9rem 0 0 0; // odd sizing to align properly with search prefs
+    padding: 0.9rem 0 0 0; // odd sizing to align properly with search prefs
   }
 
   &__results-count-container {

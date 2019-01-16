@@ -1,14 +1,15 @@
 // Home - Reveal - Show all, more, next
 
-@import '../base-shared';
-@import '../home-variables';
+@import "../base-shared";
+@import "../home-variables";
 
 [data-object="reveal-more"][data-readmore] {
   transition: height 500ms;
   overflow: hidden;
 }
 
-[data-object="reveal-more"]+[data-readmore-toggle], [data-object="reveal-more"][data-readmore] {
+[data-object="reveal-more"] + [data-readmore-toggle],
+[data-object="reveal-more"][data-readmore] {
   display: block;
   width: 100%;
 }
@@ -32,13 +33,13 @@
       vertical-align: middle;
     }
 
-    &[aria-expanded=false] {
+    &[aria-expanded="false"] {
       &::after {
         @include icon-content("solid/angle-down", 1.7rem, 1.094rem);
       }
     }
 
-    &[aria-expanded=true] {
+    &[aria-expanded="true"] {
       &::after {
         @include icon-content("solid/angle-up", 1.7rem, 1.094rem);
       }
@@ -71,7 +72,7 @@
   width: 100%;
 
   &::before {
-    content: '';
+    content: "";
     width: 100%;
     height: 0;
     position: absolute;
@@ -82,7 +83,7 @@
 
     // Be sure to use the same speed value as in your Readmore configuration,
     // keeping in mind that CSS transition speed is stated in seconds.
-    transition: height .5s
+    transition: height 0.5s;
   }
 
   // Set the height of the gradient to 80 when CLOSED

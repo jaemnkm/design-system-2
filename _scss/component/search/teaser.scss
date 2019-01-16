@@ -1,6 +1,6 @@
 // Search - Teaser
 
-@import '../../base-shared';
+@import "../../base-shared";
 
 .usajobs-search-teaser {
   background-color: $color-primary-darkest;
@@ -26,16 +26,16 @@
 }
 
 .usajobs-search-teaser--data-science {
-  background-image: url('../img/teasers/data-science.png');
+  background-image: url("../img/teasers/data-science.png");
 }
 
 .usajobs-search-teaser--cyber-security {
-  background-image: url('../img/teasers/cyber-security.png');
+  background-image: url("../img/teasers/cyber-security.png");
 }
 
 .usajobs-search-teaser--privacy {
   background-color: $color-gray-lighter;
-  background-image: url('../img/teasers/privacy.png');
+  background-image: url("../img/teasers/privacy.png");
   background-position: 12% 5%;
 
   @include media($M) {

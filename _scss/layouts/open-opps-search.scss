@@ -1,10 +1,6 @@
 // Open Opps - Search layout
 
-@import '../base-shared';
-
-.usajobs-open-opps-search {
-
-}
+@import "../base-shared";
 
 .usajobs-open-opps-search-results {
   margin-top: $size-default;
@@ -45,7 +41,11 @@
       text-align: right;
       width: 70%;
       height: #{$base-line-height}em;
-      background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1) 50%);
+      background: linear-gradient(
+        to right,
+        rgba(255, 255, 255, 0),
+        rgba(255, 255, 255, 1) 50%
+      );
     }
   }
 }

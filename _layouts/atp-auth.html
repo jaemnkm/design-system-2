@@ -3,7 +3,10 @@
 <!--[if gt IE 8]><!--><html lang="en"><!--<![endif]-->
   <head>
     {% include prod-head.html %}
-    <link rel="stylesheet" href="{{ site.baseurl }}/css/layouts/auth.css" />
+    <link
+      rel="stylesheet"
+      href="{{ site.baseurl }}/css/usajobs-design-sytem-auth.css"
+    />
   </head>
   <body class="{{ page.title | slugify }} usajobs-auth">
     {% include components/nav/atp-auth.html %}
@@ -14,7 +17,6 @@
         </div>
       </section>
     </section>
-    {% include components/footer/v3/minimal.html %}
-    {% include scripts.html %}
+    {% include components/footer/v3/minimal.html %} {% include scripts.html %}
   </body>
 </html>

@@ -4,53 +4,53 @@
 // It is just a shortcut. In practice these will be included on appropriate pages as needed.
 
 // Cards
-@import 'component/card/component-card';
-@import 'component/card/opportunity';
+@import "component/card/component-card";
+@import "component/card/opportunity";
 
 // Drawer
-@import 'component/drawer';
+@import "component/drawer";
 
 // Forms
-@import 'component/card-button';
+@import "component/card-button";
 
-@import 'component/footer';
-@import 'component/header';
-@import 'component/modal';
-@import 'component/pill';
-@import 'component/reveal';
+@import "component/footer";
+@import "component/header";
+@import "component/modal";
+@import "component/pill";
+@import "component/reveal";
 
 // Navigation
-@import 'component/nav';
-@import 'component/nav-secondary';
-@import 'component/profile-sidenav';
+@import "component/nav";
+@import "component/nav-secondary";
+@import "component/profile-sidenav";
 
 // Application Guide
-@import 'component/joa_summary';
-@import 'component/document';
-@import 'component/button_bar';
-@import 'component/progress-indicator';
+@import "component/joa_summary";
+@import "component/document";
+@import "component/button_bar";
+@import "component/progress-indicator";
 
 // JOA
-@import 'component/joa/prev-next';
-@import 'component/joa/banner';
-@import 'component/joa/nav';
-@import 'component/joa/intro';
-@import 'component/joa/location';
-@import 'component/joa/joa-actions';
-@import 'component/joa/section';
-@import 'component/joa/agency';
-@import 'component/joa/occupations';
-@import 'component/joa/fair-and-transparent';
-@import 'component/joa/required-documents';
+@import "component/joa/prev-next";
+@import "component/joa/banner";
+@import "component/joa/nav";
+@import "component/joa/intro";
+@import "component/joa/location";
+@import "component/joa/joa-actions";
+@import "component/joa/section";
+@import "component/joa/agency";
+@import "component/joa/occupations";
+@import "component/joa/fair-and-transparent";
+@import "component/joa/required-documents";
 
 // Search
-@import 'component/search/controls';
-@import 'component/search/pagination';
-@import 'component/search/result';
-@import 'component/search/teaser';
+@import "component/search/controls";
+@import "component/search/pagination";
+@import "component/search/result";
+@import "component/search/teaser";
 
 // Tooltip
-@import 'component/tooltip';
+@import "component/tooltip";
 
 // Event
-@import 'component/event';
+@import "component/event";

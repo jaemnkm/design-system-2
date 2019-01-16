@@ -2,12 +2,11 @@
 <!--[if lt IE 9]><html class="lt-ie9"><![endif]-->
 <!--[if gt IE 8]><!--><html lang="en"><!--<![endif]-->
   <head>
-    {% include prod-head.html %}
-    <link rel="stylesheet" href="{{ "/css/layouts/joa.css" | prepend: site.baseurl }}">
+    {% include prod-head.html %} <link rel="stylesheet" href="{{
+    "/css/usajobs-design-system-joa.css" | prepend: site.baseurl }}">
   </head>
   <body class="{{ page.title | slugify }} usajobs-joa">
-    {{ content }}
-    {% include components/footer-joa.html %}
-    {% include scripts.html %}
+    {{ content }} {% include components/footer-joa.html %} {% include
+    scripts.html %}
   </body>
 </html>

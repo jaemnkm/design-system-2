@@ -1,6 +1,6 @@
 // Search - Pagination
 
-@import '../../base-shared';
+@import "../../base-shared";
 
 .usajobs-search-pagination {
   @include clearfix();
@@ -18,7 +18,7 @@
     }
 
     &::before {
-      content: '';
+      content: "";
       padding: 0;
     }
 
@@ -81,7 +81,7 @@
     }
 
     &::before {
-      content: '';
+      content: "";
     }
 
     a {
@@ -119,7 +119,7 @@
     }
 
     &::before {
-      content: '';
+      content: "";
       padding: 0;
     }
 
@@ -147,8 +147,8 @@
     }
   }
 
-  &__previous-page[aria-hidden=true],
-  &__next-page[aria-hidden=true] {
+  &__previous-page[aria-hidden="true"],
+  &__next-page[aria-hidden="true"] {
     display: none;
   }
 

@@ -1,8 +1,8 @@
 // Button Bar
 
-@import '../base-shared';
+@import "../base-shared";
 
-@mixin buttonBar () {
+@mixin buttonBar() {
   @include outer-container();
 
   &__body {
@@ -27,7 +27,7 @@
   }
 }
 
-@mixin buttonBarSlim ($align) {
+@mixin buttonBarSlim($align) {
   .usajobs-button_bar__body,
   .usajobs-button-bar__body {
     padding-left: 0;
@@ -40,7 +40,7 @@
     display: inline-block;
     float: none;
   }
-};
+}
 
 // It should have been named button-bar and not button_bar but, I goofed so
 // I added the correct one and kept the underscore version to be backward compatible
@@ -57,9 +57,9 @@
 
   &__delete {
     display: inline-block;
-    padding: .6rem $size-default .6rem 2.5rem;
+    padding: 0.6rem $size-default 0.6rem 2.5rem;
     font-weight: bold;
-    background-image: url('../img/icons/button-bar/times-circle.svg');
+    background-image: url("../img/icons/button-bar/times-circle.svg");
     background-size: 2rem 2rem;
     background-position: left center;
     background-repeat: no-repeat;
@@ -77,7 +77,7 @@
 }
 
 .usajobs-button_bar--slim-left,
-.usajobs-button-bar--slim-left{
+.usajobs-button-bar--slim-left {
   @include buttonBar();
   @include buttonBarSlim(left);
 }

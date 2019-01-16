@@ -1,12 +1,8 @@
 // JOA - Locations
 
-@import '../../base-shared';
+@import "../../base-shared";
 
 .usajobs-joa-locations {
-  $icon-width: rem(9.72px);
-  $icon-padding: $size-base;
-  $body-padding: $size-S;
-
   &__sub-title {
     margin-top: $size-base;
   }
@@ -75,7 +71,7 @@
   &__more-locations {
     padding: $size-default 0;
 
-    &[aria-hidden=true] {
+    &[aria-hidden="true"] {
       display: none;
     }
   }
@@ -97,7 +93,14 @@
   }
 
   &__body {
-    @include calc(width, "100% - " ($icon-width + $icon-padding + $body-padding));
+    $icon-width: rem(9.72px);
+    $icon-padding: $size-base;
+    $body-padding: $size-S;
+
+    @include calc(
+      width,
+      "100% - " ($icon-width + $icon-padding + $body-padding)
+    );
 
     .lt-ie9 & {
       width: 75%;

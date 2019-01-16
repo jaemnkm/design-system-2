@@ -1,9 +1,9 @@
 // Card -- Used in Applications, Saved Jobs, and Saved Searches
 //         These mixins handle the LAYOUT of the card only, not the display of individual data
 
-@import '../../base-shared';
+@import "../../base-shared";
 
-@import '../../home-variables';
+@import "../../home-variables";
 
 @mixin card() {
   &__body {
@@ -112,7 +112,6 @@
   }
 }
 
-
 @mixin cardInset() {
   @include media($M) {
     @include boxShadow(1);
@@ -177,7 +176,6 @@
     }
   }
 }
-
 
 // This combines all the best bits and
 // is the current version to use as as a base for a list as of 12/2017
@@ -269,8 +267,6 @@
     color: $color-primary-alt-darkest;
   }
 }
-
-
 
 @mixin card-core-v1() {
   position: relative;
@@ -382,12 +378,12 @@
     font-size: $small-font-size;
   }
 
-  &__save-job-link[data-state=is-saved]::before {
+  &__save-job-link[data-state="is-saved"]::before {
     @include icon-content("job/star", 1.83rem, 1.7rem);
     padding-right: $size-XS;
   }
 
-  &__save-job-link[data-state=is-unsaved]::before {
+  &__save-job-link[data-state="is-unsaved"]::before {
     @include icon-content("job/star-o", 1.83rem, 1.7rem);
     padding-right: $size-XS;
   }

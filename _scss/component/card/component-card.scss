@@ -1,9 +1,9 @@
 // Card
 
-@import '../../base-shared';
+@import "../../base-shared";
 
-@import '../../home-variables';
-@import 'card';
+@import "../../home-variables";
+@import "card";
 
 .usajobs-card {
   @include card-v3();

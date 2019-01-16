@@ -1,11 +1,11 @@
 // Shared libraries and utilities.
 // These are loaded by every component to get at library mixins and design system variables.
 
-@import 'bourbon';
-@import 'neat';
+@import "bourbon";
+@import "neat";
 
-@import 'core/variables';
-@import 'base/variables';
-@import 'base/utilities';
-@import 'base/accessibility';
-@import 'base/breakpoints';
+@import "core/variables";
+@import "base/variables";
+@import "base/utilities";
+@import "base/accessibility";
+@import "base/breakpoints";

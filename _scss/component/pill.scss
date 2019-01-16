@@ -1,6 +1,6 @@
 // Pills
 
-@import 'base-shared';
+@import "../base-shared";
 
 $color-advancing: $color-green-dark;
 $color-paused: $color-gold;
@@ -37,12 +37,20 @@ $color-completed: $color-primary-alt;
 
     &.is-left {
       left: 0;
-      background-image: linear-gradient(270deg, rgba(241,241,241,0), $color-gray-lightest);
+      background-image: linear-gradient(
+        270deg,
+        rgba(241, 241, 241, 0),
+        $color-gray-lightest
+      );
     }
 
     &.is-right {
       right: 0;
-      background-image: linear-gradient(90deg, rgba(241,241,241,0), $color-gray-lightest);
+      background-image: linear-gradient(
+        90deg,
+        rgba(241, 241, 241, 0),
+        $color-gray-lightest
+      );
     }
   }
 
@@ -66,7 +74,8 @@ $color-completed: $color-primary-alt;
 
     &.is-active {
       @include media($M) {
-        box-shadow: 0 3px 3px -3px rgba(0,0,0,0.12) inset, 0 -3px 3px -3px rgba(0,0,0,0.24) inset;
+        box-shadow: 0 3px 3px -3px rgba(0, 0, 0, 0.12) inset,
+          0 -3px 3px -3px rgba(0, 0, 0, 0.24) inset;
       }
     }
   }
@@ -86,8 +95,8 @@ $color-completed: $color-primary-alt;
     }
   }
 
-  &__list > &__item[aria-hidden=true],
-  &__remove-all[aria-hidden=true] {
+  &__list > &__item[aria-hidden="true"],
+  &__remove-all[aria-hidden="true"] {
     display: none;
   }
 
@@ -134,7 +143,7 @@ $color-completed: $color-primary-alt;
       width: 1rem;
       height: 1rem;
       vertical-align: middle;
-      margin-bottom: .2rem;
+      margin-bottom: 0.2rem;
     }
   }
 
@@ -227,7 +236,7 @@ $color-completed: $color-primary-alt;
 
   &.status-submitted {
     background-color: $color-primary-alt-darkest;
-    border-color:  $color-primary-alt-darkest;
+    border-color: $color-primary-alt-darkest;
     color: $color-white;
   }
 

@@ -1,7 +1,7 @@
 // Layouts: Design System Home
 
-@import '../base-shared';
-@import 'shared';
+@import "../base-shared";
+@import "shared";
 
 .usajobs-ds-home {
   .usajobs-permalink {
@@ -67,7 +67,7 @@ $pillar-body-padding: $size-default;
       width: 100%;
 
       @include media($M) {
-        @include span-columns(3,6);
+        @include span-columns(3, 6);
         min-height: rem(225px);
       }
 
@@ -137,7 +137,11 @@ $pillar-body-padding: $size-default;
   }
 
   &__body {
-    @include calc(width, "100% - " ($pillar-icon-width + $icon-padding + ($pillar-body-padding * 2)));
+    @include calc(
+      width,
+      "100% - "
+        ($pillar-icon-width + $icon-padding + ($pillar-body-padding * 2))
+    );
 
     .lt-ie9 & {
       width: 75%;

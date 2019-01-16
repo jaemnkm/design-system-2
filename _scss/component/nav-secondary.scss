@@ -1,6 +1,6 @@
 // Navigation
 
-@import '../base-shared';
+@import "../base-shared";
 
 .usajobs-nav-secondary {
   position: relative;
@@ -146,7 +146,6 @@
     @include boxShadow(2);
   }
 
-
   &__body {
     @include outer-container();
     max-width: $site-max-width;
@@ -184,12 +183,12 @@
 
   &__link {
     display: block;
-    padding: $size-default 0 .8975rem;
+    padding: $size-default 0 0.8975rem;
     line-height: 1.25;
     font-size: $base-font-size;
-    border-bottom: .3525rem solid transparent;
+    border-bottom: 0.3525rem solid transparent;
     color: $color-white;
-    @include transition(all .25s ease-in-out);
+    @include transition(all 0.25s ease-in-out);
     text-decoration: none;
 
     &:visited {
@@ -256,6 +255,4 @@
       background-color: $color-primary-darker; // IE is inheriting the blue background of a button here
     }
   }
-
-
 }

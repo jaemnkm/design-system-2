@@ -14,7 +14,7 @@ The USAJOBS design system starts with the The [U.S. Web Design Standards](https:
 
 ### Requirements
 
-This repo uses [Jekyll](https://jekyllrb.com/) to serve and build the markup of the site. CSS and JS are managed by [Grunt](http://gruntjs.com/).
+This repo uses [Jekyll](https://jekyllrb.com/) to serve and build the markup of the site. CSS and JS are managed by [Gulp](https://gulpjs.com/).
 
 Thus you will need [Ruby](https://www.ruby-lang.org) ( > version 2.2.3 ) and [Node](https://nodejs.org/en/download/) ( > 4.1.2 ). The Node install will also provide npm, the Node package manager.
 
@@ -44,7 +44,9 @@ $ rbenv global
 Now that you have verified that you have Ruby and Node installed, run the following commands to install the packages that the design system depends upon:
 
 ```shell
-$ npm install -g grunt-cli
+$ bundle install
+$ npm install -g gulp
+$ npm install -g gulp-cli
 $ npm install
 $ npm run build
 ```
@@ -65,7 +67,7 @@ Questions or need help with setup? Feel free to open an issue here [https://gith
 
 ### How to use this repo in projects
 
-We will create a new repo for each project that will incrementally redesign a portion of the USAJOBS site. Those project repos will depend on the usajobs-design-system node module. 
+We will create a new repo for each project that will incrementally redesign a portion of the USAJOBS site. Those project repos will depend on the usajobs-design-system node module.
 
 If you have node installed on your machine, you can use npm to install the design system. Add usajobs-design-system to your project's package.json as a dependency:
 
@@ -73,7 +75,7 @@ If you have node installed on your machine, you can use npm to install the desig
 npm install usajobs-design-system --save
 ```
 
-The package will be installed in ```node_modules/usajobs-design-system```.
+The package will be installed in `node_modules/usajobs-design-system`.
 
 The main Sass (SCSS) source file is here:
 
