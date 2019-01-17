@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<!--[if lt IE 9]><html class="lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!--><html lang="en"><!--<![endif]-->
+  <head>
+    <!-- Basic Page Needs
+================================================== -->
+<meta charset="utf-8" /> <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+<!-- Mobile Specific Metas
+================================================== -->
+<meta name="HandheldFriendly" content="True" />
+<meta name="MobileOptimized" content="320" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<!-- Title and meta description
+================================================== -->
+ <title>USAJOBS Design System | Reset password with error</title>
+<meta
+  property="og:title"
+  content="USAJOBS Design System | Reset password with error"
+/>
+ 
+<meta name="description" content="" />
+<meta property="og:description" content="" />
+
+
+<link rel="canonical" href="/agency-talent-portal/auth/reset-password-with-error/" />
+
+<!-- Favicons
+================================================== -->
+<!-- 128x128 -->
+<link
+  rel="shortcut icon"
+  type="image/ico"
+  href="/design-system/img/favicons/favicon.ico"
+/>
+<link
+  rel="icon"
+  type="image/png"
+  href="/design-system/img/favicons/favicon.png"
+/>
+
+<!-- 192x192, as recommended for Android
+  http://updates.html5rocks.com/2014/11/Support-for-theme-color-in-Chrome-39-for-Android
+  -->
+<link
+  rel="icon"
+  type="image/png"
+  sizes="192x192"
+  href="/design-system/img/favicons/favicon-192.png"
+/>
+
+<!-- 57x57 (precomposed) for iPhone 3GS, pre-2011 iPod Touch and older Android devices -->
+<link
+  rel="apple-touch-icon-precomposed"
+  href="/design-system/img/favicons/favicon-57.png"
+/>
+<!-- 72x72 (precomposed) for 1st generation iPad, iPad 2 and iPad mini -->
+<link
+  rel="apple-touch-icon-precomposed"
+  sizes="72x72"
+  href="/design-system/img/favicons/favicon-72.png"
+/>
+<!-- 114x114 (precomposed) for iPhone 4, 4S, 5 and post-2011 iPod Touch -->
+<link
+  rel="apple-touch-icon-precomposed"
+  sizes="114x114"
+  href="/design-system/img/favicons/favicon-114.png"
+/>
+<!-- 144x144 (precomposed) for iPad 3rd and 4th generation -->
+<link
+  rel="apple-touch-icon-precomposed"
+  sizes="144x144"
+  href="/design-system/img/favicons/favicon-144.png"
+/>
+
+<!-- CSS
+================================================== -->
+<link rel="stylesheet" href="/design-system/css/usajobs-design-system-all.css">
+<!-- For production we should compile a distinct CSS for each component -->
+<link rel="stylesheet" href="/design-system/css/usajobs-design-system-components.css">
+
+    <link
+      rel="stylesheet"
+      href="/design-system/css/usajobs-design-sytem-auth.css"
+    />
+  </head>
+  <body class="reset-password-with-error usajobs-auth">
+    <header class="usajobs-site-header" role="banner" aria-label="header">
+  <!-- Gov banner BEGIN -->
+  <div class="usa-banner">
+    <div class="usa-accordion">
+      <header class="usa-banner-header">
+        <div class="usa-grid usa-banner-inner usajobs-nav--vATP__banner-inner">
+          <img src="/design-system/img/favicons/favicon-57.png" alt="U.S. flag">
+          <p>An official website of the United States government</p>
+          <button class="usa-accordion-button usa-banner-button" aria-expanded="false" aria-controls="gov-banner">
+            <span class="usa-banner-button-text">Here's how you know</span>
+          </button>
+        </div>
+      </header>
+      <div class="usa-banner-content usa-grid usa-accordion-content" id="gov-banner">
+        <div class="usa-banner-guidance-gov usa-width-one-half">
+          <img class="usa-banner-icon usa-media_block-img" src="/design-system/img/icon-dot-gov.svg" alt="Dot gov">
+          <div class="usa-media_block-body">
+            <p>
+              <strong>The .gov means it’s official.</strong>
+              <br>
+              Federal government websites always use a .gov or .mil domain. Before sharing sensitive information online, make sure you’re on a .gov or .mil site by inspecting your browser’s address (or “location”) bar.
+            </p>
+          </div>
+        </div>
+        <div class="usa-banner-guidance-ssl usa-width-one-half">
+          <img class="usa-banner-icon usa-media_block-img" src="/design-system/img/icon-https.svg" alt="SSL">
+          <div class="usa-media_block-body">
+            <p>This site is also protected by an SSL (Secure Sockets Layer) certificate that’s been signed by the U.S. government. The <strong>https://</strong> means all transmitted data is encrypted  — in other words, any information or browsing history that you provide is transmitted securely.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Gov banner END -->
+  <nav class="usajobs-nav usajobs-nav--vATP" role="navigation" aria-label="main navigation" data-object="nav">
+    <div class="usajobs-nav__body usajobs-nav--vATP__body">
+      <div class="usajobs-nav__header-container">
+        <div class="usajobs-nav__header">
+          <div class="usajobs-nav__brand-container">
+            <a class="usajobs-nav__brand" href="/">
+              <span class="logo" title="USAJOBS logo"></span>
+              <span class="usajobs-nav__sub-brand">Agency Talent Portal</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+
+    <section class="usajobs-shell">
+      <section class="usajobs-canvas">
+        <div class="usajobs-content-gutter usajobs-auth--tall">
+          <main class="usajobs-content-well usajobs-auth__content-well" id="main-content" role="main" aria-label="Forgot password">
+  <div class="usajobs-grid">
+    <h1>Change your password</h1>
+    <form class="usajobs-form usajobs-form--narrow" action="#new-password" method="post" novalidate="novalidate">
+      <fieldset class="usajobs-fieldset">
+        <div class="usa-input-error">
+          <label for="password" class="usa-input-error-label">New password</label>
+          <input required="required" aria-required="true" type="password" name="password" id="password" aria-required="true" aria-describedby="input-error-message">
+          <span class="usa-input-error-message" id="input-error-message" role="alert">
+            Your password must:
+            <ul>
+              <li>Be 8 to 20 characters long</li>
+              <li>Have at least one number</li>
+            </ul>
+          </span>
+        </div>
+        <div class="usajobs-button_bar--slim-left">
+          <div class="usajobs-button_bar__body">
+            <a href="/design-system/agency-talent-portal/auth/sign-in-with-success/" class="usa-button usa-button-primary usajobs-button_bar__save">
+              Change password
+            </a>
+          </div>
+        </div>
+        <div id="password-requirements" class="usajobs-form__help-extended">
+          <h5>Password requirements</h5>
+          <div id="pswd_info">
+            <p class="usajobs-form__help-brief">Your password must:</p>
+            <ul class="usajobs-form__help-details" id="password-validation-list">
+              <li id="pswd_info_username" class="required pswd_info_valid">Not match your username</li>
+              <li id="pswd_info_recent" class="required pswd_info_valid">Not to be a recently used password</li>
+              <li id="pswd_info_length" class="required pswd_info_invalid">Be 8 to 20 characters long</li>
+              <li id="pswd_info_capital" class="required pswd_info_invalid">Have at least one upper case letter</li>
+              <li id="pswd_info_lower" class="required pswd_info_invalid">Have at least one lower case letter</li>
+              <li id="pswd_info_number" class="required pswd_info_invalid">Have at least one number</li>
+              <li id="pswd_info_symbol" class="required pswd_info_invalid">Have at least one of the following: ! @ # $ % ^ &amp; * ( )
+              <li>Note: No other symbols are allowed.</li>
+            </ul>
+            <span class="field-validation-valid" data-valmsg-for="Password" data-valmsg-replace="true"></span>
+          </div>
+        </div>
+      </fieldset>
+    </form>
+  </div>
+</main>
+
+<!-- aside class="usajobs-rightrail usajobs-auth__terms">
+  <div class="usajobs-login-terms">
+  <h3>Terms and Conditions</h3>
+  <p>
+    This U. S. Federal Government system is to be used by authorized users only. Information from this system resides on computer systems funded by the government. The data and documents on this system include Federal records that may contain sensitive information protected by various Federal statutes, including the Privacy Act, 5 U.S.C. § 552a.
+  </p>
+  <p>
+    All access or use of this system constitutes user understanding and acceptance of these terms and constitutes unconditional consent to review, monitoring and action by all authorized government and law enforcement personnel. While using this system your use may be monitored, recorded and subject to audit.
+  </p>
+  <p>
+    Unauthorized user attempts or acts to (1) access, upload, change, or delete or deface information on this system, (2) modify this system, (3) deny access to this system, (4) accrue resources for unauthorized use or (5) otherwise misuse this system are strictly prohibited. Such attempts or acts are subject to action that may result in criminal, civil, or administrative penalties.
+  </p>
+</div>
+
+  <div class="usajobs-auth__security-tips">
+  <h3>Security Guidelines</h3>
+  <p>
+    As the USAJOBS account holder, you are responsible for maintaining the confidentiality of your account, notably your password, and for any and all activity that occurs under your account as a result of failing to keep this information secure and confidential. You agree to notify USAJOBS Support immediately of any unauthorized use of your account or password, or any other breach of security. You may not use anyone else’s USAJOBS account at any time.
+  </p>
+  <p>
+    To help with these precautions, please follow these tips:
+  </p>
+  <ul>
+    <li>Always sign out of USAJOBS when you have completed your session with the system.</li>
+    <li>Avoid using the same password for multiple online accounts.</li>
+    <li>
+      Your USAJOBS account password should be something only you know, and should not be shared with anyone, even family members.
+    </li>
+    <li>
+      The email address associated with your USAJOBS account should be personal and private, controlled by only you and not shared with anyone, even family members. Avoid using e-mail addresses that are issued and managed by another party or organization - .gov/.mil or a corporate email account.
+    </li>
+    <li>
+      Periodic password resets may enhance the security of your account. If you suspect that someone knows your USAJOBS username and password, you can change your password using the self-service password reset function by clicking ForgotPassword.
+    </li>
+  </ul>
+</div>
+
+</aside -->
+
+        </div>
+      </section>
+    </section>
+    <footer class="usa-footer usa-footer-big usajobs-footer--v2" role="contentinfo" aria-label="footer" data-object="footer">
+  <div class="usa-grid usa-footer-return-to-top">
+    <a href="#footer">Return to top</a>
+  </div>
+  <div class="usa-footer-secondary_section usa-footer-big-secondary-section">
+    <div class="usa-grid">
+      <div class="usa-footer-logo usa-width-one-half">
+        <span class="logo"></span>
+        <p class="usajobs-footer--v1__note">
+          USAJOBS is a <a href="https://www.opm.gov">United States Office of Personnel Management</a> website.
+        </p>
+      </div>
+      <div class="usa-footer-contact-links usa-width-one-half">
+        <ul class="usa-unstyled-list usajobs-footer--v1__subsection-horizontal">
+          <li><a href="https://www.opm.gov/about-us/budget-performance/">Budget and Performance</a></li>
+          <li><a href="http://www.opm.gov/efoia/">FOIA</a></li>
+          <li><a href="https://www.opm.gov/our-inspector-general/">Inspector General</a></li>
+          <li><a href="https://www.opm.gov/information-management/no-fear-act/">No Fear Act Data</a></li>
+          <li><a href="http://usajobs.github.io/Help/privacy/">Privacy Policy</a></li>
+          <li><a href="http://www.usa.gov/">USA.gov</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+ <script src="/design-system/js/usajobs-design-system-base.js"></script>
+<script src="/design-system/js/usajobs-design-system-documentation.js"></script>
+<script src="/design-system/js/usajobs-design-system-components.js"></script>
+
+  </body>
+</html>

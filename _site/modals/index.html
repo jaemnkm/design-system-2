@@ -1,0 +1,1364 @@
+<!DOCTYPE html>
+<!--[if lt IE 9]><html class="lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!--><html lang="en"><!--<![endif]-->
+
+  <head>
+    <!-- Basic Page Needs
+================================================== -->
+<meta charset="utf-8" /> <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+<!-- Mobile Specific Metas
+================================================== -->
+<meta name="HandheldFriendly" content="True" />
+<meta name="MobileOptimized" content="320" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<!-- Title and meta description
+================================================== -->
+ <title>USAJOBS Design System | Modals</title>
+<meta
+  property="og:title"
+  content="USAJOBS Design System | Modals"
+/>
+ 
+<meta name="description" content="" />
+<meta property="og:description" content="" />
+
+
+<link rel="canonical" href="/modals/" />
+
+<!-- Favicons
+================================================== -->
+<!-- 128x128 -->
+<link
+  rel="shortcut icon"
+  type="image/ico"
+  href="/design-system/img/favicons/favicon.ico"
+/>
+<link
+  rel="icon"
+  type="image/png"
+  href="/design-system/img/favicons/favicon.png"
+/>
+
+<!-- 192x192, as recommended for Android
+  http://updates.html5rocks.com/2014/11/Support-for-theme-color-in-Chrome-39-for-Android
+  -->
+<link
+  rel="icon"
+  type="image/png"
+  sizes="192x192"
+  href="/design-system/img/favicons/favicon-192.png"
+/>
+
+<!-- 57x57 (precomposed) for iPhone 3GS, pre-2011 iPod Touch and older Android devices -->
+<link
+  rel="apple-touch-icon-precomposed"
+  href="/design-system/img/favicons/favicon-57.png"
+/>
+<!-- 72x72 (precomposed) for 1st generation iPad, iPad 2 and iPad mini -->
+<link
+  rel="apple-touch-icon-precomposed"
+  sizes="72x72"
+  href="/design-system/img/favicons/favicon-72.png"
+/>
+<!-- 114x114 (precomposed) for iPhone 4, 4S, 5 and post-2011 iPod Touch -->
+<link
+  rel="apple-touch-icon-precomposed"
+  sizes="114x114"
+  href="/design-system/img/favicons/favicon-114.png"
+/>
+<!-- 144x144 (precomposed) for iPad 3rd and 4th generation -->
+<link
+  rel="apple-touch-icon-precomposed"
+  sizes="144x144"
+  href="/design-system/img/favicons/favicon-144.png"
+/>
+
+<!-- JS for lt IE 9
+================================================== -->
+<!--[if lt IE 9]>
+  <script src="/design-system/js/vendor/html5shiv.js"></script>
+<![endif]-->
+
+<!-- CSS
+================================================== -->
+<link rel="stylesheet" href="/design-system/css/usajobs-design-system-all.css">
+<!-- For the Design System site only: Including styles for all components at once -->
+<link rel="stylesheet" href="/design-system/css/usajobs-design-system-components.css">
+<!-- For the Design System site only: Including documentation styles  -->
+<link rel="stylesheet" href="/design-system/css/vendor/prism.css"> <link rel="stylesheet" href="/design-system/css/usajobs-design-system-documentation.css"> 
+
+  </head>
+
+  <body class="modals">
+    <a class="usa-skipnav" href="#main-content">Skip to main content</a>
+<!-- Gov banner BEGIN -->
+<div class="usa-banner">
+  <div class="usa-accordion">
+    <div class="usa-banner-header">
+      <div class="usa-grid usa-banner-inner usajobs-nav--full_bleed__banner-inner">
+      <img src="/design-system/img/favicons/favicon-57.png" alt="U.S. flag">
+      <p>An official website of the United States government</p>
+      <button class="usa-accordion-button usa-banner-button"
+        aria-expanded="false" aria-controls="-gov-banner">
+        <span class="usa-banner-button-text">Here's how you know</span>
+      </button>
+      </div>
+    </div>
+    <div class="usa-banner-content usa-grid usa-accordion-content" id="-gov-banner">
+      <div class="usa-banner-guidance-gov usa-width-one-half">
+        <img class="usa-banner-icon usa-media_block-img" src="/design-system/img/icon-dot-gov.svg" alt="Dot gov">
+        <div class="usa-media_block-body">
+          <p>
+            <strong>The .gov means it’s official.</strong>
+            <br>
+            Federal government websites often end in .gov or .mil. Before sharing sensitive information, make sure you’re on a federal government site.
+            <br>
+            <br>
+            There are some exceptions to this rule. During the USAJOBS application process, you may be sent to an agency specific application system that DOES NOT contain a .mil or .gov. Rest assured, if you apply to any job through USAJOBS.gov your information is safe and secure.
+          </p>
+        </div>
+      </div>
+      <div class="usa-banner-guidance-ssl usa-width-one-half">
+        <img class="usa-banner-icon usa-media_block-img" src="/design-system/img/icon-https.svg" alt="SSL">
+        <div class="usa-media_block-body">
+          <p>
+            <strong>The site is secure.</strong>
+            <br>
+            The <strong>https://</strong> ensures that you are connecting to the official website and that any information you provide is encrypted and transmitted securely.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Gov banner END -->
+
+<header class="usa-header usa-header-extended" role="banner">
+  <div class="usa-navbar">
+    <div class="usa-logo" id="extended-mega-logo">
+      <em class="usa-logo-text">
+        <a class="usajobs-documentation-header__dslink" href="/design-system/" title="Home" aria-label="Home">
+          <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 376 90.1">
+<g>
+	<path class="usajobs-icon__path" d="M178.4,65.5c0,1.1,0,2.3-0.1,3.5c-0.1,1.2-0.3,2.4-0.7,3.4c-0.3,1-1.5,4.6-8.4,3.5l-0.7,0v12l0.5,0.1
+		c1.8,0.4,3.5,0.6,5.1,0.6c4,0,7.2-0.6,9.7-1.8c2.5-1.2,4.4-2.9,5.8-4.9c1.3-2,2.3-4.4,2.7-7c0.5-2.6,0.7-3.3,0.7-6V4.7h-14.7V65.5z
+		"/>
+	<path class="usajobs-icon__path" d="M41.6,40.5c0,4-0.5,7-1.4,9.2c-1,2.3-2.3,3.9-4.2,4.9c-1.9,1-4.2,1.5-6.8,1.5c-2.6,0-4.9-0.5-6.8-1.5
+		c-1.8-1-3.2-2.6-4.2-4.8c-0.9-2.1-1.4-5.2-1.4-9.2V4.6H2.3v36.9c0,2.6,0.1,4.9,0.4,7c0.3,2.1,0.8,4.1,1.5,5.9
+		c0.9,2.2,2,4.3,3.5,6.1c1.5,1.8,3.3,3.3,5.3,4.6c2.1,1.2,4.4,2.2,7.1,2.8c2.6,0.6,5.6,1,8.9,1c3.3,0,6.3-0.3,8.9-1
+		c2.7-0.6,5.1-1.6,7.2-2.8c2.1-1.2,4-2.8,5.4-4.6c1.5-1.8,2.7-3.8,3.5-6.1c0.7-1.8,1.2-3.8,1.5-5.9c0.3-2.1,0.4-4.5,0.4-7V4.6H41.6
+		V40.5z"/>
+	<path class="usajobs-icon__path" d="M101.7,34.4C99.8,33,97.5,32,95,31.2c-2.4-0.7-4.9-1.3-7.4-1.9c-1.6-0.3-3.1-0.7-4.4-1
+		c-1.3-0.3-2.4-0.8-3.4-1.4c-0.9-0.5-1.5-1.1-2-1.9c-0.4-0.7-0.7-1.6-0.7-2.8c0-2,0.7-3.4,2.1-4.4c1.6-1.1,4.1-1.7,7.3-1.7
+		c2.4,0,5,0.3,7.7,0.8c2.7,0.5,5.6,1.4,8.6,2.6l2.5,1V7.4l-1.1-0.5c-2.4-1-5.3-1.9-8.7-2.5c-6.7-1.3-13.7-1.3-19.1,0.2
+		c-2.8,0.8-5.2,2.1-7.3,3.8c-2.1,1.7-3.8,3.9-5,6.4c-1.2,2.6-1.8,5.6-1.8,9c0,3.1,0.5,5.8,1.6,7.9c1.1,2.1,2.5,3.9,4.4,5.3
+		c1.8,1.3,3.8,2.4,6.1,3.2c2.2,0.7,4.5,1.3,6.9,1.9c1.7,0.4,3.4,0.7,5,1.1c1.5,0.3,2.8,0.8,4,1.3c1,0.5,1.8,1.1,2.4,1.8
+		c0.5,0.6,0.7,1.5,0.7,2.6c0,1.4-0.3,2.5-0.9,3.3c-0.6,0.9-1.5,1.7-2.5,2.2c-1.2,0.6-2.5,1-4,1.3c-4.3,0.7-8.9,0.4-13.1-0.4
+		c-2.7-0.6-5.5-1.5-8.3-2.7l-2.5-1.1v13L63,65c2.2,1.2,5.1,2.2,8.4,2.9c3.2,0.7,6.6,1,10,1c3.8,0,7.4-0.4,10.7-1.2
+		c3.3-0.8,6.2-2,8.6-3.7c2.4-1.7,4.3-3.9,5.6-6.5c1.3-2.6,2-5.7,2-9.1c0-3.4-0.6-6.3-1.8-8.5C105.3,37.6,103.7,35.8,101.7,34.4z"/>
+	<path class="usajobs-icon__path" d="M170.8,65.6l-24.3-61h-12.5l-25.2,63.2h15.6l5.9-15.2h20.1l5.9,15.2h15.5 M145.5,39.8h-10.2l1.1-2.9
+		c1.2-3.1,2.6-6.8,4-11c1.5,4.2,2.8,7.9,4,11L145.5,39.8z"/>
+	<path class="usajobs-icon__path" d="M253.7,12.7c-2.7-2.9-6-5.2-9.8-6.8c-3.8-1.6-8.2-2.4-13.1-2.4c-4.8,0-9.2,0.8-13.1,2.4
+		c-3.8,1.6-7.1,3.9-9.8,6.8c-2.6,2.9-4.7,6.4-6,10.4c-1.4,4-2,8.4-2,13.1c0,4.7,0.7,9.1,2,13.1c1.4,4,3.4,7.5,6,10.4
+		c2.7,2.9,6,5.2,9.8,6.8c3.8,1.6,8.2,2.4,13.1,2.4c4.8,0,9.2-0.8,13.1-2.4c3.8-1.6,7.1-3.9,9.8-6.8c2.6-2.9,4.7-6.4,6-10.4
+		c1.4-4,2-8.4,2-13.1c0-4.7-0.7-9.1-2-13.1C258.3,19.1,256.3,15.6,253.7,12.7z M224.3,54.8c-1.9-0.8-3.6-2-5-3.6
+		c-1.4-1.6-2.5-3.7-3.4-6.1c-0.8-2.5-1.3-5.5-1.3-9c0-3.4,0.4-6.4,1.3-9c0.8-2.5,1.9-4.6,3.4-6.2c1.4-1.6,3.1-2.8,5-3.6
+		c1.9-0.8,4.1-1.2,6.5-1.2c2.3,0,4.5,0.4,6.5,1.2c1.9,0.8,3.6,2,5,3.6c1.4,1.6,2.5,3.7,3.4,6.2c0.8,2.5,1.3,5.5,1.3,9
+		c0,3.4-0.4,6.4-1.3,9c-0.8,2.5-1.9,4.5-3.4,6.1c-1.4,1.6-3.1,2.8-5,3.6C233.4,56.5,228.2,56.5,224.3,54.8z"/>
+	<path class="usajobs-icon__path" d="M314.8,38.5c-1-1.2-2.2-2.3-3.6-3.2c-0.5-0.3-0.9-0.6-1.4-0.8c1.6-1.2,2.8-2.7,3.7-4.3c1.3-2.4,2-5.1,2-8
+		c0-1.6-0.3-3.3-0.8-4.9c-0.5-1.6-1.3-3.2-2.4-4.6c-1.1-1.4-2.5-2.8-4.1-3.9c-1.6-1.2-3.6-2.1-5.8-2.8c-2.9-0.9-6.7-1.4-11.3-1.4
+		h-22.6v63.2h19.2c1.7,0,3.2,0,4.5-0.1c1.4,0,2.6-0.1,3.7-0.2c1.1-0.1,2.1-0.2,3.1-0.4c0.9-0.2,1.8-0.3,2.6-0.5
+		c3.1-0.8,5.8-2,7.9-3.4c2.1-1.4,3.8-3,5.1-4.7c1.3-1.7,2.2-3.6,2.7-5.4c0.5-1.8,0.8-3.5,0.8-5.2c0-1.9-0.3-3.6-0.8-5.2
+		C316.6,41.1,315.8,39.7,314.8,38.5z M299.7,26.3c-0.5,0.9-1.4,1.5-2.6,2.1c-0.9,0.3-2.6,0.8-6,0.8H283V17.3h7.2
+		c1.5,0,2.8,0,3.8,0.1c1,0.1,1.8,0.2,2.5,0.4c1.5,0.5,2.6,1.1,3.1,2c0.6,0.9,0.9,2,0.9,3.2C300.5,24.3,300.3,25.3,299.7,26.3z
+		 M283,41.8h8.6c1.7,0,3.2,0.1,4.3,0.2c1,0.1,1.9,0.3,2.7,0.5c1.6,0.5,2.7,1.2,3.4,2.2c0.7,0.9,1,2,1,3.3c0,0.8-0.1,1.5-0.3,2.2
+		c-0.2,0.6-0.5,1.1-1,1.7c-0.5,0.5-1.1,1-2,1.5c-0.9,0.5-2,0.8-3.4,1.1c-0.9,0.2-2,0.4-3.2,0.5c-1.3,0.1-2.9,0.2-4.8,0.2H283V41.8z"
+		/>
+	<path class="usajobs-icon__path" d="M365.9,39.9c-1.2-2.3-2.8-4.1-4.8-5.5c-1.9-1.4-4.2-2.4-6.7-3.2c-2.4-0.7-4.9-1.3-7.4-1.9
+		c-1.6-0.3-3.1-0.7-4.4-1c-1.3-0.3-2.4-0.8-3.4-1.4c-0.9-0.5-1.5-1.1-2-1.9c-0.4-0.7-0.7-1.6-0.7-2.8c0-2,0.7-3.4,2.1-4.4
+		c1.6-1.1,4.1-1.7,7.3-1.7c2.4,0,5,0.3,7.7,0.8c2.7,0.5,5.6,1.4,8.6,2.6l2.5,1V7.4l-1.1-0.5c-2.4-1-5.3-1.9-8.7-2.5
+		c-6.7-1.3-13.7-1.3-19.1,0.2c-2.8,0.8-5.2,2.1-7.3,3.8c-2.1,1.7-3.8,3.9-5,6.4c-1.2,2.6-1.8,5.6-1.8,9c0,3.1,0.5,5.8,1.6,7.9
+		c1.1,2.1,2.5,3.9,4.4,5.3c1.8,1.3,3.8,2.4,6.1,3.2c2.2,0.7,4.5,1.3,6.9,1.9c1.7,0.4,3.4,0.7,5,1.1c1.5,0.3,2.8,0.8,4,1.3
+		c1,0.5,1.8,1.1,2.4,1.8c0.5,0.6,0.7,1.5,0.7,2.6c0,1.4-0.3,2.5-0.9,3.3c-0.6,0.9-1.5,1.7-2.5,2.2c-1.2,0.6-2.5,1-4,1.3
+		c-4.3,0.7-8.9,0.4-13.1-0.4c-2.7-0.6-5.5-1.5-8.3-2.7l-2.5-1.1v13l0.9,0.5c2.2,1.2,5.1,2.2,8.4,2.9c3.2,0.7,6.6,1,10,1
+		c3.8,0,7.4-0.4,10.7-1.2c3.3-0.8,6.2-2,8.6-3.7c2.4-1.7,4.3-3.9,5.6-6.5c1.3-2.6,2-5.7,2-9.1C367.7,45,367.1,42.2,365.9,39.9z"/>
+	<g>
+		<path class="usajobs-icon__path" d="M367.6,10.6c0-0.4,0.1-0.8,0.2-1.1c0.1-0.3,0.3-0.6,0.6-0.9c0.2-0.2,0.5-0.4,0.9-0.6c0.3-0.1,0.7-0.2,1.1-0.2
+			c0.4,0,0.7,0.1,1.1,0.2c0.3,0.1,0.6,0.3,0.9,0.6c0.2,0.2,0.4,0.5,0.6,0.9c0.1,0.3,0.2,0.7,0.2,1.1s-0.1,0.8-0.2,1.1
+			c-0.1,0.3-0.3,0.6-0.6,0.9c-0.2,0.2-0.5,0.4-0.9,0.6c-0.3,0.1-0.7,0.2-1.1,0.2c-0.4,0-0.7-0.1-1.1-0.2c-0.3-0.1-0.6-0.3-0.9-0.6
+			c-0.2-0.2-0.4-0.5-0.6-0.9C367.6,11.3,367.6,11,367.6,10.6z M368.3,10.6c0,0.3,0,0.6,0.1,0.8c0.1,0.3,0.2,0.5,0.4,0.7
+			c0.2,0.2,0.4,0.3,0.7,0.5c0.3,0.1,0.5,0.2,0.8,0.2c0.3,0,0.6-0.1,0.8-0.2c0.3-0.1,0.5-0.3,0.7-0.5c0.2-0.2,0.3-0.4,0.4-0.7
+			c0.1-0.3,0.1-0.5,0.1-0.8s0-0.6-0.1-0.8c-0.1-0.3-0.2-0.5-0.4-0.7c-0.2-0.2-0.4-0.3-0.7-0.4c-0.3-0.1-0.5-0.2-0.8-0.2
+			c-0.3,0-0.6,0.1-0.8,0.2c-0.3,0.1-0.5,0.3-0.7,0.4c-0.2,0.2-0.3,0.4-0.4,0.7C368.3,10,368.3,10.3,368.3,10.6z M370.8,10.8l0.8,1.1
+			h-0.8l-0.7-1H370v1h-0.8V9.2h1.1c0.2,0,0.3,0,0.5,0c0.1,0,0.3,0.1,0.4,0.1c0.1,0.1,0.2,0.2,0.3,0.3c0.1,0.1,0.1,0.2,0.1,0.4
+			c0,0.2-0.1,0.4-0.2,0.5C371.2,10.7,371,10.7,370.8,10.8L370.8,10.8z M370,9.7v0.7h0.2c0.2,0,0.3,0,0.4-0.1
+			c0.1-0.1,0.1-0.1,0.1-0.3c0-0.1,0-0.2-0.1-0.2c-0.1-0.1-0.2-0.1-0.3-0.1H370z"/>
+	</g>
+</g>
+</svg>
+
+          Design System
+        </a>
+        </a>
+      </em>
+    </div>
+    <button class="usa-menu-btn">Menu</button>
+  </div>
+
+  <nav role="navigation" class="usa-nav">
+    <div class="usa-nav-inner">
+      <button class="usa-nav-close">
+        <span class="fas fa-times"></span>
+      </button>
+      <ul class="usa-nav-primary usa-accordion">
+        <li>
+          <button class="usa-accordion-button usa-nav-link" aria-expanded="false" aria-controls="extended-mega-nav-section-one">
+            <span>Base elements</span>
+          </button>
+          <ul id="extended-mega-nav-section-one" class="usa-nav-submenu usa-megamenu usa-grid-full" aria-hidden="true">
+            <div class="usa-megamenu-col">
+              <li>
+                <a href="/design-system/visual-style/#colors">Colors</a>
+              </li>
+              <li>
+                <a href="/design-system/visual-style/#typography">Typography</a>
+              </li>
+              <li>
+                <a  href="/design-system/buttons/">Buttons</a>
+              </li>
+              <li>
+                <a  href="/design-system/grid/">Grid</a>
+              </li>
+              <li>
+                <a  href="/design-system/shell/">Shell</a>
+              </li>
+              <li>
+                <a  href="/design-system/spacing/">Spacing</a>
+              </li>
+            </div>
+            <div class="usa-megamenu-col">
+              <li>
+                <a href="/design-system/visual-style/#links">Links</a>
+              </li>
+              <li>
+                <a  href="/design-system/icons/">Icons</a>
+              </li>
+              <li>
+                <a href="/design-system/visual-style/#logo">Logo</a>
+              </li>
+            </div>
+            <div class="usa-megamenu-col">
+              <li>
+                <a  href="/design-system/form-controls/"><strong>Forms</strong></a>
+              </li>
+              <li><a href="/design-system/form-controls/#contextual-help">Contextual Help</a></li>
+              <li><a href="/design-system/form-controls/#disabled">Disabled</a></li>
+              <li><a href="/design-system/form-controls/#dropdown">Dropdown</a></li>
+              <li><a href="/design-system/form-controls/#labels">Labels</a></li>
+            </div>
+            <div class="usa-megamenu-col">
+              <li><h5>Forms continued</h5></li>
+              <li><a href="/design-system/form-controls/#layout">Layouts</a></li>
+              <li><a href="/design-system/form-controls/#legends">Legends</a></li>
+              <li><a href="/design-system/form-controls/#reveal-fields">Reveal fields</a></li>
+              <li><a href="/design-system/form-controls/#validation">Validation</a></li>
+            </div>
+          </ul>
+        </li>
+        <li>
+          <button class="usa-accordion-button usa-nav-link" aria-expanded="false" aria-controls="extended-mega-nav-section-two">
+            <span>Components</span>
+          </button>
+          <ul id="extended-mega-nav-section-two" class="usa-nav-submenu usa-megamenu usa-grid-full" aria-hidden="true">
+            <div class="usa-megamenu-col">
+              <li>
+                <a  href="/design-system/alerts/">Alert</a>
+              </li>
+              <li>
+                <a  href="/design-system/button-bar/">Button Bar</a>
+              </li>
+              <li>
+                <a  href="/design-system/card/">Card</a>
+              </li>
+              <li>
+                <a  href="/design-system/card-button/">Card button</a>
+              </li>
+              <li>
+                <a  href="/design-system/drawer/">Drawer</a>
+              </li>
+              <li>
+                <a  href="/design-system/event/">Event</a>
+              </li>
+              <li>
+                <a  href="/design-system/modals/">Modal</a>
+              </li>
+              <li>
+                <a  href="/design-system/pill/">Pill</a>
+              </li>
+              <li>
+                <a  href="/design-system/progress-indicator/">Progress indicator</a>
+              </li>
+              <li>
+                <a  href="/design-system/reveal/">Reveal</a>
+              </li>
+            </div>
+            <div class="usa-megamenu-col">
+              <li>
+                <a  href="/design-system/document/"><strong>Document</strong></a>
+              </li>
+              <li><a href="/design-system/document/#thumbnail">Thumbnail</a></li>
+              <li><a href="/design-system/document/#placeholder">Placeholder</a></li>
+              <li><h5>Navigation</h5></li>
+              <li>
+                <a  href="/design-system/navigation/">Top</a>
+              </li>
+              <li>
+                <a  href="/design-system/nav-secondary/">Secondary</a>
+              </li>
+              <li>
+                <a  href="/design-system/footer/">Footer</a>
+              </li>
+            </div>
+            <div class="usa-megamenu-col">
+              <li><h5>Job announcement</h5></li>
+              <li>
+                <a  href="/design-system/joa-actions/">Actions</a>
+              </li>
+              <li>
+                <a  href="/design-system/joa-agency-contact/">Agency contact</a>
+              </li>
+              <li>
+                <a  href="/design-system/joa-intro/">Intro</a>
+              </li>
+              <li>
+                <a  href="/design-system/joa-similar-jobs/">Similar jobs</a>
+              </li>
+              <li>
+                <a  href="/design-system/joa-summary/">Summary</a>
+              </li>
+            </div>
+            <div class="usa-megamenu-col">
+              <li>
+                <a  href="/design-system/search/"><strong>Search</strong></a>
+              </li>
+              <li><a href="/design-system/search/#controls">Controls</a></li>
+              <li><a href="/design-system/search/#pagination">Pagination</a></li>
+              <li><a href="/design-system/search/#results">Results</a></li>
+              <li><a href="/design-system/search/#teasers">Teasers</a></li>
+            </div>
+          </ul>
+        </li>
+        <li>
+          <button class="usa-accordion-button usa-nav-link" aria-expanded="false" aria-controls="extended-mega-nav-section-three">
+            <span>Layouts</span>
+          </button>
+          <ul id="extended-mega-nav-section-three" class="usa-nav-submenu usa-megamenu usa-grid-full" aria-hidden="true">
+            <div class="usa-megamenu-col">
+              <li><h5>Agency Talent Portal</h5></li>
+              <li>
+                <a href="/design-system/agency-talent-portal/user-detail/">
+                  User detail
+                </a>
+              </li>
+              <li>
+                <a href="/design-system/agency-talent-portal/auth/forgot-password/">Forgot password</a>
+              </li>
+              <li>
+                <a href="/design-system/agency-talent-portal/auth/reset-password/">Reset password</a>
+              </li>
+              <li>
+                <a href="/design-system/agency-talent-portal/auth/reset-password-with-error/">Reset password with error</a>
+              </li>
+              <li>
+                <a href="/design-system/agency-talent-portal/auth/sign-in/">Sign in</a>
+              </li>
+              <li>
+                <a href="/design-system/agency-talent-portal/session/signed-out/">Session signed out</a>
+              </li>
+              <li><h5>Open Opportunitites</h5></li>
+              <li>
+                <a href="/design-system/open-opportunities/search/">Search</a>
+              </li>
+            </div>
+            <div class="usa-megamenu-col">
+              <li><h5>Errors</h5></li>
+              <li>
+                <a  href="/design-system/errors/400/">400</a>
+              </li>
+              <li>
+                <a  href="/design-system/errors/404/">404</a>
+              </li>
+              <li>
+                <a  href="/design-system/errors/500/">500</a>
+              </li>
+            </div>
+            <div class="usa-megamenu-col">
+              <li><h5>Sessions</h5></li>
+              <li>
+                <a  href="/design-system/session/timeout/">
+                  Session timeout
+                </a>
+              </li>
+              <li>
+                <a  href="/design-system/session/signed-out/">Signed out</a>
+              </li>
+            </div>
+            <div class="usa-megamenu-col">
+              <li><h5>Job announcement</h5></li>
+              <li>
+                <a  href="/design-system/job-announcement/v6.5/">
+                  Version 6.5
+                </a>
+                <a  href="/design-system/job-announcement/v6.6/cfpb/">Version 6.6 (CFPB pilot)</a>
+                <a  href="/design-system/job-announcement/v6.6/print/">Version 6.6 - Print</a>
+                <a  href="/design-system/job-announcement/v6.7/">Version 6.7</a>
+              </li>
+            </div>
+          </ul>
+        </li>
+      </ul>
+      <div class="usa-nav-secondary">
+        <ul class="usa-unstyled-list usa-nav-secondary-links">
+          <li>
+            <a href="https://github.com/USAJOBS/design-system">
+              <span class="fab fa-github"></span> GitHub
+            </a>
+          </li>
+          <li>
+            <a href="https://www.usajobs.gov">usajobs.gov</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<div class="overlay"></div>
+
+    <div class="main-content l-doc" id="main-content">
+      <div class="styleguide-content usa-content">
+        <p class="site-subheading">component</p>
+        <h1 id="modals">Modals</h1>
+        <p class="usa-font-lead">USAJOBS uses the modal component to draw attention to actions that require user input.</p>
+        <p><a href="/design-system/getting-started/#maturity" class="usa-label maturity design_complete">
+  Design Complete
+</a></p>
+
+<h4 class="usa-heading-alt">Default Modal</h4>
+<div class="preview">
+  <a href="#modal-trigger" class="usa-button usajobs-button" data-object-trigger="modal" data-target="#modal-demo">Open Default Modal</a>
+
+  <div class="usajobs-modal" data-object="modal" data-state="is-closed" id="modal-default" aria-hidden="true" role="dialog" aria-labelledby="usajobs-modal-heading" aria-describedby="usajobs-modal-description">
+    <div class="usajobs-modal__dialog">
+      <div class="usajobs-modal__content">
+        <div id="usajobs-modal-description" class="usajobs-assistive-text">
+          Beginning of a dialog window for the [form name] form. It begins with a heading 2
+          called &quot;[Modal Header]&quot;. Escape will cancel and close the window.
+        </div>
+        <div class="usajobs-modal__header">
+          <h2 id="usajobs-modal-heading" class="usajobs-modal__title">[Modal Header]</h2>
+        </div>
+        <div class="usajobs-modal__body">
+          [modal body content Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.]
+        </div>
+        <div class="usajobs-modal__footer">
+          <button class="usa-button-big usa-button-outline" data-behavior="modal.close">Cancel</button>
+          <button class="usa-button-big usa-button-primary" data-behavior="modal.close">Go</button>
+        </div>
+        <div class="usajobs-modal__actions">
+          <button class="usajobs-modal__close" data-behavior="modal.close">
+            <span class="usajobs-assistive-text">Close</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="usa-accordion-bordered usa-accordion-docs">
+  <button class="usa-button-unstyled usa-accordion-button" aria-expanded="true" aria-controls="doc-0">Documentation</button>
+  <div id="doc-0" aria-hidden="false" class="usa-accordion-content">
+    <h4 class="usa-heading">Accessibility</h4>
+    <ul class="usa-content-list">
+      <li>Modal should have the <code>role="dialog"</code> attribute.</li>
+      <li>Content behind the modal should not scroll while the modal is open.</li>
+      <li>Modal should have an <code>aria-labelledby</code> attribute where the value is the ID of the modal title (you don't need or want the #).</li>
+      <li>Modal should have an <code>aria-describedby</code> attribute where the value is the ID of a div that contains a description of the modal (you don't need or want the #).</li>
+      <li>Pressing the ESC key should close the modal and return the focus to the element that triggered the modal.</li>
+      <li>If the modal contains a form, pressing the Enter key should submit that form.</li>
+    </ul>
+
+    <h4 class="usa-heading">Usability</h4>
+    <h5>When to use</h5>
+    <ul class="usa-content-list">
+      <li>When the focus on the user must be focused on a single, or limited number, of elements. For example, when confirming or canceling a required action.</li>
+      <li>The flow the user is in would otherwise be interrupted by a distinct page.</li>
+    </ul>
+    <h5>Do not use when</h5>
+    <ul class="usa-content-list">
+      <li>Content that must be linkable (have a distinct URL) or searchable.</li>
+      <li>The contents of the modal is a form longer than 4 fields.</li>
+    </ul>
+
+    <h4 class="usa-heading">Guidelines</h4>
+    <ul class="usa-content-list">
+      <li><strong>Retain form input</strong>: All data entered into a modal should be retained until the modal is submitted. Thus if a user enters data, dismisses the modal, and then reopens the modal the form data should be populated in the form fields.</li>
+    </ul>
+  </div>
+</div>
+
+<h4 class="usa-heading-alt">Alert variations</h4>
+<div class="preview">
+  <h6 class="usa-heading-alt">Modal - Info variation</h6>
+  <a href="#modal-trigger" class="usa-button usajobs-button" data-object-trigger="modal" data-target="#modal-info-demo">Open info modal</a>
+
+  <h6 class="usa-heading-alt">Modal - Delete profile variation</h6>
+  <a href="#modal-trigger" class="usa-button usajobs-button usa-button-secondary" data-object-trigger="modal" data-target="#modal-delete-account">Delete profile</a>
+
+  <h6 class="usa-heading-alt">Modal - Delete document variation</h6>
+  <a href="#modal-trigger" class="usa-button usajobs-button usa-button-secondary" data-object-trigger="modal" data-target="#modal-delete-document">Delete Document</a>
+</div>
+
+<div class="usa-accordion-bordered usa-accordion-docs">
+  <button class="usa-button-unstyled usa-accordion-button" aria-expanded="true" aria-controls="doc-1">Documentation</button>
+  <div id="doc-1" aria-hidden="false" class="usa-accordion-content">
+    <h4 class="usa-heading">Usability</h4>
+    <h5>When to use</h5>
+    <ul class="usa-content-list">
+      <li>When an action is required by the user before they may continue.</li>
+      <li>When it is necessary to redirect the user to another part of the site.</li>
+    </ul>
+
+    <h4 class="usa-heading">Guidelines</h4>
+    <ul class="usa-content-list">
+      <li>These modals are simply containers for an <a href="/design-system/alerts/">alert</a>. Thus the modal should adhere to the guidelines for the appropriate alert.</li>
+      <li>Modals that manage destructive actions should be triggered by a <a href="/design-system/buttons/">red, secondary button</a> and should use the error alert style. However, unlike the deafult error alert these modals should allow the user to dismiss them.&lt;/a&gt;</li>
+    </ul>
+  </div>
+</div>
+
+<h4 class="usa-heading-alt">Form variations</h4>
+<div class="preview">
+  <h6 class="usa-heading-alt">Modal - Default with full form</h6>
+  <a href="#modal-trigger" class="usa-button usajobs-button" data-object-trigger="modal" data-target="#modal-wide-demo">Open</a>
+</div>
+
+<div class="usa-accordion-bordered usa-accordion-docs">
+  <button class="usa-button-unstyled usa-accordion-button" aria-expanded="true" aria-controls="doc-2">
+    Documentation
+  </button>
+  <div id="doc-2" aria-hidden="false" class="usa-accordion-content">
+    <h4 class="usa-heading">Accessibility</h4>
+    <ul class="usa-content-list">
+      <li>Unfortunately, we have a number of these modals and we should excise them as quickly as possible. Content behind these modal has to scroll to support the egregious form lengths on mobile devices.</li>
+    </ul>
+
+    <h4 class="usa-heading">Usability</h4>
+    <h5>When to use</h5>
+    <ul class="usa-content-list">
+      <li>Never. Long forms do not belong in modals.</li>
+    </ul>
+
+    <h4 class="usa-heading">Guidelines</h4>
+    <ul class="usa-content-list">
+      <li>Do not create new instances of modals that contain long forms.</li>
+      <li><strong>Retain form input</strong>: All data entered into a modal should be retained until the modal is submitted. Thus if a user enters data, dismisses the modal, and then reopens the modal the form data should be populated in the form fields.</li>
+    </ul>
+  </div>
+</div>
+
+      </div>
+    </div>
+    <footer class="usa-styleguide-footer">
+      <div class="usajobs-grid">
+  <div class="usa-width-one-half">
+    <p>Feedback? Create an issue on the <a href="https://github.com/USAJOBS/design-system">GitHub repository</a>.</p>
+  </div>
+  <div class="usa-width-one-half usa-end-row">
+    <p>
+      This project is maintained by <a href="https://usajobs.github.io/">USAJOBS</a>.
+      The source code is available at <a href="https://github.com/USAJOBS/design-system">github.com/USAJOBS/design-system</a>
+    </p>
+    <p>As a work of the United States Government, this project is <a href="https://github.com/USAJOBS/design-system/LICENSE.md">in the public domain</a> within the United States.</p>
+  </div>
+</div>
+
+    </footer>
+    <div class="usajobs-modal" data-object="modal" data-state="is-closed" id="modal-demo" aria-hidden="true" role="dialog" aria-labelledby="usajobs-modal-heading" aria-describedby="usajobs-modal-description">
+  <div class="usajobs-modal__dialog">
+    <div class="usajobs-modal__content">
+      <div id="usajobs-modal-description" class="usajobs-assistive-text">
+        Beginning of a dialog window for the [form name] form. It begins with a heading 2
+        called &quot;[Modal Header]&quot;. Escape will cancel and close the window.
+      </div>
+      <div class="usajobs-modal__header">
+        <h2 id="usajobs-modal-heading" class="usajobs-modal__title">[Modal Header]</h2>
+      </div>
+      <div class="usajobs-modal__body">
+        [modal body content Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.]
+      </div>
+      <div class="usajobs-modal__footer">
+        <button class="usa-button usa-button-secondary" data-behavior="modal.close">Cancel</button>
+        <button class="usa-button usa-button-primary" data-behavior="modal.close">Go</button>
+      </div>
+      <div class="usajobs-modal__actions">
+        <button class="usajobs-modal__close" data-behavior="modal.close" >
+          <span class="usajobs-assistive-text">Close</span>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <div class="usajobs-modal usajobs-modal--info" data-object="modal" data-state="is-closed" id="modal-info-demo" aria-hidden="true" role="dialog" aria-labelledby="usajobs-modal-heading" aria-describedby="usajobs-modal-description">
+  <div class="usajobs-modal__dialog">
+    <div class="usajobs-modal__content">
+      <div id="usajobs-modal-description" class="usajobs-assistive-text">
+        Beginning of a dialog window for the Incomplete Profile. It begins with a heading 2
+        called &quot;Incomplete Profile&quot;. Escape will cancel and close the window.
+      </div>
+      <div class="usajobs-modal__header">
+        <div class="usa-alert usajobs-alert usajobs-alert--info">
+          <div class="usajobs-alert__figure">
+            <div class="usajobs-alert__icon">
+            </div>
+          </div>
+          <div class="usajobs-alert__body">
+            <h2 id="usajobs-modal-heading" class="usajobs-modal__title">Incomplete Profile</h2>
+          </div>
+        </div>
+      </div>
+      <div class="usajobs-modal__body">
+        You must complete the required sections of your profile before you can submit this application.
+      </div>
+      <div class="usajobs-modal__footer">
+        <button class="usa-button usa-button-secondary" data-behavior="modal.close">
+          Back to Job Posting
+        </button>
+        <button class="usa-button usa-button-secondary" data-behavior="modal.close">
+          Continue to Profile
+        </button>
+      </div>
+      <div class="usajobs-modal__actions">
+        <button class="usajobs-modal__close" data-behavior="modal.close" >
+          <span class="usajobs-assistive-text">Close</span>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <div class="usajobs-modal" data-object="modal" data-state="is-closed" id="modal-wide-demo" aria-hidden="true" role="dialog" aria-labelledby="usajobs-modal-heading" aria-describedby="usajobs-modal-description">
+  <div class="usajobs-modal__dialog">
+    <div class="usajobs-modal__content">
+      <div id="usajobs-modal-description" class="usajobs-assistive-text">
+        Beginning of a dialog window for the Add/Edit Work Experience form. It begins with a heading 2
+        called &quot;[Modal Header]&quot;. Escape will cancel and close the window.
+      </div>
+      <div class="usajobs-modal__header">
+        <h2 id="usajobs-modal-heading" class="usajobs-modal__title">Add Experience</h2>
+      </div>
+      <div class="usajobs-modal__body">
+        <form class="usa-form-large usajobs-form">
+          <fieldset class="usajobs-form usajobs-form-grid">
+            <legend>
+              Work Experience
+               <span class="usajobs-form__legend">
+                  All fields are required unless otherwise noted.
+               </span>
+            </legend>
+            <div class="usajobs-form-grid__col">
+              <label for="employer-name">Employer name</label>
+              <input id="employer-name" name="employer-name" type="text">
+
+              <label for="employer-address-1">Employer address 1</label>
+              <input id="employer-address-1" name="employer-address-1" type="text">
+
+              <label for="employer-address-2">Employer address 2
+                <span class="usa-additional_text">Optional</span>
+              </label>
+              <input id="employer-address-2" name="employer-address-2" type="text">
+
+              <label for="state">Country</label>
+              <select id="country" name="country" type="text">
+                <option value=""></option>
+                <option value="4">Afghanistan</option>
+                <option value="17">Akrotiri Sovereign Base Area</option>
+                <option value="7">Albania</option>
+                <option value="5">Algeria</option>
+                <option value="9">Andorra</option>
+                <option value="10">Angola</option>
+                <option value="16">Anguilla</option>
+                <option value="18">Antarctica</option>
+                <option value="2">Antigua and Barbuda</option>
+                <option value="12">Argentina</option>
+                <option value="8">Armenia</option>
+                <option value="1">Aruba</option>
+                <option value="14">Ashmore and Cartier Islands</option>
+                <option value="13">Australia</option>
+                <option value="15">Austria</option>
+                <option value="6">Azerbaijan</option>
+                <option value="24">Bahamas</option>
+                <option value="19">Bahrain</option>
+                <option value="25">Bangladesh</option>
+                <option value="20">Barbados</option>
+                <option value="35">Bassas Da India</option>
+                <option value="31">Belarus</option>
+                <option value="23">Belgium</option>
+                <option value="26">Belize</option>
+                <option value="30">Benin</option>
+                <option value="22">Bermuda</option>
+                <option value="36">Bhutan</option>
+                <option value="28">Bolivia</option>
+                <option value="27">Bosnia and Herzegovina</option>
+                <option value="21">Botswana</option>
+                <option value="38">Bouvet Island</option>
+                <option value="34">Brazil</option>
+                <option value="116">British Indian Ocean Territory</option>
+                <option value="254">British Virgin Islands</option>
+                <option value="39">Brunei</option>
+                <option value="37">Bulgaria</option>
+                <option value="249">Burkina Faso</option>
+                <option value="29">Burma</option>
+                <option value="40">Burundi</option>
+                <option value="42">Cambodia</option>
+                <option value="51">Cameroon</option>
+                <option value="41">Canada</option>
+                <option value="59">Cape Verde</option>
+                <option value="49">Cayman Islands</option>
+                <option value="57">Central African Republic</option>
+                <option value="43">Chad</option>
+                <option value="48">Chile</option>
+                <option value="47">China</option>
+                <option value="136">Christmas Island</option>
+                <option value="117">Clipperton Island</option>
+                <option value="50">Cocos (Keeling) Islands</option>
+                <option value="53">Colombia</option>
+                <option value="52">Comoros</option>
+                <option value="45">Congo</option>
+                <option value="46">Congo (DRC)</option>
+                <option value="60">Cook Islands</option>
+                <option value="55">Coral Sea Islands</option>
+                <option value="56">Costa Rica</option>
+                <option value="121">Cote D'Ivoire</option>
+                <option value="110">Croatia</option>
+                <option value="58">Cuba</option>
+                <option value="61">Cyprus</option>
+                <option value="77">Czech Republic</option>
+                <option value="62">Denmark</option>
+                <option value="67">Dhekelia Sovereign Base Area</option>
+                <option value="63">Djibouti</option>
+                <option value="64">Dominica</option>
+                <option value="66">Dominican Republic</option>
+                <option value="68">Ecuador</option>
+                <option value="69">Egypt</option>
+                <option value="74">El Salvador</option>
+                <option value="71">Equatorial Guinea</option>
+                <option value="73">Eritrea</option>
+                <option value="72">Estonia</option>
+                <option value="75">Ethiopia</option>
+                <option value="76">Europa Island</option>
+                <option value="81">Falkland Islands</option>
+                <option value="83">Faroe Islands</option>
+                <option value="80">Fiji</option>
+                <option value="79">Finland</option>
+                <option value="86">France</option>
+                <option value="78">French Guiana</option>
+                <option value="84">French Polynesia</option>
+                <option value="87">French Southern and Antarctic Lands</option>
+                <option value="89">Gabon</option>
+                <option value="88">Gambia</option>
+                <option value="104">Gaza Strip</option>
+                <option value="96">Germany</option>
+                <option value="91">Ghana</option>
+                <option value="92">Gibraltar</option>
+                <option value="97">Glorioso Islands</option>
+                <option value="100">Greece</option>
+                <option value="95">Greenland</option>
+                <option value="93">Grenada</option>
+                <option value="98">Guadeloupe</option>
+                <option value="101">Guatemala</option>
+                <option value="94">Guernsey</option>
+                <option value="102">Guinea</option>
+                <option value="198">Guinea-Bissau</option>
+                <option value="103">Guyana</option>
+                <option value="105">Haiti</option>
+                <option value="107">Heard Island and McDonald Islands</option>
+                <option value="108">Honduras</option>
+                <option value="106">Hong Kong</option>
+                <option value="111">Hungary</option>
+                <option value="112">Iceland</option>
+                <option value="115">India</option>
+                <option value="113">Indonesia</option>
+                <option value="118">Iran</option>
+                <option value="122">Iraq</option>
+                <option value="70">Ireland</option>
+                <option value="114">Isle of Man</option>
+                <option value="119">Israel</option>
+                <option value="120">Italy</option>
+                <option value="125">Jamaica</option>
+                <option value="126">Jan Mayen</option>
+                <option value="124">Japan</option>
+                <option value="123">Jersey</option>
+                <option value="127">Jordan</option>
+                <option value="129">Juan De Nova Island</option>
+                <option value="138">Kazakhstan</option>
+                <option value="130">Kenya</option>
+                <option value="134">Kiribati</option>
+                <option value="270">Kosovo</option>
+                <option value="191">Kuril Islands</option>
+                <option value="137">Kuwait</option>
+                <option value="131">Kyrgyzstan</option>
+                <option value="139">Laos</option>
+                <option value="141">Latvia</option>
+                <option value="140">Lebanon</option>
+                <option value="147">Lesotho</option>
+                <option value="143">Liberia</option>
+                <option value="149">Libya</option>
+                <option value="146">Liechtenstein</option>
+                <option value="142">Lithuania</option>
+                <option value="148">Luxembourg</option>
+                <option value="152">Macau</option>
+                <option value="159">Macedonia</option>
+                <option value="150">Madagascar</option>
+                <option value="157">Malawi</option>
+                <option value="170">Malaysia</option>
+                <option value="168">Maldives</option>
+                <option value="160">Mali</option>
+                <option value="166">Malta</option>
+                <option value="202">Marshall Islands</option>
+                <option value="151">Martinique</option>
+                <option value="165">Mauritania</option>
+                <option value="163">Mauritius</option>
+                <option value="154">Mayotte</option>
+                <option value="169">Mexico</option>
+                <option value="82">Micronesia (FSM)</option>
+                <option value="153">Moldova</option>
+                <option value="161">Monaco</option>
+                <option value="155">Mongolia</option>
+                <option value="158">Montenegro</option>
+                <option value="156">Montserrat</option>
+                <option value="162">Morocco</option>
+                <option value="171">Mozambique</option>
+                <option value="258">Namibia</option>
+                <option value="181">Nauru</option>
+                <option value="180">Nepal</option>
+                <option value="178">Netherlands</option>
+                <option value="183">Netherlands Antilles</option>
+                <option value="172">New Caledonia</option>
+                <option value="185">New Zealand</option>
+                <option value="184">Nicaragua</option>
+                <option value="175">Niger</option>
+                <option value="177">Nigeria</option>
+                <option value="173">Niue</option>
+                <option value="174">Norfolk Island</option>
+                <option value="132">North Korea</option>
+                <option value="179">Norway</option>
+                <option value="167">Oman</option>
+                <option value="192">Pakistan</option>
+                <option value="197">Palau</option>
+                <option value="194">Panama</option>
+                <option value="196">Papua New Guinea</option>
+                <option value="189">Paracel Islands</option>
+                <option value="186">Paraguay</option>
+                <option value="188">Peru</option>
+                <option value="204">Philippines</option>
+                <option value="187">Pitcairn Islands</option>
+                <option value="193">Poland</option>
+                <option value="195">Portugal</option>
+                <option value="271">Portuguese Timor</option>
+                <option value="199">Qatar</option>
+                <option value="90">Republic of Georgia</option>
+                <option value="201">Reunion</option>
+                <option value="203">Romania</option>
+                <option value="206">Russia</option>
+                <option value="207">Rwanda</option>
+                <option value="214">Saint Helena</option>
+                <option value="210">Saint Kitts And Nevis</option>
+                <option value="221">Saint Lucia</option>
+                <option value="209">Saint Pierre and Miquelon</option>
+                <option value="252">Saint Vincent and The Grenadines</option>
+                <option value="263">Samoa</option>
+                <option value="217">San Marino</option>
+                <option value="236">Sao Tome and Principe</option>
+                <option value="208">Saudi Arabia</option>
+                <option value="213">Senegal</option>
+                <option value="200">Serbia</option>
+                <option value="211">Seychelles</option>
+                <option value="216">Sierra Leone</option>
+                <option value="218">Singapore</option>
+                <option value="144">Slovakia</option>
+                <option value="215">Slovenia</option>
+                <option value="32">Solomon Islands</option>
+                <option value="219">Somalia</option>
+                <option value="212">South Africa</option>
+                <option value="225">South Georgia and South Sandwich Islands</option>
+                <option value="135">South Korea</option>
+                <option value="272">South Sudan</option>
+                <option value="220">Spain</option>
+                <option value="190">Spratly Islands</option>
+                <option value="44">Sri Lanka</option>
+                <option value="222">Sudan</option>
+                <option value="182">Suriname</option>
+                <option value="223">Svalbard</option>
+                <option value="264">Swaziland</option>
+                <option value="224">Sweden</option>
+                <option value="227">Switzerland</option>
+                <option value="226">Syria</option>
+                <option value="241">Taiwan</option>
+                <option value="231">Tajikistan</option>
+                <option value="243">Tanzania</option>
+                <option value="230">Thailand</option>
+                <option value="238">Timor-Leste</option>
+                <option value="235">Togo</option>
+                <option value="233">Tokelau</option>
+                <option value="234">Tonga</option>
+                <option value="228">Trinidad and Tobago</option>
+                <option value="229">Tromelin Island</option>
+                <option value="237">Tunisia</option>
+                <option value="239">Turkey</option>
+                <option value="242">Turkmenistan</option>
+                <option value="232">Turks and Caicos Islands</option>
+                <option value="240">Tuvalu</option>
+                <option value="244">Uganda</option>
+                <option value="246">Ukraine</option>
+                <option value="269">Undefined</option>
+                <option value="248">Undesignated Sovereignty</option>
+                <option value="3">United Arab Emirates</option>
+                <option value="245">United Kingdom</option>
+                <option selected="selected" value="247">United States</option>
+                <option value="250">Uruguay</option>
+                <option value="251">Uzbekistan</option>
+                <option value="176">Vanuatu</option>
+                <option value="257">Vatican City</option>
+                <option value="253">Venezuela</option>
+                <option value="255">Vietnam</option>
+                <option value="260">Wallis And Futuna</option>
+                <option value="259">West Bank</option>
+                <option value="261">Western Sahara</option>
+                <option value="265">Yemen</option>
+                <option value="266">Zambia</option>
+                <option value="267">Zimbabwe</option>
+              </select>
+
+              <label for="postal-code">Postal code</label>
+              <input class="usa-input-medium" id="postal-code" name="postal-code" type="text" pattern="[\d]{5}(-[\d]{4})?" data-grouplength="5,4" data-delimiter="-" data-politespace="">
+
+              <label for="city">City</label>
+              <input id="city" name="city" type="text">
+
+              <label for="state">State / Territory / Province</label>
+              <select id="state" name="state" type="text">
+                <option value=""></option>
+                <option value="AL">Alabama</option>
+                <option value="AK">Alaska</option>
+                <option value="AZ">Arizona</option>
+                <option value="AR">Arkansas</option>
+                <option value="CA">California</option>
+                <option value="CO">Colorado</option>
+                <option value="CT">Connecticut</option>
+                <option value="DE">Delaware</option>
+                <option value="DC">District of Columbia</option>
+                <option value="FL">Florida</option>
+                <option value="GA">Georgia</option>
+                <option value="HI">Hawaii</option>
+                <option value="ID">Idaho</option>
+                <option value="IL">Illinois</option>
+                <option value="IN">Indiana</option>
+                <option value="IA">Iowa</option>
+                <option value="KS">Kansas</option>
+                <option value="KY">Kentucky</option>
+                <option value="LA">Louisiana</option>
+                <option value="ME">Maine</option>
+                <option value="MD">Maryland</option>
+                <option value="MA">Massachusetts</option>
+                <option value="MI">Michigan</option>
+                <option value="MN">Minnesota</option>
+                <option value="MS">Mississippi</option>
+                <option value="MO">Missouri</option>
+                <option value="MT">Montana</option>
+                <option value="NE">Nebraska</option>
+                <option value="NV">Nevada</option>
+                <option value="NH">New Hampshire</option>
+                <option value="NJ">New Jersey</option>
+                <option value="NM">New Mexico</option>
+                <option value="NY">New York</option>
+                <option value="NC">North Carolina</option>
+                <option value="ND">North Dakota</option>
+                <option value="OH">Ohio</option>
+                <option value="OK">Oklahoma</option>
+                <option value="OR">Oregon</option>
+                <option value="PA">Pennsylvania</option>
+                <option value="RI">Rhode Island</option>
+                <option value="SC">South Carolina</option>
+                <option value="SD">South Dakota</option>
+                <option value="TN">Tennessee</option>
+                <option value="TX">Texas</option>
+                <option value="UT">Utah</option>
+                <option value="VT">Vermont</option>
+                <option value="VA">Virginia</option>
+                <option value="WA">Washington</option>
+                <option value="WV">West Virginia</option>
+                <option value="WI">Wisconsin</option>
+                <option value="WY">Wyoming</option>
+              </select>
+            </div>
+            <div class="usajobs-form-grid__col--right">
+              <label for="job-title">Job title</label>
+              <input id="job-title" name="job-title" type="text">
+
+              <div class="usajobs-date-group">
+                <h5 class="usajobs-date-group__title">Start Date</h5>
+                <div class="usa-datefield usa-form-group usa-form-group-month">
+                  <label for="start_date_month">Month</label>
+                  <input class="usa-form-control" id="start_date_month" name="start_date_month" pattern="0?[1-9]|1[012]" type="number" min="1" max="12" value="">
+                </div>
+                <div class="usa-datefield usa-form-group usa-form-group-year">
+                  <label for="start_date_year">Year</label>
+                  <input class="usa-form-control" id="start_date_year" name="start_date_year" pattern="[0-9]{4}" type="number" min="1915" max="2015" value="">
+                </div>
+              </div>
+
+              <div class="usajobs-date-group">
+                <h5 class="usajobs-date-group__title">End Date</h5>
+                <div class="usa-datefield usa-form-group usa-form-group-month">
+                  <label for="end_date_month">Month</label>
+                  <input class="usa-form-control" id="end_date_month" name="end_date_month" pattern="0?[1-9]|1[012]" type="number" min="1" max="12" value="">
+                </div>
+                <div class="usa-datefield usa-form-group usa-form-group-year">
+                  <label for="end_date_year">Year</label>
+                  <input class="usa-form-control" id="end_date_year" name="end_date_year" pattern="[0-9]{4}" type="number" min="1915" max="2015" value="">
+                </div>
+              </div>
+
+              <label for="salary">Salary</label>
+              <input id="salary" name="salary" type="number">
+              <select class="salary form-control valid" name="salary_currency">
+                <option value="513">AED</option>
+                <option value="514">AFN</option>
+                <option value="515">ALL</option>
+                <option value="516">AMD</option>
+                <option value="517">ANG</option>
+                <option value="518">AOA</option>
+                <option value="519">ARS</option>
+                <option value="520">AUD</option>
+                <option value="521">AWG</option>
+                <option value="522">AZN</option>
+                <option value="523">BAM</option>
+                <option value="524">BBD</option>
+                <option value="525">BDT</option>
+                <option value="526">BGN</option>
+                <option value="527">BHD</option>
+                <option value="528">BIF</option>
+                <option value="529">BMD</option>
+                <option value="530">BND</option>
+                <option value="531">BOB</option>
+                <option value="532">BOV</option>
+                <option value="533">BRL</option>
+                <option value="534">BSD</option>
+                <option value="535">BTN</option>
+                <option value="536">BWP</option>
+                <option value="537">BYR</option>
+                <option value="538">BZD</option>
+                <option value="539">CAD</option>
+                <option value="540">CDF</option>
+                <option value="541">CHE</option>
+                <option value="542">CHF</option>
+                <option value="543">CHW</option>
+                <option value="544">CLF</option>
+                <option value="545">CLP</option>
+                <option value="546">CNY</option>
+                <option value="547">COP</option>
+                <option value="548">COU</option>
+                <option value="549">CRC</option>
+                <option value="550">CUC</option>
+                <option value="551">CUP</option>
+                <option value="552">CVE</option>
+                <option value="553">CZK</option>
+                <option value="554">DJF</option>
+                <option value="555">DKK</option>
+                <option value="556">DOP</option>
+                <option value="557">DZD</option>
+                <option value="558">EEK</option>
+                <option value="559">EGP</option>
+                <option value="560">ERN</option>
+                <option value="561">ETB</option>
+                <option value="562">EUR</option>
+                <option value="563">FJD</option>
+                <option value="564">FKP</option>
+                <option value="565">GBP</option>
+                <option value="566">GEL</option>
+                <option value="567">GHS</option>
+                <option value="568">GIP</option>
+                <option value="569">GMD</option>
+                <option value="570">GNF</option>
+                <option value="571">GTQ</option>
+                <option value="572">GYD</option>
+                <option value="573">HKD</option>
+                <option value="574">HNL</option>
+                <option value="575">HRK</option>
+                <option value="576">HTG</option>
+                <option value="577">HUF</option>
+                <option value="578">IDR</option>
+                <option value="579">ILS</option>
+                <option value="580">INR</option>
+                <option value="582">IQD</option>
+                <option value="583">IRR</option>
+                <option value="584">ISK</option>
+                <option value="585">JMD</option>
+                <option value="586">JOD</option>
+                <option value="587">JPY</option>
+                <option value="588">KES</option>
+                <option value="589">KGS</option>
+                <option value="590">KHR</option>
+                <option value="591">KMF</option>
+                <option value="592">KPW</option>
+                <option value="593">KRW</option>
+                <option value="594">KWD</option>
+                <option value="595">KYD</option>
+                <option value="596">KZT</option>
+                <option value="597">LAK</option>
+                <option value="598">LBP</option>
+                <option value="599">LKR</option>
+                <option value="600">LRD</option>
+                <option value="601">LSL</option>
+                <option value="602">LTL</option>
+                <option value="603">LVL</option>
+                <option value="604">LYD</option>
+                <option value="605">MAD</option>
+                <option value="606">MDL</option>
+                <option value="607">MGA</option>
+                <option value="608">MKD</option>
+                <option value="609">MMK</option>
+                <option value="610">MNT</option>
+                <option value="611">MOP</option>
+                <option value="612">MRO</option>
+                <option value="613">MUR</option>
+                <option value="614">MVR</option>
+                <option value="615">MWK</option>
+                <option value="616">MXN</option>
+                <option value="617">MXV</option>
+                <option value="618">MYR</option>
+                <option value="619">MZN</option>
+                <option value="620">NAD</option>
+                <option value="621">NGN</option>
+                <option value="622">NIO</option>
+                <option value="623">NOK</option>
+                <option value="624">NPR</option>
+                <option value="625">NZD</option>
+                <option value="626">OMR</option>
+                <option value="627">PAB</option>
+                <option value="628">PEN</option>
+                <option value="629">PGK</option>
+                <option value="630">PHP</option>
+                <option value="631">PKR</option>
+                <option value="632">PLN</option>
+                <option value="633">PYG</option>
+                <option value="634">QAR</option>
+                <option value="635">RON</option>
+                <option value="636">RSD</option>
+                <option value="637">RUB</option>
+                <option value="638">RWF</option>
+                <option value="639">SAR</option>
+                <option value="640">SBD</option>
+                <option value="641">SCR</option>
+                <option value="642">SDG</option>
+                <option value="643">SEK</option>
+                <option value="644">SGD</option>
+                <option value="645">SHP</option>
+                <option value="646">SLL</option>
+                <option value="647">SOS</option>
+                <option value="648">SRD</option>
+                <option value="649">STD</option>
+                <option value="650">SVC</option>
+                <option value="651">SYP</option>
+                <option value="652">SZL</option>
+                <option value="653">THB</option>
+                <option value="654">TJS</option>
+                <option value="655">TMT</option>
+                <option value="656">TND</option>
+                <option value="657">TOP</option>
+                <option value="658">TRY</option>
+                <option value="659">TTD</option>
+                <option value="660">TWD</option>
+                <option value="661">TZS</option>
+                <option value="662">UAH</option>
+                <option value="663">UGX</option>
+                <option selected="selected" value="664">USD</option>
+                <option value="665">UYI</option>
+                <option value="666">UYU</option>
+                <option value="667">UZS</option>
+                <option value="668">VEF</option>
+                <option value="669">VND</option>
+                <option value="670">VUV</option>
+                <option value="671">WST</option>
+                <option value="672">XAF</option>
+                <option value="673">XCD</option>
+                <option value="674">XOF</option>
+                <option value="675">XPF</option>
+                <option value="676">YER</option>
+                <option value="677">ZAR</option>
+                <option value="678">ZMK</option>
+                <option value="679">ZWL</option>
+              </select>
+              <select class="salary form-control valid" name="salary_rate">
+                <option value="358">Per Year</option>
+                <option value="359">Per Hour</option>
+                <option value="360">Fee Basis</option>
+                <option value="362">Per Month</option>
+                <option value="361">Bi-weekly</option>
+                <option value="1730">Per Day</option>
+                <option value="1731">Piece Work</option>
+                <option value="1732">Student Stipend Paid</option>
+                <option value="1733">School Year</option>
+                <option value="1734">Without Compensation</option>
+              </select>
+
+              <label for="hours_per_week">Average hours per week</label>
+              <input id="hours_per_week" name="hours_per_week" type="number" pattern="[0-9]{2}">
+            </div>
+
+            <div class="usajobs-form-grid__full-col">
+              <label for="duties">Duties, Accomplishments and Skills</label>
+              <textarea name="duties" rows="6" class="usajobs-input-large"></textarea>
+            </div>
+          </fieldset>
+
+          <div class="usajobs-button_bar-container">
+            <!-- Button Bar is full bleed -->
+            <!-- Button Bar start -->
+            <div class="usajobs-button_bar--slim">
+              <div class="usajobs-button_bar__body">
+                <button class="usa-button usa-button-secondary" data-behavior="modal.close">
+                  Cancel
+                </button>
+                <button type="submit" class="usa-button usa-button-primary usajobs-button_bar__save" data-behavior="modal.close">
+                  Save
+                </button>
+              </div>
+            </div>
+            <!-- Button Bar end -->
+          </div>
+        </form>
+      </div>
+      <div class="usajobs-modal__actions">
+        <button class="usajobs-modal__close" data-behavior="modal.close" >
+          <span class="usajobs-assistive-text">Close</span>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <div class="usajobs-modal usajobs-modal--error" data-object="modal" data-state="is-closed" id="modal-delete-account" aria-hidden="true" role="dialog" aria-labelledby="usajobs-modal-heading" aria-describedby="usajobs-modal-description">
+  <div class="usajobs-modal__dialog">
+    <div class="usajobs-modal__content">
+      <div id="usajobs-modal-description" class="usajobs-assistive-text">
+        Beginning of a dialog window for delete profile. It begins with a heading 2
+        called "Delete profile confirmation". Escape will cancel and close the window.
+      </div>
+      <div class="usajobs-modal__header">
+        <div class="usa-alert usajobs-alert usajobs-alert--error">
+          <div class="usajobs-alert__figure">
+            <div class="usajobs-alert__icon">
+            </div>
+          </div>
+          <div class="usajobs-alert__body">
+            <h2 id="usajobs-modal-heading" class="usajobs-modal__title">
+              Delete profile confirmation
+            </h2>
+          </div>
+        </div>
+      </div>
+      <div class="usajobs-modal__body">
+        <p>
+          Deleting your profile will delete everything in your USAJOBS profile, including your application history, resumes, saved searches, and all other documents. <strong>This action cannot be undone.</strong>
+        </p>
+        <p>
+          Deleting your USAJOBS profile will not delete your login.gov account.
+        </p>
+      </div>
+      <div class="usajobs-modal__footer">
+        <button class="usa-button usa-button-secondary" data-behavior="modal.close">
+          Cancel
+        </button>
+        <button class="usa-button usajobs-button-destructive-action" data-behavior="modal.close">
+          Delete profile
+        </button>
+      </div>
+      <div class="usajobs-modal__actions">
+        <button class="usajobs-modal__close" data-behavior="modal.close">
+          <span class="usajobs-assistive-text">Close</span>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <div class="usajobs-modal usajobs-modal--error" data-object="modal" data-state="is-closed" id="modal-delete-document" aria-hidden="true" role="dialog" aria-labelledby="usajobs-modal-heading" aria-describedby="usajobs-modal-description">
+  <div class="usajobs-modal__dialog">
+    <div class="usajobs-modal__content">
+      <div id="usajobs-modal-description" class="usajobs-assistive-text">
+        Beginning of a dialog window for delete document. It begins with a heading 2
+        called "Delete Document Confirmation". Escape will cancel and close the window.
+      </div>
+      <div class="usajobs-modal__header">
+        <div class="usa-alert usajobs-alert usajobs-alert--error">
+          <div class="usajobs-alert__figure">
+            <div class="usajobs-alert__icon">
+            </div>
+          </div>
+          <div class="usajobs-alert__body">
+            <h2 id="usajobs-modal-heading" class="usajobs-modal__title">
+              Delete Document Confirmation
+            </h2>
+          </div>
+        </div>
+      </div>
+      <div class="usajobs-modal__body">
+        <p>
+          If you delete this document, <strong>[Document Name]</strong>, you will delete it from your account. You won’t be able to use this document for future job applications, unless you upload or build it again.
+        </p>
+        <p>
+          <strong>If you delete this document, you can’t get it back.</strong>
+        </p>
+        <h4>Want to keep the document, but not use it in your application?</h4>
+        <ol>
+          <li>Close this window.</li>
+          <li>Click on the document to unselect it.</li>
+          <li>Continue with your application.</li>
+        </ol>
+      </div>
+      <div class="usajobs-modal__footer">
+        <button class="usa-button usa-button-secondary" data-behavior="modal.close">
+          Cancel
+        </button>
+        <button class="usa-button usajobs-button-destructive-action" data-behavior="modal.close">
+          Delete Document
+        </button>
+      </div>
+      <div class="usajobs-modal__actions">
+        <button class="usajobs-modal__close" data-behavior="modal.close">
+          <span class="usajobs-assistive-text">Close</span>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <script src="/design-system/js/usajobs-design-system-base.js"></script>
+<script src="/design-system/js/usajobs-design-system-documentation.js"></script>
+<script src="/design-system/js/usajobs-design-system-components.js"></script>
+
+  </body>
+</html>

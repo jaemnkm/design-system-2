@@ -10,6 +10,5 @@ node_modules
 .ruby-gemset
 .ruby-version
 .sass-cache/
-_site/
 *.swp
 visual_design_assets
