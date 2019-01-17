@@ -1,0 +1,1596 @@
+<!DOCTYPE html>
+<!--[if lt IE 9]><html class="lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!--><html lang="en"><!--<![endif]-->
+  <head>
+    <!-- Basic Page Needs
+================================================== -->
+<meta charset="utf-8" /> <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+<!-- Mobile Specific Metas
+================================================== -->
+<meta name="HandheldFriendly" content="True" />
+<meta name="MobileOptimized" content="320" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<!-- Title and meta description
+================================================== -->
+ <title>USAJOBS Design System | Job Announcement</title>
+<meta
+  property="og:title"
+  content="USAJOBS Design System | Job Announcement"
+/>
+ 
+<meta name="description" content="" />
+<meta property="og:description" content="" />
+
+
+<link rel="canonical" href="/job-announcement/v6.7/dfas/" />
+
+<!-- Favicons
+================================================== -->
+<!-- 128x128 -->
+<link
+  rel="shortcut icon"
+  type="image/ico"
+  href="/design-system/img/favicons/favicon.ico"
+/>
+<link
+  rel="icon"
+  type="image/png"
+  href="/design-system/img/favicons/favicon.png"
+/>
+
+<!-- 192x192, as recommended for Android
+  http://updates.html5rocks.com/2014/11/Support-for-theme-color-in-Chrome-39-for-Android
+  -->
+<link
+  rel="icon"
+  type="image/png"
+  sizes="192x192"
+  href="/design-system/img/favicons/favicon-192.png"
+/>
+
+<!-- 57x57 (precomposed) for iPhone 3GS, pre-2011 iPod Touch and older Android devices -->
+<link
+  rel="apple-touch-icon-precomposed"
+  href="/design-system/img/favicons/favicon-57.png"
+/>
+<!-- 72x72 (precomposed) for 1st generation iPad, iPad 2 and iPad mini -->
+<link
+  rel="apple-touch-icon-precomposed"
+  sizes="72x72"
+  href="/design-system/img/favicons/favicon-72.png"
+/>
+<!-- 114x114 (precomposed) for iPhone 4, 4S, 5 and post-2011 iPod Touch -->
+<link
+  rel="apple-touch-icon-precomposed"
+  sizes="114x114"
+  href="/design-system/img/favicons/favicon-114.png"
+/>
+<!-- 144x144 (precomposed) for iPad 3rd and 4th generation -->
+<link
+  rel="apple-touch-icon-precomposed"
+  sizes="144x144"
+  href="/design-system/img/favicons/favicon-144.png"
+/>
+
+<!-- CSS
+================================================== -->
+<link rel="stylesheet" href="/design-system/css/usajobs-design-system-all.css">
+<!-- For production we should compile a distinct CSS for each component -->
+<link rel="stylesheet" href="/design-system/css/usajobs-design-system-components.css">
+ <link rel="stylesheet" href="/design-system/css/usajobs-design-system-joa.css">
+  </head>
+  <body class="job-announcement usajobs-joa">
+    
+
+<header class="usajobs-site-header" role="banner" aria-label="header">
+  <!-- Gov banner BEGIN -->
+<div class="usa-banner">
+  <div class="usa-accordion">
+    <div class="usa-banner-header">
+      <div class="usa-grid usa-banner-inner usajobs-nav--full_bleed__banner-inner">
+      <img src="/design-system/img/favicons/favicon-57.png" alt="U.S. flag">
+      <p>An official website of the United States government</p>
+      <button class="usa-accordion-button usa-banner-button"
+        aria-expanded="false" aria-controls="-gov-banner">
+        <span class="usa-banner-button-text">Here's how you know</span>
+      </button>
+      </div>
+    </div>
+    <div class="usa-banner-content usa-grid usa-accordion-content" id="-gov-banner">
+      <div class="usa-banner-guidance-gov usa-width-one-half">
+        <img class="usa-banner-icon usa-media_block-img" src="/design-system/img/icon-dot-gov.svg" alt="Dot gov">
+        <div class="usa-media_block-body">
+          <p>
+            <strong>The .gov means it’s official.</strong>
+            <br>
+            Federal government websites often end in .gov or .mil. Before sharing sensitive information, make sure you’re on a federal government site.
+            <br>
+            <br>
+            There are some exceptions to this rule. During the USAJOBS application process, you may be sent to an agency specific application system that DOES NOT contain a .mil or .gov. Rest assured, if you apply to any job through USAJOBS.gov your information is safe and secure.
+          </p>
+        </div>
+      </div>
+      <div class="usa-banner-guidance-ssl usa-width-one-half">
+        <img class="usa-banner-icon usa-media_block-img" src="/design-system/img/icon-https.svg" alt="SSL">
+        <div class="usa-media_block-body">
+          <p>
+            <strong>The site is secure.</strong>
+            <br>
+            The <strong>https://</strong> ensures that you are connecting to the official website and that any information you provide is encrypted and transmitted securely.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Gov banner END -->
+
+  <nav class="usajobs-nav usajobs-nav--full_bleed" role="navigation" aria-label="main navigation" data-object="nav">
+    <div class="usajobs-nav__body usajobs-nav--full_bleed__body">
+      <div class="usajobs-nav__header-container">
+        <div class="usajobs-nav__header usajobs-nav--full_bleed__header">
+          <div class="usajobs-nav__brand-container">
+            <a class="usajobs-nav__brand usajobs-nav--full_bleed__brand" href="/">
+              <span class="logo" title="USAJOBS logo"></span>
+            </a>
+          </div>
+          <div class="usajobs-nav__menu" id="usajobs-menu">
+            <ul>
+              <li class="usajobs-nav__menu-container usajobs-nav__account" data-state="is-closed">
+                <a class="usajobs-nav__section-link menu-toggle" data-behavior="nav.menu.toggle" aria-haspopup="true" href="#account" title="Account">
+                  <span class="fa fa-user"></span>
+                  <span class="usajobs-nav__account_name">QQ</span>
+                  <span class="usajobs-nav__first_name">Quadrina</span>
+                </a>
+                <ul class="usajobs-nav__secondary-menu" aria-expanded="false" aria-label="submenu" role="menu">
+                  <li role="menuitem"><a href="/Applicant/MyAccount/Home">Home</a></li>
+                  <li role="menuitem"><a href="/Applicant/Profile/PersonalInformation">Profile</a></li>
+                  <li role="menuitem"><a href="/Applicant/MyAccount/Documents">Documents</a></li>
+                  <li role="menuitem"><a href="/Account/Maintenance">Username &amp; Password</a></li>
+                  <li role="menuitem"><a href="/Applicant/Account/LogOff">Sign Out</a></li>
+                </ul>
+              </li>
+              <li class="usajobs-nav__menu-container usajobs-nav__help">
+                <a class="usajobs-nav__section-link" href="http://usajobs.github.io/Help" title="Help">
+                  <span class="fa fa-question-circle"></span>
+                  Help
+                </a>
+              </li>
+              <li class="usajobs-nav__menu-container usajobs-nav__menu-search" data-state="is-closed">
+                <a data-behavior="nav.menu.search-toggle" aria-controls="usajobs-search-form-v2-auth" class="usajobs-nav__section-link" href="/" title="Job Search">
+                  <span class="fa fa-search"></span>
+                  Search
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div id="usajobs-search-form-v2-auth" class="usajobs-nav__search" aria-expanded="false" role="menu">
+          <form action="/Search" method="get" novalidate="novalidate" role="search">
+  <fieldset class="usajobs-nav--full_bleed__search-body">
+    <div class="usajobs-nav__search-keywords-container">
+      <label for="search-keyword">
+        <i class="usajobs-nav__search-keywords-icon fa fa-search"></i>
+        Keywords
+      </label>
+      <input id="search-keyword" name="search-keyword" class="usajobs-nav__search-keywords-input" placeholder="Job title, department &amp; agency, series" type="text" value="" autocomplete="off">
+    </div>
+    <div class="usajobs-nav__search-location-container">
+      <label for="search-location">
+        <i class="usajobs-nav__search-location-icon fa fa-map-marker"></i>
+        Location
+      </label>
+      <input id="search-location" name="search-location" type="text" class="usajobs-nav__search-location-input" placeholder="City, state, zip, or country" autocomplete="off">
+      <span role="status" aria-live="polite" class="ui-helper-hidden-accessible"></span>
+      <input type="hidden" id="AutoCompleteSelected" name="AutoCompleteSelected">
+    </div>
+    <div class="usajobs-nav__search-button-container usajobs-nav--full_bleed__search-button-container">
+      <button class="usa-button usa-button-primary-alt usajobs-nav__search-button">
+        Search
+      </button>
+    </div>
+  </fieldset>
+</form>
+
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<div class="usajobs-joa-prev-next">
+  <div class="usajobs-joa-prev-next__body">
+    <a href="#prev-search-result" class="usajobs-joa-prev-next__prev"><span class="fa fa-angle-left"></span>
+       Prev
+    </a>
+    <a href="#back-to-search-results" class="usajobs-joa-prev-next__back"><span class="fa fa-angle-up"></span>
+      Back to results
+    </a>
+    <a href="#next-search-result" class="usajobs-joa-prev-next__next">Next <span class="fa fa-angle-right"></span>
+    </a>
+  </div>
+</div>
+
+<div xmlns:soap-env="http://schemas.xmlsoap.org/soap/envelope/"
+     xmlns:hr="http://www.hr-xml.org/3"
+     xmlns:oa="http://www.openapplications.org/oagis/9" class="usajobs-joa-bground">
+  <div itemscope="" itemtype="http://schema.org/JobPosting">
+    <div class="usajobs-joa-banner usajobs-job-banner--v1.3">
+  <div class="usajobs-joa-banner__body">
+    <h1 class="usajobs-joa-banner__title" itemprop="title" id="job-title">
+      Human Resources Assistant
+    </h1>
+    <h5 class="usajobs-joa-banner__dept">Department of Defense</h5>
+    <a href="#agency-modal-trigger" class="usajobs-joa-banner__agency usajobs-joa-banner--v1-3__agency" href="#agencycontact" itemprop="hiringOrganization" data-object-trigger="modal" data-target="#agency-modal">
+      Defense Finance and Accounting Service
+    </a>
+  </div>
+</div>
+
+    <nav class="usajobs-nav-secondary usajobs-joa-nav is-fixed-nav" role="navigation" data-object="nav-secondary" data-target="#usajobs-nav-secondary-menu--joa"> 
+  <div class="usajobs-nav-secondary__body usajobs-joa-nav__body" id="usajobs-menu-joa">
+    <ul class="usajobs-nav-secondary__menu">
+      <li class="usajobs-nav-secondary__container">
+        <a class="usajobs-nav-secondary__item usajobs-joa-nav__item is-active" href="#overview" data-behavior="nav-secondary.scroll-to-top nav-secondary.make-active">
+          Overview
+        </a>
+      </li>
+      <li class="usajobs-nav-secondary__container">
+        <a class="usajobs-nav-secondary__item usajobs-joa-nav__item" href="#locations" data-behavior="nav-secondary.scroll-to-top nav-secondary.make-active">
+          Locations
+        </a>
+      </li>
+      <li class="usajobs-nav-secondary__container">
+        <a class="usajobs-nav-secondary__item usajobs-joa-nav__item" href="#duties" data-behavior="nav-secondary.scroll-to-top nav-secondary.make-active">
+          Duties
+        </a>
+      </li>
+      <li class="usajobs-nav-secondary__container">
+        <a class="usajobs-nav-secondary__item usajobs-joa-nav__item" href="#requirements" data-behavior="nav-secondary.scroll-to-top nav-secondary.make-active">
+          Requirements
+        </a>
+      </li>
+      <li class="usajobs-nav-secondary__container">
+        <a class="usajobs-nav-secondary__item usajobs-joa-nav__item" href="#required-documents" data-behavior="nav-secondary.scroll-to-top nav-secondary.make-active">
+          Required documents
+        </a>
+      </li>
+      <li class="usajobs-nav-secondary__container">
+        <a class="usajobs-nav-secondary__item usajobs-joa-nav__item" href="#benefits" data-behavior="nav-secondary.scroll-to-top nav-secondary.make-active">
+          Benefits
+        </a>
+      </li>
+      <li class="usajobs-nav-secondary__container">
+        <a class="usajobs-nav-secondary__item usajobs-joa-nav__item" href="#how-to-apply" data-behavior="nav-secondary.scroll-to-top nav-secondary.make-active">
+          How to apply
+        </a>
+      </li>
+      <li class="usajobs-nav-secondary__container more is-hidden">
+        <a class="usajobs-nav-secondary__more-toggle" href="#more" data-behavior="nav-secondary.toggle" data-target="#usajobs-nav-secondary-menu--joa"><i class="fa fa-plus"></i></a>
+        <ul class="usajobs-nav-secondary__more-container" id="usajobs-nav-secondary-menu--joa" data-state="is-closed">
+        </ul>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+    <section class="usajobs-shell usajobs-joa--v1-5__shell">
+      <section class="usajobs-canvas">
+        <div class="usajobs-content-gutter">
+          <div class="usajobs-joa-intro usajobs-joa-intro--v1-5">
+  <div class="usajobs-joa-intro--v1-5__container">
+    <div class="usajobs-joa-overview">
+      <a href="http://usajobs.github.io/Help/how-to/job-announcement/overview/" class="usajobs-joa-section__help" target="_blank">
+        <span class="fa fa-question-circle"></span> Help
+      </a>
+      <h2 id="overview" class="usajobs-joa-overview__header">Overview</h2>
+      <ul class="usajobs-joa-summary__list">
+        <li class="usajobs-joa-summary__item">
+          <h5 class="usajobs-joa-summary__label">
+            <span rel="tooltip" title="The open date is when the job was posted and the closing date is when the job will close.">
+              Open &amp; closing dates
+            </span>
+          </h5>
+          <p class="usajobs-joa-summary__value">
+            <i class="fa fa-clock-o usajobs-joa-summary__closing-clock--is-warning"></i>
+            <span itemprop="datePosted">2017-08-01</span> to <span itemprop="validThrough">2017-09-01</span>
+          </p>
+          
+        </li>
+        <li class="usajobs-joa-summary__item">
+          <h5 class="usajobs-joa-summary__label">
+            <span rel="tooltip" title="The Federal Government has three services that determine how you are hired: Competitive, Excepted, and Senior Executive.">
+              Service
+            </span>
+          </h5>
+          <p class="usajobs-joa-summary__value">
+            Competitive
+          </p>
+        </li>
+        <li class="usajobs-joa-summary__item">
+          <h5 class="usajobs-joa-summary__label">
+            <span rel="tooltip" title="A grade refers to the pay scale which sets the pay level and qualifications for the job.">
+              Pay scale &amp; grade
+            </span>
+          </h5>
+          <p class="usajobs-joa-summary__grades">
+            GS
+            
+              06
+            
+          </p>
+        </li>
+        <li class="usajobs-joa-summary__item">
+          <h5 class="usajobs-joa-summary__label">
+            <span rel="tooltip" title="The salary range for the job.">
+              Salary
+            </span>
+          </h5>
+          <p class="usajobs-joa-summary__salary">
+            <span itemprop="baseSalary">$33,069</span> -
+            $53,256 Per Year
+          </p>
+        </li>
+        <li class="usajobs-joa-summary__item">
+          <h5 class="usajobs-joa-summary__label">
+            <span rel="tooltip" title="The way that the Federal Government classifies the duration of certain jobs.">
+              Appointment type
+            </span>
+          </h5>
+          <p class="usajobs-joa-summary__value">
+            Permanent
+          
+          </p>
+        </li>
+        <li class="usajobs-joa-summary__item">
+          <h5 class="usajobs-joa-summary__label">
+            <span rel="tooltip" title="Determines the number of hours that you will work during the week.">
+              Work schedule
+            </span>
+          </h5>
+          <p class="usajobs-joa-summary__value" itemprop="employmentType">
+            Full-Time
+          </p>
+        </li>
+      </ul>
+    </div>
+    <div id="locations" class="usajobs-joa-locations usajobs-joa-locations--v1-5">
+  <a href="http://usajobs.github.io/Help/how-to/job-announcement/locations/" class="usajobs-joa-section__help" target="_blank">
+    <span class="fa fa-question-circle"></span> Help
+  </a>
+  <h2 class="usajobs-joa-locations--v1-5__header">Locations</h2>
+  <!-- p class="usajobs-joa-locations__sub-title">Many vacancies in the following locations:</p -->
+  <ul class="usajobs-joa-locations__list">
+  
+    <li class="usajobs-joa-locations__item">
+      <a class="usajobs-joa-locations__link" href="#map" itemtype="http://schema.org/PostalAddress">
+        <div class="usajobs-joa-locations__figure">
+          <i class="fa fa-map-marker"></i>
+        </div>
+        <div class="usajobs-joa-locations__body">
+          <span class="usajobs-joa-locations__street" itemprop="streetAddress">
+            
+          </span>
+          <span class="usajobs-joa-locations__city" itemprop="addressLocality">
+            Indianapolis, Indiana
+          </span>
+          <span class="usajobs-joa-locations__vacancies">
+            
+              2 vacancies
+            
+          </span>
+        </div>
+      </a>
+    </li>
+  
+  </ul>
+  
+  
+  <div class="usajobs-joa-sub-section">
+    <div id="relocationauthorized" class="usajobs-joa-sub-section__container">
+      <h5 class="usajobs-joa-sub-section__small-title">
+        <span rel="tooltip" title="Whether or not you will be reimbursed for relocation expenses.">
+          Relocation expenses reimbursed
+        </span>
+      </h5>
+      <p class="usajobs-joa-sub-section__text">
+        
+        No
+        
+      </p>
+    </div>
+
+    <div id="telework-eligble" class="usajobs-joa-sub-section__container">
+      <h5 class="usajobs-joa-sub-section__small-title">
+        <span rel="tooltip" title="Determines if you will be able to work from home on some days.">
+          Telework eligible
+        </span>
+      </h5>
+      <p class="usajobs-joa-sub-section__text">
+        
+        Yes as determined by agency policy
+        
+      </p>
+    </div>
+  </div>
+</div>
+
+  </div>
+
+  <aside class="usajobs-joa-aside">
+    <div id="hiring-paths" class="usajobs-joa-intro-hiring-paths usajobs-joa--v1-5__intro-hiring-paths">
+      <a href="http://usajobs.github.io/Help/how-to/job-announcement/this-job-is-open-to/" class="usajobs-joa-section__help">
+        <span class="fa fa-question-circle"></span> Help
+      </a>
+      <h3 class="usajobs-joa-intro-hiring-paths__section-title">This job is open to</h3>
+      <ul class="usajobs-joa-intro-hiring-paths__list">
+        
+          
+          <li class="usajobs-joa-intro-hiring-paths__item">
+            <a href="http://usajobs.github.io/Help/working-in-government/unique-hiring-paths/federal-employees/" class="usajobs-joa-intro-hiring-paths__link" target="_blank">
+              <div class="usajobs-joa-intro-hiring-paths__figure">
+                <span class="usajobs-joa-intro-hiring-paths__icon federal-employees">
+                  <span class="fa fa-bank"></span>
+                </span>
+              </div>
+              <div class="usajobs-joa-intro-hiring-paths__body">
+                <h4 class="usajobs-joa-intro-hiring-paths__title">
+                  Federal employees
+                </h4>
+                <p class="usajobs-joa-intro-hiring-paths__detail">
+                  Current or former competitive service employees, including:
+                </p>
+                <ul class="usajobs-joa-intro-hiring-paths__sublist">
+                  <li class="usajobs-joa-intro-hiring-paths__sublist-item">Merit promotion</li>
+                  <li class="usajobs-joa-intro-hiring-paths__sublist-item">Career Transition (CTAP, ICTAP, RPL)</li>
+                </ul>
+              </div>
+            </a>
+          </li>
+          
+        
+          
+          <li class="usajobs-joa-intro-hiring-paths__item">
+            <a href="http://usajobs.github.io/Help/working-in-government/unique-hiring-paths/veterans/" class="usajobs-joa-intro-hiring-paths__link" target="_blank">
+              <div class="usajobs-joa-intro-hiring-paths__figure">
+                <span class="usajobs-joa-intro-hiring-paths__icon veterans">
+                  <span class="fa fa-shield"></span>
+                </span>
+              </div>
+              <div class="usajobs-joa-intro-hiring-paths__body">
+                <h4 class="usajobs-joa-intro-hiring-paths__title">
+                  Veterans
+                </h4>
+                <!-- p class="usajobs-joa-intro-hiring-paths__detail">
+                  Includes VRA, VEOA, and 30% disabled.
+                </p -->
+              </div>
+            </a>
+          </li>
+          
+        
+          
+          <li class="usajobs-joa-intro-hiring-paths__item">
+            <a href="http://usajobs.github.io/Help/working-in-government/unique-hiring-paths/individuals-with-disabilities/" class="usajobs-joa-intro-hiring-paths__link" target="_blank">
+              <div class="usajobs-joa-intro-hiring-paths__figure">
+                <span class="usajobs-joa-intro-hiring-paths__icon disability">
+                  <span class="fa fa-wheelchair-alt"></span>
+                </span>
+              </div>
+              <div class="usajobs-joa-intro-hiring-paths__body">
+                <h4 class="usajobs-joa-intro-hiring-paths__title">
+                  Individuals with a disability
+                </h4>
+              </div>
+            </a>
+          </li>
+          
+        
+          
+          <li class="usajobs-joa-intro-hiring-paths__item">
+            <a href="http://usajobs.github.io/Help/working-in-government/unique-hiring-paths/military-spouses/" class="usajobs-joa-intro-hiring-paths__link">
+              <div class="usajobs-joa-intro-hiring-paths__figure" target="_blank">
+                <span class="usajobs-joa-intro-hiring-paths__icon military-spouses fa-stack">
+                  <span class="fa fa-circle-o fa-stack-1x is-first"></span>
+                  <span class="fa fa-circle-o fa-stack-1x is-second"></span>
+                </span>
+              </div>
+              <div class="usajobs-joa-intro-hiring-paths__body">
+                <h4 class="usajobs-joa-intro-hiring-paths__title">
+                  Military Spouses
+                </h4>
+                <!-- p class="usajobs-joa-intro-hiring-paths__detail">
+                  Military spouses relocating under PCS orders, or whose spouse is 100% disabled or died while on active duty.
+                </p -->
+              </div>
+            </a>
+          </li>
+          
+        
+      </ul>
+    </div>
+    
+
+    <div class="usajobs-joa-actions usajobs-joa-actions--v1-5">
+  <div class="usajobs-joa-actions__col-apply usajobs-joa-actions--v1-5__col-apply">
+    <a href="#" class="usa-button-primary usa-button-big usajobs-joa-actions__apply">Apply</a>
+  </div>
+  <div class="usajobs-joa-actions__col-sub-actions usajobs-joa-actions--v1-5__col-sub-actions">
+    <a class="usajobs-joa-actions__print" href="#print">
+      <i class="fa fa-print"></i> Print
+    </a>
+    <div class="usajobs-joa-actions__share usajobs-joa-actions-share">
+      <button class="usajobs-joa-actions-share__trigger" id="joa-share" href="#share" data-behavior="joa-actions.toggle-share" aria-haspopup="true">
+        <i class="fa fa-share-alt"></i> Share
+      </button>
+      <ul class="usajobs-joa-actions-share__list" id="joa-share-menu" aria-hidden="true" aria-labeledby="joa-share">
+        <li class="usajobs-joa-actions-share__item">
+          <a href="mailto:?subject=USAJOBS Job Announcement - [job title]&amp;body=Read more about [job title ] at https://www.usajobs.gov/GetJob/ViewDetails/dfas" class="usajobs-joa-actions-share__link email" data-behavior="joa-actions.close-share" data-target="#joa-share-menu">
+            <i class="fa fa-envelope-square"></i> <span class="sr-only">Email</span>
+          </a>
+        </li>
+        <li class="usajobs-joa-actions-share__item">
+          <a href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Fwww.usajobs.gov%2FGetJob%2FViewDetails%2Fdfas%2F%3Fshare%3Dfacebook&amp;t=USAJOBS%20-%20Job%20Announcement" class="usajobs-joa-actions-share__link facebook" target="_blank" data-behavior="joa-actions.close-share" data-target="#joa-share-menu">
+            <i class="fa fa-facebook-square"></i> <span class="sr-only">Facebook</span>
+          </a>
+        </li>
+        <li class="usajobs-joa-actions-share__item">
+          <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3A%2F%2Fwww.usajobs.gov%2FGetJob%2FViewDetails%2Fdfas%2F%3Fshare%3Dlinkedin&amp;title=USAJOBS%20-%20Job%20Announcement&amp;ro=false&amp;summary=&amp;source=" class="usajobs-joa-actions-share__link linkedin" target="_blank" data-behavior="joa-actions.close-share" data-target="#joa-share-menu">
+            <i class="fa fa-linkedin-square"></i> <span class="sr-only">LinkedIn</span>
+          </a>
+        </li>
+        <li class="usajobs-joa-actions-share__item">
+          <a href="https://twitter.com/intent/tweet?text=USAJOBS%20-%20Job%20Announcement%20https%3A%2F%2Fwww.usajobs.gov%2FGetJob%2FViewDetails%2Fdfas%2F%3Fshare%3Dtwitter&amp;source=webclient" class="usajobs-joa-actions-share__link twitter" target="_blank" data-behavior="joa-actions.close-share" data-target="#joa-share-menu">
+            <i class="fa fa-twitter-square"></i> <span class="sr-only">Twitter</span>
+          </a>
+        </li>
+        <li class="usajobs-joa-actions-share__item">
+          <a href="#joa-share-menu" data-shorten-url="https://www.usajobs.gov/GetJob/ViewDetails/dfas" class="usajobs-joa-actions-share__link link" data-behavior="joa-actions.shorten-link" data-target="#joa-share-menu">
+            <i class="fa fa-chain"></i> <span class="sr-only">Shorten link</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <a class="usajobs-joa-actions__save" href="#save" data-behavior="joa-actions.toggle-save" data-state="is-unsaved">
+      Save
+    </a>
+  </div>
+  <div class="usajobs-joa-actions--v1-5__numbers">
+    <div class="usajobs-joa-actions--v1-5__number-container">
+      <h5 class="usajobs-joa-actions--v1-5__header">Announcement number</h5>
+      <p class="usajobs-joa-actions--v1-5__number">
+        IN-10029191-17
+      </p>
+    </div>
+    <div class="usajobs-joa-actions--v1-5__number-container">
+      <h5 class="usajobs-joa-actions--v1-5__header">Control number</h5>
+      <p class="usajobs-joa-actions--v1-5__number">
+        dfas
+      </p>
+    </div>
+  </div>
+</div>
+
+  </aside>
+</div>
+
+          <main class="usajobs-content-well" id="main-content" role="main" aria-label="Main Job announcement content">
+            <div class="usa-accordion" data-object="joa-accordion">
+              <ul class="usa-unstyled-list">
+                <li><button class="usa-accordion-button usajobs-joa-accordion-trigger usajobs-joa--v1-5__accordion-trigger" aria-expanded="true" aria-controls="duties" data-behavior="joa_accordion.toggle">
+  Duties
+</button>
+<div id="duties" aria-hidden="false" class="usa-accordion-content usajobs-joa-section usajobs-joa-accordion-overview">
+  <a href="http://usajobs.github.io/Help/how-to/job-announcement/duties/" class="usajobs-joa-section__help" target="_blank">
+    <span class="fa fa-question-circle"></span> Help
+  </a>
+  <h2 class="usajobs-joa-section__header">Duties</h2>
+  <h3>Summary</h3>
+  <div itemprop="description">
+    <p>
+      
+    </p>
+    <p>
+      In this role you may:
+    </p>
+    <ul class="usajobs-list-bullets">
+    
+      <li>Help determine qualifications for a variety of clerical, technical or entry level positions.</li>
+    
+      <li>Extend job offers, initiate the security clearance process, finalize entry dates and initiate the on-boarding process.</li>
+    
+      <li>Process a variety of personnel actions — identify the appointing authority, nature of action and remarks, and set pay.</li>
+    
+      <li>Participate in audits of HR processes — review records, analyze data and generate reports to identify trends and areas for improvement.</li>
+    
+      <li>Support recommendations for changes to HR operations and procedures.</li>
+    
+      <li>Coordinate with payroll representatives and outside agency personnel to accurately process and maintain personnel records and pay.</li>
+    
+      <li>Support the day-to-day operations of the Priority Placement Program (PPP), Reemployment Priority List (RPL) and local placement programs; interpret program procedures, enter requisitions and registrations; keep official records; generate ad hoc reports and train staff on placement programs.</li>
+    
+      <li>Administer Permanent Change of Station (PCS) orders — process, report and reconcile orders and inform job applicants and employees about basic eligibility, requirements and procedures.</li>
+    
+    </ul>
+
+    <a href="#agency-modal-trigger" class="usa-button usa-button-outline usajobs-joa-section__cta" href="#agencycontact" data-object-trigger="modal" data-target="#agency-modal">
+      Learn more about this agency
+    </a>
+  </div>
+
+  <div id="travelrequired">
+    <h3>Travel Required</h3>
+    <p>Occasional - 25% or less</p>
+  </div>
+
+  <div class="usajobs-joa-sub-section">
+    <div id="supervisory-status" class="usajobs-joa-sub-section__container">
+      <h5 class="usajobs-joa-sub-section__small-title">
+        <span rel="tooltip" title="Determines if you will be a supervisor.">
+          Supervisory status
+        </span>
+      </h5>
+      <p class="usajobs-joa-sub-section__text">
+      
+      No
+      
+      </p>
+    </div>
+
+    <div id="promotion-potential" class="usajobs-joa-sub-section__container">
+      <h5 class="usajobs-joa-sub-section__small-title">
+        <span rel="tooltip" title="Determines if you will be able to move to the next level within your grade.">
+          Promotion potential
+        </span>
+      </h5>
+      <p class="usajobs-joa-sub-section__text">
+      
+        07
+      
+      </p>
+    </div>
+  </div>
+</div>
+</li>
+                <li><div class="usajobs-joa-occupations">
+  <h3 class="usajobs-joa-occupations__title">Similar Jobs</h3>
+  <h4>Job family (Series)</h4>
+  
+  <a href="https://test.usajobs.gov/Search/?j=0203" class="usajobs-joa-occupations__series ">
+    <span class="usajobs-joa-occupations__series-link">0203 Human Resources Assistant</span>
+  </a>
+  
+  <div class="usajobs-joa-occupations__similar-jobs">
+    <h4>Related occupations</h4>
+    <ul class="usajobs-joa-occupations__list">
+    
+      <li class="usajobs-joa-occupations__item">
+        <a href="https://test.usajobs.gov/Search?soc=Human%20Resources%20Specialists" class="usa-button usa-button-gray usajobs-joa-occupations__link">
+          Human Resources Specialists (181)
+        </a>
+      </li>
+    
+    </ul>
+  </div>
+  <div class="usajobs-joa-occupations__mco">
+    
+    <!--p>
+      <span class="is-mco"></span>
+      <span class="usajobs-joa-occupations__mco-desc">
+        Jobs that are in high demand that the government is looking to fill immediately.
+      </span>
+    </p-->
+  </div>
+</div>
+</li>
+                <li><button class="usa-accordion-button usajobs-joa-accordion-trigger usajobs-joa--v1-5__accordion-trigger" aria-expanded="false" aria-controls="requirements" data-behavior="joa_accordion.toggle">
+  Requirements
+</button>
+<div id="requirements" aria-hidden="true" class="usa-accordion-content usajobs-joa-section">
+  <a href="http://usajobs.github.io/Help/how-to/job-announcement/requirements/" class="usajobs-joa-section__help" target="_blank">
+    <span class="fa fa-question-circle"></span> Help
+  </a>
+  <h2 class="usajobs-joa-section__header">Requirements</h2>
+  <h3>Conditions of employment</h3>
+  <p>
+    If you apply to this job and we hire you, you must meet and agree to the following conditions:
+  </p>
+  <ul class="usajobs-list-bullets">
+    
+    <li>Must be a U.S Citizen or National</li>
+    
+    <li>Successfully complete a background investigation</li>
+    
+    <li>Be able to type 40 words per minute</li>
+    
+  </ul>
+
+  <div id="qualifications" itemprop="qualifications">
+    <!-- Use "Qualifications for all levels" when the job is open to more than one level -->
+    <!-- h3>Qualifications for all levels</h3 -->
+    <h3>Qualifications</h3>
+    <h4>All applicants</h4>
+    <p>
+      You must have at least one year of the following specialized experience, which is equivalent to the difficulty and responsibility of the GS-04 level within the federal service:
+    </p>
+
+    <div itemprop="qualifications">
+      <ul class="usajobs-list-bullets">
+        <li>Providing administrative, technical or clerical support to a Human Resources (HR) office.</li>
+        <li>Entering and/or extracting data into an automated Human Resources (HR) system.</li>
+        <li>Verifying and updating training, benefits or personnel and position data and records.</li>
+        <li>Processing a variety of personnel actions related to employment, or providing basic HR information to customers.</li>
+      </ul>
+    </div>
+
+    <h4>For former/current federal employees</h4>
+    <p>
+      We may consider your application if you’re a current or former employee who has held a GS-03 position or higher in the preceding 52 weeks on a permanent competitive appointment.
+    </p>
+
+    <h5>Time after Competitive Appointment</h5>
+    <p>
+      Candidates must have served 3 months after latest competitive appointment in the Federal service.
+    </p>
+  </div>
+
+  <div id="education" itemprop="eduction">
+    <h3>Education</h3>
+    <p>
+      
+    </p>
+    <p>If using education to qualify, you must have:</p>
+    <ul class="usajobs-list-bullets">
+      <li>Successfully completed four years of education above the high school level, in any field for which high school graduation, or the equivalent, is a prerequisite.</li>
+      <li>Successfully completed post-high school education and equivalent experience.</li>
+    </ul>
+  </div>
+
+  
+
+  <div id="evaluation" class="usajobs-joa-evaluation">
+    <h3>How you will be evaluated</h3>
+    <p>
+      You will be evaluated for this job based on:
+    </p>
+    <ul class="usajobs-list-bullets">
+      <li>How well you meet teh qualifications above.</li>
+      <li>The experience listed in your resume and whether your experience and skills match what we’re looking for.</li>
+      <li>An online assessment tool.</li>
+    </ul>
+    <div class="usajobs-joa--v1-5__disclaimer-inset">
+      <h4>Pre-employment requirements</h4>
+      <p>
+        A tentative offer of employment will be rescinded if the selectee fails to meet the pre-employment requirements, including failure to report to any of the scheduled appointments.
+      </p>
+    </div>
+  </div>
+
+  <div id="security">
+    <h3>Background checks and security clearance</h3>
+    <div class="usajobs-joa-sub-section usajobs-joa-sub-section--three-columns">
+      <div id="background-check" class="usajobs-joa-sub-section__container usajobs-joa-sub-section--three-columns__container">
+        <h5 class="usajobs-joa-sub-section__small-title">Background check</h5>
+        <p class="usajobs-joa-sub-section__text">
+          <a href="https://usajobs.github.io/Help/faq/job-announcement/security-clearances/" target="_blank">
+            Public Trust
+          </a>
+        </p>
+      </div>
+
+      <div id="security-clearance" class="usajobs-joa-sub-section__container usajobs-joa-sub-section--three-columns__container">
+        <h5 class="usajobs-joa-sub-section__small-title">Security clearance</h5>
+        <p class="usajobs-joa-sub-section__text">
+          <a href="https://usajobs.github.io/Help/faq/job-announcement/security-clearances/" target="_blank">
+            None
+          </a>
+        </p>
+      </div>
+
+      <div id="telework-eligble" class="usajobs-joa-sub-section__container usajobs-joa-sub-section--three-columns__container">
+        <h5 class="usajobs-joa-sub-section__small-title">Drug test required</h5>
+        <p class="usajobs-joa-sub-section__text">
+          No
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+</li>
+                <li><button class="usa-accordion-button usa-button-unstyled usajobs-joa--v1-5__accordion-trigger" aria-expanded="false" aria-controls="required-documents" data-behavior="joa_accordion.toggle">
+  Required documents
+</button>
+<div id="required-documents" aria-hidden="true" class="usa-accordion-content usajobs-joa-section usajobs-joa-required-documents">
+  <a href="http://usajobs.github.io/Help/how-to/job-announcement/required-documents/" class="usajobs-joa-section__help" target="_blank">
+    <span class="fa fa-question-circle"></span> Help
+  </a>
+  <h2 class="usajobs-joa-section__header">Required documents</h2>
+  <h3 class="usajobs-joa-required-documents__sub-head">All applicants</h3>
+  <div class="usajobs-joa-required-documents__container">
+    <ul class="usajobs-list-bullets">
+      <li>A resume supporting your specialized experience.</li>
+      <li>Your resume must also support your answers to the job questionnaire.</li>
+    </ul>
+    <p>
+      <a href="https://www.usajobs.gov/Help/faq/application/documents/resume/what-to-include/" target="_blank">
+        What to include in your resume
+      </a>
+    </p>
+  </div>
+
+  <h3 class="usajobs-joa-required-documents__sub-head">Based on who this job is open to</h3>
+  <div class="usajobs-joa-required-documents-rtable">
+    <div class="usajobs-joa-required-documents-rtable__row">
+      <div class="usajobs-joa-required-documents-rtable__cell usajobs-joa-required-documents-rtable__head">
+        <h5 class="usajobs-joa-required-documents-rtable__column-header">
+          If you're applying to this job as a&hellip;
+        </h5>
+      </div>
+      <div class="usajobs-joa-required-documents-rtable__cell usajobs-joa-required-documents-rtable__head">
+        <h5 class="usajobs-joa-required-documents-rtable__column-header">
+          Then you must submit your&hellip;
+        </h5>
+      </div>
+    </div>
+    <div class="usajobs-joa-required-documents-rtable__row">
+      <div class="usajobs-joa-required-documents-rtable__cell">
+        <h5 class="usajobs-joa-required-documents-rtable__column-header">
+          If you're applying to this job as a&hellip;
+        </h5>
+        Current or former Federal Employee
+        <div class="usajobs-unique-hiring-paths__icon federal-employees usajobs-joa-required-documents__icon">
+          <span class="fa fa-institution"></span>
+        </div>
+      </div>
+      <div class="usajobs-joa-required-documents-rtable__cell">
+        <h5 class="usajobs-joa-required-documents-rtable__column-header">
+          Then you must submit your&hellip;
+        </h5>
+        <ul class="usajobs-list-bullets">
+          <li>SF-50: Notification of Personnel Action showing you are/were in the competitive service and the highest grade or promotion potential held</li>
+          <li>SF-50: Showing Time-in-Grade eligibility and reflecting your title, series, and grade</li>
+          <li>Most recent Performance Appraisal, if applicable</li>
+        </ul>
+      </div>
+    </div>
+    <div class="usajobs-joa-required-documents-rtable__row is-striped">
+      <div class="usajobs-joa-required-documents-rtable__cell">
+        <h5 class="usajobs-joa-required-documents-rtable__column-header">
+          If you're applying to this job as a&hellip;
+        </h5>
+        Former Federal employee under CTAP/ICTAP consideration
+        <div class="usajobs-unique-hiring-paths__icon federal-employees usajobs-joa-required-documents__icon">
+          <span class="fa fa-institution"></span>
+        </div>
+      </div>
+      <div class="usajobs-joa-required-documents-rtable__cell">
+        <h5 class="usajobs-joa-required-documents-rtable__column-header">
+          Then you must submit your&hellip;
+        </h5>
+        <ul class="usajobs-list-bullets">
+          <li>SF-50: Notification of Personnel Action</li>
+          <li>A copy of the separation letter or Reduction In Force (RIF) notice</li>
+          <li>A copy of a current (or last) performance rating of record</li>
+        </ul>
+      </div>
+    </div>
+    <div class="usajobs-joa-required-documents-rtable__row">
+      <div class="usajobs-joa-required-documents-rtable__cell">
+        <h5 class="usajobs-joa-required-documents-rtable__column-header">
+          If you're applying to this job as a&hellip;
+        </h5>
+        Veteran
+        <div class="usajobs-unique-hiring-paths__icon veterans usajobs-joa-required-documents__icon">
+          <span class="fa fa-shield"></span>
+        </div>
+      </div>
+      <div class="usajobs-joa-required-documents-rtable__cell">
+        <h5 class="usajobs-joa-required-documents-rtable__column-header">
+          Then you must submit your&hellip;
+        </h5>
+        <ul class="usajobs-list-bullets">
+          <li>DD-214: Certificate of Release or Discharge from Active Duty</li>
+          <li>VA letter</li>
+          <li>Sf-15: Application for 10-point Veterans' Preference</li>
+          <li>A statement of intent to discharge from your agency <em>(if you are a veterans who has not yet been discharged)</em></li>
+        </ul>
+      </div>
+    </div>
+    <div class="usajobs-joa-required-documents-rtable__row is-striped">
+      <div class="usajobs-joa-required-documents-rtable__cell">
+        <h5 class="usajobs-joa-required-documents-rtable__column-header">
+          If you're applying to this job as a&hellip;
+        </h5>
+        Military spouse
+        <div class="usajobs-unique-hiring-paths__icon military-spouses fa-stack usajobs-joa-required-documents__icon">
+          <span class="fa fa-circle-o fa-stack-1x is-first"></span>
+          <span class="fa fa-circle-o fa-stack-1x is-second"></span>
+        </div>
+      </div>
+      <div class="usajobs-joa-required-documents-rtable__cell">
+        <h5 class="usajobs-joa-required-documents-rtable__column-header">
+          Then you must submit your&hellip;
+        </h5>
+        <ul class="usajobs-list-bullets">
+          <li>Documentation verifying marriage. For example, a marriage certificate.</li>
+          <li>A copy of your spouse's active military orders.</li>
+          <li>DD-214: Certificate of Release or Discharge from Active Duty - Military spouses of 100% disabled separated or retired veterans and widows or widowers, who are not remarried, of military service members who were killed on active duty.</li>
+          <li>DD 1300: Report of Casualty - Military spouses who are widows and widowers, and are not remarried, of military service members who were killed on active duty.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="usajobs-joa-required-documents-rtable__row">
+      <div class="usajobs-joa-required-documents-rtable__cell">
+        <h5 class="usajobs-joa-required-documents-rtable__column-header">
+          If you're applying to this job as a&hellip;
+        </h5>
+        Individual with a disability
+        <div class="usajobs-unique-hiring-paths__icon individuals-with-disabilities usajobs-joa-required-documents__icon">
+          <span class="fa fa-wheelchair-alt"></span>
+        </div>
+      </div>
+      <div class="usajobs-joa-required-documents-rtable__cell">
+        <h5 class="usajobs-joa-required-documents-rtable__column-header">
+          Then you must submit your&hellip;
+        </h5>
+        <ul class="usajobs-list-bullets">
+          <li>Certified verification of a disability from a licensed medical professional; a licensed vocational District of Columbia agency or U.S. territory that issues or provides disability benefits.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <h3 class="usajobs-joa-required-documents__sub-head">Based on education</h3>
+  <div class="usajobs-joa-required-documents-rtable">
+    <div class="usajobs-joa-required-documents-rtable__row">
+      <div class="usajobs-joa-required-documents-rtable__cell usajobs-joa-required-documents-rtable__head">
+        <h5 class="usajobs-joa-required-documents-rtable__column-header">
+          If&hellip;
+        </h5>
+      </div>
+      <div class="usajobs-joa-required-documents-rtable__cell usajobs-joa-required-documents-rtable__head">
+        <h5 class="usajobs-joa-required-documents-rtable__column-header">
+          Then&hellip;
+        </h5>
+      </div>
+    </div>
+    <div class="usajobs-joa-required-documents-rtable__row">
+      <div class="usajobs-joa-required-documents-rtable__cell">
+        <h5 class="usajobs-joa-required-documents-rtable__column-header">
+          If you're applying for this job&hellip;
+        </h5>
+        using your eduction instead of experience, or if education is a requirement
+      </div>
+      <div class="usajobs-joa-required-documents-rtable__cell">
+        <h5 class="usajobs-joa-required-documents-rtable__column-header">
+          Then you must submit your&hellip;
+        </h5>
+        <ul class="usajobs-list-bullets">
+          <li>Unofficial transcripts or any report listing institution, course title, credits earned and final grade.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="usajobs-joa--v1-5__disclaimer-inset">
+    <h4>
+      If you are relying on your education to meet the qualifications of this job:
+    </h4>
+    <p>
+      If you don't submit a transcript, we will not use your education when deciding if you're qualified for the job.
+    </p>
+    <p>
+      Education must be accredited by an accrediting institution recognized by the U.S. Department of Education in order for it to be credited towards qualifications. Therefore, provide only the attendance and/or degrees from <a href="http://www.ed.gov/admins/finaid/accred/" target="_blank">schools accredited by accrediting institutions recognized by the U.S. Department of Education</a>.
+    </p>
+    <p>
+      Failure to provide all of the required information as stated in this vacancy announcement may result in an ineligible rating or may affect the overall rating.
+    </p>
+  </div>
+</div>
+</li>
+                <li><button class="usa-accordion-button usajobs-joa-accordion-trigger is-open-at-M" aria-expanded="false" aria-controls="benefits" data-behavior="joa_accordion.toggle">
+  Benefits
+</button>
+<div id="benefits" aria-hidden="true" class="usa-accordion-content usajobs-joa-section">
+  <a href="http://usajobs.github.io/Help/how-to/job-announcement/benefits/" class="usajobs-joa-section__help" target="_blank">
+    <span class="fa fa-question-circle"></span> Help
+  </a>
+  <h2 class="usajobs-joa-section__header">Benefits</h2>
+  <div id="benefits" itemprop="jobBenefits" class="usajobs-benefits">
+    <p>
+      A career with the U.S. Government provides employees with a comprehensive benefits package. As a federal employee, you and your family will have access to a range of benefits that are designed to make your federal career very rewarding.
+    </p>
+    <ul>
+      <li>
+        <a href="https://www.usa.gov/benefits-for-federal-employees#item-36407" target="_blank">
+          Benefits for federal employees
+        </a>
+      </li>
+      <li>
+        <a href="https://www.opm.gov/healthcare-insurance/" target="_blank">
+          Healthcare insurance
+        </a>
+      </li>
+      <li>
+        <a href="https://www.usajobs.gov/Help/working-in-government/pay-and-leave/" target="_blank">
+          Pay and leave
+        </a>
+      </li>
+    </ul>
+    
+    <div class="usajobs-read-more usajobs-joa__read-more-content" data-object="reveal-more" data-behavior="joa-read-more">
+      <p>
+        <a href="https://www.dfas.mil/dfas/careers.html">
+          https://www.dfas.mil/dfas/careers.html
+        </a>
+      </p>
+    </div>
+    
+    <div class="usajobs-joa--v1-5__disclaimer-inset">
+      <p>
+        Eligibility for benefits depends on the type of position you hold and whether your position is full-time, part-time, or intermittent. Contact the hiring agency for more information on the specific benefits offered.
+      </p>
+    </div>
+  </div>
+</div>
+</li>
+                <li><button class="usa-accordion-button usa-button-unstyled usajobs-joa--v1-5__accordion-trigger" aria-expanded="false" aria-controls="how-to-apply" data-behavior="joa_accordion.toggle">
+  How to apply
+</button>
+<div id="how-to-apply" aria-hidden="true" class="usa-accordion-content usajobs-joa-section">
+  <a href="http://usajobs.github.io/Help/how-to/job-announcement/how-to-apply/" class="usajobs-joa-section__help" target="_blank">
+    <span class="fa fa-question-circle"></span> Help
+  </a>
+  <h2 class="usajobs-joa-section__header">How to Apply</h2>
+  <h4>Prepare your application in USAJOBS</h4>
+    <p>
+      To start your application, click Apply and we'll walk you through a five step process where you’ll attach a resume and any required documents.
+    </p>
+    <p>
+      During the application process you can review, edit, delete and update your information. We’ll automatically save your progress as you go, so you won’t lose any changes.
+    </p>
+    <a class="usa-button usa-button-primary usa-button-big" href="https://www.usajobs.gov/Applicant/Application/ApplyStart/dfas">
+      Apply
+    </a>
+
+  <div id="agencycontact" class="usajobs-joa-agency--v1-5" itemprop="hiringOrganization">
+  <h3 class="usajobs-joa-agency--v1-5__contact-info">Agency contact information</h3>
+  <h3 class="usajobs-joa-agency--v1-5__contact-name">
+    <span class="fa fa-user"></span>
+    HR Customer Care Center
+  </h3>
+
+  <div>
+    <div class="usajobs-joa-sub-section__container">
+      <h5 class="usajobs-sub-section__small-title">Phone</h5>
+      <p class="usajobs-joa-sub-section__text">
+        <a href="tel:1-317-212-0454">317-212-0454</a>
+      </p>
+
+      <h5 class="usajobs-sub-section__small-title">Email</h5>
+      <p class="usajobs-joa-sub-section__text">
+        <a href="mailto:dfas.indianapolis-in.zh.mbx.dfasmeritcc@mail.mil">
+          dfas.indianapolis-in.zh.mbx.dfasmeritcc@mail.mil
+        </a>
+      </p>
+    </div>
+    <div class="usajobs-joa-sub-section__container">
+      <h5 class="usajobs-sub-section__small-title">Address</h5>
+      <p class="usajobs-joa-sub-section__text">
+        <address>
+          DFAS - Human Resources<br />
+          8899 E. 56th Street<br />
+          Indianapolis, IN 46216<br />
+          United States
+        </address>
+      </p>
+    </div>
+  </div>
+  <a href="#agency-modal-trigger" class="usajobs-joa-agency--v1-5__learn-more" href="#agencycontact" data-object-trigger="modal" data-target="#agency-modal">
+    Learn more about this agency
+  </a>
+  <div class="usajobs-joa-agency-contact--v1-6">
+    <div class="usajobs-read-more usajobs-read-more--bg usajobs-joa__read-more-content" data-object="reveal-more" data-behavior="joa-read-more" id="when-to-contact">
+      <div id="when-to-contact">
+        <h3>When to contact the agency</h3>
+        <p>
+          It may take <strong>up to two weeks</strong> after a job has closed for the hiring agency to review all of the applications. They may not have information about your application if you contact them too early.
+        </p>
+        <p>
+          Don't contact USAJOBS with questions about the job or the status of your application–only the hiring agency can answer these questions.
+        </p>
+
+        <div id="before-the-job-closes">
+          <h4 class="usajobs-joa-agency-contact--v1-6__sub-title">
+            Before the job closes
+          </h4>
+          <p>
+            Before contacting the hiring agency, read about the <a href="https://www.usajobs.gov/?c=fed-app-process">federal application process</a>-it may answer your questions.
+          </p>
+          <p><strong>Contact the hiring agency with questions about:</strong></p>
+          <ul class="usajobs-joa-agency-contact--v1-6__list-thumbs">
+            <li class="usajobs-joa-agency-contact--v1-6__item">
+              <span class="fa fa-thumbs-o-up"></span> The job duties or details.
+            </li>
+            <li class="usajobs-joa-agency-contact--v1-6__item">
+              <span class="fa fa-thumbs-o-up"></span> The application process and what you need to provide or next steps.
+            </li>
+          </ul>
+
+          <p><strong>Do not contact the hiring agency with questions about:</strong></p>
+          <ul class="usajobs-joa-agency-contact--v1-6__list-thumbs">
+            <li class="usajobs-joa-agency-contact--v1-6__item">
+              <span class="fa fa-thumbs-o-down"></span>
+              Your qualifications for the job, before you apply to the job.
+            </li>
+            <li class="usajobs-joa-agency-contact--v1-6__item">
+              <span class="fa fa-thumbs-o-down"></span>
+              Your application or documents-the agency doesn’t look at the applications until after the job closes.
+            </li>
+          </ul>
+        </div>
+
+        <!-- div class="usajobs-read-more usajobs-read-more--bg usajobs-joa__read-more-content" data-object="reveal-more" data-behavior="joa-read-more" id="after-the-job-closes" -->
+        <div id="after-the-job-closes">
+          <h4 class="usajobs-joa-agency-contact--v1-6__sub-title">
+            After the job closes
+          </h4>
+          <p><strong>Contact the hiring agency with questions about:</strong></p>
+          <ul>
+            <li>
+              <strong>Your application status.</strong> The agency has to review all applications before making a decision on whether or not your application will move onto the next step. The agency will try to answer your questions, but you can also <a href="https://www.usajobs.gov/Applicant/ProfileDashboard/Home">check the status of your application</a> in your profile.
+              <p class="usajobs-joa-agency-contact--v1-6__timeframe">
+      		      Timeframe: Up to two weeks or more.
+              </p>
+            </li>
+            <li>
+              <strong>How long it will take to review all of the applications.</strong> Sometimes there are hundreds of applications to review for one job. The agency may be able to give you an estimate of the time it will take them to complete their review and a time to call back.
+              <p class="usajobs-joa-agency-contact--v1-6__timeframe">
+                Timeframe: Up to two weeks or more.
+              </p>
+            </li>
+            <li>
+              <strong>Your documents.</strong> Once the job closes, all documents go through a virus scan before they are sent to the hiring agency. This may take several hours to complete. After this time, the hiring agency may be able to tell you if they’ve received your documents, but they won’t have much else to say until they complete reviewing all applications.
+              <p class="usajobs-joa-agency-contact--v1-6__timeframe">
+      		      Timeframe: After several hours (once the job closes).
+              </p>
+            </li>
+          </ul>
+        </div>
+
+        <!-- div class="usajobs-read-more usajobs-read-more--bg usajobs-joa__read-more-content" data-object="reveal-more" data-behavior="joa-read-more" id="at-any-time" -->
+        <div id="at-any-time">
+          <h4 class="usajobs-joa-agency-contact--v1-6__sub-title">
+            What the hiring agency can't answer at any time
+          </h4>
+          <ul>
+            <li>
+              If you will get an interview-the hiring agency will contact you directly if you’ve been selected for an interview.
+            </li>
+            <li>
+              The contact information for the person reviewing your application. You will receive specific contact information if you’re selected for an interview.
+            </li>
+            <li>
+              How many people applied or who was selected for the job-the agency can’t disclose this information.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <h3>Next steps</h3>
+  <div class="usajobs-read-more usajobs-joa__read-more-content" data-object="reveal-more" data-behavior="joa-read-more" id="next-steps">
+    <p>
+      <strong>Make sure your contact information is correct</strong>
+    </p>
+    <p>
+      If your contact information changes after the closing date of this job announcement, please send us your updated information at <a href="mailto:dfas.indianapolis-in.zh.mbx.dfasmeritcc@mail.mil">
+        dfas.indianapolis-in.zh.mbx.dfasmeritcc@mail.mil
+      </a>.
+    </p>
+    <p>
+      Also, if you give us an incorrect email address or if your inbox is full or blocked (e.g., spam-blocker), you may not receive important communication and this could affect your application
+    </p>
+  </div>
+</div>
+</li>
+                <li><button class="usa-accordion-button usajobs-joa-accordion-trigger usajobs-joa--v1-5__accordion-trigger" aria-expanded="false" aria-controls="fair-and-transparent" data-behavior="joa_accordion.toggle">
+  Fair &amp; Transparent
+</button>
+<div id="fair-and-transparent" aria-hidden="true" class="usa-accordion-content usajobs-joa-section usajobs-joa-fair-and-transparent">
+  <h2 class="usajobs-joa-section__header">Fair &amp; Transparent</h2>
+  <p>
+    The Federal hiring process is setup to be fair and transparent. Please read the following guidance.
+  </p>
+  <h3>Equal Employment Opportunity Policy</h3>
+  <div class="usajobs-read-more usajobs-joa__read-more-content" data-object="reveal-more" data-behavior="joa-read-more">
+    <p>
+      The United States Government does not discriminate in employment on the basis of race, color, religion, sex (including pregnancy and gender identity), national origin, political affiliation, sexual orientation, marital status, disability, genetic information, age, membership in an employee organization, retaliation, parental status, military service, or other non-merit factor.
+    </p>
+    <p>
+      <a href="https://www.eeoc.gov/federal/fed_employees/index.cfm">
+        Equal Employment Opportunity (EEO) for Federal employees &amp; job applicants
+      </a>
+    </p>
+  </div>
+  <h3>Reasonable Accommodation Policy</h3>
+  <div class="usajobs-read-more usajobs-joa__read-more-content" data-object="reveal-more" data-behavior="joa-read-more">
+    <p>
+      Federal agencies must provide reasonable accommodation to applicants with disabilities where appropriate. Applicants requiring reasonable accommodation for any part of the application and hiring process should contact the hiring agency directly. Determinations on requests for reasonable accommodation will be made on a case-by-case basis.
+    </p>
+    <p>
+      A reasonable accommodation is any change in the workplace or the way things are customarily done that provides an equal employment opportunity to an individual with a disability. Under the Rehabilitation Act of 1973 the Equal Employment Opportunity Commission (EEOC) must provide  reasonable accommodations:
+      <ul>
+        <li>When an applicant with a disability needs an accommodation to have an equal opportunity to compete for a job;</li>
+        <li>When an employee with a disability needs an accommodation to perform the essential functions of the job or to gain access to the workplace; and</li>
+        <li>When an employee with a disability needs an accommodation to enjoy equal access to benefits and privileges of employment (e.g., details, trainings, office-sponsored events).</li>
+      </ul>
+    </p>
+    <ul>
+      <li>
+        <a href="https://www.opm.gov/policy-data-oversight/disability-employment/reasonable-accommodations/">
+          Disability Employment - Reasonable Accommodations
+        </a>
+      </li>
+      <li>
+        <a href="https://www.usajobs.gov/Help/how-to/application/agency/contact/">
+          How to contact an agency
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <h4>Legal and regulatory guidance</h4>
+  <ul class="usajobs-joa-fair-and-transparent__list">
+    <li class="usajobs-joa-fair-and-transparent__item">
+      <a class="usajobs-joa-fair-and-transparent__link" href="https://usajobs.github.io/Help/working-in-government/fair-and-transparent/financial-suitability/" target="_blank">Financial suitability</a>
+    </li>
+    <li class="usajobs-joa-fair-and-transparent__item">
+      <a class="usajobs-joa-fair-and-transparent__link" href="https://usajobs.github.io/Help/working-in-government/fair-and-transparent/social-security-number/" target="_blank">
+        Social security number request
+      </a>
+    </li>
+    <li class="usajobs-joa-fair-and-transparent__item">
+      <a class="usajobs-joa-fair-and-transparent__link" href="https://usajobs.github.io/Help/working-in-government/fair-and-transparent/privacy-act/" target="_blank">
+        Privacy Act
+      </a>
+    </li>
+    <li class="usajobs-joa-fair-and-transparent__item">
+      <a class="usajobs-joa-fair-and-transparent__link" href="https://usajobs.github.io/Help/working-in-government/fair-and-transparent/signature-false-statements/" target="_blank">
+        Signature and false statements
+      </a>
+    </li>
+    <li class="usajobs-joa-fair-and-transparent__item">
+      <a class="usajobs-joa-fair-and-transparent__link" href="https://usajobs.github.io/Help/working-in-government/fair-and-transparent/selective-service/" target="_blank">
+        Selective Service
+      </a>
+    </li>
+    <li class="usajobs-joa-fair-and-transparent__item">
+      <a class="usajobs-joa-fair-and-transparent__link" href="https://usajobs.github.io/Help/working-in-government/fair-and-transparent/probationary-period/" target="_blank">
+        New employee probationary period
+      </a>
+    </li>
+  </ul>
+</div>
+</li>
+              </ul>
+            </div>
+            <p class="usajobs-joa__authenticity-note">
+              This job originated on <a href="https://www.usajobs.gov/">www.usajobs.gov</a>. For the full announcement and to apply, visit <a href="https://www.usajobs.gov/GetJob/ViewDetails/dfas">www.usajobs.gov/GetJob/ViewDetails/dfas</a>. Only resumes submitted according to the instructions on the job announcement listed at <a href="https://www.usajobs.gov/">www.usajobs.gov</a> will be considered.
+            </p>
+          </main>
+        </div>
+      </section>
+    </section>
+  </div>
+</div>
+<div class="usajobs-modal usajobs-joa-agency-modal" data-object="modal" data-state="is-closed" id="agency-modal" aria-hidden="true" role="dialog" aria-labelledby="agency-modal-heading" aria-describedby="agency-modal-description">
+  <div class="usajobs-modal__dialog">
+    <div class="usajobs-modal__content">
+      <div id="agency-modal-description" class="usajobs-assistive-text">
+        Beginning of a dialog window for the agency announcing this job. It begins with a heading 2 called &quot;Learn more about Defense Finance and Accounting Service&quot;. Escape will cancel and close the window.
+      </div>
+      <div class="usajobs-modal__header">
+        <p class="usajobs-joa-agency-modal__sub-title">
+          Learn more about
+        </p>
+        <h2 id="usajobs-modal-heading" class="usajobs-modal__title">
+          Defense Finance and Accounting Service
+        </h2>
+      </div>
+      <div class="usajobs-modal__body">
+        
+        <p class="usajobs-joa-agency-modal__lead">
+          DFAS' mission is to lead the DoD in finance and accounting by ensuring the delivery of efficient, exceptional quality pay and financial information. We take pride in serving the men and women who defend America. DFAS is seeking goal-oriented people who like a challenge and care about serving our country. We offer rewarding careers in finance, accounting, information systems, contracting services, human resources, clerical work and many other areas.
+        </p>
+        
+
+        <div class="usajobs-joa-agency-modal__contact-info">
+          <div id="agencycontact" class="usajobs-joa-agency--v1-5" itemprop="hiringOrganization">
+  <h3 class="usajobs-joa-agency--v1-5__contact-info">Agency contact information</h3>
+  <h3 class="usajobs-joa-agency--v1-5__contact-name">
+    <span class="fa fa-user"></span>
+    HR Customer Care Center
+  </h3>
+
+  <div>
+    <div class="usajobs-joa-sub-section__container">
+      <h5 class="usajobs-sub-section__small-title">Phone</h5>
+      <p class="usajobs-joa-sub-section__text">
+        <a href="tel:1-317-212-0454">317-212-0454</a>
+      </p>
+
+      <h5 class="usajobs-sub-section__small-title">Email</h5>
+      <p class="usajobs-joa-sub-section__text">
+        <a href="mailto:dfas.indianapolis-in.zh.mbx.dfasmeritcc@mail.mil">
+          dfas.indianapolis-in.zh.mbx.dfasmeritcc@mail.mil
+        </a>
+      </p>
+    </div>
+    <div class="usajobs-joa-sub-section__container">
+      <h5 class="usajobs-sub-section__small-title">Address</h5>
+      <p class="usajobs-joa-sub-section__text">
+        <address>
+          DFAS - Human Resources<br />
+          8899 E. 56th Street<br />
+          Indianapolis, IN 46216<br />
+          United States
+        </address>
+      </p>
+    </div>
+  </div>
+  <a href="#agency-modal-trigger" class="usajobs-joa-agency--v1-5__learn-more" href="#agencycontact" data-object-trigger="modal" data-target="#agency-modal">
+    Learn more about this agency
+  </a>
+  <div class="usajobs-joa-agency-contact--v1-6">
+    <div class="usajobs-read-more usajobs-read-more--bg usajobs-joa__read-more-content" data-object="reveal-more" data-behavior="joa-read-more" id="when-to-contact">
+      <div id="when-to-contact">
+        <h3>When to contact the agency</h3>
+        <p>
+          It may take <strong>up to two weeks</strong> after a job has closed for the hiring agency to review all of the applications. They may not have information about your application if you contact them too early.
+        </p>
+        <p>
+          Don't contact USAJOBS with questions about the job or the status of your application–only the hiring agency can answer these questions.
+        </p>
+
+        <div id="before-the-job-closes">
+          <h4 class="usajobs-joa-agency-contact--v1-6__sub-title">
+            Before the job closes
+          </h4>
+          <p>
+            Before contacting the hiring agency, read about the <a href="https://www.usajobs.gov/?c=fed-app-process">federal application process</a>-it may answer your questions.
+          </p>
+          <p><strong>Contact the hiring agency with questions about:</strong></p>
+          <ul class="usajobs-joa-agency-contact--v1-6__list-thumbs">
+            <li class="usajobs-joa-agency-contact--v1-6__item">
+              <span class="fa fa-thumbs-o-up"></span> The job duties or details.
+            </li>
+            <li class="usajobs-joa-agency-contact--v1-6__item">
+              <span class="fa fa-thumbs-o-up"></span> The application process and what you need to provide or next steps.
+            </li>
+          </ul>
+
+          <p><strong>Do not contact the hiring agency with questions about:</strong></p>
+          <ul class="usajobs-joa-agency-contact--v1-6__list-thumbs">
+            <li class="usajobs-joa-agency-contact--v1-6__item">
+              <span class="fa fa-thumbs-o-down"></span>
+              Your qualifications for the job, before you apply to the job.
+            </li>
+            <li class="usajobs-joa-agency-contact--v1-6__item">
+              <span class="fa fa-thumbs-o-down"></span>
+              Your application or documents-the agency doesn’t look at the applications until after the job closes.
+            </li>
+          </ul>
+        </div>
+
+        <!-- div class="usajobs-read-more usajobs-read-more--bg usajobs-joa__read-more-content" data-object="reveal-more" data-behavior="joa-read-more" id="after-the-job-closes" -->
+        <div id="after-the-job-closes">
+          <h4 class="usajobs-joa-agency-contact--v1-6__sub-title">
+            After the job closes
+          </h4>
+          <p><strong>Contact the hiring agency with questions about:</strong></p>
+          <ul>
+            <li>
+              <strong>Your application status.</strong> The agency has to review all applications before making a decision on whether or not your application will move onto the next step. The agency will try to answer your questions, but you can also <a href="https://www.usajobs.gov/Applicant/ProfileDashboard/Home">check the status of your application</a> in your profile.
+              <p class="usajobs-joa-agency-contact--v1-6__timeframe">
+      		      Timeframe: Up to two weeks or more.
+              </p>
+            </li>
+            <li>
+              <strong>How long it will take to review all of the applications.</strong> Sometimes there are hundreds of applications to review for one job. The agency may be able to give you an estimate of the time it will take them to complete their review and a time to call back.
+              <p class="usajobs-joa-agency-contact--v1-6__timeframe">
+                Timeframe: Up to two weeks or more.
+              </p>
+            </li>
+            <li>
+              <strong>Your documents.</strong> Once the job closes, all documents go through a virus scan before they are sent to the hiring agency. This may take several hours to complete. After this time, the hiring agency may be able to tell you if they’ve received your documents, but they won’t have much else to say until they complete reviewing all applications.
+              <p class="usajobs-joa-agency-contact--v1-6__timeframe">
+      		      Timeframe: After several hours (once the job closes).
+              </p>
+            </li>
+          </ul>
+        </div>
+
+        <!-- div class="usajobs-read-more usajobs-read-more--bg usajobs-joa__read-more-content" data-object="reveal-more" data-behavior="joa-read-more" id="at-any-time" -->
+        <div id="at-any-time">
+          <h4 class="usajobs-joa-agency-contact--v1-6__sub-title">
+            What the hiring agency can't answer at any time
+          </h4>
+          <ul>
+            <li>
+              If you will get an interview-the hiring agency will contact you directly if you’ve been selected for an interview.
+            </li>
+            <li>
+              The contact information for the person reviewing your application. You will receive specific contact information if you’re selected for an interview.
+            </li>
+            <li>
+              How many people applied or who was selected for the job-the agency can’t disclose this information.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+        </div>
+      </div>
+
+      
+      <div class="usajobs-modal__footer usajobs-joa-agency-modal__url">
+        <h3>Visit our careers page</h3>
+        <p>
+          Learn more about what it's like to work at Defense Finance and Accounting Service, what the agency does, and about the types of careers this agency offers.
+        </p>
+        <p>
+          <a href="https://www.dfas.mil/dfas/careers.html">https://www.dfas.mil/dfas/careers.html</a>
+        </p>
+      </div>
+      
+      <div class="usajobs-modal__actions">
+        <button class="usajobs-modal__close" data-behavior="modal.close" >
+          <span class="usajobs-assistive-text">Close</span>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+ <footer class="usa-footer usa-footer-big usajobs-footer--v2" role="contentinfo" aria-label="footer" data-object="footer">
+  <div class="usa-grid usa-footer-return-to-top">
+    <a href="#job-title">Return to top</a>
+  </div>
+  <div class="usa-footer-primary-section">
+    <div class="usa-grid-full">
+      <nav class="usa-footer-nav usa-width-one-whole">
+        <ul class="usa-unstyled-list usa-footer-primary-content usajobs-footer--v2__job_applications">
+          <li class="usa-footer-primary-link" data-behavior="footer.toggle" data-state="is-closed" data-target=".home-menu">
+            Job Applications
+          </li>
+          <li class="usajobs-footer--v2__menu-item home-menu is-hidden">
+            <a href="/Applicant/Application/ListApplications">All</a>
+          </li>
+          <li class="usajobs-footer--v2__menu-item home-menu is-hidden">
+            <a href="/Applicant/Application/ListApplications#advancing">Advancing</a>
+          </li>
+          <li class="usajobs-footer--v2__menu-item home-menu is-hidden">
+            <a href="/Applicant/Application/ListApplications#paused">Paused</a>
+          </li>
+          <li class="usajobs-footer--v2__menu-item home-menu is-hidden">
+            <a href="/Applicant/Application/ListApplications#stopped">Stopped</a>
+          </li>
+        </ul>
+        <ul class="usa-unstyled-list usa-footer-primary-content usajobs-footer--v2__account">
+          <li class="usa-footer-primary-link" data-behavior="footer.toggle" data-state="is-closed" data-target=".account-menu">Account</li>
+          <li class="usajobs-footer--v2__menu-item account-menu is-hidden">
+            <a href="/Applicant/Profile/">Profile</a>
+          </li>
+          <li class="usajobs-footer--v2__menu-item account-menu is-hidden">
+            <a href="/Applicant/Document/ListDocuments">Documents</a>
+          </li>
+          <li class="usajobs-footer--v2__menu-item account-menu is-hidden">
+            <a href="/Applicant/SavedJobs/ListSavedJobs">Saved Jobs</a>
+          </li>
+          <li class="usajobs-footer--v2__menu-item account-menu is-hidden">
+            <a href="/Applicant/SavedSearches/ListSavedSearches">Saved Searches</a>
+          </li>
+          <li class="usajobs-footer--v2__menu-item account-menu is-hidden">
+            <a href="/Applicant/Profile/PersonalInformation">Username &amp; Password</a>
+          </li>
+          <li class="usajobs-footer--v2__menu-item account-menu is-hidden">
+            <a href="/Account/LogOff">Sign Out</a>
+          </li>
+        </ul>
+        <ul class="usa-unstyled-list usa-footer-primary-content usajobs-footer--v2__help">
+          <li class="usa-footer-primary-link" data-behavior="footer.toggle" data-state="is-closed" data-target=".help-menu">Help</li>
+          <li class="usajobs-footer--v2__menu-item help-menu is-hidden">
+            <a href="http://usajobs.github.io/Help/">Help Center</a>
+          </li>
+          <li class="usajobs-footer--v2__menu-item help-menu is-hidden">
+            <a href="http://usajobs.github.io/Help/about/">About USAJOBS</a>
+          </li>
+          <li class="usajobs-footer--v2__menu-item help-menu is-hidden">
+            <a href="http://usajobs.github.io/Help/contact/">Contact Us</a>
+          </li>
+          <li class="usajobs-footer--v2__menu-item help-menu is-hidden">
+            <a href="http://usajobs.github.io/Help/faq/">FAQs</a>
+          </li>
+          <li class="usajobs-footer--v2__menu-item help-menu is-hidden">
+            <a href="http://usajobs.github.io/Help/get-started/">Get Started</a>
+          </li>
+          <li class="usajobs-footer--v2__menu-item help-menu is-hidden">
+            <a href="http://usajobs.github.io/Help/how-to/">How to&hellip;</a>
+          </li>
+          <li class="usajobs-footer--v2__menu-item help-menu is-hidden">
+            <a href="http://usajobs.github.io/Help/working-in-government/">
+              Working in Government
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+
+  <div class="usa-footer-secondary_section usa-footer-big-secondary-section">
+    <div class="usa-grid">
+      <div class="usa-footer-logo usa-width-one-half">
+        <span class="logo"></span>
+        <p class="usajobs-footer--v1__note">
+          USAJOBS is a <a href="https://www.opm.gov">United States Office of Personnel Management</a> website.
+        </p>
+      </div>
+
+      <div class="usa-footer-contact-links usa-width-one-half">
+        <div class="usa-social-links">
+          <a href="https://www.facebook.com/USAJOBS" class="usajobs-social-link">
+            <span class="fa fa-facebook" aria-label="Facebook"></span>
+          </a>
+          <a href="https://www.linkedin.com/company/usajobs" class="usajobs-social-link">
+            <span class="fa fa-linkedin" aria-label="LinkedIn"></span>
+          </a>
+          <a href="https://twitter.com/USAJOBS" class="usajobs-social-link">
+            <span class="fa fa-twitter" aria-label="Twitter"></span>
+          </a>
+          <a href="https://www.youtube.com/user/usajobsapp" class="usajobs-social-link">
+            <span class="fa fa-youtube" aria-label="You Tube"></span>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="usa-grid">
+      <div class="usa-footer-logo usa-width-one-whole">
+        <ul class="usa-unstyled-list usajobs-footer--joa__subsection-horizontal">
+          <li><a href="https://www.usajobs.gov/Help/equal-employment-opportunity/" id="helpWikiEEOPolicyStatement" target="_blank">EEO Policy Statement</a></li>
+          <li>
+            <a href="https://www.usajobs.gov/Help/reasonable-accommodation/" id="helpWikiResonableAccommodation" target="_blank">Reasonable Accommodation Policy Statement</a>
+          </li>
+          <li>
+            <a href="https://www.usajobs.gov/Help/working-in-government/unique-hiring-paths/veterans/preference/" id="helpWikiVeteransInformation" target="_blank">Veterans Information</a>
+          </li>
+          <li>
+            <a href="https://www.usajobs.gov/Help/legal-and-regulatory-guidance/" id="helpWikiLegalAndRegulatory" target="_blank">Legal and Regulatory Guidance</a>
+          </li>
+        </ul>
+        <ul class="usa-unstyled-list usajobs-footer--v1__subsection-horizontal">
+          <li><a href="https://www.opm.gov/about-us/budget-performance/">Budget and Performance</a></li>
+          <li><a href="http://www.opm.gov/efoia/">FOIA</a></li>
+          <li><a href="https://www.opm.gov/our-inspector-general/">Inspector General</a></li>
+          <li><a href="https://www.opm.gov/information-management/no-fear-act/">No Fear Act Data</a></li>
+          <li><a href="http://usajobs.github.io/Help/privacy/">Privacy Policy</a></li>
+          <li><a href="http://www.usa.gov/">USA.gov</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+ <script src="/design-system/js/usajobs-design-system-base.js"></script>
+<script src="/design-system/js/usajobs-design-system-documentation.js"></script>
+<script src="/design-system/js/usajobs-design-system-components.js"></script>
+
+  </body>
+</html>

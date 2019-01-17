@@ -1,0 +1,1426 @@
+<!DOCTYPE html>
+<!--[if lt IE 9]><html class="lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!--><html lang="en"><!--<![endif]-->
+
+  <head>
+    <!-- Basic Page Needs
+================================================== -->
+<meta charset="utf-8" /> <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+<!-- Mobile Specific Metas
+================================================== -->
+<meta name="HandheldFriendly" content="True" />
+<meta name="MobileOptimized" content="320" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<!-- Title and meta description
+================================================== -->
+ <title>USAJOBS Design System | Search</title>
+<meta
+  property="og:title"
+  content="USAJOBS Design System | Search"
+/>
+ 
+<meta name="description" content="" />
+<meta property="og:description" content="" />
+
+
+<link rel="canonical" href="/search/" />
+
+<!-- Favicons
+================================================== -->
+<!-- 128x128 -->
+<link
+  rel="shortcut icon"
+  type="image/ico"
+  href="/design-system/img/favicons/favicon.ico"
+/>
+<link
+  rel="icon"
+  type="image/png"
+  href="/design-system/img/favicons/favicon.png"
+/>
+
+<!-- 192x192, as recommended for Android
+  http://updates.html5rocks.com/2014/11/Support-for-theme-color-in-Chrome-39-for-Android
+  -->
+<link
+  rel="icon"
+  type="image/png"
+  sizes="192x192"
+  href="/design-system/img/favicons/favicon-192.png"
+/>
+
+<!-- 57x57 (precomposed) for iPhone 3GS, pre-2011 iPod Touch and older Android devices -->
+<link
+  rel="apple-touch-icon-precomposed"
+  href="/design-system/img/favicons/favicon-57.png"
+/>
+<!-- 72x72 (precomposed) for 1st generation iPad, iPad 2 and iPad mini -->
+<link
+  rel="apple-touch-icon-precomposed"
+  sizes="72x72"
+  href="/design-system/img/favicons/favicon-72.png"
+/>
+<!-- 114x114 (precomposed) for iPhone 4, 4S, 5 and post-2011 iPod Touch -->
+<link
+  rel="apple-touch-icon-precomposed"
+  sizes="114x114"
+  href="/design-system/img/favicons/favicon-114.png"
+/>
+<!-- 144x144 (precomposed) for iPad 3rd and 4th generation -->
+<link
+  rel="apple-touch-icon-precomposed"
+  sizes="144x144"
+  href="/design-system/img/favicons/favicon-144.png"
+/>
+
+<!-- JS for lt IE 9
+================================================== -->
+<!--[if lt IE 9]>
+  <script src="/design-system/js/vendor/html5shiv.js"></script>
+<![endif]-->
+
+<!-- CSS
+================================================== -->
+<link rel="stylesheet" href="/design-system/css/usajobs-design-system-all.css">
+<!-- For the Design System site only: Including styles for all components at once -->
+<link rel="stylesheet" href="/design-system/css/usajobs-design-system-components.css">
+<!-- For the Design System site only: Including documentation styles  -->
+<link rel="stylesheet" href="/design-system/css/vendor/prism.css"> <link rel="stylesheet" href="/design-system/css/usajobs-design-system-documentation.css"> 
+
+  </head>
+
+  <body class="search">
+  	<a class="usa-skipnav" href="#main-content">Skip to main content</a>
+<!-- Gov banner BEGIN -->
+<div class="usa-banner">
+  <div class="usa-accordion">
+    <div class="usa-banner-header">
+      <div class="usa-grid usa-banner-inner usajobs-nav--full_bleed__banner-inner">
+      <img src="/design-system/img/favicons/favicon-57.png" alt="U.S. flag">
+      <p>An official website of the United States government</p>
+      <button class="usa-accordion-button usa-banner-button"
+        aria-expanded="false" aria-controls="-gov-banner">
+        <span class="usa-banner-button-text">Here's how you know</span>
+      </button>
+      </div>
+    </div>
+    <div class="usa-banner-content usa-grid usa-accordion-content" id="-gov-banner">
+      <div class="usa-banner-guidance-gov usa-width-one-half">
+        <img class="usa-banner-icon usa-media_block-img" src="/design-system/img/icon-dot-gov.svg" alt="Dot gov">
+        <div class="usa-media_block-body">
+          <p>
+            <strong>The .gov means it’s official.</strong>
+            <br>
+            Federal government websites often end in .gov or .mil. Before sharing sensitive information, make sure you’re on a federal government site.
+            <br>
+            <br>
+            There are some exceptions to this rule. During the USAJOBS application process, you may be sent to an agency specific application system that DOES NOT contain a .mil or .gov. Rest assured, if you apply to any job through USAJOBS.gov your information is safe and secure.
+          </p>
+        </div>
+      </div>
+      <div class="usa-banner-guidance-ssl usa-width-one-half">
+        <img class="usa-banner-icon usa-media_block-img" src="/design-system/img/icon-https.svg" alt="SSL">
+        <div class="usa-media_block-body">
+          <p>
+            <strong>The site is secure.</strong>
+            <br>
+            The <strong>https://</strong> ensures that you are connecting to the official website and that any information you provide is encrypted and transmitted securely.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Gov banner END -->
+
+<header class="usa-header usa-header-extended" role="banner">
+  <div class="usa-navbar">
+    <div class="usa-logo" id="extended-mega-logo">
+      <em class="usa-logo-text">
+        <a class="usajobs-documentation-header__dslink" href="/design-system/" title="Home" aria-label="Home">
+          <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 376 90.1">
+<g>
+	<path class="usajobs-icon__path" d="M178.4,65.5c0,1.1,0,2.3-0.1,3.5c-0.1,1.2-0.3,2.4-0.7,3.4c-0.3,1-1.5,4.6-8.4,3.5l-0.7,0v12l0.5,0.1
+		c1.8,0.4,3.5,0.6,5.1,0.6c4,0,7.2-0.6,9.7-1.8c2.5-1.2,4.4-2.9,5.8-4.9c1.3-2,2.3-4.4,2.7-7c0.5-2.6,0.7-3.3,0.7-6V4.7h-14.7V65.5z
+		"/>
+	<path class="usajobs-icon__path" d="M41.6,40.5c0,4-0.5,7-1.4,9.2c-1,2.3-2.3,3.9-4.2,4.9c-1.9,1-4.2,1.5-6.8,1.5c-2.6,0-4.9-0.5-6.8-1.5
+		c-1.8-1-3.2-2.6-4.2-4.8c-0.9-2.1-1.4-5.2-1.4-9.2V4.6H2.3v36.9c0,2.6,0.1,4.9,0.4,7c0.3,2.1,0.8,4.1,1.5,5.9
+		c0.9,2.2,2,4.3,3.5,6.1c1.5,1.8,3.3,3.3,5.3,4.6c2.1,1.2,4.4,2.2,7.1,2.8c2.6,0.6,5.6,1,8.9,1c3.3,0,6.3-0.3,8.9-1
+		c2.7-0.6,5.1-1.6,7.2-2.8c2.1-1.2,4-2.8,5.4-4.6c1.5-1.8,2.7-3.8,3.5-6.1c0.7-1.8,1.2-3.8,1.5-5.9c0.3-2.1,0.4-4.5,0.4-7V4.6H41.6
+		V40.5z"/>
+	<path class="usajobs-icon__path" d="M101.7,34.4C99.8,33,97.5,32,95,31.2c-2.4-0.7-4.9-1.3-7.4-1.9c-1.6-0.3-3.1-0.7-4.4-1
+		c-1.3-0.3-2.4-0.8-3.4-1.4c-0.9-0.5-1.5-1.1-2-1.9c-0.4-0.7-0.7-1.6-0.7-2.8c0-2,0.7-3.4,2.1-4.4c1.6-1.1,4.1-1.7,7.3-1.7
+		c2.4,0,5,0.3,7.7,0.8c2.7,0.5,5.6,1.4,8.6,2.6l2.5,1V7.4l-1.1-0.5c-2.4-1-5.3-1.9-8.7-2.5c-6.7-1.3-13.7-1.3-19.1,0.2
+		c-2.8,0.8-5.2,2.1-7.3,3.8c-2.1,1.7-3.8,3.9-5,6.4c-1.2,2.6-1.8,5.6-1.8,9c0,3.1,0.5,5.8,1.6,7.9c1.1,2.1,2.5,3.9,4.4,5.3
+		c1.8,1.3,3.8,2.4,6.1,3.2c2.2,0.7,4.5,1.3,6.9,1.9c1.7,0.4,3.4,0.7,5,1.1c1.5,0.3,2.8,0.8,4,1.3c1,0.5,1.8,1.1,2.4,1.8
+		c0.5,0.6,0.7,1.5,0.7,2.6c0,1.4-0.3,2.5-0.9,3.3c-0.6,0.9-1.5,1.7-2.5,2.2c-1.2,0.6-2.5,1-4,1.3c-4.3,0.7-8.9,0.4-13.1-0.4
+		c-2.7-0.6-5.5-1.5-8.3-2.7l-2.5-1.1v13L63,65c2.2,1.2,5.1,2.2,8.4,2.9c3.2,0.7,6.6,1,10,1c3.8,0,7.4-0.4,10.7-1.2
+		c3.3-0.8,6.2-2,8.6-3.7c2.4-1.7,4.3-3.9,5.6-6.5c1.3-2.6,2-5.7,2-9.1c0-3.4-0.6-6.3-1.8-8.5C105.3,37.6,103.7,35.8,101.7,34.4z"/>
+	<path class="usajobs-icon__path" d="M170.8,65.6l-24.3-61h-12.5l-25.2,63.2h15.6l5.9-15.2h20.1l5.9,15.2h15.5 M145.5,39.8h-10.2l1.1-2.9
+		c1.2-3.1,2.6-6.8,4-11c1.5,4.2,2.8,7.9,4,11L145.5,39.8z"/>
+	<path class="usajobs-icon__path" d="M253.7,12.7c-2.7-2.9-6-5.2-9.8-6.8c-3.8-1.6-8.2-2.4-13.1-2.4c-4.8,0-9.2,0.8-13.1,2.4
+		c-3.8,1.6-7.1,3.9-9.8,6.8c-2.6,2.9-4.7,6.4-6,10.4c-1.4,4-2,8.4-2,13.1c0,4.7,0.7,9.1,2,13.1c1.4,4,3.4,7.5,6,10.4
+		c2.7,2.9,6,5.2,9.8,6.8c3.8,1.6,8.2,2.4,13.1,2.4c4.8,0,9.2-0.8,13.1-2.4c3.8-1.6,7.1-3.9,9.8-6.8c2.6-2.9,4.7-6.4,6-10.4
+		c1.4-4,2-8.4,2-13.1c0-4.7-0.7-9.1-2-13.1C258.3,19.1,256.3,15.6,253.7,12.7z M224.3,54.8c-1.9-0.8-3.6-2-5-3.6
+		c-1.4-1.6-2.5-3.7-3.4-6.1c-0.8-2.5-1.3-5.5-1.3-9c0-3.4,0.4-6.4,1.3-9c0.8-2.5,1.9-4.6,3.4-6.2c1.4-1.6,3.1-2.8,5-3.6
+		c1.9-0.8,4.1-1.2,6.5-1.2c2.3,0,4.5,0.4,6.5,1.2c1.9,0.8,3.6,2,5,3.6c1.4,1.6,2.5,3.7,3.4,6.2c0.8,2.5,1.3,5.5,1.3,9
+		c0,3.4-0.4,6.4-1.3,9c-0.8,2.5-1.9,4.5-3.4,6.1c-1.4,1.6-3.1,2.8-5,3.6C233.4,56.5,228.2,56.5,224.3,54.8z"/>
+	<path class="usajobs-icon__path" d="M314.8,38.5c-1-1.2-2.2-2.3-3.6-3.2c-0.5-0.3-0.9-0.6-1.4-0.8c1.6-1.2,2.8-2.7,3.7-4.3c1.3-2.4,2-5.1,2-8
+		c0-1.6-0.3-3.3-0.8-4.9c-0.5-1.6-1.3-3.2-2.4-4.6c-1.1-1.4-2.5-2.8-4.1-3.9c-1.6-1.2-3.6-2.1-5.8-2.8c-2.9-0.9-6.7-1.4-11.3-1.4
+		h-22.6v63.2h19.2c1.7,0,3.2,0,4.5-0.1c1.4,0,2.6-0.1,3.7-0.2c1.1-0.1,2.1-0.2,3.1-0.4c0.9-0.2,1.8-0.3,2.6-0.5
+		c3.1-0.8,5.8-2,7.9-3.4c2.1-1.4,3.8-3,5.1-4.7c1.3-1.7,2.2-3.6,2.7-5.4c0.5-1.8,0.8-3.5,0.8-5.2c0-1.9-0.3-3.6-0.8-5.2
+		C316.6,41.1,315.8,39.7,314.8,38.5z M299.7,26.3c-0.5,0.9-1.4,1.5-2.6,2.1c-0.9,0.3-2.6,0.8-6,0.8H283V17.3h7.2
+		c1.5,0,2.8,0,3.8,0.1c1,0.1,1.8,0.2,2.5,0.4c1.5,0.5,2.6,1.1,3.1,2c0.6,0.9,0.9,2,0.9,3.2C300.5,24.3,300.3,25.3,299.7,26.3z
+		 M283,41.8h8.6c1.7,0,3.2,0.1,4.3,0.2c1,0.1,1.9,0.3,2.7,0.5c1.6,0.5,2.7,1.2,3.4,2.2c0.7,0.9,1,2,1,3.3c0,0.8-0.1,1.5-0.3,2.2
+		c-0.2,0.6-0.5,1.1-1,1.7c-0.5,0.5-1.1,1-2,1.5c-0.9,0.5-2,0.8-3.4,1.1c-0.9,0.2-2,0.4-3.2,0.5c-1.3,0.1-2.9,0.2-4.8,0.2H283V41.8z"
+		/>
+	<path class="usajobs-icon__path" d="M365.9,39.9c-1.2-2.3-2.8-4.1-4.8-5.5c-1.9-1.4-4.2-2.4-6.7-3.2c-2.4-0.7-4.9-1.3-7.4-1.9
+		c-1.6-0.3-3.1-0.7-4.4-1c-1.3-0.3-2.4-0.8-3.4-1.4c-0.9-0.5-1.5-1.1-2-1.9c-0.4-0.7-0.7-1.6-0.7-2.8c0-2,0.7-3.4,2.1-4.4
+		c1.6-1.1,4.1-1.7,7.3-1.7c2.4,0,5,0.3,7.7,0.8c2.7,0.5,5.6,1.4,8.6,2.6l2.5,1V7.4l-1.1-0.5c-2.4-1-5.3-1.9-8.7-2.5
+		c-6.7-1.3-13.7-1.3-19.1,0.2c-2.8,0.8-5.2,2.1-7.3,3.8c-2.1,1.7-3.8,3.9-5,6.4c-1.2,2.6-1.8,5.6-1.8,9c0,3.1,0.5,5.8,1.6,7.9
+		c1.1,2.1,2.5,3.9,4.4,5.3c1.8,1.3,3.8,2.4,6.1,3.2c2.2,0.7,4.5,1.3,6.9,1.9c1.7,0.4,3.4,0.7,5,1.1c1.5,0.3,2.8,0.8,4,1.3
+		c1,0.5,1.8,1.1,2.4,1.8c0.5,0.6,0.7,1.5,0.7,2.6c0,1.4-0.3,2.5-0.9,3.3c-0.6,0.9-1.5,1.7-2.5,2.2c-1.2,0.6-2.5,1-4,1.3
+		c-4.3,0.7-8.9,0.4-13.1-0.4c-2.7-0.6-5.5-1.5-8.3-2.7l-2.5-1.1v13l0.9,0.5c2.2,1.2,5.1,2.2,8.4,2.9c3.2,0.7,6.6,1,10,1
+		c3.8,0,7.4-0.4,10.7-1.2c3.3-0.8,6.2-2,8.6-3.7c2.4-1.7,4.3-3.9,5.6-6.5c1.3-2.6,2-5.7,2-9.1C367.7,45,367.1,42.2,365.9,39.9z"/>
+	<g>
+		<path class="usajobs-icon__path" d="M367.6,10.6c0-0.4,0.1-0.8,0.2-1.1c0.1-0.3,0.3-0.6,0.6-0.9c0.2-0.2,0.5-0.4,0.9-0.6c0.3-0.1,0.7-0.2,1.1-0.2
+			c0.4,0,0.7,0.1,1.1,0.2c0.3,0.1,0.6,0.3,0.9,0.6c0.2,0.2,0.4,0.5,0.6,0.9c0.1,0.3,0.2,0.7,0.2,1.1s-0.1,0.8-0.2,1.1
+			c-0.1,0.3-0.3,0.6-0.6,0.9c-0.2,0.2-0.5,0.4-0.9,0.6c-0.3,0.1-0.7,0.2-1.1,0.2c-0.4,0-0.7-0.1-1.1-0.2c-0.3-0.1-0.6-0.3-0.9-0.6
+			c-0.2-0.2-0.4-0.5-0.6-0.9C367.6,11.3,367.6,11,367.6,10.6z M368.3,10.6c0,0.3,0,0.6,0.1,0.8c0.1,0.3,0.2,0.5,0.4,0.7
+			c0.2,0.2,0.4,0.3,0.7,0.5c0.3,0.1,0.5,0.2,0.8,0.2c0.3,0,0.6-0.1,0.8-0.2c0.3-0.1,0.5-0.3,0.7-0.5c0.2-0.2,0.3-0.4,0.4-0.7
+			c0.1-0.3,0.1-0.5,0.1-0.8s0-0.6-0.1-0.8c-0.1-0.3-0.2-0.5-0.4-0.7c-0.2-0.2-0.4-0.3-0.7-0.4c-0.3-0.1-0.5-0.2-0.8-0.2
+			c-0.3,0-0.6,0.1-0.8,0.2c-0.3,0.1-0.5,0.3-0.7,0.4c-0.2,0.2-0.3,0.4-0.4,0.7C368.3,10,368.3,10.3,368.3,10.6z M370.8,10.8l0.8,1.1
+			h-0.8l-0.7-1H370v1h-0.8V9.2h1.1c0.2,0,0.3,0,0.5,0c0.1,0,0.3,0.1,0.4,0.1c0.1,0.1,0.2,0.2,0.3,0.3c0.1,0.1,0.1,0.2,0.1,0.4
+			c0,0.2-0.1,0.4-0.2,0.5C371.2,10.7,371,10.7,370.8,10.8L370.8,10.8z M370,9.7v0.7h0.2c0.2,0,0.3,0,0.4-0.1
+			c0.1-0.1,0.1-0.1,0.1-0.3c0-0.1,0-0.2-0.1-0.2c-0.1-0.1-0.2-0.1-0.3-0.1H370z"/>
+	</g>
+</g>
+</svg>
+
+          Design System
+        </a>
+        </a>
+      </em>
+    </div>
+    <button class="usa-menu-btn">Menu</button>
+  </div>
+
+  <nav role="navigation" class="usa-nav">
+    <div class="usa-nav-inner">
+      <button class="usa-nav-close">
+        <span class="fas fa-times"></span>
+      </button>
+      <ul class="usa-nav-primary usa-accordion">
+        <li>
+          <button class="usa-accordion-button usa-nav-link" aria-expanded="false" aria-controls="extended-mega-nav-section-one">
+            <span>Base elements</span>
+          </button>
+          <ul id="extended-mega-nav-section-one" class="usa-nav-submenu usa-megamenu usa-grid-full" aria-hidden="true">
+            <div class="usa-megamenu-col">
+              <li>
+                <a href="/design-system/visual-style/#colors">Colors</a>
+              </li>
+              <li>
+                <a href="/design-system/visual-style/#typography">Typography</a>
+              </li>
+              <li>
+                <a  href="/design-system/buttons/">Buttons</a>
+              </li>
+              <li>
+                <a  href="/design-system/grid/">Grid</a>
+              </li>
+              <li>
+                <a  href="/design-system/shell/">Shell</a>
+              </li>
+              <li>
+                <a  href="/design-system/spacing/">Spacing</a>
+              </li>
+            </div>
+            <div class="usa-megamenu-col">
+              <li>
+                <a href="/design-system/visual-style/#links">Links</a>
+              </li>
+              <li>
+                <a  href="/design-system/icons/">Icons</a>
+              </li>
+              <li>
+                <a href="/design-system/visual-style/#logo">Logo</a>
+              </li>
+            </div>
+            <div class="usa-megamenu-col">
+              <li>
+                <a  href="/design-system/form-controls/"><strong>Forms</strong></a>
+              </li>
+              <li><a href="/design-system/form-controls/#contextual-help">Contextual Help</a></li>
+              <li><a href="/design-system/form-controls/#disabled">Disabled</a></li>
+              <li><a href="/design-system/form-controls/#dropdown">Dropdown</a></li>
+              <li><a href="/design-system/form-controls/#labels">Labels</a></li>
+            </div>
+            <div class="usa-megamenu-col">
+              <li><h5>Forms continued</h5></li>
+              <li><a href="/design-system/form-controls/#layout">Layouts</a></li>
+              <li><a href="/design-system/form-controls/#legends">Legends</a></li>
+              <li><a href="/design-system/form-controls/#reveal-fields">Reveal fields</a></li>
+              <li><a href="/design-system/form-controls/#validation">Validation</a></li>
+            </div>
+          </ul>
+        </li>
+        <li>
+          <button class="usa-accordion-button usa-nav-link" aria-expanded="false" aria-controls="extended-mega-nav-section-two">
+            <span>Components</span>
+          </button>
+          <ul id="extended-mega-nav-section-two" class="usa-nav-submenu usa-megamenu usa-grid-full" aria-hidden="true">
+            <div class="usa-megamenu-col">
+              <li>
+                <a  href="/design-system/alerts/">Alert</a>
+              </li>
+              <li>
+                <a  href="/design-system/button-bar/">Button Bar</a>
+              </li>
+              <li>
+                <a  href="/design-system/card/">Card</a>
+              </li>
+              <li>
+                <a  href="/design-system/card-button/">Card button</a>
+              </li>
+              <li>
+                <a  href="/design-system/drawer/">Drawer</a>
+              </li>
+              <li>
+                <a  href="/design-system/event/">Event</a>
+              </li>
+              <li>
+                <a  href="/design-system/modals/">Modal</a>
+              </li>
+              <li>
+                <a  href="/design-system/pill/">Pill</a>
+              </li>
+              <li>
+                <a  href="/design-system/progress-indicator/">Progress indicator</a>
+              </li>
+              <li>
+                <a  href="/design-system/reveal/">Reveal</a>
+              </li>
+            </div>
+            <div class="usa-megamenu-col">
+              <li>
+                <a  href="/design-system/document/"><strong>Document</strong></a>
+              </li>
+              <li><a href="/design-system/document/#thumbnail">Thumbnail</a></li>
+              <li><a href="/design-system/document/#placeholder">Placeholder</a></li>
+              <li><h5>Navigation</h5></li>
+              <li>
+                <a  href="/design-system/navigation/">Top</a>
+              </li>
+              <li>
+                <a  href="/design-system/nav-secondary/">Secondary</a>
+              </li>
+              <li>
+                <a  href="/design-system/footer/">Footer</a>
+              </li>
+            </div>
+            <div class="usa-megamenu-col">
+              <li><h5>Job announcement</h5></li>
+              <li>
+                <a  href="/design-system/joa-actions/">Actions</a>
+              </li>
+              <li>
+                <a  href="/design-system/joa-agency-contact/">Agency contact</a>
+              </li>
+              <li>
+                <a  href="/design-system/joa-intro/">Intro</a>
+              </li>
+              <li>
+                <a  href="/design-system/joa-similar-jobs/">Similar jobs</a>
+              </li>
+              <li>
+                <a  href="/design-system/joa-summary/">Summary</a>
+              </li>
+            </div>
+            <div class="usa-megamenu-col">
+              <li>
+                <a  href="/design-system/search/"><strong>Search</strong></a>
+              </li>
+              <li><a href="/design-system/search/#controls">Controls</a></li>
+              <li><a href="/design-system/search/#pagination">Pagination</a></li>
+              <li><a href="/design-system/search/#results">Results</a></li>
+              <li><a href="/design-system/search/#teasers">Teasers</a></li>
+            </div>
+          </ul>
+        </li>
+        <li>
+          <button class="usa-accordion-button usa-nav-link" aria-expanded="false" aria-controls="extended-mega-nav-section-three">
+            <span>Layouts</span>
+          </button>
+          <ul id="extended-mega-nav-section-three" class="usa-nav-submenu usa-megamenu usa-grid-full" aria-hidden="true">
+            <div class="usa-megamenu-col">
+              <li><h5>Agency Talent Portal</h5></li>
+              <li>
+                <a href="/design-system/agency-talent-portal/user-detail/">
+                  User detail
+                </a>
+              </li>
+              <li>
+                <a href="/design-system/agency-talent-portal/auth/forgot-password/">Forgot password</a>
+              </li>
+              <li>
+                <a href="/design-system/agency-talent-portal/auth/reset-password/">Reset password</a>
+              </li>
+              <li>
+                <a href="/design-system/agency-talent-portal/auth/reset-password-with-error/">Reset password with error</a>
+              </li>
+              <li>
+                <a href="/design-system/agency-talent-portal/auth/sign-in/">Sign in</a>
+              </li>
+              <li>
+                <a href="/design-system/agency-talent-portal/session/signed-out/">Session signed out</a>
+              </li>
+              <li><h5>Open Opportunitites</h5></li>
+              <li>
+                <a href="/design-system/open-opportunities/search/">Search</a>
+              </li>
+            </div>
+            <div class="usa-megamenu-col">
+              <li><h5>Errors</h5></li>
+              <li>
+                <a  href="/design-system/errors/400/">400</a>
+              </li>
+              <li>
+                <a  href="/design-system/errors/404/">404</a>
+              </li>
+              <li>
+                <a  href="/design-system/errors/500/">500</a>
+              </li>
+            </div>
+            <div class="usa-megamenu-col">
+              <li><h5>Sessions</h5></li>
+              <li>
+                <a  href="/design-system/session/timeout/">
+                  Session timeout
+                </a>
+              </li>
+              <li>
+                <a  href="/design-system/session/signed-out/">Signed out</a>
+              </li>
+            </div>
+            <div class="usa-megamenu-col">
+              <li><h5>Job announcement</h5></li>
+              <li>
+                <a  href="/design-system/job-announcement/v6.5/">
+                  Version 6.5
+                </a>
+                <a  href="/design-system/job-announcement/v6.6/cfpb/">Version 6.6 (CFPB pilot)</a>
+                <a  href="/design-system/job-announcement/v6.6/print/">Version 6.6 - Print</a>
+                <a  href="/design-system/job-announcement/v6.7/">Version 6.7</a>
+              </li>
+            </div>
+          </ul>
+        </li>
+      </ul>
+      <div class="usa-nav-secondary">
+        <ul class="usa-unstyled-list usa-nav-secondary-links">
+          <li>
+            <a href="https://github.com/USAJOBS/design-system">
+              <span class="fab fa-github"></span> GitHub
+            </a>
+          </li>
+          <li>
+            <a href="https://www.usajobs.gov">usajobs.gov</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<div class="overlay"></div>
+
+    <div class="main-content l-doc" id="main-content">
+      <div class="styleguide-content usa-content">
+        <p class="site-subheading">component</p>
+        <h1 id="search">Search</h1>
+        <p class="usa-font-lead">A main function of USAJOBS is to provide a clear and effective search. Our search interface is comprised of serveral components including controls, filters, pagination, and results.</p>
+        <p><a href="/design-system/getting-started/#maturity" class="usa-label maturity design_complete">
+  Design complete
+</a></p>
+
+<h4 class="usa-heading-alt" id="controls">Controls</h4>
+<div class="preview" id="code-1">
+  <h6 class="usa-heading-alt">Results found</h6>
+  <div class="usajobs-grid usajobs-search-controls">
+    <div class="usajobs-search-controls__results-count-container">
+      <h4 class="usajobs-search-controls__results-count">
+        Viewing 1-10 of 1,562 jobs
+      </h4>
+    </div>
+    <div class="usajobs-search-controls__sort-container">
+      <label class="usajobs-search-controls__sort-label" for="search_sort">
+        Sort by
+      </label>
+      <select class="usajobs-search-controls__sort-control" id="search_sort" name="search_sort">
+        <option value="n/a">Relevance</option>
+        <option value="OpenDate">Open Date</option>
+        <option value="CloseDate">Close Date</option>
+        <option value="OrganizationName">Agency</option>
+        <option value="Location">Location</option>
+        <option value="PositionTitle">Job Title</option>
+        <option value="RemunerationMinimumAmount">Salary Minimum</option>
+        <option value="RemunerationMaximumAmount">Salary Maximum</option>
+      </select>
+    </div>
+  </div>
+</div>
+<div class="usa-accordion-bordered usa-accordion-docs">
+  <button class="usa-button-unstyled usa-accordion-button" aria-expanded="true" aria-controls="doc-0">
+    Documentation
+  </button>
+  <div id="doc-0" aria-hidden="false" class="usa-accordion-content">
+    <h4 class="usa-heading">Usability</h4>
+    <h5>When to use</h5>
+    <ul class="usa-content-list">
+      <li>When the number of results are relevant to explain to the user the relative success of their query.</li>
+    </ul>
+    <h5>When not to use</h5>
+    <ul class="usa-content-list">
+      <li>
+        When there are no results (see "No results found").
+      </li>
+    </ul>
+  </div>
+</div>
+
+<h4 class="usa-heading-alt" id="no-results">No results found</h4>
+<div class="preview" id="code-2">
+  <div class="usajobs-search-no-params-highlight">
+    <h4 class="usajobs-search-no-params-highlight__title">Please refine your search</h4>
+    <p>We want to help you find the right job. Try entering a keyword or location, or use the filters on the right.</p>
+  </div>
+</div>
+
+<div class="usa-accordion-bordered usa-accordion-docs">
+  <button class="usa-button-unstyled usa-accordion-button" aria-expanded="true" aria-controls="doc-1">
+    Documentation
+  </button>
+  <div id="doc-1" aria-hidden="false" class="usa-accordion-content">
+    <h4 class="usa-heading">Guidelines</h4>
+    <ul class="usa-content-list">
+      <li>Do not show search controls or pagination when no results are displayed.</li>
+    </ul>
+
+    <h4 class="usa-heading">Usability</h4>
+    <h5>When to use</h5>
+    <ul class="usa-content-list">
+      <li>When zero results are returned by the user's query.</li>
+    </ul>
+  </div>
+</div>
+
+<h4 class="usa-heading-alt" id="pagination">Pagination</h4>
+<div class="preview compact" id="code-3">
+  <h6 class="usa-heading-alt">First page</h6>
+  <ul class="usajobs-search-pagination">
+    <li class="usajobs-search-pagination__previous-page-container is-disabled">
+      <a class="usajobs-search-pagination__previous-page" data-ajax="true" data-ajax-begin="ajaxLoading" data-ajax-complete="UpdatePartialViewsNew" data-ajax-failure="ajaxFailed" data-ajax-mode="replace" data-ajax-success="ajaxComplete" data-ajax-update="#results" href="#0" title="Go To Previous Page" aria-hidden="true">Previous</a>
+    </li>
+    <li class="usajobs-search-pagination__page is-active">
+      <span>1</span></li>
+    <li class="usajobs-search-pagination__page">
+      <a data-ajax="true" data-ajax-begin="ajaxLoading" data-ajax-complete="UpdatePartialViewsNew" data-ajax-failure="ajaxFailed" data-ajax-mode="replace" data-ajax-success="ajaxComplete" data-ajax-update="#results" href="/Search/GetPageResults/?page=2&amp;statusFilter=public" title="Go To Page 2">2</a>
+    </li>
+    <li class="usajobs-search-pagination__page-condensed">
+      &hellip;
+    </li>
+    <li class="usajobs-search-pagination__page">
+      <a data-ajax="true" data-ajax-begin="ajaxLoading" data-ajax-complete="UpdatePartialViewsNew" data-ajax-failure="ajaxFailed" data-ajax-mode="replace" data-ajax-success="ajaxComplete" data-ajax-update="#results" href="/Search/GetPageResults/?page=62&amp;statusFilter=public" title="Go To Page 62">62</a>
+    </li>
+    <li class="usajobs-search-pagination__next-page-container">
+      <a class="usajobs-search-pagination__next-page" data-ajax="true" data-ajax-begin="ajaxLoading" data-ajax-complete="UpdatePartialViewsNew" data-ajax-failure="ajaxFailed" data-ajax-mode="replace" data-ajax-success="ajaxComplete" data-ajax-update="#results" href="/Search/GetPageResults/?page=2&amp;statusFilter=public" title="Go To Next Page">
+        Next
+      </a>
+    </li>
+  </ul>
+
+  <h6 class="usa-heading-alt">Inner page</h6>
+  <ul class="usajobs-search-pagination">
+    <li class="usajobs-search-pagination__previous-page-container">
+      <a class="usajobs-search-pagination__previous-page" data-ajax="true" data-ajax-begin="ajaxLoading" data-ajax-complete="UpdatePartialViewsNew" data-ajax-failure="ajaxFailed" data-ajax-mode="replace" data-ajax-success="ajaxComplete" data-ajax-update="#results" href="/Search/GetPageResults?page=2&amp;statusFilter=public" title="Go To Previous Page">Previous</a>
+    </li>
+    <li class="usajobs-search-pagination__page">
+      <a data-ajax="true" data-ajax-begin="ajaxLoading" data-ajax-complete="UpdatePartialViewsNew" data-ajax-failure="ajaxFailed" data-ajax-mode="replace" data-ajax-success="ajaxComplete" data-ajax-update="#results" href="/Search/GetPageResults/?page=1&amp;statusFilter=public" title="Go To Page 1">1</a>
+    </li>
+    <li class="usajobs-search-pagination__page-condensed">
+      &hellip;
+    </li>
+    <li class="usajobs-search-pagination__page">
+      <a data-ajax="true" data-ajax-begin="ajaxLoading" data-ajax-complete="UpdatePartialViewsNew" data-ajax-failure="ajaxFailed" data-ajax-mode="replace" data-ajax-success="ajaxComplete" data-ajax-update="#results" href="/Search/GetPageResults/?page=4&amp;statusFilter=public" title="Go To Page 4">4</a>
+    </li>
+    <li class="usajobs-search-pagination__page is-active">
+      <span>5</span>
+    </li>
+    <li class="usajobs-search-pagination__page">
+      <a data-ajax="true" data-ajax-begin="ajaxLoading" data-ajax-complete="UpdatePartialViewsNew" data-ajax-failure="ajaxFailed" data-ajax-mode="replace" data-ajax-success="ajaxComplete" data-ajax-update="#results" href="/Search/GetPageResults/?page=6&amp;statusFilter=public" title="Go To Page 6">6</a>
+    </li>
+    <li class="usajobs-search-pagination__page-condensed">
+      &hellip;
+    </li>
+    <li class="usajobs-search-pagination__page">
+      <a data-ajax="true" data-ajax-begin="ajaxLoading" data-ajax-complete="UpdatePartialViewsNew" data-ajax-failure="ajaxFailed" data-ajax-mode="replace" data-ajax-success="ajaxComplete" data-ajax-update="#results" href="/Search/GetPageResults/?page=589&amp;statusFilter=public" title="Go To Page 589">589</a>
+    </li>
+    <li class="usajobs-search-pagination__next-page-container">
+      <a class="usajobs-search-pagination__next-page" data-ajax="true" data-ajax-begin="ajaxLoading" data-ajax-complete="UpdatePartialViewsNew" data-ajax-failure="ajaxFailed" data-ajax-mode="replace" data-ajax-success="ajaxComplete" data-ajax-update="#results" href="/Search/GetPageResults/?page=8&amp;statusFilter=public" title="Go To Next Page">
+        Next
+      </a>
+    </li>
+  </ul>
+
+  <h6 class="usa-heading-alt">Last page</h6>
+  <ul class="usajobs-search-pagination">
+    <li class="usajobs-search-pagination__previous-page-container">
+      <a class="usajobs-search-pagination__previous-page" data-ajax="true" data-ajax-begin="ajaxLoading" data-ajax-complete="UpdatePartialViewsNew" data-ajax-failure="ajaxFailed" data-ajax-mode="replace" data-ajax-success="ajaxComplete" data-ajax-update="#results" href="/Search/GetPageResults?page=61&amp;statusFilter=public" title="Go To Previous Page">Previous</a>
+    </li>
+    <li class="usajobs-search-pagination__page">
+      <a data-ajax="true" data-ajax-begin="ajaxLoading" data-ajax-complete="UpdatePartialViewsNew" data-ajax-failure="ajaxFailed" data-ajax-mode="replace" data-ajax-success="ajaxComplete" data-ajax-update="#results" href="/Search/GetPageResults/?page=1&amp;statusFilter=public" title="Go To Page 1">1</a>
+    </li>
+    <li class="usajobs-search-pagination__page-condensed">
+      &hellip;
+    </li>
+    <li class="usajobs-search-pagination__page">
+      <a data-ajax="true" data-ajax-begin="ajaxLoading" data-ajax-complete="UpdatePartialViewsNew" data-ajax-failure="ajaxFailed" data-ajax-mode="replace" data-ajax-success="ajaxComplete" data-ajax-update="#results" href="/Search/GetPageResults/?page=61&amp;statusFilter=public" title="Go To Page 61">61</a>
+    </li>
+    <li class="usajobs-search-pagination__page is-active">
+      <span>62</span>
+    </li>
+    <li class="usajobs-search-pagination__next-page-container is-disabled">
+      <a class="usajobs-search-pagination__next-page" data-ajax="true" data-ajax-begin="ajaxLoading" data-ajax-complete="UpdatePartialViewsNew" data-ajax-failure="ajaxFailed" data-ajax-mode="replace" data-ajax-success="ajaxComplete" data-ajax-update="#results" href="#next" title="Go To Next Page" aria-hidden="true">
+        Next
+      </a>
+    </li>
+  </ul>
+</div>
+
+<div class="usa-accordion-bordered usa-accordion-docs">
+  <button class="usa-button-unstyled usa-accordion-button" aria-expanded="true" aria-controls="doc-2">
+    Documentation
+  </button>
+  <div id="doc-2" aria-hidden="false" class="usa-accordion-content">
+    <h4 class="usa-heading">Accessibility</h4>
+    <ul class="usa-content-list">
+      <li>The previous and next buttons are hidden with aria-hidden when they are non-functional.</li>
+    </ul>
+
+    <h4 class="usa-heading">Implementation</h4>
+    <ul class="usa-content-list">
+      <li>Below the M breakpoint (600px) the pagination is represented by the next and/or previous buttons.</li>
+      <li>Above the M breakpoint there are several rules:
+        <ul>
+          <li>The first and last page links are always displayed.</li>
+          <li>Current page number is always displayed with +/- 1 page to either side.</li>
+          <li>When displaying the first and last pages +/- 2 pages are displayed.</li>
+          <li>When displaying the first page the Previous button is not displayed.</li>
+          <li>When displaying the last page the Next button is not displayed.</li>
+          <li>There are only ever 5 page links displayed, including first and last page. All other pages are abbreviated into ellipses.</li>
+        </ul>
+      </li>
+      <li>Pagination should always be shown at the bottom of the page, near the bottom of the list that it paginates.</li>
+    </ul>
+
+    <h4 class="usa-heading">Usability</h4>
+    <h5>When to use</h5>
+    <ul class="usa-content-list">
+      <li>When it is not feasible to show all ordered data on a single page.</li>
+    </ul>
+    <h5>Do not use when</h5>
+    <ul class="usa-content-list">
+      <li>When it is undesirable to have the user pause for navigation. Some alternatives include the infinite scroll pattern or simple un-numbered navigation.</li>
+    </ul>
+  </div>
+</div>
+
+<h4 class="usa-heading-alt" id="results">Results</h4>
+<div class="preview compact" id="code-4">
+  <h6 class="usa-heading-alt">Core variation</h6>
+  <div class="usajobs-search">
+  <div class="usajobs-search-results" data-object="search-results">
+    <div class="usajobs-search-result--core">
+      <a href="https://www.usajobs.gov/GetJob/ViewDetails/450087700" class="usajobs-search-result--core__title" itemprop="title">
+        Registered Nurse -5A Medical / Surgical unit
+      </a>
+      <div class="usajobs-search-result--core__body">
+        <div class="usajobs-search-result--core__summary">
+          <h4 class="usajobs-search-result--core__agency">
+            Veterans Affairs, Veterans Health Administration
+          </h4>
+          <h5 class="usajobs-search-result--core__department">
+            Department of Veterans Affairs
+          </h5>
+          <h4 class="usajobs-search-result--core__location" itemprop="addressLocality">
+            <span class="usajobs-search-result--core__location-link viewmap" data-object-trigger="modal" data-target="#modal-job-map" data-coord-lat="38.89051" data-coord-long="-77.086295" itemprop="addressLocality">
+              <i class="fa fa-map-marker"></i> Fremont, CA
+            </span>
+          </h4>
+        </div>
+        <div class="usajobs-search-result--core__details">
+          <ul class="usajobs-search-result--core__details-list">
+            <li class="usajobs-search-result--core__item">
+              Starting at $47,065 (GS 9-10)
+            </li>
+            <li class="usajobs-search-result--core__item usajobs-search-result--core__appt-type">
+              Permanent &bull; Full-time
+            </li>
+            <li class="usajobs-search-result--core__item open-to">
+              <p class="usajobs-search-result--core__hiring-path">
+                This job is open to:
+              </p>
+              <span class="usajobs-search-result--core__uhp-icon public" rel="tooltip" title="This job is open to the public">
+                <i class="fa fa-users"></i>
+              </span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="usajobs-search-result--core__footer">
+        <p class="usajobs-search-result--core__footer-item usajobs-search-result--core__closing-date" title="Opening and closing dates" aria-label="Opening and closing dates">
+          <i class="fa fa-clock-o"></i> Open 09/09/2016 to 10/30/2016
+        </p>
+        <!-- p class="usajobs-search-result--core__footer-item right">
+          <a href="#more" class="usajobs-search-result--core__more-jobs-like-this">
+            <i class="fa fa-bullhorn"></i> More jobs like this
+          </a>
+        </p -->
+        <p class="usajobs-search-result--core__footer-item usajobs-search-result--core__save-job">
+          <a href="#save" class="usajobs-search-result--core__save-job-link" data-behavior="search-results.toggle-save" data-target=".usajobs-search-result--core__save-job-text" data-state="is-unsaved">
+            <span class="usajobs-search-result--core__save-job-text">Save job</span>
+          </a>
+        </p>
+      </div>
+    </div>
+    <div class="usajobs-search-result--core">
+      <a href="https://www.usajobs.gov/GetJob/ViewDetails/450087700" class="usajobs-search-result--core__title" itemprop="title">
+        Science and Research Director, Northwest Region
+      </a>
+      <div class="usajobs-search-result--core__body">
+        <div class="usajobs-search-result--core__summary">
+          <h4 class="usajobs-search-result--core__agency">
+            National Oceanic and Atmospheric Administration
+          </h4>
+          <h5 class="usajobs-search-result--core__department">
+            Department of Commerce
+          </h5>
+          <h4 class="usajobs-search-result--core__location" itemprop="addressLocality">
+            <span class="usajobs-search-result--core__location-link viewmap" data-object-trigger="modal" data-target="#modal-job-map" data-name="Seattle, Washington " data-coord-lat="47.60358" data-coord-long="-122.329453" itemprop="addressLocality">
+              <i class="fa fa-map-marker"></i> Seattle, Washington
+            </span>
+          </h4>
+        </div>
+        <div class="usajobs-search-result--core__details">
+          <ul class="usajobs-search-result--core__details-list">
+            <li class="usajobs-search-result--core__item">
+              Starting at $123,175 (ES 00)
+            </li>
+            <li class="usajobs-search-result--core__item usajobs-search-result--core__appt-type">
+              Permanent &bull; Full-time
+            </li>
+            <li class="usajobs-search-result--core__item open-to">
+              <p class="usajobs-search-result--core__hiring-path">
+                This job is open to:
+              </p>
+              <span class="usajobs-search-result--core__uhp-icon federal-employees" title="This job is open to current or former federal employees" rel="tooltip">
+                <i class="fa fa-institution"></i>
+              </span>
+              <span class="usajobs-search-result--core__uhp-icon veterans" title="This jobs is open to veterans" rel="tooltip">
+                <i class="fa fa-shield"></i>
+              </span>
+              <span class="usajobs-search-result--core__uhp-icon individuals-with-disabilities" title="This job is open to individuals with disabilities" rel="tooltip">
+                <i class="fa fa-wheelchair-alt"></i>
+              </span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="usajobs-search-result--core__footer">
+        <p class="usajobs-search-result--core__footer-item usajobs-search-result--core__closing-date" title="Opening and closing dates" aria-label="Opening and closing dates">
+          <i class="fa fa-clock-o"></i> Open 10/24/2016 to 12/03/2016
+        </p>
+        <!-- p class="usajobs-search-result--core__footer-item right">
+          <a href="#more" class="usajobs-search-result--core__more-jobs-like-this">
+            <i class="fa fa-bullhorn"></i> More jobs like this
+          </a>
+        </p -->
+        <p class="usajobs-search-result--core__footer-item usajobs-search-result--core__save-job">
+          <a href="#save" class="usajobs-search-result--core__save-job-link" data-behavior="search-results.toggle-save" data-target=".usajobs-search-result--core__save-job-text" data-state="is-saved">
+            <span class="usajobs-search-result--core__save-job-text">Saved</span>
+          </a>
+        </p>
+      </div>
+    </div>
+    <div class="usajobs-search-result--core">
+      <a href="https://www.usajobs.gov/GetJob/ViewDetails/390086900" class="usajobs-search-result--core__title" itemprop="title">
+        Transportation Security Officer (TSO)
+      </a>
+      <div class="usajobs-search-result--core__body">
+        <div class="usajobs-search-result--core__summary">
+          <h4 class="usajobs-search-result--core__agency">
+            Transportation Security Administration
+          </h4>
+          <h5 class="usajobs-search-result--core__department">
+            Department of Homeland Security
+          </h5>
+          <h4 class="usajobs-search-result--core__location" itemprop="addressLocality">
+            Multiple Locations
+          </h4>
+        </div>
+        <div class="usajobs-search-result--core__details">
+          <ul class="usajobs-search-result--core__details-list">
+            <li class="usajobs-search-result--core__item">
+              Starting at $15.37 (SV D)
+            </li>
+            <li class="usajobs-search-result--core__item usajobs-search-result--core__appt-type">
+              Permanent &bull; Part-time
+            </li>
+            <li class="usajobs-search-result--core__item open-to">
+              <p class="usajobs-search-result--core__hiring-path">
+                This job is open to:
+              </p>
+              <span class="usajobs-search-result--core__uhp-icon public" rel="tooltip" title="This job is open to the public">
+                <i class="fa fa-users"></i>
+              </span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="usajobs-search-result--core__footer">
+        <p class="usajobs-search-result--core__footer-item usajobs-search-result--core__closing-date" title="Opening and closing dates" aria-label="Opening and closing dates">
+          <i class="fa fa-clock-o"></i> Open 04/12/2017 to 06/30/2017
+        </p>
+        <a href="https://www.test.usajobs.gov/Applicant/ProfileDashboard/Home" class="usajobs-search-result--core__footer-item right application-status status-received">
+          Application: Received
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
+
+<div class="usa-accordion-bordered usa-accordion-docs">
+  <button class="usa-button-unstyled usa-accordion-button" aria-expanded="true" aria-controls="doc-3">
+    Documentation
+  </button>
+  <div id="doc-3" aria-hidden="false" class="usa-accordion-content">
+    <h4 class="usa-heading">Requirements</h4>
+    <p>The search card component MUST include the following:</p>
+    <ul class="usa-content-list">
+      <li>Position title
+        <ul>
+          <li>display position title as a link that opens the job posting (job announcement) in the same window.</li>
+          <li>on click, change the link to visit link state (purple link).
+            <ul>
+              <li>MUST remain in this state for the entire session.</li>
+              <li>MUST remain in this state even when the user signs out and signs back in.</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li>Agency name</li>
+      <li>Department name</li>
+      <li>Location</li>
+      <li>Starting salary &amp; matching starting-ending pay schedule (example: GS13-14)</li>
+      <li>Appointment type (formerly known as work type)</li>
+      <li>Work schedule</li>
+      <li>Hiring paths icons</li>
+      <li>The label/description is shown on the hover state</li>
+      <li>Opening and closing period</li>
+      <li>Save/saved star trigger
+        <ul>
+          <li>Only show to signed-in users</li>
+          <li>Display as a link that will allow users to save and un-save a job posting.</li>
+          <li>Follow the <a href="/design-system/joa-actions/">save/saved star trigger guidelines</a>.</li>
+          <li>Do NOT display the save/saved star trigger to signed-out users.</li>
+        </ul>
+      </li>
+    </ul>
+    <p>The search card component MAY include the following:</p>
+    <ul class="usa-content-list">
+      <li>Application status: If the user has a started or finished an application to this job then the application status should appear. The same state names and colors as appear for application status in the profile dashboard should be employed.</li>
+    </ul>
+
+    <h5>When to use</h5>
+    <ul class="usa-content-list">
+      <li>To represent a job announcement in a list of announcements.</li>
+    </ul>
+  </div>
+</div>
+
+<div class="preview compact" id="code-5">
+  <h6 class="usa-heading-alt">Mission Critical Occupation variation</h6>
+  <div class="usajobs-search">
+  <div class="usajobs-search-result--card">
+    <a href="https://www.usajobs.gov/GetJob/ViewDetails/435870100?PostingChannelID=RESTAPI" class="usajobs-search-result--card__body">
+      <h3 class="usajobs-search-result__title" itemprop="title">
+          Interdisciplinary (Ecologist/Botanist)
+      </h3>
+      <div class="usajobs-search-result__summary">
+        <div class="usajobs-search-result__summary-body--single-col">
+          <h4 class="usajobs-search-result__department">
+            Department of the Interior
+          </h4>
+          <h5 class="usajobs-search-result__agency">
+            US Fish and Wildlife Service
+          </h5>
+          <h4 class="usajobs-search-result__location" itemprop="addressLocality">
+
+            <span class="usajobs-search-result__location-link viewmap" data-object-trigger="modal" data-target="#modal-job-map" data-name=" " data-coord-lat="38.89051" data-coord-long="-77.086295" itemprop="addressLocality">
+              <i class="fa fa-map-marker"></i> Fremont, CA
+            </span>
+
+          </h4>
+          <p class="usajobs-search-result__multi-line">
+            Permanent &bull; Full Time &bull;
+            Starting at $47,525 &bull; GS07 - 09
+          </p>
+          <p class="usajobs-search-result__closing-date">
+            <i class="fa fa-clock-o is-near-closing"></i> Closes 6/3/2016
+          </p>
+        </div>
+      </div>
+    </a>
+  </div>
+</div>
+
+</div>
+
+<div class="usa-accordion-bordered usa-accordion-docs">
+  <button class="usa-button-unstyled usa-accordion-button" aria-expanded="true" aria-controls="doc-mco">
+    Documentation
+  </button>
+  <div id="doc-mco" aria-hidden="false" class="usa-accordion-content">
+    <h5>When to use</h5>
+    <ul class="usa-content-list">
+      <li>To represent a job announcement an a Mission Critical Occupation page.</li>
+      <li>THIS VARIATION IS TO BE REPLACED BY THE STANDARD CORE VARIATION ABOVE.</li>
+    </ul>
+  </div>
+</div>
+
+<div class="preview compact" id="code-6">
+  <h6 class="usa-heading-alt">Agency Talent Portal variation</h6>
+  <div class="usajobs-search">
+  <div class="usajobs-search-result--atp__container">
+    <div class="usajobs-search-result--atp">
+      <a href="#user-detail" class="usajobs-search-result--atp__body">
+        <h3 class="usajobs-search-result--atp__title" itemprop="title">
+          Tony Stark
+        </h3>
+        <div class="usajobs-search-result--atp__summary">
+          <div class="usajobs-search-result--atp__summary-body">
+            <h4 class="usajobs-search-result--atp__agency">
+              Air Force C2 &amp; Intelligence, Surveillance &amp; Reconnaissance
+            </h4>
+            <h5 class="usajobs-search-result--atp__department">
+              Department of the Air Force
+            </h5>
+            <p class="usajobs-search-result--atp__grade">
+              GS-15
+            </p>
+            <h4 class="usajobs-search-result--atp__location" itemprop="addressLocality">
+              <span class="usajobs-search-result--atp__location-link viewmap" data-object-trigger="modal" data-target="#modal-job-map" data-name=" " data-coord-lat="40.7146" data-coord-long="-74.0071" itemprop="addressLocality">
+                <i class="fa fa-map-marker"></i> New York, NY
+              </span>
+            </h4>
+            <p class="usajobs-search-result--atp__last-updated">
+              <i class="fa fa-clock-o"></i> Last updated 10/01/2016
+            </p>
+          </div>
+          <div class="usajobs-search-result--atp__eligibility">
+            <div class="usajobs-search-result--atp__uhp-row">
+              <div class="usajobs-search-result--atp__uhp">
+                <span class="usajobs-search-result--atp__uhp-icon federal-employees">
+                  <i class="fa fa-institution"></i>
+                </span> Federal employee
+              </div>
+              <div class="usajobs-search-result--atp__doc-pill federal-employees">
+                <i class="fa fa-file"></i> SF-50
+              </div>
+            </div>
+            <div class="usajobs-search-result--atp__uhp-row">
+              <div class="usajobs-search-result--atp__uhp">
+                <span class="usajobs-search-result--atp__uhp-icon veterans">
+                  <i class="fa fa-shield"></i>
+                </span> Veteran
+              </div>
+              <div class="usajobs-search-result--atp__doc-pill veterans">
+                <i class="fa fa-file"></i> DD-214
+              </div>
+            </div>
+            <div class="usajobs-search-result--atp__uhp-row">
+              <div class="usajobs-search-result--atp__uhp">
+                <span class="usajobs-search-result--atp__uhp-icon individuals-with-disabilities">
+                  <i class="fa fa-wheelchair-alt"></i>
+                </span> Individuals with disabilities
+              </div>
+            </div>
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="usajobs-search-result--atp">
+      <a href="#user-detail" class="usajobs-search-result--atp__body">
+        <h3 class="usajobs-search-result--atp__title" itemprop="title">
+          Steve Rogers
+        </h3>
+        <div class="usajobs-search-result--atp__summary">
+          <div class="usajobs-search-result--atp__summary-body">
+            <h4 class="usajobs-search-result--atp__agency">
+                U.S. Army Intelligence and Security Command
+            </h4>
+            <h5 class="usajobs-search-result--atp__department">
+              Department of the Army
+            </h5>
+            <p class="usajobs-search-result--atp__grade">
+              GS-15
+            </p>
+            <h4 class="usajobs-search-result--atp__location" itemprop="addressLocality">
+              <span class="usajobs-search-result--atp__location-link viewmap" data-object-trigger="modal" data-target="#modal-job-map" data-name=" " data-coord-lat="40.7146" data-coord-long="-74.0071" itemprop="addressLocality">
+                <i class="fa fa-map-marker"></i> New York, NY
+              </span>
+            </h4>
+            <p class="usajobs-search-result--atp__last-updated">
+              <i class="fa fa-clock-o"></i> Last updated 10/01/2016
+            </p>
+          </div>
+          <div class="usajobs-search-result--atp__eligibility">
+            <div class="usajobs-search-result--atp__uhp-row">
+              <div class="usajobs-search-result--atp__uhp">
+                <span class="usajobs-search-result--atp__uhp-icon federal-employees">
+                  <i class="fa fa-institution"></i>
+                </span> Federal employee
+              </div>
+              <div class="usajobs-search-result--atp__doc-pill federal-employees">
+                <i class="fa fa-file"></i> SF-50
+              </div>
+            </div>
+            <div class="usajobs-search-result--atp__uhp-row">
+              <div class="usajobs-search-result--atp__uhp">
+                <span class="usajobs-search-result--atp__uhp-icon veterans">
+                  <i class="fa fa-shield"></i>
+                </span> Veteran
+              </div>
+              <div class="usajobs-search-result--atp__doc-pill veterans">
+                <i class="fa fa-file"></i> DD-214
+              </div>
+            </div>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+</div>
+
+</div>
+
+<div class="usa-accordion-bordered usa-accordion-docs">
+  <button class="usa-button-unstyled usa-accordion-button" aria-expanded="true" aria-controls="doc-seeker">
+    Documentation
+  </button>
+  <div id="doc-seeker" aria-hidden="false" class="usa-accordion-content">
+    <h5>When to use</h5>
+    <ul class="usa-content-list">
+      <li>To represent a job announcement in the recruitment tool.</li>
+    </ul>
+  </div>
+</div>
+
+<div class="preview compact" id="code-8">
+  <h6 class="usa-heading-alt">Opportunity variation</h6>
+  
+
+<div class="usajobs-open-opps-opportunity">
+  <div class="usajobs-open-opps-opportunity__body">
+    <a href="https://openopps.usajobs.gov/tasks/689" class="usajobs-open-opps-opportunity__title" itemprop="title">
+      Research digital information - what and how are Federal agencies sharing about their digital work?
+    </a>
+    <p class="usajobs-open-opps-opportunity__desc">
+      HHS’ Digital Communications Division in the Assistant Secretary for Public Affairs Office (ASPA Digital) is seeking help for an online research project. We are updating our website, HHS.gov/web.
+    </p>
+    
+    <p class="usajobs-open-opps-opportunity__agency-only">
+      For Department of Health and Human Services employees only
+    </p>
+    
+    <ul class="usajobs-open-opps-opportunity__details">
+      <li class="usajobs-open-opps-opportunity__detail-item">
+        <span class="fas fa-map-marker"></span> Virtual
+      </li>
+      <li class="usajobs-open-opps-opportunity__detail-item">
+        <span class="fas fa-cog"></span>
+        
+          <a href="#Best practices">Best practices</a>,
+        
+          <a href="#Research">Research</a>,
+        
+          <a href="#Digital policy">Digital policy</a>,
+        
+          <a href="#Standards">Standards</a>,
+        
+      </li>
+      <li class="usajobs-open-opps-opportunity__detail-item">
+        <span class="far fa-clock"></span> 16-34 hours
+      </li>
+      <li class="usajobs-open-opps-opportunity__detail-item">
+        <span class="far fa-calendar"></span> One time
+      </li>
+    </ul>
+    <div class="usajobs-open-opps-opportunity-requestor">
+      <div class="usajobs-open-opps-opportunity-requestor__figure">
+        <img src="/design-system/img/profile-photo.svg" />
+      </div>
+      <div class="usajobs-open-opps-opportunity-requestor__body">
+        <span class="usajobs-open-opps-opportunity-requestor__by">
+          Requested by
+        </span>
+        <p class="usajobs-open-opps-opportunity-requestor__name">
+          Debra Harris
+        </p>
+      </div>
+      <div class="usajobs-open-opps-opportunity-requestor__status">
+        <div class="usajobs-pill--opportunity-status status-open">
+          Open
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
+
+<div class="usa-accordion-bordered usa-accordion-docs">
+  <button class="usa-button-unstyled usa-accordion-button" aria-expanded="true" aria-controls="doc-opp">
+    Documentation
+  </button>
+  <div id="doc-opp" aria-hidden="false" class="usa-accordion-content">
+    <h5>When to use</h5>
+    <ul class="usa-content-list">
+      <li>To represent an opportunity in Open Opportunitites.</li>
+    </ul>
+  </div>
+</div>
+
+<h4 class="usa-heading-alt" id="teasers">Teasers</h4>
+<div class="preview compact" id="code-7">
+  <h6 class="usa-heading-alt">Data Science variation</h6>
+  <div class="usajobs-search">
+    <div class="usajobs-search-results" data-object="search-results">
+      <div class="usajobs-search-teaser usajobs-search-teaser--data-science" itemscope="" itemtype="http://schema.org/WebSite">
+        <div class="usajobs-search-teaser__body">
+          <h3 class="usajobs-search-teaser__title" itemprop="name">Explore a career in data science.</h3>
+          <a href="https://www.usajobs.gov/careerfields/data-science/" class="usa-button usa-button-outline-inverse usajobs-search-teaser__link" itemprop="url" target="_blank">
+            Learn more
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <h6 class="usa-heading-alt">Cyber Security variation</h6>
+  <div class="usajobs-search">
+    <div class="usajobs-search-results" data-object="search-results">
+      <div class="usajobs-search-teaser usajobs-search-teaser--cyber-security" itemscope="" itemtype="http://schema.org/WebSite">
+        <div class="usajobs-search-teaser__body">
+          <h3 class="usajobs-search-teaser__title" itemprop="name">Explore a career in cyber security.</h3>
+          <a href="https://www.cybercareers.gov/" class="usa-button usa-button-outline-inverse usajobs-search-teaser__link" itemprop="url" target="_blank">
+            Learn more
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <h6 class="usa-heading-alt">Privacy variation</h6>
+  <div class="usajobs-search">
+    <div class="usajobs-search-results" data-object="search-results">
+      <div class="usajobs-search-teaser usajobs-search-teaser--privacy" itemscope="" itemtype="http://schema.org/WebSite">
+        <div class="usajobs-search-teaser__body">
+          <h3 class="usajobs-search-teaser__title usajobs-search-teaser--privacy__title" itemprop="name">Help protect privacy rights</h3>
+          <p class="usajobs-search-teaser__desc">
+            The Federal Privacy Council is looking for privacy professionals interested in the growing use of technology, big data and analytics.
+          </p>
+          <a href="https://www.fpc.gov/" class="usa-button usa-button-primary usajobs-search-teaser__link" itemprop="url" target="_blank">
+            Learn more
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <h6 class="usa-heading-alt">Event variation</h6>
+  <div class="usajobs-search">
+    <div class="usajobs-search-result--core">
+      
+      <div class="usajobs-event--card">
+  <div class="usajobs-event--card__calendar">
+    <div class="usajobs-event__calendar-container">
+      <span class="usajobs-event--card__year">
+        2016
+      </span>
+      <div class="usajobs-event--card__icon">
+        <i class="fa fa-calendar"></i>
+      </div>
+    
+      <div class="usajobs-event__date start">
+        <span itemprop="startDate" content="2016-09-13T09:00 -0400">
+          Sep
+        </span> -
+        <span itemprop="endDate" content="2016-10-29T17:00 -0400">
+          Oct
+        </span>
+      </div>
+    
+    </div>
+  </div>
+  <div class="usajobs-event--card__body">
+    <h3 class="usajobs-event--card__item-title">
+      VA Healthcare Career Events
+      <span class="usajobs-event--card__im">
+      
+        Multiple locations
+      
+      </span>
+    </h3>
+    <p class="usajobs-event--card__text">
+      Hosted by <a href="https://www.va.gov/">Department of Veterans Affairs</a>
+      <a class="usajobs-event--card__more-info" href="/design-system/signed-out/home/events#event1">More information</a>
+    </p>
+  </div>
+</div>
+
+    </div>
+  </div>
+</div>
+<div class="usa-accordion-bordered usa-accordion-docs">
+  <button class="usa-button-unstyled usa-accordion-button" aria-expanded="true" aria-controls="doc-teaser">
+    Documentation
+  </button>
+  <div id="doc-teaser" aria-hidden="false" class="usa-accordion-content">
+    <h5>Guidelines</h5>
+    <ul class="usa-content-list">
+      <li>The teaser, when it appears, should appear between the 5th and 6th job result. Ideally it would be loaded via an asynchronous request after results are displayed so that it does not negatively impact search performance.</li>
+      <li>Only one teaser should be shown in one set of search results. Currently there is overlap in triggering keywords thus a round robin mechanism should be deployed to rotate between the overlapping teasers. There is also the possibility of overlap in the use of filters. In this case the keyword trigger should win out.</li>
+      <li>Links that leave the usajobs.gov domain should open in a new tab.</li>
+    </ul>
+
+    <h5>When to use</h5>
+    <ul class="usa-content-list">
+      <li>Each teaser appears in search results IF and only if they are relevant to the search. Relevance is defined by keyword for these variants excluding the Event variation which is dependent upon location and/or hiring path.</li>
+      <li><strong>Events:</strong>
+        <ol>
+          <li>Location: A matching event should appear when the location entered into the Location search field and selected from autocomplete matches the location of the event.</li>
+          <li>Future enhancement - Hiring path: A matching event should appear when the hiring path filter selected matches one or more of the hiring paths attached to an event.</li>
+        </ol>
+      </li>
+    </ul>
+
+    <h5>When teasers appear</h5>
+    <ul class="usa-content-list">
+      <li>Teasers should appear as long as the criteria below are met. Their appearance is not based on a session given that these are not currently popular queries.</li>
+      <li>Keywords: When the user enters this string into the keyword field the appropriate teaser should appear in their search results.</li>
+      <li>Occupations: When the user enters this string into the keyword field AND selects the matching occupation from autocomplete the appropriate teaser should appear in their search results.</li>
+      <li>Department/Agency: When the user enters this string into the keyword field AND selects the matching department or agency from autocomplete the appropriate teaser should appear in their search results.</li>
+    </ul>
+    <div class="usajobs-grid">
+      <div class="usa-width-one-half">
+        <h6>Data Science: Keywords</h6>
+        <ol class="usa-content-list">
+          <li>data</li>
+          <li>dmat</li>
+        </ol>
+      </div>
+      <div class="usa-width-one-half">
+        <h6>Data Science: Occupations</h6>
+        <ol class="usa-content-list">
+          <li>Bioinformatics Scientists</li>
+          <li>Bioinformatics Technicians</li>
+          <li>Business Intelligence Specialist</li>
+          <li>Computer and Information Research Scientists</li>
+          <li>Computer and Information System Managers</li>
+          <li>Data Analyst</li>
+          <li>Data Engineer</li>
+          <li>Data Warehousing Specialists</li>
+          <li>Economic Research Analysts</li>
+          <li>Enterprise Data Manager</li>
+          <li>Health Data Analyst</li>
+          <li>Information Technology Specialist (IT Specialist)</li>
+          <li>Management Analysts</li>
+          <li>Mathematical Technicians</li>
+          <li>Operations Research Analysts</li>
+          <li>Policy Advisor</li>
+          <li>Procurement Analyst</li>
+          <li>Public Health Analyst</li>
+          <li>Research Analyst</li>
+          <li>Research Assistants, Social Science</li>
+          <li>Senior Data Analyst/Programmer</li>
+          <li>Statistical Assistants</li>
+        </ol>
+        <h6>Data Science: Departments &amp; Agencies</h6>
+        <ol class="usa-content-list">
+          <li>Department of Homeland Security (DHS)</li>
+          <li>National Security Agency (NSA)</li>
+        </ol>
+      </div>
+    </div>
+    <br />
+    <div class="usajobs-grid">
+      <div class="usa-width-one-half">
+        <h6>Cyber Security: Keywords</h6>
+        <ol class="usa-content-list">
+          <li>Chief Operating Officer</li>
+          <li>cyber</li>
+          <li>Deputy Chief Information Security Officer</li>
+          <li>federal protective service</li>
+          <li>Foreign Service Office Management Specialist</li>
+          <li>Forensic Computer Analyst</li>
+          <li>fps</li>
+          <li>homeland</li>
+          <li>informatics</li>
+          <li>information</li>
+          <li>infosec</li>
+          <li>it</li>
+          <li>Performance Analyst</li>
+          <li>Policy Brand Chief</li>
+          <li>security</li>
+          <li>Supervisory Management And Program Analyst</li>
+          <li>technology</li>
+          <li>Telecommunications Specialist</li>
+        </ol>
+      </div>
+      <div class="usa-width-one-half">
+        <h6>Cyber Security: Occupations</h6>
+        <ol class="usa-content-list">
+          <li>Computer Network Support Specialists</li>
+          <li>Computer and Information Systems Manager</li>
+          <li>Computer Systems Analysts</li>
+          <li>Criminal Investigators and Special Agents</li>
+          <li>Information Security Analysts</li>
+          <li>Network and Computer Systems Administrators</li>
+          <li>Police Detectives</li>
+          <li>Police Identification and Records Officers</li>
+          <li>Security Management Specialists</li>
+        </ol>
+        <h6>Cyber Security: Departments &amp; Agencies</h6>
+        <ol class="usa-content-list">
+          <li>Department of Homeland Security (DHS)</li>
+          <li>National Security Agency (NSA)</li>
+        </ol>
+      </div>
+    </div>
+    <br />
+    <div class="usajobs-grid">
+      <div class="usa-width-one-half">
+        <h6>Privacy: Keywords</h6>
+        <ol class="usa-content-list">
+          <li>administrative law judge</li>
+          <li>ASSISTANT COUNSEL</li>
+          <li>Associate Chief Information Officer</li>
+          <li>attorney</li>
+          <li>CH OF CYBER &amp; ENTERPRISE OPS</li>
+          <li>claims</li>
+          <li>counsel</li>
+          <li>cyber</li>
+          <li>data privacy</li>
+          <li>Deputy Chief Information Officer</li>
+          <li>foia</li>
+          <li>health insurance specialist</li>
+          <li>informatics</li>
+          <li>information</li>
+          <li>infosec</li>
+          <li>inspector</li>
+          <li>it specialist</li>
+          <li>j.d.</li>
+          <li>judge</li>
+          <li>law</li>
+          <li>oig</li>
+          <li>physical security</li>
+          <li>privacy</li>
+          <li>security</li>
+          <li>social insurance specialist</li>
+          <li>Supervisory IT Specialist (PLCYPLN)</li>
+          <li>SUPV IT SPECIALIST (NETWORK/CUSTSPT)</li>
+        </ol>
+      </div>
+      <div class="usa-width-one-half">
+        <h6>Privacy: Departments &amp; Agencies</h6>
+        <ol class="usa-content-list">
+          <li>National Security Agency (NSA)</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</div>
+
+      </div>
+    </div>
+    <footer class="usa-styleguide-footer">
+      <div class="usajobs-grid">
+  <div class="usa-width-one-half">
+    <p>Feedback? Create an issue on the <a href="https://github.com/USAJOBS/design-system">GitHub repository</a>.</p>
+  </div>
+  <div class="usa-width-one-half usa-end-row">
+    <p>
+      This project is maintained by <a href="https://usajobs.github.io/">USAJOBS</a>.
+      The source code is available at <a href="https://github.com/USAJOBS/design-system">github.com/USAJOBS/design-system</a>
+    </p>
+    <p>As a work of the United States Government, this project is <a href="https://github.com/USAJOBS/design-system/LICENSE.md">in the public domain</a> within the United States.</p>
+  </div>
+</div>
+
+    </footer>
+    <div class="usajobs-modal" data-object="modal" data-state="is-closed" id="modal-share-joa" aria-hidden="true" role="dialog" aria-labelledby="usajobs-modal-heading" aria-describedby="usajobs-modal-description">
+  <div class="usajobs-modal__dialog">
+    <div class="usajobs-modal__content">
+      <div id="usajobs-modal-description" class="usajobs-assistive-text">
+        Beginning of a dialog window name that allows for sharing a job announcement. It begins with a heading 2 called &quot;Share job annoucement&quot;. Escape will cancel and close the window.
+      </div>
+      <div class="usajobs-modal__header">
+        <h2 id="usajobs-modal-heading" class="usajobs-modal__title">Share job annoucement</h2>
+      </div>
+      <div class="usajobs-modal__body">
+        <ul class="usajobs-joa-actions__social-list">
+          <li>
+            <a href="#" target="_blank">
+              <i class="fa fa-envelope"></i>
+              Email
+            </a>
+          </li>
+          <li>
+            <a href="#" target="_blank">
+              <i class="fa fa-facebook"></i>
+              Facebook
+            </a>
+          </li>
+          <li>
+            <a href="#" target="_blank">
+              <i class="fa fa-twitter"></i>
+              Twitter
+            </a>
+          </li>
+          <li>
+            <a href="#" target="_blank">
+              <i class="fa fa-linkedin"></i>
+              LinkedIn
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="usajobs-modal__actions">
+        <button class="usajobs-modal__close" data-behavior="modal.close" >
+          <span class="usajobs-assistive-text">Close</span>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <script src="/design-system/js/usajobs-design-system-base.js"></script>
+<script src="/design-system/js/usajobs-design-system-documentation.js"></script>
+<script src="/design-system/js/usajobs-design-system-components.js"></script>
+
+  </body>
+</html>
