@@ -2,10 +2,7 @@
   "PositionID": "SWEX179874131956263R",
   "PositionTitle": "Education Services Specialist",
   "PositionURI": "https://www.usajobs.gov:443/GetJob/ViewDetails/469480700",
-  "ApplyURI": [
-    "https://www.usajobs.gov:443/GetJob/ViewDetails/469480700?PostingChannelID=RESTAPI",
-    "https://www.usajobs.gov:443/GetJob/ViewDetails/469480701?PostingChannelID=RESTAPI"
-  ],
+  "ApplyURI": ["https://www.usajobs.gov:443/GetJob/ViewDetails/469480700?PostingChannelID=RESTAPI", "https://www.usajobs.gov:443/GetJob/ViewDetails/469480701?PostingChannelID=RESTAPI"],
   "PositionLocationDisplay": "Fort Leavenworth, Kansas",
   "PositionLocation": [
     {
@@ -76,9 +73,7 @@
       "Count": "2"
     }
   ],
-  "MCOTags": [
-    "STEM"
-  ],
+  "MCOTags": ["STEM"],
   "JobGrade": [
     {
       "Code": "GL"
@@ -155,16 +150,12 @@
       "LowGrade": "09",
       "HighGrade": "09",
       "Relocation": "False",
-      "HiringPath": [
-        "fed",
-        "vet",
-        "disability",
-        "mspouse",
-        "peace"
-      ],
+      "HiringPath": ["fed", "vet", "disability", "mspouse", "peace"],
       "GOVT_BackgroundCheck": "Public Trust",
       "GOVT_SecurityClearanceRequired": "None",
-      "GOVT_DrugTestRequired": "No"
+      "GOVT_DrugTestRequired": "No",
+      "GOVT_PositionSensitivty": "Critical-Sensitive/High Risk",
+      "GOVT_SecurityEvaluationProcess": "Suitability/fitness"
     },
     "IsRadialSearch": false
   }

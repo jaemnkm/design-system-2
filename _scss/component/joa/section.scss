@@ -85,6 +85,14 @@
   }
 }
 
+.usajobs-joa-sub-section--two-columns {
+  &__container {
+    @include media($M) {
+      @include span-columns(3, 6);
+    }
+  }
+}
+
 .usajobs-joa-sub-section--three-columns {
   &__container {
     @include media($M) {
