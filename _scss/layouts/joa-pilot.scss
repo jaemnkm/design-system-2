@@ -1,0 +1,17 @@
+// JOA Layout - USDS Pilot
+
+@import "../base-shared";
+
+.usajobs-joa-pilot {
+  &__shell {
+    @include media($M) {
+      margin-top: $size-M;
+    }
+  }
+
+  &__accordion-trigger {
+    @include media($M) {
+      @include hide();
+    }
+  }
+}

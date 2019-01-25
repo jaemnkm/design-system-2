@@ -222,6 +222,61 @@
   }
 }
 
+.usajobs-profile-secondary-nav.has-open-opps-tab {
+  background-color: inherit;
+
+  .usajobs-profile-secondary-nav__bground {
+    background-color: $color-primary-darker;
+  }
+
+  .usajobs-profile-secondary-nav--open-opps-tab {
+    background-color: $color-white;
+
+    @include media($ML) {
+      background-color: inherit;
+    }
+
+    &__link {
+      display: inline-block;
+      width: 100%;
+      text-align: right;
+      padding: $size-base;
+      @include permaLink();
+      text-decoration: none;
+
+      @include media($ML) {
+        width: 40%;
+        max-width: 26rem;
+        float: right;
+        padding: $size-base $size-S;
+        margin-right: $size-S;
+        background-color: $color-white;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+      }
+
+      @include media($L) {
+        max-width: 32rem;
+        margin-right: $size-XL;
+      }
+    }
+
+    &__return {
+      font-weight: bold;
+      font-size: $small-font-size;
+    }
+
+    &__logo {
+      width: 170px;
+      vertical-align: middle;
+
+      @include media($L) {
+        width: 220px;
+      }
+    }
+  }
+}
+
 .usajobs-help-secondary-nav {
   margin-bottom: 0;
 

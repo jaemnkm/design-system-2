@@ -12,7 +12,6 @@ const cssnano = require("cssnano");
 const csswring = require("csswring");
 const del = require("del");
 const log = require("fancy-log");
-const ghpages = require("gulp-gh-pages");
 const gulpStylelint = require("gulp-stylelint");
 const { formatters } = require("stylelint");
 const jshint = require("gulp-jshint");
@@ -182,7 +181,7 @@ function watch() {
   gulp.watch(paths.scripts.watch, gulp.task("buildJS"));
   gulp.watch(
     [
-      "*/**/*.html",
+      "./**/*.html",
       "_layouts/*.html",
       "_page-layouts/*.html",
       "pages/*",
@@ -195,20 +194,6 @@ function watch() {
     gulp.series(jekyllBuild, reload)
   );
 }
-
-// Override for build to always be setting the env to prod just in case
-function prepForProd() {
-  process.env.NODE_ENV = "prod";
-}
-
-/**
- * Deploy to GitHub Pages
- */
-function deploy() {
-  return gulp.src("./_site/**/*").pipe(ghpages());
-}
-
-gulp.task("deploy", gulp.series(prepForProd, jekyllBuild, deploy));
 
 // JS
 function jsHint() {
@@ -297,7 +282,10 @@ gulp.task("jekyll-rebuild", gulp.series(jekyllBuild, reload));
  * $ NODE_ENV=dev gulp
  * or use `npm start`
  */
-gulp.task("default", gulp.series(gulp.task("build"), browserSyncServe, watch));
+gulp.task(
+  "default",
+  gulp.parallel(gulp.task("build"), browserSyncServe, watch)
+);
 
 // TEST
 function scssLint() {

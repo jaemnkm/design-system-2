@@ -38,7 +38,12 @@
     &.is-active,
     &[data-state="is-active"] {
       color: $color-base;
-      border-bottom: 3px solid $color-gold;
+      border-bottom: 6px solid $color-gold;
+      padding-bottom: 5px;
+
+      @include media($ML) {
+        padding-bottom: $size-S;
+      }
     }
   }
 }

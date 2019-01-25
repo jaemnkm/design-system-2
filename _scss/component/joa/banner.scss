@@ -56,3 +56,12 @@
     margin-bottom: $size-S;
   }
 }
+
+.usajobs-joa-banner--v1-8 {
+  background-color: $color-primary-darkest;
+
+  &__agency {
+    display: inline-block;
+    text-transform: initial;
+  }
+}

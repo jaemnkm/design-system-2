@@ -1,0 +1,101 @@
+{
+  "PositionID": "NPS-12345678910-DE-OPM",
+  "PositionTitle": "Product Manager",
+  "PositionURI": "https://www.usajobs.gov:443/GetJob/ViewDetails/123456789",
+  "ApplyURI": ["https://www.usajobs.gov:443/GetJob/ViewDetails/123456789?PostingChannelID=RESTAPI"],
+  "PositionLocationDisplay": "Washington, DC",
+  "PositionLocation": [
+    {
+      "LocationName": "Washington, DC",
+      "CountryCode": "United States",
+      "CountrySubDivisionCode": "District of Columbia",
+      "CityName": "Washington, DC",
+      "Longitude": -94.9212,
+      "Latitude": 39.3293,
+      "AddressLine": "1849 C Street NW",
+      "Vacancies": "1"
+    }
+  ],
+  "PositionLocationWithinArea": false,
+  "ApplicationClosingType": "closing-date",
+  "OrganizationName": "National Park Service",
+  "OrganizationDetails": "This position works in the Business Requirements and Systems Division at the Office of the Comptroller, Washington DC. The division supports other offices under the Comptroller in the formulation, analysis, and execution of the National Park Service budget.",
+  "OrganizationURL": "https://www.nps.gov/aboutus/nps-careers.htm",
+  "DepartmentName": "Department of the Interior",
+  "JobCategory": [
+    {
+      "Name": "Information Technology Management",
+      "Code": "2210"
+    }
+  ],
+  "JobOccupation": [
+    {
+      "Name": "Managers, Marketing",
+      "Code": "Managers%2C+Marketing",
+      "Count": "1"
+    }
+  ],
+  "JobGrade": [
+    {
+      "Code": "GS"
+    }
+  ],
+  "PositionSchedule": [
+    {
+      "Name": "Full Time",
+      "Code": "1"
+    }
+  ],
+  "PositionOfferingType": [
+    {
+      "Name": "Permanent",
+      "Code": ""
+    }
+  ],
+  "QualificationSummary": "",
+  "PositionRemuneration": [
+    {
+      "MinimumRange": "96,970",
+      "MaximumRange": "126,062",
+      "RateIntervalCode": "per year"
+    }
+  ],
+  "SupervisoryStatus": true,
+  "PromotionPotential": "13",
+  "PositionStartDate": "2019-03-18",
+  "PositionEndDate": "2020-03-18",
+  "PublicationStartDate": "03/18/19",
+  "ApplicationCloseDate": "03/29/19",
+  "UserArea": {
+    "Details": {
+      "MajorDuties": [
+        "Collaborate with managers, stakeholders, and end-users to gather business requirements.",
+        "Analyze business needs, devise solutions, make recommendations and gain acceptance of recommendations from stakeholders.",
+        "Support software engineers implementing new requirements.",
+        "Ensure that the software changes are tested thoroughly for accuracy and performance, and are rolled out in a timely fashion.",
+        "Troubleshoot and resolve problems reported by users, analysts, and programmers which include application interfaces, application performance, data quality and security.",
+        "Interact with and support a large set of systems built with a wide variety of tools, technologies, and protocols including ColdFusion, HTML, JavaScript, XML, SOAP, SQL as well as Oracle Databases."
+      ],
+      "HowToApply": "",
+      "WhatToExpectNext": "",
+      "RequiredDocuments": "",
+      "Benefits": "",
+      "OtherInformation": "",
+      "ConditionsOfEmployment": [
+        "Successfully complete a background investigation.",
+        "Go through a Personal Identity Verification (PIV) process that requires two forms of identification from the <a href=\"https://www.uscis.gov/sites/default/files/files/form/i-9.pdf\" target=\"_blank\">Form I-9</a>. Federal law requires we verify the identity and employment eligibility of all new hires in the U.S.",
+        "File a Confidential Financial Disclosure Report within 30 days of being hired and once a year from then on.",
+        "Obtain and use a government-issued charge card for business-related travel."
+      ],
+      "JobSummary": "As an IT Product Manager with the National Park Service, you will be responsible for the budget systems used throughout the NPS. You will assist with the full software lifecycle: analysis, design, development, maintenance, and support. This position within the Office of the Comptroller manages the development of applications and digital services.",
+      "LowGrade": "13",
+      "HighGrade": "13",
+      "Relocation": false,
+      "Telework": true,
+      "HiringPath": ["public"],
+      "GOVT_BackgroundCheck": "Public Trust",
+      "GOVT_SecurityClearanceRequired": "None",
+      "GOVT_DrugTestRequired": "No"
+    }
+  }
+}

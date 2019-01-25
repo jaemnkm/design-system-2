@@ -33,16 +33,16 @@
                 <a href="{{ site.baseurl }}/visual-style/#typography">Typography</a>
               </li>
               <li>
-                <a {% if current[1] == 'buttons' %}class="usa-current"{% endif %} href="{{ site.baseurl }}/buttons/">Buttons</a>
+                <a {% if current[1]=='buttons' %}class="usa-current" {% endif %} href="{{ site.baseurl }}/buttons/">Buttons</a>
               </li>
               <li>
-                <a {% if current[1] == 'grid' %}class="usa-current"{% endif %} href="{{ site.baseurl }}/grid/">Grid</a>
+                <a {% if current[1]=='grid' %}class="usa-current" {% endif %} href="{{ site.baseurl }}/grid/">Grid</a>
               </li>
               <li>
-                <a {% if current[1] == 'shell' %}class="usa-current"{% endif %} href="{{ site.baseurl }}/shell/">Shell</a>
+                <a {% if current[1]=='shell' %}class="usa-current" {% endif %} href="{{ site.baseurl }}/shell/">Shell</a>
               </li>
               <li>
-                <a {% if current[1] == 'spacing' %}class="usa-current"{% endif %} href="{{ site.baseurl }}/spacing/">Spacing</a>
+                <a {% if current[1]=='spacing' %}class="usa-current" {% endif %} href="{{ site.baseurl }}/spacing/">Spacing</a>
               </li>
             </div>
             <div class="usa-megamenu-col">
@@ -50,7 +50,7 @@
                 <a href="{{ site.baseurl }}/visual-style/#links">Links</a>
               </li>
               <li>
-                <a {% if current[1] == 'icons' %}class="usa-current"{% endif %} href="{{ site.baseurl }}/icons/">Icons</a>
+                <a {% if current[1]=='icons' %}class="usa-current" {% endif %} href="{{ site.baseurl }}/icons/">Icons</a>
               </li>
               <li>
                 <a href="{{ site.baseurl }}/visual-style/#logo">Logo</a>
@@ -58,7 +58,7 @@
             </div>
             <div class="usa-megamenu-col">
               <li>
-                <a {% if current[1] == 'form-controls' %}class="usa-current"{% endif %} href="{{ site.baseurl }}/form-controls/"><strong>Forms</strong></a>
+                <a {% if current[1]=='form-controls' %}class="usa-current" {% endif %} href="{{ site.baseurl }}/form-controls/"><strong>Forms</strong></a>
               </li>
               <li><a href="{{ site.baseurl }}/form-controls/#contextual-help">Contextual Help</a></li>
               <li><a href="{{ site.baseurl }}/form-controls/#disabled">Disabled</a></li>
@@ -66,7 +66,9 @@
               <li><a href="{{ site.baseurl }}/form-controls/#labels">Labels</a></li>
             </div>
             <div class="usa-megamenu-col">
-              <li><h5>Forms continued</h5></li>
+              <li>
+                <h5>Forms continued</h5>
+              </li>
               <li><a href="{{ site.baseurl }}/form-controls/#layout">Layouts</a></li>
               <li><a href="{{ site.baseurl }}/form-controls/#legends">Legends</a></li>
               <li><a href="{{ site.baseurl }}/form-controls/#reveal-fields">Reveal fields</a></li>
@@ -81,74 +83,78 @@
           <ul id="extended-mega-nav-section-two" class="usa-nav-submenu usa-megamenu usa-grid-full" aria-hidden="true">
             <div class="usa-megamenu-col">
               <li>
-                <a {% if current[1] == 'alerts' %}class="usa-current"{% endif %} href="{{ site.baseurl }}/alerts/">Alert</a>
+                <a {% if current[1]=='alerts' %}class="usa-current" {% endif %} href="{{ site.baseurl }}/alerts/">Alert</a>
               </li>
               <li>
-                <a {% if current[1] == 'button-bar' %}class="usa-current"{% endif %} href="{{ site.baseurl }}/button-bar/">Button Bar</a>
+                <a {% if current[1]=='button-bar' %}class="usa-current" {% endif %} href="{{ site.baseurl }}/button-bar/">Button Bar</a>
               </li>
               <li>
-                <a {% if current[1] == 'card' %}class="usa-current"{% endif %} href="{{ site.baseurl }}/card/">Card</a>
+                <a {% if current[1]=='card' %}class="usa-current" {% endif %} href="{{ site.baseurl }}/card/">Card</a>
               </li>
               <li>
-                <a {% if current[1] == 'card-button' %}class="usa-current"{% endif %} href="{{ site.baseurl }}/card-button/">Card button</a>
+                <a {% if current[1]=='card-button' %}class="usa-current" {% endif %} href="{{ site.baseurl }}/card-button/">Card button</a>
               </li>
               <li>
-                <a {% if current[1] == 'drawer' %}class="usa-current"{% endif %} href="{{ site.baseurl }}/drawer/">Drawer</a>
+                <a {% if current[1]=='drawer' %}class="usa-current" {% endif %} href="{{ site.baseurl }}/drawer/">Drawer</a>
               </li>
               <li>
-                <a {% if current[1] == 'event' %}class="usa-current"{% endif %} href="{{ site.baseurl }}/event/">Event</a>
+                <a {% if current[1]=='event' %}class="usa-current" {% endif %} href="{{ site.baseurl }}/event/">Event</a>
               </li>
               <li>
-                <a {% if current[1] == 'modals' %}class="usa-current"{% endif %} href="{{ site.baseurl }}/modals/">Modal</a>
+                <a {% if current[1]=='modals' %}class="usa-current" {% endif %} href="{{ site.baseurl }}/modals/">Modal</a>
               </li>
               <li>
-                <a {% if current[1] == 'pill' %}class="usa-current"{% endif %} href="{{ site.baseurl }}/pill/">Pill</a>
+                <a {% if current[1]=='pill' %}class="usa-current" {% endif %} href="{{ site.baseurl }}/pill/">Pill</a>
               </li>
               <li>
-                <a {% if current[1] == 'progress-indicator' %}class="usa-current"{% endif %} href="{{ site.baseurl }}/progress-indicator/">Progress indicator</a>
+                <a {% if current[1]=='progress-indicator' %}class="usa-current" {% endif %} href="{{ site.baseurl }}/progress-indicator/">Progress indicator</a>
               </li>
               <li>
-                <a {% if current[1] == 'reveal' %}class="usa-current"{% endif %} href="{{ site.baseurl }}/reveal/">Reveal</a>
+                <a {% if current[1]=='reveal' %}class="usa-current" {% endif %} href="{{ site.baseurl }}/reveal/">Reveal</a>
               </li>
             </div>
             <div class="usa-megamenu-col">
               <li>
-                <a {% if current[1] == 'document' %}class="usa-current"{% endif %} href="{{ site.baseurl }}/document/"><strong>Document</strong></a>
+                <a {% if current[1]=='document' %}class="usa-current" {% endif %} href="{{ site.baseurl }}/document/"><strong>Document</strong></a>
               </li>
               <li><a href="{{ site.baseurl }}/document/#thumbnail">Thumbnail</a></li>
               <li><a href="{{ site.baseurl }}/document/#placeholder">Placeholder</a></li>
-              <li><h5>Navigation</h5></li>
               <li>
-                <a {% if current[1] == 'navigation' %}class="usa-current"{% endif %} href="{{ site.baseurl }}/navigation/">Top</a>
+                <h5>Navigation</h5>
               </li>
               <li>
-                <a {% if current[1] == 'secondary-nav' %}class="usa-current"{% endif %} href="{{ site.baseurl }}/nav-secondary/">Secondary</a>
+                <a {% if current[1]=='navigation' %}class="usa-current" {% endif %} href="{{ site.baseurl }}/navigation/">Top</a>
               </li>
               <li>
-                <a {% if current[1] == 'footer' %}class="usa-current"{% endif %} href="{{ site.baseurl }}/footer/">Footer</a>
-              </li>
-            </div>
-            <div class="usa-megamenu-col">
-              <li><h5>Job announcement</h5></li>
-              <li>
-                <a {% if current[1] == 'joa-actions' %}class="usa-current"{% endif %} href="{{ site.baseurl }}/joa-actions/">Actions</a>
+                <a {% if current[1]=='secondary-nav' %}class="usa-current" {% endif %} href="{{ site.baseurl }}/nav-secondary/">Secondary</a>
               </li>
               <li>
-                <a {% if current[1] == 'joa-agency-contact' %}class="usa-current"{% endif %} href="{{ site.baseurl }}/joa-agency-contact/">Agency contact</a>
-              </li>
-              <li>
-                <a {% if current[1] == 'joa-intro' %}class="usa-current"{% endif %} href="{{ site.baseurl }}/joa-intro/">Intro</a>
-              </li>
-              <li>
-                <a {% if current[1] == 'joa-similar-jobs' %}class="usa-current"{% endif %} href="{{ site.baseurl }}/joa-similar-jobs/">Similar jobs</a>
-              </li>
-              <li>
-                <a {% if current[1] == 'joa-summary' %}class="usa-current"{% endif %} href="{{ site.baseurl }}/joa-summary/">Summary</a>
+                <a {% if current[1]=='footer' %}class="usa-current" {% endif %} href="{{ site.baseurl }}/footer/">Footer</a>
               </li>
             </div>
             <div class="usa-megamenu-col">
               <li>
-                <a {% if current[1] == 'search' %}class="usa-current"{% endif %} href="{{ site.baseurl }}/search/"><strong>Search</strong></a>
+                <h5>Job announcement</h5>
+              </li>
+              <li>
+                <a {% if current[1]=='joa-actions' %}class="usa-current" {% endif %} href="{{ site.baseurl }}/joa-actions/">Actions</a>
+              </li>
+              <li>
+                <a {% if current[1]=='joa-agency-contact' %}class="usa-current" {% endif %} href="{{ site.baseurl }}/joa-agency-contact/">Agency contact</a>
+              </li>
+              <li>
+                <a {% if current[1]=='joa-intro' %}class="usa-current" {% endif %} href="{{ site.baseurl }}/joa-intro/">Intro</a>
+              </li>
+              <li>
+                <a {% if current[1]=='joa-similar-jobs' %}class="usa-current" {% endif %} href="{{ site.baseurl }}/joa-similar-jobs/">Similar jobs</a>
+              </li>
+              <li>
+                <a {% if current[1]=='joa-summary' %}class="usa-current" {% endif %} href="{{ site.baseurl }}/joa-summary/">Summary</a>
+              </li>
+            </div>
+            <div class="usa-megamenu-col">
+              <li>
+                <a {% if current[1]=='search' %}class="usa-current" {% endif %} href="{{ site.baseurl }}/search/"><strong>Search</strong></a>
               </li>
               <li><a href="{{ site.baseurl }}/search/#controls">Controls</a></li>
               <li><a href="{{ site.baseurl }}/search/#pagination">Pagination</a></li>
@@ -163,7 +169,9 @@
           </button>
           <ul id="extended-mega-nav-section-three" class="usa-nav-submenu usa-megamenu usa-grid-full" aria-hidden="true">
             <div class="usa-megamenu-col">
-              <li><h5>Agency Talent Portal</h5></li>
+              <li>
+                <h5>Agency Talent Portal</h5>
+              </li>
               <li>
                 <a href="{{ site.baseurl }}/agency-talent-portal/user-detail/">
                   User detail
@@ -184,43 +192,52 @@
               <li>
                 <a href="{{ site.baseurl }}/agency-talent-portal/session/signed-out/">Session signed out</a>
               </li>
-              <li><h5>Open Opportunitites</h5></li>
+              <li>
+                <h5>Open Opportunitites</h5>
+              </li>
               <li>
                 <a href="{{ site.baseurl }}/open-opportunities/search/">Search</a>
               </li>
             </div>
             <div class="usa-megamenu-col">
-              <li><h5>Errors</h5></li>
               <li>
-                <a {% if current[1] == '400' %}class="usa-current"{% endif %} href="{{ site.baseurl }}/errors/400/">400</a>
+                <h5>Errors</h5>
               </li>
               <li>
-                <a {% if current[1] == '404' %}class="usa-current"{% endif %} href="{{ site.baseurl }}/errors/404/">404</a>
+                <a {% if current[1]=='400' %}class="usa-current" {% endif %} href="{{ site.baseurl }}/errors/400/">400</a>
               </li>
               <li>
-                <a {% if current[1] == '500' %}class="usa-current"{% endif %} href="{{ site.baseurl }}/errors/500/">500</a>
+                <a {% if current[1]=='404' %}class="usa-current" {% endif %} href="{{ site.baseurl }}/errors/404/">404</a>
+              </li>
+              <li>
+                <a {% if current[1]=='500' %}class="usa-current" {% endif %} href="{{ site.baseurl }}/errors/500/">500</a>
               </li>
             </div>
             <div class="usa-megamenu-col">
-              <li><h5>Sessions</h5></li>
               <li>
-                <a {% if current[1] == 'timeout' %}class="usa-current"{% endif %} href="{{ site.baseurl }}/session/timeout/">
+                <h5>Sessions</h5>
+              </li>
+              <li>
+                <a {% if current[1]=='timeout' %}class="usa-current" {% endif %} href="{{ site.baseurl }}/session/timeout/">
                   Session timeout
                 </a>
               </li>
               <li>
-                <a {% if current[1] == 'sign-out' %}class="usa-current"{% endif %} href="{{ site.baseurl }}/session/signed-out/">Signed out</a>
+                <a {% if current[1]=='sign-out' %}class="usa-current" {% endif %} href="{{ site.baseurl }}/session/signed-out/">Signed out</a>
               </li>
             </div>
             <div class="usa-megamenu-col">
-              <li><h5>Job announcement</h5></li>
               <li>
-                <a {% if current[1] == 'v6.5' %}class="usa-current"{% endif %} href="{{ site.baseurl }}/job-announcement/v6.5/">
+                <h5>Job announcement</h5>
+              </li>
+              <li>
+                <a {% if current[1]=='v6.5' %}class="usa-current" {% endif %} href="{{ site.baseurl }}/job-announcement/v6.5/">
                   Version 6.5
                 </a>
-                <a {% if current[1] == 'v6.6' %}class="usa-current"{% endif %} href="{{ site.baseurl }}/job-announcement/v6.6/cfpb/">Version 6.6 (CFPB pilot)</a>
-                <a {% if current[1] == 'v6.6' %}class="usa-current"{% endif %} href="{{ site.baseurl }}/job-announcement/v6.6/print/">Version 6.6 - Print</a>
-                <a {% if current[1] == 'v6.7' %}class="usa-current"{% endif %} href="{{ site.baseurl }}/job-announcement/v6.7/">Version 6.7</a>
+                <a {% if current[1]=='v6.6' %}class="usa-current" {% endif %} href="{{ site.baseurl }}/job-announcement/v6.6/cfpb/">Version 6.6 (CFPB pilot)</a>
+                <a {% if current[1]=='v6.6' %}class="usa-current" {% endif %} href="{{ site.baseurl }}/job-announcement/v6.6/print/">Version 6.6 - Print</a>
+                <a {% if current[1]=='v6.7' %}class="usa-current" {% endif %} href="{{ site.baseurl }}/job-announcement/v6.7/">Version 6.7</a>
+                <!-- a {% if current[1] == 'v7.0' %}class="usa-current"{% endif %} href="{{ site.baseurl }}/job-announcement/v7.0/">Version 7.0 (Pilot)</a -->
               </li>
             </div>
           </ul>
