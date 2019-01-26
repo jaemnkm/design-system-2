@@ -19,6 +19,7 @@ exclude:
   - package.json
   - package-lock.json
   - README.md
+  - reports
 keep_files: ["css", "js"]
 
 # Creative Cloud uses port 4000? Setting a unique port number

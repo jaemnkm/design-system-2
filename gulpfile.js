@@ -24,6 +24,7 @@ const sass = require("gulp-sass");
 // const source = require("vinyl-source-stream");
 const sourcemaps = require("gulp-sourcemaps");
 // const uglify = require("gulp-uglify");
+const access = require("gulp-accessibility");
 
 // gulp-sass uses node-sass by default but strongly recommends we set
 // it explicitly for forwards-compatibility in case the default ever changes.
@@ -310,6 +311,37 @@ function scssLint() {
 }
 
 gulp.task("testCSS", gulp.series(scssLint));
+
+function testWCAG() {
+  return gulp
+    .src("./_site/**/*.html")
+    .pipe(
+      access({
+        force: true,
+        accessibilityLevel: "WCAG2AA"
+      })
+    )
+    .on("error", console.log)
+    .pipe(
+      access.report({
+        reportType: "txt",
+        reportLevels: { notice: false, warning: false, error: true }
+      })
+    )
+    .pipe(
+      rename({
+        extname: ".txt"
+      })
+    )
+    .pipe(gulp.dest("reports/"));
+}
+
+gulp.task("testAccessibility", gulp.series(testWCAG));
+
+gulp.task(
+  "test",
+  gulp.series(gulp.task("testAccessibility"), gulp.task("testCSS"))
+);
 
 // CSS for dev team
 // Keeping this around for Saleim and co.

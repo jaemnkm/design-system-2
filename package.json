@@ -61,6 +61,7 @@
     "gulp-sourcemaps": "^2.6.4",
     "gulp-stylelint": "^8.0.0",
     "gulp-uglify": "^3.0.1",
+    "gulp-accessibility": "3.1.1",
     "jshint": "^2.9.7",
     "jshint-stylish": "^2.2.0",
     "node-sass": "^4.11.0",
