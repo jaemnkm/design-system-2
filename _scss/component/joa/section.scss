@@ -51,6 +51,27 @@
   }
 }
 
+.usajobs-joa-section.usajobs-joa-section--pilot {
+  margin: 0 0 $size-SM 0;
+
+  @include media($M) {
+    margin: 0 0 $size-SM 0;
+    padding: 0 $size-default;
+    box-shadow: inherit;
+  }
+
+  @include media($ML) {
+    margin: 0 0 $size-M 0;
+    padding: 0;
+  }
+}
+
+.usajobs-joa-section--pilot {
+  &__header {
+    color: $color-primary-darkest;
+  }
+}
+
 // Fighting Standards specificity
 .usajobs-joa-section .usajobs-joa__read-more-content {
   @include media($M) {

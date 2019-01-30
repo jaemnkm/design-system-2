@@ -88,15 +88,15 @@ $body-padding: $size-M;
   }
 
   .flexbox & {
-    @include display(flex);
-    @include align-items(center);
+    display: flex;
+    align-items: center;
 
     &__figure {
-      @include flex-shrink(0);
+      flex-shrink: 0;
     }
 
     &__body {
-      @include flex(1);
+      flex: 1;
       min-width: 0;
     }
   }

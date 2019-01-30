@@ -3,8 +3,8 @@
 
 .usajobs-joa-prev-next {
   &__body {
-    @include display(flex);
-    @include flex-wrap(wrap);
+    display: flex;
+    flex-wrap: wrap;
     font-size: $small-font-size;
     max-width: $site-max-width;
     margin-left: auto;
@@ -15,7 +15,7 @@
   &__back,
   &__next {
     display: block;
-    @include flex(1);
+    flex: 1;
     text-decoration: none;
 
     &:visited {

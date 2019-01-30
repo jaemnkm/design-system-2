@@ -60,8 +60,19 @@
 .usajobs-joa-banner--v1-8 {
   background-color: $color-primary-darkest;
 
+  &__body {
+    @include media($ML) {
+      padding-bottom: $size-M;
+    }
+  }
+
   &__agency {
     display: inline-block;
+    margin: 0;
     text-transform: initial;
+  }
+
+  &__dept {
+    margin-bottom: 0;
   }
 }

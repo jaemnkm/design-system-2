@@ -16,6 +16,22 @@ $body-padding: $size-default;
   }
 }
 
+.usajobs-joa-intro--pilot {
+  padding: 0;
+
+  &__aside {
+    padding: 0 $size-default;
+  }
+
+  &__container {
+    position: relative;
+
+    @include media($L) {
+      @include span-columns(8, 12);
+    }
+  }
+}
+
 .usajobs-joa-summary {
   margin-bottom: $size-M;
 
@@ -78,6 +94,20 @@ $body-padding: $size-default;
 
     @include media($L) {
       @include span-columns(4, 12);
+    }
+  }
+}
+
+.usajobs-joa-summary--pilot {
+  &__list > &__item {
+    @include media($SM) {
+      @include span-columns(1, 2);
+    }
+
+    &:nth-child(2n) {
+      @include media($SM) {
+        @include omega();
+      }
     }
   }
 }
@@ -228,16 +258,16 @@ $body-padding: $size-default;
 
 .flexbox .usajobs-joa-intro-hiring-paths {
   &__link {
-    @include display(flex);
-    @include align-items(top);
+    display: flex;
+    align-items: top;
   }
 
   &__figure {
-    @include flex-shrink(0);
+    flex-shrink: 0;
   }
 
   &__body {
-    @include flex(1);
+    flex: 1;
     min-width: 0;
   }
 
@@ -290,6 +320,13 @@ $body-padding: $size-default;
   }
 }
 
+.usajobs-joa-overview--pilot {
+  &__header {
+    display: inline-block;
+    color: $color-primary-darkest;
+  }
+}
+
 .usajobs-joa-closing-types {
   padding: $size-S;
   font-size: $small-font-size;
@@ -328,7 +365,7 @@ $body-padding: $size-default;
 
 // Fighting design standards specificity
 .usajobs-joa-intro-second-announcement
-.usajobs-joa-intro-second-announcement__link {
+  .usajobs-joa-intro-second-announcement__link {
   text-decoration: none;
 }
 
@@ -357,16 +394,16 @@ $body-padding: $size-default;
 
 .flexbox .usajobs-joa-intro-second-announcement {
   &__item {
-    @include display(flex);
-    @include align-items(top);
+    display: flex;
+    align-items: top;
   }
 
   &__figure {
-    @include flex-shrink(0);
+    flex-shrink: 0;
   }
 
   &__body {
-    @include flex(1);
+    flex: 1;
     min-width: 0;
   }
 }

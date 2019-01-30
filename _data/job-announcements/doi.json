@@ -14,6 +14,16 @@
       "Latitude": 39.3293,
       "AddressLine": "1849 C Street NW",
       "Vacancies": "1"
+    },
+    {
+      "LocationName": "Natchitoches, LA",
+      "CountryCode": "United States",
+      "CountrySubDivisionCode": "Louisiana",
+      "CityName": "Natchitoches",
+      "Longitude": -93.0869845300913,
+      "Latitude": 31.7609549313784,
+      "AddressLine": "",
+      "Vacancies": "1"
     }
   ],
   "PositionLocationWithinArea": false,

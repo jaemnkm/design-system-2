@@ -75,7 +75,7 @@
   }
 
   &__button-text {
-    @include flex(1);
+    flex: 1;
     min-width: 0;
   }
 }

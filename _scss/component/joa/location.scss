@@ -110,16 +110,16 @@
 
 .flexbox .usajobs-joa-locations {
   &__link {
-    @include display(flex);
-    @include align-items(top);
+    display: flex;
+    align-items: top;
   }
 
   &__figure {
-    @include flex-shrink(0);
+    flex-shrink: 0;
   }
 
   &__body {
-    @include flex(1);
+    flex: 1;
     min-width: 0;
   }
 }
@@ -149,5 +149,11 @@
     .fa-info-circle {
       color: $color-primary;
     }
+  }
+}
+
+.usajobs-joa-locations--pilot {
+  &__header {
+    color: $color-primary-darkest;
   }
 }

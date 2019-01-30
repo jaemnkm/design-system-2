@@ -155,7 +155,7 @@
       "GOVT_SecurityClearanceRequired": "None",
       "GOVT_DrugTestRequired": "No",
       "GOVT_PositionSensitivty": "Critical-Sensitive/High Risk",
-      "GOVT_SecurityEvaluationProcess": "Suitability/fitness"
+      "GOVT_TrustDeterminationProcess": "Suitability/fitness"
     },
     "IsRadialSearch": false
   }

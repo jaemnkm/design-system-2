@@ -98,19 +98,19 @@
 }
 
 .flexbox .usajobs-alert {
-  @include display(flex);
-  @include align-items(flex-start);
+  display: flex;
+  align-items: flex-start;
 
   &[aria-hidden="true"] {
     display: none;
   }
 
   &__figure {
-    @include flex-shrink(0);
+    flex-shrink: 0;
   }
 
   &__body {
-    @include flex(1);
+    flex: 1;
     min-width: 0;
   }
 }
