@@ -104,6 +104,16 @@ $body-padding: $size-default;
       @include span-columns(1, 2);
     }
 
+    @include media($M) {
+      @include span-columns(3, 6);
+    }
+
+    @include media($L) {
+      float: none;
+      width: 100%;
+      @include omega-reset(2n);
+    }
+
     &:nth-child(2n) {
       @include media($SM) {
         @include omega();
@@ -223,6 +233,33 @@ $body-padding: $size-default;
 .usajobs-joa--v1-7-intro-hiring-paths {
   &__body {
     padding: 0 0 0 $size-base;
+  }
+}
+
+.usajobs-joa-intro-hiring-paths--pilot {
+  position: relative;
+  background-color: #eff6fb;
+  margin-top: $size-M;
+  padding: $size-M;
+
+  @include media($L) {
+    float: none;
+    width: 100%;
+  }
+
+  &__section-title {
+    font-size: 1.5rem;
+    font-weight: normal;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+  }
+
+  &__icon {
+    margin-right: 0;
+  }
+
+  &__body {
+    padding-left: $size-S;
   }
 }
 
