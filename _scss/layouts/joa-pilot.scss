@@ -5,7 +5,24 @@
 .usajobs-joa-pilot {
   &__shell {
     @include media($M) {
-      margin-top: $size-M;
+      padding-top: $size-M;
+    }
+  }
+
+  &__aside {
+    padding: 0 $size-default;
+
+    @include media($ML) {
+      padding: 0;
+    }
+
+    @include media($L) {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      background-color: $color-gray-lightest;
+      width: 31.76157%; // hard coded value of a 4 col rightrail
     }
   }
 
@@ -14,4 +31,8 @@
       @include hide();
     }
   }
+}
+
+.usajobs-joa-nav--pilot {
+  z-index: 100;
 }

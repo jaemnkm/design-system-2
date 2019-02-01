@@ -7,11 +7,13 @@
 <head>
   {% include prod-head.html %}
   <link rel="stylesheet" href="{{ "/css/usajobs-design-system-joa.css" | prepend: site.baseurl }}">
+  <link rel="stylesheet" href="{{ "/css/usajobs-design-system-joa-pilot.css" | prepend: site.baseurl }}">
 </head>
 
 <body class="{{ page.title | slugify }} usajobs-joa">
-  {{ content }} {% include components/footer-joa.html %} {% include
-  scripts.html %}
+  {{ content }}
+  {% include components/footer/v3/minimal-no-return.html %}
+  {% include scripts.html %}
 </body>
 
 </html>

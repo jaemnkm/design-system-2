@@ -64,10 +64,15 @@
     margin: 0 0 $size-M 0;
     padding: 0;
   }
+
+  &.usajobs-joa-fair-and-transparent {
+    margin-top: $size-XL;
+  }
 }
 
 .usajobs-joa-section--pilot {
   &__header {
+    margin-top: 0;
     color: $color-primary-darkest;
 
     @include media($L) {
@@ -108,6 +113,24 @@
   &__container {
     @include media($M) {
       @include span-columns(3, 6);
+    }
+  }
+}
+
+.usajobs-joa-sub-section--pilot {
+  &__container {
+    @include media($SM) {
+      @include span-columns(1, 2);
+    }
+
+    @include media($M) {
+      @include span-columns(3, 6);
+    }
+
+    @include media($L) {
+      float: none;
+      width: 100%;
+      margin-right: 0;
     }
   }
 }

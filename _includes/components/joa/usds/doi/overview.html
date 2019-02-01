@@ -7,7 +7,7 @@
           Open &amp; closing dates
         </span>
       </h5>
-      <p class="usajobs-joa-summary__value">
+      <p class="usajobs-joa-summary__value usajobs-joa-summary--pilot__value">
         <i class="fa fa-clock-o usajobs-joa-summary__closing-clock--is-warning"></i>
         <span itemprop="datePosted">{{ job.PublicationStartDate }}</span> to <span itemprop="validThrough">{{ job.ApplicationCloseDate }}</span>
       </p>
@@ -50,7 +50,7 @@
           Appointment type
         </span>
       </h5>
-      <p class="usajobs-joa-summary__value">
+      <p class="usajobs-joa-summary__value usajobs-joa-summary--pilot__value">
         {{ job.PositionOfferingType.first.Name }}
         {% if job.PositionOfferingType.first.OverrideText %}
         - {{ job.PositionOfferingType.first.OverrideText }}
@@ -63,7 +63,7 @@
           Work schedule
         </span>
       </h5>
-      <p class="usajobs-joa-summary__value" itemprop="employmentType">
+      <p class="usajobs-joa-summary__value usajobs-joa-summary--pilot__value" itemprop="employmentType">
         {{ job.PositionSchedule.first.Name }}
       </p>
     </li>
@@ -74,7 +74,7 @@
         </span>
       </h5>
       {% for series in job.JobCategory %}
-      <p class="usajobs-joa-summary__value">
+      <p class="usajobs-joa-summary__value usajobs-joa-summary--pilot__value">
         <a href="https://test.usajobs.gov/Search/?j={{ series.Code }}">
           {{ series.Code  }} {{ series.Name }}
         </a>
@@ -87,7 +87,7 @@
           Service
         </span>
       </h5>
-      <p class="usajobs-joa-summary__value">
+      <p class="usajobs-joa-summary__value usajobs-joa-summary--pilot__value">
         Competitive
       </p>
     </li>
@@ -97,7 +97,7 @@
           Promotion potential
         </span>
       </h5>
-      <p class="usajobs-joa-summary__value">
+      <p class="usajobs-joa-summary__value usajobs-joa-summary--pilot__value">
         {{ job.PromotionPotential }}
       </p>
     </li>
@@ -107,7 +107,7 @@
           Supervisory status
         </span>
       </h5>
-      <p class="usajobs-joa-summary__value">
+      <p class="usajobs-joa-summary__value usajobs-joa-summary--pilot__value">
         {% if job.SupervisoryStatus %}
         Yes
         {% else %}
@@ -121,7 +121,7 @@
           Security clearance
         </span>
       </h5>
-      <p class="usajobs-joa-summary__value">
+      <p class="usajobs-joa-summary__value usajobs-joa-summary--pilot__value">
         <a href="https://usajobs.github.io/Help/faq/job-announcement/security-clearances/" target="_blank">
           {{ job.UserArea.Details.GOVT_SecurityClearanceRequired }}
         </a>
@@ -133,7 +133,7 @@
           Drug test
         </span>
       </h5>
-      <p class="usajobs-joa-summary__value">
+      <p class="usajobs-joa-summary__value usajobs-joa-summary--pilot__value">
         {{ job.UserArea.Details.GOVT_DrugTestRequired }}
       </p>
     </li>

@@ -78,6 +78,29 @@
   }
 }
 
+.usajobs-joa-locations--pilot {
+  &__list > &__item {
+    @include media($SM) {
+      @include span-columns(1, 2);
+    }
+
+    @include media($M) {
+      @include span-columns(3, 6);
+    }
+
+    @include media($L) {
+      float: none;
+      width: 100%;
+    }
+
+    &:nth-child(2n) {
+      @include media($SM) {
+        @include omega();
+      }
+    }
+  }
+}
+
 .main-content .usajobs-joa-locations__link {
   text-decoration: none;
 }
@@ -154,7 +177,16 @@
 }
 
 .usajobs-joa-locations--pilot {
+  @include media($L) {
+    padding: 0 $size-default;
+  }
+
   &__header {
     color: $color-primary-darkest;
+
+    @include media($L) {
+      padding-top: $size-base;
+      border-top: 3px solid $color-primary-darkest;
+    }
   }
 }

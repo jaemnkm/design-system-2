@@ -19,10 +19,6 @@ $body-padding: $size-default;
 .usajobs-joa-intro--pilot {
   padding: 0;
 
-  &__aside {
-    padding: 0 $size-default;
-  }
-
   &__container {
     position: relative;
 
@@ -111,7 +107,6 @@ $body-padding: $size-default;
     @include media($L) {
       float: none;
       width: 100%;
-      @include omega-reset(2n);
     }
 
     &:nth-child(2n) {
@@ -238,7 +233,7 @@ $body-padding: $size-default;
 
 .usajobs-joa-intro-hiring-paths--pilot {
   position: relative;
-  background-color: #eff6fb;
+  background-color: #eff6fb; // This is blue-5 in the v2 of the Standards
   margin-top: $size-M;
   padding: $size-M;
 
@@ -358,9 +353,20 @@ $body-padding: $size-default;
 }
 
 .usajobs-joa-overview--pilot {
+  @include media($L) {
+    margin-top: $size-M;
+    padding: 0 $size-default;
+  }
+
   &__header {
     display: inline-block;
     color: $color-primary-darkest;
+
+    @include media($L) {
+      display: block;
+      padding-top: $size-base;
+      border-top: 3px solid $color-primary-darkest;
+    }
   }
 }
 
