@@ -300,6 +300,58 @@
   </div>
 </div>
 <aside class="usajobs-joa-pilot__aside">
+  <div class="usajobs-joa-actions--pilot is-narrow" data-object="joa-actions">
+  <div class="usajobs-joa-actions--pilot__body">
+    <div class="usajobs-joa-actions--pilot__col-apply">
+      <a href="#" class="usa-button-primary usajobs-joa-actions--pilot__apply">Apply</a>
+    </div>
+    <div class="usajobs-joa-actions--pilot__col-sub-actions">
+      <a class="usajobs-joa-actions--pilot__print" href="#print">
+        <i class="fa fa-print"></i> Print
+      </a>
+      <div class="usajobs-joa-actions--pilot__share usajobs-joa-actions-share">
+        <button class="usajobs-joa-actions-share__trigger" id="joa-share" href="#share" data-behavior="joa-actions.toggle-share" aria-haspopup="true">
+          <i class="fas fa-share-alt"></i> Share
+        </button>
+        <ul class="usajobs-joa-actions-share__list" id="joa-share-menu" aria-hidden="true" aria-labeledby="joa-share">
+          <li class="usajobs-joa-actions-share__item usajobs-joa-actions-share--pilot__item">
+            <a href="mailto:?subject=USAJOBS Job Announcement - [job title]&amp;body=Read more about [job title ] at https://www.usajobs.gov/GetJob/ViewDetails/doi" class="usajobs-joa-actions-share__link usajobs-joa-actions-share--pilot__link email"
+              data-behavior="joa-actions.close-share" data-target="#joa-share-menu">
+              <i class="fas fa-envelope-square"></i> <span class="sr-only">Email</span>
+            </a>
+          </li>
+          <li class="usajobs-joa-actions-share__item usajobs-joa-actions-share--pilot__item">
+            <a href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Fwww.usajobs.gov%2FGetJob%2FViewDetails%2Fdoi%2F%3Fshare%3Dfacebook&amp;t=USAJOBS%20-%20Job%20Announcement" class="usajobs-joa-actions-share__link usajobs-joa-actions-share--pilot__link facebook"
+              target="_blank" data-behavior="joa-actions.close-share" data-target="#joa-share-menu">
+              <i class="fab fa-facebook-square"></i> <span class="sr-only">Facebook</span>
+            </a>
+          </li>
+          <li class="usajobs-joa-actions-share__item usajobs-joa-actions-share--pilot__item">
+            <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3A%2F%2Fwww.usajobs.gov%2FGetJob%2FViewDetails%2Fdoi%2F%3Fshare%3Dlinkedin&amp;title=USAJOBS%20-%20Job%20Announcement&amp;ro=false&amp;summary=&amp;source="
+              class="usajobs-joa-actions-share__link usajobs-joa-actions-share--pilot__link linkedin" target="_blank" data-behavior="joa-actions.close-share" data-target="#joa-share-menu">
+              <i class="fab fa-linkedin"></i> <span class="sr-only">LinkedIn</span>
+            </a>
+          </li>
+          <li class="usajobs-joa-actions-share__item usajobs-joa-actions-share--pilot__item">
+            <a href="https://twitter.com/intent/tweet?text=USAJOBS%20-%20Job%20Announcement%20https%3A%2F%2Fwww.usajobs.gov%2FGetJob%2FViewDetails%2Fdoi%2F%3Fshare%3Dtwitter&amp;source=webclient" class="usajobs-joa-actions-share__link usajobs-joa-actions-share--pilot__link twitter"
+              target="_blank" data-behavior="joa-actions.close-share" data-target="#joa-share-menu">
+              <i class="fab fa-twitter-square"></i> <span class="sr-only">Twitter</span>
+            </a>
+          </li>
+          <li class="usajobs-joa-actions-share__item usajobs-joa-actions-share--pilot__item">
+            <a href="#joa-share-menu" data-shorten-url="https://www.usajobs.gov/GetJob/ViewDetails/doi" class="usajobs-joa-actions-share__link usajobs-joa-actions-share--pilot__link link" data-behavior="joa-actions.shorten-link"
+              data-target="#joa-share-menu">
+              <i class="fas fa-link"></i> <span class="sr-only">Shorten link</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <a class="usajobs-joa-actions--pilot__save" href="#save" data-behavior="joa-actions.toggle-save" data-state="is-unsaved">
+        Save
+      </a>
+    </div>
+  </div>
+</div>
   <div class="usajobs-joa-overview--pilot">
   <h3 id="overview" class="usajobs-joa-overview__header usajobs-joa-overview--pilot__header">Overview</h3>
   <ul class="usajobs-joa-summary__list usajobs-joa-summary--pilot__list">
@@ -368,7 +420,7 @@
       </h5>
       
       <p class="usajobs-joa-summary__value usajobs-joa-summary--pilot__value">
-        <a href="https://test.usajobs.gov/Search/?j=2210">
+        <a href="https://www.usajobs.gov/Search/?j=2210">
           2210 Information Technology Management
         </a>
       </p>
@@ -507,8 +559,22 @@
     </div>
   </div>
 </div>
+  <div class="usajobs-joa-actions-numbers--pilot is-narrow">
+  <div class="usajobs-joa-actions-numbers--pilot__container">
+    <h5 class="usajobs-joa-actions-numbers--pilot__header">Announcement number</h5>
+    <p class="usajobs-joa-actions-numbers--pilot__number">
+      NPS-12345678910-DE-OPM
+    </p>
+  </div>
+  <div class="usajobs-joa-actions-numbers--pilot__container">
+    <h5 class="usajobs-joa-actions-numbers--pilot__header">Control number</h5>
+    <p class="usajobs-joa-actions-numbers--pilot__number">
+      475981400
+    </p>
+  </div>
+</div>
 </aside>
-        <main class="usajobs-content-well" id="main-content" role="main" aria-label="Main Job announcement content">
+        <main class="usajobs-content-well usajobs-joa-pilot__content-well" id="main-content" role="main" aria-label="Main Job announcement content">
           <div id="qualifications" class="usajobs-joa-section usajobs-joa-section--pilot" itemprop="qualifications">
   <h2 class="usajobs-joa-section--pilot__header">Qualifications</h2>
   <p>
@@ -555,24 +621,24 @@
   </ul>
   <div id="hiring-paths" class="usajobs-joa-intro-hiring-paths usajobs-joa-intro-hiring-paths--pilot">
   <h3 class="usajobs-joa-intro-hiring-paths__section-title usajobs-joa-intro-hiring-paths--pilot__section-title">This job is open to</h3>
-  <ul class="usajobs-joa-intro-hiring-paths__list">
+  <ul class="usajobs-joa-intro-hiring-paths__list usajobs-joa-intro-hiring-paths--pilot__list">
     
     
-    <li class="usajobs-joa-intro-hiring-paths__item">
+    <li class="usajobs-joa-intro-hiring-paths__item usajobs-joa-intro-hiring-paths--pilot__item">
       <a href="http://usajobs.github.io/Help/working-in-government/unique-hiring-paths/public/" class="usajobs-joa-intro-hiring-paths__link" target="_blank">
         <div class="usajobs-joa-intro-hiring-paths__figure">
-          <div class="usajobs-joa-intro-hiring-paths__icon usajobs-joa-intro-hiring-paths--pilot__icon public">
+          <div class="usajobs-joa-intro-hiring-paths__icon">
             <svg class="usajobs-icon--hiring-path">
               <use xlink:href="#public"></use>
             </svg>
           </div>
         </div>
-        <div class="usajobs-joa-intro-hiring-paths__body usajobs-joa-intro-hiring-paths--pilot__body">
+        <div class="usajobs-joa--v1-7-intro-hiring-paths__body">
           <h4 class="usajobs-joa-intro-hiring-paths__title">
             The public
           </h4>
           <p class="usajobs-joa-intro-hiring-paths__detail">
-            U.S. citizens, nationals or those who owe allegiance to the U.S., and excepted service employees.
+            U.S. citizens, nationals or those who owe allegiance to the U.S.
           </p>
         </div>
       </a>
@@ -680,7 +746,7 @@
     If you are not selected for this position you may be considered for similar positions at this agency within 90 days.
   </p>
 </div>
-          <div id="required-documents" class="usajobs-joa-section usajobs-joa-section--pilot">
+          <div id="required-documents" class="usajobs-joa-section usajobs-joa-section--pilot usajobs-joa-required-documents--pilot">
   <h2 class="usajobs-joa-section--pilot__header">Required Documents</h2>
   <ul class="usa-accordion-bordered">
     <li>
@@ -696,9 +762,61 @@
         </ul>
       </div>
     </li>
+    <li>
+      <button class="usa-accordion-button" aria-expanded="false" aria-controls="required-docs-feds">
+        <svg class="usajobs-icon--hiring-path">
+          <use xlink:href="#federal-employees-competitive"></use>
+        </svg>
+        Current or former federal employee
+      </button>
+      <div id="required-docs-feds" class="usa-accordion-content">
+        <h4>All current or former federal employees:</h4>
+        <ul>
+          <li>SF-50: Notification of Personnel Action</li>
+        </ul>
+
+        <h4>Former federal employees under <a href="https://www.usajobs.gov/Help/working-in-government/unique-hiring-paths/federal-employees/career-transition/" target="_blank">CTAP/ICTAP</a> consideration:</h4>
+        <ul>
+          <li>SF-50: Notification of Personnel Action</li>
+          <li>A copy of the separation letter or RIF notice</li>
+          <li>A copy of a current (or last) performance rating of record</li>
+        </ul>
+      </div>
+    </li>
+    <li>
+      <button class="usa-accordion-button" aria-expanded="false" aria-controls="required-docs-vets">
+        <svg class="usajobs-icon--hiring-path">
+          <use xlink:href="#veterans"></use>
+        </svg>
+        Veterans
+      </button>
+      <div id="required-docs-vets" class="usa-accordion-content">
+        <ul>
+          <li>DD-214: Certificate of Release or Discharge from Active Duty</li>
+          <li>VA Letter</li>
+          <li>SF-15: Application for 10-point Veterans' Preference (Optional)</li>
+          <li>A statement of intent to discharge from your agency (if you are a veteran who has not yet been discharged)</li>
+        </ul>
+      </div>
+    </li>
+    <li>
+      <button class="usa-accordion-button" aria-expanded="false" aria-controls="required-docs-disability">
+        <svg class="usajobs-icon--hiring-path">
+          <use xlink:href="#individuals-with-disabilities"></use>
+        </svg>
+        Individuals with a disability
+      </button>
+      <div id="required-docs-disability" class="usa-accordion-content">
+        <ul>
+          <li>
+            Certified verification of a disability from a licensed medical professional; a licensed vocational District of Columbia agency or U.S. territory that issues or provides disability benefits.
+          </li>
+        </ul>
+      </div>
+    </li>
   </ul>
 </div>
-          <div class="usajobs-joa-actions--pilot" data-object="joa-actions">
+          <div class="usajobs-joa-actions--pilot is-wide" data-object="joa-actions">
   <div class="usajobs-joa-actions--pilot__body">
     <div class="usajobs-joa-actions--pilot__col-apply">
       <a href="#" class="usa-button-primary usajobs-joa-actions--pilot__apply">Apply</a>
@@ -749,19 +867,19 @@
       </a>
     </div>
   </div>
-  <div class="usajobs-joa-actions--pilot__numbers">
-    <div class="usajobs-joa-actions--pilot__number-container">
-      <h5 class="usajobs-joa-actions--pilot__header">Announcement number</h5>
-      <p class="usajobs-joa-actions--pilot__number">
-        NPS-12345678910-DE-OPM
-      </p>
-    </div>
-    <div class="usajobs-joa-actions--pilot__number-container">
-      <h5 class="usajobs-joa-actions--pilot__header">Control number</h5>
-      <p class="usajobs-joa-actions--pilot__number">
-        475981400
-      </p>
-    </div>
+</div>
+          <div class="usajobs-joa-actions-numbers--pilot is-wide">
+  <div class="usajobs-joa-actions-numbers--pilot__container">
+    <h5 class="usajobs-joa-actions-numbers--pilot__header">Announcement number</h5>
+    <p class="usajobs-joa-actions-numbers--pilot__number">
+      NPS-12345678910-DE-OPM
+    </p>
+  </div>
+  <div class="usajobs-joa-actions-numbers--pilot__container">
+    <h5 class="usajobs-joa-actions-numbers--pilot__header">Control number</h5>
+    <p class="usajobs-joa-actions-numbers--pilot__number">
+      475981400
+    </p>
   </div>
 </div>
           <div id="fair-and-transparent" class="usajobs-joa-section usajobs-joa-section--pilot usajobs-joa-fair-and-transparent">
