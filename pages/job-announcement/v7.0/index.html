@@ -15,12 +15,13 @@ control-number: "doi"
     <section class="usajobs-shell usajobs-joa-pilot__shell">
       <div class="usajobs-content-gutter">
         {% include components/joa/usds/doi/intro.html %}
-        <main class="usajobs-content-well" id="main-content" role="main" aria-label="Main Job announcement content">
+        <main class="usajobs-content-well usajobs-joa-pilot__content-well" id="main-content" role="main" aria-label="Main Job announcement content">
           {% include components/joa/usds/doi/qualifications.html %}
           {% include components/joa/usds/doi/where-you-will-work.html %}
           {% include components/joa/usds/doi/how-you-will-be-evaluated.html %}
           {% include components/joa/usds/doi/required-documents.html %}
-          {% include components/joa/usds/doi/actions.html %}
+          {% include components/joa/usds/doi/actions.html variation="wide" %}
+          {% include components/joa/usds/doi/numbers.html variation="wide" %}
           {% include components/joa/usds/doi/fair-and-transparent.html %}
           <p class="usajobs-joa__authenticity-note">
             This job originated on <a href="https://www.usajobs.gov/">www.usajobs.gov</a>. For the full announcement and to apply, visit <a href="https://www.usajobs.gov/GetJob/ViewDetails/{{ page.control-number }}">www.usajobs.gov/GetJob/ViewDetails/{{ page.control-number }}</a>.

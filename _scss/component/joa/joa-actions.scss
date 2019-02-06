@@ -156,93 +156,23 @@
   }
 }
 
-.usajobs-joa-actions--pilot,
-.usajobs-joa-actions--pilot-wide {
-  margin-bottom: $size-M;
+.usajobs-joa-actions--pilot {
+  display: none;
+
+  @include media($L) {
+    display: block;
+  }
 
   &__body {
     @include clearfix();
     width: 100%;
-    padding: $size-default;
-    background-color: $color-gray-lightest;
-    text-align: center;
-
-    @include media($M) {
-      text-align: left;
-    }
-
-    @include media($L) {
-      padding: $size-M;
-    }
   }
 
   &__apply {
+    margin: 0;
     border-radius: 0.25rem;
     font-size: 2rem;
     padding: 1.6rem 2.4rem;
-
-    @include media($SM) {
-      width: 100%;
-      max-width: 28rem;
-    }
-  }
-
-  &__col-apply,
-  &__col-sub-actions {
-    @include media($M) {
-      @include span-columns(3, 6);
-    }
-
-    @include media($L) {
-      @include span-columns(6, 12);
-    }
-  }
-
-  &__col-sub-actions {
-    @include media($M) {
-      float: right;
-      @include omega();
-    }
-
-    @include media($L) {
-      min-width: rem(275px);
-    }
-  }
-
-  &__col-sub-actions,
-  &__numbers {
-    @include row();
-  }
-
-  &__numbers {
-    padding: 0 $size-default;
-
-    @include media($L) {
-      display: none;
-    }
-  }
-
-  &__number-container {
-    @include media($SM) {
-      @include span-columns(1, 2);
-    }
-
-    @include media($M) {
-      @include span-columns(3, 6);
-    }
-
-    @include media($L) {
-      float: none;
-      width: 100%;
-    }
-  }
-
-  &__header {
-    font-weight: normal;
-  }
-
-  & &__number {
-    margin: 0;
   }
 
   &__col-sub-actions &__print,
@@ -253,10 +183,6 @@
     text-align: center;
     color: $color-base;
     text-decoration: none;
-
-    @include media($M) {
-      margin-top: $size-default;
-    }
 
     &:hover {
       text-decoration: none;
@@ -295,8 +221,119 @@
   }
 }
 
-.usajobs-joa-actions--pilot-wide {
+.usajobs-joa-actions--pilot.is-wide {
+  display: block;
   background-color: #eff6fb; // This is blue-5 in the v2 of the Standards
+
+  @include media($L) {
+    margin-bottom: $size-M;
+  }
+
+  .usajobs-joa-actions--pilot__body {
+    padding: $size-default;
+    text-align: center;
+
+    @include media($M) {
+      text-align: left;
+    }
+
+    @include media($L) {
+      padding: $size-M;
+    }
+  }
+
+  .usajobs-joa-actions--pilot__apply {
+    @include media($SM) {
+      width: 100%;
+      max-width: 28rem;
+    }
+  }
+
+  .usajobs-joa-actions--pilot__col-apply,
+  .usajobs-joa-actions--pilot__col-sub-actions {
+    @include media($M) {
+      @include span-columns(3, 6);
+    }
+
+    @include media($L) {
+      @include span-columns(6, 12);
+    }
+  }
+
+  .usajobs-joa-actions--pilot__col-sub-actions {
+    @include media($M) {
+      float: right;
+      @include omega();
+    }
+
+    @include media($XL) {
+      min-width: rem(275px);
+    }
+  }
+
+  .usajobs-joa-actions--pilot__col-sub-actions {
+    @include row();
+  }
+}
+
+.usajobs-joa-actions--pilot.is-narrow {
+  margin-top: $size-M;
+  padding: 0 $size-default;
+
+  @include media($L) {
+    margin-bottom: $size-L;
+  }
+
+  .usajobs-joa-actions--pilot__apply {
+    width: 100%;
+    margin-bottom: $size-base;
+  }
+}
+
+.usajobs-joa-actions-numbers--pilot {
+  padding: 0 $size-default;
+
+  &__header {
+    font-weight: normal;
+  }
+
+  & &__number {
+    margin: 0;
+  }
+}
+
+.usajobs-joa-actions-numbers--pilot.is-wide {
+  @include row();
+
+  @include media($L) {
+    display: none;
+  }
+
+  .usajobs-joa-actions-numbers--pilot__container {
+    @include media($SM) {
+      @include span-columns(1, 2);
+    }
+
+    @include media($M) {
+      @include span-columns(3, 6);
+    }
+
+    @include media($L) {
+      float: none;
+      width: 100%;
+    }
+  }
+}
+
+.usajobs-joa-actions-numbers--pilot.is-narrow {
+  .usajobs-joa-actions-numbers--pilot__header,
+  .usajobs-joa-actions-numbers--pilot__number {
+    font-size: $small-font-size;
+  }
+
+  .usajobs-joa-actions-numbers--pilot__header {
+    margin-bottom: 0;
+  }
 }
 
 .usajobs-joa-actions-share {

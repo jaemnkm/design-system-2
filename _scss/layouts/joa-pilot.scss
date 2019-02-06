@@ -9,6 +9,12 @@
     }
   }
 
+  &__content-well {
+    @include media($L) {
+      @include span-columns(7, 12);
+    }
+  }
+
   &__aside {
     padding: 0 $size-default;
 

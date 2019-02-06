@@ -23,7 +23,7 @@ $body-padding: $size-default;
     position: relative;
 
     @include media($L) {
-      @include span-columns(8, 12);
+      @include span-columns(7, 12);
     }
   }
 }
@@ -247,6 +247,20 @@ $body-padding: $size-default;
     font-weight: normal;
     letter-spacing: 0.3em;
     text-transform: uppercase;
+  }
+
+  &__list {
+    @include row();
+  }
+
+  &__list > &__item {
+    @include media($M) {
+      @include span-columns(3, 6);
+
+      &:nth-child(2n) {
+        @include omega();
+      }
+    }
   }
 
   &__icon {
