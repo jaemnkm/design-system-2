@@ -1,6 +1,6 @@
 // Modal
 
-@import '../base-shared';
+@import "../base-shared";
 
 $modal-width-medium: 600px;
 $modal-width-large: 930px;
@@ -8,8 +8,7 @@ $modal-width-large: 930px;
 .usajobs-modal {
   opacity: 0;
   visibility: hidden;
-  transition: transform $duration-fast linear,
-                opacity $duration-fast linear;
+  transition: transform $duration-fast linear, opacity $duration-fast linear;
   overflow: hidden;
   position: fixed;
   top: 0;
@@ -66,7 +65,7 @@ $modal-width-large: 930px;
   &__content {
     position: relative;
     background-color: $color-white;
-    border: 1px solid rgba(70, 70, 70, .14);
+    border: 1px solid rgba(70, 70, 70, 0.14);
     border-radius: $size-base;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.29);
     background-clip: padding-box;
@@ -130,40 +129,11 @@ $modal-width-large: 930px;
     .usajobs-alert {
       margin-top: 0;
       margin-bottom: 0;
-      border: 0;
       border-bottom-left-radius: 0;
     }
-
-    .usajobs-alert__body {
-      padding: $size-default $size-S;
-
-      @include media($ML) {
-        padding: $size-default $size-M;
-      }
-    }
   }
-}
 
-.usajobs-modal--error {
-  .usajobs-modal__header {
-    border-bottom: 1px solid $color-secondary-dark;
-  }
-}
-
-.usajobs-modal--info {
-  .usajobs-modal__header {
-    border-bottom: 1px solid $color-primary-darker;
-  }
-}
-
-.usajobs-modal--success {
-  .usajobs-modal__header {
-    border-bottom: 1px solid $color-green-dark;
-  }
-}
-
-.usajobs-modal--warning {
-  .usajobs-modal__header {
-    border-bottom: 1px solid $color-gold;
+  .usajobs-modal__title {
+    color: $color-black;
   }
 }
