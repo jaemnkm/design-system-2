@@ -331,6 +331,12 @@
 }
 
 .usajobs-joa-actions-numbers--pilot.is-narrow {
+  display: none;
+
+  @include media($L) {
+    display: block;
+  }
+
   .usajobs-joa-actions-numbers--pilot__header,
   .usajobs-joa-actions-numbers--pilot__number {
     font-size: $small-font-size;

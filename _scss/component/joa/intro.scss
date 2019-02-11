@@ -373,7 +373,7 @@ $body-padding: $size-default;
   }
 
   &__header {
-    display: inline-block;
+    display: none;
     color: $color-primary-darkest;
 
     @include media($L) {

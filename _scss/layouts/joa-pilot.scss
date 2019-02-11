@@ -5,6 +5,10 @@
 .usajobs-joa-pilot {
   &__shell {
     @include media($M) {
+      padding-top: $size-SM;
+    }
+
+    @include media($L) {
       padding-top: $size-M;
     }
   }

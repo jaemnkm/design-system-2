@@ -57,8 +57,13 @@
   }
 }
 
-.usajobs-joa-banner--v1-8 {
+.usajobs-joa-banner--pilot {
+  margin-bottom: $size-SM;
   background-color: $color-primary-darkest;
+
+  @include media($M) {
+    margin-bottom: 0;
+  }
 
   &__body {
     @include media($ML) {
