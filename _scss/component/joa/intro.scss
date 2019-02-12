@@ -464,3 +464,45 @@ $body-padding: $size-default;
     min-width: 0;
   }
 }
+
+// New Help section in JOA pilot
+.usajobs-joa-help {
+  display: block;
+  margin: $size-S 0;
+  padding: $size-default $size-default $size-default 0;
+
+  @include media($L) {
+    margin: $size-M 0;
+    padding: $size-default;
+  }
+
+  &__link {
+    @include permaLink();
+    text-decoration: none;
+  }
+
+  &__figure {
+    font-size: $h3-font-size;
+    margin-right: $size-base;
+  }
+
+  &__body {
+    text-decoration: underline;
+  }
+}
+
+.flexbox .usajobs-joa-help {
+  &__link {
+    display: flex;
+    align-items: center;
+  }
+
+  &__figure {
+    flex-shrink: 0;
+  }
+
+  &__body {
+    flex: 1;
+    min-width: 0;
+  }
+}
