@@ -539,6 +539,16 @@
     </div>
   </div>
 </div>
+  <div class="usajobs-joa-help">
+  <a href="https://www.usajobs.gov/Help/how-to/job-announcement/" class="usajobs-joa-help__link">
+    <span class="usajobs-joa-help__figure">
+      <span class="fas fa-question-circle"></span>
+    </span>
+    <span class="usajobs-joa-help__body">
+      Get help understanding job announcements
+    </span>
+  </a>
+</div>
   <div class="usajobs-joa-actions-numbers--pilot is-narrow">
   <div class="usajobs-joa-actions-numbers--pilot__container">
     <h5 class="usajobs-joa-actions-numbers--pilot__header">Announcement number</h5>
@@ -739,7 +749,8 @@
   </p>
   <h4>Ranking and preference </h4>
   <p>
-    Qualified candidates will then be evaluated and preference will be applied.
+    Qualified candidates will then be <a href="#evaluation-modal-trigger" class="usajobs-joa-section--pilot__modal-trigger" href="#evaluation-modal-trigger" data-object-trigger="modal" data-target="#evaluation-modal">evaluated and preference</a>
+    will be applied.
   </p>
   <h4>Future consideration</h4>
   <p>
@@ -955,23 +966,18 @@
           This position works in the Business Requirements and Systems Division at the Office of the Comptroller, Washington DC. The division supports other offices under the Comptroller in the formulation, analysis, and execution of the National Park Service budget.
         </p>
         
-        <p>
-          See our <a href="https://s3.amazonaws.com/files.consumerfinance.gov/f/documents/201706_cfpb_Tips_Navigating-Job-Announcements-on-USAJobs.pdf" target="_blank">application process tips</a> and <a href="https://s3.amazonaws.com/files.consumerfinance.gov/f/documents/20170615_cfpb_Apply_checklist.pdf" target="_blank">printable checklist</a> to make sure you complete each step of the application.
-        </p>
-
         <div class="usajobs-joa-agency-modal__contact-info">
           <div id="agencycontact" class="usajobs-joa-agency--v1-5" itemprop="hiringOrganization">
   <h3 class="usajobs-joa-agency--v1-5__contact-info">Agency contact information</h3>
   <h3 class="usajobs-joa-agency--v1-5__contact-name">
     <span class="fa fa-user"></span>
-    Applicant Call Center
+    Kim Brown
   </h3>
-
   <div>
     <div class="usajobs-joa-sub-section__container">
       <h5 class="usajobs-sub-section__small-title">Phone</h5>
       <p class="usajobs-joa-sub-section__text">
-        <a href="tel:1-304-480-7300">304-480-7300</a>
+        <a href="tel://202-619-7235">202-619-7235</a>
       </p>
       <h5 class="usajobs-sub-section__small-title">TDD</h5>
       <p class="usajobs-joa-sub-section__text">
@@ -980,8 +986,8 @@
 
       <h5 class="usajobs-sub-section__small-title">Email</h5>
       <p class="usajobs-joa-sub-section__text">
-        <a href="mailto:cfpbinquiries@bpd.treas.gov">
-          cfpbinquiries@bpd.treas.gov
+        <a href="mailto:kim_d_brown@nps.gov">
+          kim_d_brown@nps.gov
         </a>
       </p>
     </div>
@@ -989,9 +995,12 @@
       <h5 class="usajobs-sub-section__small-title">Address</h5>
       <p class="usajobs-joa-sub-section__text">
         <address>
-          Consumer Financial Protection Bureau<br>
-          PO Box 1328<br>
-          Parkersburg, WV 26106-1328<br>
+          Cultural Resource Business Office<br>
+          1849 C Street NW<br>
+          DC,
+          WA
+          20240<br>
+          US
         </address>
       </p>
     </div>
@@ -1000,7 +1009,6 @@
     Learn more about this agency
   </a>
 </div>
-
         </div>
       </div>
 
@@ -1016,14 +1024,46 @@
       </div>
       
       <div class="usajobs-modal__actions">
-        <button class="usajobs-modal__close" data-behavior="modal.close" >
+        <button class="usajobs-modal__close" data-behavior="modal.close">
           <span class="usajobs-assistive-text">Close</span>
         </button>
       </div>
     </div>
   </div>
 </div>
-
+<div class="usajobs-modal usajobs-joa-evaluation-modal" data-object="modal" data-state="is-closed" id="evaluation-modal" aria-hidden="true" role="dialog" aria-labelledby="agency-modal-heading" aria-describedby="agency-modal-description">
+  <div class="usajobs-modal__dialog">
+    <div class="usajobs-modal__content">
+      <div id="agency-modal-description" class="usajobs-assistive-text">
+        Beginning of a dialog window for details on how you will be evaluated for this job. It begins with a heading 2 called &quot;Evaluation and preference&quot;. Escape will cancel and close the window.
+      </div>
+      <div class="usajobs-modal__header">
+        <h2 id="usajobs-modal-heading" class="usajobs-modal__title">
+          Evaluation and preference
+        </h2>
+      </div>
+      <div class="usajobs-modal__body">
+        <h3>Category rating</h3>
+        <p>
+          Qualified candidates will be assigned to one of the following quality categories:
+        </p>
+        <p>
+          <strong>Highly Qualified</strong>: Candidates in this category possess good skills and experience above the minimum requirements for the announced position.
+        </p>
+        <p>
+          <strong>Qualified</strong>: Candidates in this category meet the minimum experience requirements for the announced position.
+        </p>
+        <h3>Veterans' Preference</h3>
+        <p>Veteran preference eligibles are listed ahead of non-preference eligibles within each quality category. Based upon your category and score, you may be referred to the selecting official. </p>
+      </div>
+      <div class="usajobs-modal__actions">
+        <button class="usajobs-modal__close" data-behavior="modal.close">
+          <span class="usajobs-assistive-text">Close</span>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
 <svg xmlns="http://www.w3.org/2000/svg" style="display:none;">
     <symbol viewBox="0 0 46 46" id="family-of-overseas-employees">
         <title>family-of-overseas-employees</title>
