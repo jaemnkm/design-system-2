@@ -2,7 +2,7 @@
   <h2 class="usajobs-joa-section--pilot__header">Responsibilities</h2>
   <div itemprop="description">
     <ul class="usajobs-list-bullets">
-      {% for duty in job.UserArea.Details.MajorDuties %}
+      {% for duty in job.UserArea.Details.MajorDutiesList %}
       <li>{{ duty }}</li>
       {% endfor %}
     </ul>

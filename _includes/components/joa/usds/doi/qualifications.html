@@ -1,46 +1,13 @@
 <div id="qualifications" class="usajobs-joa-section usajobs-joa-section--pilot" itemprop="qualifications">
   <h2 class="usajobs-joa-section--pilot__header">Qualifications</h2>
   <p>
-    Your qualifications will be evaluated on the following competencies, with product delivery and product design carrying the most weight. All of these qualifications must be reflected in your resume.
+    {{ job.QualificationSummary }}
   </p>
   <ul class="usajobs-list-bullets">
-    <li>
-      <strong>Product Delivery:</strong> Regardless of environmental challenges, ships products and drives teams to deliver on key milestones. Gets Minimum Viable Products out the door without waiting for the perfect technical implementation or
-      inclusion of every feature. Leadership experience shipping multiple products across multiple organizations. Has made decisions about what gets shipped and how.
-    </li>
-    <li>
-      <strong>Product Design:</strong> Designs and launches software products and features focused on user needs, scoped to Minimum Viable Products, and with clear criteria for success. Understands the technical stack of a product and how it can
-      impact product design and project schedules.
-    </li>
-    <li>
-      <strong>Administration and Management</strong>: Knowledge of planning, coordination, and execution of business functions, resource allocation, and production.
-    </li>
-    <li>
-      <strong>Analytical Ability</strong>: Approaches problems quantitatively and displays critical thinking and problem-solving abilities. Breaks down complex problems into component parts. Defines and tracks key metrics to make data-driven
-      decisions.
-    </li>
-    <li>
-      <strong>Oral Communication</strong>: Expresses information to individuals or groups effectively, taking into account the audience and nature of the information (for example, technical, sensitive, controversial); makes clear and convincing oral
-      presentations;
-      listens to others, attends to nonverbal cues, and responds appropriately.
-    </li>
-    <li>
-      <strong>Stakeholder Engagement</strong>: Cultivates relationships with key internal and external stakeholders. Has superior negotiation skills that enable successful communication and cooperation across all levels of an organization.
-    </li>
-    <li>
-      <strong>Technical Communication</strong>: Explains technical concepts to both technical and non-technical audiences. Able to frame technical choices to decision makers and justify engineering needs against business priorities.
-    </li>
-    <li>
-      <strong>Writing</strong>: Recognizes or uses correct English grammar, punctuation, and spelling; communicates information (for example, facts, ideas, or messages) in a succinct and organized manner; produces written information, which may
-      include technical material, that is appropriate for the intended audience.
-    </li>
+    {% for competency in job.UserArea.Details.KeyRequirements %}
+    <li>{{ competency }}</li>
+    {% endfor %}
   </ul>
-  <p>
-    Competitive applicants for GS 13 positions often have at least:
-  </p>
-  <ul>
-    <li>5 years of experience</li>
-    <li>A bachelor's degree</li>
-  </ul>
+  {{ job.UserArea.Details.OtherInformation }}
   {% include components/joa/usds/doi/this-job-is-open-to.html %}
 </div>

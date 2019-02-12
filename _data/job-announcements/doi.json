@@ -29,7 +29,8 @@
   "PositionLocationWithinArea": false,
   "ApplicationClosingType": "closing-date",
   "OrganizationName": "National Park Service",
-  "OrganizationDetails": "This position works in the Business Requirements and Systems Division at the Office of the Comptroller, Washington DC. The division supports other offices under the Comptroller in the formulation, analysis, and execution of the National Park Service budget.",
+  "AgencyMarketingStatement": "This position works in the Business Requirements and Systems Division at the Office of the Comptroller, Washington DC. The division supports other offices under the Comptroller in the formulation, analysis, and execution of the National Park Service budget.",
+  "AgencyMarketingURL": "https://www.nps.gov/aboutus/nps-careers.htm",
   "OrganizationURL": "https://www.nps.gov/aboutus/nps-careers.htm",
   "DepartmentName": "Department of the Interior",
   "JobCategory": [
@@ -62,7 +63,7 @@
       "Code": ""
     }
   ],
-  "QualificationSummary": "",
+  "QualificationSummary": "Your qualifications will be evaluated on the following competencies, with product delivery and product design carrying the most weight. All of these qualifications must be reflected in your resume.",
   "PositionRemuneration": [
     {
       "MinimumRange": "96,970",
@@ -78,7 +79,7 @@
   "ApplicationCloseDate": "03/29/19",
   "UserArea": {
     "Details": {
-      "MajorDuties": [
+      "MajorDutiesList": [
         "Collaborate with managers, stakeholders, and end-users to gather business requirements.",
         "Analyze business needs, devise solutions, make recommendations and gain acceptance of recommendations from stakeholders.",
         "Support software engineers implementing new requirements.",
@@ -86,11 +87,23 @@
         "Troubleshoot and resolve problems reported by users, analysts, and programmers which include application interfaces, application performance, data quality and security.",
         "Interact with and support a large set of systems built with a wide variety of tools, technologies, and protocols including ColdFusion, HTML, JavaScript, XML, SOAP, SQL as well as Oracle Databases."
       ],
+      "KeyRequirements": [
+        "<strong>Product Delivery:</strong> Regardless of environmental challenges, ships products and drives teams to deliver on key milestones. Gets Minimum Viable Products out the door without waiting for the perfect technical implementation or inclusion of every feature. Leadership experience shipping multiple products across multiple organizations. Has made decisions about what gets shipped and how.",
+        "<strong>Product Design:</strong> Designs and launches software products and features focused on user needs, scoped to Minimum Viable Products, and with clear criteria for success. Understands the technical stack of a product and how it can impact product design and project schedules.",
+        "<strong>Administration and Management</strong>: Knowledge of planning, coordination, and execution of business functions, resource allocation, and production.",
+        "<strong>Analytical Ability</strong>: Approaches problems quantitatively and displays critical thinking and problem-solving abilities. Breaks down complex problems into component parts. Defines and tracks key metrics to make data-driven decisions.",
+        "<strong>Oral Communication</strong>: Expresses information to individuals or groups effectively, taking into account the audience and nature of the information (for example, technical, sensitive, controversial); makes clear and convincing oral presentations; listens to others, attends to nonverbal cues, and responds appropriately.",
+        "<strong>Stakeholder Engagement</strong>: Cultivates relationships with key internal and external stakeholders. Has superior negotiation skills that enable successful communication and cooperation across all levels of an organization.",
+        "<strong>Technical Communication</strong>: Explains technical concepts to both technical and non-technical audiences. Able to frame technical choices to decision makers and justify engineering needs against business priorities.",
+        "<strong>Writing</strong>: Recognizes or uses correct English grammar, punctuation, and spelling; communicates information (for example, facts, ideas, or messages) in a succinct and organized manner; produces written information, which may include technical material, that is appropriate for the intended audience."
+      ],
+      "ServiceType": "01",
       "HowToApply": "",
       "WhatToExpectNext": "",
       "RequiredDocuments": "",
       "Benefits": "",
-      "OtherInformation": "",
+      "BenefitsURL": "https://home.nps.gov/aboutus/benefits.htm",
+      "OtherInformation": "<p>Competitive applicants for GS 13 positions often have at least:</p><ul><li>5 years of experience</li><li>A bachelor's degree</li></ul>",
       "ConditionsOfEmployment": [
         "Successfully complete a background investigation.",
         "Go through a Personal Identity Verification (PIV) process that requires two forms of identification from the <a href=\"https://www.uscis.gov/sites/default/files/files/form/i-9.pdf\" target=\"_blank\">Form I-9</a>. Federal law requires we verify the identity and employment eligibility of all new hires in the U.S.",
@@ -106,6 +119,23 @@
       "GOVT_BackgroundCheck": "Public Trust",
       "GOVT_SecurityClearanceRequired": "None",
       "GOVT_DrugTestRequired": "No"
+    }
+  },
+  "PostingRequestor": {
+    "PersonContact": {
+      "FormattedName": "Kim Brown",
+      "DialNumber": "202-619-7235",
+      "Email": "kim_d_brown@nps.gov"
+    },
+    "ExternalContact": {
+      "OrgName": "Cultural Resource Business Office",
+      "Address": {
+        "Street1": "1849 C Street NW",
+        "City": "Washington",
+        "State": "DC",
+        "PostalCode": "20240",
+        "CountryCode": "US"
+      }
     }
   }
 }

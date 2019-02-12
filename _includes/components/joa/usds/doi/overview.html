@@ -88,7 +88,11 @@
         </span>
       </h5>
       <p class="usajobs-joa-summary__value usajobs-joa-summary--pilot__value">
+        {% if job.UserArea.Details.ServiceType == "01" %}
         Competitive
+        {% elsif job.UserArea.Details.ServiceType == "02" %}
+        Excepted
+        {% endif %}
       </p>
     </li>
     <li class="usajobs-joa-summary__item usajobs-joa-summary--pilot__item">

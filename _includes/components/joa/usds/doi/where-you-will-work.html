@@ -1,12 +1,11 @@
 <div id="where-you-will-work" class="usajobs-joa-section usajobs-joa-section--pilot">
   <h2 class="usajobs-joa-section--pilot__header">Where you'll work</h2>
   <p>
-    This position works in the Business Requirements and Systems Division at the Office of the Comptroller, Washington DC. The division supports other offices under the Comptroller in the formulation, analysis, and execution of the National Park
-    Service budget.
+    {{ job.AgencyMarketingStatement }}
   </p>
   <p>
-    <a href="https://www.nps.gov/aboutus/nps-careers.htm">
-      Learn more about careers at NPS.
+    <a href="{{ job.AgencyMarketingURL }}">
+      Learn more about careers at the {{ job.OrganizationName }}
     </a>
   </p>
   <ul class="usa-accordion-bordered">
@@ -26,8 +25,8 @@
             </a>
           </li>
           <li>
-            <a href="https://home.nps.gov/aboutus/benefits.htm" target="_blank">
-              Learn more about benefits at NPS
+            <a href="{{ job.UserArea.Details.BenefitsURL }}" target="_blank">
+              Learn more about benefits at the {{ job.OrganizationName }}
             </a>
           </li>
         </ul>
@@ -39,32 +38,35 @@
       <div id="contact-agency" class="usa-accordion-content">
         <div class="usajobs-joa-agency--pilot">
           <h3 class="usajobs-joa-agency--pilot__contact-name">
-            Kim Brown
+            {{ job.PostingRequestor.PersonContact.FormattedName }}
           </h3>
           <div>
             <div class="usajobs-joa-sub-section__container">
               <h5 class="usajobs-sub-section__small-title">Phone</h5>
               <p class="usajobs-joa-sub-section__text">
-                <a href="tel://202-619-7235">202-619-7235</a>
+                <a href="tel://{{ job.PostingRequestor.PersonContact.DialNumber }}">
+                  {{ job.PostingRequestor.PersonContact.DialNumber }}
+                </a>
               </p>
               <h5 class="usajobs-sub-section__small-title">Email</h5>
               <p class="usajobs-joa-sub-section__text">
-                <a href="mailto:kim_d_brown@nps.gov">
-                  kim_d_brown@nps.gov
+                <a href="mailto:{{ job.PostingRequestor.PersonContact.Email }}">
+                  {{ job.PostingRequestor.PersonContact.Email }}
                 </a>
               </p>
             </div>
             <div class="usajobs-joa-sub-section__container">
               <h5 class="usajobs-sub-section__small-title">Address</h5>
               <p class="usajobs-joa-sub-section__text">
-              </p><address>
-                Cultural Resource Business Office<br>
-                1849 C Street NW<br>
-                DC,
-                WA
-                20240<br>
-                US
-              </address>
+                <address>
+                  {{ job.PostingRequestor.ExternalContact.OrgName }}<br>
+                  {{ job.PostingRequestor.ExternalContact.Address.Street1 }}<br>
+                  {{ job.PostingRequestor.ExternalContact.Address.City}},
+                  {{ job.PostingRequestor.ExternalContact.Address.State }}<br>
+                  {{ job.PostingRequestor.ExternalContact.Address.PostalCode}}<br>
+                  {{ job.PostingRequestor.ExternalContact.Address.CountryCode}}
+                </address>
+              </p>
             </div>
           </div>
         </div>
