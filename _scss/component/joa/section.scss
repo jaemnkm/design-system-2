@@ -65,6 +65,10 @@
     padding: 0;
   }
 
+  .usajobs-joa-section-warning--top {
+    margin: 0 0 $size-default 0;
+  }
+
   &.usajobs-joa-fair-and-transparent {
     margin-top: $size-XL;
   }
@@ -80,6 +84,14 @@
         margin-top: 0;
       }
     }
+  }
+
+  &__warning {
+    margin: $size-S 0 $size-default;
+  }
+
+  .usa-accordion-button {
+    min-height: 6rem;
   }
 }
 
