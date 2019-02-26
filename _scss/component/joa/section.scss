@@ -67,6 +67,10 @@
 
   .usajobs-joa-section-warning--top {
     margin: 0 0 $size-default 0;
+
+    &.is-slim.usa-alert-warning {
+      background-position: 2rem center;
+    }
   }
 
   &.usajobs-joa-fair-and-transparent {
