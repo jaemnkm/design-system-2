@@ -72,8 +72,9 @@
   }
 
   &__agency {
-    display: inline-block;
+    display: block;
     margin: 0;
+    padding: $size-base 0;
     text-transform: initial;
   }
 

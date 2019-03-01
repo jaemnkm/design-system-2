@@ -2,7 +2,6 @@
 
 var $nav_secondary = $('[data-object="nav-secondary"]'),
   $fixed_nav = $(".is-fixed-nav"),
-  $nav_inpage = $('[data-behavior="nav-inpage"]'),
   // The majority of this function is used courtesty of
   // Brad Frost's responsive design patterns:
   // https://bradfrost.github.io/this-is-responsive/patterns.html
@@ -72,22 +71,6 @@ var $nav_secondary = $('[data-object="nav-secondary"]'),
 // Toggle Secondary Nav items on load
 if ($nav_secondary !== undefined && $nav_secondary.length > 0) {
   navSecondaryToggleMenuItems();
-}
-
-// NOTE: This block is only for a usability test on 2/27
-if ($nav_inpage !== undefined && $nav_inpage.length > 0) {
-  // This is a hardcoded behavior that just mimics
-  // clicking on a secondary nav item
-  $nav_inpage.on("click", function(event) {
-    var $el = $(this),
-      $object = $(document).find('[data-object="nav-secondary"]'),
-      $nav_link = $object.find('[href="' + $el.attr("href") + '"]');
-
-    event.preventDefault();
-    $el.blur(); // Removes focus
-
-    $nav_link.trigger("click");
-  });
 }
 
 // Toggle Secondary Nav items on resize

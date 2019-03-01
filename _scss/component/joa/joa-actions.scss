@@ -223,6 +223,7 @@
 
 .usajobs-joa-actions--pilot.is-wide {
   display: block;
+  margin-top: $size-L;
   background-color: #eff6fb; // This is blue-5 in the v2 of the Standards
 
   @include media($L) {

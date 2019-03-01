@@ -65,6 +65,18 @@
     padding: 0;
   }
 
+  .usajobs-joa-section-warning {
+    margin: $size-S 0 $size-default;
+
+    &.is-slim.usa-alert-warning {
+      background-position: 2rem center;
+    }
+
+    &__body {
+      font-weight: bold;
+    }
+  }
+
   .usajobs-joa-section-warning--top {
     margin: 0 0 $size-default 0;
 
@@ -89,11 +101,9 @@
       }
     }
   }
+}
 
-  &__warning {
-    margin: $size-S 0 $size-default;
-  }
-
+.usajobs-joa-required-documents--pilot {
   .usa-accordion-button {
     min-height: 6rem;
   }
