@@ -3,7 +3,7 @@
   <p>
     {{ job.QualificationSummary }}
   </p>
-  <ul class="usajobs-list-bullets">
+  <ul>
     {% for competency in job.UserArea.Details.KeyRequirements %}
     <li>{{ competency }}</li>
     {% endfor %}
