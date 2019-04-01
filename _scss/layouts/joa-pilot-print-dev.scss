@@ -1,0 +1,214 @@
+// JOA Print styles
+
+@import "../base-shared";
+
+.usajobs-joa {
+  // Go small so it can possibly fit within 5 pages.
+  // Plus, this size looks sharpest once printed out.
+  font-size: rem(13);
+
+  // Hide a bunch of things that are not needed on a print out
+  .usajobs-nav,
+  .usajobs-nav-secondary,
+  .usajobs-site-header,
+  .usajobs-joa-header,
+  .usajobs-joa-prev-next,
+  .usajobs-joa-actions__col-apply,
+  .usajobs-joa-actions__col-sub-actions,
+  .usa-footer,
+  .usajobs-joa__authenticity-note {
+    display: none;
+  }
+
+  // Open up all of the drawers
+  .usa-accordion-button {
+    background-image: inherit;
+    background-color: $color-white;
+    padding-left: 0;
+  }
+
+  .usa-accordion-bordered .usa-accordion-content,
+  .usa-accordion-content[aria-hidden="true"] {
+    display: block !important;
+    border: 0px;
+    box-shadow: inherit;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  // Align the intro section into 3 columns
+  .usajobs-joa-intro__summary {
+    @include span-columns(4, 12);
+  }
+
+  .usajobs-joa-intro__details-container {
+    @include span-columns(8, 12);
+  }
+
+  .usajobs-joa-intro__details {
+    @include span-columns(6, 12);
+  }
+
+  // Wratchet down font-sizes
+  .usajobs-joa-intro__title {
+    @include h3();
+  }
+
+  .usajobs-joa-intro__agency {
+    @include h4();
+  }
+
+  .usajobs-joa-intro__employment-type {
+    font-size: rem(13);
+  }
+
+  .usajobs-joa-intro__location {
+    font-size: rem(13);
+  }
+
+  .usajobs-joa-accordion-title {
+    @include h4();
+  }
+
+  .usajobs-joa-intro__location,
+  .usajobs-joa-intro__label {
+    font-size: $small-font-size;
+    margin-top: 0.8rem;
+  }
+
+  .usajobs-content-well,
+  .usajobs-rightrail {
+    margin: 0;
+
+    .img-responsive {
+      display: none;
+    }
+
+    .row {
+      @include clearfix();
+    }
+
+    h3 {
+      font-size: $h5-font-size;
+      margin: $size-S 0 $size-base;
+
+      & + p {
+        margin-top: 0;
+      }
+    }
+
+    h4 {
+      @include h5();
+      margin: 0;
+    }
+
+    ul {
+      margin-bottom: $size-XS;
+
+      li {
+        line-height: 1.2;
+      }
+    }
+
+    p {
+      font-size: rem(13);
+      line-height: 1.2;
+    }
+
+    br {
+      display: block;
+      margin: 0;
+      line-height: 1;
+    }
+
+    p + br + p {
+      margin-top: 0;
+    }
+
+    a:after {
+      display: block;
+      content: " (" attr(href) ") ";
+      font-size: rem(11);
+      font-weight: normal;
+    }
+
+    // Make the this job is open to full width.
+    .usajobs-joa-intro-hiring-paths--pilot__list
+      > .usajobs-joa-intro-hiring-paths--pilot__item {
+      float: none;
+      width: 100%;
+    }
+  }
+
+  // Split the agency card into 2 columns
+  .usajobs-joa-agency__details,
+  .usajobs-joa-agency__address {
+    margin-bottom: $size-default;
+    @include span-columns(6, 12);
+  }
+
+  .usajobs-joa-agency__address {
+    @include omega();
+  }
+
+  .usajobs-joa-agency {
+    margin-top: $size-S;
+  }
+
+  #jobinfo1,
+  #jobinfo2,
+  #jobsummary,
+  .noUSAJobsCSS,
+  .content {
+    @include span-columns(12);
+    margin-right: 0;
+
+    p:first-child {
+      margin-top: 0;
+    }
+  }
+
+  #jobinfo1 {
+    margin-bottom: $size-S;
+  }
+}
+
+.usajobs-joa--v1-5__shell {
+  .usajobs-joa--v1-5__accordion-trigger,
+  .usajobs-joa-occupations__similar-jobs {
+    display: none;
+  }
+
+  [data-object="reveal-more"][data-readmore][aria-expanded="false"] {
+    display: block !important;
+  }
+
+  .usajobs-joa-overview,
+  .usajobs-joa-locations--v1-5,
+  .usajobs-joa-section {
+    margin: 0;
+    padding: 0;
+    box-shadow: none;
+
+    &__cta,
+    &__help {
+      display: none;
+    }
+
+    &__header {
+      @include h3();
+    }
+  }
+
+  .usajobs-joa-occupations {
+    padding: 0;
+    background-color: $color-white;
+
+    &__title {
+      color: $color-base;
+    }
+    &__series {
+      color: $color-primary;
+    }
+  }
+}
