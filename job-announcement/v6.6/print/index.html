@@ -1,8 +1,11 @@
 <!DOCTYPE html>
 <!--[if lt IE 9]><html class="lt-ie9"><![endif]-->
-<!--[if gt IE 8]><!--><html lang="en"><!--<![endif]-->
-  <head>
-    <!-- Basic Page Needs
+<!--[if gt IE 8]><!-->
+<html lang="en">
+<!--<![endif]-->
+
+<head>
+  <!-- Basic Page Needs
 ================================================== -->
 <meta charset="utf-8" /> <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
@@ -32,12 +35,12 @@
 <link
   rel="shortcut icon"
   type="image/ico"
-  href="/design-system/img/favicons/favicon.ico"
+  href="/img/favicons/favicon.ico"
 />
 <link
   rel="icon"
   type="image/png"
-  href="/design-system/img/favicons/favicon.png"
+  href="/img/favicons/favicon.png"
 />
 
 <!-- 192x192, as recommended for Android
@@ -47,46 +50,46 @@
   rel="icon"
   type="image/png"
   sizes="192x192"
-  href="/design-system/img/favicons/favicon-192.png"
+  href="/img/favicons/favicon-192.png"
 />
 
 <!-- 57x57 (precomposed) for iPhone 3GS, pre-2011 iPod Touch and older Android devices -->
 <link
   rel="apple-touch-icon-precomposed"
-  href="/design-system/img/favicons/favicon-57.png"
+  href="/img/favicons/favicon-57.png"
 />
 <!-- 72x72 (precomposed) for 1st generation iPad, iPad 2 and iPad mini -->
 <link
   rel="apple-touch-icon-precomposed"
   sizes="72x72"
-  href="/design-system/img/favicons/favicon-72.png"
+  href="/img/favicons/favicon-72.png"
 />
 <!-- 114x114 (precomposed) for iPhone 4, 4S, 5 and post-2011 iPod Touch -->
 <link
   rel="apple-touch-icon-precomposed"
   sizes="114x114"
-  href="/design-system/img/favicons/favicon-114.png"
+  href="/img/favicons/favicon-114.png"
 />
 <!-- 144x144 (precomposed) for iPad 3rd and 4th generation -->
 <link
   rel="apple-touch-icon-precomposed"
   sizes="144x144"
-  href="/design-system/img/favicons/favicon-144.png"
+  href="/img/favicons/favicon-144.png"
 />
 
 <!-- CSS
 ================================================== -->
-<link rel="stylesheet" href="/design-system/css/usajobs-design-system-all.css">
+<link rel="stylesheet" href="/css/usajobs-design-system-all.css">
 <!-- For production we should compile a distinct CSS for each component -->
-<link rel="stylesheet" href="/design-system/css/usajobs-design-system-components.css">
+<link rel="stylesheet" href="/css/usajobs-design-system-components.css">
 
-    <!-- Print CSS
+  <!-- Print CSS
 ================================================== -->
-<link rel="stylesheet" href="/design-system/css/usajobs-design-system-joa-print-dev.css">
+<link rel="stylesheet" href="/css/usajobs-design-system-joa-pilot-print-dev.css">
+</head>
 
-  </head>
-  <body class="job-announcement usajobs-joa is-print-version">
-    
+<body class="job-announcement usajobs-joa is-print-version">
+  
 
 <header class="usajobs-site-header" role="banner" aria-label="header">
   <!-- Gov banner BEGIN -->
@@ -94,7 +97,7 @@
     <div class="usa-accordion">
       <header class="usa-banner-header">
         <div class="usa-grid usa-banner-inner">
-        <img src="/design-system/img/favicons/favicon-57.png" alt="U.S. flag">
+        <img src="/img/favicons/favicon-57.png" alt="U.S. flag">
         <p>An official website of the United States government</p>
         <button class="usa-accordion-button usa-banner-button"
           aria-expanded="false" aria-controls="gov-banner">
@@ -104,7 +107,7 @@
       </header>
       <div class="usa-banner-content usa-grid usa-accordion-content" id="gov-banner">
         <div class="usa-banner-guidance-gov usa-width-one-half">
-          <img class="usa-banner-icon usa-media_block-img" src="/design-system/img/icon-dot-gov.svg" alt="Dot gov">
+          <img class="usa-banner-icon usa-media_block-img" src="/img/icon-dot-gov.svg" alt="Dot gov">
           <div class="usa-media_block-body">
             <p>
               <strong>The .gov means it’s official.</strong>
@@ -114,7 +117,7 @@
           </div>
         </div>
         <div class="usa-banner-guidance-ssl usa-width-one-half">
-          <img class="usa-banner-icon usa-media_block-img" src="/design-system/img/icon-https.svg" alt="SSL">
+          <img class="usa-banner-icon usa-media_block-img" src="/img/icon-https.svg" alt="SSL">
           <div class="usa-media_block-body">
             <p>This site is also protected by an SSL (Secure Sockets Layer) certificate that’s been signed by the U.S. government. The <strong>https://</strong> means all transmitted data is encrypted  — in other words, any information or browsing history that you provide is transmitted securely.</p>
           </div>
@@ -752,31 +755,51 @@
 </div>
 </li>
                 <li><div class="usajobs-joa-occupations">
-  <h4 class="usajobs-joa-occupations__title">Job family (Series)</h4>
+  <h2 class="usajobs-joa-occupations__title">Similar Jobs</h2>
+  <h3>Job family (Series)</h3>
   
-  <p class="usajobs-joa-summary__series">
-    <a href="https://test.usajobs.gov/Search/?j=2210" class="usajobs-joa-occupations__series">
-      2210 Information Technology Management
-    </a>
-  </p>
+  <a href="https://test.usajobs.gov/Search/?j=2210" class="usajobs-joa-occupations__series is-mco">
+    <span class="usajobs-joa-occupations__series-link">2210 Information Technology Management</span>
+  </a>
   
   <div class="usajobs-joa-occupations__similar-jobs">
-    <h4 class="usajobs-joa-occupations__title">Similar jobs</h4>
+    <h3>Related occupations</h3>
     <ul class="usajobs-joa-occupations__list">
     
       <li class="usajobs-joa-occupations__item">
-        <a href="https://test.usajobs.gov/Search?soc=Consultants%2C+Educational" class="usa-button usa-button-outline-inverse usajobs-joa-occupations__link">
+        <a href="https://test.usajobs.gov/Search?soc=Consultants%2C+Educational" class="usa-button usa-button-gray usajobs-joa-occupations__link">
           Consultants, Educational (1)
         </a>
       </li>
     
       <li class="usajobs-joa-occupations__item">
-        <a href="https://test.usajobs.gov/Search?soc=Health+Educators" class="usa-button usa-button-outline-inverse usajobs-joa-occupations__link">
+        <a href="https://test.usajobs.gov/Search?soc=Health+Educators" class="usa-button usa-button-gray usajobs-joa-occupations__link">
           Health Educators (2)
         </a>
       </li>
     
     </ul>
+  </div>
+  <div class="usajobs-joa-occupations__mco">
+    
+      
+      
+      
+      
+      
+      
+      
+      <a href="#search-results-for-mco-tag" class="usajobs-joa-occupations__mco-tag">
+        Explore STEM careers
+      </a>
+      
+    
+    <p>
+      <span class="is-mco"></span>
+      <span class="usajobs-joa-occupations__mco-desc">
+        Jobs that are in high demand that the government is looking to fill immediately.
+      </span>
+    </p>
   </div>
 </div>
 </li>
@@ -788,7 +811,7 @@
     <span class="fa fa-question-circle"></span> Help
   </a>
   <h2 class="usajobs-joa-section__header">Requirements</h2>
-  <h3>Conditions of employment</h3>
+  <h3>Conditions of Employment</h3>
   <ul class="usajobs-list-bullets">
     
     <li>This is a Career Program 31 (Education Services) position.</li>
@@ -814,6 +837,14 @@
     <li>In accordance with The Prison Rape Elimination Act (PREA), the Military Corrections Complex may not hire or promote anyone who may have contact with inmates, has engaged in sexual abuse in a prison, jail, lockup community conferment facility, juvenile facility, or other institution (as defined in 42 USC 1997); has been convicted of engaging or attempting to engage in sexual activity in the community facilitated by force, overt or implied threats of force, or coercion, or if the victim did not consent or was unable to consent or refuse; or has been civilly or administratively adjudicated to have engaged in sexual activity in the community facilitated by force, overt or implied threats of force, or coercion, or if the victim did not consent or was unable to consent or refuse.</li>
     
   </ul>
+  <div class="usajobs-joa--v1-5__disclaimer-inset">
+    <h4>
+      Pre-employment requirements
+    </h4>
+    <p>
+      A tentative offer of employment will be rescinded if the selectee fails to meet the pre-employment requirements, including failure to report to any of the scheduled appointments.
+    </p>
+  </div>
 
   <div id="qualifications" itemprop="qualifications">
     <h3>Qualifications</h3>
@@ -848,7 +879,7 @@
   
   <div id="preview-questionnaire" class="usajobs-joa-preview-questionnaire">
     <a href="http://applicationmanager.gov/#questionnaire" class="usa-button usa-button-outline usajobs-joa-preview-questionnaire__link">
-      Preview Job Questionnaire
+      Preview job questionnaire
     </a>
     <p class="usajobs-joa-preview-questionnaire__recommendation">
       Make sure your resume includes detailed information to support your qualifications and answers to the job questionnaire.
@@ -872,6 +903,9 @@
     <h3>How you will be evaluated</h3>
     <div class="usajobs-read-more usajobs-joa__read-more-content" data-object="reveal-more" data-behavior="joa-read-more">
       <p>
+        You will be evaluated for this job based on how well you meet the qualifications above.
+      </p>
+      <p>
         Your application package&#160;(resume, supporting documents, and responses to the questionnaire) will be used to determine your eligibility, qualifications, and quality ranking for this position. Please follow all instructions carefully. Errors or omissions may affect your rating or consideration for employment.
 Interagency Career Transition Assistance Program (ICTAP). If you are a Federal employee in the competitive service and your agency has notified you in writing that you are a displaced employee eligible for ICTAP consideration, you may receive selection priority. See Interagency Career Transition Assistance Program (ICTAP). for more information. Additional information about the program is on OPM's Career Transition Resources website. 
       </p>
@@ -880,17 +914,26 @@ Interagency Career Transition Assistance Program (ICTAP). If you are a Federal e
 
   <div id="security">
     <h3>Background checks and security clearance</h3>
-    <div class="usajobs-joa-sub-section">
-      <div id="security-clearance" class="usajobs-joa-sub-section__container">
+    <div class="usajobs-joa-sub-section usajobs-joa-sub-section--three-columns">
+      <div id="background-check" class="usajobs-joa-sub-section__container usajobs-joa-sub-section--three-columns__container">
+        <h5 class="usajobs-joa-sub-section__small-title">Background check</h5>
+        <p class="usajobs-joa-sub-section__text">
+          <a href="https://usajobs.github.io/Help/faq/job-announcement/security-clearances/" target="_blank">
+            Public Trust
+          </a>
+        </p>
+      </div>
+
+      <div id="security-clearance" class="usajobs-joa-sub-section__container usajobs-joa-sub-section--three-columns__container">
         <h5 class="usajobs-joa-sub-section__small-title">Security clearance</h5>
         <p class="usajobs-joa-sub-section__text">
-          <a href="https://usajobs.github.io/Help/faq/job-announcement/security-clearances/">
+          <a href="https://usajobs.github.io/Help/faq/job-announcement/security-clearances/" target="_blank">
             None
           </a>
         </p>
       </div>
 
-      <div id="telework-eligble" class="usajobs-joa-sub-section__container">
+      <div id="telework-eligble" class="usajobs-joa-sub-section__container usajobs-joa-sub-section--three-columns__container">
         <h5 class="usajobs-joa-sub-section__small-title">Drug test required</h5>
         <p class="usajobs-joa-sub-section__text">
           No
@@ -1248,7 +1291,7 @@ Interagency Career Transition Assistance Program (ICTAP). If you are a Federal e
 </div>
 
 
-    <footer class="usa-footer usa-footer-big usajobs-footer--v2" role="contentinfo" aria-label="footer" data-object="footer">
+  <footer class="usa-footer usa-footer-big usajobs-footer--v2" role="contentinfo" aria-label="footer" data-object="footer">
   <div class="usa-grid usa-footer-return-to-top">
     <a href="#job-title">Return to top</a>
   </div>
@@ -1376,9 +1419,10 @@ Interagency Career Transition Assistance Program (ICTAP). If you are a Federal e
   </div>
 </footer>
 
-    <script src="/design-system/js/usajobs-design-system-base.js"></script>
-<script src="/design-system/js/usajobs-design-system-documentation.js"></script>
-<script src="/design-system/js/usajobs-design-system-components.js"></script>
+  <script src="/js/usajobs-design-system-base.js"></script>
+<script src="/js/usajobs-design-system-documentation.js"></script>
+<script src="/js/usajobs-design-system-components.js"></script>
 
-  </body>
+</body>
+
 </html>
