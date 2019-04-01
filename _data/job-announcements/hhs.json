@@ -1,0 +1,131 @@
+{
+  "PositionID": "HHS-OHR-19-10082863-DE",
+  "PositionTitle": "IT Specialist",
+  "PositionURI": "https://uat.usajobs.gov:443/GetJob/ViewDetails/3262420400",
+  "ApplyURI": ["https://uat.usajobs.gov:443/GetJob/ViewDetails/3262420400?PostingChannelID=RESTAPI"],
+  "PositionLocationDisplay": "Washington, DC",
+  "PositionLocation": [
+    {
+      "LocationName": "Washington, DC",
+      "CountryCode": "United States",
+      "CountrySubDivisionCode": "District of Columbia",
+      "CityName": "Washington, DC",
+      "Longitude": -94.9212,
+      "Latitude": 39.3293,
+      "AddressLine": "1849 C Street NW",
+      "Vacancies": "1"
+    }
+  ],
+  "PositionLocationWithinArea": false,
+  "ApplicationClosingType": "closing-date",
+  "OrganizationName": "Office of the Secretary of Health and Human Services",
+  "AgencyMarketingStatement": "Become a part of the Department that touches the lives of every American! At the Department of Health and Human Services (HHS) you can give back to your community, state, and country by making a difference in the lives of Americans everywhere. It is the principal agency for protecting the health of citizens. Join HHS and help to make our world healthier, safer, and better for all Americans.",
+  "AgencyMarketingURL": "https://www.hhs.gov/about/careers/apply-to-work-at-hhs/index.html",
+  "OrganizationURL": "https://www.hhs.gov/about/careers/apply-to-work-at-hhs/index.html",
+  "DepartmentName": "DEPARTMENT OF HEALTH AND HUMAN SERVICES",
+  "JobCategory": [
+    {
+      "Name": "Information Technology Management",
+      "Code": "2210"
+    }
+  ],
+  "JobOccupation": [
+    {
+      "Name": "Managers, Marketing",
+      "Code": "Managers%2C+Marketing",
+      "Count": "1"
+    }
+  ],
+  "JobGrade": [
+    {
+      "Code": "GS"
+    }
+  ],
+  "PositionSchedule": [
+    {
+      "Name": "Full Time",
+      "Code": "1"
+    }
+  ],
+  "PositionOfferingType": [
+    {
+      "Name": "Permanent",
+      "Code": ""
+    }
+  ],
+  "QualificationSummary": "Subject matter experts will evaluate the first two pages of your resume based on these competencies. You must have at least a year demonstrating accomplishment of the duties and competencies described below.",
+  "PositionRemuneration": [
+    {
+      "MinimumRange": "96,970",
+      "MaximumRange": "126,062",
+      "RateIntervalCode": "per year"
+    }
+  ],
+  "SupervisoryStatus": true,
+  "PromotionPotential": "13",
+  "PositionStartDate": "2019-03-18",
+  "PositionEndDate": "2020-03-18",
+  "PublicationStartDate": "03/18/19",
+  "ApplicationCloseDate": "03/29/19",
+  "UserArea": {
+    "Details": {
+      "MajorDutiesList": [
+        "Collaborate with managers, stakeholders, and end-users to gather business requirements.",
+        "Analyze business needs, devise solutions, make recommendations and gain acceptance of recommendations from stakeholders.",
+        "Support software engineers implementing new requirements.",
+        "Ensure that the software changes are tested thoroughly for accuracy and performance, and are rolled out in a timely fashion.",
+        "Troubleshoot and resolve problems reported by users, analysts, and programmers which include application interfaces, application performance, data quality and security.",
+        "Interact with and support a large set of systems built with a wide variety of tools, technologies, and protocols including ColdFusion, HTML, JavaScript, XML, SOAP, SQL as well as Oracle Databases."
+      ],
+      "KeyRequirements": [
+        "<strong>Analytical Ability (required for all roles):</strong> Approaches problems quantitatively and displays critical thinking and problem-solving abilities. Breaks down complex problems into component parts. Defines and tracks key metrics to make data-driven decisions.",
+        "<strong>Managing Without Authority (required for all roles):</strong> Builds influence in organizations without relying on formal titles or roles, and uses that influence to achieve project success. Gains commitments from leaders and team members without formal reporting structures in place. Shares credit, understands and empathizes with others, and recognizes how different people value different incentives.",
+        "<strong>Stakeholder Engagement (required for all roles):</strong> Cultivates relationships with key internal and external stakeholders. Has superior communication skills that enable successful understanding and cooperation across all levels of an organization, including executive leadership.",
+        "<strong>Technical Communication (required for all roles):</strong> Explains technical concepts to both technical and non-technical audiences. Able to frame technical choices to decision makers and justify organizational IT needs against business priorities. Ability to understand others, empathize, and clearly articulate technical tradeoffs to non-technical individuals.",
+        "<strong>IT Practices (required for all roles):</strong> Understands and applies IT methods and best practices, including troubleshooting technical issues, root cause analysis, mitigating risk, defining and communicating IT standards, and understanding and executing on business and technical requirements. Must have experience with modern IT practices within the last 5 years.",
+        "<strong>Customer Support (required only if you choose the IT Customer Support Specialist role):</strong> Works with internal and external users to address technical issues with hardware and software, including installing new software, maintaining existing systems, and managing physical assets.",
+        "<strong>Data Analysis (required only if you choose the IT Data Analyst Specialist role):</strong> Understands methods for ethically acquiring, storing, and retrieving data. Anticipates changes to data requirements. Evaluates and governs the use of new data technologies and architectures.",
+        "<strong>Policy and Planning (required only if you choose the IT Policy and Planning Specialist role):</strong> Understands existing policies and procedures in the organization. Revises policies based on new laws, policy norms, and business needs. Clearly communicates policy guidance and changes to terms, conditions, and agreements."
+      ],
+      "ServiceType": "01",
+      "HowToApply": "",
+      "WhatToExpectNext": "",
+      "RequiredDocuments": "",
+      "Benefits": "",
+      "BenefitsURL": "https://home.nps.gov/aboutus/benefits.htm",
+      "OtherInformation": "<p>Competitive applicants for GS 13 positions often have at least:</p><ul><li>5 years of experience</li><li>A bachelor's degree</li></ul>",
+      "ConditionsOfEmployment": [
+        "Successfully complete a background investigation.",
+        "Go through a Personal Identity Verification (PIV) process that requires two forms of identification from the <a href=\"https://www.uscis.gov/sites/default/files/files/form/i-9.pdf\" target=\"_blank\">Form I-9</a>. Federal law requires we verify the identity and employment eligibility of all new hires in the U.S.",
+        "File a Confidential Financial Disclosure Report within 30 days of being hired and once a year from then on.",
+        "Obtain and use a government-issued charge card for business-related travel."
+      ],
+      "JobSummary": "Health and Human Services (HHS) serves millions of Americans with diverse health care needs. Join the offices of the Chief Information Officer and Chief Technology Officer to help us modernize IT environments across the agency. Assist us with health care modernization efforts such as guiding IT policy, creating new requirements to improve processes, identifying data patterns and insights, and strategizing new HHS IT initiatives.",
+      "LowGrade": "13",
+      "HighGrade": "13",
+      "Relocation": false,
+      "Telework": true,
+      "HiringPath": ["public"],
+      "GOVT_BackgroundCheck": "Public Trust",
+      "GOVT_SecurityClearanceRequired": "None",
+      "GOVT_DrugTestRequired": "No"
+    }
+  },
+  "PostingRequestor": {
+    "PersonContact": {
+      "FormattedName": "1-866-ONE-DHHS Helpdesk",
+      "DialNumber": "1-866-663-3447",
+      "Email": "help@a.net"
+    },
+    "ExternalContact": {
+      "OrgName": "OHR HR Solutions",
+      "Address": {
+        "Street1": "425 3rd St, SW, Suite 610",
+        "City": "Washington",
+        "State": "DC",
+        "PostalCode": "20024",
+        "CountryCode": "US"
+      }
+    }
+  }
+}

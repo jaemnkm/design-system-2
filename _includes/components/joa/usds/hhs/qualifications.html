@@ -1,0 +1,13 @@
+<div id="qualifications" class="usajobs-joa-section usajobs-joa-section--pilot" itemprop="qualifications">
+  <h2 class="usajobs-joa-section--pilot__header">Qualifications</h2>
+  <p>
+    {{ job.QualificationSummary }}
+  </p>
+  <ul class="usajobs-list-bullets">
+    {% for competency in job.UserArea.Details.KeyRequirements %}
+    <li>{{ competency }}</li>
+    {% endfor %}
+  </ul>
+  {{ job.UserArea.Details.OtherInformation }}
+  {% include components/joa/usds/doi/this-job-is-open-to.html %}
+</div>
