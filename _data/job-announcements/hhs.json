@@ -109,7 +109,8 @@
       "HiringPath": ["public"],
       "GOVT_BackgroundCheck": "Public Trust",
       "GOVT_SecurityClearanceRequired": "None",
-      "GOVT_DrugTestRequired": "No"
+      "GOVT_DrugTestRequired": "No",
+      "Travel": "Occassional travel"
     }
   },
   "PostingRequestor": {

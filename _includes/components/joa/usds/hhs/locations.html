@@ -100,5 +100,20 @@
         {% endif %}
       </p>
     </div>
+
+    <div id="travel-required" class="usajobs-joa-sub-section__container usajobs-joa-sub-section--pilot__container">
+      <h5 class="usajobs-joa-sub-section__small-title">
+        <span rel="tooltip" title="Determines if, and how often, travel may be required for this job.">
+          Travel
+        </span>
+      </h5>
+      <p class="usajobs-joa-sub-section__text">
+        {% if job.UserArea.Details.Travel %}
+        {{ job.UserArea.Details.Travel }}
+        {% else %}
+        No
+        {% endif %}
+      </p>
+    </div>
   </div>
 </div>
