@@ -17,7 +17,8 @@
     }
   ],
   "PositionLocationWithinArea": false,
-  "ApplicationClosingType": "closing-date",
+  "ApplicationClosingType": "application-cut-off",
+  "ApplicationCutOff": "100",
   "OrganizationName": "Office of the Secretary of Health and Human Services",
   "AgencyMarketingStatement": "Become a part of the Department that touches the lives of every American! At the Department of Health and Human Services (HHS) you can give back to your community, state, and country by making a difference in the lives of Americans everywhere. It is the principal agency for protecting the health of citizens. Join HHS and help to make our world healthier, safer, and better for all Americans.",
   "AgencyMarketingURL": "https://www.hhs.gov/about/careers/apply-to-work-at-hhs/index.html",
@@ -63,10 +64,10 @@
   ],
   "SupervisoryStatus": true,
   "PromotionPotential": "13",
-  "PositionStartDate": "2019-03-18",
-  "PositionEndDate": "2020-03-18",
-  "PublicationStartDate": "03/18/19",
-  "ApplicationCloseDate": "03/29/19",
+  "PositionStartDate": "2019-04-05",
+  "PositionEndDate": "2020-04-07",
+  "PublicationStartDate": "04/05/19",
+  "ApplicationCloseDate": "04/07/19",
   "UserArea": {
     "Details": {
       "MajorDutiesList": [
