@@ -8,6 +8,12 @@
     <li>{{ competency }}</li>
     {% endfor %}
   </ul>
-  {{ job.UserArea.Details.OtherInformation }}
+  <p>Additional Competencies required based on the role(s) selected:<p>
+  <ul class="usajobs-list-bullets">
+    <li><strong>IT Specialist System Administrator (Generalist):</strong> No additional competencies are required from those listed above. Applicants who select this role may end up being assigned work involving data centers.</li>
+    <li><strong>Active Directory (required only for the Active Directory role):</strong> Uses methods and controls to validate the identity of individuals to verify access approval and level, and monitor activity to ensure that only authorized access is taking place. Automates, develops, implements, and administers enterprise Active Directory and associated systems, including external environments using modern methods and principles. Uses database management systems and software to control the organization, storage, retrieval, security, and integrity of data.</li>
+    <li><strong>Network Infrastructure (required only for the Network Infrastructure role):</strong> Designs and provides expert input based on their knowledge of architecture and topology of software, hardware, and networks, including LANs, WANs, WiFi, and telecommunications systems, their components and associated protocols and standards. Manages and troubleshoots the operation and integration of these components. Demonstrates expertise of how systems communicate over common network protocols, and the function of firewalls, load balancers, and other security devices.</li>
+    <li><strong>Patch Management (required only for the Patch Management role):</strong> Develops and implements procedures to create and deliver products and services, including tools and mechanisms for distributing new or enhanced software. Applies the principles, methods, and procedures used for the automated control of a process, including the design, development, and maintenance of associated software, hardware, and systems. Demonstrated knowledge of SQL databases and the ability to create ad hoc queries.</li>
+  </ul>
   {% include components/joa/usds/doi/this-job-is-open-to.html %}
 </div>

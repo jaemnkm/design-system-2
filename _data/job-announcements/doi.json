@@ -1,6 +1,6 @@
 {
   "PositionID": "NPS-12345678910-DE-OPM",
-  "PositionTitle": "Product Manager",
+  "PositionTitle": "System Admin",
   "PositionURI": "https://www.usajobs.gov:443/GetJob/ViewDetails/123456789",
   "ApplyURI": ["https://www.usajobs.gov:443/GetJob/ViewDetails/123456789?PostingChannelID=RESTAPI"],
   "PositionLocationDisplay": "Washington, DC",
@@ -13,25 +13,35 @@
       "Longitude": -94.9212,
       "Latitude": 39.3293,
       "AddressLine": "1849 C Street NW",
-      "Vacancies": "1"
+      "Vacancies": "Many"
     },
     {
-      "LocationName": "NatchitochesNatchitochesNatchitoches, LA",
+      "LocationName": "Reston, VA",
       "CountryCode": "United States",
-      "CountrySubDivisionCode": "Louisiana",
+      "CountrySubDivisionCode": "Virginia",
       "CityName": "Natchitoches",
       "Longitude": -93.0869845300913,
       "Latitude": 31.7609549313784,
       "AddressLine": "",
-      "Vacancies": "1"
+      "Vacancies": "Many"
+    },
+    {
+      "LocationName": "Denver, CO",
+      "CountryCode": "United States",
+      "CountrySubDivisionCode": "Colorado",
+      "CityName": "Natchitoches",
+      "Longitude": -93.0869845300913,
+      "Latitude": 31.7609549313784,
+      "AddressLine": "",
+      "Vacancies": "Many"
     }
   ],
   "PositionLocationWithinArea": false,
   "ApplicationClosingType": "closing-date",
   "OrganizationName": "National Park Service",
   "AgencyMarketingStatement": "This position works in the Business Requirements and Systems Division at the Office of the Comptroller, Washington DC. The division supports other offices under the Comptroller in the formulation, analysis, and execution of the National Park Service budget.",
-  "AgencyMarketingURL": "https://www.nps.gov/aboutus/nps-careers.htm",
-  "OrganizationURL": "https://www.nps.gov/aboutus/nps-careers.htm",
+  "AgencyMarketingURL": "https://www.nps.gov/aboutus/workwithus.htm",
+  "OrganizationURL": "https://www.nps.gov/aboutus/workwithus.htm",
   "DepartmentName": "Department of the Interior",
   "JobCategory": [
     {
@@ -63,7 +73,7 @@
       "Code": ""
     }
   ],
-  "QualificationSummary": "Your qualifications will be evaluated on the following competencies, with product delivery and product design carrying the most weight. All of these qualifications must be reflected in your resume.",
+  "QualificationSummary": "Subject matter experts will evaluate the first three pages of your resume based on these competencies. You must have at least a year demonstrating accomplishment of the duties and competencies described below.",
   "PositionRemuneration": [
     {
       "MinimumRange": "96,970",
@@ -73,29 +83,27 @@
   ],
   "SupervisoryStatus": true,
   "PromotionPotential": "13",
-  "PositionStartDate": "2019-03-18",
-  "PositionEndDate": "2020-03-18",
-  "PublicationStartDate": "03/18/19",
-  "ApplicationCloseDate": "03/29/19",
+  "PositionStartDate": "2019-04-29",
+  "PositionEndDate": "2020-05-03",
+  "PublicationStartDate": "04/29/19",
+  "ApplicationCloseDate": "05/03/19",
   "UserArea": {
     "Details": {
       "MajorDutiesList": [
-        "Collaborate with managers, stakeholders, and end-users to gather business requirements.",
-        "Analyze business needs, devise solutions, make recommendations and gain acceptance of recommendations from stakeholders.",
-        "Support software engineers implementing new requirements.",
-        "Ensure that the software changes are tested thoroughly for accuracy and performance, and are rolled out in a timely fashion.",
-        "Troubleshoot and resolve problems reported by users, analysts, and programmers which include application interfaces, application performance, data quality and security.",
-        "Interact with and support a large set of systems built with a wide variety of tools, technologies, and protocols including ColdFusion, HTML, JavaScript, XML, SOAP, SQL as well as Oracle Databases."
+        "Enforcing best practice security controls",
+        "Developing and maintaining standard operation procedures and documentation",
+        "Building and deploying application packages",
+        "Troubleshooting and repairing incidents and application issues",
+        "Collaborating effectively with others throughout the organization",
+        "Assisting customers with application deployment",
+        "Communicating and escalating issues to vendors",
+        "Developing and implementing change management strategies"
       ],
       "KeyRequirements": [
-        "<strong>Product Delivery:</strong> Regardless of environmental challenges, ships products and drives teams to deliver on key milestones. Gets Minimum Viable Products out the door without waiting for the perfect technical implementation or inclusion of every feature. Leadership experience shipping multiple products across multiple organizations. Has made decisions about what gets shipped and how.",
-        "<strong>Product Design:</strong> Designs and launches software products and features focused on user needs, scoped to Minimum Viable Products, and with clear criteria for success. Understands the technical stack of a product and how it can impact product design and project schedules.",
-        "<strong>Administration and Management</strong>: Knowledge of planning, coordination, and execution of business functions, resource allocation, and production.",
-        "<strong>Analytical Ability</strong>: Approaches problems quantitatively and displays critical thinking and problem-solving abilities. Breaks down complex problems into component parts. Defines and tracks key metrics to make data-driven decisions.",
-        "<strong>Oral Communication</strong>: Expresses information to individuals or groups effectively, taking into account the audience and nature of the information (for example, technical, sensitive, controversial); makes clear and convincing oral presentations; listens to others, attends to nonverbal cues, and responds appropriately.",
-        "<strong>Stakeholder Engagement</strong>: Cultivates relationships with key internal and external stakeholders. Has superior negotiation skills that enable successful communication and cooperation across all levels of an organization.",
-        "<strong>Technical Communication</strong>: Explains technical concepts to both technical and non-technical audiences. Able to frame technical choices to decision makers and justify engineering needs against business priorities.",
-        "<strong>Writing</strong>: Recognizes or uses correct English grammar, punctuation, and spelling; communicates information (for example, facts, ideas, or messages) in a succinct and organized manner; produces written information, which may include technical material, that is appropriate for the intended audience."
+        "<strong>Security and Policy:</strong> Uses the principles, methods, and tools for assessing vulnerabilities to develop or recommend appropriate mitigation countermeasures. Apply tactics, technologies, principles, and processes to protect, analyze, prioritize, and handle incidents. Leverages the knowledge of IT security principles to create well-written policy.",
+        "<strong>Technical Operations:</strong> Understands and applies IT methods and best practices, including troubleshooting technical issues, root cause analysis, mitigating risk, adhering to and enforcing agency-defined IT standards, and understanding and executing on business and technical requirements. Must have experience with modern IT practices within the last 3 years using one or more of the following: Virtualization, Microsoft OS, SQL/Oracle, Citrix, cloud technologies, UNIX, Cisco, HP, Force10, BigFix, Microsoft SCCM, Active Directory, DNS, firewalls, SMTP, scripting, and routing and switching.",
+        "<strong>Communication and Collaboration:</strong> Explains technical concepts to both technical and non-technical audiences. Able to frame technical choices to decision makers and justify organizational IT needs against business priorities. Develops networks and builds alliances; collaborates across boundaries to build strategic relationships and achieve common goals. Ability to understand others, empathize, and clearly articulate technical tradeoffs to non-technical individuals.",
+        "<strong>Customer Service and Support:</strong> Works with external and/or internal customers a large, geographically dispersed organization to assess their needs, provide information or assistance, resolve their problems, or satisfy their expectations; knows how to best utilize ticketing systems; is committed to providing quality products and services."
       ],
       "ServiceType": "01",
       "HowToApply": "",
@@ -110,7 +118,7 @@
         "File a Confidential Financial Disclosure Report within 30 days of being hired and once a year from then on.",
         "Obtain and use a government-issued charge card for business-related travel."
       ],
-      "JobSummary": "As an IT Product Manager with the National Park Service, you will be responsible for the budget systems used throughout the NPS. You will assist with the full software lifecycle: analysis, design, development, maintenance, and support. This position within the Office of the Comptroller manages the development of applications and digital services.",
+      "JobSummary": "The Department of the Interior is devoted to protecting and preserving the natural resources of this great nation, including National Parks, Landmarks, and the well-being of communities. Join the offices of the National Park Service (NPS) to provide technical solutions that enable the NPS to deliver world-class recreation and conservation services to the public.",
       "LowGrade": "13",
       "HighGrade": "13",
       "Relocation": false,
@@ -123,9 +131,9 @@
   },
   "PostingRequestor": {
     "PersonContact": {
-      "FormattedName": "Kim Brown",
+      "FormattedName": "Kathy Shepherd",
       "DialNumber": "202-619-7235",
-      "Email": "kim_d_brown@nps.gov"
+      "Email": "kathy_shepherd@nps.gov"
     },
     "ExternalContact": {
       "OrgName": "Cultural Resource Business Office",
