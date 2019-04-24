@@ -37,7 +37,8 @@
     }
   ],
   "PositionLocationWithinArea": false,
-  "ApplicationClosingType": "closing-date",
+  "ApplicationClosingType": "application-cut-off",
+  "ApplicationCutOff": "100",
   "OrganizationName": "National Park Service",
   "AgencyMarketingStatement": "This position works in the Business Requirements and Systems Division at the Office of the Comptroller, Washington DC. The division supports other offices under the Comptroller in the formulation, analysis, and execution of the National Park Service budget.",
   "AgencyMarketingURL": "https://www.nps.gov/aboutus/workwithus.htm",
