@@ -53,6 +53,13 @@
   }
 }
 
+.usa-nav-submenu.usa-megamenu a.usa-current {
+  padding-left: $size-default;
+  font-weight: 700;
+  color: $color-white;
+  border-bottom: 1px solid $color-primary;
+}
+
 // Main Content --------- //
 .l-doc {
   position: relative;

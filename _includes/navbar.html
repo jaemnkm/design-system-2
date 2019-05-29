@@ -1,3 +1,4 @@
+{% assign current = page.url | downcase | split: '/' %}
 <a class="usa-skipnav" href="#main-content">Skip to main content</a>
 {% include components/nav/_gov-banner.html %}
 <header class="usa-header usa-header-extended" role="banner">
@@ -75,6 +76,11 @@
               <li><a href="{{ site.baseurl }}/form-controls/#validation">Validation</a></li>
             </div>
           </ul>
+        </li>
+        <li>
+          <a {% if current[1]=='content' %}class="usa-current" {% endif %} class="usa-nav-link" href="{{ site.baseurl }}/content/">
+            <span>Content</span>
+          </a>
         </li>
         <li>
           <button class="usa-accordion-button usa-nav-link" aria-expanded="false" aria-controls="extended-mega-nav-section-two">
