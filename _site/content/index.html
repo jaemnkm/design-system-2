@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<!--[if lt IE 9]><html class="lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!--><html lang="en"><!--<![endif]-->
+
+  <head>
+    <!-- Basic Page Needs
+================================================== -->
+<meta charset="utf-8" /> <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+<!-- Mobile Specific Metas
+================================================== -->
+<meta name="HandheldFriendly" content="True" />
+<meta name="MobileOptimized" content="320" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<!-- Title and meta description
+================================================== -->
+ <title>USAJOBS Design System | USAJOBS Content Style Guide</title>
+<meta
+  property="og:title"
+  content="USAJOBS Design System | USAJOBS Content Style Guide"
+/>
+ 
+<meta name="description" content="" />
+<meta property="og:description" content="" />
+
+
+<link rel="canonical" href="/content/" />
+
+<!-- Favicons
+================================================== -->
+<!-- 128x128 -->
+<link
+  rel="shortcut icon"
+  type="image/ico"
+  href="/design-system/img/favicons/favicon.ico"
+/>
+<link
+  rel="icon"
+  type="image/png"
+  href="/design-system/img/favicons/favicon.png"
+/>
+
+<!-- 192x192, as recommended for Android
+  http://updates.html5rocks.com/2014/11/Support-for-theme-color-in-Chrome-39-for-Android
+  -->
+<link
+  rel="icon"
+  type="image/png"
+  sizes="192x192"
+  href="/design-system/img/favicons/favicon-192.png"
+/>
+
+<!-- 57x57 (precomposed) for iPhone 3GS, pre-2011 iPod Touch and older Android devices -->
+<link
+  rel="apple-touch-icon-precomposed"
+  href="/design-system/img/favicons/favicon-57.png"
+/>
+<!-- 72x72 (precomposed) for 1st generation iPad, iPad 2 and iPad mini -->
+<link
+  rel="apple-touch-icon-precomposed"
+  sizes="72x72"
+  href="/design-system/img/favicons/favicon-72.png"
+/>
+<!-- 114x114 (precomposed) for iPhone 4, 4S, 5 and post-2011 iPod Touch -->
+<link
+  rel="apple-touch-icon-precomposed"
+  sizes="114x114"
+  href="/design-system/img/favicons/favicon-114.png"
+/>
+<!-- 144x144 (precomposed) for iPad 3rd and 4th generation -->
+<link
+  rel="apple-touch-icon-precomposed"
+  sizes="144x144"
+  href="/design-system/img/favicons/favicon-144.png"
+/>
+
+<!-- JS for lt IE 9
+================================================== -->
+<!--[if lt IE 9]>
+  <script src="/design-system/js/vendor/html5shiv.js"></script>
+<![endif]-->
+
+<!-- CSS
+================================================== -->
+<link rel="stylesheet" href="/design-system/css/usajobs-design-system-all.css">
+<!-- For the Design System site only: Including styles for all components at once -->
+<link rel="stylesheet" href="/design-system/css/usajobs-design-system-components.css">
+<!-- For the Design System site only: Including documentation styles  -->
+<link rel="stylesheet" href="/design-system/css/vendor/prism.css"> <link rel="stylesheet" href="/design-system/css/usajobs-design-system-documentation.css"> 
+
+  </head>
+
+  <body class="usajobs-content-style-guide">
+  	<a class="usa-skipnav" href="#main-content">Skip to main content</a>
+<!-- Gov banner BEGIN -->
+<div class="usa-banner">
+  <div class="usa-accordion">
+    <div class="usa-banner-header">
+      <div class="usa-grid usa-banner-inner usajobs-nav--full_bleed__banner-inner">
+      <img src="/design-system/img/favicons/favicon-57.png" alt="U.S. flag">
+      <p>An official website of the United States government</p>
+      <button class="usa-accordion-button usa-banner-button"
+        aria-expanded="false" aria-controls="-gov-banner">
+        <span class="usa-banner-button-text">Here's how you know</span>
+      </button>
+      </div>
+    </div>
+    <div class="usa-banner-content usa-grid usa-accordion-content" id="-gov-banner">
+      <div class="usa-banner-guidance-gov usa-width-one-half">
+        <img class="usa-banner-icon usa-media_block-img" src="/design-system/img/icon-dot-gov.svg" alt="Dot gov">
+        <div class="usa-media_block-body">
+          <p>
+            <strong>The .gov means it’s official.</strong>
+            <br>
+            Federal government websites often end in .gov or .mil. Before sharing sensitive information, make sure you’re on a federal government site.
+            <br>
+            <br>
+            There are some exceptions to this rule. During the USAJOBS application process, you may be sent to an agency specific application system that DOES NOT contain a .mil or .gov. Rest assured, if you apply to any job through USAJOBS.gov your information is safe and secure.
+          </p>
+        </div>
+      </div>
+      <div class="usa-banner-guidance-ssl usa-width-one-half">
+        <img class="usa-banner-icon usa-media_block-img" src="/design-system/img/icon-https.svg" alt="SSL">
+        <div class="usa-media_block-body">
+          <p>
+            <strong>The site is secure.</strong>
+            <br>
+            The <strong>https://</strong> ensures that you are connecting to the official website and that any information you provide is encrypted and transmitted securely.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Gov banner END -->
+
+<header class="usa-header usa-header-extended" role="banner">
+  <div class="usa-navbar">
+    <div class="usa-logo" id="extended-mega-logo">
+      <em class="usa-logo-text">
+        <a class="usajobs-documentation-header__dslink" href="/design-system/" title="Home" aria-label="Home">
+          <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 376 90.1">
+<g>
+	<path class="usajobs-icon__path" d="M178.4,65.5c0,1.1,0,2.3-0.1,3.5c-0.1,1.2-0.3,2.4-0.7,3.4c-0.3,1-1.5,4.6-8.4,3.5l-0.7,0v12l0.5,0.1
+		c1.8,0.4,3.5,0.6,5.1,0.6c4,0,7.2-0.6,9.7-1.8c2.5-1.2,4.4-2.9,5.8-4.9c1.3-2,2.3-4.4,2.7-7c0.5-2.6,0.7-3.3,0.7-6V4.7h-14.7V65.5z
+		"/>
+	<path class="usajobs-icon__path" d="M41.6,40.5c0,4-0.5,7-1.4,9.2c-1,2.3-2.3,3.9-4.2,4.9c-1.9,1-4.2,1.5-6.8,1.5c-2.6,0-4.9-0.5-6.8-1.5
+		c-1.8-1-3.2-2.6-4.2-4.8c-0.9-2.1-1.4-5.2-1.4-9.2V4.6H2.3v36.9c0,2.6,0.1,4.9,0.4,7c0.3,2.1,0.8,4.1,1.5,5.9
+		c0.9,2.2,2,4.3,3.5,6.1c1.5,1.8,3.3,3.3,5.3,4.6c2.1,1.2,4.4,2.2,7.1,2.8c2.6,0.6,5.6,1,8.9,1c3.3,0,6.3-0.3,8.9-1
+		c2.7-0.6,5.1-1.6,7.2-2.8c2.1-1.2,4-2.8,5.4-4.6c1.5-1.8,2.7-3.8,3.5-6.1c0.7-1.8,1.2-3.8,1.5-5.9c0.3-2.1,0.4-4.5,0.4-7V4.6H41.6
+		V40.5z"/>
+	<path class="usajobs-icon__path" d="M101.7,34.4C99.8,33,97.5,32,95,31.2c-2.4-0.7-4.9-1.3-7.4-1.9c-1.6-0.3-3.1-0.7-4.4-1
+		c-1.3-0.3-2.4-0.8-3.4-1.4c-0.9-0.5-1.5-1.1-2-1.9c-0.4-0.7-0.7-1.6-0.7-2.8c0-2,0.7-3.4,2.1-4.4c1.6-1.1,4.1-1.7,7.3-1.7
+		c2.4,0,5,0.3,7.7,0.8c2.7,0.5,5.6,1.4,8.6,2.6l2.5,1V7.4l-1.1-0.5c-2.4-1-5.3-1.9-8.7-2.5c-6.7-1.3-13.7-1.3-19.1,0.2
+		c-2.8,0.8-5.2,2.1-7.3,3.8c-2.1,1.7-3.8,3.9-5,6.4c-1.2,2.6-1.8,5.6-1.8,9c0,3.1,0.5,5.8,1.6,7.9c1.1,2.1,2.5,3.9,4.4,5.3
+		c1.8,1.3,3.8,2.4,6.1,3.2c2.2,0.7,4.5,1.3,6.9,1.9c1.7,0.4,3.4,0.7,5,1.1c1.5,0.3,2.8,0.8,4,1.3c1,0.5,1.8,1.1,2.4,1.8
+		c0.5,0.6,0.7,1.5,0.7,2.6c0,1.4-0.3,2.5-0.9,3.3c-0.6,0.9-1.5,1.7-2.5,2.2c-1.2,0.6-2.5,1-4,1.3c-4.3,0.7-8.9,0.4-13.1-0.4
+		c-2.7-0.6-5.5-1.5-8.3-2.7l-2.5-1.1v13L63,65c2.2,1.2,5.1,2.2,8.4,2.9c3.2,0.7,6.6,1,10,1c3.8,0,7.4-0.4,10.7-1.2
+		c3.3-0.8,6.2-2,8.6-3.7c2.4-1.7,4.3-3.9,5.6-6.5c1.3-2.6,2-5.7,2-9.1c0-3.4-0.6-6.3-1.8-8.5C105.3,37.6,103.7,35.8,101.7,34.4z"/>
+	<path class="usajobs-icon__path" d="M170.8,65.6l-24.3-61h-12.5l-25.2,63.2h15.6l5.9-15.2h20.1l5.9,15.2h15.5 M145.5,39.8h-10.2l1.1-2.9
+		c1.2-3.1,2.6-6.8,4-11c1.5,4.2,2.8,7.9,4,11L145.5,39.8z"/>
+	<path class="usajobs-icon__path" d="M253.7,12.7c-2.7-2.9-6-5.2-9.8-6.8c-3.8-1.6-8.2-2.4-13.1-2.4c-4.8,0-9.2,0.8-13.1,2.4
+		c-3.8,1.6-7.1,3.9-9.8,6.8c-2.6,2.9-4.7,6.4-6,10.4c-1.4,4-2,8.4-2,13.1c0,4.7,0.7,9.1,2,13.1c1.4,4,3.4,7.5,6,10.4
+		c2.7,2.9,6,5.2,9.8,6.8c3.8,1.6,8.2,2.4,13.1,2.4c4.8,0,9.2-0.8,13.1-2.4c3.8-1.6,7.1-3.9,9.8-6.8c2.6-2.9,4.7-6.4,6-10.4
+		c1.4-4,2-8.4,2-13.1c0-4.7-0.7-9.1-2-13.1C258.3,19.1,256.3,15.6,253.7,12.7z M224.3,54.8c-1.9-0.8-3.6-2-5-3.6
+		c-1.4-1.6-2.5-3.7-3.4-6.1c-0.8-2.5-1.3-5.5-1.3-9c0-3.4,0.4-6.4,1.3-9c0.8-2.5,1.9-4.6,3.4-6.2c1.4-1.6,3.1-2.8,5-3.6
+		c1.9-0.8,4.1-1.2,6.5-1.2c2.3,0,4.5,0.4,6.5,1.2c1.9,0.8,3.6,2,5,3.6c1.4,1.6,2.5,3.7,3.4,6.2c0.8,2.5,1.3,5.5,1.3,9
+		c0,3.4-0.4,6.4-1.3,9c-0.8,2.5-1.9,4.5-3.4,6.1c-1.4,1.6-3.1,2.8-5,3.6C233.4,56.5,228.2,56.5,224.3,54.8z"/>
+	<path class="usajobs-icon__path" d="M314.8,38.5c-1-1.2-2.2-2.3-3.6-3.2c-0.5-0.3-0.9-0.6-1.4-0.8c1.6-1.2,2.8-2.7,3.7-4.3c1.3-2.4,2-5.1,2-8
+		c0-1.6-0.3-3.3-0.8-4.9c-0.5-1.6-1.3-3.2-2.4-4.6c-1.1-1.4-2.5-2.8-4.1-3.9c-1.6-1.2-3.6-2.1-5.8-2.8c-2.9-0.9-6.7-1.4-11.3-1.4
+		h-22.6v63.2h19.2c1.7,0,3.2,0,4.5-0.1c1.4,0,2.6-0.1,3.7-0.2c1.1-0.1,2.1-0.2,3.1-0.4c0.9-0.2,1.8-0.3,2.6-0.5
+		c3.1-0.8,5.8-2,7.9-3.4c2.1-1.4,3.8-3,5.1-4.7c1.3-1.7,2.2-3.6,2.7-5.4c0.5-1.8,0.8-3.5,0.8-5.2c0-1.9-0.3-3.6-0.8-5.2
+		C316.6,41.1,315.8,39.7,314.8,38.5z M299.7,26.3c-0.5,0.9-1.4,1.5-2.6,2.1c-0.9,0.3-2.6,0.8-6,0.8H283V17.3h7.2
+		c1.5,0,2.8,0,3.8,0.1c1,0.1,1.8,0.2,2.5,0.4c1.5,0.5,2.6,1.1,3.1,2c0.6,0.9,0.9,2,0.9,3.2C300.5,24.3,300.3,25.3,299.7,26.3z
+		 M283,41.8h8.6c1.7,0,3.2,0.1,4.3,0.2c1,0.1,1.9,0.3,2.7,0.5c1.6,0.5,2.7,1.2,3.4,2.2c0.7,0.9,1,2,1,3.3c0,0.8-0.1,1.5-0.3,2.2
+		c-0.2,0.6-0.5,1.1-1,1.7c-0.5,0.5-1.1,1-2,1.5c-0.9,0.5-2,0.8-3.4,1.1c-0.9,0.2-2,0.4-3.2,0.5c-1.3,0.1-2.9,0.2-4.8,0.2H283V41.8z"
+		/>
+	<path class="usajobs-icon__path" d="M365.9,39.9c-1.2-2.3-2.8-4.1-4.8-5.5c-1.9-1.4-4.2-2.4-6.7-3.2c-2.4-0.7-4.9-1.3-7.4-1.9
+		c-1.6-0.3-3.1-0.7-4.4-1c-1.3-0.3-2.4-0.8-3.4-1.4c-0.9-0.5-1.5-1.1-2-1.9c-0.4-0.7-0.7-1.6-0.7-2.8c0-2,0.7-3.4,2.1-4.4
+		c1.6-1.1,4.1-1.7,7.3-1.7c2.4,0,5,0.3,7.7,0.8c2.7,0.5,5.6,1.4,8.6,2.6l2.5,1V7.4l-1.1-0.5c-2.4-1-5.3-1.9-8.7-2.5
+		c-6.7-1.3-13.7-1.3-19.1,0.2c-2.8,0.8-5.2,2.1-7.3,3.8c-2.1,1.7-3.8,3.9-5,6.4c-1.2,2.6-1.8,5.6-1.8,9c0,3.1,0.5,5.8,1.6,7.9
+		c1.1,2.1,2.5,3.9,4.4,5.3c1.8,1.3,3.8,2.4,6.1,3.2c2.2,0.7,4.5,1.3,6.9,1.9c1.7,0.4,3.4,0.7,5,1.1c1.5,0.3,2.8,0.8,4,1.3
+		c1,0.5,1.8,1.1,2.4,1.8c0.5,0.6,0.7,1.5,0.7,2.6c0,1.4-0.3,2.5-0.9,3.3c-0.6,0.9-1.5,1.7-2.5,2.2c-1.2,0.6-2.5,1-4,1.3
+		c-4.3,0.7-8.9,0.4-13.1-0.4c-2.7-0.6-5.5-1.5-8.3-2.7l-2.5-1.1v13l0.9,0.5c2.2,1.2,5.1,2.2,8.4,2.9c3.2,0.7,6.6,1,10,1
+		c3.8,0,7.4-0.4,10.7-1.2c3.3-0.8,6.2-2,8.6-3.7c2.4-1.7,4.3-3.9,5.6-6.5c1.3-2.6,2-5.7,2-9.1C367.7,45,367.1,42.2,365.9,39.9z"/>
+	<g>
+		<path class="usajobs-icon__path" d="M367.6,10.6c0-0.4,0.1-0.8,0.2-1.1c0.1-0.3,0.3-0.6,0.6-0.9c0.2-0.2,0.5-0.4,0.9-0.6c0.3-0.1,0.7-0.2,1.1-0.2
+			c0.4,0,0.7,0.1,1.1,0.2c0.3,0.1,0.6,0.3,0.9,0.6c0.2,0.2,0.4,0.5,0.6,0.9c0.1,0.3,0.2,0.7,0.2,1.1s-0.1,0.8-0.2,1.1
+			c-0.1,0.3-0.3,0.6-0.6,0.9c-0.2,0.2-0.5,0.4-0.9,0.6c-0.3,0.1-0.7,0.2-1.1,0.2c-0.4,0-0.7-0.1-1.1-0.2c-0.3-0.1-0.6-0.3-0.9-0.6
+			c-0.2-0.2-0.4-0.5-0.6-0.9C367.6,11.3,367.6,11,367.6,10.6z M368.3,10.6c0,0.3,0,0.6,0.1,0.8c0.1,0.3,0.2,0.5,0.4,0.7
+			c0.2,0.2,0.4,0.3,0.7,0.5c0.3,0.1,0.5,0.2,0.8,0.2c0.3,0,0.6-0.1,0.8-0.2c0.3-0.1,0.5-0.3,0.7-0.5c0.2-0.2,0.3-0.4,0.4-0.7
+			c0.1-0.3,0.1-0.5,0.1-0.8s0-0.6-0.1-0.8c-0.1-0.3-0.2-0.5-0.4-0.7c-0.2-0.2-0.4-0.3-0.7-0.4c-0.3-0.1-0.5-0.2-0.8-0.2
+			c-0.3,0-0.6,0.1-0.8,0.2c-0.3,0.1-0.5,0.3-0.7,0.4c-0.2,0.2-0.3,0.4-0.4,0.7C368.3,10,368.3,10.3,368.3,10.6z M370.8,10.8l0.8,1.1
+			h-0.8l-0.7-1H370v1h-0.8V9.2h1.1c0.2,0,0.3,0,0.5,0c0.1,0,0.3,0.1,0.4,0.1c0.1,0.1,0.2,0.2,0.3,0.3c0.1,0.1,0.1,0.2,0.1,0.4
+			c0,0.2-0.1,0.4-0.2,0.5C371.2,10.7,371,10.7,370.8,10.8L370.8,10.8z M370,9.7v0.7h0.2c0.2,0,0.3,0,0.4-0.1
+			c0.1-0.1,0.1-0.1,0.1-0.3c0-0.1,0-0.2-0.1-0.2c-0.1-0.1-0.2-0.1-0.3-0.1H370z"/>
+	</g>
+</g>
+</svg>
+
+          Design System
+        </a>
+        </a>
+      </em>
+    </div>
+    <button class="usa-menu-btn">Menu</button>
+  </div>
+
+  <nav role="navigation" class="usa-nav">
+    <div class="usa-nav-inner">
+      <button class="usa-nav-close" aria-label="Close nav bar">
+        <span class="fas fa-times"></span>
+      </button>
+      <ul class="usa-nav-primary usa-accordion">
+        <li>
+          <button class="usa-accordion-button usa-nav-link" aria-expanded="false" aria-controls="extended-mega-nav-section-one">
+            <span>Base elements</span>
+          </button>
+          <ul id="extended-mega-nav-section-one" class="usa-nav-submenu usa-megamenu usa-grid-full" aria-hidden="true">
+            <div class="usa-megamenu-col">
+              <li>
+                <a href="/design-system/visual-style/#colors">Colors</a>
+              </li>
+              <li>
+                <a href="/design-system/visual-style/#typography">Typography</a>
+              </li>
+              <li>
+                <a  href="/design-system/buttons/">Buttons</a>
+              </li>
+              <li>
+                <a  href="/design-system/grid/">Grid</a>
+              </li>
+              <li>
+                <a  href="/design-system/shell/">Shell</a>
+              </li>
+              <li>
+                <a  href="/design-system/spacing/">Spacing</a>
+              </li>
+            </div>
+            <div class="usa-megamenu-col">
+              <li>
+                <a href="/design-system/visual-style/#links">Links</a>
+              </li>
+              <li>
+                <a  href="/design-system/icons/">Icons</a>
+              </li>
+              <li>
+                <a href="/design-system/visual-style/#logo">Logo</a>
+              </li>
+            </div>
+            <div class="usa-megamenu-col">
+              <li>
+                <a  href="/design-system/form-controls/"><strong>Forms</strong></a>
+              </li>
+              <li><a href="/design-system/form-controls/#contextual-help">Contextual Help</a></li>
+              <li><a href="/design-system/form-controls/#disabled">Disabled</a></li>
+              <li><a href="/design-system/form-controls/#dropdown">Dropdown</a></li>
+              <li><a href="/design-system/form-controls/#labels">Labels</a></li>
+            </div>
+            <div class="usa-megamenu-col">
+              <li>
+                <h5>Forms continued</h5>
+              </li>
+              <li><a href="/design-system/form-controls/#layout">Layouts</a></li>
+              <li><a href="/design-system/form-controls/#legends">Legends</a></li>
+              <li><a href="/design-system/form-controls/#reveal-fields">Reveal fields</a></li>
+              <li><a href="/design-system/form-controls/#validation">Validation</a></li>
+            </div>
+          </ul>
+        </li>
+        <li>
+          <button class="usa-accordion-button usa-nav-link" aria-expanded="false" aria-controls="extended-mega-nav-section-two">
+            <span>Components</span>
+          </button>
+          <ul id="extended-mega-nav-section-two" class="usa-nav-submenu usa-megamenu usa-grid-full" aria-hidden="true">
+            <div class="usa-megamenu-col">
+              <li>
+                <a  href="/design-system/alerts/">Alert</a>
+              </li>
+              <li>
+                <a  href="/design-system/button-bar/">Button Bar</a>
+              </li>
+              <li>
+                <a  href="/design-system/card/">Card</a>
+              </li>
+              <li>
+                <a  href="/design-system/card-button/">Card button</a>
+              </li>
+              <li>
+                <a  href="/design-system/drawer/">Drawer</a>
+              </li>
+              <li>
+                <a  href="/design-system/event/">Event</a>
+              </li>
+              <li>
+                <a  href="/design-system/modals/">Modal</a>
+              </li>
+              <li>
+                <a  href="/design-system/pill/">Pill</a>
+              </li>
+              <li>
+                <a  href="/design-system/progress-indicator/">Progress indicator</a>
+              </li>
+              <li>
+                <a  href="/design-system/reveal/">Reveal</a>
+              </li>
+            </div>
+            <div class="usa-megamenu-col">
+              <li>
+                <a  href="/design-system/document/"><strong>Document</strong></a>
+              </li>
+              <li><a href="/design-system/document/#thumbnail">Thumbnail</a></li>
+              <li><a href="/design-system/document/#placeholder">Placeholder</a></li>
+              <li>
+                <h5>Navigation</h5>
+              </li>
+              <li>
+                <a  href="/design-system/navigation/">Top</a>
+              </li>
+              <li>
+                <a  href="/design-system/nav-secondary/">Secondary</a>
+              </li>
+              <li>
+                <a  href="/design-system/footer/">Footer</a>
+              </li>
+            </div>
+            <div class="usa-megamenu-col">
+              <li>
+                <h5>Job announcement</h5>
+              </li>
+              <li>
+                <a  href="/design-system/joa-actions/">Actions</a>
+              </li>
+              <li>
+                <a  href="/design-system/joa-agency-contact/">Agency contact</a>
+              </li>
+              <li>
+                <a  href="/design-system/joa-intro/">Intro</a>
+              </li>
+              <li>
+                <a  href="/design-system/joa-similar-jobs/">Similar jobs</a>
+              </li>
+              <li>
+                <a  href="/design-system/joa-summary/">Summary</a>
+              </li>
+            </div>
+            <div class="usa-megamenu-col">
+              <li>
+                <a  href="/design-system/search/"><strong>Search</strong></a>
+              </li>
+              <li><a href="/design-system/search/#controls">Controls</a></li>
+              <li><a href="/design-system/search/#pagination">Pagination</a></li>
+              <li><a href="/design-system/search/#results">Results</a></li>
+              <li><a href="/design-system/search/#teasers">Teasers</a></li>
+            </div>
+          </ul>
+        </li>
+        <li>
+          <button class="usa-accordion-button usa-nav-link" aria-expanded="false" aria-controls="extended-mega-nav-section-three">
+            <span>Layouts</span>
+          </button>
+          <ul id="extended-mega-nav-section-three" class="usa-nav-submenu usa-megamenu usa-grid-full" aria-hidden="true">
+            <div class="usa-megamenu-col">
+              <li>
+                <h5>Agency Talent Portal</h5>
+              </li>
+              <li>
+                <a href="/design-system/agency-talent-portal/user-detail/">
+                  User detail
+                </a>
+              </li>
+              <li>
+                <a href="/design-system/agency-talent-portal/auth/forgot-password/">Forgot password</a>
+              </li>
+              <li>
+                <a href="/design-system/agency-talent-portal/auth/reset-password/">Reset password</a>
+              </li>
+              <li>
+                <a href="/design-system/agency-talent-portal/auth/reset-password-with-error/">Reset password with error</a>
+              </li>
+              <li>
+                <a href="/design-system/agency-talent-portal/auth/sign-in/">Sign in</a>
+              </li>
+              <li>
+                <a href="/design-system/agency-talent-portal/session/signed-out/">Session signed out</a>
+              </li>
+              <li>
+                <h5>Open Opportunitites</h5>
+              </li>
+              <li>
+                <a href="/design-system/open-opportunities/search/">Search</a>
+              </li>
+            </div>
+            <div class="usa-megamenu-col">
+              <li>
+                <h5>Errors</h5>
+              </li>
+              <li>
+                <a  href="/design-system/errors/400/">400</a>
+              </li>
+              <li>
+                <a  href="/design-system/errors/404/">404</a>
+              </li>
+              <li>
+                <a  href="/design-system/errors/500/">500</a>
+              </li>
+            </div>
+            <div class="usa-megamenu-col">
+              <li>
+                <h5>Sessions</h5>
+              </li>
+              <li>
+                <a  href="/design-system/session/timeout/">
+                  Session timeout
+                </a>
+              </li>
+              <li>
+                <a  href="/design-system/session/signed-out/">Signed out</a>
+              </li>
+            </div>
+            <div class="usa-megamenu-col">
+              <li>
+                <h5>Job announcement</h5>
+              </li>
+              <li>
+                <a  href="/design-system/job-announcement/v6.5/">
+                  Version 6.5
+                </a>
+                <a  href="/design-system/job-announcement/v6.6/cfpb/">Version 6.6 (CFPB pilot)</a>
+                <a  href="/design-system/job-announcement/v6.6/print/">Version 6.6 - Print</a>
+                <a  href="/design-system/job-announcement/v6.7/">Version 6.7</a>
+                <a  href="/design-system/job-announcement/v7.0/">Version 7.0 (Pilot)</a>
+              </li>
+            </div>
+          </ul>
+        </li>
+      </ul>
+      <div class="usa-nav-secondary">
+        <ul class="usa-unstyled-list usa-nav-secondary-links">
+          <li>
+            <a href="https://github.com/USAJOBS/design-system">
+              <span class="fab fa-github"></span> GitHub
+            </a>
+          </li>
+          <li>
+            <a href="https://www.usajobs.gov">usajobs.gov</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<div class="overlay"></div>
+    <div class="main-content l-doc" id="main-content">
+      <div class="styleguide-content usa-content">
+        <p class="site-subheading"></p>
+        <h1 id="usajobs-content-style-guide">USAJOBS Content Style Guide</h1>
+        <p class="usa-font-lead"></p>
+        <p>This style guide is a work in progress.  It pulls from and extends <a href="../resources/content-analysis.pdf">previous work completed by Andy Lewandoski and Tracy Orrison</a> (USAJOBS Content Analysis_FINAL.pdf).  There are several resources available that already provide guidance around content. Where appropriate this document will point to the following:</p>
+
+<ul>
+  <li><a href="https://content-guide.18f.gov/">18F Content Guide</a></li>
+  <li>AP Style Guide - Follow the AP Style guide, with modifications for USAJOBS as needed.</li>
+  <li><a href="https://designsystem.digital.gov/">U.S. Web Design Standards</a></li>
+  <li><a href="https://plainlanguage.gov/">Plainlanguage.gov</a></li>
+</ul>
+
+<h2 id="goal">Goal</h2>
+
+<p>Help users apply for jobs and find the information they need to successfully apply for jobs.</p>
+
+<h2 id="writing-style">Writing Style</h2>
+
+<p>All content on usajobs.gov should be:</p>
+
+<ul>
+  <li>Clear</li>
+  <li>Concise</li>
+  <li>Complete</li>
+  <li>Consistent</li>
+</ul>
+
+<h3 id="tone">Tone</h3>
+
+<ul>
+  <li>Friendly</li>
+  <li>Conversational</li>
+  <li>Accessibl0</li>
+  <li>Decisive/Authoritative – build trust that what the user reads is accurate and timely</li>
+</ul>
+
+<p>USAJOBS needs to make a personal connection with the user. Finding, applying and getting a job can be stressful—USAJOBS needs to guide the user through the process and make it easier to find the information they need and build trust that the information they find is accurate and timely.</p>
+
+<p>To establish a friendlier, more personal tone and content that’s easy to understand:</p>
+
+<ul>
+  <li>Use contractions (i.e. You’re, it’s )</li>
+  <li>Use active voice</li>
+  <li>Use pronouns (i.e. address the audience as “you”, “your”) – this helps personalize the experience
+    <ul>
+      <li>Example: Sign into your USAJOBS account.</li>
+    </ul>
+  </li>
+  <li>Use plain language as defined at <a href="https://plainlanguage.gov/">plainlanguage.gov</a></li>
+  <li>Don’t use jargon</li>
+  <li>Use web writing standards</li>
+</ul>
+
+<h2 id="web-writing-standards">Web Writing Standards</h2>
+
+<p>People skim the web—they don’t read. They want to find information quickly and without much effort. It’s important for web writing to be friendly, conversational and in small chunks so it’s easy scan and move on.</p>
+
+<h4 id="put-the-most-important-information-first">Put the most important information first</h4>
+
+<p>Use the inverted pyramid structure.</p>
+
+<ol>
+  <li>Most important information at the top of the page – include a strong topic sentence that will tell the user what the content is about.</li>
+  <li>Further details are in the body/middle of the page</li>
+  <li>Less important, but still good to know information is at the bottom of the page, such as related links or other contextual information.</li>
+</ol>
+
+<p>Most people will read the top of the page, some will read the middle if they’re interested and few will read the bottom.</p>
+
+<h4 id="organize-content-into-digestible-chunks">Organize content into digestible chunks</h4>
+
+<p>The web is not a book—users will not read a page full of text.</p>
+
+<ul>
+  <li>Use headings and subheadings to break up content</li>
+  <li>Use short paragraphs and sentences</li>
+  <li>Use bulleted or numbered lists
+    <ul>
+      <li>Use bullets for unordered lists.</li>
+      <li>Use numbers for ordered lists, or to indicate ‘steps’ that must be completed in a certain order– numbered lists are used often in help content.</li>
+    </ul>
+  </li>
+</ul>
+
+<h4 id="use-the-active-voice">Use the active voice</h4>
+
+<p>Active voice is concise, direct and makes it clear who is doing the action or who is supposed to be doing the action. Using the active voice makes the content easy to understand.</p>
+
+<p>An active voice sentence follows this order: <strong>Subject + Verb + Object</strong></p>
+
+<p><strong>Example of passive voice:</strong></p>
+
+<p>The following information must be included in the application for it to be considered complete.</p>
+
+<p><strong>Example of active voice:</strong></p>
+
+<p>You must include the following information in your application</p>
+
+<p><em>Avoid the passive voice</em>—it’s ambiguous and makes for longer, more complex sentences. You can see in the example above; the passive voice sentence uses 15 words, the active voice sentence uses 9 words.</p>
+
+<h4 id="use-plain-language">Use Plain Language</h4>
+
+<p>Incorporate all guidelines and standards recommended by <a href="http://www.plainlanguage.gov/">plainlanguage.gov</a></p>
+
+<p>Plain language is easy to understand and accessible—the theme is SIMPLE.</p>
+
+<ul>
+  <li>Use simple words instead of complex ones.  Whenever you write something, re-read it and think, is there a simpler way to explain this?</li>
+  <li>Refer to the Plainlanguage.gov list of simple words and phrases – this list shows words to avoid and better words to use instead.</li>
+</ul>
+
+<h3 id="capitalization">Capitalization</h3>
+
+<p>Capitalize headings/titles, when speaking about a specific section of the site or a button label in help content.</p>
+
+<p><strong>Example in help content:</strong></p>
+
+<ul>
+  <li>Go to Applications or Go to Documents</li>
+</ul>
+
+<p>But, when referring to a user’s applications or documents, use lowercase:</p>
+
+<ul>
+  <li>Select the application you want to update.</li>
+  <li>Check the status of your application.</li>
+</ul>
+
+<h4 id="do-not">Do Not</h4>
+
+<ul>
+  <li>Do not capitalize “account”, unless it’s the first word in a sentence.</li>
+</ul>
+
+<h4 id="page-titles">Page titles</h4>
+
+<p>*</p>
+
+<h4 id="headingssubheadings">Headings/Subheadings</h4>
+
+<p>*</p>
+
+<h4 id="links">Links</h4>
+
+<ul>
+  <li>Use sentence case – the first word is capitalized, but subsequent words are not, unless it’s a proper noun.</li>
+  <li>Make them actionable—start with a verb.</li>
+  <li>Use punctuation if the link is a sentence or question, but don’t include the punctuation as part of the link
+    <ul>
+      <li>Example: <a href="https://www.usajobs.gov/Help/working-in-government/unique-hiring-paths/">Learn more about unique hiring paths</a>.</li>
+    </ul>
+  </li>
+</ul>
+
+<h4 id="form-field-labels">Form Field Labels</h4>
+
+<ul>
+  <li>Use sentence case – the first word is capitalized, but subsequent words are not</li>
+</ul>
+
+<p><strong>Examples</strong></p>
+
+<ul>
+  <li>First name</li>
+  <li>Last name</li>
+  <li>Middle name</li>
+</ul>
+
+<h3 id="spelling-and-common-words">Spelling and Common Words</h3>
+
+<p>Below are some of the most commonly misspelled or misused words used on USAJOBS.  For any words not listed here, follow guidelines in the 18F Content guide.</p>
+
+<ul>
+  <li>Email, email. Don’t use e-mail, E-mail, EMAIL</li>
+  <li>Canceled, canceling.  Not cancelled, cancelling</li>
+  <li>Use Sign in or Sign into NOT log in or log into</li>
+  <li>D.C., not DC</li>
+  <li>federal, not Federal, unless it’s part of a proper noun, such as an agency name. Refer to <a href="http://www.plainlanguage.gov/howto/quickreference/dash/dashfederal.cfm">Mary Dash’s Writing Tips on plainlanguage.gov</a>
+    <ul>
+      <li>federal employees</li>
+      <li>federal job</li>
+    </ul>
+  </li>
+  <li>U.S., not US or USA</li>
+</ul>
+
+<h4 id="do-not-1">Do Not</h4>
+
+<ul>
+  <li>Don’t use the phrase “My Account” for USAJOBS to refer to a person’s account. See “Use of Account vs. Profile” below.</li>
+</ul>
+
+<h3 id="use-of-account-vs-profile">Use of Account vs. Profile</h3>
+
+<h4 id="account">Account</h4>
+
+<p>This is the managing aspect of all your USAJOBS applications, resumes, saved jobs, saved searches.</p>
+
+<ul>
+  <li>Use “Your account” when talking in broad terms about managing these pieces</li>
+</ul>
+
+<p><strong>Examples</strong></p>
+
+<ul>
+  <li>“When you save a job it automatically gets added to your account…”</li>
+  <li>“You can manage your applications in your account”</li>
+</ul>
+
+<h4 id="profile">Profile</h4>
+
+<p>This is your personal information – your contact info, eligibility, and preferences.  This information is required in order to apply.</p>
+
+<ul>
+  <li>Use profile when talking about specific user information and the need to apply</li>
+</ul>
+
+<p><strong>Examples</strong></p>
+
+<ul>
+  <li>You must complete your profile to apply for jobs on USAJOBS.gov.</li>
+  <li>We use your profile information to provide better search results.</li>
+  <li>When you apply, we pass along your profile information to the hiring agency.</li>
+  <li>We use your profile information to …</li>
+</ul>
+
+<p>But, you don’t manage your applications, saved jobs, etc. in your profile.</p>
+
+<h4 id="welcome-message">Welcome message</h4>
+<ul>
+  <li>Always use a comma with the welcome message in profile dashboard</li>
+</ul>
+
+<p><strong>Example:</strong> Welcome, Debbie</p>
+
+<h3 id="writing-help-text">Writing help text</h3>
+
+<ul>
+  <li>Bold button or link names when to buttons or links in help text:</li>
+</ul>
+
+<p><strong>Example</strong></p>
+
+<p>“Click Print for a printer friendly version”</p>
+
+<ul>
+  <li>Use numbers to indicate ‘steps’ that must be completed in a certain order</li>
+</ul>
+
+<h3 id="link-behavior">Link Behavior</h3>
+
+<p>In general, most links need to open in the same window.  However, whenever you link to a completely different website, the link should open in a new window.  Follow these specific guidelines for links:</p>
+
+<h4 id="top-navigation">Top navigation</h4>
+
+<p>Open links in the same window.</p>
+
+<h4 id="bottom-navigation">Bottom navigation</h4>
+
+<p>Open links in the same window, unless the link goes to a website outside of USAJOBS or Open Opportunities. In this case, open the link in a new window.</p>
+
+<h4 id="help-icons">Help icons</h4>
+
+<p>For a help icon (?) in the search filters, in the profile section, in a job announcement or during the application process, open the link in a new window.</p>
+
+<h4 id="main-help-link">Main “Help” link</h4>
+
+<p>For the main “Help” link in the top or bottom navigation, open the link in the same window.</p>
+
+      </div>
+    </div>
+    <footer class="usa-styleguide-footer">
+      <div class="usajobs-grid">
+  <div class="usa-width-one-half">
+    <p>Feedback? Create an issue on the <a href="https://github.com/USAJOBS/design-system">GitHub repository</a>.</p>
+  </div>
+  <div class="usa-width-one-half usa-end-row">
+    <p>
+      This project is maintained by <a href="https://usajobs.github.io/">USAJOBS</a>.
+      The source code is available at <a href="https://github.com/USAJOBS/design-system">github.com/USAJOBS/design-system</a>
+    </p>
+    <p>As a work of the United States Government, this project is <a href="https://github.com/USAJOBS/design-system/LICENSE.md">in the public domain</a> within the United States.</p>
+  </div>
+</div>
+
+    </footer>
+    <div class="usajobs-modal" data-object="modal" data-state="is-closed" id="modal-share-joa" aria-hidden="true" role="dialog" aria-labelledby="usajobs-modal-heading" aria-describedby="usajobs-modal-description">
+  <div class="usajobs-modal__dialog">
+    <div class="usajobs-modal__content">
+      <div id="usajobs-modal-description" class="usajobs-assistive-text">
+        Beginning of a dialog window name that allows for sharing a job announcement. It begins with a heading 2 called &quot;Share job annoucement&quot;. Escape will cancel and close the window.
+      </div>
+      <div class="usajobs-modal__header">
+        <h2 id="usajobs-modal-heading" class="usajobs-modal__title">Share job annoucement</h2>
+      </div>
+      <div class="usajobs-modal__body">
+        <ul class="usajobs-joa-actions__social-list">
+          <li>
+            <a href="#" target="_blank">
+              <i class="fa fa-envelope"></i>
+              Email
+            </a>
+          </li>
+          <li>
+            <a href="#" target="_blank">
+              <i class="fa fa-facebook"></i>
+              Facebook
+            </a>
+          </li>
+          <li>
+            <a href="#" target="_blank">
+              <i class="fa fa-twitter"></i>
+              Twitter
+            </a>
+          </li>
+          <li>
+            <a href="#" target="_blank">
+              <i class="fa fa-linkedin"></i>
+              LinkedIn
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="usajobs-modal__actions">
+        <button class="usajobs-modal__close" data-behavior="modal.close" >
+          <span class="usajobs-assistive-text">Close</span>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <script src="/design-system/js/usajobs-design-system-base.js"></script>
+<script src="/design-system/js/usajobs-design-system-documentation.js"></script>
+<script src="/design-system/js/usajobs-design-system-components.js"></script>
+
+  </body>
+</html>
